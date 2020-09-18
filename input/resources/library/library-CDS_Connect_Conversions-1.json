@@ -1,0 +1,54 @@
+{
+  "resourceType": "Library",
+  "id": "library-CDS-Connect-Conversions-1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-04-15T11:17:00.000-08:00"
+  },
+  "url": "https://github.com/mattStorer/OHSUHTNU18/blob/develop/docs/FHIR%20artifacts/hypertension/Library_cds-connect-conversions.json",
+  "version": "1",
+  "name": "CDS_Connect_Conversions",
+  "title": "AHRQ CDS Connect Conversions Library",
+  "status": "active",
+  "experimental": false,
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/library-type",
+        "code": "logic-library",
+        "display": "Logic Library"
+      }
+    ]
+  },
+  "date": "2020-03-24T00:00:00-08:00",
+  "publisher": "AHRQ CDS Authoring Tool",
+  "description": "This library contains auto-generated logic from the AHRQ CDS Authoring Tool",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "CDS Authoring Tool Conversions"
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "url": "http://hl7.org/fhir|3.0.0"
+    }
+  ],
+  "content": [
+    {
+      "contentType": "text/cql",
+      "data": "LyoqCiAqIFRoaXMgbGlicmFyeSBzdXBwb3J0cyBjb252ZXJzaW9ucyBmcm9tIG9uZSB1bml0IHRvIGFub3RoZXIuICBDb252ZXJzaW9ucyBhcmUgYWRkZWQgYXMgbmVlZGVkIGJ5IGFydGlmYWN0cyBpbgogKiBkZXZlbG9wbWVudC4gIFNpbmNlIGNhc2UgaXMgaW1wb3J0YW50IGZvciBzb21lIHVuaXRzLCByYXRoZXIgdGhhbiB1c2Ugb3VyIG5vcm1hbCBQYXNjYWxDYXNpbmcsIHdlIHVzZSB1bmRlcnNjb3JlCiAqIHRvIHNlcGFyYXRlIHdvcmRzIGFuZCBtYWludGFpbiBjYXNpbmcuICBGb3IgZXhhbXBsZSwgdG8gY29udmVydCB0byAibWcvZEwiLCByYXRoZXIgdGhhbiBjYWxsIHRoZSBmdW5jdGlvbgogKiBgVG9NZ1BlckRMYCwgd2UgY2FsbCBpdCBgdG9fbWdfcGVyX2RMYCwgaW4gb3JkZXIgdG8gbWFpbnRhaW4gY2FzaW5nLgogKi8KbGlicmFyeSBDRFNfQ29ubmVjdF9Db252ZXJzaW9ucyB2ZXJzaW9uICcxJwoKLyoqCiAqIENvbnZlcnRzIG1tb2wvTCB0byBtZy9kTCwgb3IgaWYgYWxyZWFkeSBtZC9kTCwgbGVhdmVzIGl0IGFzIGlzLiAgSWYgYW4gdW5yZWNvZ25pemVkIHVuaXQgaXMgdXNlZCwgbnVsbCBpcyByZXR1cm5lZC4KICogQHBhcmFtIFEgLSBhIFF1YW50aXR5CiAqIEByZXR1cm5zIHtRdWFudGl0eX0gYSBRdWFudGl0eSB1c2luZyBtZy9kTCB1bml0cyBvciBudWxsIGlmIG51bGwgd2FzIHBhc3NlZCBpbiBvciB1bml0IGNvdWxkbid0IGJlIGNvbnZlcnRlZAogKi8KZGVmaW5lIGZ1bmN0aW9uIHRvX21nX3Blcl9kTCAoUSBRdWFudGl0eSk6CiAgY2FzZQogICAgd2hlbiBRLnVuaXQgPSAnbWcvZEwnIHRoZW4gUQogICAgd2hlbiBRLnVuaXQgPSAnbW1vbC9MJyB0aGVuIFF1YW50aXR5e3ZhbHVlOiBRLnZhbHVlICogMzguNjY5NzYsIHVuaXQ6ICdtZy9kTCd9CiAgICBlbHNlIG51bGwKICBlbmQK"
+    }
+  ]
+}

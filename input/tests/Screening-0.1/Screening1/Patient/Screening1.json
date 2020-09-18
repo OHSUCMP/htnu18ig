@@ -1,0 +1,24 @@
+{
+  "resourceType": "Patient",
+  "id": "Screening1",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-04-21T15:55:05.000+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Screening1 <b>Patient </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Date of birth</td><td><span>28 September 1975</span></td></tr></tbody></table></div>"
+  },
+  "active": true,
+  "name": [
+    {
+      "text": "Screening1 Patient",
+      "family": "Patient",
+      "given": [
+        "Screening1"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1975-09-28"
+}

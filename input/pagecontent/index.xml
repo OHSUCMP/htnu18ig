@@ -1,0 +1,66 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
+  <a name="intro" />
+  <h3>Introduction</h3>
+	<p>
+    This implementation guide provides the decision logic for a patient-facing FHIR-based Clinical Decision Support (CDS) tool developed at
+      Oregon Health &amp; Science University (OHSU) for the treatment of High Blood Pressure (Hypertension). This work was funded by the Agency for Healthcare
+      Research and Quality (AHRQ) under a two-year U18 grant.
+  </p>
+  <a href="PcHTN_1pager.pdf"> Research summary and one-page project overview</a>
+
+  <p>
+    This implementation guide was developed to identify commonalities between clinical practice guidelines (CPG) for hypertension treatment.
+    Based on these guidelines, and with input from expert collaborators and from surveys and interviews of primary care providers and
+    hypertensive patients, we developed the decision logic for this CDS tool. Our goal in developing this tool is to improve patient
+    outcomes by improving adherence to hypertension CPGs, facilitating patient education about hypertension, improving shared decision
+    making by providing CPG-adherent treatment recommendations, and by incorporating patient preferences into the decision logic.
+  </p>
+
+	<a name="technical" />
+	<h3>Technical Overview</h3>
+	<p>
+    This implementation guide utilizes the Clinical Quality Language (CQL) development language. This is a human readable HL7 authoring language
+      designed to facilitate harmonizing standards used for electronic clinical quality measures (eCQMs) and CDS. Each of the component parts is
+      represented by a CQL artifact that checks entered data against value sets for hypertension and related conditions to select which treatment
+      recommendations should be provided to end-users, based on identified patient preferences and patient context.
+  </p>
+  <a name="walkthrough" />
+  <p>
+    - The main sections of this IG are:<br/>
+    - Diagnosis<br/>
+    - Screening<br/>
+    - Non-Pharmacologic Treatment<br/>
+    - Pharmacologic Treatment<br/>
+    - Adverse Event Response
+  </p>
+  <ul>
+    <li>
+      <a href="background.html">Background</a> - provides business context for the implementation guide and information that implementers should be
+      familiar with before reading the remainder of the IG.  There could be multiple pages for this.
+    </li>
+    <li>
+      <a href="spec.html">Detailed Specification</a> - The actual stuff implementers are expected to do.  (Could be multiple pages for this.)
+    </li>
+    <li>
+      <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
+    </li>
+  </ul>
+
+  <a name="references" />
+  <h3>References and Disclaimers</h3>
+
+  <p>
+    This product uses publicly available data courtesy of the U.S. National Library of Medicine (NLM),
+    National Institutes of Health, Department of Health and Human Services; NLM is not responsible for
+    the product and does not endorse or recommend this or any other product.
+  </p>
+
+  <p>
+    Alper BS, Price A, van Zuuren EJ, Fedorowicz Z, Shaughnessy AF, Oettgen P, Elwyn G, Qaseem A, Kunnamo I, Gupta U, Carter DD, Mittelman M, Berg-Nelson C, Mayer M. <br/>
+    Consistency of Recommendations for Evaluation and Management of Hypertension. JAMA Netw Open. 2019 Nov 1;2(11):e1915975. doi: 10.1001/jamanetworkopen.2019.15975. <br/>
+    PMID: 31755945; PMCID: PMC6902818.<br/>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6902818/">Full text</a>
+  </p>
+
+</div>

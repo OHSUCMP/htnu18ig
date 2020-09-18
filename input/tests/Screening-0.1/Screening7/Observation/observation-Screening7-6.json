@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-Screening7-5",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-06-30T22:00:38.000+00:00"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "17369002",
+        "display": "Pregnancy Outcome"
+      }
+    ],
+    "text": "Miscarriage (disorder)"
+  },
+  "subject": {
+    "reference": "Patient/Screening7"
+  },
+  "effectiveDateTime": "2019-07-12T11:00:00-08:00"
+}

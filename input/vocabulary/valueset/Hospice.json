@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1108.15",
+  "meta": {
+    "versionId": "12",
+    "lastUpdated": "2019-02-26T22:31:20.000-05:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Hospice care ambulatory</h2><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=385763009\">385763009</a></td><td>Hospice care (regime/therapy)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=385765002\">385765002</a></td><td>Hospice care management (procedure)</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.15",
+  "version": "20170504",
+  "name": "Hospice care ambulatory",
+  "status": "active",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "Mathematica",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "385763009",
+            "display": "Hospice care (regime/therapy)"
+          },
+          {
+            "code": "385765002",
+            "display": "Hospice care management (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

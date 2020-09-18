@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-Screening6-5",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-06-30T22:00:38.000+00:00"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "21243004",
+        "display": "Pregnancy Outcome"
+      }
+    ],
+    "text": "Term birth of newborn (finding)"
+  },
+  "subject": {
+    "reference": "Patient/Screening6"
+  },
+  "effectiveDateTime": "2020-04-25T11:00:00-08:00"
+}

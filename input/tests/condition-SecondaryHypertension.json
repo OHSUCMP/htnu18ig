@@ -1,0 +1,24 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-SecondaryHypertension",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-06-04T22:00:17.000+00:00"
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "31992008",
+        "display": "Secondary hypertension (disorder)"
+      }
+    ],
+    "text": "Secondary hypertension (disorder)"
+  },
+  "subject": {
+    "reference": "Patient/2daacd506bc4659c"
+  },
+  "onsetDateTime": "2020-04-01T01:23:45-08:00"
+}

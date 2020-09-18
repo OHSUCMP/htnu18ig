@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "blood-pressure-measured",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2014-05-02T01:00:02.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Blood Pressure Measured</h2><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/55284-4.html\">55284-4</a></td><td>Blood pressure systolic and diastolic</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012",
+  "version": "20140502",
+  "name": "Blood Pressure Measured",
+  "status": "active",
+  "date": "2014-05-02T01:00:02-04:00",
+  "publisher": "QIP",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "55284-4",
+            "display": "Blood pressure systolic and diastolic"
+          }
+        ]
+      }
+    ]
+  }
+}

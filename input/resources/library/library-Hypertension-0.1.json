@@ -1,0 +1,115 @@
+{
+  "resourceType": "Library",
+  "id": "library-Hypertension-FHIR4",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-04-15T11:00:00.000-08:00"
+  },
+  "url": "https://github.com/mattStorer/OHSUHTNU18/blob/develop/recommendations/fhir3/input/resources/library/library-Hypertension_FHIR4.json",
+  "version": "0.1",
+  "name": "Hypertension_FHIR4",
+  "title": "Library - OHSU Logic for identifying hypertension",
+  "status": "active",
+  "experimental": false,
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/library-type",
+        "code": "logic-library",
+        "display": "Logic Library"
+      }
+    ]
+  },
+  "date": "2020-04-15T00:00:00-08:00",
+  "publisher": "Oregon Health and Science University (OHSU)",
+  "description": "Identifies hypertension",
+  "purpose": "The purpose of this is to act as a 'hello world' sort of simple logic for testing end-to-end processing of the system.",
+  "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "371622005",
+            "display": "Elevated BP without HTN diagnosis"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "Hypertension Management"
+    }
+  ],
+  "contributor": [
+    {
+      "type": "author",
+      "name": "Matthew Storer"
+    }
+  ],
+  "copyright": "© OHSU 2020+.",
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": {
+        "reference": "Library/library-OHSUHTN-Common-FHIR3-0.1"
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": {
+        "reference": "Library/library-CDS-Connect-Commons-for-FHIRv300-1.0.1"
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": {
+        "reference": "Library/library-CDS-Connect-Conversions-1"
+      }
+    },
+    {
+      "type": "depends-on",
+      "resource": {
+        "reference": "Library/library-FHIRHelpers-3.0.0"
+      }
+    },
+    {
+      "type": "depends-on",
+      "url": "http://hl7.org/fhir|4.0.1"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "type": "Observation",
+      "codeFilter": [
+        {
+          "path": "code",
+          "valueSetString": "Blood Pressure Measured"
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-Hypertension_FHIR4.cql"
+    }
+  ]
+}

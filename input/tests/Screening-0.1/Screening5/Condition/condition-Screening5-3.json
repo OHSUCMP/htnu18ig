@@ -1,0 +1,24 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-Screening5-3",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-06-04T22:02:15.000+00:00"
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "46177005",
+        "display": "ESRD (disorder)"
+      }
+    ],
+    "text": "End-stage renal disease (disorder)"
+  },
+  "subject": {
+    "reference": "Patient/2daacd506bc4659c"
+  },
+  "onsetDateTime": "2020-05-01T12:34:56-08:00"
+}

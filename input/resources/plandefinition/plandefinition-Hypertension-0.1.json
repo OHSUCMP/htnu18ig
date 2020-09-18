@@ -1,0 +1,301 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "ohsuhtn-stu3-hypertension",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-02-03T11:09:34.051-08:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>OHSU HTN Test - Hypertension</b></p></div>"
+  },
+  "url": "https://github.com/mattStorer/OHSUHTNU18/blob/develop/docs/FHIR%20artifacts/PlanDefinition_ohsuhtn-stu3-hypertension.json",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "ohsu-hypertension"
+    }
+  ],
+  "version": "0.1",
+  "name": "Hypertension",
+  "title": "OHSU Hypertension",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/plan-definition-type",
+        "code": "eca-rule",
+        "display": "ECA Rule"
+      }
+    ]
+  },
+  "status": "draft",
+  "date": "2020-02-04T00:00:00-08:00",
+  "publisher": "Oregon Health and Science University (OHSU)",
+  "description": "This PlanDefinition identifies hypertension",
+  "purpose": "The purpose of this is to test the system to make sure we have complete end-to-end functionality",
+  "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "371622005",
+            "display": "Elevated BP without HTN diagnosis"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "Hypertension Management"
+    }
+  ],
+  "copyright": "© OHSU 2020+.",
+  "library": [
+    {
+      "reference": "Library/library-Hypertension-FHIR3-0.1"
+    }
+  ],
+  "action": [
+    {
+      "triggerDefinition": [
+        {
+          "type": "named-event",
+          "eventName": "patient-view"
+        }
+      ],
+      "condition": [
+        {
+          "kind": "applicability",
+          "language": "text/cql",
+          "expression": "InPopulation"
+        }
+      ],
+      "action": [
+        {
+          "title": "BP is normal",
+          "description": "Determines if the patient has normal BP (systolic < 120 AND diastolic < 80)",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "Info for those with normal blood pressure",
+              "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "description": "Normal",
+              "language": "text/cql",
+              "expression": "Normal"
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": "Rationale"
+            },
+            {
+              "path": "action.title",
+              "expression": "Recommendation"
+            },
+            {
+              "path": "action.extension",
+              "expression": "'info'"
+            }
+          ],
+          "action": [
+            {
+              "description": "Do something"
+            },
+            {
+              "description": "Do something else, or nothing at all"
+            }
+          ]
+        },
+        {
+          "title": "BP is elevated",
+          "description": "Determines if the patient has elevated BP (systolic 120-129 AND diastolic < 80)",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "Info for those with elevated blood pressure",
+              "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "description": "Elevated",
+              "language": "text/cql",
+              "expression": "Elevated"
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": "Rationale"
+            },
+            {
+              "path": "action.title",
+              "expression": "Recommendation"
+            },
+            {
+              "path": "action.extension",
+              "expression": "'info'"
+            }
+          ],
+          "action": [
+            {
+              "description": "Do something"
+            },
+            {
+              "description": "Do something else, or nothing at all"
+            }
+          ]
+        },
+        {
+          "title": "Determine if patient has stage 1 hypertension",
+          "description": "This action identifies a patient who has stage 1 hypertension (systolic 130-139 OR diastolic 80-89).",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "Info for those with stage 1 hypertension",
+              "url": "https://en.wikipedia.org/wiki/Hypertension"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "description": "Determine if the patient has stage 1 hypertension",
+              "language": "text/cql",
+              "expression": "HTN Stage 1"
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": "Rationale"
+            },
+            {
+              "path": "action.title",
+              "expression": "Recommendation"
+            },
+            {
+              "path": "action.extension",
+              "expression": "'warning'"
+            }
+          ],
+          "action": [
+            {
+              "description": "Do something"
+            },
+            {
+              "description": "Do something else, or nothing at all"
+            }
+          ]
+        },
+        {
+          "title": "Determine if patient has stage 2 hypertension",
+          "description": "This action identifies a patient who has stage 2 hypertension (systolic >= 140 OR diastolic >= 90).",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "Info for those with stage 2 hypertension",
+              "url": "https://en.wikipedia.org/wiki/Hypertension"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "description": "Determine if the patient has stage 2 hypertension",
+              "language": "text/cql",
+              "expression": "HTN Stage 2"
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": "Rationale"
+            },
+            {
+              "path": "action.title",
+              "expression": "Recommendation"
+            },
+            {
+              "path": "action.extension",
+              "expression": "'warning'"
+            }
+          ],
+          "action": [
+            {
+              "description": "Do something"
+            },
+            {
+              "description": "Do something else, or nothing at all"
+            }
+          ]
+        },
+        {
+          "title": "Determine if patient is in a hypertension crisis",
+          "description": "This action identifies a patient who is in a full-blown hypertension crisis (systolic > 180 AND/OR diastolic > 120).",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "Info for those with hypertension crisis",
+              "url": "https://en.wikipedia.org/wiki/Hypertension"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "description": "Determine if the patient has hypertension crisis",
+              "language": "text/cql",
+              "expression": "HTN Crisis"
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": "Rationale"
+            },
+            {
+              "path": "action.title",
+              "expression": "Recommendation"
+            },
+            {
+              "path": "action.extension",
+              "expression": "'warning'"
+            }
+          ],
+          "action": [
+            {
+              "description": "Do something"
+            },
+            {
+              "description": "Do something else, or nothing at all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

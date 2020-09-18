@@ -1,0 +1,37 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <h3>Background on Hypertension</h3>
+  <p>
+    High blood pressure (Hypertension) is a widespread, chronic condition that affects approximately 46&#37; of adults in the United States.
+      Hypertension predicts major cardiovascular, renal, and cerebrovascular events, including heart attack and stroke. Thus, it is critically
+      important to detect, correctly diagnose, and effectively treat hypertension. Clinical evidence and practice have rapidly evolved with
+      regards to hypertension care. However, despite knowing more about how to lower blood pressure (BP) to avoid severe outcomes, overall blood
+      pressure control remains poor, with less than half of hypertensive adults meeting a goal &lt;140/90 mmHg. Additionally, clinical practice
+      guidelines often disagree on the recommended course of treatment.</p>
+
+    <p>
+    Although there are multiple factors that contribute to the low rate of BP control, the complexity of Hypertension is a partial cause.
+        Managing hypertension is a highly-variable process with complex information needs and clinical consideration. Diagnosis requires
+        multiple, accurate measurements, which may be taken at the patient's home or during office visits. Treatment can require both
+        behavioral and lifestyle modification and one or more medications. Challenges can include inaccurate measurements, adverse reactions
+        to medication, and the difficulty for the patient to implement lifestyle modification. Additionally, many patients with high
+        cardiovascular risk are at risk of adverse reactions to treatment or comorbidities. Some patients may experience secondary hypertension
+        as a symptom of other conditions, requiring specific diagnostic testing and treatments.
+  </p>
+
+  <p>
+      Clinical decision support (CDS) tools for hypertension must therefore be designed to simplify the process of diagnosing and managing
+      hypertension, addressing the needs of both patients and primary care providers while adhering to areas of agreement within the guidelines.
+      Our tool is designed to be a patient-facing web tool, allowing patients to easily access their identified personal preferences for care,
+      their recorded history of blood pressure measurements, and their prescribed treatments. This tool is intended to serve an educational
+      purpose, providing users with information about hypertension and related health risks, as well as information about what to do if they
+      experience an adverse reaction to treatment. For care team users, we expect that this tool will be used during office visits to provide
+      care recommendations based on preferences, feasibility of treatments, and patient health information. Our goal is that this tool will
+      streamline the process of diagnosing and managing hypertension during office visits, providing accurate and guideline-supported care
+      recommendations to improve patent health outcomes and guideline adherence.
+  </p>
+
+  <h3>Heading 2</h3>
+	<p>
+		<img height="600" src="anImage.png" alt="A sample image"/>
+	</p>
+</div>

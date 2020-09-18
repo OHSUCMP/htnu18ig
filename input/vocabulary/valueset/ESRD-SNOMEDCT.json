@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.2.590",
+  "meta": {
+    "versionId": "17",
+    "lastUpdated": "2020-06-23T14:05:46.000-04:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>End Stage Renal Disease</h2><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236434000\">236434000</a></td><td>End stage renal failure untreated by renal replacement therapy (disorder)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236435004\">236435004</a></td><td>End stage renal failure on dialysis (disorder)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236436003\">236436003</a></td><td>End stage renal failure with renal transplant (disorder)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=46177005\">46177005</a></td><td>End stage renal disease (disorder)</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590",
+  "version": "20170504",
+  "name": "End Stage Renal Disease",
+  "status": "active",
+  "date": "2017-05-04T01:00:13-04:00",
+  "publisher": "Mathematica",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "236434000",
+            "display": "End stage renal failure untreated by renal replacement therapy (disorder)"
+          },
+          {
+            "code": "236435004",
+            "display": "End stage renal failure on dialysis (disorder)"
+          },
+          {
+            "code": "236436003",
+            "display": "End stage renal failure with renal transplant (disorder)"
+          },
+          {
+            "code": "46177005",
+            "display": "End stage renal disease (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}
