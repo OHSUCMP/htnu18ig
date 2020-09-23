@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa47b2ed-d395-48ea-8914-f2505177bb6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input-cache/schemas/R5/fhir-single.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/schemas/R5/fhir-single.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input-cache/txcache/http___unstats.un.org_unsd_methods_m49_m49.htm.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input-cache/txcache/icd-10-cm.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input-cache/txcache/snomed.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input-cache/txcache/version.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/input-cache/txcache/version.ctl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/htnu18ig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/input/htnu18ig.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hv3mHAHThiCoGSMcxw3iJpplfq" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa47b2ed-d395-48ea-8914-f2505177bb6c" name="Default Changelist" comment="" />
+      <created>1600877895078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600877895078</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
