@@ -3,3 +3,5 @@ An HL7 implementation guide for the FHIR app associated with OHSU's Care Managem
 
 ###Revision history:
 * 2020-09-23: integrated with auto-ig-builder
+
+_Last Updated: 2020-09-24 10:00am_
