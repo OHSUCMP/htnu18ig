@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="fa47b2ed-d395-48ea-8914-f2505177bb6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/cql/CDS_Connect_Commons_for_FHIRv300-1.0.1.cql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/cql/CDS_Connect_Conversions-1.cql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/cql/cql-options.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/resources/library/library-CDS_Connect_Commons_for_FHIRv300-1.0.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/resources/library/library-CDS_Connect_Conversions-1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/resources/library/library-FHIRHelpers-4.0.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/resources/library/library-FHIRHelpers-4.0.1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/resources/library/library-Hypertension-0.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/resources/library/library-Hypertension-0.1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/resources/library/library-OHSUHTN_Common-0.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/resources/library/library-OHSUHTN_Common-0.1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/resources/plandefinition/plandefinition-Hypertension-0.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/resources/plandefinition/plandefinition-Hypertension-0.1.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +53,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

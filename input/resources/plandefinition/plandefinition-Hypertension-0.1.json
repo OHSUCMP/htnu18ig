@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "ohsuhtn-stu3-hypertension",
+  "id": "plandefinition-Hypertension-0.1",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2020-02-03T11:09:34.051-08:00"
@@ -71,7 +71,7 @@
   "copyright": "© OHSU 2020+.",
   "library": [
     {
-      "reference": "Library/library-Hypertension-FHIR3-0.1"
+      "reference": "Library/library-Hypertension-0.1"
     }
   ],
   "action": [

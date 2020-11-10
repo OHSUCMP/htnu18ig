@@ -1,9 +1,9 @@
-library Screening_FHIR4 version '0.1'
+library Screening version '0.1'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.0' called FHIRHelpers
-include OHSUHTN_Common_FHIR4 version '0.1' called OHSUHTN_Common
+include FHIRHelpers version '4.0.1' called FHIRHelpers
+include OHSUHTN_Common version '0.1' called OHSUHTN_Common
 
 codesystem "LOINC": 'http://loinc.org'
 codesystem "SNOMEDCT": 'http://snomed.info/sct'

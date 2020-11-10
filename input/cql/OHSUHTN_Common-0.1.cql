@@ -2,7 +2,7 @@ library OHSUHTN_Common version '0.1'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.0' called FHIRHelpers
+include FHIRHelpers version '4.0.1' called FHIRHelpers
 
 codesystem "LOINC": 'http://loinc.org'
 
@@ -26,28 +26,28 @@ define "Adult at start of Measurement Period":
 
 define "Normal BP":
   "Avg BP" O
-    where O.systolic < 120
-    and O.diastolic < 80
+    where O.systolic.value < 120
+    and O.diastolic.value < 80
 
 define "Elevated BP":
   "Avg BP" O
-    where O.systolic >= 120 and O.systolic < 130
-    and O.diastolic < 80
+    where O.systolic.value >= 120 and O.systolic.value < 130
+    and O.diastolic.value < 80
 
 define "HTN Stage 1 BP":
   "Avg BP" O
-    where (O.systolic >= 130 and O.systolic < 140)
-    or (O.diastolic >= 80 and O.diastolic < 90)
+    where (O.systolic.value >= 130 and O.systolic.value < 140)
+    or (O.diastolic.value >= 80 and O.diastolic.value < 90)
 
 define "HTN Stage 2 BP":
   "Avg BP" O
-    where O.systolic >= 140
-    or O.diastolic >= 90
+    where O.systolic.value >= 140
+    or O.diastolic.value >= 90
 
 define "HTN Crisis BP":
   "Avg BP" O
-    where O.systolic > 180
-    or O.diastolic > 120
+    where O.systolic.value > 180
+    or O.diastolic.value > 120
 
 define "Systolic BP Variability String":
   "Systolic BP Variability" S
