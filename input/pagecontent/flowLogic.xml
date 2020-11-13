@@ -1,42 +1,37 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-    <h3>Decision Logic</h3>
-    <p>
-        The following flowcharts represent the decision logic we developed from a review of 71 Hypertension recommendations
-        taken from 8 different guidelines (per Alper et al.). Of these 71 recommendations, 42 have agreement between multiple
-        guidelines. Any recommendation that was disagreed upon by direction (recommended to use in treatment versus recommended
-        NOT to use in treatment) was excluded from this logic. All recommendations that were disagreed upon by strength of
-        recommendation (weak "for" vs strong "for") are included in this logic, but output indicates users should "consider"
-        as a care option rather than "recommend" as a course of action.
-    </p>
+    <div>
+        <h3>Decision Logic</h3>
+        <p>
+            The following flowcharts represent the decision logic we developed from a review of 71 Hypertension recommendations
+            taken from 8 different guidelines (per Alper et al.). Of these 71 recommendations, 42 have agreement between multiple
+            guidelines. Any recommendation that was disagreed upon by direction (recommended to use in treatment versus recommended
+            NOT to use in treatment) was excluded from this logic. All recommendations that were disagreed upon by strength of
+            recommendation (weak "for" vs strong "for") are included in this logic, but output indicates users should "consider"
+            as a care option rather than "recommend" as a course of action.
+        </p>
+    </div>
 
     <h3>Diagnosis</h3>
-    <p>
-        <img height="600" src="dxLogic.png" alt="Diagnosis Logic"/>
-    </p>
+    <img height="500" src="dxLogic.png" alt="Diagnosis Logic"/>
+    <br/>
 
     <h3>Screening</h3>
-    <p>
-        <img height="600" src="screeningLogic.png" alt="Screening Logic"/>
-    </p>
+    <img height="500" src="screeningLogic.png" alt="Screening Logic"/>
+    <br/>
 
     <h3>Monitoring</h3>
-    <p>
-        <img height="600" src="monitorLogic.png" alt="Monitoring Logic"/>
-    </p>
+    <img height="500" src="monitorLogic.png" alt="Monitoring Logic"/>
+    <br/>
 
     <h3>Lifestyle Changes</h3>
-    <p>
-        <img height="600" src="lifestyleLogic.png" alt="Lifestyle Intervention Logic"/>
-    </p>
+    <img height="500" src="lifestyleLogic.png" alt="Lifestyle Intervention Logic"/>
+    <br/>
 
     <h3>Pharmacologic Intervention</h3>
-    <p>
-        <img height="600" src="drugLogic.png" alt="Medication Logic"/>
-    </p>
+    <img height="500" src="drugLogic.png" alt="Medication Logic"/>
+    <br/>
 
     <h3>Adverse Events</h3>
-    <p>
-        <img height="600" src="adverseLogic.png" alt="Adverse Event Logic"/>
-    </p>
+    <img height="500" src="adverseLogic.png" alt="Adverse Event Logic"/>
 
 </div>

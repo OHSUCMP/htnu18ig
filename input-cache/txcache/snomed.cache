@@ -380,15 +380,15 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:8d7ce5fe-12b5-48f9-8b75-c63d70109d0b",
-    "timestamp" : "2020-09-15T20:28:49.017Z",
+    "identifier" : "urn:uuid:21bda8dd-93a2-4293-9d5a-477079b02388",
+    "timestamp" : "2020-11-13T21:37:22.626Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
@@ -853,15 +853,15 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:06dbd461-80e5-49f5-ac31-1773a0ed166e",
-    "timestamp" : "2020-09-15T20:28:50.142Z",
+    "identifier" : "urn:uuid:0374b7ac-fe1f-4b49-84a8-a6258916272e",
+    "timestamp" : "2020-11-13T21:37:23.172Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"
     }],
     "contains" : [{
       "system" : "http://snomed.info/sct",
