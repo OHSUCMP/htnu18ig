@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa47b2ed-d395-48ea-8914-f2505177bb6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/resources/library/library-Hypertension-0.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/resources/library/library-Hypertension-0.1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/resources/library/library-OHSUHTN_Common-0.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/resources/library/library-OHSUHTN_Common-0.1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/resources/library/library-Screening-0.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/resources/library/library-Screening-0.1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/resources/plandefinition/plandefinition-Hypertension-0.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input/resources/plandefinition/plandefinition-Hypertension-0.1.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +13,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="ProjectId" id="1hv3mHAHThiCoGSMcxw3iJpplfq" />
   <component name="PropertiesComponent">
@@ -41,6 +39,14 @@
       <option name="presentableId" value="Default" />
       <updated>1600877895078</updated>
     </task>
+    <task id="LOCAL-00001" summary="tweaks">
+      <created>1605302483335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605302483335</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -55,5 +61,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="tweaks" />
   </component>
 </project>
