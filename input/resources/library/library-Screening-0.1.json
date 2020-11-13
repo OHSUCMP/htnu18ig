@@ -1,13 +1,13 @@
 {
   "resourceType": "Library",
-  "id": "library-Screening-FHIR3-0.1",
+  "id": "library-Screening-0.1",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2020-04-15T11:00:00.000-08:00"
   },
-  "url": "https://github.com/mattStorer/OHSUHTNU18/blob/develop/recommendations/fhir3/input/resources/library/library-Screening_FHIR3-0.1.json",
+  "url": "https://github.com/OHSUCMP/htnu18ig/blob/master/input/resources/library/library-Screening-0.1.json",
   "version": "0.1",
-  "name": "Screening_FHIR3",
+  "name": "Screening",
   "title": "Library - OHSU Logic for hypertension screening",
   "status": "active",
   "experimental": false,
@@ -70,18 +70,18 @@
     {
       "type": "depends-on",
       "resource": {
-        "reference": "Library/library-OHSUHTN-Common-FHIR3-0.1"
+        "reference": "Library/library-OHSUHTN-Common-0.1"
       }
     },
     {
       "type": "depends-on",
       "resource": {
-        "reference": "Library/library-FHIRHelpers-3.0.0"
+        "reference": "Library/library-FHIRHelpers-4.0.1"
       }
     },
     {
       "type": "depends-on",
-      "url": "http://hl7.org/fhir|3.0.0"
+      "url": "http://hl7.org/fhir|4.0.1"
     }
   ],
   "content": [

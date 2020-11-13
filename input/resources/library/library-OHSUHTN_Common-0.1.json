@@ -7,7 +7,7 @@
   },
   "url": "https://github.com/OHSUCMP/htnu18ig/blob/master/input/resources/library/library-OHSUHTN_Common-0.1.json",
   "version": "0.0.1",
-  "name": "OHSUHTN_Common_0.1",
+  "name": "OHSUHTN_Common",
   "title": "OHSU Common Hypertension Library",
   "status": "active",
   "experimental": false,

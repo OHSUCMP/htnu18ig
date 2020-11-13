@@ -7,7 +7,7 @@
   },
   "url": "https://github.com/OHSUCMP/htnu18ig/blob/master/input/resources/library/library-Hypertension-0.1.json",
   "version": "0.1",
-  "name": "Hypertension_0.1",
+  "name": "Hypertension",
   "title": "Library - OHSU Logic for identifying hypertension",
   "status": "active",
   "experimental": false,

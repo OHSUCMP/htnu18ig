@@ -9,7 +9,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>OHSU HTN Test - Hypertension</b></p></div>"
   },
-  "url": "https://github.com/mattStorer/OHSUHTNU18/blob/develop/docs/FHIR%20artifacts/PlanDefinition_ohsuhtn-stu3-hypertension.json",
+  "url": "https://github.com/OHSUCMP/htnu18ig/blob/master/input/resources/plandefinition/plandefinition-Hypertension-0.1.json",
   "identifier": [
     {
       "use": "official",
