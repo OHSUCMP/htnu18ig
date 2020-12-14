@@ -1,0 +1,34 @@
+#!/bin/bash
+#DO NOT EDIT WITH WINDOWS
+tooling_jar=tooling-1.3.1-SNAPSHOT-jar-with-dependencies.jar
+input_cache_path=./input-cache
+ig_resource_path=./input/htnu18ig.xml
+resources_path=$PWD/input/resources
+
+set -e
+echo Checking internet connection...
+wget -q --spider tx.fhir.org
+
+if [ $? -eq 0 ]; then
+	echo "Online"
+	fsoption=""
+#"-fs http://localhost:8080/cqf-ruler-r4/fhir/"
+else
+	echo "Offline"
+	fsoption=""
+fi
+
+echo "$fsoption"
+
+tooling=$input_cache_path/$tooling_jar
+if test -f "$tooling"; then
+	JAVA -jar $tooling -RefreshIG -root-dir="$PWD" -ip="$ig_resource_path" -rp="$resources_path" -t -d -p -cdsig $fsoption
+else
+	tooling=../$tooling_jar
+	echo $tooling
+	if test -f "$tooling"; then
+		JAVA -jar $tooling -RefreshIG -root-dir="$PWD" -ip="$ig_resource_path" -rp="$resources_path" -t -d -p -cdsig $fsoption
+	else
+		echo IG Refresh NOT FOUND in input-cache or parent folder.  Please run _updateCQFTooling.  Aborting...
+	fi
+fi
