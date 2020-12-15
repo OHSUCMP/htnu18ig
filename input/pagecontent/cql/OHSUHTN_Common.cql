@@ -121,9 +121,29 @@ define "Avg Diastolic BP":
   )
 
 define "Blood Pressure Observations":
-   [Observation: "Blood Pressure"] O
-   where "Normalize Interval"(O.effective) during MeasurementPeriod
-      and O.status in { 'final', 'amended' }
+  (QualifiedObservations([Observation: "Blood Pressure"])) O
+    where "Normalize Interval"(O.effective) during MeasurementPeriod
+
+
+define function QualifiedConditions(value List<FHIR.Condition>):
+  value Condition
+    where (
+      FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+    )
+    and (
+      FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
+    )
+
+
+define function QualifiedObservations(value List<FHIR.Observation>):
+  value Observation
+		where (
+      //registered | preliminary | final | amended | corrected | cancelled | entered-in-error | unknown
+			Observation.status ~ 'final'
+			or Observation.status ~ 'amended'
+			or Observation.status ~ 'corrected'
+			or Observation.status ~ 'unknown'
+		)
 
 
 /////////////////////////////////////////

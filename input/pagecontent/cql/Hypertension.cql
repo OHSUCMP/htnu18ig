@@ -3,6 +3,7 @@ library Hypertension version '0.1'
 using FHIR version '4.0.1'
 
 include OHSUHTN_Common version '0.1' called Common
+include Screening version '0.1' called Screening
 
 context Patient
 
