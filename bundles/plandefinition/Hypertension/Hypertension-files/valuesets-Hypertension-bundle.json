@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "valuesets-Hypertension-0.1-bundle",
+  "id": "valuesets-Hypertension-bundle",
   "type": "transaction",
   "entry": [ {
     "resource": {
