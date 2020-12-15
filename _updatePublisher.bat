@@ -14,7 +14,7 @@ set gencont_sh_url=https://raw.githubusercontent.com/FHIR/sample-ig/master/_genc
 set gen_sh_url=https://raw.githubusercontent.com/FHIR/sample-ig/master/_genonce.sh
 set update_sh_url=https://raw.githubusercontent.com/FHIR/sample-ig/master/_updatePublisher.sh
 
-IF "%~1"=="/f" SET skipPrompts=true
+IF "%~1"=="/f" SET skipPrompts=y
 
 
 ECHO.
@@ -65,21 +65,21 @@ IF DEFINED FORCE (
 	GOTO download
 )
 
-IF "%skipPrompts%"=="true" (
-	SET create="Y"
+IF "%skipPrompts%"=="y" (
+	SET create=Y
 ) ELSE (
 	SET /p create="Ok? (Y/N) "
 )
 IF /I "%create%"=="Y" (
-    ECHO Will place publisher jar here: %input_cache_path%%publisher_jar%
+	ECHO Will place publisher jar here: %input_cache_path%%publisher_jar%
 	MKDIR "%input_cache_path%" 2> NUL
 	GOTO download
 )
 GOTO done
 
 :upgrade
-IF "%skipPrompts%"=="true" (
-	SET overwrite="Y"
+IF "%skipPrompts%"=="y" (
+	SET overwrite=Y
 ) ELSE (
 	SET /p overwrite="Overwrite %jarlocation%? (Y/N) "
 )
@@ -103,7 +103,7 @@ ECHO Unrecognized version: %version%
 GOTO done
 
 :win10
-rem CALL POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%dlurl%\",\"%jarlocation%\") } else { Invoke-WebRequest -Uri "%dlurl%" -Outfile "%jarlocation%" }
+CALL POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%dlurl%\",\"%jarlocation%\") } else { Invoke-WebRequest -Uri "%dlurl%" -Outfile "%jarlocation%" }
 
 GOTO done
 
@@ -132,8 +132,8 @@ GOTO done
 
 ECHO.
 ECHO Updating scripts
-IF "%skipPrompts%"=="true" (
-	SET updateScripts="Y"
+IF "%skipPrompts%"=="y" (
+	SET updateScripts=Y
 ) ELSE (
 	SET /p updateScripts="Update scripts? (Y/N) "
 )
