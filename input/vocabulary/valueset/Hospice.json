@@ -13,7 +13,7 @@
   "version": "20170504",
   "name": "Hospice care ambulatory",
   "status": "active",
-  "date": "2017-05-04T01:00:13-04:00",
+  "date": "2017-05-04T01:00:00",
   "publisher": "Mathematica",
   "compose": {
     "include": [
