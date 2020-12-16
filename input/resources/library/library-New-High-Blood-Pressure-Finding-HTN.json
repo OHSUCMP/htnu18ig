@@ -7,7 +7,7 @@
       "reference": "cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig//Library/library-New-High-Blood-Pressure-Finding-HTN",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-New-High-Blood-Pressure-Finding-HTN",
   "version": "0.1",
   "name": "NewHighBloodPressure",
   "title": "Library - OHSU Logic for identifying High Blood Pressure / Hypertension",

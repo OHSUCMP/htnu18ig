@@ -11,7 +11,7 @@
       "reference": "cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig//Library/library-Screening-0.1",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-Screening-0.1",
   "version": "0.1",
   "name": "Screening",
   "title": "Library - OHSU Logic for hypertension screening",

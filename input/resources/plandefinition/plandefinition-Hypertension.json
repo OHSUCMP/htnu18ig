@@ -9,7 +9,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>OHSU HTN Test - Hypertension</b></p></div>"
   },
-  "url": "https://github.com/OHSUCMP/htnu18ig/blob/master/input/resources/plandefinition/plandefinition-Hypertension",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/PlanDefinition/plandefinition-Hypertension",
   "identifier": [
     {
       "use": "official",
@@ -70,9 +70,7 @@
   ],
   "copyright": "© OHSU 2020+.",
   "library": [
-    {
-      "reference": "Library/library-Hypertension"
-    }
+     "http://fhir.org/guides/ohsu/htnu18ig/Library/library-Hypertension"
   ],
   "action": [
     {

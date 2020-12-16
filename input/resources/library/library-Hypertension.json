@@ -11,7 +11,7 @@
       "reference": "cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig//Library/library-Hypertension-0.1",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-Hypertension",
   "version": "0.1",
   "name": "Hypertension",
   "title": "Library - OHSU Logic for identifying hypertension",
