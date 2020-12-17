@@ -59,10 +59,10 @@
     "resource": "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
   }, {
     "type": "depends-on",
-    "resource": "http://fhir.org/guides/ohsu/htnu18ig/Library/OHSUHTN_Common|0.1"
+    "resource": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-OHSUHTN-Common|0.1"
   }, {
     "type": "depends-on",
-    "resource": "http://fhir.org/guides/ohsu/htnu18ig/Library/Screening|0.1"
+    "resource": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-Screening|0.1"
   } ],
   "parameter": [ {
     "name": "Patient",

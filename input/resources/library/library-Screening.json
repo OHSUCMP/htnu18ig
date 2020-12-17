@@ -11,7 +11,7 @@
       "reference": "cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-Screening-0.1",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-Screening",
   "version": "0.1",
   "name": "Screening",
   "title": "Library - OHSU Logic for hypertension screening",
@@ -62,7 +62,7 @@
     "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
   }, {
     "type": "depends-on",
-    "resource": "http://fhir.org/guides/ohsu/htnu18ig/Library/OHSUHTN_Common|0.1"
+    "resource": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-OHSUHTN-Common|0.1"
   }, {
     "type": "depends-on",
     "resource": "http://loinc.org"

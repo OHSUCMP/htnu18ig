@@ -1,15 +1,15 @@
 {
   "resourceType": "Library",
-  "id": "library-OHSUHTN_Common",
+  "id": "library-OHSUHTN-Common",
   "extension": [ {
     "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-softwaresystem",
     "valueReference": {
       "reference": "cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/OHSUHTN_Common",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-OHSUHTN-Common",
   "version": "0.1",
-  "name": "OHSUHTN_Common",
+  "name": "OHSUHTN-Common",
   "relatedArtifact": [ {
     "type": "depends-on",
     "resource": "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"

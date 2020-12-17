@@ -7,7 +7,7 @@
       "reference": "cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/New-High-Blood-Pressure-Finding-HTN",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-New-High-Blood-Pressure-Finding-HTN",
   "version": "0.0.1",
   "name": "New-High-Blood-Pressure-Finding-HTN",
   "relatedArtifact": [ {
@@ -18,7 +18,7 @@
     "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
   }, {
     "type": "depends-on",
-    "resource": "http://fhir.org/guides/ohsu/htnu18ig/Library/OHSUHTN_Common|0.1"
+    "resource": "http://fhir.org/guides/ohsu/htnu18ig/Library/library-OHSUHTN-Common|0.1"
   }, {
     "type": "depends-on",
     "resource": "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1182.84"

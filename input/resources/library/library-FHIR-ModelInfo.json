@@ -12,7 +12,7 @@
       "reference": "cqf-tooling"
     }
   } ],
-  "url": "http://hl7.org/fhir/Library/FHIR-ModelInfo-4.0.1",
+  "url": "http://hl7.org/fhir/Library/FHIR-ModelInfo",
   "identifier": [ {
     "use": "official",
     "system": "http://example.org/fhir/cqi/ecqm/Library/Identifier",
