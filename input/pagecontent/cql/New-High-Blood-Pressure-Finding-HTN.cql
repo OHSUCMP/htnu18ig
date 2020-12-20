@@ -1,4 +1,4 @@
-library "New-High-Blood-Pressure-Finding-HTN" version '0.0.1'
+library "Hypertension" version '0.1'
 
 using FHIR version '4.0.1'
 
@@ -16,47 +16,47 @@ valueset "Palliative or Hospice Care VS": 'https://cts.nlm.nih.gov/fhir/ValueSet
 valueset "Hospice Care VS": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.1004.20'
 
 parameter "Measurement Period" default Interval[@2019-01-01T00:00:00,@2021-01-01T00:00:00]
+
 context Patient
 
-define "generic_condition_valuesets":
-  [Condition: "Hospice Care VS"]
-  union [Condition: "Hospice Care VS"]
+// TODO: Determine Usage of this file with Hypertension flow process - Exclusion Criteria and Sub Populations.
 
-define "Systolic BP greater than 140":
-  WithUnit([Observation: "Systolic Blood Pressure Greater Than Equal To 140 VS"],  'mm[Hg]')
+/* Recommendation Criteria - Hypertension  */
+define "Meets Inclusion Criteria":
+  "Age 18 to 85"
+    and "elevated BP"
 
-define "Diastolic Blood Pressure Greater Than Equal To 90":
-  [Observation: "Diastolic Blood Pressure Greater Than Equal To 90 VS"]
+define "Meets Exclusion Criteria":
+  "Pregnant (SNOMED)"
+    or "Non essential Hypertension SNOMEDCT"
+    or "End Stage Renal Disease"
+    or "Hospice Care"
 
+define "In Population":
+  "Meets Inclusion Criteria"
+    and not "Meets Exclusion Criteria"
+
+define "Recommendation":
+  if "Meets Exclusion Criteria" then 'Patient meets the exclusion criteria, so standard high blood pressure (hypertension) guidelines will not apply.'
+  else if "Pregnant Subpopulation" then 'Follow up with your OB-Gyn and or Family Practitioner regarding your highblood pressure reading today.'
+  else if "Secondary hypertension subpopulation" then 'You have a known cause of high blood pressure (hypertension) and had a high blood pressure reading today.  Please see your specialist regarding the high reading today.'
+  else if "End stage renal disease subpopulation" then 'You have kidney damage and had a high blood pressure reading today.  Please follow-up with your nephrologist. '
+  else null
+
+define "Rationale":
+  if "Meets Exclusion Criteria" then null
+  else if "Pregnant Subpopulation" then 'Uncontrolled blood pressure during pregnancy can lead to preeclampsia or even seizures.  Usually high blood pressure occurs in women with usually normal blood pressure roughly around 20 weeks pregnant.'
+  else if "Secondary hypertension subpopulation" then 'Your high blood pressure (hypertension) has a known cause and requires specific therapy outside the normal scope of the hypertension guidelines.'
+  else if "End stage renal disease subpopulation" then 'With your kidney damage you are outside of the normal high blood pressure (hypertension) guidelines.'
+  else null
+
+define "Errors":
+  null
+
+
+/*  Population  */
 define "Age 18 to 85":
   AgeInYears() >= 18 and AgeInYears() <= 85
-
-define "Systolic BP greater than or equal to 140":
-  exists(WithUnit([Observation: "Systolic Blood Pressure Greater Than Equal To 140 VS"],  'mm[Hg]'))
-
-define "Diastolic BP greater than 90":
-  exists(WithUnit([Observation: "Diastolic Blood Pressure Greater Than Equal To 90 VS_1"],  'mm[Hg]'))
-
-define "Elevated Blood Pressure Reading":
-  exists([Encounter: "Elevated Blood Pressure Reading VS"])
-
-define "Pregnant (SNOMED)":
-  exists(ActiveOrRecurring([Condition: "Pregnant (SNOMED) VS"]))
-
-define "Non essential Hypertension SNOMEDCT":
-  exists(ActiveCondition([Condition: "Non essential Hypertension SNOMEDCT VS"]))
-
-define "End Stage Renal Disease":
-  exists(Confirmed([Condition: "End Stage Renal Disease VS"]))
-
-define "Hospice Care":
-  exists(Confirmed([Condition: "Palliative or Hospice Care VS"]))
-
-define "Pregnant (SNOMED) Subpopulation":
-  exists(Confirmed(ActiveCondition([Condition: "Pregnant (SNOMED) VS"])))
-
-define "Non essential Hypertension SNOMEDCT subpopulation":
-  exists(Confirmed([Condition: "Non essential Hypertension SNOMEDCT VS"]))
 
 define "Age under 18 subpopulation":
   AgeInYears() <= 18
@@ -64,35 +64,26 @@ define "Age under 18 subpopulation":
 define "Age over 85 subpopulation":
   AgeInYears() >= 85
 
+define "Pregnant (SNOMED) Subpopulation":
+  exists(Common.QualifiedCondition([Condition: "Pregnant (SNOMED) VS"]))
+
+define "Non essential Hypertension SNOMEDCT subpopulation":
+  exists(Common.QualifiedCondition([Condition: "Non essential Hypertension SNOMEDCT VS"]))
+
 define "Hospice Care subpopulation":
-  exists(Confirmed("generic_condition_valuesets"))
+  exists(Common.QualifiedCondition([Condition: "Hospice Care VS"]))
 
 define "End Stage Renal Disease subpopulation":
-  exists(Confirmed([Condition: "End Stage Renal Disease VS"]))
-
-define "MeetsInclusionCriteria":
-  "Age 18 to 85"
-  and "elevated BP"
-
-define "elevated BP":
-  "Systolic BP greater than or equal to 140"
-  or "Diastolic BP greater than 90"
-  or "Elevated Blood Pressure Reading"
-
-define "MeetsExclusionCriteria":
-  "Pregnant (SNOMED)"
-  or "Non essential Hypertension SNOMEDCT"
-  or "End Stage Renal Disease"
-  or "Hospice Care"
+  exists(Common.QualifiedCondition([Condition: "End Stage Renal Disease VS"]))
 
 define "Pregnant Subpopulation":
-  if "InPopulation" is not true then
+  if "In Population" is not true then
     null
   else
   "Pregnant (SNOMED) Subpopulation"
 
 define "Secondary hypertension subpopulation":
-  if "InPopulation" is not true then
+  if "In Population" is not true then
     null
   else
   "Non essential Hypertension SNOMEDCT subpopulation"
@@ -105,47 +96,51 @@ define "Had hospice subpopulation":
   "Hospice Care subpopulation"
 
 define "End stage renal disease subpopulation":
-  if "InPopulation" is not true then
+  if "In Population" is not true then
     null
   else
   "End Stage Renal Disease subpopulation"
 
-define "InPopulation":
-  "MeetsInclusionCriteria" and not "MeetsExclusionCriteria"
 
-define "Recommendation":
-  if "MeetsExclusionCriteria" then 'Patient meets the exclusion criteria, so standard high blood pressure (hypertension) guidelines will not apply.'
-  else if "Pregnant Subpopulation" then 'Follow up with your OB-Gyn and or Family Practitioner regarding your highblood pressure reading today.  '
-  else if "Secondary hypertension subpopulation" then 'You have a known cause of high blood pressure (hypertension) and had a high blood pressure reading today.  Please see your specialist regarding the high reading today. '
-  else if "End stage renal disease subpopulation" then 'You have kidney damage and had a high blood pressure reading today.  Please follow-up with your nephrologist. '
-  else null
+/* Blood Pressure */
+
+/* define "elevated BP":
+  "Systolic BP greater than or equal to 140"
+  or "Diastolic BP greater than 90"
+  or "Elevated Blood Pressure Reading"
+
+define "Systolic BP greater than 140":
+  WithUnit(Common.QualifiedObservation([Observation: "Systolic Blood Pressure Greater Than Equal To 140 VS"]),  'mm[Hg]')
+
+define "Diastolic Blood Pressure Greater Than Equal To 90":
+  Common.QualifiedObservation([Observation: "Diastolic Blood Pressure Greater Than Equal To 90 VS"])
+
+define "Systolic BP greater than or equal to 140":
+  exists(WithUnit(Common.QualifiedObservation([Observation: "Systolic Blood Pressure Greater Than Equal To 140 VS"]),  'mm[Hg]'))
+
+define "Diastolic BP greater than 90":
+  exists(WithUnit(Common.QualifiedObservation([Observation: "Diastolic Blood Pressure Greater Than Equal To 90 VS_1"]),  'mm[Hg]'))
+
+define "Elevated Blood Pressure Reading":
+  exists([Encounter: "Elevated Blood Pressure Reading VS"]) */
 
 
-define "Rationale":
-  if "MeetsExclusionCriteria" then null
-  else if "Pregnant Subpopulation" then 'Uncontrolled blood pressure during pregnancy can lead to preeclampsia or even seizures.  Usually high blood pressure occurs in women with usually normal blood pressure roughly around 20 weeks pregnant. '
-  else if "Secondary hypertension subpopulation" then 'Your high blood pressure (hypertension) has a known cause and requires specific therapy outside the normal scope of the hypertension guidelines.'
-  else if "End stage renal disease subpopulation" then 'With your kidney damage you are outside of the normal high blood pressure (hypertension) guidelines. '
-  else null
+/*  Exclusion Criteria  */
+define "Pregnant (SNOMED)":
+  exists(Common.ConfirmedCondition(Common.ActiveOrRecurring([Condition: "Pregnant (SNOMED) VS"])))
 
-define "Errors":
-  null
+define "Non essential Hypertension SNOMEDCT":
+  exists(Common.QualifiedCondition([Condition: "Non essential Hypertension SNOMEDCT VS"]))
+
+define "End Stage Renal Disease":
+  exists(Common.ConfirmedCondition([Condition: "End Stage Renal Disease VS"]))
+
+define "Hospice Care":
+  exists(Common.ConfirmedCondition([Condition: "Palliative or Hospice Care VS"]))
 
 
-define function WithUnit(ObsList List<Observation>, Unit String):
-  ObsList O
-    where (O.value as FHIR.Quantity).unit.value = Unit or (O.value as FHIR.Quantity).code.value = Unit
-
-define function Confirmed(CondList List<Condition>):
-  CondList C where FHIRHelpers.ToConcept(C.verificationStatus) = Common."confirmed"
-
-define function ActiveCondition(CondList List<Condition>):
-  CondList C
-    where FHIRHelpers.ToConcept(C.clinicalStatus) = Common."active"
-      and (
-        C.abatement is null
-      )
-
-define function ActiveOrRecurring(CondList List<Condition>):
-  CondList C where FHIRHelpers.ToConcept(C.clinicalStatus) = Common."active"
-  or FHIRHelpers.ToConcept(C.clinicalStatus) = Common."relapse"
+/* Helpers */
+define function WithUnit(list List<Observation>, Unit String):
+  list Observations
+    where (Observations.value as FHIR.Quantity).unit.value = Unit
+     or (Observations.value as FHIR.Quantity).code.value = Unit
