@@ -6,13 +6,14 @@ include FHIRHelpers version '4.0.1' called FHIRHelpers
 
 codesystem "LOINC": 'http://loinc.org'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
-codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-verification'
+codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
+codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
 valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
 valueset "V3 Value SetActEncounterCode": 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'
-valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
+
 
 // Condition Clinical Status Codes - Consider value sets for these
 code "active": 'active' from "ConditionClinicalStatusCodes"
@@ -30,102 +31,10 @@ code "confirmed": 'confirmed' from ConditionVerificationStatusCodes
 code "refuted": 'refuted' from ConditionVerificationStatusCodes
 code "entered-in-error": 'entered-in-error' from ConditionVerificationStatusCodes
 
-// NOTE: Measurement Period is defined as the 2-year period ending on the date of the Patient Encounter
-//parameter "Measurement Period" default Interval[@2019-01-01T00:00:00, @2021-01-01T00:00:00]
+// Encounter Class Type Codes
+code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
 context Patient
-
-
-/* Patient Entered Elevated BP Reading Today */
-define function "Measurement Period"(patientEncounter FHIR.Encounter):
-  Interval[patientEncounter.period.end - 2 years, patientEncounter.period.end]
-
-// NOTE: Office-based visit Encounter valueset?
-define "Patient Encounter":
-  Last(
-    ["Encounter"] PatientEncounter
-      where (
-        PatientEncounter.status ~ 'arrived'
-        or PatientEncounter.status ~ 'in-progress'
-        or PatientEncounter.status ~ 'finished'
-      )
-        and PatientEncounter.class.code ~ 'AMB'
-  sort by end of period)
-
-// NOTE: Patient Entered BP Reading "Today"
-define "Most Recent BP":
-  Last("Blood Pressure Observations" O sort by issued)
-
-define "Blood Pressure Observation for Patient Encounter":
-  "Most Recent BP" BPObservation
-    with "Patient Encounter" PatientEncounter
-        such that "Normalize Interval"(BPObservation.effective) during PatientEncounter.period
-
-
-/* Blood Pressure Reading */
-define function WithUnit(list List<Observation>, Unit String):
-  list Observations
-    where (Observations.value as FHIR.Quantity).unit.value = Unit
-     or (Observations.value as FHIR.Quantity).code.value = Unit
-
-define "Blood Pressure Observations":
-  (WithUnit(QualifiedObservation([Observation: "Blood Pressure Measured"]), 'mmHg')) O
-    where "Normalize Interval"(O.effective) during "Measurement Period"("Patient Encounter")
-
-// TODO: Determine Encounter Type valueset.
-define "Blood Pressure Encounters":
-  (QualifiedEncounters(["Encounter"])) BPEncounter
-    where BPEncounter.class in "V3 Value SetActEncounterCode"
-
-define "Ambulatory Blood Pressure Monitoring Procedures":
-  (QualifiedProcedures(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
-    let ABPMProcedureInterval: "Normalize Interval"(ABPMProcedure.performed)
-      where ABPMProcedureInterval during "Measurement Period"("Patient Encounter")
-        and exists (
-          "Blood Pressure Observations" BPObservation
-            where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
-        )
-        and hours between start of ABPMProcedureInterval and end of ABPMProcedureInterval >= 12
-
-define "Office Blood Pressure Observations":
-  "Blood Pressure Observations" BPObservation
-    with "Blood Pressure Encounters" BPEncounter
-      such that BPEncounter.class.code ~ 'AMB'
-        and BPObservation.encounter.reference ~ ('Encounter/' + BPEncounter.id)
-
-define "Home Blood Pressure Observations":
-  "Blood Pressure Observations" BPObservation
-    with "Blood Pressure Encounters" BPEncounter
-      such that BPEncounter.class.code ~ 'HH'
-        and BPObservation.encounter.reference ~ ('Encounter/' + BPEncounter.id)
-
-define "Ambulatory Blood Pressure Monitoring Observations":
-  (Last("Ambulatory Blood Pressure Monitoring Procedures")) ABPMProcedure
-    return (
-      "Blood Pressure Observations" BPObservation
-      where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
-    )
-
-define "Has BP Set":
-  if exists "Ambulatory Blood Pressure Monitoring Procedures" then true
-  else if Count("Office Blood Pressure Observations") >= 4 then true
-  else if Count("Home Blood Pressure Observations") >= 6 then true
-  else false
-
-define "Most Recent BP Set":
-  if exists "Ambulatory Blood Pressure Monitoring Procedures" then
-    "Ambulatory Blood Pressure Monitoring Observations"
-  else if Count("Office Blood Pressure Observations") >= 4 then
-    Take(
-      ("Office Blood Pressure Observations" O
-        sort by issued desc
-      ), 4)
-  else if Count("Home Blood Pressure Observations") >= 6 then
-    Take(
-      ("Home Blood Pressure Observations" O
-        sort by issued desc
-      ), 6)
-  else null
 
 define function "Avg Systolic BP"(list List<FHIR.Observation>):
   Avg(list O
@@ -148,6 +57,11 @@ define function "Normal BP"(list List<FHIR.Observation>):
   ("Avg BP"(list)) O
     where O.systolic.value < 120
     and O.diastolic.value < 80
+
+define function "Elevated or Above BP"(list List<FHIR.Observation>):
+  ("Avg BP"(list)) O
+    where O.systolic.value >= 120
+    or O.diastolic.value >= 80
 
 define function "Elevated BP"(list List<FHIR.Observation>):
   ("Avg BP"(list)) O
@@ -174,8 +88,11 @@ define function "HTN Crisis BP"(list List<FHIR.Observation>):
     or O.diastolic.value > 120
 
 define function "Systolic BP Variability"(list List<FHIR.Observation>):
-  StdDev(list O
-    return all FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Systolic blood pressure").value)
+  if Count(list) = 1 then
+    null
+  else
+    StdDev(list O
+      return all FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Systolic blood pressure").value)
   )
 
 define function "Systolic BP Variability String"(list List<FHIR.Observation>):
@@ -184,6 +101,15 @@ define function "Systolic BP Variability String"(list List<FHIR.Observation>):
 
 
 /* Helpers */
+define function WithUnit(list List<Observation>, Unit String):
+  list Observations
+    where (
+      ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).unit.value = Unit
+        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).unit.value = Unit)
+      or ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).code.value = Unit
+        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).code.value = Unit)
+    )
+
 define function QualifiedEncounters(list List<FHIR.Encounter>):
   list Encounter
     //planned | arrived | triaged | in-progress | onleave | finished | cancelled +

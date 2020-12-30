@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "ConfirmHTN",
+  "active": true,
+  "name": [
+    {
+      "text": "ConfirmHTN Patient",
+      "family": "Patient",
+      "given": [
+        "ConfirmHTN"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1991-04-04"
+}

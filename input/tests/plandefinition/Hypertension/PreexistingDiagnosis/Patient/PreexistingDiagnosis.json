@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "PreexistingDiagnosis",
+  "active": true,
+  "name": [
+    {
+      "text": "RecommendBP Patient",
+      "family": "Patient",
+      "given": [
+        "RecommendBP"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1982-08-10"
+}
