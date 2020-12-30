@@ -70,7 +70,6 @@ define "Rationale":
 
 /* Patient Entered Elevated BP Reading Today */
 // NOTE: Office-based visit Encounter valueset?
-// TODO: Look into sorting issue.
 define "Patient Ambulatory Encounters":
   ["Encounter"] PE
     where (
@@ -83,17 +82,20 @@ define "Patient Ambulatory Encounters":
 define "Most Recent Patient Encounter":
   Last("Patient Ambulatory Encounters" E sort by end of period)
 
-  // NOTE: Measurement Period is defined as the 2-year period ending on the date of the Patient Encounter
-  //parameter "Measurement Period" default Interval[@2019-01-01T00:00:00, @2021-01-01T00:00:00]
+  // NOTE: Measurement Period is defined as the 2-year period ending on the date of the most recent Patient Encounter
+  // Does not currently function as expected.
 define "Measurement Period":
   "Most Recent Patient Encounter" PatientEncounter
     return Interval[PatientEncounter.period.end - 2 years, PatientEncounter.period.end]
 
 
 /* Blood Pressure Reading */
+// NOTE: Timing relationship should more accurately follow the Measurement Period relationship.
 define "Blood Pressure Observations":
   (Common.WithUnit(Common.QualifiedObservation([Observation: "Blood Pressure Measured"]), 'mmHg')) O
-    where Common."Normalize Interval"(O.effective) during "Measurement Period"
+    with "Patient Ambulatory Encounters" PE
+      such that Common."Normalize Interval"(O.effective) during PE.period
+        or Common."Normalize Interval"(O.effective) starts 24 months or less before end of PE.period
 
 define "Most Recent BP":
   Last("Blood Pressure Observations" O sort by Coalesce(issued, start of Common."Normalize Interval"(effective)))
@@ -101,8 +103,8 @@ define "Most Recent BP":
 define "Ambulatory Blood Pressure Monitoring Procedures":
   (Common.QualifiedProcedures(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
     let ABPMProcedureInterval: Common."Normalize Interval"(ABPMProcedure.performed)
-      where ABPMProcedureInterval during "Measurement Period"
-        and exists (
+      //where ABPMProcedureInterval during "Measurement Period"
+        where exists (
           "Blood Pressure Observations" BPObservation
             where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
         )
@@ -148,7 +150,8 @@ define "Most Recent BP Set":
       ), 6)
   else null
 
-/* Blood Pressure */
+
+/* Blood Pressure Workflow */
 define "Patient Has Above Normal BP":
   Common."Elevated or Above BP"({ "Most Recent BP" }) is not null
 
