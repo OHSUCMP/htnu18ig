@@ -5,34 +5,48 @@
   "entry": [ {
     "resource": {
       "resourceType": "ValueSet",
-      "id": "blood-pressure-measured",
+      "id": "2.16.840.1.113883.3.600.2012",
       "meta": {
-        "versionId": "5",
-        "lastUpdated": "2014-05-02T01:00:02.000-04:00"
+        "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
       },
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Blood Pressure Measured</h2><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/55284-4.html\">55284-4</a></td><td>Blood pressure systolic and diastolic</td><td/></tr></table></li></ul></div>"
-      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "shareable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "narrative"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "publishable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "executable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "executable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+        "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+      } ],
       "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012",
       "version": "20140502",
-      "name": "Blood Pressure Measured",
+      "title": "Blood Pressure Measured",
       "status": "active",
-      "date": "2014-05-02T01:00:02-04:00",
-      "publisher": "QIP",
-      "compose": {
-        "include": [ {
+      "experimental": false,
+      "publisher": "Quality Insights of Pennsylvania",
+      "expansion": {
+        "timestamp": "2020-12-21T15:03:45-07:00",
+        "contains": [ {
           "system": "http://loinc.org",
-          "concept": [ {
-            "code": "55284-4",
-            "display": "Blood pressure systolic and diastolic"
-          } ]
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
         } ]
       }
     },
     "request": {
       "method": "PUT",
-      "url": "ValueSet/blood-pressure-measured/_history/5"
+      "url": "ValueSet/2.16.840.1.113883.3.600.2012"
     }
   }, {
     "resource": {
@@ -182,6 +196,60 @@
   }, {
     "resource": {
       "resourceType": "ValueSet",
+      "id": "2.16.840.1.113883.3.526.2.1045",
+      "meta": {
+        "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "shareable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "narrative"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "publishable"
+      }, {
+        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+        "valueString": "Under Development"
+      }, {
+        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+        "valueString": "Under Development"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+        "valueCode": "executable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+        "valueCode": "executable"
+      }, {
+        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+        "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+      } ],
+      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045",
+      "version": "20170504",
+      "title": "Diastolic Blood Pressure",
+      "status": "active",
+      "experimental": false,
+      "publisher": "PCPI Foundation",
+      "description": "Under Development",
+      "purpose": "Under Development",
+      "expansion": {
+        "timestamp": "2020-12-16T15:57:13-07:00",
+        "contains": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "8462-4",
+          "display": "Diastolic blood pressure"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "ValueSet/2.16.840.1.113883.3.526.2.1045"
+    }
+  }, {
+    "resource": {
+      "resourceType": "ValueSet",
       "id": "2.16.840.1.113762.1.4.1032.10",
       "meta": {
         "versionId": "12",
@@ -280,60 +348,6 @@
   }, {
     "resource": {
       "resourceType": "ValueSet",
-      "id": "2.16.840.1.113883.3.526.2.1045",
-      "meta": {
-        "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
-      },
-      "extension": [ {
-        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-        "valueCode": "shareable"
-      }, {
-        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
-        "valueCode": "narrative"
-      }, {
-        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-        "valueCode": "publishable"
-      }, {
-        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
-        "valueString": "Under Development"
-      }, {
-        "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
-        "valueString": "Under Development"
-      }, {
-        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
-        "valueCode": "executable"
-      }, {
-        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
-        "valueCode": "executable"
-      }, {
-        "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
-        "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
-      } ],
-      "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045",
-      "version": "20170504",
-      "title": "Diastolic Blood Pressure",
-      "status": "active",
-      "experimental": false,
-      "publisher": "PCPI Foundation",
-      "description": "Under Development",
-      "purpose": "Under Development",
-      "expansion": {
-        "timestamp": "2020-12-16T15:57:13-07:00",
-        "contains": [ {
-          "system": "http://loinc.org",
-          "version": "2.68",
-          "code": "8462-4",
-          "display": "Diastolic blood pressure"
-        } ]
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "ValueSet/2.16.840.1.113883.3.526.2.1045"
-    }
-  }, {
-    "resource": {
-      "resourceType": "ValueSet",
       "id": "v3-ActEncounterCode",
       "meta": {
         "lastUpdated": "2019-11-01T09:29:23.356+11:00",
@@ -392,57 +406,57 @@
         "timestamp": "2018-08-12T00:00:00",
         "contains": [ {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "AMB",
           "display": "ambulatory"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "EMER",
           "display": "emergency"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "FLD",
           "display": "field"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "HH",
           "display": "home health"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "IMP",
           "display": "inpatient encounter"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "ACUTE",
           "display": "inpatient acute"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "NONAC",
           "display": "inpatient non-acute"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "OBSENC",
           "display": "observation encounter"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "PRENC",
           "display": "pre-admission"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "SS",
           "display": "short stay"
         }, {
           "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-          "version": "2014-03-26",
+          "version": "2.0.0",
           "code": "VR",
           "display": "virtual"
         } ]

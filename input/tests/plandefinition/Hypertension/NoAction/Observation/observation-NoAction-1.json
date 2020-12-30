@@ -19,7 +19,7 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "version": "",
+        "version": "2.68",
         "code": "55284-4",
         "display": "Blood pressure systolic and diastolic"
       }

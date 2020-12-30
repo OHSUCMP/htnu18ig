@@ -1,0 +1,233 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-ConsiderHTNStage1-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-ConsiderHTNStage1-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage1"
+      },
+      "period": {
+        "start": "2020-12-29T12:00:00-06:00",
+        "end": "2020-12-29T13:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-ConsiderHTNStage1-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-ConsiderHTNStage1-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage1"
+      },
+      "period": {
+        "start": "2020-07-02T14:00:00-06:00",
+        "end": "2020-07-02T15:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-ConsiderHTNStage1-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-ConsiderHTNStage1-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage1"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-ConsiderHTNStage1-1"
+      },
+      "effectiveDateTime": "2020-12-29T12:40:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 131,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 81,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-ConsiderHTNStage1-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-ConsiderHTNStage1-2",
+      "partOf": [ {
+        "reference": "Procedure/procedure-ConsiderHTNStage1-1"
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage1"
+      },
+      "effectiveDateTime": "2020-07-02T15:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 138,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 88,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-ConsiderHTNStage1-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "ConsiderHTNStage1",
+      "active": true,
+      "name": [ {
+        "text": "ConsiderHTNStage1 Patient",
+        "family": "Patient",
+        "given": [ "ConsiderHTNStage1" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1995-09-27"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/ConsiderHTNStage1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "procedure-ConsiderHTNStage1-1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "93784",
+          "display": "Ambulatory blood pressure monitoring, utilizing report-generating software, automated, worn continuously for 24 hours or longer; including recording, scanning analysis, interpretation and report"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage1"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-ConsiderHTNStage1-2"
+      },
+      "performedPeriod": {
+        "start": "2020-07-02T15:00:00-06:00",
+        "end": "2020-07-03T16:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/procedure-ConsiderHTNStage1-1"
+    }
+  } ]
+}
