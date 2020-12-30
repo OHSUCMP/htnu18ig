@@ -1,0 +1,18 @@
+{
+    "cards": [
+        {
+            "summary": "Population Inclusion Criteria",
+            "indicator": "info",
+            "source": {
+                "label": "Info for those with normal blood pressure",
+                "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+            }
+        },
+        {
+            "summary": "Patient may be in Hypertensive emergency.  Get this person to a hospital RIGHT NOW, like, not even kidding.  Call them an ambulance.",
+            "indicator": "info",
+            "detail": "Patient may be in Hypertensive emergency.  Get this person to a hospital RIGHT NOW, like, not even kidding.  Call them an ambulance.",
+            "source": {}
+        }
+    ]
+}

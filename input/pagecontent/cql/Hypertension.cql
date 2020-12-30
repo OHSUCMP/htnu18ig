@@ -44,25 +44,25 @@ define "In Population":
   "Meets Inclusion Criteria"
 
 define "Recommendation":
-  if "HTN Crisis" then 'Patient may be in Hypertensive emergency.  Get this person to a hospital RIGHT NOW, like, not even kidding.  Call them an ambulance.'
-  else if "Diagnosis of Preexisting Hypertension" then 'Patient has a preexisting diagnosis of Hypertension. Recommend patient for monitoring and treatment pathway.'
-  else if not "Patient has Set of BP Observations" then 'Recommend more BPs at office or home.'
-  else if "HTN Stage 2" then 'Patient has Stage 2 Hypertension.  Add or increase medication dosage, improve on exercise and diet initiatives.  Patient actually has to stop smoking and drinking now, for real.  I know they said they were going to stop last time around, but this time they really need to do it.'
-  else if "Consider HTN Stage 2" then 'Patient may have Stage 2 Hypertension. Consider diagnosis of stage 2 HTN.'
-  else if "Consider HTN Stage 1" then 'Patient may have Stage 1 Hypertension. Consider diagnosis of stage 1 HTN.'
-  else if "Prescribe HBP or ABP Monitoring" then 'Prescribe HBP or ABP monitoring to confirm diagnosis of HTN.'
-  else if "Prescribe Ambulatory BP Monitoring" then 'Prescribe Ambulatory BP Monitoring'
-  else 'No Further Action Required.'
+  if "HTN Crisis" then 'Patient may be in Hypertensive emergency.'
+  else if "Diagnosis of Preexisting Hypertension" then 'Patient has a preexisting diagnosis of Hypertension.'
+  else if "Patient does not have a Set of BP Observations" then 'Recommend more BPs at office or home.'
+  else if "HTN Stage 2" then 'Patient has Stage 2 Hypertension.'
+  else if "Consider HTN Stage 2" then 'Patient may have Stage 2 Hypertension.'
+  else if "Consider HTN Stage 1" then 'Patient may have Stage 1 Hypertension.'
+  else if "Prescribe HBP or ABP Monitoring" then 'Recommend confirming diagnosis of HTN.'
+  else if "Prescribe Ambulatory BP Monitoring" then 'Recommend Prescribe Ambulatory BP Monitoring.'
+  else 'Patient does not have an indication of a hypertensive state.'
 
 define "Rationale":
-  if "HTN Crisis" then 'Patient may be in Hypertensive emergency.  Get this person to a hospital RIGHT NOW, like, not even kidding.  Call them an ambulance.'
-  else if "Diagnosis of Preexisting Hypertension" then 'Patient has a preexisting diagnosis of Hypertension. Recommend patient for monitoring and treatment pathway.'
-  else if not "Patient has Set of BP Observations" then 'Recommend more BPs at office or home.'
-  else if "HTN Stage 2" then 'Patient has Stage 2 Hypertension.  Add or increase medication dosage, improve on exercise and diet initiatives.  Patient actually has to stop smoking and drinking now, for real.  I know they said they were going to stop last time around, but this time they really need to do it.'
-  else if "Consider HTN Stage 2" then 'Patient may have Stage 2 Hypertension. Consider diagnosis of stage 2 HTN.'
-  else if "Consider HTN Stage 1" then 'Patient may have Stage 1 Hypertension. Consider diagnosis of stage 1 HTN.'
+  if "HTN Crisis" then 'Get this person to a hospital RIGHT NOW, like, not even kidding.  Call them an ambulance.'
+  else if "Diagnosis of Preexisting Hypertension" then 'Recommend patient for monitoring and treatment pathway.'
+  else if "Patient does not have a Set of BP Observations" then 'A minimum of 4 office, 6 home, or 12 hours of ambulatory monitoring ensures the BP measurements are accurate.'
+  else if "HTN Stage 2" then 'Add or increase medication dosage, improve on exercise and diet initiatives.  Patient actually has to stop smoking and drinking now, for real.  I know they said they were going to stop last time around, but this time they really need to do it.'
+  else if "Consider HTN Stage 2" then 'Consider diagnosis of stage 2 HTN.'
+  else if "Consider HTN Stage 1" then 'Consider diagnosis of stage 1 HTN.'
   else if "Prescribe HBP or ABP Monitoring" then 'Prescribe HBP or ABP monitoring to confirm diagnosis of HTN.'
-  else if "Prescribe Ambulatory BP Monitoring" then 'Prescribe Ambulatory BP Monitoring'
+  else if "Prescribe Ambulatory BP Monitoring" then 'Prescribing Ambulatory BP Monitoring ensures more accurate BP results.'
   else 'No Further Action Required.'
 
 
@@ -148,9 +148,15 @@ define "Patient Has Above Normal BP":
 // Does patient have 'set' of BPs?
 define "Patient has Set of BP Observations":
   if "In Population" is not true then
-    null
+    false
   else
     "Has BP Set"
+
+define "Patient does not have a Set of BP Observations":
+  if "In Population" is not true then
+    false
+  else
+    not "Has BP Set"
 
 define "All BP":
   "Blood Pressure Observations"
@@ -161,7 +167,7 @@ define "Patient Has Hypertensive BP":
 
 define "HTN Crisis":
   if "In Population" is not true then
-    null
+    false
   else
     "Patient Has Hypertensive BP"
 
@@ -182,13 +188,13 @@ define "Patient Has HTN Stage 2 BP":
 
 define "HTN Stage 2":
   if "In Population" is not true then
-    null
+    false
   else
     "Patient Has HTN Stage 2 BP"
 
 define "Consider HTN Stage 2":
   if "In Population" is not true then
-    null
+    false
   else
     "Patient Has Potential HTN Stage 2 BP"
       and not "Patient Has HTN Stage 2 BP"
@@ -202,7 +208,7 @@ define "Patient Has Potential HTN Stage 1 BP":
 
 define "Consider HTN Stage 1":
   if "In Population" is not true then
-    null
+    false
   else
     "Patient Has Potential HTN Stage 1 BP"
 
@@ -215,7 +221,7 @@ define "Confirm HTN":
 
 define "Prescribe HBP or ABP Monitoring":
   if "In Population" is not true then
-    null
+    false
   else
     "Confirm HTN"
 
@@ -230,18 +236,32 @@ define "Confirm need for Patient Ambulatory BP Monitoring":
 
 define "Prescribe Ambulatory BP Monitoring":
   if "In Population" is not true then
-    null
+    false
   else
     "Confirm need for Patient Ambulatory BP Monitoring"
+
+define "No Further Action":
+  not (
+    "HTN Crisis"
+    and "Diagnosis of Preexisting Hypertension"
+    and "Patient does not have a Set of BP Observations"
+    and "HTN Stage 2"
+    and "Consider HTN Stage 2"
+    and "Consider HTN Stage 1"
+    and "Prescribe HBP or ABP Monitoring"
+    and "Prescribe Ambulatory BP Monitoring"
+  )
 
 
 /* Exclusion Criteria */
 // TODO: Determine if Pregnancy, End Stage Renal Diseasse, and Hospice Care affect Exclusions.
+// NOTE: Is there a timing period for diagnosing preexisting hypertensive states?
 // Has patient already been diagnosed with HTN?
+define "Conditions Indicating Preexisting Hypertension":
+  (Common.QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
+
 define "Diagnosis of Preexisting Hypertension":
   if "In Population" is not true then
-    null
+    false
   else
-    exists(Common.QualifiedCondition([Condition: "Non essential Hypertension SNOMEDCT"])) HypertensionDiagnosis
-  // NOTE: Is there a timing period for diagnosing preexisting hypertensive states?
-    //where Common."Prevalence Period"(HypertensionDiagnosis) during Common."Measurement Period"
+    exists "Conditions Indicating Preexisting Hypertension"

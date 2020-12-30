@@ -1,9 +1,11 @@
 {
   "resourceType": "Observation",
   "id": "observation-ConsiderHTNStage1-2",
-  "partOf": {
-    "reference": "Procedure/procedure-ConsiderHTNStage1-1"
-  },
+  "partOf": [
+    {
+      "reference": "Procedure/procedure-ConsiderHTNStage1-1"
+    }
+  ],
   "status": "final",
   "category": [
     {
