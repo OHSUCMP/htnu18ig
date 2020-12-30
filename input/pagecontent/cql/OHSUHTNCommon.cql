@@ -1,4 +1,4 @@
-library OHSUHTN_Common version '0.1'
+library OHSUHTNCommon version '0.1'
 
 using FHIR version '4.0.1'
 
