@@ -52,7 +52,6 @@ define "Recommendation":
   else if "Consider HTN Stage 1" then 'Patient may have Stage 1 Hypertension. Consider diagnosis of stage 1 HTN.'
   else if "Prescribe HBP or ABP Monitoring" then 'Prescribe HBP or ABP monitoring to confirm diagnosis of HTN.'
   else if "Prescribe Ambulatory BP Monitoring" then 'Prescribe Ambulatory BP Monitoring'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then 'Prescribe Ambulatory BP Monitoring'
   else 'No Further Action Required.'
 
 define "Rationale":
@@ -64,7 +63,6 @@ define "Rationale":
   else if "Consider HTN Stage 1" then 'Patient may have Stage 1 Hypertension. Consider diagnosis of stage 1 HTN.'
   else if "Prescribe HBP or ABP Monitoring" then 'Prescribe HBP or ABP monitoring to confirm diagnosis of HTN.'
   else if "Prescribe Ambulatory BP Monitoring" then 'Prescribe Ambulatory BP Monitoring'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then 'Prescribe Ambulatory BP Monitoring'
   else 'No Further Action Required.'
 
 
@@ -82,18 +80,11 @@ define "Patient Ambulatory Encounters":
 define "Most Recent Patient Encounter":
   Last("Patient Ambulatory Encounters" E sort by end of period)
 
-  // NOTE: Measurement Period is defined as the 2-year period ending on the date of the most recent Patient Encounter
-  // Does not currently function as expected.
-define "Measurement Period":
-  "Most Recent Patient Encounter" PatientEncounter
-    return Interval[PatientEncounter.period.end - 2 years, PatientEncounter.period.end]
-
 
 /* Blood Pressure Reading */
-// NOTE: Timing relationship should more accurately follow the Measurement Period relationship.
 define "Blood Pressure Observations":
   (Common.WithUnit(Common.QualifiedObservation([Observation: "Blood Pressure Measured"]), 'mmHg')) O
-    with "Patient Ambulatory Encounters" PE
+    with "Most Recent Patient Encounter" PE
       such that Common."Normalize Interval"(O.effective) during PE.period
         or Common."Normalize Interval"(O.effective) starts 24 months or less before end of PE.period
 
@@ -103,12 +94,11 @@ define "Most Recent BP":
 define "Ambulatory Blood Pressure Monitoring Procedures":
   (Common.QualifiedProcedures(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
     let ABPMProcedureInterval: Common."Normalize Interval"(ABPMProcedure.performed)
-      //where ABPMProcedureInterval during "Measurement Period"
-        where exists (
-          "Blood Pressure Observations" BPObservation
-            where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
-        )
-        and hours between start of ABPMProcedureInterval and end of ABPMProcedureInterval >= 12
+      where exists (
+        "Blood Pressure Observations" BPObservation
+          where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
+      )
+      and hours between start of ABPMProcedureInterval and end of ABPMProcedureInterval >= 12
 
 define "Office Blood Pressure Observations":
   "Blood Pressure Observations" BPObservation

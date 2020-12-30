@@ -47,7 +47,7 @@
         "text": "Systolic blood pressure"
       },
       "valueQuantity": {
-        "value": 109,
+        "value": 111,
         "unit": "mmHg",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -66,7 +66,7 @@
         "text": "Diastolic blood pressure"
       },
       "valueQuantity": {
-        "value": 60,
+        "value": 80,
         "unit": "mmHg",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
