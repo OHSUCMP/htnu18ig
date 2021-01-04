@@ -1,7 +1,7 @@
 {
     "cards": [
         {
-            "summary": "Population Inclusion Criteria",
+            "summary": "Hypertension Diagnosis",
             "indicator": "info",
             "source": {
                 "label": "Info for those with normal blood pressure",
@@ -9,9 +9,9 @@
             }
         },
         {
-            "summary": "Patient may be in Hypertensive emergency.  Get this person to a hospital RIGHT NOW, like, not even kidding.  Call them an ambulance.",
-            "indicator": "info",
-            "detail": "Patient may be in Hypertensive emergency.  Get this person to a hospital RIGHT NOW, like, not even kidding.  Call them an ambulance.",
+            "summary": "Patient may be in Hypertensive emergency.",
+            "indicator": "critical",
+            "detail": "Get this person to a hospital RIGHT NOW, like, not even kidding.  Call them an ambulance.",
             "source": {}
         }
     ]

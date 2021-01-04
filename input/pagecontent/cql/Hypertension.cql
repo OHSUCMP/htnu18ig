@@ -65,6 +65,17 @@ define "Rationale":
   else if "Prescribe Ambulatory BP Monitoring" then 'Prescribing Ambulatory BP Monitoring ensures more accurate BP results.'
   else 'No Further Action Required.'
 
+define "Indicator Status":
+  if "HTN Crisis" then "Critical"
+  else if "Diagnosis of Preexisting Hypertension" then "Warning"
+  else if "Patient does not have a Set of BP Observations" then "Info"
+  else if "HTN Stage 2" then "Warning"
+  else if "Consider HTN Stage 2" then "Warning"
+  else if "Consider HTN Stage 1" then "Warning"
+  else if "Prescribe HBP or ABP Monitoring" then "Info"
+  else if "Prescribe Ambulatory BP Monitoring" then "Info"
+  else "Info"
+
 
 /* Patient Entered Elevated BP Reading Today */
 // NOTE: Office-based visit Encounter valueset?

@@ -101,15 +101,15 @@
       ],
       "action": [
         {
-          "title": "HTN Crisis",
-          "description": "Determines if the patient has Hypertensive BP (systolic > 180 AND diastolic > 120)",
+          "title": "Recommendation",
+          "description": "Determines type of recommendation regarding status of Hypertension Diagnosis.",
           "condition": [
             {
               "kind": "applicability",
               "expression": {
-                "description": "Determine if Patient is in a hypertensive crisis during office visit.",
+                "description": "Determine if Patient is in hypertension population.",
                 "language": "text/cql.identifier",
-                "expression": "HTN Crisis"
+                "expression": "In Population"
               }
             }
           ],
@@ -117,7 +117,7 @@
             {
               "path": "action.title",
               "expression": {
-                "description": "Determines if patient should be recommended regarding a hypertensive crisis.",
+                "description": "Determines if and what type of recommendation patient should be recommended.",
                 "language": "text/cql.identifier",
                 "expression": "Recommendation"
               }
@@ -125,7 +125,7 @@
             {
               "path": "action.description",
               "expression": {
-                "description": "Determines if patient should be recommended regarding a hypertensive crisis.",
+                "description": "Rationale for recommendation type.",
                 "language": "text/cql.identifier",
                 "expression": "Rationale"
               }
@@ -134,319 +134,7 @@
               "path": "action.extension",
               "expression": {
                 "language": "text/cql.identifier",
-                "expression": "Critical"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Diagnosis of Preexisting Hypertension",
-          "description": "Determines if the patient was previously diagnosied as hypertensive.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determines if the patient was previously diagnosied as hypertensive.",
-                "language": "text/cql.identifier",
-                "expression": "Diagnosis of Preexisting Hypertension"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding a preexisting hypertension diagnosis.",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding a preexisting hypertension diagnosis.",
-                "language": "text/cql.identifier",
-                "expression": "Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Warning"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Patient does not have a Set of BP Observations",
-          "description": "Determines if the patient was previously diagnosied as hypertensive.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determines if the patient was previously diagnosied as hypertensive.",
-                "language": "text/cql.identifier",
-                "expression": "Patient does not have a Set of BP Observations"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding needing more BP measurements.",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding needing more BP measurements.",
-                "language": "text/cql.identifier",
-                "expression": "Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Info"
-              }
-            }
-          ]
-        },
-        {
-          "title": "HTN Stage 2",
-          "description": "Determines if the patient has Stage 2 Hypertension.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determines if the patient has Stage 2 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "HTN Stage 2"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding Stage 2 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding Stage 2 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Warning"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Consider HTN Stage 2",
-          "description": "Determines if the patient potentially has Stage 2 Hypertension.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determines if the patient potentially has Stage 2 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Consider HTN Stage 2"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding Stage 2 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding Stage 2 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Warning"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Consider HTN Stage 1",
-          "description": "Determines if the patient potentially has Stage 1 Hypertension.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determines if the patient potentially has Stage 1 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Consider HTN Stage 1"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding Stage 1 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding Stage 1 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Warning"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Prescribe HBP or ABP Monitoring",
-          "description": "Determines if the patient potentially needs HBP or ABP Monitoring to confirm Hypertension.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determines if the patient potentially has Stage 1 Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Prescribe HBP or ABP Monitoring"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding potentially needing HBP or ABP Monitoring to confirm Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding potentially needing HBP or ABP Monitoring to confirm Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Info"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Prescribe Ambulatory BP Monitoring",
-          "description": "Determines if the patient will need Ambulatory BP Monitoring to garner more accurate BP results.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determines if the patient will need Ambulatory BP Monitoring to garner more accurate BP results.",
-                "language": "text/cql.identifier",
-                "expression": "Prescribe Ambulatory BP Monitoring"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding potentially needing Ambulatory BP Monitoring for more accurate BP results.",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Determine if patient should be recommended regarding potentially needing Ambulatory BP Monitoring for more accurate BP results.",
-                "language": "text/cql.identifier",
-                "expression": "Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Info"
-              }
-            }
-          ]
-        },
-        {
-          "title": "No Further Action",
-          "description": "Determines if the patient does not need any further action regarding testing for Hypertension.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determines if the patient does not need any further action regarding testing for Hypertension.",
-                "language": "text/cql.identifier",
-                "expression": "No Further Action"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determine if patient does not need recommendation regarding Hypertension",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Determine if patient does not need recommendation regarding Hypertension",
-                "language": "text/cql.identifier",
-                "expression": "Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Info"
+                "expression": "Indicator Status"
               }
             }
           ]

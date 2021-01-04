@@ -9,8 +9,8 @@
             }
         },
         {
-            "summary": "Patient has a preexisting diagnosis of Hypertension. Recommend patient for monitoring and treatment pathway.",
-            "indicator": "info",
+            "summary": "Patient has a preexisting diagnosis of Hypertension.",
+            "indicator": "warning",
             "detail": "Recommend patient for monitoring and treatment pathway.",
             "source": {}
         }
