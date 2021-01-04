@@ -35,7 +35,7 @@
   "status": "active",
   "experimental": false,
   "publisher": "PCPI Foundation",
-  "description": "Under Development",
+  "description": "This valueset contains codes for defining Diastolic Blood Pressure.",
   "purpose": "Under Development",
   "expansion": {
     "timestamp": "2020-12-16T15:57:13-07:00",

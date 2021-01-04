@@ -29,6 +29,7 @@
   "status": "active",
   "experimental": false,
   "publisher": "Quality Insights of Pennsylvania",
+  "description": "This valueset contains codes for defining Blood Pressure Measured code attribute.",
   "expansion": {
     "timestamp": "2020-12-21T15:03:45-07:00",
     "contains": [ {
