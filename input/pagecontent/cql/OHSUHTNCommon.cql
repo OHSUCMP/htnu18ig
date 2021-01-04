@@ -7,12 +7,9 @@ include FHIRHelpers version '4.0.1' called FHIRHelpers
 codesystem "LOINC": 'http://loinc.org'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
-codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
-valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
-valueset "V3 Value SetActEncounterCode": 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode'
 
 
 // Condition Clinical Status Codes - Consider value sets for these
@@ -31,8 +28,6 @@ code "confirmed": 'confirmed' from ConditionVerificationStatusCodes
 code "refuted": 'refuted' from ConditionVerificationStatusCodes
 code "entered-in-error": 'entered-in-error' from ConditionVerificationStatusCodes
 
-// Encounter Class Type Codes
-code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
 context Patient
 

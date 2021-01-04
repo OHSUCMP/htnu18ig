@@ -8,8 +8,6 @@ include OHSUHTNCommon version '0.1' called Common
 codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
 valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
-valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
-valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
 valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
 valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
 
@@ -51,7 +49,7 @@ define "Recommendation":
   else if "Consider HTN Stage 2" then 'Patient may have Stage 2 Hypertension.'
   else if "Consider HTN Stage 1" then 'Patient may have Stage 1 Hypertension.'
   else if "Prescribe HBP or ABP Monitoring" then 'Recommend confirming diagnosis of HTN.'
-  else if "Prescribe Ambulatory BP Monitoring" then 'Recommend Prescribe Ambulatory BP Monitoring.'
+  else if "Prescribe Ambulatory BP Monitoring" then 'Recommend Prescribing Ambulatory BP Monitoring.'
   else 'Patient does not have an indication of a hypertensive state.'
 
 define "Rationale":
@@ -95,7 +93,7 @@ define "Most Recent Patient Encounter":
 /* Blood Pressure Reading */
 define "Blood Pressure Observations":
   (Common.WithUnit(Common.QualifiedObservation([Observation: "Blood Pressure Measured"]), 'mmHg')) O
-    with "Most Recent Patient Encounter" PE
+    with "Patient Ambulatory Encounters" PE
       such that Common."Normalize Interval"(O.effective) during PE.period
         or Common."Normalize Interval"(O.effective) starts 24 months or less before end of PE.period
 
