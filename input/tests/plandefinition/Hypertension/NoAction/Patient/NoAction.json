@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NoAction",
+  "active": true,
+  "name": [
+    {
+      "text": "NoAction Patient",
+      "family": "Patient",
+      "given": [
+        "NoAction"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1986-06-06"
+}

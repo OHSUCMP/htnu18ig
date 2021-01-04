@@ -1,6 +1,66 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://snomed.info/sct",
+  "code" : "236434000"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "End stage renal failure untreated by renal replacement therapy",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "236435004"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "End stage renal failure on dialysis",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "236436003"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "End stage renal failure with renal transplant",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "46177005"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "End stage kidney disease",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "385763009"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hospice care (regime/therapy)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "385765002"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hospice care management (procedure)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
   "code" : "10231000132102"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
@@ -925,6 +985,116 @@ v: {
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
+        "code" : "236434000",
+        "display" : "End stage renal failure untreated by renal replacement therapy (disorder)"
+      },
+      {
+        "code" : "236435004",
+        "display" : "End stage renal failure on dialysis (disorder)"
+      },
+      {
+        "code" : "236436003",
+        "display" : "End stage renal failure with renal transplant (disorder)"
+      },
+      {
+        "code" : "46177005",
+        "display" : "End stage renal disease (disorder)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:2c8876c7-e19d-4e09-bc71-f43ba72ad2f6",
+    "timestamp" : "2021-01-04T21:33:32.275Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "236434000",
+      "display" : "End stage renal failure untreated by renal replacement therapy (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236435004",
+      "display" : "End stage renal failure on dialysis (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "236436003",
+      "display" : "End stage renal failure with renal transplant (disorder)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "46177005",
+      "display" : "End stage renal disease (disorder)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "385763009",
+        "display" : "Hospice care (regime/therapy)"
+      },
+      {
+        "code" : "385765002",
+        "display" : "Hospice care management (procedure)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:51bbb210-8454-43a0-ad35-d29b27a987f5",
+    "timestamp" : "2021-01-04T21:33:32.822Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385763009",
+      "display" : "Hospice care (regime/therapy)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "385765002",
+      "display" : "Hospice care management (procedure)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
         "code" : "10231000132102",
         "display" : "In-vitro fertilization pregnancy (finding)"
       },
@@ -1280,8 +1450,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:9d2d5d05-df7b-418b-af57-f365687db0ca",
-    "timestamp" : "2020-12-15T19:01:24.888Z",
+    "identifier" : "urn:uuid:c6ca4d18-f3ab-4879-a934-483d8c6ec51c",
+    "timestamp" : "2021-01-04T21:33:35.478Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -1753,8 +1923,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:a2173d9f-95b4-4205-8b2e-ea87f602cf7a",
-    "timestamp" : "2020-12-14T21:59:10.117Z",
+    "identifier" : "urn:uuid:2e379af7-0a23-4ffa-b9e9-0bbb8ea4dfc8",
+    "timestamp" : "2021-01-04T21:33:35.760Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -1790,6 +1960,28 @@ e: {
     }]
   }
 },
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "371622005",
+  "display" : "Elevated BP without HTN diagnosis"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Elevated blood-pressure reading without diagnosis of hypertension",
+  "severity" : "warning",
+  "error" : "The display \"Elevated BP without HTN diagnosis\" is not a valid display for the code {http://snomed.info/sct}371622005 - should be one of [\"Elevated blood-pressure reading without diagnosis of hypertension\",\"Elevated blood pressure reading without diagnosis of hypertension (situation)\",\"Elevated blood pressure reading without diagnosis of hypertension\",\"Elevated blood pressure reading without diagnosis of HTN (hypertension)\"] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "427889009",
+  "display" : "Hypertension associated with transplantation (disorder)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hypertension associated with transplantation (disorder)",
+  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------

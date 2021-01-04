@@ -15,6 +15,7 @@
   "status": "active",
   "date": "2019-05-02T01:01:02-04:00",
   "publisher": "HL7 Terminology",
+  "description": "This value set contains terms defining pregnancy outcomes.",
   "compose": {
     "include": [
       {

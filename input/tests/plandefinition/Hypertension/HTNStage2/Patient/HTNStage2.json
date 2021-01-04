@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "HTNStage2",
+  "active": true,
+  "name": [
+    {
+      "text": "HTNStage2 Patient",
+      "family": "Patient",
+      "given": [
+        "HTNStage2"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2005-12-28"
+}
