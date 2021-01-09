@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Benito209-Conroy74-49",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "787-2",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Benito209-Conroy74"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Benito209-Conroy74-9"
+        },
+        "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+        "valueQuantity": {
+          "value": 92.54486259074696,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

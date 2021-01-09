@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Andrew29-Trantow673-27",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185347001",
+                "display": "Encounter for problem (procedure)"
+              }
+            ],
+            "text": "Encounter for problem (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Andrew29-Trantow673",
+          "display": "Mr. Andrew29 Trantow673"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
+              "display": "Dr. Renato359 Jenkins714"
+            }
+          }
+        ],
+        "period": {
+          "start": "2013-02-09T11:13:48-05:00",
+          "end": "2013-02-09T11:28:48-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
+          "display": "HALLMARK HEALTH SYSTEM"
+        }
+      }

@@ -57,7 +57,7 @@ while search_term != "STOP!":
 				if(birth_date < high_age_date):
 					high_age_count+=1
 					continue
-			if re.search(search_term, search_lines):
+			if re.search(search_term, search_lines, re.DOTALL):
 			#if search_term in search_lines:
 				print("Found- " + search_term + " -in " + i)
 				found_list.append(i)

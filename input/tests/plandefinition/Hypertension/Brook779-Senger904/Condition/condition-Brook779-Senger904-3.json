@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Brook779-Senger904-3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "262574004",
+              "display": "Bullet wound"
+            }
+          ],
+          "text": "Bullet wound"
+        },
+        "subject": {
+          "reference": "Patient/Brook779-Senger904"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brook779-Senger904-7"
+        },
+        "onsetDateTime": "2013-06-15T23:21:23-04:00",
+        "abatementDateTime": "2013-09-13T23:21:23-04:00",
+        "recordedDate": "2013-06-15T23:21:23-04:00"
+      }

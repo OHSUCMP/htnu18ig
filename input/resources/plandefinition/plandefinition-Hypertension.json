@@ -92,6 +92,14 @@
       ],
       "dynamicValue": [
         {
+          "path": "action.description",
+          "expression": {
+            "description": "Patient Name.",
+            "language": "text/cql.identifier",
+            "expression": "Patient Name"
+          }
+        },
+        {
           "path": "action.extension",
           "expression": {
             "language": "text/cql.identifier",

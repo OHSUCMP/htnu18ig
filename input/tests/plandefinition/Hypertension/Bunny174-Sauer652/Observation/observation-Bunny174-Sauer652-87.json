@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Bunny174-Sauer652-87",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20565-8",
+              "display": "Carbon Dioxide"
+            }
+          ],
+          "text": "Carbon Dioxide"
+        },
+        "subject": {
+          "reference": "Patient/Bunny174-Sauer652"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bunny174-Sauer652-8"
+        },
+        "effectiveDateTime": "2016-08-27T17:32:36-04:00",
+        "valueQuantity": {
+          "value": 27.929521591776854,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

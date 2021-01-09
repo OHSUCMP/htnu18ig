@@ -26,3 +26,5 @@ Thumbs.db
 ################
 *.bak
 /.idea
+/specification/JSON
+/specification/*.xlsx#

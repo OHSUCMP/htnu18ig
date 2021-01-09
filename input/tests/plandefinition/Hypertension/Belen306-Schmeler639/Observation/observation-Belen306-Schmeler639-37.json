@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Belen306-Schmeler639-37",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2",
+              "display": "Leukocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Leukocytes [#/volume] in Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Belen306-Schmeler639"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Belen306-Schmeler639-5"
+        },
+        "effectiveDateTime": "2016-11-12T11:24:28-05:00",
+        "valueQuantity": {
+          "value": 7.491390084589176,
+          "unit": "10*3/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*3/uL"
+        }
+      }

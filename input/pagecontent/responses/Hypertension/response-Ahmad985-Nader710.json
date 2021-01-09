@@ -1,0 +1,19 @@
+{
+    "cards": [
+        {
+            "summary": "Hypertension Diagnosis",
+            "indicator": "info",
+            "detail": "Ahmad985 Nader710",
+            "source": {
+                "label": "Info for those with normal blood pressure",
+                "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+            }
+        },
+        {
+            "summary": "Patient may have Stage 2 Hypertension.",
+            "indicator": "warning",
+            "detail": "Consider diagnosis of stage 2 HTN.",
+            "source": {}
+        }
+    ]
+}

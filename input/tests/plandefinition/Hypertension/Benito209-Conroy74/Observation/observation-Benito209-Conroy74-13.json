@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Benito209-Conroy74-13",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4544-3",
+              "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+            }
+          ],
+          "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Benito209-Conroy74"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Benito209-Conroy74-2"
+        },
+        "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+        "valueQuantity": {
+          "value": 49.54258201101304,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

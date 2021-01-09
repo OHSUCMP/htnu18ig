@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Belen306-Schmeler639-24",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/Belen306-Schmeler639"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Belen306-Schmeler639-3"
+        },
+        "effectiveDateTime": "2014-01-25T11:24:28-05:00",
+        "valueQuantity": {
+          "value": 72.04229904545038,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }

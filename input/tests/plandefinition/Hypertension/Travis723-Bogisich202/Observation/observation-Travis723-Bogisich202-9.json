@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Travis723-Bogisich202-9",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "Low Density Lipoprotein Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Travis723-Bogisich202"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Travis723-Bogisich202-6"
+        },
+        "effectiveDateTime": "2012-01-18T19:07:03-05:00",
+        "valueQuantity": {
+          "value": 87.84697874236326,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

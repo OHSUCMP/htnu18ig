@@ -34,6 +34,7 @@
       "status": "active",
       "experimental": false,
       "publisher": "Quality Insights of Pennsylvania",
+      "description": "This valueset contains codes for defining Blood Pressure Measured code attribute.",
       "expansion": {
         "timestamp": "2020-12-21T15:03:45-07:00",
         "contains": [ {
@@ -169,6 +170,7 @@
       "status": "active",
       "experimental": false,
       "publisher": "Yale",
+      "description": "This valueset contains codes for defining Systolic Blood Pressure.",
       "expansion": {
         "timestamp": "2020-12-16T15:56:52-07:00",
         "contains": [ {
@@ -390,7 +392,7 @@
       "status": "active",
       "experimental": false,
       "publisher": "PCPI Foundation",
-      "description": "Under Development",
+      "description": "This valueset contains codes for defining Diastolic Blood Pressure.",
       "purpose": "Under Development",
       "expansion": {
         "timestamp": "2020-12-16T15:57:13-07:00",

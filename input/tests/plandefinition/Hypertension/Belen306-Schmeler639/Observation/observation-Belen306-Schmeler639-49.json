@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Belen306-Schmeler639-49",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        },
+        "subject": {
+          "reference": "Patient/Belen306-Schmeler639"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Belen306-Schmeler639-5"
+        },
+        "effectiveDateTime": "2016-11-12T11:24:28-05:00",
+        "valueQuantity": {
+          "value": 5.134822074675579,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

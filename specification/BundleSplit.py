@@ -11,7 +11,7 @@ import shutil
 #within their own directories named for the patient  
 
 #For Windows vs Unix/Linux line ending issues
-lineend = "\r\n"
+lineend = "\n"
 
 
 print("\nSplitting all the .json files in the JSON directory \n")
@@ -155,6 +155,8 @@ for bundlejsonfiles in glob.glob("*.json"):
 						# The patient file just gets the name, no "patient" in front.
 						elif line.__contains__('"reference":') and lineN2.__contains__('"subject":'):
 							WriteFile.write('          "reference": "Patient/' + BundleDirectory + '"' + lineend)
+						elif line.__contains__('"reference":') and lineN2.__contains__('"encounter":'):
+							WriteFile.write('          "reference": "Encounter/' + "encounter-" + str(BundleDirectory) + "-" + str(EncounterCount) + '"' + lineend)
 						# "issued": lines throws errors for observation files.  
 						# less than a second off the "effectivedate", so redundant	
 						elif line.__contains__('"issued":'):
