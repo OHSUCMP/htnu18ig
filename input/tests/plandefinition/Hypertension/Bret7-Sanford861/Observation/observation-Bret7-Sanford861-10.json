@@ -1,0 +1,43 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Bret7-Sanford861-10",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status NHIS"
+            }
+          ],
+          "text": "Tobacco smoking status NHIS"
+        },
+        "subject": {
+          "reference": "Patient/Bret7-Sanford861"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bret7-Sanford861-6"
+        },
+        "effectiveDateTime": "2009-11-24T12:50:15-05:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266919005",
+              "display": "Never smoker"
+            }
+          ],
+          "text": "Never smoker"
+        }
+      }

@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Bret7-Sanford861-2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "408512008",
+              "display": "Body mass index 40+ - severely obese (finding)"
+            }
+          ],
+          "text": "Body mass index 40+ - severely obese (finding)"
+        },
+        "subject": {
+          "reference": "Patient/Bret7-Sanford861"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bret7-Sanford861-4"
+        },
+        "onsetDateTime": "1994-10-25T13:50:15-04:00",
+        "recordedDate": "1994-10-25T13:50:15-04:00"
+      }

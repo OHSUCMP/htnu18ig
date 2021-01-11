@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Carlos172-Arias66-11",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003",
+                "display": "Encounter for check up (procedure)"
+              }
+            ],
+            "text": "Encounter for check up (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Carlos172-Arias66",
+          "display": "Mr. Carlos172 Arias66"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001ea",
+              "display": "Dr. Carmina141 Oberbrunner298"
+            }
+          }
+        ],
+        "period": {
+          "start": "2017-10-24T22:10:56-04:00",
+          "end": "2017-10-24T22:25:56-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/3bd5eda0-16da-3ba5-8500-4dfd6ae118b8",
+          "display": "NORWOOD HOSPITAL"
+        }
+      }

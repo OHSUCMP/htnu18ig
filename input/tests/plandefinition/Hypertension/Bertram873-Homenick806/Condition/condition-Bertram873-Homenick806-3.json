@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Bertram873-Homenick806-3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "196416002",
+              "display": "Impacted molars"
+            }
+          ],
+          "text": "Impacted molars"
+        },
+        "subject": {
+          "reference": "Patient/Bertram873-Homenick806"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bertram873-Homenick806-3"
+        },
+        "onsetDateTime": "1990-10-02T16:04:49-04:00",
+        "recordedDate": "1990-10-02T16:04:49-04:00"
+      }

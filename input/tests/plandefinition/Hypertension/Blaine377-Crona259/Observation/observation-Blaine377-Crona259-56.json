@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Blaine377-Crona259-56",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8331-1",
+              "display": "Oral temperature"
+            }
+          ],
+          "text": "Oral temperature"
+        },
+        "subject": {
+          "reference": "Patient/Blaine377-Crona259"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Blaine377-Crona259-12"
+        },
+        "effectiveDateTime": "2017-07-18T23:43:06-04:00",
+        "valueQuantity": {
+          "value": 37.33902354784531,
+          "unit": "Cel",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        }
+      }

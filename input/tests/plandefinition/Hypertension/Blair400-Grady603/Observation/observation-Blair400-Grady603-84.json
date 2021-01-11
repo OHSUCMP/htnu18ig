@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Blair400-Grady603-84",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ],
+          "text": "Calcium"
+        },
+        "subject": {
+          "reference": "Patient/Blair400-Grady603"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Blair400-Grady603-11"
+        },
+        "effectiveDateTime": "2019-08-28T08:19:16-04:00",
+        "valueQuantity": {
+          "value": 9.108020113333076,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

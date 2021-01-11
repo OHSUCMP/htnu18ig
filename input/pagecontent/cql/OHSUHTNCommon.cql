@@ -50,18 +50,13 @@ define function "Avg BP String"(list List<FHIR.Observation>):
 
 define function "Normal BP"(list List<FHIR.Observation>):
   ("Avg BP"(list)) O
-    where O.systolic.value < 120
+    where O.systolic.value < 130
     and O.diastolic.value < 80
 
 define function "Elevated or Above BP"(list List<FHIR.Observation>):
   ("Avg BP"(list)) O
-    where O.systolic.value >= 120
+    where O.systolic.value >= 130
     or O.diastolic.value >= 80
-
-define function "Elevated BP"(list List<FHIR.Observation>):
-  ("Avg BP"(list)) O
-    where O.systolic.value >= 120 and O.systolic.value < 130
-    and O.diastolic.value < 80
 
 define function "HTN Stage 1 BP"(list List<FHIR.Observation>):
   ("Avg BP"(list)) O

@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Bret7-Sanford861-6",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Bret7-Sanford861",
+          "display": "Mr. Bret7 Sanford861"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-000000010c3e",
+              "display": "Dr. Kenton313 Toy286"
+            }
+          }
+        ],
+        "period": {
+          "start": "2016-11-24T12:50:15-05:00",
+          "end": "2016-11-24T13:05:15-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/4d6a0db0-557c-3039-9bb8-e5ed4c31abef",
+          "display": "SPRINGFIELD ANESTHESIA SERVICE INC."
+        }
+      }
