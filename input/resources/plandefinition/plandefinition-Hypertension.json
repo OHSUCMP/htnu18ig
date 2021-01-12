@@ -82,11 +82,10 @@
       ],
       "condition": [
         {
-          "kind": "applicability",
+          "kind": "start",
           "expression": {
-            "description": "Determine if Patient is in hypertension population.",
-            "language": "text/cql.identifier",
-            "expression": "In Population"
+            "language": "text/cql",
+            "expression": "'true'"
           }
         }
       ],
@@ -143,6 +142,37 @@
               "expression": {
                 "language": "text/cql.identifier",
                 "expression": "Indicator Status"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Exclusion from Hypertension Diagnosis",
+          "description": "Determines if patient was excluded from Hypertension Recommendation.",
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "description": "Determine if Patient is in hypertension exclusion population.",
+                "language": "text/cql.identifier",
+                "expression": "Meets Exclusion Criteria"
+              }
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": {
+                "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
+                "language": "text/cql.identifier",
+                "expression": "Exclusion Reason"
+              }
+            },
+            {
+              "path": "action.extension",
+              "expression": {
+                "language": "text/cql.identifier",
+                "expression": "Info"
               }
             }
           ]

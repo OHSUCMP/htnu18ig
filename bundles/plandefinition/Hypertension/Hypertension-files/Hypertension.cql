@@ -7,12 +7,17 @@ include OHSUHTNCommon version '0.1' called Common
 
 codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
+/* Inclusion */
 valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
-valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
-
 valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
+
+/* Exclusion */
+valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
+valueset "Pregnancy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378'
+valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
+valueset "Hospice care ambulatory": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.15'
 
 code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
@@ -37,17 +42,18 @@ define "Patient Name":
 
 
 /* Recommendation Criteria - Hypertension  */
- define "Meets Inclusion Criteria":
-   "Patient Has Above Normal BP"
+define "Meets Inclusion Criteria":
+ "Patient Has Above Normal BP"
 
- /* define "Meets Exclusion Criteria":
-   "Pregnant (SNOMED)"
-     or "Non essential Hypertension SNOMEDCT"
-     or "End Stage Renal Disease"
-     or "Hospice Care" */
+define "Meets Exclusion Criteria":
+  "Patient Under Age 18"
+    or "Patient Over Age 80"
+    or exists "Condition Indicating End Stage Renal Disease"
+    or exists "Condition Indicating Pregnancy"
 
 define "In Population":
   "Meets Inclusion Criteria"
+  and not "Meets Exclusion Criteria"
 
 define "Recommendation":
   if "HTN Crisis" then 'Patient may be in Hypertensive emergency.'
@@ -81,6 +87,20 @@ define "Indicator Status":
   else if "Prescribe HBP or ABP Monitoring" then "Info"
   else if "Prescribe Ambulatory BP Monitoring" then "Info"
   else "Info"
+
+define "Exclusion Reason":
+  if "Meets Exclusion Criteria" then
+    (
+      'Patient was excluded from initial diagnosis of hypertension due to '
+      + (
+          if "Patient Under Age 18" then 'being under the age of 18.'
+          else if "Patient Over Age 80" then 'being over the age of 80.'
+          else if exists "Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
+          else if exists "Condition Indicating Pregnancy" then 'being pregnant.'
+          else ''
+        )
+    )
+  else ''
 
 
 /* Patient Entered Elevated BP Reading Today */
@@ -275,20 +295,39 @@ define "No Further Action":
 
 
 /* Exclusion Criteria */
-// TODO: Determine if Pregnancy, End Stage Renal Diseasse, and Hospice Care affect Exclusions.
-// NOTE: Is there a timing period for diagnosing preexisting hypertensive states?
+define "Patient Under Age 18":
+  AgeInYearsAt(start of Common."Normalize Interval"("Most Recent BP".effective)) < 18
+
+define "Patient Over Age 80":
+  AgeInYearsAt(start of Common."Normalize Interval"("Most Recent BP".effective)) > 80
+
+define "Condition Indicating End Stage Renal Disease":
+  (Common.QualifiedCondition(["Condition": "End Stage Renal Disease"])) ESRD
+    with "Most Recent BP" RecentBP
+      such that Common."Prevalence Period"(ESRD) overlaps Common."Normalize Interval"(RecentBP.effective)
+
+define "Condition Indicating Pregnancy":
+  (Common.QualifiedCondition(["Condition": "Pregnancy"])) Pregnancy
+    with "Most Recent BP" RecentBP
+      such that Common."Prevalence Period"(Pregnancy) overlaps Common."Normalize Interval"(RecentBP.effective)
+
 // Has patient already been diagnosed with HTN?
-define "Conditions Indicating Preexisting Hypertension":
-  (Common.QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
+define "Condition Indicating Preexisting Hypertension":
+  (Common.QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"])) PreexistingCondition
+    with "Most Recent BP" RecentBP
+      such that Common."Prevalence Period"(PreexistingCondition) overlaps Common."Normalize Interval"(RecentBP.effective)
 
 define "Diagnosis of Preexisting Hypertension":
   if "In Population" is not true then
     false
   else
-    exists "Conditions Indicating Preexisting Hypertension"
+    exists "Condition Indicating Preexisting Hypertension"
 
 
 /* TESTS */
+define "Test Patient Age on BP Reading":
+  AgeInYearsAt(start of Common."Normalize Interval"("Most Recent BP".effective))
+
 define "Test Count All BP":
   Count("All BP")
 

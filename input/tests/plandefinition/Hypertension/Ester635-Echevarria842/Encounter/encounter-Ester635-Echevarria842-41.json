@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Ester635-Echevarria842-41",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "702927004",
+                "display": "Urgent care clinic (procedure)"
+              }
+            ],
+            "text": "Urgent care clinic (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Ester635-Echevarria842",
+          "display": "Mrs. Ester635 Echevarria842"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-000000016d50",
+              "display": "Dr. Tabatha105 Becker968"
+            }
+          }
+        ],
+        "period": {
+          "start": "2011-02-07T09:16:50-05:00",
+          "end": "2011-02-07T09:31:50-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/108ccece-277a-396f-8bf2-1527f74458eb",
+          "display": "ON CALL URGENT CARE CENTER"
+        }
+      }
