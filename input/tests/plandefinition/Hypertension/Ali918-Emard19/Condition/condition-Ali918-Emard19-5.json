@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Ali918-Emard19-5",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "68496003",
+              "display": "Polyp of colon"
+            }
+          ],
+          "text": "Polyp of colon"
+        },
+        "subject": {
+          "reference": "Patient/Ali918-Emard19"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Ali918-Emard19-7"
+        },
+        "onsetDateTime": "1972-08-05T10:04:10-04:00",
+        "recordedDate": "1972-08-05T10:04:10-04:00"
+      }

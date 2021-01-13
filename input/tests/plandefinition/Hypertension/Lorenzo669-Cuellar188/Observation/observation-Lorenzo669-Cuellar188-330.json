@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Lorenzo669-Cuellar188-330",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20565-8",
+              "display": "Carbon Dioxide"
+            }
+          ],
+          "text": "Carbon Dioxide"
+        },
+        "subject": {
+          "reference": "Patient/Lorenzo669-Cuellar188"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Lorenzo669-Cuellar188-45"
+        },
+        "effectiveDateTime": "2001-04-16T06:52:17-04:00",
+        "valueQuantity": {
+          "value": 26.751586990017287,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

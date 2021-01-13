@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Adria871-Ankunding277-8",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162864005",
+              "display": "Body mass index 30+ - obesity (finding)"
+            }
+          ],
+          "text": "Body mass index 30+ - obesity (finding)"
+        },
+        "subject": {
+          "reference": "Patient/Adria871-Ankunding277"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Adria871-Ankunding277-18"
+        },
+        "onsetDateTime": "2016-03-26T22:51:44-04:00",
+        "recordedDate": "2016-03-26T22:51:44-04:00"
+      }

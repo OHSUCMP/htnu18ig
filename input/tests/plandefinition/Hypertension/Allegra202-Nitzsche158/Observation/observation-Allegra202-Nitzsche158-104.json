@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Allegra202-Nitzsche158-104",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "Low Density Lipoprotein Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Allegra202-Nitzsche158"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Allegra202-Nitzsche158-22"
+        },
+        "effectiveDateTime": "2012-02-19T09:11:12-05:00",
+        "valueQuantity": {
+          "value": 112.0663748221624,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

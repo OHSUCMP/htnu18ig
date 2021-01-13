@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Allegra202-Nitzsche158-211",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2947-0",
+              "display": "Sodium"
+            }
+          ],
+          "text": "Sodium"
+        },
+        "subject": {
+          "reference": "Patient/Allegra202-Nitzsche158"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Allegra202-Nitzsche158-28"
+        },
+        "effectiveDateTime": "2015-02-18T09:11:12-05:00",
+        "valueQuantity": {
+          "value": 136.14027735771595,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

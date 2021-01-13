@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Allegra202-Nitzsche158-191",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72106-8",
+              "display": "Total score [MMSE]"
+            }
+          ],
+          "text": "Total score [MMSE]"
+        },
+        "subject": {
+          "reference": "Patient/Allegra202-Nitzsche158"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Allegra202-Nitzsche158-27"
+        },
+        "effectiveDateTime": "2014-04-22T10:11:12-04:00",
+        "valueQuantity": {
+          "value": 19.065946173165948,
+          "unit": "(score)",
+          "system": "http://unitsofmeasure.org",
+          "code": "(score)"
+        }
+      }

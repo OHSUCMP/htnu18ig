@@ -14,6 +14,7 @@ valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.8
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
 
 /* Exclusion */
+valueset "Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012'
 valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
 valueset "Pregnancy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378'
 valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
@@ -313,7 +314,10 @@ define "Condition Indicating Pregnancy":
 
 // Has patient already been diagnosed with HTN?
 define "Condition Indicating Preexisting Hypertension":
-  (Common.QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"])) PreexistingCondition
+  (
+    (Common.QualifiedCondition(["Condition": "Hypertension"]))
+    union (Common.QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
+  ) PreexistingCondition
     with "Most Recent BP" RecentBP
       such that Common."Prevalence Period"(PreexistingCondition) overlaps Common."Normalize Interval"(RecentBP.effective)
 

@@ -108,9 +108,9 @@ define function QualifiedEncounters(list List<FHIR.Encounter>):
 define function QualifiedCondition(list List<FHIR.Condition>):
   list Condition
     //active | recurrence | relapse | inactive | remission | resolved
-    where ActiveCondition(Condition) is not null
+    //where ActiveCondition(Condition) is not null
     //unconfirmed | provisional | differential | confirmed | refuted | entered-in-error
-    and ConfirmedCondition(Condition) is not null
+    where ConfirmedCondition(Condition) is not null
 
 define function QualifiedObservation(list List<FHIR.Observation>):
   list Observation

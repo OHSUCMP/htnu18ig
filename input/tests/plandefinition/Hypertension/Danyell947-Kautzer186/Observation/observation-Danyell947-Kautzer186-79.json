@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Danyell947-Kautzer186-79",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "subject": {
+          "reference": "Patient/Danyell947-Kautzer186"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Danyell947-Kautzer186-16"
+        },
+        "effectiveDateTime": "2019-03-23T20:01:36-04:00",
+        "valueQuantity": {
+          "value": 19.18119494205816,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }

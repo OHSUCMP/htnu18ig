@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brigitte394-Jaskolski867-8",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ],
+          "text": "Body Height"
+        },
+        "subject": {
+          "reference": "Patient/Brigitte394-Jaskolski867"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brigitte394-Jaskolski867-6"
+        },
+        "effectiveDateTime": "2011-04-28T19:02:10-04:00",
+        "valueQuantity": {
+          "value": 132.3387733343451,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }

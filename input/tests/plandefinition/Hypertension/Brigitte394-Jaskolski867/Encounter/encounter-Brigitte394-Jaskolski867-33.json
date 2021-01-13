@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Brigitte394-Jaskolski867-33",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "424441002",
+                "display": "Prenatal initial visit"
+              }
+            ],
+            "text": "Prenatal initial visit"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Brigitte394-Jaskolski867",
+          "display": "Brigitte394 Jaskolski867"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000000a0",
+              "display": "Dr. Bobby524 Kohler843"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-07-11T19:02:10-04:00",
+          "end": "2019-07-12T00:17:10-04:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "72892002",
+                "display": "Normal pregnancy"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/4861d01f-019c-3dac-a153-8334e50919f9",
+          "display": "NORTH SHORE MEDICAL CENTER -"
+        }
+      }

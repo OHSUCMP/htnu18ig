@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Danyell947-Kautzer186-59",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59576-9",
+              "display": "Body mass index (BMI) [Percentile] Per age and gender"
+            }
+          ],
+          "text": "Body mass index (BMI) [Percentile] Per age and gender"
+        },
+        "subject": {
+          "reference": "Patient/Danyell947-Kautzer186"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Danyell947-Kautzer186-10"
+        },
+        "effectiveDateTime": "2016-03-05T19:01:36-05:00",
+        "valueQuantity": {
+          "value": 23.641469158410278,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

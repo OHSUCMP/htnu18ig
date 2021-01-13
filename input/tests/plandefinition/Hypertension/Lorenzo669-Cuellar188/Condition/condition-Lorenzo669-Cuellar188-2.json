@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Lorenzo669-Cuellar188-2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "408512008",
+              "display": "Body mass index 40+ - severely obese (finding)"
+            }
+          ],
+          "text": "Body mass index 40+ - severely obese (finding)"
+        },
+        "subject": {
+          "reference": "Patient/Lorenzo669-Cuellar188"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Lorenzo669-Cuellar188-3"
+        },
+        "onsetDateTime": "1949-08-15T06:52:17-04:00",
+        "recordedDate": "1949-08-15T06:52:17-04:00"
+      }
