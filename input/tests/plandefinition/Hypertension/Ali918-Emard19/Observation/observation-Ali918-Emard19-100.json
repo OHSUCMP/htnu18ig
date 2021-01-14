@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Ali918-Emard19-100",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ],
+          "text": "Calcium"
+        },
+        "subject": {
+          "reference": "Patient/Ali918-Emard19"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Ali918-Emard19-17"
+        },
+        "effectiveDateTime": "1973-12-23T09:04:10-05:00",
+        "valueQuantity": {
+          "value": 9.993984373715064,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

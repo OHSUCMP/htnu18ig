@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Adolph80-Turcotte120-11",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Adolph80-Turcotte120",
+          "display": "Mr. Adolph80 Turcotte120"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000896c",
+              "display": "Dr. Merle11 Kuvalis369"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-02-06T15:16:21-05:00",
+          "end": "2019-02-06T15:31:21-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/04b0900a-2ae4-3360-b9a5-1b3eb2bdd8a2",
+          "display": "PCP67456"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Byron202-Vandervort697-9",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72514-3",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ],
+          "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        },
+        "subject": {
+          "reference": "Patient/Byron202-Vandervort697"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Byron202-Vandervort697-4"
+        },
+        "effectiveDateTime": "2013-04-06T06:12:24-04:00",
+        "valueQuantity": {
+          "value": 2.3666537261251723,
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }

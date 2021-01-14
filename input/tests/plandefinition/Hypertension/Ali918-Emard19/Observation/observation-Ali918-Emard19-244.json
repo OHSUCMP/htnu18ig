@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Ali918-Emard19-244",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/Ali918-Emard19"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Ali918-Emard19-23"
+        },
+        "effectiveDateTime": "1974-09-16T10:04:10-04:00",
+        "valueQuantity": {
+          "value": 1.1064313493729536,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

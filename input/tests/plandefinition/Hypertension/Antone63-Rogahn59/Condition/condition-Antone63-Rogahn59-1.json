@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Antone63-Rogahn59-1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "40055000",
+              "display": "Chronic sinusitis (disorder)"
+            }
+          ],
+          "text": "Chronic sinusitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Antone63-Rogahn59"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antone63-Rogahn59-1"
+        },
+        "onsetDateTime": "1991-02-02T05:55:23-05:00",
+        "recordedDate": "1991-02-02T05:55:23-05:00"
+      }

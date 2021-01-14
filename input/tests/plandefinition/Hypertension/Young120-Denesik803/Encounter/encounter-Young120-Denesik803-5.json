@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Young120-Denesik803-5",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185345009",
+                "display": "Encounter for symptom"
+              }
+            ],
+            "text": "Encounter for symptom"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Young120-Denesik803",
+          "display": "Mr. Young120 Denesik803"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+              "display": "Dr. Juana825 Benavídez820"
+            }
+          }
+        ],
+        "period": {
+          "start": "2016-02-28T20:10:37-05:00",
+          "end": "2016-02-28T20:25:37-05:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "444814009",
+                "display": "Viral sinusitis (disorder)"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+          "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+        }
+      }

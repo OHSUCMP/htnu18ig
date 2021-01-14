@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brigitte394-Jaskolski867-135",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "787-2",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Brigitte394-Jaskolski867"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brigitte394-Jaskolski867-34"
+        },
+        "effectiveDateTime": "2019-07-11T19:02:10-04:00",
+        "valueQuantity": {
+          "value": 85.68633562414306,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

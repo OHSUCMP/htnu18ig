@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Wilson960-Heathcote539-98",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8331-1",
+              "display": "Oral temperature"
+            }
+          ],
+          "text": "Oral temperature"
+        },
+        "subject": {
+          "reference": "Patient/Wilson960-Heathcote539"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Wilson960-Heathcote539-54"
+        },
+        "effectiveDateTime": "2018-05-30T20:01:27-04:00",
+        "valueQuantity": {
+          "value": 37.12365497809397,
+          "unit": "Cel",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        }
+      }

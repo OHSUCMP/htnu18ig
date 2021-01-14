@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Allegra202-Nitzsche158-221",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1742-6",
+              "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        },
+        "subject": {
+          "reference": "Patient/Allegra202-Nitzsche158"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Allegra202-Nitzsche158-28"
+        },
+        "effectiveDateTime": "2015-02-18T09:11:12-05:00",
+        "valueQuantity": {
+          "value": 47.010253132883165,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        }
+      }

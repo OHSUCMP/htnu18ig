@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Bunny174-Sauer652-4",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185345009",
+                "display": "Encounter for symptom"
+              }
+            ],
+            "text": "Encounter for symptom"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Bunny174-Sauer652",
+          "display": "Mrs. Bunny174 Sauer652"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000000dc",
+              "display": "Dr. César846 Serrato62"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-03-22T17:32:36-04:00",
+          "end": "2012-03-22T17:47:36-04:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "444814009",
+                "display": "Viral sinusitis (disorder)"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/b1ddf812-1fdd-3adf-b1d5-32cc8bd07ebb",
+          "display": "BETH ISRAEL DEACONESS HOSPITAL - PLYMOUTH"
+        }
+      }

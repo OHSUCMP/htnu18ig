@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Adolfo777-OKeefe54-3",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "410620009",
+                "display": "Well child visit (procedure)"
+              }
+            ],
+            "text": "Well child visit (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Adolfo777-OKeefe54",
+          "display": "Adolfo777 OKeefe54"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c6ac",
+              "display": "Dr. Isa815 Pagac496"
+            }
+          }
+        ],
+        "period": {
+          "start": "2011-01-31T15:26:06-05:00",
+          "end": "2011-01-31T15:41:06-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/8dbd26a8-f0a9-3da9-97af-a2c94c2a472a",
+          "display": "PCP145043"
+        }
+      }

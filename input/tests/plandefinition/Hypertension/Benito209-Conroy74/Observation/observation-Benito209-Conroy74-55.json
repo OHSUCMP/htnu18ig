@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Benito209-Conroy74-55",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "32623-1",
+              "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Benito209-Conroy74"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Benito209-Conroy74-9"
+        },
+        "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+        "valueQuantity": {
+          "value": 10.77256853905932,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

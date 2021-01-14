@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Andrew29-Trantow673-66",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "RBC Auto (Bld) [#/Vol]"
+            }
+          ],
+          "text": "RBC Auto (Bld) [#/Vol]"
+        },
+        "subject": {
+          "reference": "Patient/Andrew29-Trantow673"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Andrew29-Trantow673-35"
+        },
+        "effectiveDateTime": "2016-02-22T11:13:48-05:00",
+        "valueQuantity": {
+          "value": 3.9213538830161245,
+          "unit": "10*6/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*6/uL"
+        }
+      }

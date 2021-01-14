@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brook779-Senger904-64",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "787-2",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Brook779-Senger904"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brook779-Senger904-13"
+        },
+        "effectiveDateTime": "2016-03-17T23:21:23-04:00",
+        "valueQuantity": {
+          "value": 81.83677540006741,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

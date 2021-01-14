@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Wilson960-Heathcote539-133",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/Wilson960-Heathcote539"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Wilson960-Heathcote539-63"
+        },
+        "effectiveDateTime": "2019-06-28T20:01:27-04:00",
+        "valueQuantity": {
+          "value": 90.25182447025172,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }

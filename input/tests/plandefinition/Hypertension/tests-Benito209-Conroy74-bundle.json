@@ -1,0 +1,3464 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-Benito209-Conroy74-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Benito209-Conroy74-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "40055000",
+          "display": "Chronic sinusitis (disorder)"
+        } ],
+        "text": "Chronic sinusitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-1"
+      },
+      "onsetDateTime": "1984-02-08T21:31:58-05:00",
+      "recordedDate": "1984-02-08T21:31:58-05:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Benito209-Conroy74-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Benito209-Conroy74-2",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "239873007",
+          "display": "Osteoarthritis of knee"
+        } ],
+        "text": "Osteoarthritis of knee"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-3"
+      },
+      "onsetDateTime": "2013-05-16T22:31:58-04:00",
+      "recordedDate": "2013-05-16T22:31:58-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Benito209-Conroy74-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Benito209-Conroy74-3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162864005",
+          "display": "Body mass index 30+ - obesity (finding)"
+        } ],
+        "text": "Body mass index 30+ - obesity (finding)"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "onsetDateTime": "2014-08-13T22:31:58-04:00",
+      "recordedDate": "2014-08-13T22:31:58-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Benito209-Conroy74-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Benito209-Conroy74-4",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10509002",
+          "display": "Acute bronchitis (disorder)"
+        } ],
+        "text": "Acute bronchitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-5"
+      },
+      "onsetDateTime": "2015-07-14T22:31:58-04:00",
+      "abatementDateTime": "2015-07-21T22:31:58-04:00",
+      "recordedDate": "2015-07-14T22:31:58-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Benito209-Conroy74-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Benito209-Conroy74-5",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "82423001",
+          "display": "Chronic pain"
+        } ],
+        "text": "Chronic pain"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-7"
+      },
+      "onsetDateTime": "2015-07-22T22:31:58-04:00",
+      "recordedDate": "2015-07-22T22:31:58-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Benito209-Conroy74-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Benito209-Conroy74-6",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444814009",
+          "display": "Viral sinusitis (disorder)"
+        } ],
+        "text": "Viral sinusitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-8"
+      },
+      "onsetDateTime": "2016-03-02T21:31:58-05:00",
+      "abatementDateTime": "2016-03-16T22:31:58-04:00",
+      "recordedDate": "2016-03-02T21:31:58-05:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Benito209-Conroy74-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000001e",
+          "display": "Dr. Cedrick207 Lind531"
+        }
+      } ],
+      "period": {
+        "start": "1984-02-08T21:31:58-05:00",
+        "end": "1984-02-08T21:46:58-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "75498004",
+          "display": "Acute bacterial sinusitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
+        "display": "LAWRENCE GENERAL HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-10",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000007120",
+          "display": "Dr. Clarice719 Watsica258"
+        }
+      } ],
+      "period": {
+        "start": "2019-06-05T22:31:58-04:00",
+        "end": "2019-06-05T22:46:58-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/8f3630c5-8c64-3f18-9518-e4dda457d2c4",
+        "display": "PCP48513"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000007120",
+          "display": "Dr. Clarice719 Watsica258"
+        }
+      } ],
+      "period": {
+        "start": "2018-08-10T22:31:58-04:00",
+        "end": "2018-08-10T22:46:58-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/8f3630c5-8c64-3f18-9518-e4dda457d2c4",
+        "display": "PCP48513"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185347001",
+          "display": "Encounter for problem"
+        } ],
+        "text": "Encounter for problem"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000001e",
+          "display": "Dr. Cedrick207 Lind531"
+        }
+      } ],
+      "period": {
+        "start": "2013-05-16T22:31:58-04:00",
+        "end": "2013-05-16T22:46:58-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "239873007",
+          "display": "Osteoarthritis of knee"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
+        "display": "LAWRENCE GENERAL HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000007120",
+          "display": "Dr. Clarice719 Watsica258"
+        }
+      } ],
+      "period": {
+        "start": "2018-08-13T22:31:58-04:00",
+        "end": "2018-08-13T23:01:58-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/8f3630c5-8c64-3f18-9518-e4dda457d2c4",
+        "display": "PCP48513"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-5",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000001e",
+          "display": "Dr. Cedrick207 Lind531"
+        }
+      } ],
+      "period": {
+        "start": "2015-07-14T22:31:58-04:00",
+        "end": "2015-07-14T23:00:58-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10509002",
+          "display": "Acute bronchitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
+        "display": "LAWRENCE GENERAL HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-6",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185349003",
+          "display": "Encounter for check up (procedure)"
+        } ],
+        "text": "Encounter for check up (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000001e",
+          "display": "Dr. Cedrick207 Lind531"
+        }
+      } ],
+      "period": {
+        "start": "2019-07-22T22:31:58-04:00",
+        "end": "2019-07-22T22:46:58-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
+        "display": "LAWRENCE GENERAL HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-7",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "IMP"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "183452005",
+          "display": "Encounter Inpatient"
+        } ],
+        "text": "Encounter Inpatient"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000001e",
+          "display": "Dr. Cedrick207 Lind531"
+        }
+      } ],
+      "period": {
+        "start": "2015-07-22T22:31:58-04:00",
+        "end": "2015-07-23T22:31:58-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "82423001",
+          "display": "Chronic pain"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
+        "display": "LAWRENCE GENERAL HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-8",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000001e",
+          "display": "Dr. Cedrick207 Lind531"
+        }
+      } ],
+      "period": {
+        "start": "2016-03-02T21:31:58-05:00",
+        "end": "2016-03-02T21:46:58-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444814009",
+          "display": "Viral sinusitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
+        "display": "LAWRENCE GENERAL HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Benito209-Conroy74-9",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74",
+        "display": "Mr. Benito209 Conroy74"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000007120",
+          "display": "Dr. Clarice719 Watsica258"
+        }
+      } ],
+      "period": {
+        "start": "2019-05-31T22:31:58-04:00",
+        "end": "2019-05-31T23:01:58-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/8f3630c5-8c64-3f18-9518-e4dda457d2c4",
+        "display": "PCP48513"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Benito209-Conroy74-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 182.11509188607917,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-10",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 6.957525448341272,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-11",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 4.773455917165775,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-12",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 17.251901232563867,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-13",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 49.54258201101304,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-14",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 87.10088785851698,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-15",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 28.38017114835561,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-16",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 34.278850682801284,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-17",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 40.04039558830404,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-18",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 387.1577071306043,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-19",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 175.69735433192832,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-19"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 2.0142770087881803,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-20",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 12.244155355784295,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-20"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-21",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-21"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-22",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-3"
+      },
+      "effectiveDateTime": "2013-05-16T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 8.362458860643983,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-23",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 182.11509188607917,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-23"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-24",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 1.8791095538660514,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-25",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 100.25517591232989,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-25"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-26",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 30.22838387664885,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-26"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-27",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2018-08-13T22:31:58-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 85,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 136.78821974064296,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-27"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-28",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 160.52381828834126,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-28"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-29",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 142.18460247010194,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 97.12618129283399,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-30",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 59.026724035358924,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-30"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-31",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 73.06017375896195,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-31"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-32",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-4"
+      },
+      "effectiveDateTime": "2014-08-13T22:31:58-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-32"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-33",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-7"
+      },
+      "effectiveDateTime": "2015-07-22T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 6.353957812982285,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-33"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-34",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-7"
+      },
+      "effectiveDateTime": "2015-07-22T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 182.11509188607917,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-34"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-35",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-7"
+      },
+      "effectiveDateTime": "2015-07-22T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 2.9147410396168634,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-35"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-36",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-7"
+      },
+      "effectiveDateTime": "2015-07-22T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 100.25517591232989,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-36"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-37",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-7"
+      },
+      "effectiveDateTime": "2015-07-22T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 30.22838387664885,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-37"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-38",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-7"
+      },
+      "effectiveDateTime": "2019-07-22T22:31:58-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 85.74663384794367,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 135.86068207055857,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-38"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-39",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-7"
+      },
+      "effectiveDateTime": "2015-07-22T22:31:58-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-39"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 29.28494679576634,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-40",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 182.11509188607917,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-40"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-41",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 0.48877650974712106,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-41"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-42",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 100.25517591232989,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-42"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-43",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 30.22838387664885,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-43"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-44",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2019-05-31T22:31:58-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 86,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 130.67391286817703,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-44"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-45",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 7.305550863240242,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-45"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-46",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 4.288580729876535,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-46"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-47",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 12.508432706319615,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-47"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-48",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 44.22013267088156,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-48"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-49",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 92.54486259074696,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-49"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2018-08-10T22:31:58-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 87,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 133.01989876113873,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-50",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 28.084392108916663,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-50"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-51",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 33.457536901099786,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-51"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-52",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 45.522537367476836,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-52"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-53",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 334.73433431991737,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-53"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-54",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 471.2057863548747,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-54"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-55",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 10.77256853905932,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-55"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-56",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-9"
+      },
+      "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-56"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-57",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 182.11509188607917,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-57"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-58",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 1.5568769525578068,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-58"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-59",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 100.25517591232989,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-59"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 187.76148698352767,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-60",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 30.22838387664885,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-60"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-61",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 87,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 139.7853479296067,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-61"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-62",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 172.2984090529389,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-62"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-63",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 143.5089434200903,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-63"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-64",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 80.23920646852622,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-64"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-65",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 63.35741390039462,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-65"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-66",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-10"
+      },
+      "effectiveDateTime": "2019-06-05T22:31:58-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-66"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 101.2549177870923,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 96.00787947988965,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Benito209-Conroy74-9",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Benito209-Conroy74"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Benito209-Conroy74-2"
+      },
+      "effectiveDateTime": "2011-08-10T22:31:58-04:00",
+      "valueQuantity": {
+        "value": 71.50262394621956,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Benito209-Conroy74-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "Benito209-Conroy74",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-404-ge7ce2295\n .   Person seed: -3045182938295608968  Population seed: 0</div>"
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        }, {
+          "url": "text",
+          "valueString": "White"
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+        "valueString": "Susanne275 Weissnat378"
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode": "M"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Milford",
+          "state": "Massachusetts",
+          "country": "US"
+        }
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+        "valueDecimal": 1.943736086500524
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+        "valueDecimal": 39.05626391349948
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "c384498d-7bdd-43f2-9025-497ae18b4a74"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical Record Number"
+          } ],
+          "text": "Medical Record Number"
+        },
+        "system": "http://hospital.smarthealthit.org",
+        "value": "c384498d-7bdd-43f2-9025-497ae18b4a74"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS",
+            "display": "Social Security Number"
+          } ],
+          "text": "Social Security Number"
+        },
+        "system": "http://hl7.org/fhir/sid/us-ssn",
+        "value": "999-84-9529"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "DL",
+            "display": "Driver's License"
+          } ],
+          "text": "Driver's License"
+        },
+        "system": "urn:oid:2.16.840.1.113883.4.3.25",
+        "value": "S99951965"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PPN",
+            "display": "Passport Number"
+          } ],
+          "text": "Passport Number"
+        },
+        "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+        "value": "X82256102X"
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "Conroy74",
+        "given": [ "Benito209" ],
+        "prefix": [ "Mr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-758-2441",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1977-05-25",
+      "address": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [ {
+            "url": "latitude",
+            "valueDecimal": 42.71684726690998
+          }, {
+            "url": "longitude",
+            "valueDecimal": -71.0674769079122
+          } ]
+        } ],
+        "line": [ "715 Murray Loaf" ],
+        "city": "Lawrence",
+        "state": "Massachusetts",
+        "postalCode": "01840",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "M"
+        } ],
+        "text": "M"
+      },
+      "multipleBirthBoolean": false,
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "en-US",
+            "display": "English"
+          } ],
+          "text": "English"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/Benito209-Conroy74"
+    }
+  } ]
+}

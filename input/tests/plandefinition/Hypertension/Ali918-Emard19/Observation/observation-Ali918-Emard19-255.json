@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Ali918-Emard19-255",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "785-6",
+              "display": "MCH [Entitic mass] by Automated count"
+            }
+          ],
+          "text": "MCH [Entitic mass] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Ali918-Emard19"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Ali918-Emard19-23"
+        },
+        "effectiveDateTime": "1974-09-16T10:04:10-04:00",
+        "valueQuantity": {
+          "value": 31.92932461326434,
+          "unit": "pg",
+          "system": "http://unitsofmeasure.org",
+          "code": "pg"
+        }
+      }

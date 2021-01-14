@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Ester635-Echevarria842-15",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26929004",
+              "display": "Alzheimer's disease (disorder)"
+            }
+          ],
+          "text": "Alzheimer's disease (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Ester635-Echevarria842"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Ester635-Echevarria842-111"
+        },
+        "onsetDateTime": "2015-06-01T10:16:50-04:00",
+        "recordedDate": "2015-06-01T10:16:50-04:00"
+      }

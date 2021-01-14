@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Adolfo777-OKeefe54-81",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59576-9",
+              "display": "Body mass index (BMI) [Percentile] Per age and gender"
+            }
+          ],
+          "text": "Body mass index (BMI) [Percentile] Per age and gender"
+        },
+        "subject": {
+          "reference": "Patient/Adolfo777-OKeefe54"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Adolfo777-OKeefe54-16"
+        },
+        "effectiveDateTime": "2019-03-18T16:26:06-04:00",
+        "valueQuantity": {
+          "value": 22.983768283707928,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

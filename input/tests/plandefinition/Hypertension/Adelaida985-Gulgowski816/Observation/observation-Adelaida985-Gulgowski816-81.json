@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Adelaida985-Gulgowski816-81",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72514-3",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ],
+          "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        },
+        "subject": {
+          "reference": "Patient/Adelaida985-Gulgowski816"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Adelaida985-Gulgowski816-24"
+        },
+        "effectiveDateTime": "2017-01-01T22:44:16-05:00",
+        "valueQuantity": {
+          "value": 3.0241432788667404,
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }

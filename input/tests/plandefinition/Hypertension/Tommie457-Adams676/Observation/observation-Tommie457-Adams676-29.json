@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Tommie457-Adams676-29",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ],
+          "text": "Triglycerides"
+        },
+        "subject": {
+          "reference": "Patient/Tommie457-Adams676"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Tommie457-Adams676-7"
+        },
+        "effectiveDateTime": "2015-06-03T00:07:20-04:00",
+        "valueQuantity": {
+          "value": 102.20921813884132,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

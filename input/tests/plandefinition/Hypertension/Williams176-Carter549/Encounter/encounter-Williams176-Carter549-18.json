@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Williams176-Carter549-18",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185347001",
+                "display": "Encounter for problem"
+              }
+            ],
+            "text": "Encounter for problem"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Williams176-Carter549",
+          "display": "Williams176 Carter549"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000078",
+              "display": "Dr. Antoine384 Bahringer146"
+            }
+          }
+        ],
+        "period": {
+          "start": "2015-04-25T13:48:27-04:00",
+          "end": "2015-04-25T15:03:27-04:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "192127007",
+                "display": "Child attention deficit disorder"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/37b4d73f-652d-3033-a16e-d97b9e8b4cda",
+          "display": "ANNA JAQUES HOSPITAL"
+        }
+      }

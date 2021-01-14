@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Bertram873-Homenick806-75",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ],
+          "text": "Chloride"
+        },
+        "subject": {
+          "reference": "Patient/Bertram873-Homenick806"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bertram873-Homenick806-50"
+        },
+        "effectiveDateTime": "2017-08-08T16:04:49-04:00",
+        "valueQuantity": {
+          "value": 101.26087620093703,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Wilson960-Heathcote539-43",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Wilson960-Heathcote539",
+          "display": "Mr. Wilson960 Heathcote539"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000927c",
+              "display": "Dr. Renato359 Grady603"
+            }
+          }
+        ],
+        "period": {
+          "start": "2018-06-05T20:01:27-04:00",
+          "end": "2018-06-05T20:46:27-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/0d8bb3b8-c43d-3aeb-bf09-9efc44769788",
+          "display": "PCP73264"
+        }
+      }

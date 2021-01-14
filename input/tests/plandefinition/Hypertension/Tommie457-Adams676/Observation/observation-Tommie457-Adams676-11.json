@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Tommie457-Adams676-11",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Erythrocytes [#/volume] in Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Tommie457-Adams676"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Tommie457-Adams676-3"
+        },
+        "effectiveDateTime": "2012-05-30T00:07:20-04:00",
+        "valueQuantity": {
+          "value": 4.900671987570546,
+          "unit": "10*6/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*6/uL"
+        }
+      }

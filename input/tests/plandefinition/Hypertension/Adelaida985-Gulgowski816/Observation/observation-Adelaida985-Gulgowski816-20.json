@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Adelaida985-Gulgowski816-20",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "786-4",
+              "display": "MCHC [Mass/volume] by Automated count"
+            }
+          ],
+          "text": "MCHC [Mass/volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Adelaida985-Gulgowski816"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Adelaida985-Gulgowski816-2"
+        },
+        "effectiveDateTime": "2010-11-28T22:44:16-05:00",
+        "valueQuantity": {
+          "value": 34.840805497932415,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        }
+      }

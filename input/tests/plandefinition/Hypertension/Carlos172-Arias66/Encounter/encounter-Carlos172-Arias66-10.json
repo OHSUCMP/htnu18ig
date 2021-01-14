@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Carlos172-Arias66-10",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185345009",
+                "display": "Encounter for symptom"
+              }
+            ],
+            "text": "Encounter for symptom"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Carlos172-Arias66",
+          "display": "Mr. Carlos172 Arias66"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001ea",
+              "display": "Dr. Carmina141 Oberbrunner298"
+            }
+          }
+        ],
+        "period": {
+          "start": "2014-10-15T22:10:56-04:00",
+          "end": "2014-10-15T22:25:56-04:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "195662009",
+                "display": "Acute viral pharyngitis (disorder)"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/3bd5eda0-16da-3ba5-8500-4dfd6ae118b8",
+          "display": "NORWOOD HOSPITAL"
+        }
+      }

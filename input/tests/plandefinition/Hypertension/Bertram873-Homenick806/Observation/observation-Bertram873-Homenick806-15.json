@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Bertram873-Homenick806-15",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20565-8",
+              "display": "Carbon Dioxide"
+            }
+          ],
+          "text": "Carbon Dioxide"
+        },
+        "subject": {
+          "reference": "Patient/Bertram873-Homenick806"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bertram873-Homenick806-20"
+        },
+        "effectiveDateTime": "2011-07-26T16:04:49-04:00",
+        "valueQuantity": {
+          "value": 21.076453265528652,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

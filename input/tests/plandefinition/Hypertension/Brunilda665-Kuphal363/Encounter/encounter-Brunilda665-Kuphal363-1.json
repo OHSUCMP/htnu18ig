@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Brunilda665-Kuphal363-1",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185347001",
+                "display": "Encounter for problem"
+              }
+            ],
+            "text": "Encounter for problem"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Brunilda665-Kuphal363",
+          "display": "Ms. Brunilda665 Kuphal363"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+              "display": "Dr. Juana825 Benavídez820"
+            }
+          }
+        ],
+        "period": {
+          "start": "1975-07-02T03:49:29-04:00",
+          "end": "1975-07-02T04:04:29-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+          "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+        }
+      }

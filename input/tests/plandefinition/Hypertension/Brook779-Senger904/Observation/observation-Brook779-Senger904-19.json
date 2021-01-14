@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brook779-Senger904-19",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "785-6",
+              "display": "MCH [Entitic mass] by Automated count"
+            }
+          ],
+          "text": "MCH [Entitic mass] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Brook779-Senger904"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brook779-Senger904-2"
+        },
+        "effectiveDateTime": "2011-02-17T22:21:23-05:00",
+        "valueQuantity": {
+          "value": 32.070544039056486,
+          "unit": "pg",
+          "system": "http://unitsofmeasure.org",
+          "code": "pg"
+        }
+      }

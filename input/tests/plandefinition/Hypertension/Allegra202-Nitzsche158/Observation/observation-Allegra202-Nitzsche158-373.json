@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Allegra202-Nitzsche158-373",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ],
+          "text": "Calcium"
+        },
+        "subject": {
+          "reference": "Patient/Allegra202-Nitzsche158"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Allegra202-Nitzsche158-40"
+        },
+        "effectiveDateTime": "2018-05-15T10:11:12-04:00",
+        "valueQuantity": {
+          "value": 9.095504494508194,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

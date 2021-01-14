@@ -7,9 +7,18 @@ include OHSUHTNCommon version '0.1' called Common
 
 codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
+/* Inclusion */
 valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
+valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
+valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
+
+/* Exclusion */
+valueset "Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012'
 valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
+valueset "Pregnancy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378'
+valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
+valueset "Hospice care ambulatory": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.15'
 
 code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
@@ -27,19 +36,25 @@ define "Critical":
 define "Errors":
   null
 
+define "Patient Name":
+  First(Patient.name.given)
+   + ' ' +
+  First(Patient.name.family)
+
 
 /* Recommendation Criteria - Hypertension  */
- define "Meets Inclusion Criteria":
-   "Patient Has Above Normal BP"
+define "Meets Inclusion Criteria":
+ "Patient Has Above Normal BP"
 
- /* define "Meets Exclusion Criteria":
-   "Pregnant (SNOMED)"
-     or "Non essential Hypertension SNOMEDCT"
-     or "End Stage Renal Disease"
-     or "Hospice Care" */
+define "Meets Exclusion Criteria":
+  "Patient Under Age 18"
+    or "Patient Over Age 80"
+    or exists "Condition Indicating End Stage Renal Disease"
+    or exists "Condition Indicating Pregnancy"
 
 define "In Population":
   "Meets Inclusion Criteria"
+  and not "Meets Exclusion Criteria"
 
 define "Recommendation":
   if "HTN Crisis" then 'Patient may be in Hypertensive emergency.'
@@ -74,6 +89,20 @@ define "Indicator Status":
   else if "Prescribe Ambulatory BP Monitoring" then "Info"
   else "Info"
 
+define "Exclusion Reason":
+  if "Meets Exclusion Criteria" then
+    (
+      'Patient was excluded from initial diagnosis of hypertension due to '
+      + (
+          if "Patient Under Age 18" then 'being under the age of 18.'
+          else if "Patient Over Age 80" then 'being over the age of 80.'
+          else if exists "Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
+          else if exists "Condition Indicating Pregnancy" then 'being pregnant.'
+          else ''
+        )
+    )
+  else ''
+
 
 /* Patient Entered Elevated BP Reading Today */
 // NOTE: Office-based visit Encounter valueset?
@@ -86,45 +115,49 @@ define "Patient Ambulatory Encounters":
     )
       and PE.class ~ "ambulatory"
 
-define "Most Recent Patient Encounter":
-  Last("Patient Ambulatory Encounters" E sort by end of period)
-
 
 /* Blood Pressure Reading */
 define "Blood Pressure Observations":
-  (Common.WithUnit(Common.QualifiedObservation([Observation: "Blood Pressure Measured"]), 'mmHg')) O
-    with "Patient Ambulatory Encounters" PE
-      such that Common."Normalize Interval"(O.effective) during PE.period
-        or Common."Normalize Interval"(O.effective) starts 24 months or less before end of PE.period
+  (Common.WithUnit(Common.QualifiedObservation([Observation: "Blood Pressure Measured"]), 'mm[Hg]')) O
 
 define "Most Recent BP":
   Last("Blood Pressure Observations" O sort by Coalesce(issued, start of Common."Normalize Interval"(effective)))
+
+define "Blood Pressure Observations for Last 2 Years":
+  ((
+    "Blood Pressure Observations" BP
+      with "Most Recent BP" MostRecentBP
+        such that Common."Normalize Interval"(BP.effective) starts 24 months or less before end of Common."Normalize Interval"(MostRecentBP.effective)
+  )
+  union { "Most Recent BP" }) O
+    sort by Coalesce(issued, start of Common."Normalize Interval"(effective))
+
 
 define "Ambulatory Blood Pressure Monitoring Procedures":
   (Common.QualifiedProcedures(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
     let ABPMProcedureInterval: Common."Normalize Interval"(ABPMProcedure.performed)
       where exists (
-        "Blood Pressure Observations" BPObservation
+        "Blood Pressure Observations for Last 2 Years" BPObservation
           where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
       )
       and hours between start of ABPMProcedureInterval and end of ABPMProcedureInterval >= 12
 
 define "Office Blood Pressure Observations":
-  "Blood Pressure Observations" BPObservation
+  "Blood Pressure Observations for Last 2 Years" BPObservation
     with "Patient Ambulatory Encounters" BPEncounter
       such that BPEncounter.class ~ "ambulatory"
-        and BPObservation.encounter.reference ~ ('Encounter/' + BPEncounter.id)
+        and Common."Normalize Interval"(BPObservation.effective) during BPEncounter.period
 
 define "Home Blood Pressure Observations":
-  "Blood Pressure Observations" BPObservation
+  "Blood Pressure Observations for Last 2 Years" BPObservation
     without "Patient Ambulatory Encounters" BPEncounter
       such that BPEncounter.class ~ "ambulatory"
-        and BPObservation.encounter.reference ~ ('Encounter/' + BPEncounter.id)
+        and Common."Normalize Interval"(BPObservation.effective) during BPEncounter.period
 
 define "Ambulatory Blood Pressure Monitoring Observations":
   (Last("Ambulatory Blood Pressure Monitoring Procedures" P sort by end of Common."Normalize Interval"(performed))) ABPMProcedure
     return (
-      "Blood Pressure Observations" BPObservation
+      "Blood Pressure Observations for Last 2 Years" BPObservation
       where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
     )
 
@@ -168,7 +201,7 @@ define "Patient does not have a Set of BP Observations":
     not "Has BP Set"
 
 define "All BP":
-  "Blood Pressure Observations"
+  "Blood Pressure Observations for Last 2 Years"
 
 // Is SBP > 180 and/or DBP > 120?
 define "Patient Has Hypertensive BP":
@@ -263,14 +296,91 @@ define "No Further Action":
 
 
 /* Exclusion Criteria */
-// TODO: Determine if Pregnancy, End Stage Renal Diseasse, and Hospice Care affect Exclusions.
-// NOTE: Is there a timing period for diagnosing preexisting hypertensive states?
+define "Patient Under Age 18":
+  AgeInYearsAt(start of Common."Normalize Interval"("Most Recent BP".effective)) < 18
+
+define "Patient Over Age 80":
+  AgeInYearsAt(start of Common."Normalize Interval"("Most Recent BP".effective)) > 80
+
+define "Condition Indicating End Stage Renal Disease":
+  (Common.QualifiedCondition(["Condition": "End Stage Renal Disease"])) ESRD
+    with "Most Recent BP" RecentBP
+      such that Common."Prevalence Period"(ESRD) overlaps Common."Normalize Interval"(RecentBP.effective)
+
+define "Condition Indicating Pregnancy":
+  (Common.QualifiedCondition(["Condition": "Pregnancy"])) Pregnancy
+    with "Most Recent BP" RecentBP
+      such that Common."Prevalence Period"(Pregnancy) overlaps Common."Normalize Interval"(RecentBP.effective)
+
 // Has patient already been diagnosed with HTN?
-define "Conditions Indicating Preexisting Hypertension":
-  (Common.QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
+define "Condition Indicating Preexisting Hypertension":
+  (
+    (Common.QualifiedCondition(["Condition": "Hypertension"]))
+    union (Common.QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
+  ) PreexistingCondition
+    with "Most Recent BP" RecentBP
+      such that Common."Prevalence Period"(PreexistingCondition) overlaps Common."Normalize Interval"(RecentBP.effective)
 
 define "Diagnosis of Preexisting Hypertension":
   if "In Population" is not true then
     false
   else
-    exists "Conditions Indicating Preexisting Hypertension"
+    exists "Condition Indicating Preexisting Hypertension"
+
+
+/* TESTS */
+define "Test Patient Age on BP Reading":
+  AgeInYearsAt(start of Common."Normalize Interval"("Most Recent BP".effective))
+
+define "Test Count All BP":
+  Count("All BP")
+
+define "Test Most Recent BP":
+  "Most Recent BP" BP
+    return Tuple {
+      "ID": BP.id,
+      "Date": BP.effective.end,
+      "Systolic": singleton from (BP.component C where C.code in "Systolic blood pressure").value.value,
+      "Diastolic": singleton from (BP.component C where C.code in "Diastolic Blood Pressure").value.value
+    }
+
+define "Test Get All BP Observation Resources":
+  ("Blood Pressure Observations" BP sort by Coalesce(issued, start of Common."Normalize Interval"(effective))) BP
+    return Tuple {
+      "Observation ID": BP.id
+      }
+
+define "Test Get Encounter BP Observations":
+  from
+    "Blood Pressure Observations" BPObservation,
+      "Patient Ambulatory Encounters" BPEncounter
+        where BPEncounter.class ~ "ambulatory"
+          and Common."Normalize Interval"(BPObservation.effective) during BPEncounter.period
+      return Tuple {
+        "Observation ID": BPObservation.id,
+        "Encounter ID": BPEncounter.id
+        }
+
+define "Test Get Most Recent BP Set":
+  "Most Recent BP Set" BPSet
+    return Tuple {
+      "Observation ID": BPSet.id,
+      "Encounter Reference": BPSet.encounter.reference
+      }
+
+define "Test All BP Last 2 Years":
+  "Blood Pressure Observations for Last 2 Years" BPs
+    return Tuple {
+      "Observation ID": BPs.id,
+      "Date": BPs.effective.end,
+      "Encounter Reference": BPs.encounter.reference
+      }
+
+define "Test Get Average All BP Last 2 Years":
+  Common."Avg BP"("All BP")
+
+define "Test Get Average Most Recent BP Set":
+  Common."Avg BP"("Most Recent BP Set")
+
+define "Test Get All BP SBP Coefficient Variability":
+  Common."Systolic BP Variability"("All BP").value

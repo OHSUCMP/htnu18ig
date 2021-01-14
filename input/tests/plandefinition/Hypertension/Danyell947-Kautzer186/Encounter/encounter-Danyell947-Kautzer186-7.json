@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Danyell947-Kautzer186-7",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "410620009",
+                "display": "Well child visit (procedure)"
+              }
+            ],
+            "text": "Well child visit (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Danyell947-Kautzer186",
+          "display": "Danyell947 Kautzer186"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-00000001122e",
+              "display": "Dr. Romona686 Harris789"
+            }
+          }
+        ],
+        "period": {
+          "start": "2014-02-22T19:01:36-05:00",
+          "end": "2014-02-22T19:31:36-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/81b493ee-bf0a-3a84-9dde-5d35e82e6483",
+          "display": "HEARSMART AUDIOLOGY, LLC"
+        }
+      }

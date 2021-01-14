@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Lorenzo669-Cuellar188-33",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "702927004",
+                "display": "Urgent care clinic (procedure)"
+              }
+            ],
+            "text": "Urgent care clinic (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Lorenzo669-Cuellar188",
+          "display": "Mr. Lorenzo669 Cuellar188"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-000000016c1a",
+              "display": "Dr. José3 Valentín837"
+            }
+          }
+        ],
+        "period": {
+          "start": "2000-10-23T06:52:17-04:00",
+          "end": "2000-10-23T07:07:17-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/95d68217-d9c5-30da-b406-61fac767fc0e",
+          "display": "METROMEDIC WALK IN CLINIC"
+        }
+      }

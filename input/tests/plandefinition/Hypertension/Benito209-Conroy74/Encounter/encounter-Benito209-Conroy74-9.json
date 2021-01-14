@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Benito209-Conroy74-9",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Benito209-Conroy74",
+          "display": "Mr. Benito209 Conroy74"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-000000007120",
+              "display": "Dr. Clarice719 Watsica258"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-05-31T22:31:58-04:00",
+          "end": "2019-05-31T23:01:58-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/8f3630c5-8c64-3f18-9518-e4dda457d2c4",
+          "display": "PCP48513"
+        }
+      }

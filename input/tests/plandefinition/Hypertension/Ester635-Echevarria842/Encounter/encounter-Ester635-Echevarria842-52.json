@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Ester635-Echevarria842-52",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Ester635-Echevarria842",
+          "display": "Mrs. Ester635 Echevarria842"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000e6dc",
+              "display": "Dr. Oneida64 Bartell116"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-01-02T09:16:50-05:00",
+          "end": "2012-01-02T09:46:50-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/ccce1094-1ec7-3b86-af36-bf98132ac9f4",
+          "display": "PCP190661"
+        }
+      }

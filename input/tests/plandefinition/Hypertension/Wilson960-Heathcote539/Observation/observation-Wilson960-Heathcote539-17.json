@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Wilson960-Heathcote539-17",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "57905-2",
+              "display": "Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method"
+            }
+          ],
+          "text": "Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method"
+        },
+        "subject": {
+          "reference": "Patient/Wilson960-Heathcote539"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Wilson960-Heathcote539-18"
+        },
+        "effectiveDateTime": "2011-04-13T20:01:27-04:00",
+        "valueQuantity": {
+          "value": 24.511911917078304,
+          "unit": "ng/mL",
+          "system": "http://unitsofmeasure.org",
+          "code": "ng/mL"
+        }
+      }

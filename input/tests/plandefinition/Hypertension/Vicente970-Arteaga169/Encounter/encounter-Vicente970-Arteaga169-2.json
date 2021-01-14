@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Vicente970-Arteaga169-2",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "IMP"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "183452005",
+                "display": "Encounter Inpatient"
+              }
+            ],
+            "text": "Encounter Inpatient"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Vicente970-Arteaga169",
+          "display": "Mr. Vicente970 Arteaga169"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001fe",
+              "display": "Dr. Jolanda321 Johnston597"
+            }
+          }
+        ],
+        "period": {
+          "start": "1990-06-10T02:21:08-04:00",
+          "end": "1990-06-11T02:21:08-04:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "82423001",
+                "display": "Chronic pain"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/f99c74cc-7d1a-3f95-9a33-4a9357bf2f2a",
+          "display": "UMASS MEMORIAL MEDICAL CENTER INC"
+        }
+      }

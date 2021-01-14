@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Antione404-Treutel973-103",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6299-2",
+              "display": "Urea Nitrogen"
+            }
+          ],
+          "text": "Urea Nitrogen"
+        },
+        "subject": {
+          "reference": "Patient/Antione404-Treutel973"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antione404-Treutel973-14"
+        },
+        "effectiveDateTime": "2014-08-21T14:44:10-04:00",
+        "valueQuantity": {
+          "value": 10.33842083895436,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

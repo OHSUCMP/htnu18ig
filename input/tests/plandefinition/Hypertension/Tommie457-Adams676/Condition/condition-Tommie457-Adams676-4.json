@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Tommie457-Adams676-4",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444814009",
+              "display": "Viral sinusitis (disorder)"
+            }
+          ],
+          "text": "Viral sinusitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Tommie457-Adams676"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Tommie457-Adams676-5"
+        },
+        "onsetDateTime": "2014-10-02T00:07:20-04:00",
+        "abatementDateTime": "2014-10-23T00:07:20-04:00",
+        "recordedDate": "2014-10-02T00:07:20-04:00"
+      }

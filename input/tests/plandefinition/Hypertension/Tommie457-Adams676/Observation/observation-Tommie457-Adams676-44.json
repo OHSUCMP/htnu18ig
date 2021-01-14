@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Tommie457-Adams676-44",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2",
+              "display": "Leukocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Leukocytes [#/volume] in Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Tommie457-Adams676"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Tommie457-Adams676-10"
+        },
+        "effectiveDateTime": "2018-03-14T00:07:20-04:00",
+        "valueQuantity": {
+          "value": 8.221070203719243,
+          "unit": "10*3/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*3/uL"
+        }
+      }

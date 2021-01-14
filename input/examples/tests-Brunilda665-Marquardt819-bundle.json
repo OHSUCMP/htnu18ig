@@ -1,0 +1,4427 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-Brunilda665-Marquardt819-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Brunilda665-Marquardt819-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "40055000",
+          "display": "Chronic sinusitis (disorder)"
+        } ],
+        "text": "Chronic sinusitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-3"
+      },
+      "onsetDateTime": "1985-04-13T01:45:30-05:00",
+      "recordedDate": "1985-04-13T01:45:30-05:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Brunilda665-Marquardt819-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Brunilda665-Marquardt819-2",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "15777000",
+          "display": "Prediabetes"
+        } ],
+        "text": "Prediabetes"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "onsetDateTime": "2012-09-26T02:45:30-04:00",
+      "recordedDate": "2012-09-26T02:45:30-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Brunilda665-Marquardt819-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Brunilda665-Marquardt819-3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "271737000",
+          "display": "Anemia (disorder)"
+        } ],
+        "text": "Anemia (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "onsetDateTime": "2012-09-26T02:45:30-04:00",
+      "recordedDate": "2012-09-26T02:45:30-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Brunilda665-Marquardt819-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Brunilda665-Marquardt819-4",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ],
+        "text": "Acute viral pharyngitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-14"
+      },
+      "onsetDateTime": "2017-10-14T02:45:30-04:00",
+      "abatementDateTime": "2017-10-27T02:45:30-04:00",
+      "recordedDate": "2017-10-14T02:45:30-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Brunilda665-Marquardt819-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185347001",
+          "display": "Encounter for problem"
+        } ],
+        "text": "Encounter for problem"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000140",
+          "display": "Dr. Mira443 Pacocha935"
+        }
+      } ],
+      "period": {
+        "start": "1979-11-07T01:45:30-05:00",
+        "end": "1979-11-07T02:00:30-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93",
+        "display": "BAYSTATE MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-10",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "698314001",
+          "display": "Consultation for treatment"
+        } ],
+        "text": "Consultation for treatment"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000104",
+          "display": "Dr. Alicia629 Effertz744"
+        }
+      } ],
+      "period": {
+        "start": "2014-02-02T01:45:30-05:00",
+        "end": "2014-02-02T02:00:30-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/fd328395-ab1d-35c6-a2d0-d05a9a79cf11",
+        "display": "MERCY MEDICAL CTR"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-11",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "IMP"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "305408004",
+          "display": "Admission to surgical department"
+        } ],
+        "text": "Admission to surgical department"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000262",
+          "display": "Dr. Timmy68 Treutel973"
+        }
+      } ],
+      "period": {
+        "start": "2014-02-09T01:45:30-05:00",
+        "end": "2014-02-10T03:45:30-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/5103c940-0c08-392f-95cd-446e0cea042a",
+        "display": "SHRINERS' HOSPITAL FOR CHILDREN (THE)"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-12",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000012570",
+          "display": "Dr. Antonia30 Solorzano931"
+        }
+      } ],
+      "period": {
+        "start": "2017-09-30T02:45:30-04:00",
+        "end": "2017-09-30T03:15:30-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/ee96626f-de42-31e0-8e59-14fe9dd3c74c",
+        "display": "TOTAL WELLNESS CENTERS, LLC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-13",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "308335008",
+          "display": "Patient encounter procedure"
+        } ],
+        "text": "Patient encounter procedure"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000104",
+          "display": "Dr. Alicia629 Effertz744"
+        }
+      } ],
+      "period": {
+        "start": "2016-03-16T02:45:30-04:00",
+        "end": "2016-03-16T03:31:30-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/fd328395-ab1d-35c6-a2d0-d05a9a79cf11",
+        "display": "MERCY MEDICAL CTR"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-14",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000140",
+          "display": "Dr. Mira443 Pacocha935"
+        }
+      } ],
+      "period": {
+        "start": "2017-10-14T02:45:30-04:00",
+        "end": "2017-10-14T03:00:30-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93",
+        "display": "BAYSTATE MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-15",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000012570",
+          "display": "Dr. Antonia30 Solorzano931"
+        }
+      } ],
+      "period": {
+        "start": "2018-07-18T02:45:30-04:00",
+        "end": "2018-07-18T03:15:30-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/ee96626f-de42-31e0-8e59-14fe9dd3c74c",
+        "display": "TOTAL WELLNESS CENTERS, LLC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185347001",
+          "display": "Encounter for problem"
+        } ],
+        "text": "Encounter for problem"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000140",
+          "display": "Dr. Mira443 Pacocha935"
+        }
+      } ],
+      "period": {
+        "start": "1979-11-20T01:45:30-05:00",
+        "end": "1979-11-20T02:34:30-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93",
+        "display": "BAYSTATE MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000140",
+          "display": "Dr. Mira443 Pacocha935"
+        }
+      } ],
+      "period": {
+        "start": "1985-04-13T01:45:30-05:00",
+        "end": "1985-04-13T02:00:30-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "75498004",
+          "display": "Acute bacterial sinusitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93",
+        "display": "BAYSTATE MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000012570",
+          "display": "Dr. Antonia30 Solorzano931"
+        }
+      } ],
+      "period": {
+        "start": "2016-09-23T02:45:30-04:00",
+        "end": "2016-09-23T03:15:30-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/ee96626f-de42-31e0-8e59-14fe9dd3c74c",
+        "display": "TOTAL WELLNESS CENTERS, LLC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-5",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "698314001",
+          "display": "Consultation for treatment"
+        } ],
+        "text": "Consultation for treatment"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000104",
+          "display": "Dr. Alicia629 Effertz744"
+        }
+      } ],
+      "period": {
+        "start": "2010-02-23T01:45:30-05:00",
+        "end": "2010-02-23T02:00:30-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/fd328395-ab1d-35c6-a2d0-d05a9a79cf11",
+        "display": "MERCY MEDICAL CTR"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-6",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "308335008",
+          "display": "Patient encounter procedure"
+        } ],
+        "text": "Patient encounter procedure"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000104",
+          "display": "Dr. Alicia629 Effertz744"
+        }
+      } ],
+      "period": {
+        "start": "2012-03-14T02:45:30-04:00",
+        "end": "2012-03-14T03:23:30-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/fd328395-ab1d-35c6-a2d0-d05a9a79cf11",
+        "display": "MERCY MEDICAL CTR"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-7",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000012570",
+          "display": "Dr. Antonia30 Solorzano931"
+        }
+      } ],
+      "period": {
+        "start": "2012-09-26T02:45:30-04:00",
+        "end": "2012-09-26T03:00:30-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/ee96626f-de42-31e0-8e59-14fe9dd3c74c",
+        "display": "TOTAL WELLNESS CENTERS, LLC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-8",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185347001",
+          "display": "Encounter for problem"
+        } ],
+        "text": "Encounter for problem"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000140",
+          "display": "Dr. Mira443 Pacocha935"
+        }
+      } ],
+      "period": {
+        "start": "2017-09-26T02:45:30-04:00",
+        "end": "2017-09-26T04:15:30-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "271737000",
+          "display": "Anemia (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/60457c13-adb2-3415-82c5-86ab5dab5f93",
+        "display": "BAYSTATE MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Marquardt819-9",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "698314001",
+          "display": "Consultation for treatment"
+        } ],
+        "text": "Consultation for treatment"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819",
+        "display": "Mrs. Brunilda665 Marquardt819"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000104",
+          "display": "Dr. Alicia629 Effertz744"
+        }
+      } ],
+      "period": {
+        "start": "2013-02-07T01:45:30-05:00",
+        "end": "2013-02-07T02:00:30-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/fd328395-ab1d-35c6-a2d0-d05a9a79cf11",
+        "display": "MERCY MEDICAL CTR"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Marquardt819-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 162.2363827799951,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-10",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-11",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 162.2363827799951,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-12",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 2.5245604963169836,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-13",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 72.94414369160738,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-14",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 27.713662316001702,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-15",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2017-09-26T02:45:30-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 95.9703537378471,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 161.5181377442913,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-16",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 175.16868536537166,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-17",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 135.40677655715092,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-18",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 82.7811245717313,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-19",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 65.30620548221017,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-19"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 2.622962510759866,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-20",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 5.668879754911897,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-20"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-21",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 5.314942016865741,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-21"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-22",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 14.381822680860694,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-23",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 43.24075721804882,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-23"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-24",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 90.58878082682097,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-25",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 29.149708847275075,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-25"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-26",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 33.7519158980351,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-26"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-27",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 45.63573927448542,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-27"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-28",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 292.9802395857164,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-28"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-29",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 486.55606364203527,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 75.67165866023905,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-30",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 10.63617679679551,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-30"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-31",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-31"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-32",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        } ],
+        "text": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-7"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 6.28245853818363,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-32"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-33",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 11.660274460384207,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-33"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-34",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "20570-8",
+          "display": "Hematocrit [Volume Fraction] of Blood"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 33.782326033251636,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-34"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-35",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "WBC Auto (Bld) [#/Vol]"
+        } ],
+        "text": "WBC Auto (Bld) [#/Vol]"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 10.256711437174486,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-35"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-36",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "RBC Auto (Bld) [#/Vol]"
+        } ],
+        "text": "RBC Auto (Bld) [#/Vol]"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 4.475295820785638,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-36"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-37",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 86.62351544917173,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-37"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-38",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 32.9461816191252,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-38"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-39",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 35.93584825455539,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-39"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 28.749926846326087,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-40",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "RDW - Erythrocyte distribution width Auto (RBC) [Entitic vol]"
+        } ],
+        "text": "RDW - Erythrocyte distribution width Auto (RBC) [Entitic vol]"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 42.80820853493399,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-40"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-41",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 225.3360300335986,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-41"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-42",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 423.39488559201476,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-42"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-43",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-8"
+      },
+      "effectiveDateTime": "2012-09-26T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 10.678440443095685,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-43"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-44",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 162.2363827799951,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-44"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-45",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 3.004482494775386,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-45"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-46",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 77.7246502592357,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-46"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-47",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 29.529919770127147,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-47"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-48",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2017-09-30T02:45:30-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 89.74047062986234,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 170.51283740872032,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-48"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-49",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2339-0",
+          "display": "Glucose"
+        } ],
+        "text": "Glucose"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 87.93438939094455,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-49"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2016-09-23T02:45:30-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.87498709405925,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 157.75315341905703,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-50",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6299-2",
+          "display": "Urea Nitrogen"
+        } ],
+        "text": "Urea Nitrogen"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 14.28253972431099,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-50"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-51",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "38483-4",
+          "display": "Creatinine"
+        } ],
+        "text": "Creatinine"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 0.944739904538915,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-51"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-52",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "49765-1",
+          "display": "Calcium"
+        } ],
+        "text": "Calcium"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 8.590135401374406,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-52"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-53",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2947-0",
+          "display": "Sodium"
+        } ],
+        "text": "Sodium"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 138.88526315536794,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-53"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-54",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6298-4",
+          "display": "Potassium"
+        } ],
+        "text": "Potassium"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 4.270755520425131,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-54"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-55",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2069-3",
+          "display": "Chloride"
+        } ],
+        "text": "Chloride"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 105.29078055520564,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-55"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-56",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "20565-8",
+          "display": "Carbon Dioxide"
+        } ],
+        "text": "Carbon Dioxide"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 20.032853224474724,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-56"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-57",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 173.97237193505723,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-57"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-58",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 126.30305657367973,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-58"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-59",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 79.55521594815608,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-59"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 195.005935355722,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-60",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 69.15654467216521,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-60"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-61",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-61"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-62",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        } ],
+        "text": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-12"
+      },
+      "effectiveDateTime": "2015-09-30T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 5.899155912910622,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-62"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-63",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-14"
+      },
+      "effectiveDateTime": "2017-10-14T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 37.12703932388643,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-63"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-64",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 162.2363827799951,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-64"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-65",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 0.3346536544831298,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-65"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-66",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 73.52492441665173,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-66"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-67",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 27.93431828752932,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-67"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-68",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 93.79331352738866,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 162,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-68"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-69",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2339-0",
+          "display": "Glucose"
+        } ],
+        "text": "Glucose"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 90.73838692372817,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-69"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 119.17287632210073,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-70",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6299-2",
+          "display": "Urea Nitrogen"
+        } ],
+        "text": "Urea Nitrogen"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 18.71754478838284,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-70"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-71",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "38483-4",
+          "display": "Creatinine"
+        } ],
+        "text": "Creatinine"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 0.8675959604688174,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-71"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-72",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "49765-1",
+          "display": "Calcium"
+        } ],
+        "text": "Calcium"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 9.115726680484554,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-72"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-73",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2947-0",
+          "display": "Sodium"
+        } ],
+        "text": "Sodium"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 142.31618201380576,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-73"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-74",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6298-4",
+          "display": "Potassium"
+        } ],
+        "text": "Potassium"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 3.7553472693269114,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-74"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-75",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2069-3",
+          "display": "Chloride"
+        } ],
+        "text": "Chloride"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 107.34170726541775,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-75"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-76",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "20565-8",
+          "display": "Carbon Dioxide"
+        } ],
+        "text": "Carbon Dioxide"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 25.472463226148587,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-76"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-77",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 3.7223968622984547,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-77"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-78",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 4.449240394284855,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-78"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-79",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 15.165647968212237,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-79"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 108.34571010047256,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-80",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 45.44167690873477,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-80"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-81",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 84.910565132935,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-81"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-82",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 30.49691839439235,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-82"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-83",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 33.41192501210739,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-83"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-84",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 42.40681284991844,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-84"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-85",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 262.65661805302807,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-85"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-86",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 500.96947415323297,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-86"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-87",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 11.101041384905834,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-87"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-88",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-88"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-89",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4548-4",
+          "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        } ],
+        "text": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-15"
+      },
+      "effectiveDateTime": "2018-07-18T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 5.893093273806834,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-89"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Marquardt819-9",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Marquardt819"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Marquardt819-4"
+      },
+      "effectiveDateTime": "2009-09-23T02:45:30-04:00",
+      "valueQuantity": {
+        "value": 62.82564999082928,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Marquardt819-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "Brunilda665-Marquardt819",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-404-ge7ce2295\n .   Person seed: -5986326496842862326  Population seed: 0</div>"
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        }, {
+          "url": "text",
+          "valueString": "White"
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+        "valueString": "Maryam561 Emmerich580"
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode": "F"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Acton",
+          "state": "Massachusetts",
+          "country": "US"
+        }
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+        "valueDecimal": 1.2347401366026438
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+        "valueDecimal": 38.765259863397354
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "b2a052fd-dd6d-4b08-a17f-ace749ad4cbe"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical Record Number"
+          } ],
+          "text": "Medical Record Number"
+        },
+        "system": "http://hospital.smarthealthit.org",
+        "value": "b2a052fd-dd6d-4b08-a17f-ace749ad4cbe"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS",
+            "display": "Social Security Number"
+          } ],
+          "text": "Social Security Number"
+        },
+        "system": "http://hl7.org/fhir/sid/us-ssn",
+        "value": "999-13-1093"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "DL",
+            "display": "Driver's License"
+          } ],
+          "text": "Driver's License"
+        },
+        "system": "urn:oid:2.16.840.1.113883.4.3.25",
+        "value": "S99981524"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PPN",
+            "display": "Passport Number"
+          } ],
+          "text": "Passport Number"
+        },
+        "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+        "value": "X52526201X"
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "Marquardt819",
+        "given": [ "Brunilda665" ],
+        "prefix": [ "Mrs." ]
+      }, {
+        "use": "maiden",
+        "family": "Marvin195",
+        "given": [ "Brunilda665" ],
+        "prefix": [ "Mrs." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-745-2611",
+        "use": "home"
+      } ],
+      "gender": "female",
+      "birthDate": "1978-07-12",
+      "address": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [ {
+            "url": "latitude",
+            "valueDecimal": 42.09869134028071
+          }, {
+            "url": "longitude",
+            "valueDecimal": -72.64843692716293
+          } ]
+        } ],
+        "line": [ "547 Ferry Club" ],
+        "city": "Agawam",
+        "state": "Massachusetts",
+        "postalCode": "01001",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "M"
+        } ],
+        "text": "M"
+      },
+      "multipleBirthBoolean": false,
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "en-US",
+            "display": "English"
+          } ],
+          "text": "English"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/Brunilda665-Marquardt819"
+    }
+  } ]
+}

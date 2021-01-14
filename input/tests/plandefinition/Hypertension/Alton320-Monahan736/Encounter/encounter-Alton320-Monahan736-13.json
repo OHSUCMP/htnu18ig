@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Alton320-Monahan736-13",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Alton320-Monahan736",
+          "display": "Mr. Alton320 Monahan736"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000010f4",
+              "display": "Dr. Roselia779 Bartell116"
+            }
+          }
+        ],
+        "period": {
+          "start": "2013-09-30T15:37:24-04:00",
+          "end": "2013-09-30T16:07:24-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/6b8c49d2-cb48-38da-8a6f-87c29dad8c6c",
+          "display": "PCP5847"
+        }
+      }

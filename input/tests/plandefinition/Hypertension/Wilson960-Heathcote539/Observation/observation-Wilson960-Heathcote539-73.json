@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Wilson960-Heathcote539-73",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "subject": {
+          "reference": "Patient/Wilson960-Heathcote539"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Wilson960-Heathcote539-43"
+        },
+        "effectiveDateTime": "2015-06-05T20:01:27-04:00",
+        "valueQuantity": {
+          "value": 28.251717587140753,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Burl285-Torp761-73",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ],
+          "text": "Body Height"
+        },
+        "subject": {
+          "reference": "Patient/Burl285-Torp761"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Burl285-Torp761-10"
+        },
+        "effectiveDateTime": "2016-11-08T18:14:24-05:00",
+        "valueQuantity": {
+          "value": 198.12759959942323,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }

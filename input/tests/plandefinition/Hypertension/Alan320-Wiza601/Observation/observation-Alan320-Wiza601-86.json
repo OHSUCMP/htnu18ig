@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Alan320-Wiza601-86",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59576-9",
+              "display": "Body mass index (BMI) [Percentile] Per age and gender"
+            }
+          ],
+          "text": "Body mass index (BMI) [Percentile] Per age and gender"
+        },
+        "subject": {
+          "reference": "Patient/Alan320-Wiza601"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alan320-Wiza601-13"
+        },
+        "effectiveDateTime": "2017-10-01T11:37:39-04:00",
+        "valueQuantity": {
+          "value": 0.13609387768215747,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Agnes294-Jenkins714-19",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59576-9",
+              "display": "Body mass index (BMI) [Percentile] Per age and gender"
+            }
+          ],
+          "text": "Body mass index (BMI) [Percentile] Per age and gender"
+        },
+        "subject": {
+          "reference": "Patient/Agnes294-Jenkins714"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Agnes294-Jenkins714-7"
+        },
+        "effectiveDateTime": "2011-09-09T00:05:41-04:00",
+        "valueQuantity": {
+          "value": 0.08877904754125389,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

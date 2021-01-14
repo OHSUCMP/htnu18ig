@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Agnes294-Jenkins714-41",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "786-4",
+              "display": "MCHC [Mass/volume] by Automated count"
+            }
+          ],
+          "text": "MCHC [Mass/volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Agnes294-Jenkins714"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Agnes294-Jenkins714-11"
+        },
+        "effectiveDateTime": "2013-09-20T00:05:41-04:00",
+        "valueQuantity": {
+          "value": 34.04004672190731,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        }
+      }

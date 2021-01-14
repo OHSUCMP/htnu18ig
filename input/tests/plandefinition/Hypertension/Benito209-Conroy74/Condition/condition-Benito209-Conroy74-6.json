@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Benito209-Conroy74-6",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444814009",
+              "display": "Viral sinusitis (disorder)"
+            }
+          ],
+          "text": "Viral sinusitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Benito209-Conroy74"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Benito209-Conroy74-8"
+        },
+        "onsetDateTime": "2016-03-02T21:31:58-05:00",
+        "abatementDateTime": "2016-03-16T22:31:58-04:00",
+        "recordedDate": "2016-03-02T21:31:58-05:00"
+      }

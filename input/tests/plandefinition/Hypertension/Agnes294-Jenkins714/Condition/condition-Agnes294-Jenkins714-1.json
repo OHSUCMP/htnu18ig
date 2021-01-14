@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Agnes294-Jenkins714-1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "40055000",
+              "display": "Chronic sinusitis (disorder)"
+            }
+          ],
+          "text": "Chronic sinusitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Agnes294-Jenkins714"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Agnes294-Jenkins714-1"
+        },
+        "onsetDateTime": "2006-03-16T23:05:41-05:00",
+        "recordedDate": "2006-03-16T23:05:41-05:00"
+      }

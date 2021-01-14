@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Burl285-Torp761-61",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "786-4",
+              "display": "MCHC [Mass/volume] by Automated count"
+            }
+          ],
+          "text": "MCHC [Mass/volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Burl285-Torp761"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Burl285-Torp761-8"
+        },
+        "effectiveDateTime": "2014-10-28T19:14:24-04:00",
+        "valueQuantity": {
+          "value": 35.4318590720369,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        }
+      }

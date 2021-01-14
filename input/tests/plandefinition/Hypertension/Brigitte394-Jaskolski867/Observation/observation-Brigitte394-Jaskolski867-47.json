@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brigitte394-Jaskolski867-47",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8331-1",
+              "display": "Oral temperature"
+            }
+          ],
+          "text": "Oral temperature"
+        },
+        "subject": {
+          "reference": "Patient/Brigitte394-Jaskolski867"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brigitte394-Jaskolski867-10"
+        },
+        "effectiveDateTime": "2014-07-14T19:02:10-04:00",
+        "valueQuantity": {
+          "value": 38.146544440083865,
+          "unit": "Cel",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        }
+      }

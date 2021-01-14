@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Allegra202-Nitzsche158-381",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "High Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "High Density Lipoprotein Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Allegra202-Nitzsche158"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Allegra202-Nitzsche158-40"
+        },
+        "effectiveDateTime": "2018-05-15T10:11:12-04:00",
+        "valueQuantity": {
+          "value": 64.18349350699256,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

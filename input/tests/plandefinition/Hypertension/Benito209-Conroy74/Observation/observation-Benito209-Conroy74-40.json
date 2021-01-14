@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Benito209-Conroy74-40",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ],
+          "text": "Body Height"
+        },
+        "subject": {
+          "reference": "Patient/Benito209-Conroy74"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Benito209-Conroy74-9"
+        },
+        "effectiveDateTime": "2017-05-31T22:31:58-04:00",
+        "valueQuantity": {
+          "value": 182.11509188607917,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }
