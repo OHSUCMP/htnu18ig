@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Vicente970-Arteaga169-70",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72514-3",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ],
+          "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        },
+        "subject": {
+          "reference": "Patient/Vicente970-Arteaga169"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Vicente970-Arteaga169-31"
+        },
+        "effectiveDateTime": "2003-04-21T02:21:08-04:00",
+        "valueQuantity": {
+          "value": 0.039486581570896906,
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }

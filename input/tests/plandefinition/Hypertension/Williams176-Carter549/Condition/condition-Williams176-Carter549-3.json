@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Williams176-Carter549-3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "192127007",
+              "display": "Child attention deficit disorder"
+            }
+          ],
+          "text": "Child attention deficit disorder"
+        },
+        "subject": {
+          "reference": "Patient/Williams176-Carter549"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Williams176-Carter549-6"
+        },
+        "onsetDateTime": "2014-07-19T13:48:27-04:00",
+        "abatementDateTime": "2015-04-25T13:48:27-04:00",
+        "recordedDate": "2014-07-19T13:48:27-04:00"
+      }

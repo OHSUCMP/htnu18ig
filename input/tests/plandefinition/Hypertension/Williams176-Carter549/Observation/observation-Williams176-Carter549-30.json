@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Williams176-Carter549-30",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ],
+          "text": "Hemoglobin [Mass/volume] in Blood"
+        },
+        "subject": {
+          "reference": "Patient/Williams176-Carter549"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Williams176-Carter549-5"
+        },
+        "effectiveDateTime": "2013-08-05T13:48:27-04:00",
+        "valueQuantity": {
+          "value": 12.163089273687662,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        }
+      }

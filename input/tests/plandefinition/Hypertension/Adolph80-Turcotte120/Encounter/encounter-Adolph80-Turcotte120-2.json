@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Adolph80-Turcotte120-2",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185345009",
+                "display": "Encounter for symptom"
+              }
+            ],
+            "text": "Encounter for symptom"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Adolph80-Turcotte120",
+          "display": "Mr. Adolph80 Turcotte120"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000082c",
+              "display": "Dr. Jorge203 Hernández971"
+            }
+          }
+        ],
+        "period": {
+          "start": "2010-03-28T16:16:21-04:00",
+          "end": "2010-03-28T16:46:21-04:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "195662009",
+                "display": "Acute viral pharyngitis (disorder)"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/5844ad77-f653-3c2b-b7dd-e97576ab3b03",
+          "display": "BAYSTATE WING HOSPITAL AND MEDICAL CENTERS"
+        }
+      }

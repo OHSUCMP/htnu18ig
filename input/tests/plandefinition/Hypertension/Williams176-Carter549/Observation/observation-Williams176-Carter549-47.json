@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Williams176-Carter549-47",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8331-1",
+              "display": "Oral temperature"
+            }
+          ],
+          "text": "Oral temperature"
+        },
+        "subject": {
+          "reference": "Patient/Williams176-Carter549"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Williams176-Carter549-9"
+        },
+        "effectiveDateTime": "2014-08-12T13:48:27-04:00",
+        "valueQuantity": {
+          "value": 38.0022609820304,
+          "unit": "Cel",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        }
+      }

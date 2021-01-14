@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Vicente970-Arteaga169-77",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185347001",
+                "display": "Encounter for problem (procedure)"
+              }
+            ],
+            "text": "Encounter for problem (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Vicente970-Arteaga169",
+          "display": "Mr. Vicente970 Arteaga169"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000021c",
+              "display": "Dr. Camila223 Bahringer146"
+            }
+          }
+        ],
+        "period": {
+          "start": "2008-07-01T02:21:08-04:00",
+          "end": "2008-07-01T02:36:08-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/1eaf97fa-9de6-38de-a9c4-6efe5dc574be",
+          "display": "ST VINCENT HOSPITAL"
+        }
+      }

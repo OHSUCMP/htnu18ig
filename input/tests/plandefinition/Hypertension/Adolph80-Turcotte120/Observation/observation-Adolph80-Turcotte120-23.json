@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Adolph80-Turcotte120-23",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ],
+          "text": "Body Height"
+        },
+        "subject": {
+          "reference": "Patient/Adolph80-Turcotte120"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
+        },
+        "effectiveDateTime": "2012-01-11T15:16:21-05:00",
+        "valueQuantity": {
+          "value": 167.52579222508706,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }

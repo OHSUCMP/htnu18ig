@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Vance413-Corkery305-30",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/Vance413-Corkery305"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Vance413-Corkery305-8"
+        },
+        "effectiveDateTime": "2016-05-20T19:27:55-04:00",
+        "valueQuantity": {
+          "value": 74.57253605787976,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }

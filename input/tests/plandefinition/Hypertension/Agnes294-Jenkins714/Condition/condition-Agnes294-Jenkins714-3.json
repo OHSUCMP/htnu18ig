@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Agnes294-Jenkins714-3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44465007",
+              "display": "Sprain of ankle"
+            }
+          ],
+          "text": "Sprain of ankle"
+        },
+        "subject": {
+          "reference": "Patient/Agnes294-Jenkins714"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Agnes294-Jenkins714-5"
+        },
+        "onsetDateTime": "2010-09-04T00:05:41-04:00",
+        "abatementDateTime": "2010-09-18T00:05:41-04:00",
+        "recordedDate": "2010-09-04T00:05:41-04:00"
+      }

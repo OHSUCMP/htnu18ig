@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Adolph80-Turcotte120-26",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "subject": {
+          "reference": "Patient/Adolph80-Turcotte120"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
+        },
+        "effectiveDateTime": "2012-01-11T15:16:21-05:00",
+        "valueQuantity": {
+          "value": 21.955717518451735,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }

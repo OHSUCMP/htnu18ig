@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Vance413-Corkery305-37",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "subject": {
+          "reference": "Patient/Vance413-Corkery305"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Vance413-Corkery305-10"
+        },
+        "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+        "valueQuantity": {
+          "value": 24.94630262662116,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }

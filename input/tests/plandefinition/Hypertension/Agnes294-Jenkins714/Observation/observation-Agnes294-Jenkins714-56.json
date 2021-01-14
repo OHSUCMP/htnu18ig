@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Agnes294-Jenkins714-56",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/Agnes294-Jenkins714"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Agnes294-Jenkins714-15"
+        },
+        "effectiveDateTime": "2015-05-22T00:05:41-04:00",
+        "valueQuantity": {
+          "value": 46.27283810825158,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
