@@ -134,7 +134,7 @@
               "expression": {
                 "description": "Rationale for recommendation type.",
                 "language": "text/cql.identifier",
-                "expression": "Rationale"
+                "expression": "Rationale Combined Data"
               }
             },
             {
