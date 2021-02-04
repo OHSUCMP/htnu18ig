@@ -4,158 +4,8 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Brunilda665-Kuphal363-1",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "232353008",
-          "display": "Perennial allergic rhinitis with seasonal variation"
-        } ],
-        "text": "Perennial allergic rhinitis with seasonal variation"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-3"
-      },
-      "onsetDateTime": "1976-12-10T02:49:29-05:00",
-      "recordedDate": "1976-12-10T02:49:29-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Brunilda665-Kuphal363-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Brunilda665-Kuphal363-2",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "62106007",
-          "display": "Concussion with no loss of consciousness"
-        } ],
-        "text": "Concussion with no loss of consciousness"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-6"
-      },
-      "onsetDateTime": "2011-12-18T02:49:29-05:00",
-      "abatementDateTime": "2012-01-17T02:49:29-05:00",
-      "recordedDate": "2011-12-18T02:49:29-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Brunilda665-Kuphal363-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Brunilda665-Kuphal363-3",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "10509002",
-          "display": "Acute bronchitis (disorder)"
-        } ],
-        "text": "Acute bronchitis (disorder)"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-10"
-      },
-      "onsetDateTime": "2013-07-02T03:49:29-04:00",
-      "abatementDateTime": "2013-07-09T03:49:29-04:00",
-      "recordedDate": "2013-07-02T03:49:29-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Brunilda665-Kuphal363-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Brunilda665-Kuphal363-4",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162864005",
-          "display": "Body mass index 30+ - obesity (finding)"
-        } ],
-        "text": "Body mass index 30+ - obesity (finding)"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "onsetDateTime": "2014-12-10T02:49:29-05:00",
-      "recordedDate": "2014-12-10T02:49:29-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Brunilda665-Kuphal363-4"
-    }
-  }, {
-    "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-1",
+      "id": "encounter-Brunilda665-Kuphal363-9",
       "status": "finished",
       "class": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -164,10 +14,10 @@
       "type": [ {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "185347001",
-          "display": "Encounter for problem"
+          "code": "394701000",
+          "display": "Asthma follow-up"
         } ],
-        "text": "Encounter for problem"
+        "text": "Asthma follow-up"
       } ],
       "subject": {
         "reference": "Patient/Brunilda665-Kuphal363",
@@ -180,9 +30,16 @@
         }
       } ],
       "period": {
-        "start": "1975-07-02T03:49:29-04:00",
-        "end": "1975-07-02T04:04:29-04:00"
+        "start": "2012-03-07T02:49:29-05:00",
+        "end": "2012-03-07T03:04:29-05:00"
       },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        } ]
+      } ],
       "serviceProvider": {
         "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
         "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
@@ -190,7 +47,275 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-1"
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-20",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000008426",
+          "display": "Dr. Marybelle759 Blanda868"
+        }
+      } ],
+      "period": {
+        "start": "2018-12-19T02:49:29-05:00",
+        "end": "2018-12-19T03:04:29-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/32dd69c8-377f-3760-b969-8742d583217e",
+        "display": "PCP63830"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-20"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-16",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "EMER"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "183478001",
+          "display": "Emergency hospital admission for asthma"
+        } ],
+        "text": "Emergency hospital admission for asthma"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000019a",
+          "display": "Dr. Candyce305 Prohaska837"
+        }
+      } ],
+      "period": {
+        "start": "2017-02-09T02:49:29-05:00",
+        "end": "2017-02-09T03:49:29-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/db0acede-4abe-3c01-8d03-5c68a190d8c7",
+        "display": "SOUTH SHORE HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-5",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "394701000",
+          "display": "Asthma follow-up"
+        } ],
+        "text": "Asthma follow-up"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+          "display": "Dr. Juana825 Benavídez820"
+        }
+      } ],
+      "period": {
+        "start": "2010-03-18T03:49:29-04:00",
+        "end": "2010-03-18T04:04:29-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+          "display": "Dr. Juana825 Benavídez820"
+        }
+      } ],
+      "period": {
+        "start": "1977-12-10T02:49:29-05:00",
+        "end": "1977-12-10T03:19:29-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "233678006",
+          "display": "Childhood asthma"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-17",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "394701000",
+          "display": "Asthma follow-up"
+        } ],
+        "text": "Asthma follow-up"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+          "display": "Dr. Juana825 Benavídez820"
+        }
+      } ],
+      "period": {
+        "start": "2017-02-11T02:49:29-05:00",
+        "end": "2017-02-11T03:04:29-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-8",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000008426",
+          "display": "Dr. Marybelle759 Blanda868"
+        }
+      } ],
+      "period": {
+        "start": "2012-02-22T02:49:29-05:00",
+        "end": "2012-02-22T03:04:29-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/32dd69c8-377f-3760-b969-8742d583217e",
+        "display": "PCP63830"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-8"
     }
   }, {
     "resource": {
@@ -242,6 +367,93 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+          "display": "Dr. Juana825 Benavídez820"
+        }
+      } ],
+      "period": {
+        "start": "1976-12-10T02:49:29-05:00",
+        "end": "1976-12-24T02:49:29-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "232353008",
+          "display": "Perennial allergic rhinitis with seasonal variation"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185347001",
+          "display": "Encounter for problem"
+        } ],
+        "text": "Encounter for problem"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+          "display": "Dr. Juana825 Benavídez820"
+        }
+      } ],
+      "period": {
+        "start": "1975-07-10T03:49:29-04:00",
+        "end": "1975-07-10T04:38:29-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
       "id": "encounter-Brunilda665-Kuphal363-11",
       "status": "finished",
       "class": {
@@ -278,6 +490,46 @@
     "request": {
       "method": "PUT",
       "url": "Encounter/encounter-Brunilda665-Kuphal363-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185347001",
+          "display": "Encounter for problem"
+        } ],
+        "text": "Encounter for problem"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+          "display": "Dr. Juana825 Benavídez820"
+        }
+      } ],
+      "period": {
+        "start": "1975-07-02T03:49:29-04:00",
+        "end": "1975-07-02T04:04:29-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-1"
     }
   }, {
     "resource": {
@@ -369,6 +621,100 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-18",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "EMER"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "183478001",
+          "display": "Emergency hospital admission for asthma"
+        } ],
+        "text": "Emergency hospital admission for asthma"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000019a",
+          "display": "Dr. Candyce305 Prohaska837"
+        }
+      } ],
+      "period": {
+        "start": "2018-02-06T02:49:29-05:00",
+        "end": "2018-02-06T03:49:29-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195967001",
+          "display": "Asthma"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/db0acede-4abe-3c01-8d03-5c68a190d8c7",
+        "display": "SOUTH SHORE HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Brunilda665-Kuphal363-7",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185349003",
+          "display": "Encounter for 'check-up'"
+        } ],
+        "text": "Encounter for 'check-up'"
+      } ],
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363",
+        "display": "Ms. Brunilda665 Kuphal363"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
+          "display": "Dr. Juana825 Benavídez820"
+        }
+      } ],
+      "period": {
+        "start": "2012-01-17T02:49:29-05:00",
+        "end": "2012-01-17T03:04:29-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "62106007",
+          "display": "Concussion with no loss of consciousness"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
+        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
       "id": "encounter-Brunilda665-Kuphal363-14",
       "status": "finished",
       "class": {
@@ -456,7 +802,7 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-16",
+      "id": "encounter-Brunilda665-Kuphal363-6",
       "status": "finished",
       "class": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -465,10 +811,10 @@
       "type": [ {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "183478001",
-          "display": "Emergency hospital admission for asthma"
+          "code": "50849002",
+          "display": "Emergency room admission (procedure)"
         } ],
-        "text": "Emergency hospital admission for asthma"
+        "text": "Emergency room admission (procedure)"
       } ],
       "subject": {
         "reference": "Patient/Brunilda665-Kuphal363",
@@ -481,16 +827,9 @@
         }
       } ],
       "period": {
-        "start": "2017-02-09T02:49:29-05:00",
-        "end": "2017-02-09T03:49:29-05:00"
+        "start": "2011-12-18T02:49:29-05:00",
+        "end": "2011-12-18T03:49:29-05:00"
       },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195967001",
-          "display": "Asthma"
-        } ]
-      } ],
       "serviceProvider": {
         "reference": "Organization/db0acede-4abe-3c01-8d03-5c68a190d8c7",
         "display": "SOUTH SHORE HOSPITAL"
@@ -498,101 +837,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-16"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-17",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "394701000",
-          "display": "Asthma follow-up"
-        } ],
-        "text": "Asthma follow-up"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
-          "display": "Dr. Juana825 Benavídez820"
-        }
-      } ],
-      "period": {
-        "start": "2017-02-11T02:49:29-05:00",
-        "end": "2017-02-11T03:04:29-05:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195967001",
-          "display": "Asthma"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
-        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-17"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-18",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "EMER"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "183478001",
-          "display": "Emergency hospital admission for asthma"
-        } ],
-        "text": "Emergency hospital admission for asthma"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000019a",
-          "display": "Dr. Candyce305 Prohaska837"
-        }
-      } ],
-      "period": {
-        "start": "2018-02-06T02:49:29-05:00",
-        "end": "2018-02-06T03:49:29-05:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195967001",
-          "display": "Asthma"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/db0acede-4abe-3c01-8d03-5c68a190d8c7",
-        "display": "SOUTH SHORE HOSPITAL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-18"
+      "url": "Encounter/encounter-Brunilda665-Kuphal363-6"
     }
   }, {
     "resource": {
@@ -643,2140 +888,153 @@
     }
   }, {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-2",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
+      "resourceType": "Condition",
+      "id": "condition-Brunilda665-Kuphal363-4",
+      "clinicalStatus": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185347001",
-          "display": "Encounter for problem"
-        } ],
-        "text": "Encounter for problem"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
-          "display": "Dr. Juana825 Benavídez820"
-        }
-      } ],
-      "period": {
-        "start": "1975-07-10T03:49:29-04:00",
-        "end": "1975-07-10T04:38:29-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
-        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-20",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000008426",
-          "display": "Dr. Marybelle759 Blanda868"
-        }
-      } ],
-      "period": {
-        "start": "2018-12-19T02:49:29-05:00",
-        "end": "2018-12-19T03:04:29-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/32dd69c8-377f-3760-b969-8742d583217e",
-        "display": "PCP63830"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-20"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-3",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
-          "display": "Dr. Juana825 Benavídez820"
-        }
-      } ],
-      "period": {
-        "start": "1976-12-10T02:49:29-05:00",
-        "end": "1976-12-24T02:49:29-05:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "232353008",
-          "display": "Perennial allergic rhinitis with seasonal variation"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
         } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
-        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-4",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
       },
-      "type": [ {
+      "verificationStatus": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
-          "display": "Dr. Juana825 Benavídez820"
-        }
-      } ],
-      "period": {
-        "start": "1977-12-10T02:49:29-05:00",
-        "end": "1977-12-10T03:19:29-05:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "233678006",
-          "display": "Childhood asthma"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
         } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
-        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
-      }
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162864005",
+          "display": "Body mass index 30+ - obesity (finding)"
+        } ],
+        "text": "Body mass index 30+ - obesity (finding)"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "onsetDateTime": "2014-12-10T02:49:29-05:00",
+      "recordedDate": "2014-12-10T02:49:29-05:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-4"
+      "url": "Condition/condition-Brunilda665-Kuphal363-4"
     }
   }, {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-5",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
+      "resourceType": "Condition",
+      "id": "condition-Brunilda665-Kuphal363-2",
+      "clinicalStatus": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "394701000",
-          "display": "Asthma follow-up"
-        } ],
-        "text": "Asthma follow-up"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
-          "display": "Dr. Juana825 Benavídez820"
-        }
-      } ],
-      "period": {
-        "start": "2010-03-18T03:49:29-04:00",
-        "end": "2010-03-18T04:04:29-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195967001",
-          "display": "Asthma"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
         } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
-        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-6",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "EMER"
       },
-      "type": [ {
+      "verificationStatus": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "50849002",
-          "display": "Emergency room admission (procedure)"
-        } ],
-        "text": "Emergency room admission (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
       },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000019a",
-          "display": "Dr. Candyce305 Prohaska837"
-        }
-      } ],
-      "period": {
-        "start": "2011-12-18T02:49:29-05:00",
-        "end": "2011-12-18T03:49:29-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/db0acede-4abe-3c01-8d03-5c68a190d8c7",
-        "display": "SOUTH SHORE HOSPITAL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-7",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185349003",
-          "display": "Encounter for 'check-up'"
-        } ],
-        "text": "Encounter for 'check-up'"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
-          "display": "Dr. Juana825 Benavídez820"
-        }
-      } ],
-      "period": {
-        "start": "2012-01-17T02:49:29-05:00",
-        "end": "2012-01-17T03:04:29-05:00"
-      },
-      "reasonCode": [ {
+      "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
           "code": "62106007",
           "display": "Concussion with no loss of consciousness"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
-        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
-      }
+        } ],
+        "text": "Concussion with no loss of consciousness"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-6"
+      },
+      "onsetDateTime": "2011-12-18T02:49:29-05:00",
+      "abatementDateTime": "2012-01-17T02:49:29-05:00",
+      "recordedDate": "2011-12-18T02:49:29-05:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-7"
+      "url": "Condition/condition-Brunilda665-Kuphal363-2"
     }
   }, {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-8",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
+      "resourceType": "Condition",
+      "id": "condition-Brunilda665-Kuphal363-3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
       },
-      "type": [ {
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
+          "code": "10509002",
+          "display": "Acute bronchitis (disorder)"
         } ],
-        "text": "General examination of patient (procedure)"
-      } ],
+        "text": "Acute bronchitis (disorder)"
+      },
       "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
+        "reference": "Patient/Brunilda665-Kuphal363"
       },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000008426",
-          "display": "Dr. Marybelle759 Blanda868"
-        }
-      } ],
-      "period": {
-        "start": "2012-02-22T02:49:29-05:00",
-        "end": "2012-02-22T03:04:29-05:00"
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-10"
       },
-      "serviceProvider": {
-        "reference": "Organization/32dd69c8-377f-3760-b969-8742d583217e",
-        "display": "PCP63830"
-      }
+      "onsetDateTime": "2013-07-02T03:49:29-04:00",
+      "abatementDateTime": "2013-07-09T03:49:29-04:00",
+      "recordedDate": "2013-07-02T03:49:29-04:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      "url": "Condition/condition-Brunilda665-Kuphal363-3"
     }
   }, {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Brunilda665-Kuphal363-9",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
+      "resourceType": "Condition",
+      "id": "condition-Brunilda665-Kuphal363-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
       },
-      "type": [ {
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "394701000",
-          "display": "Asthma follow-up"
+          "code": "232353008",
+          "display": "Perennial allergic rhinitis with seasonal variation"
         } ],
-        "text": "Asthma follow-up"
-      } ],
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363",
-        "display": "Ms. Brunilda665 Kuphal363"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001b8",
-          "display": "Dr. Juana825 Benavídez820"
-        }
-      } ],
-      "period": {
-        "start": "2012-03-07T02:49:29-05:00",
-        "end": "2012-03-07T03:04:29-05:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195967001",
-          "display": "Asthma"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/12c9daf5-a29c-36c9-ac55-28972463e566",
-        "display": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Brunilda665-Kuphal363-9"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-1",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
+        "text": "Perennial allergic rhinitis with seasonal variation"
       },
       "subject": {
         "reference": "Patient/Brunilda665-Kuphal363"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-3"
       },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 157.58682919417407,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
+      "onsetDateTime": "1976-12-10T02:49:29-05:00",
+      "recordedDate": "1976-12-10T02:49:29-05:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-10",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-10"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-11",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 157.58682919417407,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-11"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-12",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 0.35392112503736817,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-13",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 74.63501232016068,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-13"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-14",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 30.054034077434594,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-15",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 81.72273306775281,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 133.63436888493467,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-15"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-16",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 7.066172578714834,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-16"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-17",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 5.386721236896143,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-17"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-18",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 14.102247752163548,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-18"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-19",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 47.034409490347855,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-19"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 3.334458144022164,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-20",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 82.16578659335171,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-20"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-21",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 27.75672668112571,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-21"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-22",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 35.57709417840218,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-22"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-23",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 40.91581939845306,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-23"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-24",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 227.32233168580535,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-24"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-25",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 171.30613069571274,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-25"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-26",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 9.70537480542923,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-26"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-27",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
-      },
-      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-27"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-28",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 157.58682919417407,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-28"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-29",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 2.854853580583792,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-29"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 73.38559165194091,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-30",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 74.63501232016068,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-30"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-31",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 30.054034077434594,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-31"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-32",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 84.4285592443275,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 108.33792569222437,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-32"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-33",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 188.20288562420356,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-33"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-34",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 118.30368915542437,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-34"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-35",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 97.70919231527992,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-35"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-36",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 66.83295547783877,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-36"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-37",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
-      },
-      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-37"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-38",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
-      },
-      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 157.58682919417407,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-38"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-39",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
-      },
-      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 1.545412219665594,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-39"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 29.550917240277123,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-40",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
-      },
-      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 74.63501232016068,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-40"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-41",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
-      },
-      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 30.054034077434594,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-41"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-42",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
-      },
-      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 121.71496345495625,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 129.42878663991418,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-42"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-43",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
-      },
-      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-43"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-5",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 89.6994064594832,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 130.76026167132528,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-6",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 183.23878772703927,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-7",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 102.22595055658472,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-8",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 91.05618145347327,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Brunilda665-Kuphal363-9",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Brunilda665-Kuphal363"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
-      },
-      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
-      "valueQuantity": {
-        "value": 71.73741616224905,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Brunilda665-Kuphal363-9"
+      "url": "Condition/condition-Brunilda665-Kuphal363-1"
     }
   }, {
     "resource": {
@@ -2933,6 +1191,1748 @@
     "request": {
       "method": "PUT",
       "url": "Patient/Brunilda665-Kuphal363"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 73.38559165194091,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-19",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 47.034409490347855,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-19"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-35",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 97.70919231527992,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-35"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-23",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 40.91581939845306,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-23"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-15",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 81.72273306775281,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 133.63436888493467,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-42",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
+      },
+      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 121.71496345495625,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 129.42878663991418,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-42"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-39",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
+      },
+      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 1.545412219665594,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-39"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-38",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
+      },
+      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 157.58682919417407,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-38"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-43",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
+      },
+      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-43"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-14",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 30.054034077434594,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-22",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 35.57709417840218,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-34",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 118.30368915542437,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-34"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-18",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 14.102247752163548,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 3.334458144022164,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-9",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 71.73741616224905,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-13",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 74.63501232016068,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-29",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 2.854853580583792,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 89.6994064594832,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 130.76026167132528,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-33",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 188.20288562420356,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-33"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-25",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 171.30613069571274,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-25"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-24",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 227.32233168580535,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-32",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.4285592443275,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 108.33792569222437,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-32"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 29.550917240277123,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-28",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 157.58682919417407,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-28"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-12",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 0.35392112503736817,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 91.05618145347327,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-11",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 157.58682919417407,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-27",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-27"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-31",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 30.054034077434594,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-31"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 102.22595055658472,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 183.23878772703927,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-30",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 74.63501232016068,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-30"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-26",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 9.70537480542923,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-26"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-10",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-21",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 27.75672668112571,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-21"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-37",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-37"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-8"
+      },
+      "effectiveDateTime": "2012-02-22T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 157.58682919417407,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-40",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
+      },
+      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 74.63501232016068,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-40"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-17",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 5.386721236896143,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-16",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 7.066172578714834,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-41",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-20"
+      },
+      "effectiveDateTime": "2018-12-19T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 30.054034077434594,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-41"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-36",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-15"
+      },
+      "effectiveDateTime": "2016-12-14T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 66.83295547783877,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-36"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Brunilda665-Kuphal363-20",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Brunilda665-Kuphal363"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Brunilda665-Kuphal363-13"
+      },
+      "effectiveDateTime": "2014-12-10T02:49:29-05:00",
+      "valueQuantity": {
+        "value": 82.16578659335171,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Brunilda665-Kuphal363-20"
     }
   } ]
 }

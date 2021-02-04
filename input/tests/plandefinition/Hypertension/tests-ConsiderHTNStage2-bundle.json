@@ -27,6 +27,23 @@
     }
   }, {
     "resource": {
+      "resourceType": "Patient",
+      "id": "ConsiderHTNStage2",
+      "active": true,
+      "name": [ {
+        "text": "ConsiderHTNStage2 Patient",
+        "family": "Patient",
+        "given": [ "ConsiderHTNStage2" ]
+      } ],
+      "gender": "female",
+      "birthDate": "2002-10-01"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/ConsiderHTNStage2"
+    }
+  }, {
+    "resource": {
       "resourceType": "Observation",
       "id": "observation-ConsiderHTNStage2-1",
       "status": "final",
@@ -96,7 +113,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-ConsiderHTNStage2-2",
+      "id": "observation-ConsiderHTNStage2-7",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -119,7 +136,7 @@
       "subject": {
         "reference": "Patient/ConsiderHTNStage2"
       },
-      "effectiveDateTime": "2020-06-05T12:00:00-06:00",
+      "effectiveDateTime": "2020-11-05T12:00:00-06:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -131,7 +148,7 @@
           "text": "Systolic blood pressure"
         },
         "valueQuantity": {
-          "value": 165,
+          "value": 151,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -147,7 +164,7 @@
           "text": "Diastolic blood pressure"
         },
         "valueQuantity": {
-          "value": 97,
+          "value": 85,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -156,202 +173,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-ConsiderHTNStage2-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-ConsiderHTNStage2-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/observation-category",
-          "code": "vital-signs",
-          "display": "Vital Signs",
-          "userSelected": false
-        } ],
-        "text": "Vital Signs"
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "version": "2.68",
-          "code": "55284-4",
-          "display": "Blood pressure systolic and diastolic"
-        } ],
-        "text": "Blood pressure systolic and diastolic"
-      },
-      "subject": {
-        "reference": "Patient/ConsiderHTNStage2"
-      },
-      "effectiveDateTime": "2020-07-05T12:00:00-06:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic blood pressure",
-            "userSelected": false
-          } ],
-          "text": "Systolic blood pressure"
-        },
-        "valueQuantity": {
-          "value": 178,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure",
-            "userSelected": false
-          } ],
-          "text": "Diastolic blood pressure"
-        },
-        "valueQuantity": {
-          "value": 88,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-ConsiderHTNStage2-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-ConsiderHTNStage2-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/observation-category",
-          "code": "vital-signs",
-          "display": "Vital Signs",
-          "userSelected": false
-        } ],
-        "text": "Vital Signs"
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "version": "2.68",
-          "code": "55284-4",
-          "display": "Blood pressure systolic and diastolic"
-        } ],
-        "text": "Blood pressure systolic and diastolic"
-      },
-      "subject": {
-        "reference": "Patient/ConsiderHTNStage2"
-      },
-      "effectiveDateTime": "2020-08-05T12:00:00-06:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic blood pressure",
-            "userSelected": false
-          } ],
-          "text": "Systolic blood pressure"
-        },
-        "valueQuantity": {
-          "value": 158,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure",
-            "userSelected": false
-          } ],
-          "text": "Diastolic blood pressure"
-        },
-        "valueQuantity": {
-          "value": 95,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-ConsiderHTNStage2-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-ConsiderHTNStage2-5",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://hl7.org/fhir/observation-category",
-          "code": "vital-signs",
-          "display": "Vital Signs",
-          "userSelected": false
-        } ],
-        "text": "Vital Signs"
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "version": "2.68",
-          "code": "55284-4",
-          "display": "Blood pressure systolic and diastolic"
-        } ],
-        "text": "Blood pressure systolic and diastolic"
-      },
-      "subject": {
-        "reference": "Patient/ConsiderHTNStage2"
-      },
-      "effectiveDateTime": "2020-09-05T12:00:00-06:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic blood pressure",
-            "userSelected": false
-          } ],
-          "text": "Systolic blood pressure"
-        },
-        "valueQuantity": {
-          "value": 148,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure",
-            "userSelected": false
-          } ],
-          "text": "Diastolic blood pressure"
-        },
-        "valueQuantity": {
-          "value": 105,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-ConsiderHTNStage2-5"
+      "url": "Observation/observation-ConsiderHTNStage2-7"
     }
   }, {
     "resource": {
@@ -421,7 +243,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-ConsiderHTNStage2-7",
+      "id": "observation-ConsiderHTNStage2-5",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -444,7 +266,7 @@
       "subject": {
         "reference": "Patient/ConsiderHTNStage2"
       },
-      "effectiveDateTime": "2020-11-05T12:00:00-06:00",
+      "effectiveDateTime": "2020-09-05T12:00:00-06:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -456,7 +278,7 @@
           "text": "Systolic blood pressure"
         },
         "valueQuantity": {
-          "value": 151,
+          "value": 148,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -472,7 +294,7 @@
           "text": "Diastolic blood pressure"
         },
         "valueQuantity": {
-          "value": 85,
+          "value": 105,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -481,24 +303,202 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-ConsiderHTNStage2-7"
+      "url": "Observation/observation-ConsiderHTNStage2-5"
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "ConsiderHTNStage2",
-      "active": true,
-      "name": [ {
-        "text": "ConsiderHTNStage2 Patient",
-        "family": "Patient",
-        "given": [ "ConsiderHTNStage2" ]
+      "resourceType": "Observation",
+      "id": "observation-ConsiderHTNStage2-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
       } ],
-      "gender": "female",
-      "birthDate": "2002-10-01"
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage2"
+      },
+      "effectiveDateTime": "2020-08-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 158,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 95,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/ConsiderHTNStage2"
+      "url": "Observation/observation-ConsiderHTNStage2-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-ConsiderHTNStage2-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage2"
+      },
+      "effectiveDateTime": "2020-07-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 178,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 88,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-ConsiderHTNStage2-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-ConsiderHTNStage2-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage2"
+      },
+      "effectiveDateTime": "2020-06-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 165,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 97,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-ConsiderHTNStage2-2"
     }
   } ]
 }
