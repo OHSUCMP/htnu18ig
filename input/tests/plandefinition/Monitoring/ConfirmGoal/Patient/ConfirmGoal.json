@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "ConfirmGoal",
+  "active": true,
+  "name": [
+    {
+      "text": "ConfirmGoal Patient",
+      "family": "Patient",
+      "given": [
+        "ConfirmGoal"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1991-04-04"
+}

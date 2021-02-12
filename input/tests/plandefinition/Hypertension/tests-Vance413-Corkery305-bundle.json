@@ -4,441 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-6",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "EMER"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "50849002",
-          "display": "Emergency room admission (procedure)"
-        } ],
-        "text": "Emergency room admission (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
-          "display": "Dr. Hoa730 Wiegand701"
-        }
-      } ],
-      "period": {
-        "start": "2016-03-03T18:27:55-05:00",
-        "end": "2016-03-03T20:22:55-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
-        "display": "METROWEST MEDICAL CENTER"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-7",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185349003",
-          "display": "Encounter for 'check-up'"
-        } ],
-        "text": "Encounter for 'check-up'"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
-          "display": "Dr. Hoa730 Wiegand701"
-        }
-      } ],
-      "period": {
-        "start": "2016-04-02T19:27:55-04:00",
-        "end": "2016-04-02T19:42:55-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "65966004",
-          "display": "Fracture of forearm"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
-        "display": "METROWEST MEDICAL CENTER"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-1",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000002102",
-          "display": "Dr. Earline566 Wuckert783"
-        }
-      } ],
-      "period": {
-        "start": "2019-05-14T19:27:55-04:00",
-        "end": "2019-05-14T19:42:55-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/daa4c408-5fc5-32a8-881e-12181e8b8598",
-        "display": "PCP12132"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-2",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
-          "display": "Dr. Hoa730 Wiegand701"
-        }
-      } ],
-      "period": {
-        "start": "2012-10-16T19:27:55-04:00",
-        "end": "2012-10-16T19:42:55-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
-        "display": "METROWEST MEDICAL CENTER"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-3",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
-          "display": "Dr. Hoa730 Wiegand701"
-        }
-      } ],
-      "period": {
-        "start": "2013-03-31T19:27:55-04:00",
-        "end": "2013-03-31T19:57:55-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
-        "display": "METROWEST MEDICAL CENTER"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-4",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000002102",
-          "display": "Dr. Earline566 Wuckert783"
-        }
-      } ],
-      "period": {
-        "start": "2019-05-17T19:27:55-04:00",
-        "end": "2019-05-17T19:42:55-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/daa4c408-5fc5-32a8-881e-12181e8b8598",
-        "display": "PCP12132"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-8",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000002102",
-          "display": "Dr. Earline566 Wuckert783"
-        }
-      } ],
-      "period": {
-        "start": "2019-05-20T19:27:55-04:00",
-        "end": "2019-05-20T19:57:55-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/daa4c408-5fc5-32a8-881e-12181e8b8598",
-        "display": "PCP12132"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-9",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
-          "display": "Dr. Hoa730 Wiegand701"
-        }
-      } ],
-      "period": {
-        "start": "2017-02-02T18:27:55-05:00",
-        "end": "2017-02-02T18:42:55-05:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
-        "display": "METROWEST MEDICAL CENTER"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-9"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-10",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000002102",
-          "display": "Dr. Earline566 Wuckert783"
-        }
-      } ],
-      "period": {
-        "start": "2019-05-24T19:27:55-04:00",
-        "end": "2019-05-24T19:42:55-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/daa4c408-5fc5-32a8-881e-12181e8b8598",
-        "display": "PCP12132"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-10"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Vance413-Corkery305-5",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305",
-        "display": "Mr. Vance413 Corkery305"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
-          "display": "Dr. Hoa730 Wiegand701"
-        }
-      } ],
-      "period": {
-        "start": "2015-08-28T19:27:55-04:00",
-        "end": "2015-08-28T19:42:55-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
-        "display": "METROWEST MEDICAL CENTER"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Vance413-Corkery305-5"
-    }
-  }, {
-    "resource": {
       "resourceType": "Condition",
       "id": "condition-Vance413-Corkery305-1",
       "clinicalStatus": {
@@ -629,6 +194,2449 @@
     }
   }, {
     "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000002102",
+          "display": "Dr. Earline566 Wuckert783"
+        }
+      } ],
+      "period": {
+        "start": "2019-05-14T19:27:55-04:00",
+        "end": "2019-05-14T19:42:55-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/daa4c408-5fc5-32a8-881e-12181e8b8598",
+        "display": "PCP12132"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-10",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000002102",
+          "display": "Dr. Earline566 Wuckert783"
+        }
+      } ],
+      "period": {
+        "start": "2019-05-24T19:27:55-04:00",
+        "end": "2019-05-24T19:42:55-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/daa4c408-5fc5-32a8-881e-12181e8b8598",
+        "display": "PCP12132"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
+          "display": "Dr. Hoa730 Wiegand701"
+        }
+      } ],
+      "period": {
+        "start": "2012-10-16T19:27:55-04:00",
+        "end": "2012-10-16T19:42:55-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
+        "display": "METROWEST MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
+          "display": "Dr. Hoa730 Wiegand701"
+        }
+      } ],
+      "period": {
+        "start": "2013-03-31T19:27:55-04:00",
+        "end": "2013-03-31T19:57:55-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
+        "display": "METROWEST MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000002102",
+          "display": "Dr. Earline566 Wuckert783"
+        }
+      } ],
+      "period": {
+        "start": "2019-05-17T19:27:55-04:00",
+        "end": "2019-05-17T19:42:55-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/daa4c408-5fc5-32a8-881e-12181e8b8598",
+        "display": "PCP12132"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-5",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
+          "display": "Dr. Hoa730 Wiegand701"
+        }
+      } ],
+      "period": {
+        "start": "2015-08-28T19:27:55-04:00",
+        "end": "2015-08-28T19:42:55-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
+        "display": "METROWEST MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-6",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "EMER"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "50849002",
+          "display": "Emergency room admission (procedure)"
+        } ],
+        "text": "Emergency room admission (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
+          "display": "Dr. Hoa730 Wiegand701"
+        }
+      } ],
+      "period": {
+        "start": "2016-03-03T18:27:55-05:00",
+        "end": "2016-03-03T20:22:55-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
+        "display": "METROWEST MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-7",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185349003",
+          "display": "Encounter for 'check-up'"
+        } ],
+        "text": "Encounter for 'check-up'"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
+          "display": "Dr. Hoa730 Wiegand701"
+        }
+      } ],
+      "period": {
+        "start": "2016-04-02T19:27:55-04:00",
+        "end": "2016-04-02T19:42:55-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "65966004",
+          "display": "Fracture of forearm"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
+        "display": "METROWEST MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-8",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000002102",
+          "display": "Dr. Earline566 Wuckert783"
+        }
+      } ],
+      "period": {
+        "start": "2019-05-20T19:27:55-04:00",
+        "end": "2019-05-20T19:57:55-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/daa4c408-5fc5-32a8-881e-12181e8b8598",
+        "display": "PCP12132"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Vance413-Corkery305-9",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305",
+        "display": "Mr. Vance413 Corkery305"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000212",
+          "display": "Dr. Hoa730 Wiegand701"
+        }
+      } ],
+      "period": {
+        "start": "2017-02-02T18:27:55-05:00",
+        "end": "2017-02-02T18:42:55-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444814009",
+          "display": "Viral sinusitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/465de31f-3098-365c-af70-48a071e1f5aa",
+        "display": "METROWEST MEDICAL CENTER"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Vance413-Corkery305-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-1"
+      },
+      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 176.2211368488098,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-10",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 176.41901764218392,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-11",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 0.11845982898849172,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-12",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 71.04257579793877,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-13",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 22.825899479975774,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-14",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2019-05-17T19:27:55-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 77.24105665132866,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 116.22601687506216,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-15",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 9.698005496028212,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-16",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 4.403330291804156,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-17",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 14.00610935597416,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-18",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 45.98639925253047,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-19",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 93.08298116788278,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-19"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-1"
+      },
+      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 1.3896569967100212,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-20",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 31.122572045380885,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-20"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-21",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 33.934072546527446,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-21"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-22",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 40.24643024546449,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-23",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 445.66815604767345,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-23"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-24",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 367.28669546231095,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-25",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 12.207985766802262,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-25"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-26",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-4"
+      },
+      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-26"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-27",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-5"
+      },
+      "effectiveDateTime": "2015-08-28T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 37.34520820010125,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-27"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-28",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-8"
+      },
+      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 176.41901764218392,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-28"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-29",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-8"
+      },
+      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 1.0402625058752855,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-1"
+      },
+      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 66.00363668795023,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-30",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-8"
+      },
+      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 74.57253605787976,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-30"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-31",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-8"
+      },
+      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 23.960071730302037,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-31"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-32",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-8"
+      },
+      "effectiveDateTime": "2019-05-20T19:27:55-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 70.9374950809094,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 119.08738468317219,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-32"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-33",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-8"
+      },
+      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-33"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-34",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 176.41901764218392,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-34"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-35",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 2.415153233128304,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-35"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-36",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 77.64204853284203,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-36"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-37",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 24.94630262662116,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-37"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-38",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.95143124326056,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 131.18605665650992,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-38"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-39",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 5.193347396095653,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-39"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-1"
+      },
+      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 21.254547710371344,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-40",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 5.2222623017760235,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-40"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-41",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 14.2399070519258,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-41"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-42",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 36.35383494814687,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-42"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-43",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 83.7585248011931,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-43"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-44",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 32.63574921547564,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-44"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-45",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 34.0013549740232,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-45"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-46",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 39.60678293983962,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-46"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-47",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 233.87292057144242,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-47"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-48",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 163.98321737072166,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-48"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-49",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 9.575639961510815,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-49"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "59576-9",
+          "display": "Body mass index (BMI) [Percentile] Per age and gender"
+        } ],
+        "text": "Body mass index (BMI) [Percentile] Per age and gender"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-1"
+      },
+      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 31.9004077294448,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-50",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-10"
+      },
+      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-50"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-1"
+      },
+      "effectiveDateTime": "2019-05-14T19:27:55-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.86179020385777,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 124.02462372335854,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-1"
+      },
+      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-2"
+      },
+      "effectiveDateTime": "2012-10-16T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 37.212411058041525,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Vance413-Corkery305-9",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
+      },
+      "subject": {
+        "reference": "Patient/Vance413-Corkery305"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Vance413-Corkery305-3"
+      },
+      "effectiveDateTime": "2013-03-31T19:27:55-04:00",
+      "valueQuantity": {
+        "value": 37.67374312168004,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Vance413-Corkery305-9"
+    }
+  }, {
+    "resource": {
       "resourceType": "Patient",
       "id": "Vance413-Corkery305",
       "text": {
@@ -781,2014 +2789,6 @@
     "request": {
       "method": "PUT",
       "url": "Patient/Vance413-Corkery305"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-22",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 40.24643024546449,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-22"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-34",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 176.41901764218392,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-34"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-18",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 45.98639925253047,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-18"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-9",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8331-1",
-          "display": "Oral temperature"
-        } ],
-        "text": "Oral temperature"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-3"
-      },
-      "effectiveDateTime": "2013-03-31T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 37.67374312168004,
-        "unit": "Cel",
-        "system": "http://unitsofmeasure.org",
-        "code": "Cel"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-9"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-38",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 84.95143124326056,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 131.18605665650992,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-38"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-14",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2019-05-17T19:27:55-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 77.24105665132866,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 116.22601687506216,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-43",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 83.7585248011931,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-43"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-5",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "59576-9",
-          "display": "Body mass index (BMI) [Percentile] Per age and gender"
-        } ],
-        "text": "Body mass index (BMI) [Percentile] Per age and gender"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-1"
-      },
-      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 31.9004077294448,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-42",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 36.35383494814687,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-42"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-1"
-      },
-      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 21.254547710371344,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-15",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 9.698005496028212,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-15"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-39",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 5.193347396095653,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-39"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-8",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8331-1",
-          "display": "Oral temperature"
-        } ],
-        "text": "Oral temperature"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-2"
-      },
-      "effectiveDateTime": "2012-10-16T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 37.212411058041525,
-        "unit": "Cel",
-        "system": "http://unitsofmeasure.org",
-        "code": "Cel"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-19",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 93.08298116788278,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-19"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-35",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 2.415153233128304,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-35"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-23",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 445.66815604767345,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-23"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-28",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-8"
-      },
-      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 176.41901764218392,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-28"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-12",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 71.04257579793877,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-45",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 34.0013549740232,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-45"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-1"
-      },
-      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 66.00363668795023,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-24",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 367.28669546231095,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-24"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-32",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-8"
-      },
-      "effectiveDateTime": "2019-05-20T19:27:55-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 70.9374950809094,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 119.08738468317219,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-32"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-49",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 9.575639961510815,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-49"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-48",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 163.98321737072166,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-48"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-33",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-8"
-      },
-      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-33"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-25",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 12.207985766802262,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-25"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-44",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 32.63574921547564,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-44"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-1"
-      },
-      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 1.3896569967100212,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-13",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 22.825899479975774,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-13"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-29",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-8"
-      },
-      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 1.0402625058752855,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-29"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-1",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-1"
-      },
-      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 176.2211368488098,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-47",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 233.87292057144242,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-47"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-10",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 176.41901764218392,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-10"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-30",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-8"
-      },
-      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 74.57253605787976,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-30"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-26",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-26"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-27",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8331-1",
-          "display": "Oral temperature"
-        } ],
-        "text": "Oral temperature"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-5"
-      },
-      "effectiveDateTime": "2015-08-28T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 37.34520820010125,
-        "unit": "Cel",
-        "system": "http://unitsofmeasure.org",
-        "code": "Cel"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-27"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-31",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-8"
-      },
-      "effectiveDateTime": "2016-05-20T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 23.960071730302037,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-31"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-11",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 0.11845982898849172,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-11"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-46",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 39.60678293983962,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-46"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-50",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-50"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-36",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 77.64204853284203,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-36"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-20",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 31.122572045380885,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-20"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-7",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-1"
-      },
-      "effectiveDateTime": "2010-05-14T19:27:55-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-41",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 14.2399070519258,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-41"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-16",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 4.403330291804156,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-16"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-17",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 14.00610935597416,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-17"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-6",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-1"
-      },
-      "effectiveDateTime": "2019-05-14T19:27:55-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 84.86179020385777,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 124.02462372335854,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-40",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 5.2222623017760235,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-40"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-21",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-4"
-      },
-      "effectiveDateTime": "2013-05-17T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 33.934072546527446,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-21"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Vance413-Corkery305-37",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Vance413-Corkery305"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Vance413-Corkery305-10"
-      },
-      "effectiveDateTime": "2019-05-24T19:27:55-04:00",
-      "valueQuantity": {
-        "value": 24.94630262662116,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Vance413-Corkery305-37"
     }
   } ]
 }

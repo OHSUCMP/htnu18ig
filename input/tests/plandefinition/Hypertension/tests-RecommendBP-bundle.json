@@ -27,23 +27,6 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "RecommendBP",
-      "active": true,
-      "name": [ {
-        "text": "RecommendBP Patient",
-        "family": "Patient",
-        "given": [ "RecommendBP" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1970-06-15"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/RecommendBP"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-RecommendBP-1",
       "status": "final",
@@ -109,6 +92,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-RecommendBP-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "RecommendBP",
+      "active": true,
+      "name": [ {
+        "text": "RecommendBP Patient",
+        "family": "Patient",
+        "given": [ "RecommendBP" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1970-06-15"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/RecommendBP"
     }
   } ]
 }
