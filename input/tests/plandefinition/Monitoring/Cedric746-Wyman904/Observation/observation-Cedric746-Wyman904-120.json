@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Cedric746-Wyman904-120",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        },
+        "subject": {
+          "reference": "Patient/Cedric746-Wyman904"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Cedric746-Wyman904-12"
+        },
+        "effectiveDateTime": "2015-05-02T15:42:56-04:00",
+        "valueQuantity": {
+          "value": 6.013052568849174,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

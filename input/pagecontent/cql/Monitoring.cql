@@ -53,6 +53,8 @@ define "Meets Exclusion Criteria":
     or exists "Condition Indicating End Stage Renal Disease"
     or exists "Condition Indicating Pregnancy"
 
+
+
 define "In Population":
   "Meets Inclusion Criteria"
   and not "Meets Exclusion Criteria"
@@ -102,6 +104,18 @@ define "Exclusion Reason":
         )
     )
   else ''
+
+define "No Entry into Population":
+  not "Meets Inclusion Criteria"
+    and not "Meets Exclusion Criteria"
+
+define "No Entry Title":
+  if "Patient Has Above Normal BP" then
+   'Patient did not have above normal blood pressure.'
+  else 'Patient did not have a preexisting hypertensive condition.'
+
+define "No Entry Description":
+  'No Further Action Required.'
 
 
 /* Patient Entered Elevated BP Reading Today */

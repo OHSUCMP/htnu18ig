@@ -1,0 +1,43 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Cedric746-Wyman904-183",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status NHIS"
+            }
+          ],
+          "text": "Tobacco smoking status NHIS"
+        },
+        "subject": {
+          "reference": "Patient/Cedric746-Wyman904"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Cedric746-Wyman904-17"
+        },
+        "effectiveDateTime": "2019-05-25T15:42:56-04:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266919005",
+              "display": "Never smoker"
+            }
+          ],
+          "text": "Never smoker"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Cedric746-Wyman904-40",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Total Cholesterol"
+            }
+          ],
+          "text": "Total Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Cedric746-Wyman904"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Cedric746-Wyman904-6"
+        },
+        "effectiveDateTime": "2011-04-09T15:42:56-04:00",
+        "valueQuantity": {
+          "value": 195.67965169745207,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

@@ -66,7 +66,7 @@
   ],
   "action": [
     {
-      "title": "Hypertension Monitoring",
+      "title": "Hypertension Monitoring Process",
       "documentation": [
         {
           "type": "documentation",
@@ -109,7 +109,7 @@
       "action": [
         {
           "title": "Recommendation",
-          "description": "Determines type of recommendation regarding status of Hypertension Diagnosis.",
+          "description": "Determines type of recommendation regarding status of Hypertension Monitoring Process.",
           "condition": [
             {
               "kind": "applicability",
@@ -147,7 +147,7 @@
           ]
         },
         {
-          "title": "Exclusion from Hypertension Diagnosis",
+          "title": "Exclusion from Hypertension Monitoring Process",
           "description": "Determines if patient was excluded from Hypertension Recommendation.",
           "condition": [
             {
@@ -163,9 +163,48 @@
             {
               "path": "action.description",
               "expression": {
-                "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
+                "description": "Rationale for why patient was excluded from the hypertension mmonitoring process.",
                 "language": "text/cql.identifier",
                 "expression": "Exclusion Reason"
+              }
+            },
+            {
+              "path": "action.extension",
+              "expression": {
+                "language": "text/cql.identifier",
+                "expression": "Info"
+              }
+            }
+          ]
+        },
+        {
+          "title": "No Entry into Hypertension Monitoring Process",
+          "description": "Determines if patient was excluded from Hypertension Recommendation.",
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "description": "Determine if Patient is not in hypertension population.",
+                "language": "text/cql.identifier",
+                "expression": "No Entry into Population"
+              }
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.title",
+              "expression": {
+                "description": "Determines if and what type of recommendation patient should be recommended.",
+                "language": "text/cql.identifier",
+                "expression": "No Entry Title"
+              }
+            },
+            {
+              "path": "action.description",
+              "expression": {
+                "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
+                "language": "text/cql.identifier",
+                "expression": "No Entry Description"
               }
             },
             {
