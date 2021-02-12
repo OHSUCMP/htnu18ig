@@ -66,7 +66,7 @@ define "Recommendation":
   else if "Not At Goal" then 'Not at goal: Recommend treatment.'
   else if "Prescribe HBP or ABP Monitoring" then 'Use ambulatory or home blood pressure monitoring to confirm not at BP goal'
   else if "Prescribe Ambulatory BP Monitoring" then 'Use ambulatory blood pressure monitoring to address blood pressure variability'
-  else 'Patient does not have an indication of a hypertensive state.'
+  else 'Patient at goal!'
 
 define "Rationale":
   if exists "Condition Indicating Pregnancy" then 'Please see your Ob-Gyn provider for specialized care regarding your high blood pressure reading while pregnant'

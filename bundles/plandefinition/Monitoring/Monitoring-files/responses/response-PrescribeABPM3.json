@@ -1,0 +1,19 @@
+{
+    "cards": [
+        {
+            "summary": "Hypertension Monitoring",
+            "indicator": "info",
+            "detail": "PrescribeABPM3 Patient",
+            "source": {
+                "label": "Info for those with normal blood pressure",
+                "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+            }
+        },
+        {
+            "summary": "Use ambulatory blood pressure monitoring to address blood pressure variability",
+            "indicator": "info",
+            "detail": "You had a high blood pressure reading recently.  Your blood pressure has varied from reading to reading significantly.  Sometimes there is a health risk with highly variable blood pressure.  A 24 hour ambulatory/walking measurement will us provide the best care.",
+            "source": {}
+        }
+    ]
+}
