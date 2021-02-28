@@ -42,7 +42,7 @@ define "Patient Name":
   First(Patient.name.family)
 
 
-/* Recommendation Criteria - Hypertension  */
+/* Recommendation Criteria - Monitoring Hypertension  */
 define "Meets Inclusion Criteria":
  "Patient Has Above Normal BP"
     and exists "Condition Indicating Preexisting Hypertension"
@@ -134,7 +134,7 @@ define "Blood Pressure Observations for Last 2 Years":
 
 
 define "Ambulatory Blood Pressure Monitoring Procedures":
-  (Common.QualifiedProcedures(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
+  (Common.QualifiedProcedure(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
     let ABPMProcedureInterval: Common."Normalize Interval"(ABPMProcedure.performed)
       where exists (
         "Blood Pressure Observations for Last 2 Years" BPObservation
@@ -208,18 +208,16 @@ define "Condition Indicating Preexisting Hypertension":
 // Goal Quantity Value
 
 define "Qualifying Blood Pressure Goals":
-  (Common.QualifiedGoals(["Goal"])) BPGoal
+  (Common.QualifiedGoal(["Goal"])) BPGoal
     where (
       singleton from (BPGoal.target Systolic
         where Systolic.measure in "Systolic blood pressure"
-          and Systolic.detail is not null
           and Systolic.detail is Quantity
           and Common.WithUnit(Systolic.detail, 'mm[Hg]'))
     ) SystolicTarget is not null
       and (
         singleton from (BPGoal.target Diastolic
           where Diastolic.measure in "Diastolic Blood Pressure"
-            and Diastolic.detail is not null
             and Diastolic.detail is Quantity
             and Common.WithUnit(Diastolic.detail, 'mm[Hg]'))
       ) DiastolicTarget is not null

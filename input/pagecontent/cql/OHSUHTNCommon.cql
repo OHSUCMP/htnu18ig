@@ -96,23 +96,23 @@ define function "Systolic BP Variability String"(list List<FHIR.Observation>):
 define function WithUnit(list List<Observation>, Unit String):
   list Observations
     where (
-      ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).unit.value = Unit
-        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).unit.value = Unit)
-      or ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).code.value = Unit
-        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).code.value = Unit)
+      ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).unit.value ~ Unit
+        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).unit.value ~ Unit)
+      or ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).code.value ~ Unit
+        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).code.value ~ Unit)
     )
 
-define function WithUnit(list Quantity, Unit String):
+define function WithUnit(value Quantity, Unit String):
   (
-    list Quantities
+    value quantity
     where (
-      Quantities.code.value = Unit
-      or Quantities.unit.value = Unit
+      quantity.code.value ~ Unit
+      or quantity.unit.value ~ Unit
     )
   ) is not null
 
 
-define function QualifiedEncounters(list List<FHIR.Encounter>):
+define function QualifiedEncounter(list List<FHIR.Encounter>):
   list Encounter
     //planned | arrived | triaged | in-progress | onleave | finished | cancelled +
     where Encounter.status ~ 'finished'
@@ -133,7 +133,7 @@ define function QualifiedObservation(list List<FHIR.Observation>):
 			or Observation.status ~ 'corrected'
 		)
 
-define function QualifiedProcedures(list List<FHIR.Procedure>):
+define function QualifiedProcedure(list List<FHIR.Procedure>):
   list Procedure
     //preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown
     where Procedure.status ~ 'completed'
@@ -164,7 +164,7 @@ define function ActiveOrRecurring(list List<Condition>):
       )
       or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "relapse"
 
-define function QualifiedGoals(list List<Goal>):
+define function QualifiedGoal(list List<Goal>):
   list Goal
     //proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected
     where (

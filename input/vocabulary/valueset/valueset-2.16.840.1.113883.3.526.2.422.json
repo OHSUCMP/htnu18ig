@@ -1,0 +1,229 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113883.3.526.2.422",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "shareable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "narrative"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "publishable"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+    "valueString": "Includes concepts that represent an observation of use of tobacco products, including smoking and smoke-less tobacco products such as chew, snuff, pipe, cigarette, cigar, etc."
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+    "valueString": "Excludes concepts that represent a current tobacco non-user."
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.422",
+  "version": "20210220",
+  "title": "Tobacco User",
+  "status": "active",
+  "experimental": false,
+  "publisher": "National Committee for Quality Assurance",
+  "description": "The purpose of this value set is to represent concepts for an observation of tobacco user status.",
+  "purpose": "This value set may use a model element related to Observation.",
+  "expansion": {
+    "timestamp": "2021-02-26T23:00:24-07:00",
+    "contains": [ {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "110483000",
+      "display": "Tobacco user (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "160603005",
+      "display": "Light cigarette smoker (1-9 cigs/day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "160604004",
+      "display": "Moderate cigarette smoker (10-19 cigs/day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "160605003",
+      "display": "Heavy cigarette smoker (20-39 cigs/day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "160606002",
+      "display": "Very heavy cigarette smoker (40+ cigs/day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "160619003",
+      "display": "Rolls own cigarettes (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "228494002",
+      "display": "Snuff user (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "228499007",
+      "display": "Finding relating to moist tobacco use (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "228504007",
+      "display": "User of moist powdered tobacco (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "228514003",
+      "display": "Chews plug tobacco (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "228515002",
+      "display": "Chews twist tobacco (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "228516001",
+      "display": "Chews loose leaf tobacco (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "228517005",
+      "display": "Chews fine cut tobacco (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "228518000",
+      "display": "Chews products containing tobacco (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "230059006",
+      "display": "Occasional cigarette smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "230060001",
+      "display": "Light cigarette smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "230062009",
+      "display": "Moderate cigarette smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "230063004",
+      "display": "Heavy cigarette smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "230064005",
+      "display": "Very heavy cigarette smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "230065006",
+      "display": "Chain smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "266920004",
+      "display": "Trivial cigarette smoker (less than one cigarette/day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "428041000124106",
+      "display": "Occasional tobacco smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "428061000124105",
+      "display": "Light tobacco smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "428071000124103",
+      "display": "Heavy tobacco smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "449867007",
+      "display": "Uses moist tobacco occasionally (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "449868002",
+      "display": "Smokes tobacco daily (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "449869005",
+      "display": "Uses moist tobacco daily (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "450811000124104",
+      "display": "Cigarette smoker (5-9 cigarettes/day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "450821000124107",
+      "display": "Cigarette smoker (1-4 cigarettes/day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "56578002",
+      "display": "Moderate smoker (20 or less per day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "56771006",
+      "display": "Heavy smoker (over 20 per day) (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "59978006",
+      "display": "Cigar smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "65568007",
+      "display": "Cigarette smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "713914004",
+      "display": "User of smokeless tobacco (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "77176002",
+      "display": "Smoker (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "81703003",
+      "display": "Chews tobacco (finding)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "82302008",
+      "display": "Pipe smoker (finding)"
+    } ]
+  }
+}

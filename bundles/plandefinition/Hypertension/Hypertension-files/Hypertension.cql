@@ -196,7 +196,7 @@ define "Blood Pressure Observations for Last 2 Years":
 
 
 define "Ambulatory Blood Pressure Monitoring Procedures":
-  (Common.QualifiedProcedures(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
+  (Common.QualifiedProcedure(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
     let ABPMProcedureInterval: Common."Normalize Interval"(ABPMProcedure.performed)
       where exists (
         "Blood Pressure Observations for Last 2 Years" BPObservation
