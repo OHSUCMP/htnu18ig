@@ -1,0 +1,39 @@
+{
+  "resourceType": "Goal",
+  "id": "HTNU18GoalTemplateDiastolic",
+  "lifecycleStatus": "planned",
+  "achievementStatus": {
+    "coding": [
+      {
+        "code": "in-progress"
+      }
+    ]
+  },
+  "startDate": "2012-02-12",
+  "description": {
+    "text": "goals for HTNU18"
+  },
+  "subject": {
+    "reference": "Armando772-Kohler843"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "8462-4",
+            "system": "http://loinc.org",
+            "display": "Diastolic Blood Pressure"
+          }
+        ]
+      }
+    },
+    {
+      "detailQuantity": {
+        "value": 80,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}

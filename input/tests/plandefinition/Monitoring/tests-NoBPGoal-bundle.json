@@ -4,6 +4,29 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-NoBPGoal-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/NoBPGoal"
+      },
+      "period": {
+        "start": "2019-06-18T11:05:32-07:00",
+        "end": "2019-06-18T13:02:11-07:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-NoBPGoal-1"
+    }
+  }, {
+    "resource": {
       "resourceType": "Condition",
       "id": "condition-NoBPGoal-1",
       "clinicalStatus": {
@@ -41,26 +64,20 @@
     }
   }, {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-NoBPGoal-1",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "version": "2.0.0",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "subject": {
-        "reference": "Patient/NoBPGoal"
-      },
-      "period": {
-        "start": "2019-06-18T11:05:32-07:00",
-        "end": "2019-06-18T13:02:11-07:00"
-      }
+      "resourceType": "Patient",
+      "id": "NoBPGoal",
+      "active": true,
+      "name": [ {
+        "text": "NoBPGoal Patient",
+        "family": "Patient",
+        "given": [ "NoBPGoal" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1991-04-04"
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-NoBPGoal-1"
+      "url": "Patient/NoBPGoal"
     }
   }, {
     "resource": {
@@ -129,23 +146,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-NoBPGoal-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Patient",
-      "id": "NoBPGoal",
-      "active": true,
-      "name": [ {
-        "text": "NoBPGoal Patient",
-        "family": "Patient",
-        "given": [ "NoBPGoal" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1991-04-04"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/NoBPGoal"
     }
   } ]
 }

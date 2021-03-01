@@ -1,0 +1,37 @@
+{
+  "resourceType": "Goal",
+  "id": "HTNU18GoalTemplateSystolic",
+  "lifecycleStatus": "planned",
+  "achievementStatus": {
+    "coding": [
+      {
+        "code": "in-progress"
+      }
+    ]
+  },
+  "startDate": "2012-02-12",
+  "description": {
+    "text": "goals for HTNU18"
+  },
+  "subject": {
+    "reference": "test"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "code": "8480-6",
+            "system": "http://loinc.org",
+            "display": "Systolic Blood Pressure"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": 130,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ]
+}

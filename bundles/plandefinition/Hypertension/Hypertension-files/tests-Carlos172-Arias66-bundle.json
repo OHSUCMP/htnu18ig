@@ -4,232 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Carlos172-Arias66-1",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162864005",
-          "display": "Body mass index 30+ - obesity (finding)"
-        } ],
-        "text": "Body mass index 30+ - obesity (finding)"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-1"
-      },
-      "onsetDateTime": "2007-03-30T22:10:56-04:00",
-      "recordedDate": "2007-03-30T22:10:56-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Carlos172-Arias66-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Carlos172-Arias66-2",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "370247008",
-          "display": "Facial laceration"
-        } ],
-        "text": "Facial laceration"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-3"
-      },
-      "onsetDateTime": "2009-12-24T21:10:56-05:00",
-      "abatementDateTime": "2010-01-14T21:10:56-05:00",
-      "recordedDate": "2009-12-24T21:10:56-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Carlos172-Arias66-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Carlos172-Arias66-3",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "62106007",
-          "display": "Concussion with no loss of consciousness"
-        } ],
-        "text": "Concussion with no loss of consciousness"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-6"
-      },
-      "onsetDateTime": "2012-11-29T21:10:56-05:00",
-      "abatementDateTime": "2013-01-28T21:10:56-05:00",
-      "recordedDate": "2012-11-29T21:10:56-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Carlos172-Arias66-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Carlos172-Arias66-4",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
-        } ],
-        "text": "Acute viral pharyngitis (disorder)"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-8"
-      },
-      "onsetDateTime": "2013-03-08T21:10:56-05:00",
-      "abatementDateTime": "2013-03-21T22:10:56-04:00",
-      "recordedDate": "2013-03-08T21:10:56-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Carlos172-Arias66-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Carlos172-Arias66-5",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
-        } ],
-        "text": "Acute viral pharyngitis (disorder)"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-10"
-      },
-      "onsetDateTime": "2014-10-15T22:10:56-04:00",
-      "abatementDateTime": "2014-10-22T22:10:56-04:00",
-      "recordedDate": "2014-10-15T22:10:56-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Carlos172-Arias66-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Carlos172-Arias66-6",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "49436004",
-          "display": "Atrial Fibrillation"
-        } ],
-        "text": "Atrial Fibrillation"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "onsetDateTime": "2016-01-29T21:10:56-05:00",
-      "recordedDate": "2016-01-29T21:10:56-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Carlos172-Arias66-6"
-    }
-  }, {
-    "resource": {
       "resourceType": "Encounter",
       "id": "encounter-Carlos172-Arias66-1",
       "status": "finished",
@@ -318,7 +92,7 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-11",
+      "id": "encounter-Carlos172-Arias66-7",
       "status": "finished",
       "class": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -328,9 +102,9 @@
         "coding": [ {
           "system": "http://snomed.info/sct",
           "code": "185349003",
-          "display": "Encounter for check up (procedure)"
+          "display": "Encounter for 'check-up'"
         } ],
-        "text": "Encounter for check up (procedure)"
+        "text": "Encounter for 'check-up'"
       } ],
       "subject": {
         "reference": "Patient/Carlos172-Arias66",
@@ -343,134 +117,14 @@
         }
       } ],
       "period": {
-        "start": "2017-10-24T22:10:56-04:00",
-        "end": "2017-10-24T22:25:56-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3bd5eda0-16da-3ba5-8500-4dfd6ae118b8",
-        "display": "NORWOOD HOSPITAL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-11"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-12",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66",
-        "display": "Mr. Carlos172 Arias66"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
-          "display": "Dr. Monte325 Welch179"
-        }
-      } ],
-      "period": {
-        "start": "2018-01-29T21:10:56-05:00",
-        "end": "2018-01-29T21:40:56-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
-        "display": "KHOURY CHIROPRACTC, INC."
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-13",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66",
-        "display": "Mr. Carlos172 Arias66"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
-          "display": "Dr. Monte325 Welch179"
-        }
-      } ],
-      "period": {
-        "start": "2018-02-02T21:10:56-05:00",
-        "end": "2018-02-02T21:40:56-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
-        "display": "KHOURY CHIROPRACTC, INC."
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-13"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-2",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66",
-        "display": "Mr. Carlos172 Arias66"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001ea",
-          "display": "Dr. Carmina141 Oberbrunner298"
-        }
-      } ],
-      "period": {
-        "start": "2008-02-25T21:10:56-05:00",
-        "end": "2008-02-25T21:49:56-05:00"
+        "start": "2013-01-28T21:10:56-05:00",
+        "end": "2013-01-28T21:25:56-05:00"
       },
       "reasonCode": [ {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "10509002",
-          "display": "Acute bronchitis (disorder)"
+          "code": "62106007",
+          "display": "Concussion with no loss of consciousness"
         } ]
       } ],
       "serviceProvider": {
@@ -480,127 +134,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-3",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "EMER"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "50849002",
-          "display": "Emergency room admission (procedure)"
-        } ],
-        "text": "Emergency room admission (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66",
-        "display": "Mr. Carlos172 Arias66"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001ea",
-          "display": "Dr. Carmina141 Oberbrunner298"
-        }
-      } ],
-      "period": {
-        "start": "2009-12-24T21:10:56-05:00",
-        "end": "2009-12-24T22:27:56-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3bd5eda0-16da-3ba5-8500-4dfd6ae118b8",
-        "display": "NORWOOD HOSPITAL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-4",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66",
-        "display": "Mr. Carlos172 Arias66"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
-          "display": "Dr. Monte325 Welch179"
-        }
-      } ],
-      "period": {
-        "start": "2017-01-15T21:10:56-05:00",
-        "end": "2017-01-15T21:25:56-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
-        "display": "KHOURY CHIROPRACTC, INC."
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-5",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66",
-        "display": "Mr. Carlos172 Arias66"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
-          "display": "Dr. Monte325 Welch179"
-        }
-      } ],
-      "period": {
-        "start": "2017-01-20T21:10:56-05:00",
-        "end": "2017-01-20T21:40:56-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
-        "display": "KHOURY CHIROPRACTC, INC."
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-5"
+      "url": "Encounter/encounter-Carlos172-Arias66-7"
     }
   }, {
     "resource": {
@@ -645,7 +179,7 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-7",
+      "id": "encounter-Carlos172-Arias66-11",
       "status": "finished",
       "class": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -655,9 +189,9 @@
         "coding": [ {
           "system": "http://snomed.info/sct",
           "code": "185349003",
-          "display": "Encounter for 'check-up'"
+          "display": "Encounter for check up (procedure)"
         } ],
-        "text": "Encounter for 'check-up'"
+        "text": "Encounter for check up (procedure)"
       } ],
       "subject": {
         "reference": "Patient/Carlos172-Arias66",
@@ -670,16 +204,9 @@
         }
       } ],
       "period": {
-        "start": "2013-01-28T21:10:56-05:00",
-        "end": "2013-01-28T21:25:56-05:00"
+        "start": "2017-10-24T22:10:56-04:00",
+        "end": "2017-10-24T22:25:56-04:00"
       },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "62106007",
-          "display": "Concussion with no loss of consciousness"
-        } ]
-      } ],
       "serviceProvider": {
         "reference": "Organization/3bd5eda0-16da-3ba5-8500-4dfd6ae118b8",
         "display": "NORWOOD HOSPITAL"
@@ -687,7 +214,207 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-7"
+      "url": "Encounter/encounter-Carlos172-Arias66-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Carlos172-Arias66-9",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66",
+        "display": "Mr. Carlos172 Arias66"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
+          "display": "Dr. Monte325 Welch179"
+        }
+      } ],
+      "period": {
+        "start": "2017-10-24T21:10:56-05:00",
+        "end": "2017-10-24T21:25:56-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
+        "display": "KHOURY CHIROPRACTC, INC."
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Carlos172-Arias66-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Carlos172-Arias66-12",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66",
+        "display": "Mr. Carlos172 Arias66"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
+          "display": "Dr. Monte325 Welch179"
+        }
+      } ],
+      "period": {
+        "start": "2018-01-29T21:10:56-05:00",
+        "end": "2018-01-29T21:40:56-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
+        "display": "KHOURY CHIROPRACTC, INC."
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Carlos172-Arias66-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Carlos172-Arias66-5",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66",
+        "display": "Mr. Carlos172 Arias66"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
+          "display": "Dr. Monte325 Welch179"
+        }
+      } ],
+      "period": {
+        "start": "2017-01-20T21:10:56-05:00",
+        "end": "2017-01-20T21:40:56-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
+        "display": "KHOURY CHIROPRACTC, INC."
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Carlos172-Arias66-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Carlos172-Arias66-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66",
+        "display": "Mr. Carlos172 Arias66"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
+          "display": "Dr. Monte325 Welch179"
+        }
+      } ],
+      "period": {
+        "start": "2017-01-15T21:10:56-05:00",
+        "end": "2017-01-15T21:25:56-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
+        "display": "KHOURY CHIROPRACTC, INC."
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Carlos172-Arias66-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Carlos172-Arias66-13",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66",
+        "display": "Mr. Carlos172 Arias66"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
+          "display": "Dr. Monte325 Welch179"
+        }
+      } ],
+      "period": {
+        "start": "2018-02-02T21:10:56-05:00",
+        "end": "2018-02-02T21:40:56-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
+        "display": "KHOURY CHIROPRACTC, INC."
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Carlos172-Arias66-13"
     }
   }, {
     "resource": {
@@ -739,7 +466,47 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Carlos172-Arias66-9",
+      "id": "encounter-Carlos172-Arias66-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "EMER"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "50849002",
+          "display": "Emergency room admission (procedure)"
+        } ],
+        "text": "Emergency room admission (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66",
+        "display": "Mr. Carlos172 Arias66"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001ea",
+          "display": "Dr. Carmina141 Oberbrunner298"
+        }
+      } ],
+      "period": {
+        "start": "2009-12-24T21:10:56-05:00",
+        "end": "2009-12-24T22:27:56-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/3bd5eda0-16da-3ba5-8500-4dfd6ae118b8",
+        "display": "NORWOOD HOSPITAL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Carlos172-Arias66-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Carlos172-Arias66-2",
       "status": "finished",
       "class": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -748,10 +515,10 @@
       "type": [ {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
+          "code": "185345009",
+          "display": "Encounter for symptom"
         } ],
-        "text": "General examination of patient (procedure)"
+        "text": "Encounter for symptom"
       } ],
       "subject": {
         "reference": "Patient/Carlos172-Arias66",
@@ -759,831 +526,127 @@
       },
       "participant": [ {
         "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000006234",
-          "display": "Dr. Monte325 Welch179"
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001ea",
+          "display": "Dr. Carmina141 Oberbrunner298"
         }
       } ],
       "period": {
-        "start": "2017-10-24T21:10:56-05:00",
-        "end": "2017-10-24T21:25:56-05:00"
+        "start": "2008-02-25T21:10:56-05:00",
+        "end": "2008-02-25T21:49:56-05:00"
       },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "10509002",
+          "display": "Acute bronchitis (disorder)"
+        } ]
+      } ],
       "serviceProvider": {
-        "reference": "Organization/b99591b9-4e95-368c-a797-58d9adc97ac6",
-        "display": "KHOURY CHIROPRACTC, INC."
+        "reference": "Organization/3bd5eda0-16da-3ba5-8500-4dfd6ae118b8",
+        "display": "NORWOOD HOSPITAL"
       }
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Carlos172-Arias66-9"
+      "url": "Encounter/encounter-Carlos172-Arias66-2"
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-1",
-      "status": "final",
-      "category": [ {
+      "resourceType": "Condition",
+      "id": "condition-Carlos172-Arias66-1",
+      "clinicalStatus": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
         } ]
-      } ],
-      "code": {
+      },
+      "verificationStatus": {
         "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 172.78811955999876,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-10",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
         } ]
-      } ],
+      },
       "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 91.19382632582278,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-10"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-11",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 29.231053739718455,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-11"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-12",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 33.16401344806191,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-13",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 45.38448293548859,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-13"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-14",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 247.6587453477238,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-15",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 366.778280817089,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-15"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-16",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 10.524294950774497,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-16"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-17",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
+          "code": "162864005",
+          "display": "Body mass index 30+ - obesity (finding)"
         } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-17"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-18",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
+        "text": "Body mass index 30+ - obesity (finding)"
       },
       "subject": {
         "reference": "Patient/Carlos172-Arias66"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+        "reference": "Encounter/encounter-Carlos172-Arias66-1"
       },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 172.78811955999876,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
+      "onsetDateTime": "2007-03-30T22:10:56-04:00",
+      "recordedDate": "2007-03-30T22:10:56-04:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-18"
+      "url": "Condition/condition-Carlos172-Arias66-1"
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-19",
-      "status": "final",
-      "category": [ {
+      "resourceType": "Condition",
+      "id": "condition-Carlos172-Arias66-6",
+      "clinicalStatus": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
         } ]
-      } ],
-      "code": {
+      },
+      "verificationStatus": {
         "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 2.959900948420211,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-19"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
         } ]
-      } ],
+      },
       "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 3.9423401784460204,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-20",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 82.46583583083438,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-20"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-21",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 27.62143952303858,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-21"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-22",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2017-01-20T21:10:56-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 80.19675125025023,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 126,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-22"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-23",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 185.24813367079756,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-23"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-24",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 148.40078455377719,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-24"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-25",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 93.79801578335994,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-25"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-26",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 61.76996097668218,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-26"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-27",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-5"
-      },
-      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
-      "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
+          "code": "49436004",
+          "display": "Atrial Fibrillation"
         } ],
-        "text": "Never smoker"
-      }
+        "text": "Atrial Fibrillation"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "onsetDateTime": "2016-01-29T21:10:56-05:00",
+      "recordedDate": "2016-01-29T21:10:56-05:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-27"
+      "url": "Condition/condition-Carlos172-Arias66-6"
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-28",
-      "status": "final",
-      "category": [ {
+      "resourceType": "Condition",
+      "id": "condition-Carlos172-Arias66-4",
+      "clinicalStatus": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
         } ]
-      } ],
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
       "code": {
         "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8331-1",
-          "display": "Oral temperature"
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
         } ],
-        "text": "Oral temperature"
+        "text": "Acute viral pharyngitis (disorder)"
       },
       "subject": {
         "reference": "Patient/Carlos172-Arias66"
@@ -1591,330 +654,37 @@
       "encounter": {
         "reference": "Encounter/encounter-Carlos172-Arias66-8"
       },
-      "effectiveDateTime": "2013-03-08T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 37.194493252950636,
-        "unit": "Cel",
-        "system": "http://unitsofmeasure.org",
-        "code": "Cel"
-      }
+      "onsetDateTime": "2013-03-08T21:10:56-05:00",
+      "abatementDateTime": "2013-03-21T22:10:56-04:00",
+      "recordedDate": "2013-03-08T21:10:56-05:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-28"
+      "url": "Condition/condition-Carlos172-Arias66-4"
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-29",
-      "status": "final",
-      "category": [ {
+      "resourceType": "Condition",
+      "id": "condition-Carlos172-Arias66-5",
+      "clinicalStatus": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
         } ]
-      } ],
-      "code": {
+      },
+      "verificationStatus": {
         "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-9"
-      },
-      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 172.78811955999876,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-29"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
         } ]
-      } ],
+      },
       "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 90.32098549724167,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-30",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-9"
-      },
-      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 0.7364621579342931,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-30"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-31",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-9"
-      },
-      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 82.46583583083438,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-31"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-32",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-9"
-      },
-      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 27.62143952303858,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-32"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-33",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-9"
-      },
-      "effectiveDateTime": "2017-10-24T21:10:56-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 74.23287997947337,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 69,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-33"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-34",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-9"
-      },
-      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
-      "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
         } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-34"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-35",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8331-1",
-          "display": "Oral temperature"
-        } ],
-        "text": "Oral temperature"
+        "text": "Acute viral pharyngitis (disorder)"
       },
       "subject": {
         "reference": "Patient/Carlos172-Arias66"
@@ -1922,1605 +692,89 @@
       "encounter": {
         "reference": "Encounter/encounter-Carlos172-Arias66-10"
       },
-      "effectiveDateTime": "2014-10-15T22:10:56-04:00",
-      "valueQuantity": {
-        "value": 37.454795814271385,
-        "unit": "Cel",
-        "system": "http://unitsofmeasure.org",
-        "code": "Cel"
-      }
+      "onsetDateTime": "2014-10-15T22:10:56-04:00",
+      "abatementDateTime": "2014-10-22T22:10:56-04:00",
+      "recordedDate": "2014-10-15T22:10:56-04:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-35"
+      "url": "Condition/condition-Carlos172-Arias66-5"
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-36",
-      "status": "final",
-      "category": [ {
+      "resourceType": "Condition",
+      "id": "condition-Carlos172-Arias66-2",
+      "clinicalStatus": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
         } ]
-      } ],
-      "code": {
+      },
+      "verificationStatus": {
         "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-11"
-      },
-      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
-      "valueQuantity": {
-        "value": 172.78811955999876,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-36"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-37",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
         } ]
-      } ],
+      },
       "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-11"
-      },
-      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
-      "valueQuantity": {
-        "value": 1.535160207187031,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-37"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-38",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-11"
-      },
-      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
-      "valueQuantity": {
-        "value": 82.46583583083438,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-38"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-39",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-11"
-      },
-      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
-      "valueQuantity": {
-        "value": 27.62143952303858,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-39"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 30.252475021183123,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-40",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-11"
-      },
-      "effectiveDateTime": "2017-10-24T22:10:56-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 76.81774237938885,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 129,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-40"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-41",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-11"
-      },
-      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
-      "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
+          "code": "370247008",
+          "display": "Facial laceration"
         } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-41"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-42",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
+        "text": "Facial laceration"
       },
       "subject": {
         "reference": "Patient/Carlos172-Arias66"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+        "reference": "Encounter/encounter-Carlos172-Arias66-3"
       },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 172.78811955999876,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
+      "onsetDateTime": "2009-12-24T21:10:56-05:00",
+      "abatementDateTime": "2010-01-14T21:10:56-05:00",
+      "recordedDate": "2009-12-24T21:10:56-05:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-42"
+      "url": "Condition/condition-Carlos172-Arias66-2"
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-43",
-      "status": "final",
-      "category": [ {
+      "resourceType": "Condition",
+      "id": "condition-Carlos172-Arias66-3",
+      "clinicalStatus": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
         } ]
-      } ],
-      "code": {
+      },
+      "verificationStatus": {
         "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 3.2182798763602425,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-43"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-44",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
         } ]
-      } ],
+      },
       "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 82.46583583083438,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-44"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-45",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 27.62143952303858,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-45"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-46",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2018-01-29T21:10:56-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 78.59102495397248,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 116.1344311693836,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-46"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-47",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 161.63434813516807,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-47"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-48",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 132.3915987548347,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-48"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-49",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 75.38882168076108,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-49"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-5",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2017-01-15T21:10:56-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 72.47367971523009,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 89,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-50",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 59.76720670344006,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-50"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-51",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 6.413043732132968,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-51"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-52",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 4.173231499309301,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-52"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-53",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 16.858047419250614,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-53"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-54",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 39.991508064082694,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-54"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-55",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 82.59243800330599,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-55"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-56",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 28.946756454211474,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-56"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-57",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 35.64493121792721,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-57"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-58",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 44.116963875769486,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-58"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-59",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 298.38174838695454,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-59"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-6",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 9.691021861486828,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-60",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 256.2980311594371,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-60"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-61",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 11.832874304208538,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-61"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-62",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-12"
-      },
-      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
-      "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
+          "code": "62106007",
+          "display": "Concussion with no loss of consciousness"
         } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-62"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-63",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
+        "text": "Concussion with no loss of consciousness"
       },
       "subject": {
         "reference": "Patient/Carlos172-Arias66"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-13"
+        "reference": "Encounter/encounter-Carlos172-Arias66-6"
       },
-      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 172.78811955999876,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
+      "onsetDateTime": "2012-11-29T21:10:56-05:00",
+      "abatementDateTime": "2013-01-28T21:10:56-05:00",
+      "recordedDate": "2012-11-29T21:10:56-05:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-63"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-64",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-13"
-      },
-      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 0.7932202391578427,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-64"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-65",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-13"
-      },
-      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 82.46583583083438,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-65"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-66",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-13"
-      },
-      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 27.62143952303858,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-66"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-67",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-13"
-      },
-      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 75.93734384573492,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 131,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-67"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-68",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-13"
-      },
-      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-68"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-7",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 4.616633997332141,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-8",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 17.42330256018161,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Carlos172-Arias66-9",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Carlos172-Arias66"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Carlos172-Arias66-4"
-      },
-      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
-      "valueQuantity": {
-        "value": 45.53845806403827,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Carlos172-Arias66-9"
+      "url": "Condition/condition-Carlos172-Arias66-3"
     }
   }, {
     "resource": {
@@ -3677,6 +931,2752 @@
     "request": {
       "method": "PUT",
       "url": "Patient/Carlos172-Arias66"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-58",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 44.116963875769486,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-58"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-19",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 2.959900948420211,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-19"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-62",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-62"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-35",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-10"
+      },
+      "effectiveDateTime": "2014-10-15T22:10:56-04:00",
+      "valueQuantity": {
+        "value": 37.454795814271385,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-35"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-23",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 185.24813367079756,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-23"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 30.252475021183123,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-54",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 39.991508064082694,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-54"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-42",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 172.78811955999876,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-42"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-15",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 366.778280817089,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-39",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-11"
+      },
+      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
+      "valueQuantity": {
+        "value": 27.62143952303858,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-39"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 17.42330256018161,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-9",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 45.53845806403827,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-38",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-11"
+      },
+      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
+      "valueQuantity": {
+        "value": 82.46583583083438,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-38"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-14",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 247.6587453477238,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-43",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 3.2182798763602425,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-43"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-55",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 82.59243800330599,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-55"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2017-01-15T21:10:56-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 72.47367971523009,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 89,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-22",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2017-01-20T21:10:56-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 80.19675125025023,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 126,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-34",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-9"
+      },
+      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-34"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-63",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-13"
+      },
+      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 172.78811955999876,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-63"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-18",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 172.78811955999876,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-59",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 298.38174838695454,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-59"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-52",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 4.173231499309301,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-52"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-44",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 82.46583583083438,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-44"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-13",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 45.38448293548859,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-68",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-13"
+      },
+      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-68"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-29",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-9"
+      },
+      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 172.78811955999876,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-48",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 132.3915987548347,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-48"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-64",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-13"
+      },
+      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 0.7932202391578427,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-64"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-33",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-9"
+      },
+      "effectiveDateTime": "2017-10-24T21:10:56-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 74.23287997947337,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 69,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-33"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-25",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 93.79801578335994,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-25"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 3.9423401784460204,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 90.32098549724167,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-24",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 148.40078455377719,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-32",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-9"
+      },
+      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 27.62143952303858,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-32"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-65",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-13"
+      },
+      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 82.46583583083438,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-65"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-49",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 75.38882168076108,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-49"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-28",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-8"
+      },
+      "effectiveDateTime": "2013-03-08T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 37.194493252950636,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-28"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-12",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 33.16401344806191,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-45",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 27.62143952303858,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-45"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-53",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 16.858047419250614,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-53"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-11",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 29.231053739718455,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-46",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2018-01-29T21:10:56-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 78.59102495397248,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 116.1344311693836,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-46"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-50",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 59.76720670344006,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-50"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-27",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-27"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-31",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-9"
+      },
+      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 82.46583583083438,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-31"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-66",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-13"
+      },
+      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 27.62143952303858,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-66"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-67",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-13"
+      },
+      "effectiveDateTime": "2018-02-02T21:10:56-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 75.93734384573492,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 131,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-67"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-30",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-9"
+      },
+      "effectiveDateTime": "2014-01-24T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 0.7364621579342931,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-30"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-26",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 61.76996097668218,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-26"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 172.78811955999876,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-51",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 6.413043732132968,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-51"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-47",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 161.63434813516807,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-47"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-10",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 91.19382632582278,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 9.691021861486828,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-21",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 27.62143952303858,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-21"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-37",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-11"
+      },
+      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
+      "valueQuantity": {
+        "value": 1.535160207187031,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-37"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-60",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 256.2980311594371,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-60"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-17",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-40",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-11"
+      },
+      "effectiveDateTime": "2017-10-24T22:10:56-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 76.81774237938885,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 129,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-40"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-56",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 28.946756454211474,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-56"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-57",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 35.64493121792721,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-57"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-41",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-11"
+      },
+      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-41"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-16",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 10.524294950774497,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-61",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-12"
+      },
+      "effectiveDateTime": "2016-01-29T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 11.832874304208538,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-61"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-36",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-11"
+      },
+      "effectiveDateTime": "2014-10-24T22:10:56-04:00",
+      "valueQuantity": {
+        "value": 172.78811955999876,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-36"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-20",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-5"
+      },
+      "effectiveDateTime": "2012-01-20T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 82.46583583083438,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-20"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Carlos172-Arias66-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Carlos172-Arias66"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Carlos172-Arias66-4"
+      },
+      "effectiveDateTime": "2010-01-15T21:10:56-05:00",
+      "valueQuantity": {
+        "value": 4.616633997332141,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Carlos172-Arias66-7"
     }
   } ]
 }

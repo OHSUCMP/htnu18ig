@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Bud153-Lang846-50",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "702927004",
+                "display": "Urgent care clinic (procedure)"
+              }
+            ],
+            "text": "Urgent care clinic (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Bud153-Lang846",
+          "display": "Mr. Bud153 Lang846"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000016c24",
+              "display": "Dr. Cody889 Marquardt819"
+            }
+          }
+        ],
+        "period": {
+          "start": "2017-11-04T17:00:49-04:00",
+          "end": "2017-11-04T17:15:49-04:00"
+        },
+        "serviceProvider": {
+          "reference": "urn:uuid:92819cdc-db9e-387e-8c4f-4b2b4e8b2e4f",
+          "display": "SAINTS WALK-IN MEDICAL CENTER - URGENT CARE AND OCCUPATIONAL HEALTH"
+        }
+      }

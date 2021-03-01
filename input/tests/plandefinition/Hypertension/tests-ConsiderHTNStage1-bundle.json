@@ -5,6 +5,29 @@
   "entry": [ {
     "resource": {
       "resourceType": "Encounter",
+      "id": "encounter-ConsiderHTNStage1-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/ConsiderHTNStage1"
+      },
+      "period": {
+        "start": "2020-07-02T14:00:00-06:00",
+        "end": "2020-07-02T15:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-ConsiderHTNStage1-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
       "id": "encounter-ConsiderHTNStage1-1",
       "status": "finished",
       "class": {
@@ -27,26 +50,48 @@
     }
   }, {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-ConsiderHTNStage1-2",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "version": "2.0.0",
-        "code": "AMB",
-        "display": "ambulatory"
+      "resourceType": "Procedure",
+      "id": "procedure-ConsiderHTNStage1-1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "version": "2021",
+          "code": "93784",
+          "display": "Ambulatory blood pressure monitoring, utilizing report-generating software, automated, worn continuously for 24 hours or longer; including recording, scanning analysis, interpretation and report"
+        } ]
       },
       "subject": {
         "reference": "Patient/ConsiderHTNStage1"
       },
-      "period": {
-        "start": "2020-07-02T14:00:00-06:00",
-        "end": "2020-07-02T15:00:00-06:00"
+      "encounter": {
+        "reference": "Encounter/encounter-ConsiderHTNStage1-2"
+      },
+      "performedPeriod": {
+        "start": "2020-07-02T15:00:00-06:00",
+        "end": "2020-07-03T16:00:00-06:00"
       }
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-ConsiderHTNStage1-2"
+      "url": "Procedure/procedure-ConsiderHTNStage1-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "ConsiderHTNStage1",
+      "active": true,
+      "name": [ {
+        "text": "ConsiderHTNStage1 Patient",
+        "family": "Patient",
+        "given": [ "ConsiderHTNStage1" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1995-09-27"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/ConsiderHTNStage1"
     }
   }, {
     "resource": {
@@ -183,51 +228,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-ConsiderHTNStage1-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Patient",
-      "id": "ConsiderHTNStage1",
-      "active": true,
-      "name": [ {
-        "text": "ConsiderHTNStage1 Patient",
-        "family": "Patient",
-        "given": [ "ConsiderHTNStage1" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1995-09-27"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/ConsiderHTNStage1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Procedure",
-      "id": "procedure-ConsiderHTNStage1-1",
-      "status": "completed",
-      "code": {
-        "coding": [ {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "version": "2021",
-          "code": "93784",
-          "display": "Ambulatory blood pressure monitoring, utilizing report-generating software, automated, worn continuously for 24 hours or longer; including recording, scanning analysis, interpretation and report"
-        } ]
-      },
-      "subject": {
-        "reference": "Patient/ConsiderHTNStage1"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-ConsiderHTNStage1-2"
-      },
-      "performedPeriod": {
-        "start": "2020-07-02T15:00:00-06:00",
-        "end": "2020-07-03T16:00:00-06:00"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Procedure/procedure-ConsiderHTNStage1-1"
     }
   } ]
 }
