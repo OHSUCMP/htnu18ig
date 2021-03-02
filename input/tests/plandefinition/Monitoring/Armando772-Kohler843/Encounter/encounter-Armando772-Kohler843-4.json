@@ -35,7 +35,7 @@
           "end": "2012-02-12T11:41:15-05:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+          "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
           "display": "PCP6164"
         }
       }

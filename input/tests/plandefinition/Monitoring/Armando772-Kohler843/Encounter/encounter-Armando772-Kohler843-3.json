@@ -46,7 +46,7 @@
           }
         ],
         "serviceProvider": {
-          "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+          "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
           "display": "HOLYOKE MEDICAL CENTER"
         }
       }

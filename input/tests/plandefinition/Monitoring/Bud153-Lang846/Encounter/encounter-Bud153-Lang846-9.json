@@ -35,7 +35,7 @@
           "end": "2010-02-28T16:15:49-05:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+          "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
           "display": "HOLY FAMILY HOSPITAL"
         }
       }

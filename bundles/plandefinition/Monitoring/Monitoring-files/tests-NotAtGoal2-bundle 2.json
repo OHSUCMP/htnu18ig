@@ -1,0 +1,597 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-NotAtGoal2-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-NotAtGoal2-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "period": {
+        "start": "2020-12-28T12:00:00-06:00",
+        "end": "2020-12-28T13:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-NotAtGoal2-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-NotAtGoal2-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "version": "0.5.0",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "version": "0.5.0",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "129171000119106",
+          "display": "Chronic kidney disease stage 3 due to hypertension (disorder)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "onsetDateTime": "2019-01-12T10:01:26-06:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-NotAtGoal2-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "NotAtGoal2",
+      "active": true,
+      "name": [ {
+        "text": "NotAtGoal2 Patient",
+        "family": "Patient",
+        "given": [ "NotAtGoal2" ]
+      } ],
+      "gender": "female",
+      "birthDate": "2002-10-01"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/NotAtGoal2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NotAtGoal2-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "effectiveDateTime": "2020-10-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 133,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 90,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NotAtGoal2-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NotAtGoal2-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "effectiveDateTime": "2020-11-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 151,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NotAtGoal2-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NotAtGoal2-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-NotAtGoal2-1"
+      },
+      "effectiveDateTime": "2020-12-28T12:30:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 131,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 81,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NotAtGoal2-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NotAtGoal2-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "effectiveDateTime": "2020-06-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 145,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 87,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NotAtGoal2-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NotAtGoal2-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "effectiveDateTime": "2020-07-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 138,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 88,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NotAtGoal2-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NotAtGoal2-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "effectiveDateTime": "2020-08-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 138,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NotAtGoal2-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NotAtGoal2-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        } ],
+        "text": "Vital Signs"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.68",
+          "code": "55284-4",
+          "display": "Blood pressure systolic and diastolic"
+        } ],
+        "text": "Blood pressure systolic and diastolic"
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "effectiveDateTime": "2020-09-05T12:00:00-06:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Systolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 128,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          } ],
+          "text": "Diastolic blood pressure"
+        },
+        "valueQuantity": {
+          "value": 75,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NotAtGoal2-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-NotAtGoal2-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "description": {
+        "text": "Lower Blood Pressure to 130/80."
+      },
+      "subject": {
+        "reference": "Patient/NotAtGoal2"
+      },
+      "startDate": "2020-01-14",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 130,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 80,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-NotAtGoal2-1"
+    }
+  } ]
+}

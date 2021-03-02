@@ -35,7 +35,7 @@
           "end": "2019-05-12T12:26:15-04:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:a9afd4c9-8443-3b5a-a486-07c3bb109b3f",
+          "reference": "Organization/a9afd4c9-8443-3b5a-a486-07c3bb109b3f",
           "display": "RIVER BEND MEDICAL GROUP - CHICOPEE OFFICE - URGENT CARE"
         }
       }

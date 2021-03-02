@@ -35,7 +35,7 @@
           "end": "2017-11-04T17:15:49-04:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:92819cdc-db9e-387e-8c4f-4b2b4e8b2e4f",
+          "reference": "Organization/92819cdc-db9e-387e-8c4f-4b2b4e8b2e4f",
           "display": "SAINTS WALK-IN MEDICAL CENTER - URGENT CARE AND OCCUPATIONAL HEALTH"
         }
       }

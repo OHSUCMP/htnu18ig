@@ -1,6 +1,6 @@
 {
   "resourceType": "Goal",
-  "id": "HTNU18GoalTemplateSystolic",
+  "id": "goal-Armando772-Kohler843-1",
   "lifecycleStatus": "planned",
   "achievementStatus": {
     "coding": [
@@ -9,12 +9,12 @@
       }
     ]
   },
-  "startDate": "2012-02-12",
+  "startDate": "2020-02-12",
   "description": {
     "text": "goals for HTNU18"
   },
   "subject": {
-    "reference": "Armando772-Kohler843"
+    "reference": "Patient/Armando772-Kohler843"
   },
   "target": [
     {

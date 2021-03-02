@@ -34,7 +34,7 @@
         "end": "1985-11-24T12:56:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+        "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
         "display": "HOLYOKE MEDICAL CENTER"
       }
     },
@@ -81,7 +81,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+        "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
         "display": "HOLYOKE MEDICAL CENTER"
       }
     },
@@ -121,7 +121,7 @@
         "end": "2018-02-18T11:41:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+        "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
         "display": "PCP6164"
       }
     },
@@ -161,7 +161,7 @@
         "end": "2012-02-12T11:41:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+        "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
         "display": "PCP6164"
       }
     },
@@ -201,7 +201,7 @@
         "end": "2019-05-12T12:26:15-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9afd4c9-8443-3b5a-a486-07c3bb109b3f",
+        "reference": "Organization/a9afd4c9-8443-3b5a-a486-07c3bb109b3f",
         "display": "RIVER BEND MEDICAL GROUP - CHICOPEE OFFICE - URGENT CARE"
       }
     },
@@ -248,7 +248,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+        "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
         "display": "HOLYOKE MEDICAL CENTER"
       }
     },
@@ -288,7 +288,7 @@
         "end": "2015-02-15T11:41:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+        "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
         "display": "PCP6164"
       }
     },
@@ -328,7 +328,7 @@
         "end": "1999-01-24T11:41:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+        "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
         "display": "PCP6164"
       }
     },
@@ -375,7 +375,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+        "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
         "display": "HOLYOKE MEDICAL CENTER"
       }
     },
@@ -3250,9 +3250,9 @@
         "text": "goals for HTNU18"
       },
       "subject": {
-        "reference": "Armando772-Kohler843"
+        "reference": "Patient/Armando772-Kohler843"
       },
-      "startDate": "2012-02-12",
+      "startDate": "2020-02-12",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -3287,9 +3287,9 @@
         "text": "goals for HTNU18"
       },
       "subject": {
-        "reference": "Armando772-Kohler843"
+        "reference": "Patient/Armando772-Kohler843"
       },
-      "startDate": "2012-02-12",
+      "startDate": "2020-02-12",
       "target": [ {
         "measure": {
           "coding": [ {

@@ -6105,7 +6105,7 @@
         "end": "2017-11-04T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:92819cdc-db9e-387e-8c4f-4b2b4e8b2e4f",
+        "reference": "Organization/92819cdc-db9e-387e-8c4f-4b2b4e8b2e4f",
         "display": "SAINTS WALK-IN MEDICAL CENTER - URGENT CARE AND OCCUPATIONAL HEALTH"
       }
     },
@@ -6145,7 +6145,7 @@
         "end": "2017-11-11T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -6192,7 +6192,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -6239,7 +6239,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -6279,7 +6279,7 @@
         "end": "2018-04-28T18:00:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -6319,7 +6319,7 @@
         "end": "2018-05-12T17:30:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:7fdffaa8-9ba1-3785-8fbc-33c59e94497b",
+        "reference": "Organization/7fdffaa8-9ba1-3785-8fbc-33c59e94497b",
         "display": "PCP34962"
       }
     },
@@ -9473,7 +9473,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -9513,7 +9513,7 @@
         "end": "2010-08-04T17:00:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -18527,7 +18527,7 @@
         "end": "2010-08-31T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -18567,7 +18567,7 @@
         "end": "2010-09-30T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -18645,7 +18645,7 @@
         "end": "2010-10-30T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -18685,7 +18685,7 @@
         "end": "2010-11-29T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -18763,7 +18763,7 @@
         "end": "2010-12-29T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -18866,7 +18866,7 @@
         "end": "2011-01-28T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -18944,7 +18944,7 @@
         "end": "2011-02-27T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -19022,7 +19022,7 @@
         "end": "2011-03-29T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -19366,7 +19366,7 @@
         "end": "2011-04-28T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -19406,7 +19406,7 @@
         "end": "2011-11-17T17:00:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -19446,7 +19446,7 @@
         "end": "2012-05-05T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:7fdffaa8-9ba1-3785-8fbc-33c59e94497b",
+        "reference": "Organization/7fdffaa8-9ba1-3785-8fbc-33c59e94497b",
         "display": "PCP34962"
       }
     },
@@ -19486,7 +19486,7 @@
         "end": "2012-09-08T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -19705,7 +19705,7 @@
         "end": "2013-01-01T16:00:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -19783,7 +19783,7 @@
         "end": "2013-04-08T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -19861,7 +19861,7 @@
         "end": "2013-05-08T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -19939,7 +19939,7 @@
         "end": "2013-06-07T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -20017,7 +20017,7 @@
         "end": "2013-07-07T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -20095,7 +20095,7 @@
         "end": "2013-08-06T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -20428,9 +20428,9 @@
         "text": "goals for HTNU18"
       },
       "subject": {
-        "reference": "Armando772-Kohler843"
+        "reference": "Patient/Armando772-Kohler843"
       },
-      "startDate": "2012-02-12",
+      "startDate": "2020-02-12",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -20712,7 +20712,7 @@
         "end": "2014-09-20T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:92819cdc-db9e-387e-8c4f-4b2b4e8b2e4f",
+        "reference": "Organization/92819cdc-db9e-387e-8c4f-4b2b4e8b2e4f",
         "display": "SAINTS WALK-IN MEDICAL CENTER - URGENT CARE AND OCCUPATIONAL HEALTH"
       }
     },
@@ -20797,7 +20797,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -20875,7 +20875,7 @@
         "end": "2014-09-27T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -20960,7 +20960,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -21038,7 +21038,7 @@
         "end": "2015-04-09T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -21116,7 +21116,7 @@
         "end": "2015-05-09T17:30:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:7fdffaa8-9ba1-3785-8fbc-33c59e94497b",
+        "reference": "Organization/7fdffaa8-9ba1-3785-8fbc-33c59e94497b",
         "display": "PCP34962"
       }
     },
@@ -21194,7 +21194,7 @@
         "end": "2015-08-09T17:00:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -21272,7 +21272,7 @@
         "end": "2015-10-24T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -21350,7 +21350,7 @@
         "end": "2016-03-07T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -21428,7 +21428,7 @@
         "end": "2016-04-06T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -21879,7 +21879,7 @@
         "end": "2016-05-06T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -21957,7 +21957,7 @@
         "end": "2016-06-05T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -22042,7 +22042,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -22120,7 +22120,7 @@
         "end": "2016-11-22T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -22198,7 +22198,7 @@
         "end": "2016-12-22T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -22276,7 +22276,7 @@
         "end": "2017-01-21T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -22354,7 +22354,7 @@
         "end": "2017-02-20T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -22432,7 +22432,7 @@
         "end": "2017-06-07T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -22510,7 +22510,7 @@
         "end": "2017-07-07T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -22595,7 +22595,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -28077,7 +28077,7 @@
         "end": "2005-07-22T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -28124,7 +28124,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+        "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
         "display": "HOLYOKE MEDICAL CENTER"
       }
     },
@@ -28164,7 +28164,7 @@
         "end": "2005-04-23T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:7fdffaa8-9ba1-3785-8fbc-33c59e94497b",
+        "reference": "Organization/7fdffaa8-9ba1-3785-8fbc-33c59e94497b",
         "display": "PCP34962"
       }
     },
@@ -28204,7 +28204,7 @@
         "end": "2018-02-18T11:41:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+        "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
         "display": "PCP6164"
       }
     },
@@ -28244,7 +28244,7 @@
         "end": "2009-10-31T17:15:49-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -28284,7 +28284,7 @@
         "end": "2012-02-12T11:41:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+        "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
         "display": "PCP6164"
       }
     },
@@ -28331,7 +28331,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -28371,7 +28371,7 @@
         "end": "2015-02-15T11:41:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+        "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
         "display": "PCP6164"
       }
     },
@@ -28411,7 +28411,7 @@
         "end": "1999-01-24T11:41:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
+        "reference": "Organization/4e8f3b06-b00b-33ba-9dce-b016e581ee1c",
         "display": "PCP6164"
       }
     },
@@ -28496,7 +28496,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+        "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
         "display": "HOLYOKE MEDICAL CENTER"
       }
     },
@@ -28581,7 +28581,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -28659,7 +28659,7 @@
         "end": "1985-11-24T12:56:15-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+        "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
         "display": "HOLYOKE MEDICAL CENTER"
       }
     },
@@ -29094,7 +29094,7 @@
         "end": "2019-05-12T12:26:15-04:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9afd4c9-8443-3b5a-a486-07c3bb109b3f",
+        "reference": "Organization/a9afd4c9-8443-3b5a-a486-07c3bb109b3f",
         "display": "RIVER BEND MEDICAL GROUP - CHICOPEE OFFICE - URGENT CARE"
       }
     },
@@ -29179,7 +29179,7 @@
         } ]
       } ],
       "serviceProvider": {
-        "reference": "urn:uuid:5d4b9df1-93ae-3bc9-b680-03249990e558",
+        "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
         "display": "HOLYOKE MEDICAL CENTER"
       }
     },
@@ -29859,9 +29859,9 @@
         "text": "goals for HTNU18"
       },
       "subject": {
-        "reference": "Armando772-Kohler843"
+        "reference": "Patient/Armando772-Kohler843"
       },
-      "startDate": "2012-02-12",
+      "startDate": "2020-02-12",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -30249,7 +30249,7 @@
         "end": "2009-12-30T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -30326,7 +30326,7 @@
         "end": "2009-11-30T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -30403,7 +30403,7 @@
         "end": "2010-02-28T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
@@ -30443,7 +30443,7 @@
         "end": "2010-01-29T16:15:49-05:00"
       },
       "serviceProvider": {
-        "reference": "urn:uuid:a9f20dc1-5147-3789-bcef-bbecb41c5983",
+        "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
         "display": "HOLY FAMILY HOSPITAL"
       }
     },
