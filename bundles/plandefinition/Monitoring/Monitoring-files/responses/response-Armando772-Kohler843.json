@@ -1,0 +1,19 @@
+{
+    "cards": [
+        {
+            "summary": "Hypertension Monitoring Process",
+            "indicator": "info",
+            "detail": "Armando772 Kohler843",
+            "source": {
+                "label": "Info for those with normal blood pressure",
+                "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+            }
+        },
+        {
+            "summary": "Consider obtaining additional blood pressure measurements",
+            "indicator": "info",
+            "detail": "You had a high blood pressure reading recently.  We do not have enough blood pressure measurements to provide a full picture of your health.  Getting a full set of blood pressures will help us provide the best care.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.",
+            "source": {}
+        }
+    ]
+}
