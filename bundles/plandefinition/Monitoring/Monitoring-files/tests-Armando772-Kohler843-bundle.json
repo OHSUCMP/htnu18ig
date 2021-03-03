@@ -3239,11 +3239,14 @@
   }, {
     "resource": {
       "resourceType": "Goal",
-      "id": "HTNU18GoalTemplateDiastolic",
+      "id": "goal-Armando772-Kohler843-2",
       "lifecycleStatus": "planned",
       "achievementStatus": {
         "coding": [ {
-          "code": "in-progress"
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
         } ]
       },
       "description": {
@@ -3257,57 +3260,37 @@
         "measure": {
           "coding": [ {
             "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ]
-        }
-      }, {
-        "detailQuantity": {
-          "value": 80,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Goal/HTNU18GoalTemplateDiastolic"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Goal",
-      "id": "HTNU18GoalTemplateSystolic",
-      "lifecycleStatus": "planned",
-      "achievementStatus": {
-        "coding": [ {
-          "code": "in-progress"
-        } ]
-      },
-      "description": {
-        "text": "goals for HTNU18"
-      },
-      "subject": {
-        "reference": "Patient/Armando772-Kohler843"
-      },
-      "startDate": "2020-02-12",
-      "target": [ {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
+            "version": "2.68",
             "code": "8480-6",
-            "display": "Systolic Blood Pressure"
+            "display": "Systolic blood pressure"
           } ]
         },
         "detailQuantity": {
-          "value": 130,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org"
+          "value": 139,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 89,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
         }
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/HTNU18GoalTemplateSystolic"
+      "url": "Goal/goal-Armando772-Kohler843-2"
     }
   } ]
 }

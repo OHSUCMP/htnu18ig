@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Darrel772-Breitenberg711-18",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8331-1",
+              "display": "Oral temperature"
+            }
+          ],
+          "text": "Oral temperature"
+        },
+        "subject": {
+          "reference": "Patient/Darrel772-Breitenberg711"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Darrel772-Breitenberg711-4"
+        },
+        "effectiveDateTime": "2012-02-13T20:56:16-05:00",
+        "valueQuantity": {
+          "value": 37.26781813974467,
+          "unit": "Cel",
+          "system": "http://unitsofmeasure.org",
+          "code": "Cel"
+        }
+      }

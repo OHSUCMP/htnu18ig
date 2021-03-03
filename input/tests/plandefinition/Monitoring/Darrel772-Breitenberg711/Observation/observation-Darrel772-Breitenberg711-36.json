@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Darrel772-Breitenberg711-36",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "Low Density Lipoprotein Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Darrel772-Breitenberg711"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+        },
+        "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+        "valueQuantity": {
+          "value": 100.69486300074539,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

@@ -1,0 +1,57 @@
+{
+  "resourceType": "Goal",
+  "id": "HTNU18GoalTemplateSystolic",
+  "lifecycleStatus": "planned",
+  "achievementStatus": {
+    "coding": [
+      {
+        "code": "in-progress"
+      }
+    ]
+  },
+  "startDate": "2020-06-17",
+  "description": {
+    "text": "goals for HTNU18"
+  },
+  "subject": {
+    "reference": "Patient/Darrel772-Breitenberg711"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": 132,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": 82,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  ]
+}

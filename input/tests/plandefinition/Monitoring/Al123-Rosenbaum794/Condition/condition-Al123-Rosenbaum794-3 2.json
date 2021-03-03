@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Al123-Rosenbaum794-3",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "10509002",
+              "display": "Acute bronchitis (disorder)"
+            }
+          ],
+          "text": "Acute bronchitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Al123-Rosenbaum794"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
+        },
+        "onsetDateTime": "2016-05-31T15:17:19-04:00",
+        "abatementDateTime": "2016-06-14T15:17:19-04:00",
+        "recordedDate": "2016-05-31T15:17:19-04:00"
+      }
