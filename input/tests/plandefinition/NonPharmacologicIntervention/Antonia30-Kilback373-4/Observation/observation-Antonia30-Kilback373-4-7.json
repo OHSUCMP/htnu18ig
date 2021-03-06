@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Antonia30-Kilback373-4-7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6299-2",
+              "display": "Urea Nitrogen"
+            }
+          ],
+          "text": "Urea Nitrogen"
+        },
+        "subject": {
+          "reference": "Patient/Antonia30-Kilback373-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antonia30-Kilback373-4-18"
+        },
+        "effectiveDateTime": "2010-06-08T04:26:51-04:00",
+        "valueQuantity": {
+          "value": 19.0357900066429,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

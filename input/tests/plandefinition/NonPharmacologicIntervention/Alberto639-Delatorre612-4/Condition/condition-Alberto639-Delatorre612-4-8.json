@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Alberto639-Delatorre612-4-8",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444814009",
+              "display": "Viral sinusitis (disorder)"
+            }
+          ],
+          "text": "Viral sinusitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Alberto639-Delatorre612-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alberto639-Delatorre612-4-19"
+        },
+        "onsetDateTime": "2016-04-03T22:19:43-04:00",
+        "abatementDateTime": "2016-04-10T22:19:43-04:00",
+        "recordedDate": "2016-04-03T22:19:43-04:00"
+      }

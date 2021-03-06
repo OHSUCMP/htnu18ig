@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Ariel183-Turner526-4-24",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "subject": {
+          "reference": "Patient/Ariel183-Turner526-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Ariel183-Turner526-4-12"
+        },
+        "effectiveDateTime": "2010-01-09T20:27:53-05:00",
+        "valueQuantity": {
+          "value": 33.34974378806811,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }

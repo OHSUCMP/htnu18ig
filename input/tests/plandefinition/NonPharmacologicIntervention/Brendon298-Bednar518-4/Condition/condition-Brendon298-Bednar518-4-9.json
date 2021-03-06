@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Brendon298-Bednar518-4-9",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "44465007",
+              "display": "Sprain of ankle"
+            }
+          ],
+          "text": "Sprain of ankle"
+        },
+        "subject": {
+          "reference": "Patient/Brendon298-Bednar518-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brendon298-Bednar518-4-23"
+        },
+        "onsetDateTime": "2013-05-19T09:40:23-04:00",
+        "abatementDateTime": "2013-06-16T09:40:23-04:00",
+        "recordedDate": "2013-05-19T09:40:23-04:00"
+      }

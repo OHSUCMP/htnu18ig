@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-Antonia30-Kilback373-4-420",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.69",
+        "code": "72166-2",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Antonia30-Kilback373-4"
+  },
+  "effectivePeriod": {
+    "start": "1977-08-18",
+    "end": "2019-08-06"
+  },
+  "issued": "2018-03-02T00:00:00-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "2020-09",
+        "code": "160603005",
+        "display": "Light cigarette smoker (1-9 cigs/day) (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.5,
+        "unit": "Packs/Day"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Antonia30-Kilback373-4-375",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6298-4",
+              "display": "Potassium"
+            }
+          ],
+          "text": "Potassium"
+        },
+        "subject": {
+          "reference": "Patient/Antonia30-Kilback373-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antonia30-Kilback373-4-48"
+        },
+        "effectiveDateTime": "2019-06-17T04:26:51-04:00",
+        "valueQuantity": {
+          "value": 3.8260893898922257,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

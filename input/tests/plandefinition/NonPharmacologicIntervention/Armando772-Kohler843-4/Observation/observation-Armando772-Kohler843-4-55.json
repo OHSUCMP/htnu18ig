@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Armando772-Kohler843-4-55",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ],
+          "text": "Chloride"
+        },
+        "subject": {
+          "reference": "Patient/Armando772-Kohler843-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Armando772-Kohler843-4-7"
+        },
+        "effectiveDateTime": "2018-02-18T11:11:15-05:00",
+        "valueQuantity": {
+          "value": 103.6297181605087,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

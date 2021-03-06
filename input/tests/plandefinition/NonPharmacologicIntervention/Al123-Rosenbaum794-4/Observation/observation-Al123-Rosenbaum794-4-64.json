@@ -1,0 +1,43 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Al123-Rosenbaum794-4-64",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey",
+                "display": "survey"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72166-2",
+              "display": "Tobacco smoking status NHIS"
+            }
+          ],
+          "text": "Tobacco smoking status NHIS"
+        },
+        "subject": {
+          "reference": "Patient/Al123-Rosenbaum794-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Al123-Rosenbaum794-4-12"
+        },
+        "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "449868002",
+              "display": "Current every day smoker"
+            }
+          ],
+          "text": "Current every day smoker"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Andreas188-Hoeger474-4-10",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2885-2",
+              "display": "Protein [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Protein [Mass/volume] in Serum or Plasma"
+        },
+        "subject": {
+          "reference": "Patient/Andreas188-Hoeger474-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Andreas188-Hoeger474-4-31"
+        },
+        "effectiveDateTime": "2010-07-02T17:28:27-04:00",
+        "valueQuantity": {
+          "value": 62.95501720778198,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        }
+      }

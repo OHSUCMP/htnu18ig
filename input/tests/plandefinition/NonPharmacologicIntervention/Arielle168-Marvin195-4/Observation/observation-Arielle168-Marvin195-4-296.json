@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-Arielle168-Marvin195-4-296",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.69",
+        "code": "11287-0",
+        "display": "Alcoholic drinks per drinking day - Reported"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Arielle168-Marvin195-4"
+  },
+  "effectiveDateTime": "2020-03-02T10:00:00-07:00",
+  "issued": "2020-03-02T00:00:00-07:00",
+  "valueQuantity": {
+    "value": 5.0,
+    "unit": "Drinks/Day"
+  }
+}

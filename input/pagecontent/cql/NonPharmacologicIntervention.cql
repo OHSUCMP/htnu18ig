@@ -301,9 +301,9 @@ define "Patient Has Not Increased in Smoking, BMI, Or Drinking Since Last Counse
   else (
     exists "Counseling from Last Visit"
       and not (
-        "Patient Smoking Increased Since Last Visit"
-        or "Patient Drinking Increased Since Last Visit"
-        or "Patient BMI Increased Since Last Visit"
+        "Patient Smoking Increased Since Last Visit" is true
+        or "Patient Drinking Increased Since Last Visit" is true
+        or "Patient BMI Increased Since Last Visit" is true
       )
   )
 
@@ -366,3 +366,20 @@ define "Condition Indicating End Stage Renal Disease":
 
 define "Condition Indicating Pregnancy":
   (Common.QualifiedCondition(["Condition": "Pregnancy"])) Pregnancy
+
+
+/* TEST */
+define "TEST Patient Age":
+  AgeInYears()
+
+define "TEST Patient BMI Resources":
+  "Observations Specifying Patient BMI".id
+
+define "TEST Most Recent Patient BMI":
+  "Most Recent Patient BMI" BMI
+    return Tuple {
+      "ID": BMI.id,
+      "Date": BMI.effective.end,
+      "Value": BMI.value.value,
+      "Unit": BMI.value.unit
+    }

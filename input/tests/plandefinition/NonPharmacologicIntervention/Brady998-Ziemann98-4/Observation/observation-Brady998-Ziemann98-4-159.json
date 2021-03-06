@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brady998-Ziemann98-4-159",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "subject": {
+          "reference": "Patient/Brady998-Ziemann98-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brady998-Ziemann98-4-19"
+        },
+        "effectiveDateTime": "2018-09-14T22:15:37-04:00",
+        "valueQuantity": {
+          "value": 30.256369865671985,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }

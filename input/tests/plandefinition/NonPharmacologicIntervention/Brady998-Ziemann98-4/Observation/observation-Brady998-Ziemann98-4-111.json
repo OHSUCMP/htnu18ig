@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brady998-Ziemann98-4-111",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72514-3",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ],
+          "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        },
+        "subject": {
+          "reference": "Patient/Brady998-Ziemann98-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brady998-Ziemann98-4-14"
+        },
+        "effectiveDateTime": "2016-09-02T22:15:37-04:00",
+        "valueQuantity": {
+          "value": 1.7676668808556832,
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }

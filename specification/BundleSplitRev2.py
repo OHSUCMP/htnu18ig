@@ -165,7 +165,7 @@ for bundlejsonfiles in glob.glob("*.json"):
 						#for example "Provider/123456-abc" for participant and "Organization/123456-abc" for serviceProvider
 						elif line.__contains__('"reference":') and lineN4.__contains__('"participant":'):
 							relative_ref = re.search(r'("reference": "urn:uuid:)(.*)(",)', line).group(2)
-							WriteFile.write('          "reference": "Provider/' + str(relative_ref) + '",' + lineend)
+							WriteFile.write('          "reference": "Practitioner/' + str(relative_ref) + '",' + lineend)
 						elif line.__contains__('"reference":') and lineN2.__contains__('"serviceProvider":'):
 							relative_ref = re.search(r'("reference": "urn:uuid:)(.*)(",)', line).group(2)
 							WriteFile.write('          "reference": "Organization/' + str(relative_ref) + '",' + lineend)

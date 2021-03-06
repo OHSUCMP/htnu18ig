@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Antonia30-Kilback373-4-171",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ],
+          "text": "Chloride"
+        },
+        "subject": {
+          "reference": "Patient/Antonia30-Kilback373-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antonia30-Kilback373-4-34"
+        },
+        "effectiveDateTime": "2014-06-18T04:26:51-04:00",
+        "valueQuantity": {
+          "value": 110.13678211739771,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arnold338-Cassin499-4-274",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2885-2",
+              "display": "Protein [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Protein [Mass/volume] in Serum or Plasma"
+        },
+        "subject": {
+          "reference": "Patient/Arnold338-Cassin499-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arnold338-Cassin499-4-24"
+        },
+        "effectiveDateTime": "2016-10-16T15:53:16-04:00",
+        "valueQuantity": {
+          "value": 68.89325905767465,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        }
+      }

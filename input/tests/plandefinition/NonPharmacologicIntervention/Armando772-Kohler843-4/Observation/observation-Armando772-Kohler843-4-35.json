@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Armando772-Kohler843-4-35",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2",
+              "display": "WBC Auto (Bld) [#/Vol]"
+            }
+          ],
+          "text": "WBC Auto (Bld) [#/Vol]"
+        },
+        "subject": {
+          "reference": "Patient/Armando772-Kohler843-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Armando772-Kohler843-4-6"
+        },
+        "effectiveDateTime": "2015-02-15T11:11:15-05:00",
+        "valueQuantity": {
+          "value": 8.206716206237829,
+          "unit": "10*3/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*3/uL"
+        }
+      }

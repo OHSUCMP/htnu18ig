@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Antonia30-Kilback373-4-97",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/Antonia30-Kilback373-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antonia30-Kilback373-4-25"
+        },
+        "effectiveDateTime": "2012-06-19T04:26:51-04:00",
+        "valueQuantity": {
+          "value": 68.59741668242398,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }

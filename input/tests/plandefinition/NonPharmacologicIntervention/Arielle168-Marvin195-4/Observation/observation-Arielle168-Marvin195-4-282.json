@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arielle168-Marvin195-4-282",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6768-6",
+              "display": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma"
+        },
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arielle168-Marvin195-4-40"
+        },
+        "effectiveDateTime": "2018-12-05T12:31:24-05:00",
+        "valueQuantity": {
+          "value": 98.65535959227743,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arnold338-Cassin499-4-337",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "787-2",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Arnold338-Cassin499-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arnold338-Cassin499-4-27"
+        },
+        "effectiveDateTime": "2017-11-06T14:53:16-05:00",
+        "valueQuantity": {
+          "value": 83.43735544867866,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arnold338-Cassin499-4-228",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ],
+          "text": "Triglycerides"
+        },
+        "subject": {
+          "reference": "Patient/Arnold338-Cassin499-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arnold338-Cassin499-4-19"
+        },
+        "effectiveDateTime": "2015-10-17T15:53:16-04:00",
+        "valueQuantity": {
+          "value": 159.7062145446036,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

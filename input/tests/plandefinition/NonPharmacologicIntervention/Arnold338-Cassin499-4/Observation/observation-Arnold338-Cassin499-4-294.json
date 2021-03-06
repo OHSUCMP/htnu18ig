@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arnold338-Cassin499-4-294",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2947-0",
+              "display": "Sodium"
+            }
+          ],
+          "text": "Sodium"
+        },
+        "subject": {
+          "reference": "Patient/Arnold338-Cassin499-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arnold338-Cassin499-4-25"
+        },
+        "effectiveDateTime": "2016-10-31T15:53:16-04:00",
+        "valueQuantity": {
+          "value": 136.02246078449303,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Alton320-Monahan736-4-5",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271737000",
+              "display": "Anemia (disorder)"
+            }
+          ],
+          "text": "Anemia (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Alton320-Monahan736-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alton320-Monahan736-4-6"
+        },
+        "onsetDateTime": "1980-05-12T15:37:24-04:00",
+        "recordedDate": "1980-05-12T15:37:24-04:00"
+      }

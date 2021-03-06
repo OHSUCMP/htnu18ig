@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arielle168-Marvin195-4-231",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "787-2",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arielle168-Marvin195-4-37"
+        },
+        "effectiveDateTime": "2017-02-06T12:31:24-05:00",
+        "valueQuantity": {
+          "value": 87.78673249302845,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

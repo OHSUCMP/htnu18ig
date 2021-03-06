@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Alberto639-Delatorre612-4-2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162864005",
+              "display": "Body mass index 30+ - obesity (finding)"
+            }
+          ],
+          "text": "Body mass index 30+ - obesity (finding)"
+        },
+        "subject": {
+          "reference": "Patient/Alberto639-Delatorre612-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alberto639-Delatorre612-4-2"
+        },
+        "onsetDateTime": "1986-09-14T22:19:43-04:00",
+        "recordedDate": "1986-09-14T22:19:43-04:00"
+      }

@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Brady998-Ziemann98-4-2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162864005",
+              "display": "Body mass index 30+ - obesity (finding)"
+            }
+          ],
+          "text": "Body mass index 30+ - obesity (finding)"
+        },
+        "subject": {
+          "reference": "Patient/Brady998-Ziemann98-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brady998-Ziemann98-4-2"
+        },
+        "onsetDateTime": "1994-10-14T22:15:37-04:00",
+        "recordedDate": "1994-10-14T22:15:37-04:00"
+      }

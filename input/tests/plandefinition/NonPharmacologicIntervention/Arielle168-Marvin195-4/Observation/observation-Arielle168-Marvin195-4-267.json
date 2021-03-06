@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arielle168-Marvin195-4-267",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "High Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "High Density Lipoprotein Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arielle168-Marvin195-4-39"
+        },
+        "effectiveDateTime": "2018-02-12T12:31:24-05:00",
+        "valueQuantity": {
+          "value": 77.56096183757958,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

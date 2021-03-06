@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Al123-Rosenbaum794-4-19",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body Height"
+            }
+          ],
+          "text": "Body Height"
+        },
+        "subject": {
+          "reference": "Patient/Al123-Rosenbaum794-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Al123-Rosenbaum794-4-6"
+        },
+        "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+        "valueQuantity": {
+          "value": 161.06800486929708,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      }

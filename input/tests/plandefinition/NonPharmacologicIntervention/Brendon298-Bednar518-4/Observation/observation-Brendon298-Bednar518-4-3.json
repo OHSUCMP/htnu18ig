@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brendon298-Bednar518-4-3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/Brendon298-Bednar518-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brendon298-Bednar518-4-12"
+        },
+        "effectiveDateTime": "2010-01-22T08:40:23-05:00",
+        "valueQuantity": {
+          "value": 3.10111910032421,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

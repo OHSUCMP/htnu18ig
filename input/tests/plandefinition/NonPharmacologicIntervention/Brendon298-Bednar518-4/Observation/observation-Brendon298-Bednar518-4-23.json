@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brendon298-Bednar518-4-23",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72514-3",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ],
+          "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        },
+        "subject": {
+          "reference": "Patient/Brendon298-Bednar518-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brendon298-Bednar518-4-12"
+        },
+        "effectiveDateTime": "2010-01-25T08:40:23-05:00",
+        "valueQuantity": {
+          "value": 3.8897455004012964,
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }

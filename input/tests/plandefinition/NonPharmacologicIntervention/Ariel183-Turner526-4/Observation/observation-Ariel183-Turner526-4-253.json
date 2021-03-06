@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Ariel183-Turner526-4-253",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ],
+          "text": "Calcium"
+        },
+        "subject": {
+          "reference": "Patient/Ariel183-Turner526-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Ariel183-Turner526-4-36"
+        },
+        "effectiveDateTime": "2017-12-23T20:27:53-05:00",
+        "valueQuantity": {
+          "value": 9.330322310816488,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

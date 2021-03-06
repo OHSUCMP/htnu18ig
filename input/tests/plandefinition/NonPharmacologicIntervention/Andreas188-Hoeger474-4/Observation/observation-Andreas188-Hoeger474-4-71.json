@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Andreas188-Hoeger474-4-71",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1742-6",
+              "display": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        },
+        "subject": {
+          "reference": "Patient/Andreas188-Hoeger474-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Andreas188-Hoeger474-4-35"
+        },
+        "effectiveDateTime": "2012-07-01T17:28:27-04:00",
+        "valueQuantity": {
+          "value": 37.16969737978682,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        }
+      }

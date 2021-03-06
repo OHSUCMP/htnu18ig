@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Armando772-Kohler843-4-1",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EMER"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "410429000",
+                "display": "Cardiac Arrest"
+              }
+            ],
+            "text": "Cardiac Arrest"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Armando772-Kohler843-4",
+          "display": "Mr. Armando772 Kohler843"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000006e",
+              "display": "Dr. Isiah14 Jakubowski832"
+            }
+          }
+        ],
+        "period": {
+          "start": "1985-11-24T11:11:15-05:00",
+          "end": "1985-11-24T12:56:15-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/5d4b9df1-93ae-3bc9-b680-03249990e558",
+          "display": "HOLYOKE MEDICAL CENTER"
+        }
+      }

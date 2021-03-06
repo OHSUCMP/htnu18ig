@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Andreas188-Hoeger474-4-287",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "10834-0",
+              "display": "Globulin [Mass/volume] in Serum by calculation"
+            }
+          ],
+          "text": "Globulin [Mass/volume] in Serum by calculation"
+        },
+        "subject": {
+          "reference": "Patient/Andreas188-Hoeger474-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Andreas188-Hoeger474-4-54"
+        },
+        "effectiveDateTime": "2019-06-30T17:28:27-04:00",
+        "valueQuantity": {
+          "value": 3.247380687309871,
+          "unit": "g/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/L"
+        }
+      }
