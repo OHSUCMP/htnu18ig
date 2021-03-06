@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Brendon298-Bednar518-4-10",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "62106007",
+              "display": "Concussion with no loss of consciousness"
+            }
+          ],
+          "text": "Concussion with no loss of consciousness"
+        },
+        "subject": {
+          "reference": "Patient/Brendon298-Bednar518-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brendon298-Bednar518-4-26"
+        },
+        "onsetDateTime": "2014-04-12T09:40:23-04:00",
+        "abatementDateTime": "2014-06-11T09:40:23-04:00",
+        "recordedDate": "2014-04-12T09:40:23-04:00"
+      }

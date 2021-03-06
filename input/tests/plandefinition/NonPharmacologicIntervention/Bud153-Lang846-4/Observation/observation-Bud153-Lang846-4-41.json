@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Bud153-Lang846-4-41",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "Low Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "Low Density Lipoprotein Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Bud153-Lang846-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bud153-Lang846-4-51"
+        },
+        "effectiveDateTime": "2017-11-11T16:00:49-05:00",
+        "valueQuantity": {
+          "value": 68.29634265010091,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

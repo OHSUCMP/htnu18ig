@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Al123-Rosenbaum794-4-2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "65363002",
+              "display": "Otitis media"
+            }
+          ],
+          "text": "Otitis media"
+        },
+        "subject": {
+          "reference": "Patient/Al123-Rosenbaum794-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Al123-Rosenbaum794-4-9"
+        },
+        "onsetDateTime": "2012-07-30T15:17:19-04:00",
+        "abatementDateTime": "2013-04-15T15:17:19-04:00",
+        "recordedDate": "2012-07-30T15:17:19-04:00"
+      }

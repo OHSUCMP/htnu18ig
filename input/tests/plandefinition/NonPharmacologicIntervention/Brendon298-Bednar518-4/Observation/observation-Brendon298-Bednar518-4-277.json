@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brendon298-Bednar518-4-277",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "High Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "High Density Lipoprotein Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Brendon298-Bednar518-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brendon298-Bednar518-4-38"
+        },
+        "effectiveDateTime": "2018-01-20T08:40:23-05:00",
+        "valueQuantity": {
+          "value": 56.09909443819649,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Ariel183-Turner526-4-255",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6298-4",
+              "display": "Potassium"
+            }
+          ],
+          "text": "Potassium"
+        },
+        "subject": {
+          "reference": "Patient/Ariel183-Turner526-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Ariel183-Turner526-4-36"
+        },
+        "effectiveDateTime": "2017-12-23T20:27:53-05:00",
+        "valueQuantity": {
+          "value": 4.646432287208115,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "PrescribeABPM3",
+  "active": true,
+  "name": [
+    {
+      "text": "PrescribeABPM3 Patient",
+      "family": "Patient",
+      "given": [
+        "PrescribeABPM3"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1982-05-01"
+}

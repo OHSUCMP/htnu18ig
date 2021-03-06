@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Andreas188-Hoeger474-4-86",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "787-2",
+              "display": "MCV [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "MCV [Entitic volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Andreas188-Hoeger474-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Andreas188-Hoeger474-4-36"
+        },
+        "effectiveDateTime": "2012-09-17T17:28:27-04:00",
+        "valueQuantity": {
+          "value": 93.76237378035319,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

@@ -1,0 +1,26 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-ReminderRecommendation-2",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.69",
+        "code": "39156-5",
+        "display": "Body mass index (BMI) [Ratio]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ReminderRecommendation"
+  },
+  "effectiveDateTime": "2020-01-10T10:00:00-06:00",
+  "issued": "2020-01-11T10:00:00-06:00",
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 34.885542779251875,
+    "unit": "kg/m2",
+    "code": "kg/m2"
+  }
+}

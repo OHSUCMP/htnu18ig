@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "procedure-ReminderRecommendation-1",
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "2020-09",
+        "code": "20093000",
+        "display": "Alcohol rehabilitation and detoxification (regime/therapy)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ReminderRecommendation"
+  },
+  "performedDateTime": "2020-01-10T11:00:00-06:00",
+  "reasonReference": [
+    {
+      "reference": "Observation/observation-ReminderRecommendation-1"
+    },
+    {
+      "reference": "Observation/observation-ReminderRecommendation-2"
+    },
+    {
+      "reference": "Observation/observation-ReminderRecommendation-3"
+    }
+  ]
+}

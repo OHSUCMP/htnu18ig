@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Al123-Rosenbaum794-4-23",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59576-9",
+              "display": "Body mass index (BMI) [Percentile] Per age and gender"
+            }
+          ],
+          "text": "Body mass index (BMI) [Percentile] Per age and gender"
+        },
+        "subject": {
+          "reference": "Patient/Al123-Rosenbaum794-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Al123-Rosenbaum794-4-6"
+        },
+        "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+        "valueQuantity": {
+          "value": 78.66618013808882,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

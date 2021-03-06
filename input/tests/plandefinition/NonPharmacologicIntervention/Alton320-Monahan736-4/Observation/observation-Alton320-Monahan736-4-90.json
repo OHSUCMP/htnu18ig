@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Alton320-Monahan736-4-90",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ],
+          "text": "Calcium"
+        },
+        "subject": {
+          "reference": "Patient/Alton320-Monahan736-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alton320-Monahan736-4-14"
+        },
+        "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+        "valueQuantity": {
+          "value": 9.383959726216997,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

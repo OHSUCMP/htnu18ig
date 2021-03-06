@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Arnold338-Cassin499-4-17",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EMER"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "50849002",
+                "display": "Emergency room admission (procedure)"
+              }
+            ],
+            "text": "Emergency room admission (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Arnold338-Cassin499-4",
+          "display": "Mr. Arnold338 Cassin499"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
+              "display": "Dr. Renato359 Jenkins714"
+            }
+          }
+        ],
+        "period": {
+          "start": "2015-03-17T15:53:16-04:00",
+          "end": "2015-03-17T18:15:16-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
+          "display": "HALLMARK HEALTH SYSTEM"
+        }
+      }

@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "ReminderRecommendation",
+  "active": true,
+  "name": [
+    {
+      "text": "ReminderRecommendation Patient",
+      "family": "Patient",
+      "given": [
+        "ReminderRecommendation"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1991-04-04"
+}

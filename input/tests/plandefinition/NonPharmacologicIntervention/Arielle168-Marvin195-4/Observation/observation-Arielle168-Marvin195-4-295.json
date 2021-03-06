@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-Arielle168-Marvin195-4-295",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.69",
+        "code": "72166-2",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Arielle168-Marvin195-4"
+  },
+  "issued": "2020-03-02T00:00:00-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "2020-09",
+        "code": "160604004",
+        "display": "Moderate cigarette smoker (10-19 cigs/day) (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.75,
+        "unit": "Packs/Day"
+      }
+    }
+  ]
+}

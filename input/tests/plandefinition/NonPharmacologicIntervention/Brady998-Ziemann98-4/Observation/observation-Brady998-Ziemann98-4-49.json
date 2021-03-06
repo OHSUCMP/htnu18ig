@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brady998-Ziemann98-4-49",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Erythrocytes [#/volume] in Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Brady998-Ziemann98-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brady998-Ziemann98-4-9"
+        },
+        "effectiveDateTime": "2012-08-10T22:15:37-04:00",
+        "valueQuantity": {
+          "value": 4.778864432238645,
+          "unit": "10*6/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*6/uL"
+        }
+      }

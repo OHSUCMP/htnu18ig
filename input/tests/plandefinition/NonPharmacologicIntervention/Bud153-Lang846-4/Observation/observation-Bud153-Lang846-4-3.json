@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Bud153-Lang846-4-3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72514-3",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ],
+          "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        },
+        "subject": {
+          "reference": "Patient/Bud153-Lang846-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bud153-Lang846-4-22"
+        },
+        "effectiveDateTime": "2012-05-05T17:00:49-04:00",
+        "valueQuantity": {
+          "value": 3.0901314232466484,
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }

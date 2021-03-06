@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "HighBMI",
+  "active": true,
+  "name": [
+    {
+      "text": "HighBMI Patient",
+      "family": "Patient",
+      "given": [
+        "HighBMI"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1991-04-04"
+}

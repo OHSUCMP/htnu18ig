@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Alberto639-Delatorre612-4-4",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Alberto639-Delatorre612-4",
+          "display": "Mr. Alberto639 Delatorre612"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
+              "display": "Dr. Tresa661 Wehner319"
+            }
+          }
+        ],
+        "period": {
+          "start": "2009-12-06T21:19:43-05:00",
+          "end": "2009-12-06T21:34:43-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
+          "display": "PCP143874"
+        }
+      }

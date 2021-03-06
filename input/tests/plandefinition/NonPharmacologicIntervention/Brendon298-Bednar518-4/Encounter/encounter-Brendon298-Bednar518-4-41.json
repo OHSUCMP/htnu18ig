@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Brendon298-Bednar518-4-41",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Brendon298-Bednar518-4",
+          "display": "Mr. Brendon298 Bednar518"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000406a",
+              "display": "Dr. Norbert530 O'Hara248"
+            }
+          }
+        ],
+        "period": {
+          "start": "2019-03-18T09:40:23-04:00",
+          "end": "2019-03-18T10:40:23-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
+          "display": "PCP25544"
+        }
+      }

@@ -74,11 +74,13 @@ define function "HTN Stage 2 BP Systolic Second Test"(list List<FHIR.Observation
 
 define function "HTN Crisis BP"(list List<FHIR.Observation>):
   ("Avg BP"(list)) O
-    where O.systolic.value > 180
-    or O.diastolic.value > 120
+    where O.systolic.value >= 180
+    or O.diastolic.value >= 120
 
 define function "Systolic BP Variability"(list List<FHIR.Observation>):
-  if Count(list) = 1 then
+  if list is null then
+    null
+  else if Count(list) <= 1 then
     null
   else
     StdDev(list O
@@ -94,13 +96,23 @@ define function "Systolic BP Variability String"(list List<FHIR.Observation>):
 define function WithUnit(list List<Observation>, Unit String):
   list Observations
     where (
-      ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).unit.value = Unit
-        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).unit.value = Unit)
-      or ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).code.value = Unit
-        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).code.value = Unit)
+      ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).unit.value ~ Unit
+        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).unit.value ~ Unit)
+      or ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).code.value ~ Unit
+        and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).code.value ~ Unit)
     )
 
-define function QualifiedEncounters(list List<FHIR.Encounter>):
+define function WithUnit(value Quantity, Unit String):
+  (
+    value quantity
+    where (
+      quantity.code.value ~ Unit
+      or quantity.unit.value ~ Unit
+    )
+  ) is not null
+
+
+define function QualifiedEncounter(list List<FHIR.Encounter>):
   list Encounter
     //planned | arrived | triaged | in-progress | onleave | finished | cancelled +
     where Encounter.status ~ 'finished'
@@ -121,23 +133,23 @@ define function QualifiedObservation(list List<FHIR.Observation>):
 			or Observation.status ~ 'corrected'
 		)
 
-define function QualifiedProcedures(list List<FHIR.Procedure>):
+define function QualifiedProcedure(list List<FHIR.Procedure>):
   list Procedure
     //preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown
     where Procedure.status ~ 'completed'
 
 define function ConfirmedCondition(list List<Condition>):
-  list Conditions
-    where FHIRHelpers.ToConcept(Conditions.verificationStatus) ~ "confirmed"
+  list Condition
+    where FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
 
 define function ConfirmedCondition(value Condition):
   value Condition
     where FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
 
 define function ActiveCondition(list List<Condition>):
-  list Conditions
-    where FHIRHelpers.ToConcept(Conditions.clinicalStatus) ~ "active"
-      and Conditions.abatement is null
+  list Condition
+    where FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+      and Condition.abatement is null
 
 define function ActiveCondition(value Condition):
   value Condition
@@ -145,12 +157,24 @@ define function ActiveCondition(value Condition):
       and Condition.abatement is null
 
 define function ActiveOrRecurring(list List<Condition>):
-  list Conditions
+  list Condition
     where (
-      FHIRHelpers.ToConcept(Conditions.clinicalStatus) ~ "active"
-        and Conditions.abatement is null
+      FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+        and Condition.abatement is null
       )
-      or FHIRHelpers.ToConcept(Conditions.clinicalStatus) ~ "relapse"
+      or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "relapse"
+
+define function QualifiedGoal(list List<Goal>):
+  list Goal
+    //proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected
+    where (
+      Goal.lifecycleStatus ~ 'proposed'
+      or Goal.lifecycleStatus ~ 'planned'
+      or Goal.lifecycleStatus ~ 'accepted'
+      or Goal.lifecycleStatus ~ 'active'
+      or Goal.lifecycleStatus ~ 'completed'
+    )
+
 
 define function "GetId"(uri String):
 	Last(Split(uri, '/'))

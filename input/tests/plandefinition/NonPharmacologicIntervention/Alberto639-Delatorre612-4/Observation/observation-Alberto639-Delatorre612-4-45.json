@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Alberto639-Delatorre612-4-45",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Erythrocytes [#/volume] in Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Alberto639-Delatorre612-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alberto639-Delatorre612-4-14"
+        },
+        "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+        "valueQuantity": {
+          "value": 4.622916783534036,
+          "unit": "10*6/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*6/uL"
+        }
+      }

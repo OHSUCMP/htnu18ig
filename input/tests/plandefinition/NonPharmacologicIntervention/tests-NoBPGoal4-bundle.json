@@ -1,0 +1,60 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-NoBPGoal4-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-NoBPGoal4-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "version": "0.5.0",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "version": "0.5.0",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "427889009",
+          "display": "Hypertension associated with transplantation (disorder)"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/NoBPGoal4"
+      },
+      "onsetDateTime": "2019-03-14T11:01:32-07:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-NoBPGoal4-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "NoBPGoal4",
+      "active": true,
+      "name": [ {
+        "text": "NoBPGoal4 Patient",
+        "family": "Patient",
+        "given": [ "NoBPGoal4" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1991-04-04"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/NoBPGoal4"
+    }
+  } ]
+}

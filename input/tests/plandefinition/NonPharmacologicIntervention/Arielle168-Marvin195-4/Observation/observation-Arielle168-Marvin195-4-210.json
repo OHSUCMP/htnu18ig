@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arielle168-Marvin195-4-210",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+            }
+          ],
+          "text": "Glomerular filtration rate/1.73 sq M.predicted"
+        },
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arielle168-Marvin195-4-36"
+        },
+        "effectiveDateTime": "2016-12-05T12:31:24-05:00",
+        "valueQuantity": {
+          "value": 89.7083705402107,
+          "unit": "mL/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min"
+        }
+      }

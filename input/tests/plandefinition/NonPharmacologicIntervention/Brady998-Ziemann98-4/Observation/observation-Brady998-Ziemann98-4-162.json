@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brady998-Ziemann98-4-162",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6299-2",
+              "display": "Urea Nitrogen"
+            }
+          ],
+          "text": "Urea Nitrogen"
+        },
+        "subject": {
+          "reference": "Patient/Brady998-Ziemann98-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brady998-Ziemann98-4-19"
+        },
+        "effectiveDateTime": "2018-09-14T22:15:37-04:00",
+        "valueQuantity": {
+          "value": 10.888844596443423,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

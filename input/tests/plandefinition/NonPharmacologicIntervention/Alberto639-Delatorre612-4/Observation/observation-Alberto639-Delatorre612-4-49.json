@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Alberto639-Delatorre612-4-49",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "785-6",
+              "display": "MCH [Entitic mass] by Automated count"
+            }
+          ],
+          "text": "MCH [Entitic mass] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Alberto639-Delatorre612-4"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alberto639-Delatorre612-4-14"
+        },
+        "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+        "valueQuantity": {
+          "value": 29.903162272441136,
+          "unit": "pg",
+          "system": "http://unitsofmeasure.org",
+          "code": "pg"
+        }
+      }

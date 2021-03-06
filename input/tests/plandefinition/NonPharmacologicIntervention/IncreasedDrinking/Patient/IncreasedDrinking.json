@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "IncreasedDrinking",
+  "active": true,
+  "name": [
+    {
+      "text": "IncreasedDrinking Patient",
+      "family": "Patient",
+      "given": [
+        "IncreasedDrinking"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1991-04-04"
+}

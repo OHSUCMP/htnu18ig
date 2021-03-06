@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "SmokerAndDrinker",
+  "active": true,
+  "name": [
+    {
+      "text": "SmokerAndDrinker Patient",
+      "family": "Patient",
+      "given": [
+        "SmokerAndDrinker"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1991-04-04"
+}

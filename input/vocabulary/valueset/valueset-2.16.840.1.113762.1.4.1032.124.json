@@ -1,0 +1,319 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1032.124",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset", "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "shareable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "narrative"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "publishable"
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-inclusion",
+    "valueString": "HCPCS and SNOMED-CT codes that represent alcohol brief intervention and counseling services."
+  }, {
+    "url": "http://fhir.org/guides/cdc/opioid-cds/StructureDefinition/cdc-valueset-exclusion",
+    "valueString": "Medications used to treat excessive alcohol intake (e.g, alcohol use disorder). Behavioral counseling services that do not explicitly mention alcohol. ICD10-PCS codes (which were created to capture inpatient services)."
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode": "executable"
+  }, {
+    "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+    "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.124",
+  "version": "20200611",
+  "title": "Alcohol Brief Intervention and Counseling",
+  "status": "active",
+  "experimental": false,
+  "publisher": "MITRE",
+  "description": "Alcohol brief intervention and counseling services that may be provided to an individual that screens \"positive\" for excessive alcohol intake (i.e., unhealthy alcohol intake, risky alcohol use) in an outpatient setting.",
+  "purpose": "Alcohol brief intervention and counseling services that may be provided to an individual that screens \"positive\" for excessive alcohol intake (i.e., unhealthy alcohol intake, risky alcohol use) in an outpatient setting.",
+  "expansion": {
+    "timestamp": "2021-02-26T22:10:20-07:00",
+    "contains": [ {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "G0396",
+      "display": "Alcohol and/or substance (other than tobacco) misuse structured assessment (e.g., audit, dast), and brief intervention 15 to 30 minutes"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "G0397",
+      "display": "Alcohol and/or substance (other than tobacco) misuse structured assessment (e.g., audit, dast), and intervention, greater than 30 minutes"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "G0443",
+      "display": "Brief face-to-face behavioral counseling for alcohol misuse, 15 minutes"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "G9621",
+      "display": "Patient identified as an unhealthy alcohol user when screened for unhealthy alcohol use using a systematic screening method and received brief counseling"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0005",
+      "display": "Alcohol and/or drug services; group counseling by a clinician"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0006",
+      "display": "Alcohol and/or drug services; case management"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0007",
+      "display": "Alcohol and/or drug services; crisis intervention (outpatient)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0008",
+      "display": "Alcohol and/or drug services; sub-acute detoxification (hospital inpatient)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0009",
+      "display": "Alcohol and/or drug services; acute detoxification (hospital inpatient)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0010",
+      "display": "Alcohol and/or drug services; sub-acute detoxification (residential addiction program inpatient)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0011",
+      "display": "Alcohol and/or drug services; acute detoxification (residential addiction program inpatient)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0012",
+      "display": "Alcohol and/or drug services; sub-acute detoxification (residential addiction program outpatient)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0013",
+      "display": "Alcohol and/or drug services; acute detoxification (residential addiction program outpatient)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0014",
+      "display": "Alcohol and/or drug services; ambulatory detoxification"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0015",
+      "display": "Alcohol and/or drug services; intensive outpatient (treatment program that operates at least 3 hours/day and at least 3 days/week and is based on an individualized treatment plan), including assessment, counseling; crisis intervention, and activity therapies or education"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0016",
+      "display": "Alcohol and/or drug services; medical/somatic (medical intervention in ambulatory setting)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0022",
+      "display": "Alcohol and/or drug intervention service (planned facilitation)"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H0050",
+      "display": "Alcohol and/or drug services, brief intervention, per 15 minutes"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H2034",
+      "display": "Alcohol and/or drug abuse halfway house services, per diem"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H2035",
+      "display": "Alcohol and/or other drug treatment program, per hour"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "H2036",
+      "display": "Alcohol and/or other drug treatment program, per diem"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "T1006",
+      "display": "Alcohol and/or substance abuse services, family/couple counseling"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "T1007",
+      "display": "Alcohol and/or substance abuse services, treatment plan development and/or modification"
+    }, {
+      "system": "urn:oid:2.16.840.1.113883.6.285",
+      "version": "2021",
+      "code": "T1012",
+      "display": "Alcohol and/or substance abuse services, skills development"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "171057006",
+      "display": "Pregnancy alcohol education (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "183388004",
+      "display": "Aversion therapy - alcoholism (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "20093000",
+      "display": "Alcohol rehabilitation and detoxification (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "23915005",
+      "display": "Combined alcohol and drug rehabilitation and detoxification (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "24165007",
+      "display": "Alcoholism counseling (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "281078001",
+      "display": "Education about alcohol consumption (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "35637008",
+      "display": "Alcohol rehabilitation (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "386449006",
+      "display": "Substance use treatment: alcohol withdrawal (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "408945004",
+      "display": "Alcohol abuse prevention (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "408946003",
+      "display": "Alcohol abuse prevention assessment (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "408947007",
+      "display": "Alcohol abuse prevention education (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "408948002",
+      "display": "Alcohol abuse prevention management (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "413130000",
+      "display": "Alcohol disorder monitoring (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "413473000",
+      "display": "Counseling about alcohol consumption (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "429291000124102",
+      "display": "Alcohol brief intervention (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "431260004",
+      "display": "Referral to specialist alcohol treatment service (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "439903005",
+      "display": "Self-monitoring of alcohol intake (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "62213004",
+      "display": "Combined alcohol and drug rehabilitation (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "64297001",
+      "display": "Detoxication psychiatric therapy for alcoholism (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "707166002",
+      "display": "Alcohol reduction program (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "711118008",
+      "display": "Facilitation of alcohol abuse recovery (procedure)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "720175009",
+      "display": "Alcohol harm reduction program (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "720176005",
+      "display": "Alcohol relapse prevention program (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "720178006",
+      "display": "Alcohol twelve step program (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "737363002",
+      "display": "Alcohol abuse surveillance (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "827094004",
+      "display": "Alcohol detoxification (regime/therapy)"
+    }, {
+      "system": "http://snomed.info/sct",
+      "version": "2020-09",
+      "code": "87106005",
+      "display": "Combined alcohol and drug detoxification (regime/therapy)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/HCPCS",
+      "version": "2021",
+      "code": "4158F",
+      "display": "Patient counseled about risks of alcohol use (hep-c)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/HCPCS",
+      "version": "2021",
+      "code": "4320F",
+      "display": "Patient counseled regarding psychosocial and pharmacologic treatment options for alcohol dependence (sud)"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/HCPCS",
+      "version": "2021",
+      "code": "99408",
+      "display": "Alcohol and/or substance abuse screening and intervention, 15-30 minutes"
+    }, {
+      "system": "http://terminology.hl7.org/CodeSystem/HCPCS",
+      "version": "2021",
+      "code": "99409",
+      "display": "Alcohol and/or substance abuse screening and intervention, greater than 30 minutes"
+    } ]
+  }
+}

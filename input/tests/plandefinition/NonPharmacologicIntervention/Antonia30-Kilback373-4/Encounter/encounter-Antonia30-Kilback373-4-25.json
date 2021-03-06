@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Antonia30-Kilback373-4-25",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390906007",
+                "display": "Follow-up encounter"
+              }
+            ],
+            "text": "Follow-up encounter"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Antonia30-Kilback373-4",
+          "display": "Mrs. Antonia30 Kilback373"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000050",
+              "display": "Dr. Stevie682 Homenick806"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-06-18T04:26:51-04:00",
+          "end": "2012-06-18T04:41:51-04:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "55822004",
+                "display": "Hyperlipidemia"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/8b58cdd1-3d79-3126-8fe0-da2c54d6805c",
+          "display": "CARNEY HOSPITAL"
+        }
+      }
