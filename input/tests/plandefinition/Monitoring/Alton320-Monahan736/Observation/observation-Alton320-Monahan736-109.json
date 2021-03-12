@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Alton320-Monahan736-15"
         },
-        "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+        "effectiveDateTime": "2019-10-12T15:37:24-04:00",
         "valueQuantity": {
           "value": 28.35314338499291,
           "unit": "mmol/L",

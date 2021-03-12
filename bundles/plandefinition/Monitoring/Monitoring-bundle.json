@@ -422,7 +422,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 130,
+          "value": 120,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -516,8 +516,8 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-3"
       },
-      "onsetDateTime": "2003-03-02T21:19:43-05:00",
-      "recordedDate": "2003-03-02T21:19:43-05:00"
+      "onsetDateTime": "2019-03-02T21:19:43-05:00",
+      "recordedDate": "2019-03-02T21:19:43-05:00"
     },
     "request": {
       "method": "PUT",
@@ -971,8 +971,8 @@
         }
       } ],
       "period": {
-        "start": "2018-01-21T21:19:43-05:00",
-        "end": "2018-01-21T21:34:43-05:00"
+        "start": "2019-01-21T21:19:43-05:00",
+        "end": "2019-01-21T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -1049,8 +1049,8 @@
         }
       } ],
       "period": {
-        "start": "2017-08-24T22:19:43-04:00",
-        "end": "2017-08-24T23:14:43-04:00"
+        "start": "2019-08-24T22:19:43-04:00",
+        "end": "2019-08-24T23:14:43-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
@@ -1230,8 +1230,8 @@
         }
       } ],
       "period": {
-        "start": "2016-04-10T22:19:43-04:00",
-        "end": "2016-04-10T22:34:43-04:00"
+        "start": "2019-04-10T22:19:43-04:00",
+        "end": "2019-04-10T22:34:43-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/62fa9127-485f-3032-87cc-6576d91fec94",
@@ -3167,7 +3167,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -3320,7 +3320,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -3362,8 +3362,8 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "onsetDateTime": "2018-10-29T15:37:24-04:00",
-      "recordedDate": "2018-10-29T15:37:24-04:00"
+      "onsetDateTime": "2019-10-29T15:37:24-04:00",
+      "recordedDate": "2019-10-29T15:37:24-04:00"
     },
     "request": {
       "method": "PUT",
@@ -3395,7 +3395,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -3496,7 +3496,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
-      "effectiveDateTime": "2017-11-16T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -3935,7 +3935,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -4623,7 +4623,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
-      "effectiveDateTime": "2017-11-16T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 418.0016492722819,
         "unit": "10*3/uL",
@@ -4815,7 +4815,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
-      "effectiveDateTime": "2017-11-16T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 4.352730111870313,
         "unit": "10*6/uL",
@@ -4853,7 +4853,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
-      "effectiveDateTime": "2017-11-16T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 14.430972827914175,
         "unit": "g/dL",
@@ -5344,7 +5344,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
-      "effectiveDateTime": "2018-11-22T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -5445,7 +5445,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
-      "effectiveDateTime": "2018-11-22T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -5483,7 +5483,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
-      "effectiveDateTime": "2018-11-22T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -5521,7 +5521,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
-      "effectiveDateTime": "2018-11-22T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 60.64159302502363,
         "unit": "mg/dL",
@@ -5711,7 +5711,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
-      "effectiveDateTime": "2018-11-22T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 99.45316057404943,
         "unit": "mg/dL",
@@ -5994,7 +5994,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
-      "effectiveDateTime": "2018-11-22T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 0.43073343370131845,
         "unit": "{score}",
@@ -6032,7 +6032,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
-      "effectiveDateTime": "2017-11-16T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -6161,8 +6161,8 @@
         }
       } ],
       "period": {
-        "start": "2016-03-27T22:19:43-04:00",
-        "end": "2016-03-27T22:34:43-04:00"
+        "start": "2019-03-27T22:19:43-04:00",
+        "end": "2019-03-27T22:34:43-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -6208,8 +6208,8 @@
         }
       } ],
       "period": {
-        "start": "2016-01-10T21:19:43-05:00",
-        "end": "2016-01-10T21:34:43-05:00"
+        "start": "2019-01-10T21:19:43-05:00",
+        "end": "2019-01-10T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -6286,7 +6286,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
-      "effectiveDateTime": "2018-11-22T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -6518,7 +6518,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 11.230019304893485,
         "unit": "fL",
@@ -6556,7 +6556,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -6596,7 +6596,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 210.6273154244719,
         "unit": "10*3/uL",
@@ -6634,7 +6634,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 268.67951473420686,
         "unit": "fL",
@@ -6672,7 +6672,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -6710,7 +6710,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 48.44143477628018,
         "unit": "%",
@@ -6748,7 +6748,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 33.15719128456441,
         "unit": "g/dL",
@@ -6786,7 +6786,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 44.015084388458064,
         "unit": "fL",
@@ -6824,7 +6824,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 89.23779935011983,
         "unit": "fL",
@@ -6862,7 +6862,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.43081477867061,
         "unit": "pg",
@@ -7154,7 +7154,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -7192,7 +7192,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -7255,7 +7255,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
       "valueQuantity": {
         "value": 3.542390063459913,
         "unit": "{score}",
@@ -7293,7 +7293,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -7331,7 +7331,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
       "valueQuantity": {
         "value": 1.3611606013389705,
         "unit": "{score}",
@@ -7369,7 +7369,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -7407,7 +7407,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -7447,7 +7447,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -7485,7 +7485,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -7523,7 +7523,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -7603,7 +7603,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 63.83609738668246,
         "unit": "mg/dL",
@@ -7641,7 +7641,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 116.72101146761173,
         "unit": "mg/dL",
@@ -7679,7 +7679,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 107.52292666005265,
         "unit": "mg/dL",
@@ -7717,7 +7717,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -7755,7 +7755,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 2.072250263933972,
         "unit": "{score}",
@@ -7793,7 +7793,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -7833,7 +7833,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -7896,7 +7896,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 194.70322634025746,
         "unit": "mg/dL",
@@ -7934,7 +7934,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -7972,7 +7972,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -8126,7 +8126,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -8164,7 +8164,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
       "valueQuantity": {
         "value": 2.9070699112198977,
         "unit": "{score}",
@@ -8202,7 +8202,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -8240,7 +8240,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
       "valueQuantity": {
         "value": 3.7099253661720883,
         "unit": "{score}",
@@ -8278,7 +8278,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -8318,7 +8318,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-16"
       },
-      "effectiveDateTime": "2016-03-29T01:24:38-04:00",
+      "effectiveDateTime": "2019-03-29T01:24:38-04:00",
       "valueQuantity": {
         "value": 37.25583508874942,
         "unit": "Cel",
@@ -8356,7 +8356,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -8419,7 +8419,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -8459,7 +8459,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -8497,7 +8497,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -11452,8 +11452,8 @@
         }
       } ],
       "period": {
-        "start": "2016-05-31T15:17:19-04:00",
-        "end": "2016-05-31T15:44:19-04:00"
+        "start": "2019-05-31T15:17:19-04:00",
+        "end": "2019-05-31T15:44:19-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -11575,8 +11575,8 @@
         }
       } ],
       "period": {
-        "start": "2016-06-06T15:17:19-04:00",
-        "end": "2016-06-06T15:32:19-04:00"
+        "start": "2019-06-06T15:17:19-04:00",
+        "end": "2019-06-06T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
@@ -11653,8 +11653,8 @@
         }
       } ],
       "period": {
-        "start": "2017-06-07T15:17:19-04:00",
-        "end": "2017-06-07T15:32:19-04:00"
+        "start": "2019-06-07T15:17:19-04:00",
+        "end": "2019-06-07T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
@@ -11771,8 +11771,8 @@
         }
       } ],
       "period": {
-        "start": "2017-05-08T15:17:19-04:00",
-        "end": "2017-05-08T15:47:19-04:00"
+        "start": "2019-05-08T15:17:19-04:00",
+        "end": "2019-05-08T15:47:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -11896,8 +11896,8 @@
         }
       } ],
       "period": {
-        "start": "2014-04-21T15:17:19-04:00",
-        "end": "2014-04-21T15:32:19-04:00"
+        "start": "2019-04-21T15:17:19-04:00",
+        "end": "2019-04-21T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -12014,8 +12014,8 @@
         }
       } ],
       "period": {
-        "start": "2013-04-15T15:17:19-04:00",
-        "end": "2013-04-15T15:32:19-04:00"
+        "start": "2019-04-15T15:17:19-04:00",
+        "end": "2019-04-15T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -12139,8 +12139,8 @@
         }
       } ],
       "period": {
-        "start": "2016-05-02T15:17:19-04:00",
-        "end": "2016-05-02T15:32:19-04:00"
+        "start": "2019-05-02T15:17:19-04:00",
+        "end": "2019-05-02T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -12257,8 +12257,8 @@
         }
       } ],
       "period": {
-        "start": "2015-04-27T15:17:19-04:00",
-        "end": "2015-04-27T15:32:19-04:00"
+        "start": "2019-04-27T15:17:19-04:00",
+        "end": "2019-04-27T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -12765,8 +12765,8 @@
         }
       } ],
       "period": {
-        "start": "2018-05-14T15:17:19-04:00",
-        "end": "2018-05-14T15:32:19-04:00"
+        "start": "2019-05-14T15:17:19-04:00",
+        "end": "2019-05-14T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -12917,7 +12917,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 77.78101950964036,
         "unit": "mg/dL",
@@ -12955,7 +12955,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 9.963408128633784,
         "unit": "10*3/uL",
@@ -12993,7 +12993,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 110.93157888298342,
         "unit": "mg/dL",
@@ -13031,7 +13031,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 89.15392652380663,
         "unit": "mg/dL",
@@ -13069,7 +13069,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 3.953323310741711,
         "unit": "10*6/uL",
@@ -13107,7 +13107,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 14.656768990520666,
         "unit": "g/dL",
@@ -13268,7 +13268,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -13331,7 +13331,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 189.12126181004368,
         "unit": "mg/dL",
@@ -13369,7 +13369,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -13407,7 +13407,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -15180,8 +15180,8 @@
         }
       } ],
       "period": {
-        "start": "2012-05-10T01:24:38-04:00",
-        "end": "2012-05-10T01:39:38-04:00"
+        "start": "2019-05-10T01:24:38-04:00",
+        "end": "2019-05-10T01:39:38-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
@@ -15258,8 +15258,8 @@
         }
       } ],
       "period": {
-        "start": "2012-05-06T01:24:38-04:00",
-        "end": "2012-05-06T01:39:38-04:00"
+        "start": "2019-05-06T01:24:38-04:00",
+        "end": "2019-05-06T01:39:38-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -15343,8 +15343,8 @@
         }
       } ],
       "period": {
-        "start": "2013-11-28T00:24:38-05:00",
-        "end": "2013-11-28T00:39:38-05:00"
+        "start": "2019-11-28T00:24:38-05:00",
+        "end": "2019-11-28T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -15446,8 +15446,8 @@
         }
       } ],
       "period": {
-        "start": "2015-11-05T00:24:38-05:00",
-        "end": "2015-11-05T00:39:38-05:00"
+        "start": "2019-11-05T00:24:38-05:00",
+        "end": "2019-11-05T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -15524,8 +15524,8 @@
         }
       } ],
       "period": {
-        "start": "2016-02-12T00:24:38-05:00",
-        "end": "2016-02-12T01:24:38-05:00"
+        "start": "2019-02-12T00:24:38-05:00",
+        "end": "2019-02-12T01:24:38-05:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -15571,8 +15571,8 @@
         }
       } ],
       "period": {
-        "start": "2017-11-16T00:24:38-05:00",
-        "end": "2017-11-16T00:54:38-05:00"
+        "start": "2019-11-16T00:24:38-05:00",
+        "end": "2019-11-16T00:54:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -15611,8 +15611,8 @@
         }
       } ],
       "period": {
-        "start": "2018-11-22T00:24:38-05:00",
-        "end": "2018-11-22T00:39:38-05:00"
+        "start": "2019-11-22T00:24:38-05:00",
+        "end": "2019-11-22T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -15651,8 +15651,8 @@
         }
       } ],
       "period": {
-        "start": "2016-02-14T00:24:38-05:00",
-        "end": "2016-02-14T00:39:38-05:00"
+        "start": "2019-02-14T00:24:38-05:00",
+        "end": "2019-02-14T00:39:38-05:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -15698,8 +15698,8 @@
         }
       } ],
       "period": {
-        "start": "2016-03-29T01:24:38-04:00",
-        "end": "2016-03-29T01:39:38-04:00"
+        "start": "2019-03-29T01:24:38-04:00",
+        "end": "2019-03-29T01:39:38-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -15745,8 +15745,8 @@
         }
       } ],
       "period": {
-        "start": "2016-04-07T01:24:38-04:00",
-        "end": "2016-04-07T01:39:38-04:00"
+        "start": "2019-04-07T01:24:38-04:00",
+        "end": "2019-04-07T01:39:38-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/f1313c7d-3148-335b-adc3-337f15567b82",
@@ -15825,8 +15825,8 @@
         }
       } ],
       "period": {
-        "start": "2016-04-14T01:24:38-04:00",
-        "end": "2016-04-14T01:39:38-04:00"
+        "start": "2019-04-14T01:24:38-04:00",
+        "end": "2019-04-14T01:39:38-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
@@ -15865,8 +15865,8 @@
         }
       } ],
       "period": {
-        "start": "2016-11-10T00:24:38-05:00",
-        "end": "2016-11-10T00:39:38-05:00"
+        "start": "2019-11-10T00:24:38-05:00",
+        "end": "2019-11-10T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -15905,8 +15905,8 @@
         }
       } ],
       "period": {
-        "start": "2018-10-29T15:37:24-04:00",
-        "end": "2018-10-29T15:52:24-04:00"
+        "start": "2019-10-29T15:37:24-04:00",
+        "end": "2019-10-29T15:52:24-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/6b8c49d2-cb48-38da-8a6f-87c29dad8c6c",
@@ -16002,8 +16002,8 @@
         }
       } ],
       "period": {
-        "start": "2015-10-12T15:37:24-04:00",
-        "end": "2015-10-12T15:52:24-04:00"
+        "start": "2019-10-12T15:37:24-04:00",
+        "end": "2019-10-12T15:52:24-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/6b8c49d2-cb48-38da-8a6f-87c29dad8c6c",
@@ -16082,8 +16082,8 @@
         }
       } ],
       "period": {
-        "start": "2017-09-25T15:37:24-04:00",
-        "end": "2017-09-25T17:07:24-04:00"
+        "start": "2019-09-25T15:37:24-04:00",
+        "end": "2019-09-25T17:07:24-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/f4e7709c-02f6-37ca-aeea-8247d74e88e7",
@@ -16122,8 +16122,8 @@
         }
       } ],
       "period": {
-        "start": "2016-10-17T15:37:24-04:00",
-        "end": "2016-10-17T16:07:24-04:00"
+        "start": "2019-10-17T15:37:24-04:00",
+        "end": "2019-10-17T16:07:24-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/6b8c49d2-cb48-38da-8a6f-87c29dad8c6c",
@@ -16162,8 +16162,8 @@
         }
       } ],
       "period": {
-        "start": "2012-09-24T15:37:24-04:00",
-        "end": "2012-09-24T15:52:24-04:00"
+        "start": "2019-09-24T15:37:24-04:00",
+        "end": "2019-09-24T15:52:24-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/6b8c49d2-cb48-38da-8a6f-87c29dad8c6c",
@@ -16202,8 +16202,8 @@
         }
       } ],
       "period": {
-        "start": "2012-05-16T15:37:24-04:00",
-        "end": "2012-05-16T16:52:24-04:00"
+        "start": "2019-05-16T15:37:24-04:00",
+        "end": "2019-05-16T16:52:24-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/f4e7709c-02f6-37ca-aeea-8247d74e88e7",
@@ -16383,7 +16383,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-16"
       },
-      "effectiveDateTime": "2016-10-17T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-17T15:37:24-04:00",
       "valueQuantity": {
         "value": 68.11460775361591,
         "unit": "mg/dL",
@@ -16459,7 +16459,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-16"
       },
-      "effectiveDateTime": "2016-10-17T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-17T15:37:24-04:00",
       "valueQuantity": {
         "value": 27.618658251605723,
         "unit": "kg/m2",
@@ -16611,7 +16611,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-16"
       },
-      "effectiveDateTime": "2016-10-17T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-17T15:37:24-04:00",
       "valueQuantity": {
         "value": 1.8333575244106455,
         "unit": "{score}",
@@ -17183,7 +17183,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-16"
       },
-      "effectiveDateTime": "2016-10-17T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-17T15:37:24-04:00",
       "valueQuantity": {
         "value": 0.6888342246308956,
         "unit": "mg/dL",
@@ -17335,7 +17335,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-16"
       },
-      "effectiveDateTime": "2016-10-17T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-17T15:37:24-04:00",
       "valueQuantity": {
         "value": 188.7317280389403,
         "unit": "mg/dL",
@@ -17411,7 +17411,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-16"
       },
-      "effectiveDateTime": "2016-10-17T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-17T15:37:24-04:00",
       "valueQuantity": {
         "value": 107.90517124673254,
         "unit": "mmol/L",
@@ -17487,7 +17487,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-16"
       },
-      "effectiveDateTime": "2016-10-17T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-17T15:37:24-04:00",
       "valueQuantity": {
         "value": 142.7452370792794,
         "unit": "mmol/L",
@@ -17563,7 +17563,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-16"
       },
-      "effectiveDateTime": "2016-10-17T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-17T15:37:24-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -17657,7 +17657,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 80,
+          "value": 77,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -18691,7 +18691,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-15"
       },
-      "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-12T15:37:24-04:00",
       "valueQuantity": {
         "value": 9.065598093801379,
         "unit": "mg/dL",
@@ -18767,7 +18767,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-15"
       },
-      "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-12T15:37:24-04:00",
       "valueQuantity": {
         "value": 13.551555160667764,
         "unit": "mg/dL",
@@ -18805,7 +18805,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-15"
       },
-      "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-12T15:37:24-04:00",
       "valueQuantity": {
         "value": 0.7003147950414105,
         "unit": "mg/dL",
@@ -18843,7 +18843,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-15"
       },
-      "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-12T15:37:24-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -18981,7 +18981,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-15"
       },
-      "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-12T15:37:24-04:00",
       "valueQuantity": {
         "value": 28.35314338499291,
         "unit": "mmol/L",
@@ -19057,7 +19057,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-15"
       },
-      "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-12T15:37:24-04:00",
       "valueQuantity": {
         "value": 103.92911303970095,
         "unit": "mmol/L",
@@ -19151,7 +19151,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 101.44751339259625,
         "unit": "mmol/L",
@@ -19227,7 +19227,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 139.7558330274371,
         "unit": "mmol/L",
@@ -19303,7 +19303,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 0.6658730838098658,
         "unit": "mg/dL",
@@ -19477,7 +19477,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 83.23811352721317,
         "unit": "fL",
@@ -19553,7 +19553,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 17.396812615859744,
         "unit": "g/dL",
@@ -19591,7 +19591,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 9.514906604812268,
         "unit": "10*3/uL",
@@ -19629,7 +19629,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 351.39968997094684,
         "unit": "fL",
@@ -19773,7 +19773,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 206.49926761296092,
         "unit": "10*3/uL",
@@ -19811,7 +19811,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 30.776941115922327,
         "unit": "pg",
@@ -19917,7 +19917,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 35.52052087794425,
         "unit": "g/dL",
@@ -20063,7 +20063,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
       "valueQuantity": {
         "value": 3.3512054198931174,
         "unit": "{score}",
@@ -20141,7 +20141,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -20219,7 +20219,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -20297,7 +20297,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -20471,7 +20471,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 5.955232360499023,
         "unit": "%",
@@ -20662,7 +20662,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-18"
       },
-      "effectiveDateTime": "2017-10-23T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-23T15:37:24-04:00",
       "valueQuantity": {
         "value": 10.071671489899543,
         "unit": "mg/dL",
@@ -20926,7 +20926,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-18"
       },
-      "effectiveDateTime": "2017-10-23T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-23T15:37:24-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -21026,7 +21026,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-18"
       },
-      "effectiveDateTime": "2017-10-23T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-23T15:37:24-04:00",
       "valueQuantity": {
         "value": 3.6334490506606825,
         "unit": "{score}",
@@ -21101,7 +21101,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-18"
       },
-      "effectiveDateTime": "2017-10-23T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-23T15:37:24-04:00",
       "valueQuantity": {
         "value": 82.66010695570748,
         "unit": "kg",
@@ -21331,7 +21331,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -21371,7 +21371,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -21510,7 +21510,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 2.5789023713849293,
         "unit": "{score}",
@@ -21586,7 +21586,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-18"
       },
-      "effectiveDateTime": "2017-10-23T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-23T15:37:24-04:00",
       "valueQuantity": {
         "value": 105.97653350425072,
         "unit": "mmol/L",
@@ -21624,7 +21624,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-18"
       },
-      "effectiveDateTime": "2017-10-23T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-23T15:37:24-04:00",
       "valueQuantity": {
         "value": 140.48350400314425,
         "unit": "mmol/L",
@@ -21709,7 +21709,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 82.66010695570748,
         "unit": "kg",
@@ -21905,7 +21905,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 2.5241057035882792,
         "unit": "{score}",
@@ -21983,7 +21983,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-18"
       },
-      "effectiveDateTime": "2017-10-23T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-23T15:37:24-04:00",
       "valueQuantity": {
         "value": 5.9045796395041314,
         "unit": "%",
@@ -22217,7 +22217,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-18"
       },
-      "effectiveDateTime": "2017-10-23T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-23T15:37:24-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -22257,7 +22257,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 97.70533580523391,
         "unit": "mg/dL",
@@ -22295,7 +22295,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 16.617287343619378,
         "unit": "mg/dL",
@@ -22333,7 +22333,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-19"
       },
-      "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-29T15:37:24-04:00",
       "valueQuantity": {
         "value": 27.618658251605723,
         "unit": "kg/m2",
@@ -22436,8 +22436,8 @@
         }
       } ],
       "period": {
-        "start": "2011-09-19T15:37:24-04:00",
-        "end": "2011-09-19T16:07:24-04:00"
+        "start": "2019-09-19T15:37:24-04:00",
+        "end": "2019-09-19T16:07:24-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/6b8c49d2-cb48-38da-8a6f-87c29dad8c6c",
@@ -22550,7 +22550,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2009-12-06T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -22651,7 +22651,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2009-12-06T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
       "valueQuantity": {
         "value": 0.39161892101295726,
         "unit": "{score}",
@@ -22957,7 +22957,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2009-12-06T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -23195,7 +23195,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2009-12-06T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -26694,7 +26694,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 133,
+          "value": 111,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -26709,7 +26709,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 83,
+          "value": 75,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -27764,9 +27764,9 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "onsetDateTime": "2012-05-06T01:24:38-04:00",
-      "abatementDateTime": "2012-05-20T01:24:38-04:00",
-      "recordedDate": "2012-05-06T01:24:38-04:00"
+      "onsetDateTime": "2019-05-06T01:24:38-04:00",
+      "abatementDateTime": "2019-05-20T01:24:38-04:00",
+      "recordedDate": "2019-05-06T01:24:38-04:00"
     },
     "request": {
       "method": "PUT",
@@ -27840,9 +27840,9 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-16"
       },
-      "onsetDateTime": "2016-03-29T01:24:38-04:00",
-      "abatementDateTime": "2016-04-10T01:24:38-04:00",
-      "recordedDate": "2016-03-29T01:24:38-04:00"
+      "onsetDateTime": "2019-03-29T01:24:38-04:00",
+      "abatementDateTime": "2019-04-10T01:24:38-04:00",
+      "recordedDate": "2019-03-29T01:24:38-04:00"
     },
     "request": {
       "method": "PUT",
@@ -27952,7 +27952,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
       },
-      "effectiveDateTime": "2015-01-04T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -28055,7 +28055,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
       },
-      "effectiveDateTime": "2015-01-04T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -28158,7 +28158,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -28348,7 +28348,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -28424,7 +28424,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
       "valueQuantity": {
         "value": 27.71956696603433,
         "unit": "kg/m2",
@@ -28500,7 +28500,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -28563,7 +28563,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-18"
       },
-      "effectiveDateTime": "2018-05-14T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-14T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -28603,7 +28603,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -28643,7 +28643,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-18"
       },
-      "effectiveDateTime": "2018-05-14T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-14T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -28706,7 +28706,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -28744,7 +28744,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-18"
       },
-      "effectiveDateTime": "2018-05-14T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-14T15:17:19-04:00",
       "valueQuantity": {
         "value": 68.31782650299931,
         "unit": "%",
@@ -28782,7 +28782,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
       "valueQuantity": {
         "value": 1.4629857701159645,
         "unit": "{score}",
@@ -28820,7 +28820,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-18"
       },
-      "effectiveDateTime": "2018-05-14T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-14T15:17:19-04:00",
       "valueQuantity": {
         "value": 24.115813999104894,
         "unit": "kg/m2",
@@ -29412,7 +29412,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 35.48102584032309,
         "unit": "g/dL",
@@ -29450,7 +29450,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 45.28388646766939,
         "unit": "fL",
@@ -29511,7 +29511,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 370.7772057131567,
         "unit": "10*3/uL",
@@ -29549,7 +29549,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 286.5772347658142,
         "unit": "fL",
@@ -29711,7 +29711,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
       },
-      "effectiveDateTime": "2015-01-04T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -29749,7 +29749,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
       },
-      "effectiveDateTime": "2015-01-04T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
       "valueQuantity": {
         "value": 1.5190164493474319,
         "unit": "{score}",
@@ -29863,7 +29863,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 29.903162272441136,
         "unit": "pg",
@@ -30973,7 +30973,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 188.36655011004962,
         "unit": "mg/dL",
@@ -31051,7 +31051,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 128.90137295493838,
         "unit": "mg/dL",
@@ -31228,7 +31228,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 71.69801349176244,
         "unit": "mg/dL",
@@ -31304,7 +31304,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 7.519782285681545,
         "unit": "10*3/uL",
@@ -31380,7 +31380,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 4.622916783534036,
         "unit": "10*6/uL",
@@ -31456,7 +31456,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 15.03209208167514,
         "unit": "g/dL",
@@ -31532,9 +31532,9 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
-        "value": 41.57412007744287,
+        "value": 41.57412019744287,
         "unit": "%",
         "system": "http://unitsofmeasure.org",
         "code": "%"
@@ -31610,7 +31610,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 91.09092284075504,
         "unit": "fL",
@@ -31794,7 +31794,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -32248,7 +32248,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 2.3807777709778186,
         "unit": "{score}",
@@ -32354,7 +32354,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -32654,7 +32654,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 82,
+          "value": 70,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -32691,7 +32691,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 34.0104756355608,
         "unit": "g/dL",
@@ -32729,7 +32729,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 30.005147432233382,
         "unit": "pg",
@@ -32767,7 +32767,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 90.88166295792695,
         "unit": "fL",
@@ -32805,7 +32805,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 43.867796121299406,
         "unit": "%",
@@ -32843,7 +32843,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 12.680407599112616,
         "unit": "g/dL",
@@ -32881,7 +32881,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 4.468579180879722,
         "unit": "10*6/uL",
@@ -32919,7 +32919,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 9.407737941206694,
         "unit": "10*3/uL",
@@ -32957,7 +32957,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -33020,7 +33020,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 70.01555157305948,
         "unit": "%",
@@ -33058,7 +33058,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 22.242328658224185,
         "unit": "kg/m2",
@@ -42319,7 +42319,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-13"
       },
-      "effectiveDateTime": "2016-05-02T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-02T15:17:19-04:00",
       "valueQuantity": {
         "value": 70.74405605248242,
         "unit": "%",
@@ -42395,7 +42395,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-13"
       },
-      "effectiveDateTime": "2016-05-02T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-02T15:17:19-04:00",
       "valueQuantity": {
         "value": 23.031815995661116,
         "unit": "kg/m2",
@@ -42471,7 +42471,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-13"
       },
-      "effectiveDateTime": "2016-05-02T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-02T15:17:19-04:00",
       "valueQuantity": {
         "value": 80.0067717912292,
         "unit": "kg",
@@ -42547,7 +42547,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-13"
       },
-      "effectiveDateTime": "2016-05-02T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-02T15:17:19-04:00",
       "valueQuantity": {
         "value": 1.6200813739604447,
         "unit": "{score}",
@@ -42648,7 +42648,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-13"
       },
-      "effectiveDateTime": "2016-05-02T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-02T15:17:19-04:00",
       "valueQuantity": {
         "value": 186.37998933333077,
         "unit": "cm",
@@ -42724,7 +42724,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -42840,7 +42840,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 9.580053848816698,
         "unit": "fL",
@@ -42916,7 +42916,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 153.9376709565884,
         "unit": "fL",
@@ -42992,7 +42992,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 423.1855673350487,
         "unit": "10*3/uL",
@@ -43068,7 +43068,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 41.561628039774206,
         "unit": "fL",
@@ -43106,7 +43106,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 5.085487190732357,
         "unit": "10*6/uL",
@@ -43144,7 +43144,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 14.921406086752352,
         "unit": "g/dL",
@@ -43182,7 +43182,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -43245,7 +43245,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 111.12997085658576,
         "unit": "mg/dL",
@@ -43283,7 +43283,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 4.098732028564636,
         "unit": "10*3/uL",
@@ -43321,7 +43321,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
       },
-      "effectiveDateTime": "2017-05-08T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-08T15:17:19-04:00",
       "valueQuantity": {
         "value": 187.14286154934032,
         "unit": "cm",
@@ -43374,46 +43374,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Al123-Rosenbaum794-78",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Al123-Rosenbaum794"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
-      },
-      "effectiveDateTime": "2016-06-06T15:17:19-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "449868002",
-          "display": "Current every day smoker"
-        } ],
-        "text": "Current every day smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Al123-Rosenbaum794-78"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Al123-Rosenbaum794-4",
       "status": "final",
       "category": [ {
@@ -43437,7 +43397,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 19.234219238418373,
         "unit": "kg/m2",
@@ -43448,6 +43408,46 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-Al123-Rosenbaum794-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Al123-Rosenbaum794-78",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Al123-Rosenbaum794"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
+      },
+      "effectiveDateTime": "2019-06-06T15:17:19-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "449868002",
+          "display": "Current every day smoker"
+        } ],
+        "text": "Current every day smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Al123-Rosenbaum794-78"
     }
   }, {
     "resource": {
@@ -43475,7 +43475,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 66.0396554988831,
         "unit": "mg/dL",
@@ -43513,7 +43513,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
       },
-      "effectiveDateTime": "2016-06-06T15:17:19-04:00",
+      "effectiveDateTime": "2019-06-06T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -43576,7 +43576,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 77.80090841431493,
         "unit": "%",
@@ -43773,7 +43773,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -43843,44 +43843,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Al123-Rosenbaum794-76",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "59576-9",
-          "display": "Body mass index (BMI) [Percentile] Per age and gender"
-        } ],
-        "text": "Body mass index (BMI) [Percentile] Per age and gender"
-      },
-      "subject": {
-        "reference": "Patient/Al123-Rosenbaum794"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
-      },
-      "effectiveDateTime": "2016-06-06T15:17:19-04:00",
-      "valueQuantity": {
-        "value": 70.7538995023071,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Al123-Rosenbaum794-76"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Al123-Rosenbaum794-2",
       "status": "final",
       "category": [ {
@@ -43904,7 +43866,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 0.7873454006470166,
         "unit": "{score}",
@@ -43915,6 +43877,44 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-Al123-Rosenbaum794-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Al123-Rosenbaum794-76",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "59576-9",
+          "display": "Body mass index (BMI) [Percentile] Per age and gender"
+        } ],
+        "text": "Body mass index (BMI) [Percentile] Per age and gender"
+      },
+      "subject": {
+        "reference": "Patient/Al123-Rosenbaum794"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
+      },
+      "effectiveDateTime": "2019-06-06T15:17:19-04:00",
+      "valueQuantity": {
+        "value": 70.7538995023071,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Al123-Rosenbaum794-76"
     }
   }, {
     "resource": {
@@ -43942,7 +43942,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -43980,7 +43980,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
       },
-      "effectiveDateTime": "2016-06-06T15:17:19-04:00",
+      "effectiveDateTime": "2019-06-06T15:17:19-04:00",
       "valueQuantity": {
         "value": 23.091273959669266,
         "unit": "kg/m2",
@@ -44018,7 +44018,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 46.08394960055231,
         "unit": "kg",
@@ -44056,7 +44056,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
       "valueQuantity": {
         "value": 2.8158883112598976,
         "unit": "{score}",
@@ -44094,7 +44094,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
       },
-      "effectiveDateTime": "2016-06-06T15:17:19-04:00",
+      "effectiveDateTime": "2019-06-06T15:17:19-04:00",
       "valueQuantity": {
         "value": 80.28498450392476,
         "unit": "kg",
@@ -44132,7 +44132,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -44170,7 +44170,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
       },
-      "effectiveDateTime": "2016-06-06T15:17:19-04:00",
+      "effectiveDateTime": "2019-06-06T15:17:19-04:00",
       "valueQuantity": {
         "value": 3.6206179792985824,
         "unit": "{score}",
@@ -44208,7 +44208,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 154.78809861996862,
         "unit": "cm",
@@ -44284,7 +44284,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
       },
-      "effectiveDateTime": "2016-06-06T15:17:19-04:00",
+      "effectiveDateTime": "2019-06-06T15:17:19-04:00",
       "valueQuantity": {
         "value": 186.46323601612065,
         "unit": "cm",
@@ -44322,7 +44322,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -44385,7 +44385,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-13"
       },
-      "effectiveDateTime": "2016-05-02T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-02T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -44425,7 +44425,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -44465,7 +44465,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-13"
       },
-      "effectiveDateTime": "2016-05-02T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-02T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -44530,8 +44530,8 @@
         }
       } ],
       "period": {
-        "start": "2012-07-30T15:17:19-04:00",
-        "end": "2012-07-30T15:32:19-04:00"
+        "start": "2019-07-30T15:17:19-04:00",
+        "end": "2019-07-30T15:32:19-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -44577,8 +44577,8 @@
         }
       } ],
       "period": {
-        "start": "2012-03-19T15:17:19-04:00",
-        "end": "2012-03-19T15:32:19-04:00"
+        "start": "2019-03-19T15:17:19-04:00",
+        "end": "2019-03-19T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
@@ -44617,8 +44617,8 @@
         }
       } ],
       "period": {
-        "start": "2012-04-09T15:17:19-04:00",
-        "end": "2012-04-09T15:47:19-04:00"
+        "start": "2019-04-09T15:17:19-04:00",
+        "end": "2019-04-09T15:47:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -44657,8 +44657,8 @@
         }
       } ],
       "period": {
-        "start": "2010-08-27T15:17:19-04:00",
-        "end": "2010-08-27T15:32:19-04:00"
+        "start": "2019-08-27T15:17:19-04:00",
+        "end": "2019-08-27T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
@@ -44697,8 +44697,8 @@
         }
       } ],
       "period": {
-        "start": "2011-04-04T15:17:19-04:00",
-        "end": "2011-04-04T15:47:19-04:00"
+        "start": "2019-04-04T15:17:19-04:00",
+        "end": "2019-04-04T15:47:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -44737,8 +44737,8 @@
         }
       } ],
       "period": {
-        "start": "2001-03-21T14:17:19-05:00",
-        "end": "2001-04-04T15:17:19-04:00"
+        "start": "2019-03-21T14:17:19-05:00",
+        "end": "2019-04-04T15:17:19-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -44784,8 +44784,8 @@
         }
       } ],
       "period": {
-        "start": "2010-03-29T15:17:19-04:00",
-        "end": "2010-03-29T15:32:19-04:00"
+        "start": "2019-03-29T15:17:19-04:00",
+        "end": "2019-03-29T15:32:19-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/10968ba2-75e7-351a-a73a-c37a2a8dfcfc",
@@ -44902,7 +44902,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -44940,7 +44940,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-18"
       },
-      "effectiveDateTime": "2018-05-14T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-14T15:17:19-04:00",
       "valueQuantity": {
         "value": 84.84683846534054,
         "unit": "kg",
@@ -44978,7 +44978,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
       "valueQuantity": {
         "value": 27.71956696603433,
         "unit": "kg/m2",
@@ -45016,7 +45016,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-18"
       },
-      "effectiveDateTime": "2018-05-14T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-14T15:17:19-04:00",
       "valueQuantity": {
         "value": 3.9702413980727145,
         "unit": "{score}",
@@ -45054,7 +45054,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -45117,7 +45117,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-18"
       },
-      "effectiveDateTime": "2018-05-14T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-14T15:17:19-04:00",
       "valueQuantity": {
         "value": 187.57150775941105,
         "unit": "cm",
@@ -45155,7 +45155,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -45195,7 +45195,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-17"
       },
-      "effectiveDateTime": "2017-06-07T15:17:19-04:00",
+      "effectiveDateTime": "2019-06-07T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -45258,7 +45258,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -45296,7 +45296,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
       },
-      "effectiveDateTime": "2017-05-08T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-08T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -45374,7 +45374,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
       },
-      "effectiveDateTime": "2017-05-08T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-08T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -45437,7 +45437,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -45475,7 +45475,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
       },
-      "effectiveDateTime": "2017-05-08T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-08T15:17:19-04:00",
       "valueQuantity": {
         "value": 70.16338140751034,
         "unit": "%",
@@ -45513,7 +45513,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 27.71956696603433,
         "unit": "kg/m2",
@@ -45551,7 +45551,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
       },
-      "effectiveDateTime": "2017-05-08T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-08T15:17:19-04:00",
       "valueQuantity": {
         "value": 23.65780565430856,
         "unit": "kg/m2",
@@ -45721,7 +45721,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
       },
-      "effectiveDateTime": "2017-05-08T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-08T15:17:19-04:00",
       "valueQuantity": {
         "value": 82.85543305155547,
         "unit": "kg",
@@ -45759,7 +45759,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 161.7879189642797,
         "unit": "mg/dL",
@@ -45797,7 +45797,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
       },
-      "effectiveDateTime": "2017-05-08T15:17:19-04:00",
+      "effectiveDateTime": "2019-05-08T15:17:19-04:00",
       "valueQuantity": {
         "value": 3.9674260381981665,
         "unit": "{score}",
@@ -45835,7 +45835,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 333.9914549135925,
         "unit": "fL",
@@ -45873,7 +45873,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 275.67061083463466,
         "unit": "10*3/uL",
@@ -45911,7 +45911,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 44.94623717381219,
         "unit": "fL",
@@ -45949,7 +45949,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 33.69292129956469,
         "unit": "g/dL",
@@ -46025,7 +46025,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 28.301446090381,
         "unit": "pg",
@@ -46101,7 +46101,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 86.21116241830106,
         "unit": "fL",
@@ -46139,7 +46139,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-9"
       },
-      "effectiveDateTime": "2011-09-19T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-19T15:37:24-04:00",
       "valueQuantity": {
         "value": 5.129056119867835,
         "unit": "mmol/L",
@@ -46177,7 +46177,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 41.1099945674022,
         "unit": "%",
@@ -46632,7 +46632,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-10"
       },
-      "effectiveDateTime": "2012-05-16T15:37:24-04:00",
+      "effectiveDateTime": "2019-05-16T15:37:24-04:00",
       "valueQuantity": {
         "value": 3.3635891989244824,
         "unit": "ng/mL",
@@ -46878,7 +46878,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-6"
       },
-      "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-04T15:17:19-04:00",
       "valueQuantity": {
         "value": 161.06800486929708,
         "unit": "cm",
@@ -46954,7 +46954,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -46994,7 +46994,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-11"
       },
-      "effectiveDateTime": "2012-09-24T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-24T15:37:24-04:00",
       "valueQuantity": {
         "value": 173.00023511198532,
         "unit": "cm",
@@ -47032,7 +47032,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-4"
       },
-      "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+      "effectiveDateTime": "2019-03-29T15:17:19-04:00",
       "valueQuantity": {
         "value": 10.245728689271647,
         "unit": "fL",
@@ -47070,7 +47070,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-8"
       },
-      "effectiveDateTime": "2012-04-09T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-09T15:17:19-04:00",
       "valueQuantity": {
         "value": 3.972290988441234,
         "unit": "{score}",
@@ -47108,7 +47108,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-8"
       },
-      "effectiveDateTime": "2012-04-09T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-09T15:17:19-04:00",
       "valueQuantity": {
         "value": 168.63675802087837,
         "unit": "cm",
@@ -47146,7 +47146,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-6"
       },
-      "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-04T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -47186,7 +47186,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-6"
       },
-      "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-04T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -47287,7 +47287,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-6"
       },
-      "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-04T15:17:19-04:00",
       "valueQuantity": {
         "value": 78.66618013808882,
         "unit": "%",
@@ -47325,7 +47325,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-9"
       },
-      "effectiveDateTime": "2011-09-19T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-19T15:37:24-04:00",
       "valueQuantity": {
         "value": 173.00023511198532,
         "unit": "cm",
@@ -47363,7 +47363,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-6"
       },
-      "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-04T15:17:19-04:00",
       "valueQuantity": {
         "value": 20.098242966745683,
         "unit": "kg/m2",
@@ -47401,7 +47401,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-6"
       },
-      "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-04T15:17:19-04:00",
       "valueQuantity": {
         "value": 52.140675152891,
         "unit": "kg",
@@ -47439,7 +47439,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-6"
       },
-      "effectiveDateTime": "2011-04-04T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-04T15:17:19-04:00",
       "valueQuantity": {
         "value": 1.3636476585349286,
         "unit": "{score}",
@@ -47532,7 +47532,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-9"
       },
-      "effectiveDateTime": "2011-09-19T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-19T15:37:24-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -47709,7 +47709,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-9"
       },
-      "effectiveDateTime": "2011-09-19T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-19T15:37:24-04:00",
       "valueQuantity": {
         "value": 9.851113748115882,
         "unit": "mg/dL",
@@ -47747,7 +47747,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-9"
       },
-      "effectiveDateTime": "2011-09-19T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-19T15:37:24-04:00",
       "valueQuantity": {
         "value": 0.7462370766834703,
         "unit": "mg/dL",
@@ -47785,7 +47785,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-8"
       },
-      "effectiveDateTime": "2012-04-09T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-09T15:17:19-04:00",
       "valueQuantity": {
         "value": 20.56071727453256,
         "unit": "kg/m2",
@@ -47823,7 +47823,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-9"
       },
-      "effectiveDateTime": "2011-09-19T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-19T15:37:24-04:00",
       "valueQuantity": {
         "value": 12.558532738549967,
         "unit": "mg/dL",
@@ -47861,7 +47861,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-8"
       },
-      "effectiveDateTime": "2012-04-09T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-09T15:17:19-04:00",
       "valueQuantity": {
         "value": 58.471300067170795,
         "unit": "kg",
@@ -47956,7 +47956,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-10"
       },
-      "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-15T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -48036,7 +48036,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-10"
       },
-      "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-15T15:17:19-04:00",
       "valueQuantity": {
         "value": 71.23212623571119,
         "unit": "%",
@@ -48074,7 +48074,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-10"
       },
-      "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-15T15:17:19-04:00",
       "valueQuantity": {
         "value": 20.87795857205709,
         "unit": "kg/m2",
@@ -48112,7 +48112,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-10"
       },
-      "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-15T15:17:19-04:00",
       "valueQuantity": {
         "value": 65.25549672447701,
         "unit": "kg",
@@ -48188,7 +48188,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-10"
       },
-      "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-15T15:17:19-04:00",
       "valueQuantity": {
         "value": 3.512260046105266,
         "unit": "{score}",
@@ -48226,7 +48226,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 2.606444141257841,
         "unit": "{score}",
@@ -48264,7 +48264,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-10"
       },
-      "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-15T15:17:19-04:00",
       "valueQuantity": {
         "value": 176.79278374718047,
         "unit": "cm",
@@ -48340,7 +48340,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-8"
       },
-      "effectiveDateTime": "2012-04-09T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-09T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -48380,7 +48380,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-11"
       },
-      "effectiveDateTime": "2012-09-24T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-24T15:37:24-04:00",
       "valueQuantity": {
         "value": 5.964389453278754,
         "unit": "%",
@@ -48418,7 +48418,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-8"
       },
-      "effectiveDateTime": "2012-04-09T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-09T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -48481,7 +48481,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-8"
       },
-      "effectiveDateTime": "2012-04-09T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-09T15:17:19-04:00",
       "valueQuantity": {
         "value": 76.01614856154622,
         "unit": "%",
@@ -48557,7 +48557,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 84.31466413278508,
         "unit": "mg/dL",
@@ -48595,7 +48595,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -48696,7 +48696,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 0.7232759358624404,
         "unit": "mg/dL",
@@ -48734,7 +48734,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-10"
       },
-      "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-15T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -48774,7 +48774,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 76.05885213362689,
         "unit": "kg",
@@ -48812,7 +48812,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 0.859084365494394,
         "unit": "{score}",
@@ -48850,7 +48850,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
       },
-      "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-27T15:17:19-04:00",
       "valueQuantity": {
         "value": 184.92037120650252,
         "unit": "cm",
@@ -48888,7 +48888,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-11"
       },
-      "effectiveDateTime": "2014-04-21T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-21T15:17:19-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -48966,7 +48966,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-11"
       },
-      "effectiveDateTime": "2014-04-21T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-21T15:17:19-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -49067,7 +49067,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-11"
       },
-      "effectiveDateTime": "2014-04-21T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-21T15:17:19-04:00",
       "valueQuantity": {
         "value": 69.36016165002762,
         "unit": "%",
@@ -49105,7 +49105,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-11"
       },
-      "effectiveDateTime": "2012-09-24T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-24T15:37:24-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -49168,7 +49168,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-11"
       },
-      "effectiveDateTime": "2014-04-21T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-21T15:17:19-04:00",
       "valueQuantity": {
         "value": 21.442732987146076,
         "unit": "kg/m2",
@@ -49206,7 +49206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-11"
       },
-      "effectiveDateTime": "2012-09-24T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-24T15:37:24-04:00",
       "valueQuantity": {
         "value": 27.618658251605723,
         "unit": "kg/m2",
@@ -49244,7 +49244,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-11"
       },
-      "effectiveDateTime": "2014-04-21T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-21T15:17:19-04:00",
       "valueQuantity": {
         "value": 71.05856759618207,
         "unit": "kg",
@@ -49282,7 +49282,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-11"
       },
-      "effectiveDateTime": "2014-04-21T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-21T15:17:19-04:00",
       "valueQuantity": {
         "value": 1.4322496159434905,
         "unit": "{score}",
@@ -49320,7 +49320,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-11"
       },
-      "effectiveDateTime": "2014-04-21T15:17:19-04:00",
+      "effectiveDateTime": "2019-04-21T15:17:19-04:00",
       "valueQuantity": {
         "value": 182.0405569438394,
         "unit": "cm",
@@ -49358,7 +49358,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-11"
       },
-      "effectiveDateTime": "2012-09-24T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-24T15:37:24-04:00",
       "valueQuantity": {
         "value": 4.857482672225536,
         "unit": "mmol/L",
@@ -49396,7 +49396,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-11"
       },
-      "effectiveDateTime": "2012-09-24T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-24T15:37:24-04:00",
       "valueQuantity": {
         "value": 137.9670722471082,
         "unit": "mmol/L",
@@ -49434,7 +49434,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-11"
       },
-      "effectiveDateTime": "2012-09-24T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-24T15:37:24-04:00",
       "valueQuantity": {
         "value": 8.742405814141355,
         "unit": "mg/dL",
@@ -49510,7 +49510,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-11"
       },
-      "effectiveDateTime": "2012-09-24T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-24T15:37:24-04:00",
       "valueQuantity": {
         "value": 23.816206145226875,
         "unit": "mmol/L",
@@ -49624,7 +49624,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 12.349537866345086,
         "unit": "g/dL",
@@ -49662,7 +49662,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 4.248737718691373,
         "unit": "10*6/uL",
@@ -49700,7 +49700,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 45.42172955334077,
         "unit": "fL",
@@ -49814,7 +49814,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 83.68801982061365,
         "unit": "fL",
@@ -50297,7 +50297,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 233.65141925480054,
         "unit": "10*3/uL",
@@ -50373,7 +50373,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 143.75052657238817,
         "unit": "mmol/L",
@@ -50411,7 +50411,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 9.929144125715652,
         "unit": "mg/dL",
@@ -50525,7 +50525,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 110.78425331952533,
         "unit": "mmol/L",
@@ -50983,7 +50983,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-13"
       },
-      "effectiveDateTime": "2013-09-30T15:37:24-04:00",
+      "effectiveDateTime": "2019-09-30T15:37:24-04:00",
       "valueQuantity": {
         "value": 109.77087522602875,
         "unit": "mg/dL",
@@ -51135,7 +51135,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-14"
       },
-      "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-06T15:37:24-04:00",
       "valueQuantity": {
         "value": 28.745949891534003,
         "unit": "mmol/L",
@@ -51211,7 +51211,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-14"
       },
-      "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-06T15:37:24-04:00",
       "valueQuantity": {
         "value": 4.094668156546499,
         "unit": "mmol/L",
@@ -51287,7 +51287,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-15"
       },
-      "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-12T15:37:24-04:00",
       "valueQuantity": {
         "value": 0.66722338595254,
         "unit": "{score}",
@@ -51401,7 +51401,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-14"
       },
-      "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-06T15:37:24-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -51441,7 +51441,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-14"
       },
-      "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-06T15:37:24-04:00",
       "valueQuantity": {
         "value": 9.383959726216997,
         "unit": "mg/dL",
@@ -51914,7 +51914,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-15"
       },
-      "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-12T15:37:24-04:00",
       "valueQuantity": {
         "value": 82.66010695570748,
         "unit": "kg",
@@ -51990,7 +51990,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-14"
       },
-      "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-06T15:37:24-04:00",
       "valueQuantity": {
         "value": 3.113682972825439,
         "unit": "{score}",
@@ -52028,7 +52028,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-14"
       },
-      "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-06T15:37:24-04:00",
       "valueQuantity": {
         "value": 173.00023511198532,
         "unit": "cm",
@@ -52283,7 +52283,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-14"
       },
-      "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-06T15:37:24-04:00",
       "valueQuantity": {
         "value": 82.66010695570748,
         "unit": "kg",
@@ -52741,7 +52741,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alton320-Monahan736-14"
       },
-      "effectiveDateTime": "2014-10-06T15:37:24-04:00",
+      "effectiveDateTime": "2019-10-06T15:37:24-04:00",
       "valueQuantity": {
         "value": 8.75780342647856,
         "unit": "mg/dL",
@@ -54095,8 +54095,8 @@
         }
       } ],
       "period": {
-        "start": "2009-11-19T00:24:38-05:00",
-        "end": "2009-11-19T00:39:38-05:00"
+        "start": "2019-11-19T00:24:38-05:00",
+        "end": "2019-11-19T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -54421,8 +54421,8 @@
         }
       } ],
       "period": {
-        "start": "2011-11-24T00:24:38-05:00",
-        "end": "2011-11-24T00:39:38-05:00"
+        "start": "2019-11-24T00:24:38-05:00",
+        "end": "2019-11-24T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -56179,8 +56179,8 @@
         }
       } ],
       "period": {
-        "start": "2009-12-06T21:19:43-05:00",
-        "end": "2009-12-06T21:34:43-05:00"
+        "start": "2019-12-06T21:19:43-05:00",
+        "end": "2019-12-06T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -56713,9 +56713,9 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
       },
-      "onsetDateTime": "2016-05-31T15:17:19-04:00",
-      "abatementDateTime": "2016-06-14T15:17:19-04:00",
-      "recordedDate": "2016-05-31T15:17:19-04:00"
+      "onsetDateTime": "2019-05-31T15:17:19-04:00",
+      "abatementDateTime": "2019-06-14T15:17:19-04:00",
+      "recordedDate": "2019-05-31T15:17:19-04:00"
     },
     "request": {
       "method": "PUT",
@@ -56751,8 +56751,8 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
       },
-      "onsetDateTime": "2017-05-08T15:17:19-04:00",
-      "recordedDate": "2017-05-08T15:17:19-04:00"
+      "onsetDateTime": "2019-05-08T15:17:19-04:00",
+      "recordedDate": "2019-05-08T15:17:19-04:00"
     },
     "request": {
       "method": "PUT",
@@ -56788,8 +56788,8 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-3"
       },
-      "onsetDateTime": "2001-03-21T14:17:19-05:00",
-      "recordedDate": "2001-03-21T14:17:19-05:00"
+      "onsetDateTime": "2019-03-21T14:17:19-05:00",
+      "recordedDate": "2019-03-21T14:17:19-05:00"
     },
     "request": {
       "method": "PUT",
@@ -56825,9 +56825,9 @@
       "encounter": {
         "reference": "Encounter/encounter-Al123-Rosenbaum794-9"
       },
-      "onsetDateTime": "2012-07-30T15:17:19-04:00",
-      "abatementDateTime": "2013-04-15T15:17:19-04:00",
-      "recordedDate": "2012-07-30T15:17:19-04:00"
+      "onsetDateTime": "2019-07-30T15:17:19-04:00",
+      "abatementDateTime": "2019-04-15T15:17:19-04:00",
+      "recordedDate": "2019-07-30T15:17:19-04:00"
     },
     "request": {
       "method": "PUT",

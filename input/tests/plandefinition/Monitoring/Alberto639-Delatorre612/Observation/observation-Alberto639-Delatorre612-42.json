@@ -29,9 +29,9 @@
         "encounter": {
           "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
         },
-        "effectiveDateTime": "2013-12-29T21:19:43-05:00",
+        "effectiveDateTime": "2019-12-29T21:19:43-05:00",
         "valueQuantity": {
-          "value": 90.8882620272995,
+          "value": 90.8882620192995,
           "unit": "mg/dL",
           "system": "http://unitsofmeasure.org",
           "code": "mg/dL"

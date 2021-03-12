@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Al123-Rosenbaum794-16"
         },
-        "effectiveDateTime": "2017-05-08T15:17:19-04:00",
+        "effectiveDateTime": "2019-05-08T15:17:19-04:00",
         "valueQuantity": {
           "value": 187.14286154934032,
           "unit": "cm",

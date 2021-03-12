@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
         },
-        "effectiveDateTime": "2016-06-06T15:17:19-04:00",
+        "effectiveDateTime": "2019-06-06T15:17:19-04:00",
         "valueQuantity": {
           "value": 23.091273959669266,
           "unit": "kg/m2",

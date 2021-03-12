@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Al123-Rosenbaum794-10"
         },
-        "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+        "effectiveDateTime": "2019-04-15T15:17:19-04:00",
         "valueCodeableConcept": {
           "coding": [
             {

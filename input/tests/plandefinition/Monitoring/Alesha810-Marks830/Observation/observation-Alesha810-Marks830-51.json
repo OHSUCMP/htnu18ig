@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Alesha810-Marks830-16"
         },
-        "effectiveDateTime": "2016-03-29T01:24:38-04:00",
+        "effectiveDateTime": "2019-03-29T01:24:38-04:00",
         "valueQuantity": {
           "value": 37.25583508874942,
           "unit": "Cel",

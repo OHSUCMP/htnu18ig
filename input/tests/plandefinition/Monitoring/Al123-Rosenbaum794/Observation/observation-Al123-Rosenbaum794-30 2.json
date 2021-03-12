@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Al123-Rosenbaum794-8"
         },
-        "effectiveDateTime": "2012-04-09T15:17:19-04:00",
+        "effectiveDateTime": "2019-04-09T15:17:19-04:00",
         "valueQuantity": {
           "value": 76.01614856154622,
           "unit": "%",

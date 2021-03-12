@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
         },
-        "effectiveDateTime": "2009-12-06T21:19:43-05:00",
+        "effectiveDateTime": "2019-12-06T21:19:43-05:00",
         "valueQuantity": {
           "value": 27.71956696603433,
           "unit": "kg/m2",

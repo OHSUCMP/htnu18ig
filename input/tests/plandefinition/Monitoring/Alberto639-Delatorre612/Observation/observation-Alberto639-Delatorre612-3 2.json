@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
         },
-        "effectiveDateTime": "2009-12-06T21:19:43-05:00",
+        "effectiveDateTime": "2019-12-06T21:19:43-05:00",
         "valueQuantity": {
           "value": 94.23624395850963,
           "unit": "kg",

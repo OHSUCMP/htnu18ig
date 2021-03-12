@@ -33,7 +33,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Al123-Rosenbaum794-9"
         },
-        "onsetDateTime": "2012-07-30T15:17:19-04:00",
-        "abatementDateTime": "2013-04-15T15:17:19-04:00",
-        "recordedDate": "2012-07-30T15:17:19-04:00"
+        "onsetDateTime": "2019-07-30T15:17:19-04:00",
+        "abatementDateTime": "2019-04-15T15:17:19-04:00",
+        "recordedDate": "2019-07-30T15:17:19-04:00"
       }

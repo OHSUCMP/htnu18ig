@@ -29,7 +29,7 @@
         ]
       },
       "detailQuantity": {
-        "value": 130,
+        "value": 120,
         "unit": "mmHg",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

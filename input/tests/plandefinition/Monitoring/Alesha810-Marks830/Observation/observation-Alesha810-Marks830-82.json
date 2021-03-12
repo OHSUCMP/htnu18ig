@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Alesha810-Marks830-21"
         },
-        "effectiveDateTime": "2018-11-22T00:24:38-05:00",
+        "effectiveDateTime": "2019-11-22T00:24:38-05:00",
         "valueQuantity": {
           "value": 0.43073343370131845,
           "unit": "{score}",

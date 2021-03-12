@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Alton320-Monahan736-15"
         },
-        "effectiveDateTime": "2015-10-12T15:37:24-04:00",
+        "effectiveDateTime": "2019-10-12T15:37:24-04:00",
         "valueQuantity": {
           "value": 27.618658251605723,
           "unit": "kg/m2",

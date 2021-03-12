@@ -47,7 +47,7 @@
         ]
       },
       "detailQuantity": {
-        "value": 80,
+        "value": 77,
         "unit": "mmHg",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

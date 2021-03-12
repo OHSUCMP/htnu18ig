@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Alton320-Monahan736-9"
         },
-        "effectiveDateTime": "2011-09-19T15:37:24-04:00",
+        "effectiveDateTime": "2019-09-19T15:37:24-04:00",
         "valueQuantity": {
           "value": 12.558532738549967,
           "unit": "mg/dL",
