@@ -4,90 +4,115 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Ahmad985-Nader710-6",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
+      "resourceType": "Condition",
+      "id": "condition-Ahmad985-Nader710-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
       },
-      "type": [ {
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
+          "code": "74400008",
+          "display": "Appendicitis"
         } ],
-        "text": "Encounter for symptom"
-      } ],
+        "text": "Appendicitis"
+      },
       "subject": {
-        "reference": "Patient/Ahmad985-Nader710",
-        "display": "Mr. Ahmad985 Nader710"
+        "reference": "Patient/Ahmad985-Nader710"
       },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000024e",
-          "display": "Dr. Barbie211 Kuhic920"
-        }
-      } ],
-      "period": {
-        "start": "2018-03-22T08:02:17-04:00",
-        "end": "2018-03-22T08:17:17-04:00"
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-2"
       },
-      "reasonCode": [ {
+      "onsetDateTime": "2011-04-17T08:02:17-04:00",
+      "recordedDate": "2011-04-17T08:02:17-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Ahmad985-Nader710-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Ahmad985-Nader710-2",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "428251008",
+          "display": "History of appendectomy"
+        } ],
+        "text": "History of appendectomy"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-3"
+      },
+      "onsetDateTime": "2011-04-17T08:02:17-04:00",
+      "recordedDate": "2011-04-17T08:02:17-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Ahmad985-Nader710-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Ahmad985-Nader710-3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
           "code": "444814009",
           "display": "Viral sinusitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/956ccb85-bea0-30f9-af48-52f5dd95ff72",
-        "display": "FRANCISCAN CHILDREN'S HOSPITAL & REHAB CENTER"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Ahmad985-Nader710-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Ahmad985-Nader710-7",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
         } ],
-        "text": "General examination of patient (procedure)"
-      } ],
+        "text": "Viral sinusitis (disorder)"
+      },
       "subject": {
-        "reference": "Patient/Ahmad985-Nader710",
-        "display": "Mr. Ahmad985 Nader710"
+        "reference": "Patient/Ahmad985-Nader710"
       },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000083b8",
-          "display": "Dr. Lorenzo669 Rempel203"
-        }
-      } ],
-      "period": {
-        "start": "2019-06-30T08:02:17-04:00",
-        "end": "2019-06-30T08:17:17-04:00"
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-6"
       },
-      "serviceProvider": {
-        "reference": "Organization/825c9254-2ca4-335c-8abf-b33dc19e796c",
-        "display": "PCP63533"
-      }
+      "onsetDateTime": "2018-03-22T08:02:17-04:00",
+      "abatementDateTime": "2018-04-12T08:02:17-04:00",
+      "recordedDate": "2018-03-22T08:02:17-04:00"
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Ahmad985-Nader710-7"
+      "url": "Condition/condition-Ahmad985-Nader710-3"
     }
   }, {
     "resource": {
@@ -315,115 +340,1984 @@
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Ahmad985-Nader710-1",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
+      "resourceType": "Encounter",
+      "id": "encounter-Ahmad985-Nader710-6",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
       },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
+      "type": [ {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "74400008",
-          "display": "Appendicitis"
+          "code": "185345009",
+          "display": "Encounter for symptom"
         } ],
-        "text": "Appendicitis"
-      },
+        "text": "Encounter for symptom"
+      } ],
       "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
+        "reference": "Patient/Ahmad985-Nader710",
+        "display": "Mr. Ahmad985 Nader710"
       },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-2"
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000024e",
+          "display": "Dr. Barbie211 Kuhic920"
+        }
+      } ],
+      "period": {
+        "start": "2018-03-22T08:02:17-04:00",
+        "end": "2018-03-22T08:17:17-04:00"
       },
-      "onsetDateTime": "2011-04-17T08:02:17-04:00",
-      "recordedDate": "2011-04-17T08:02:17-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Ahmad985-Nader710-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Ahmad985-Nader710-3",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
+      "reasonCode": [ {
         "coding": [ {
           "system": "http://snomed.info/sct",
           "code": "444814009",
           "display": "Viral sinusitis (disorder)"
-        } ],
-        "text": "Viral sinusitis (disorder)"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-6"
-      },
-      "onsetDateTime": "2018-03-22T08:02:17-04:00",
-      "abatementDateTime": "2018-04-12T08:02:17-04:00",
-      "recordedDate": "2018-03-22T08:02:17-04:00"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/956ccb85-bea0-30f9-af48-52f5dd95ff72",
+        "display": "FRANCISCAN CHILDREN'S HOSPITAL & REHAB CENTER"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-Ahmad985-Nader710-3"
+      "url": "Encounter/encounter-Ahmad985-Nader710-6"
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Ahmad985-Nader710-2",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
+      "resourceType": "Encounter",
+      "id": "encounter-Ahmad985-Nader710-7",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
       },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
+      "type": [ {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "428251008",
-          "display": "History of appendectomy"
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
         } ],
-        "text": "History of appendectomy"
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710",
+        "display": "Mr. Ahmad985 Nader710"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000083b8",
+          "display": "Dr. Lorenzo669 Rempel203"
+        }
+      } ],
+      "period": {
+        "start": "2019-06-30T08:02:17-04:00",
+        "end": "2019-06-30T08:17:17-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/825c9254-2ca4-335c-8abf-b33dc19e796c",
+        "display": "PCP63533"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Ahmad985-Nader710-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
       },
       "subject": {
         "reference": "Patient/Ahmad985-Nader710"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-3"
+        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
       },
-      "onsetDateTime": "2011-04-17T08:02:17-04:00",
-      "recordedDate": "2011-04-17T08:02:17-04:00"
+      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 189.18285492303218,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-Ahmad985-Nader710-2"
+      "url": "Observation/observation-Ahmad985-Nader710-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-10",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 64.44415289132151,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-11",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 17.9623846454273,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-12",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2018-06-23T08:02:17-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 75,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 143,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-13",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 5.027473063603326,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-14",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 4.223163382738916,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-15",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 14.071237476165722,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-16",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 37.22588588862237,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-17",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 94.97838462567537,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-18",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 29.08954861994838,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-19",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 35.517139710126365,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-19"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
+      },
+      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 2.5701437506567273,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-20",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 40.26837593023776,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-20"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-21",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 189.58861555840684,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-21"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-22",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 276.2866878970377,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-23",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 11.769041098089565,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-23"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-24",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-25",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
+      },
+      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 189.41299168967092,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-25"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-26",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
+      },
+      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 2.939386576083297,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-26"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-27",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
+      },
+      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 69.07734010608215,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-27"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-28",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
+      },
+      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 19.253783277451433,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-28"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-29",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
+      },
+      "effectiveDateTime": "2019-06-26T08:02:17-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 74.67128338989232,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 144,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
+      },
+      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 59.488463508924916,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-30",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
+      },
+      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-30"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-31",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 189.41299168967092,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-31"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-32",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 0.4976858900369159,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-32"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-33",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 73.75437380249471,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-33"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-34",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 20.557403148074336,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-34"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-35",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 76.30457767684133,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 135,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-35"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-36",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 8.619988947237228,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-36"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-37",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 4.431677763225091,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-37"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-38",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 17.331336729606505,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-38"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-39",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 43.49792317195377,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-39"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
+      },
+      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 16.621461265911318,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-40",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 80.39963068849377,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-40"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-41",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 29.525290359546027,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-41"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-42",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 33.201987704319336,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-42"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-43",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 40.71102553649177,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-43"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-44",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 252.82015081524258,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-44"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-45",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 162.77389889466596,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-45"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-46",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 10.52401242879196,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-46"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-47",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
+      },
+      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-47"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "59576-9",
+          "display": "Body mass index (BMI) [Percentile] Per age and gender"
+        } ],
+        "text": "Body mass index (BMI) [Percentile] Per age and gender"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
+      },
+      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 0.1033473541540007,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
+      },
+      "effectiveDateTime": "2018-06-20T08:02:17-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 74.79688213667946,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 141,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
+      },
+      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 189.41299168967092,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Ahmad985-Nader710-9",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Ahmad985-Nader710"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
+      },
+      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
+      "valueQuantity": {
+        "value": 1.8085401446573135,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Ahmad985-Nader710-9"
     }
   }, {
     "resource": {
@@ -580,1900 +2474,6 @@
     "request": {
       "method": "PUT",
       "url": "Patient/Ahmad985-Nader710"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-28",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
-      },
-      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 19.253783277451433,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-28"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-45",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 162.77389889466596,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-45"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-12",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2018-06-23T08:02:17-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 75,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 143,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-32",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 0.4976858900369159,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-32"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-24",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-24"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
-      },
-      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 59.488463508924916,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
-      },
-      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 2.5701437506567273,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-25",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
-      },
-      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 189.41299168967092,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-25"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-33",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 73.75437380249471,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-33"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-13",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 5.027473063603326,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-13"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-44",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 252.82015081524258,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-44"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-29",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
-      },
-      "effectiveDateTime": "2019-06-26T08:02:17-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 74.67128338989232,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 144,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-29"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-34",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 20.557403148074336,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-34"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-22",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 276.2866878970377,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-22"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-5",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "59576-9",
-          "display": "Body mass index (BMI) [Percentile] Per age and gender"
-        } ],
-        "text": "Body mass index (BMI) [Percentile] Per age and gender"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
-      },
-      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 0.1033473541540007,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-18",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 29.08954861994838,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-18"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-38",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 17.331336729606505,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-38"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-9",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 1.8085401446573135,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-9"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-43",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 40.71102553649177,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-43"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-14",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 4.223163382738916,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-15",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 14.071237476165722,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-15"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-42",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 33.201987704319336,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-42"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-8",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 189.41299168967092,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-39",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 43.49792317195377,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-39"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-19",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 35.517139710126365,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-19"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
-      },
-      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 16.621461265911318,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-23",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 11.769041098089565,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-23"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-35",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 76.30457767684133,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 135,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-35"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-7",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
-      },
-      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-20",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 40.26837593023776,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-20"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-36",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 8.619988947237228,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-36"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-16",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 37.22588588862237,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-16"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-41",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 29.525290359546027,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-41"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-40",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 80.39963068849377,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-40"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-17",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 94.97838462567537,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-17"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-37",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 4.431677763225091,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-37"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-21",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 189.58861555840684,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-21"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-6",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
-      },
-      "effectiveDateTime": "2018-06-20T08:02:17-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 74.79688213667946,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 141,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-10",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 64.44415289132151,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-10"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-47",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-47"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-1",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-1"
-      },
-      "effectiveDateTime": "2010-06-20T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 189.18285492303218,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-26",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
-      },
-      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 2.939386576083297,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-26"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-30",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
-      },
-      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-30"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-31",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 189.41299168967092,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-31"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-27",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-5"
-      },
-      "effectiveDateTime": "2016-06-26T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 69.07734010608215,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-27"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-46",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-7"
-      },
-      "effectiveDateTime": "2019-06-30T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 10.52401242879196,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-46"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Ahmad985-Nader710-11",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Ahmad985-Nader710"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Ahmad985-Nader710-4"
-      },
-      "effectiveDateTime": "2013-06-23T08:02:17-04:00",
-      "valueQuantity": {
-        "value": 17.9623846454273,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Ahmad985-Nader710-11"
     }
   } ]
 }

@@ -4,121 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-PrescribeABPM3-5",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "version": "2.0.0",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "subject": {
-        "reference": "Patient/PrescribeABPM3"
-      },
-      "period": {
-        "start": "2015-01-09T12:00:00-06:00",
-        "end": "2015-01-09T13:00:00-06:00"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-PrescribeABPM3-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-PrescribeABPM3-4",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "version": "2.0.0",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "subject": {
-        "reference": "Patient/PrescribeABPM3"
-      },
-      "period": {
-        "start": "2015-01-06T12:00:00-06:00",
-        "end": "2015-01-06T13:00:00-06:00"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-PrescribeABPM3-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-PrescribeABPM3-3",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "version": "2.0.0",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "subject": {
-        "reference": "Patient/PrescribeABPM3"
-      },
-      "period": {
-        "start": "2014-11-20T12:00:00-06:00",
-        "end": "2014-11-20T13:00:00-06:00"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-PrescribeABPM3-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-PrescribeABPM3-2",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "version": "2.0.0",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "subject": {
-        "reference": "Patient/PrescribeABPM3"
-      },
-      "period": {
-        "start": "2014-08-18T12:00:00-06:00",
-        "end": "2014-08-18T13:00:00-06:00"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-PrescribeABPM3-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-PrescribeABPM3-1",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "version": "2.0.0",
-        "code": "AMB",
-        "display": "ambulatory"
-      },
-      "subject": {
-        "reference": "Patient/PrescribeABPM3"
-      },
-      "period": {
-        "start": "2015-03-25T12:00:00-06:00",
-        "end": "2015-03-25T13:00:00-06:00"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-PrescribeABPM3-1"
-    }
-  }, {
-    "resource": {
       "resourceType": "Condition",
       "id": "condition-PrescribeABPM3-1",
       "clinicalStatus": {
@@ -156,20 +41,174 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "PrescribeABPM3",
-      "active": true,
-      "name": [ {
-        "text": "PrescribeABPM3 Patient",
-        "family": "Patient",
-        "given": [ "PrescribeABPM3" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1982-05-01"
+      "resourceType": "Encounter",
+      "id": "encounter-PrescribeABPM3-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/PrescribeABPM3"
+      },
+      "period": {
+        "start": "2015-03-25T12:00:00-06:00",
+        "end": "2015-03-25T13:00:00-06:00"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/PrescribeABPM3"
+      "url": "Encounter/encounter-PrescribeABPM3-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-PrescribeABPM3-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/PrescribeABPM3"
+      },
+      "period": {
+        "start": "2014-08-18T12:00:00-06:00",
+        "end": "2014-08-18T13:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-PrescribeABPM3-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-PrescribeABPM3-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/PrescribeABPM3"
+      },
+      "period": {
+        "start": "2014-11-20T12:00:00-06:00",
+        "end": "2014-11-20T13:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-PrescribeABPM3-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-PrescribeABPM3-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/PrescribeABPM3"
+      },
+      "period": {
+        "start": "2015-01-06T12:00:00-06:00",
+        "end": "2015-01-06T13:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-PrescribeABPM3-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-PrescribeABPM3-5",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "version": "2.0.0",
+        "code": "AMB",
+        "display": "ambulatory"
+      },
+      "subject": {
+        "reference": "Patient/PrescribeABPM3"
+      },
+      "period": {
+        "start": "2015-01-09T12:00:00-06:00",
+        "end": "2015-01-09T13:00:00-06:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-PrescribeABPM3-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-PrescribeABPM3-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "active",
+          "display": "Active"
+        } ]
+      },
+      "description": {
+        "text": "Lower Blood Pressure to 139/89."
+      },
+      "subject": {
+        "reference": "Patient/PrescribeABPM3"
+      },
+      "startDate": "2015-01-14",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 139,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 89,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-PrescribeABPM3-1"
     }
   }, {
     "resource": {
@@ -513,59 +552,20 @@
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-PrescribeABPM3-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "active",
-          "display": "Active"
-        } ]
-      },
-      "description": {
-        "text": "Lower Blood Pressure to 139/89."
-      },
-      "subject": {
-        "reference": "Patient/PrescribeABPM3"
-      },
-      "startDate": "2015-01-14",
-      "target": [ {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8480-6",
-            "display": "Systolic blood pressure"
-          } ]
-        },
-        "detailQuantity": {
-          "value": 139,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure"
-          } ]
-        },
-        "detailQuantity": {
-          "value": 89,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
+      "resourceType": "Patient",
+      "id": "PrescribeABPM3",
+      "active": true,
+      "name": [ {
+        "text": "PrescribeABPM3 Patient",
+        "family": "Patient",
+        "given": [ "PrescribeABPM3" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1982-05-01"
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-PrescribeABPM3-1"
+      "url": "Patient/PrescribeABPM3"
     }
   } ]
 }

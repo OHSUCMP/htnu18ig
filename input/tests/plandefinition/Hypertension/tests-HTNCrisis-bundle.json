@@ -27,23 +27,6 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "HTNCrisis",
-      "active": true,
-      "name": [ {
-        "text": "HTNCrisis Patient",
-        "family": "Patient",
-        "given": [ "HTNCrisis" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1975-09-28"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/HTNCrisis"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-HTNCrisis-1",
       "status": "final",
@@ -109,6 +92,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-HTNCrisis-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "HTNCrisis",
+      "active": true,
+      "name": [ {
+        "text": "HTNCrisis Patient",
+        "family": "Patient",
+        "given": [ "HTNCrisis" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1975-09-28"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/HTNCrisis"
     }
   } ]
 }

@@ -4,8 +4,234 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Blaine377-Crona259-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "446096008",
+          "display": "Perennial allergic rhinitis"
+        } ],
+        "text": "Perennial allergic rhinitis"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-3"
+      },
+      "onsetDateTime": "1983-10-01T23:43:06-04:00",
+      "recordedDate": "1983-10-01T23:43:06-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Blaine377-Crona259-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Blaine377-Crona259-2",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ],
+        "text": "Acute viral pharyngitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-5"
+      },
+      "onsetDateTime": "2010-11-09T22:43:06-05:00",
+      "abatementDateTime": "2010-11-20T22:43:06-05:00",
+      "recordedDate": "2010-11-09T22:43:06-05:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Blaine377-Crona259-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Blaine377-Crona259-3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162864005",
+          "display": "Body mass index 30+ - obesity (finding)"
+        } ],
+        "text": "Body mass index 30+ - obesity (finding)"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-7"
+      },
+      "onsetDateTime": "2010-11-25T22:43:06-05:00",
+      "recordedDate": "2010-11-25T22:43:06-05:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Blaine377-Crona259-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Blaine377-Crona259-4",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444814009",
+          "display": "Viral sinusitis (disorder)"
+        } ],
+        "text": "Viral sinusitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-9"
+      },
+      "onsetDateTime": "2012-09-30T23:43:06-04:00",
+      "abatementDateTime": "2012-10-14T23:43:06-04:00",
+      "recordedDate": "2012-09-30T23:43:06-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Blaine377-Crona259-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Blaine377-Crona259-5",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ],
+        "text": "Acute viral pharyngitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-12"
+      },
+      "onsetDateTime": "2017-07-18T23:43:06-04:00",
+      "abatementDateTime": "2017-07-26T23:43:06-04:00",
+      "recordedDate": "2017-07-18T23:43:06-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Blaine377-Crona259-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Blaine377-Crona259-6",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444814009",
+          "display": "Viral sinusitis (disorder)"
+        } ],
+        "text": "Viral sinusitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-15"
+      },
+      "onsetDateTime": "2019-05-19T23:43:06-04:00",
+      "abatementDateTime": "2019-06-09T23:43:06-04:00",
+      "recordedDate": "2019-05-19T23:43:06-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Blaine377-Crona259-6"
+    }
+  }, {
+    "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-2",
+      "id": "encounter-Blaine377-Crona259-1",
       "status": "finished",
       "class": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -30,8 +256,8 @@
         }
       } ],
       "period": {
-        "start": "1982-06-05T23:43:06-04:00",
-        "end": "1982-06-06T00:27:06-04:00"
+        "start": "1982-05-22T23:43:06-04:00",
+        "end": "1982-05-22T23:58:06-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
@@ -40,94 +266,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-3",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259",
-        "display": "Mr. Blaine377 Crona259"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
-          "display": "Dr. Renato359 Jenkins714"
-        }
-      } ],
-      "period": {
-        "start": "1983-10-01T23:43:06-04:00",
-        "end": "1983-10-15T23:43:06-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "446096008",
-          "display": "Perennial allergic rhinitis"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
-        "display": "HALLMARK HEALTH SYSTEM"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-8",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "702927004",
-          "display": "Urgent care clinic (procedure)"
-        } ],
-        "text": "Urgent care clinic (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259",
-        "display": "Mr. Blaine377 Crona259"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000016d8c",
-          "display": "Dr. Candyce305 Prohaska837"
-        }
-      } ],
-      "period": {
-        "start": "2012-10-04T23:43:06-04:00",
-        "end": "2012-10-04T23:58:06-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/90cf148c-69ed-3d33-aa86-b509c6b0b25f",
-        "display": "PROMPT CARE WALK-IN CLINIC"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-8"
+      "url": "Encounter/encounter-Blaine377-Crona259-1"
     }
   }, {
     "resource": {
@@ -172,93 +311,6 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-4",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259",
-        "display": "Mr. Blaine377 Crona259"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000014a96",
-          "display": "Dr. Cameron381 Orn563"
-        }
-      } ],
-      "period": {
-        "start": "2017-12-03T22:43:06-05:00",
-        "end": "2017-12-03T22:58:06-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/c058856a-398b-3492-b656-b4befe50fdb2",
-        "display": "PSYCHOLOGICAL CARE ASSOCIATES, P.C."
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-5",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259",
-        "display": "Mr. Blaine377 Crona259"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
-          "display": "Dr. Renato359 Jenkins714"
-        }
-      } ],
-      "period": {
-        "start": "2010-11-09T22:43:06-05:00",
-        "end": "2010-11-09T23:13:06-05:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
-        "display": "HALLMARK HEALTH SYSTEM"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
       "id": "encounter-Blaine377-Crona259-11",
       "status": "finished",
       "class": {
@@ -295,53 +347,6 @@
     "request": {
       "method": "PUT",
       "url": "Encounter/encounter-Blaine377-Crona259-11"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-9",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259",
-        "display": "Mr. Blaine377 Crona259"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
-          "display": "Dr. Renato359 Jenkins714"
-        }
-      } ],
-      "period": {
-        "start": "2012-09-30T23:43:06-04:00",
-        "end": "2012-09-30T23:58:06-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
-        "display": "HALLMARK HEALTH SYSTEM"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-9"
     }
   }, {
     "resource": {
@@ -389,86 +394,6 @@
     "request": {
       "method": "PUT",
       "url": "Encounter/encounter-Blaine377-Crona259-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-6",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "702927004",
-          "display": "Urgent care clinic (procedure)"
-        } ],
-        "text": "Urgent care clinic (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259",
-        "display": "Mr. Blaine377 Crona259"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000016d8c",
-          "display": "Dr. Candyce305 Prohaska837"
-        }
-      } ],
-      "period": {
-        "start": "2010-11-18T22:43:06-05:00",
-        "end": "2010-11-18T22:58:06-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/90cf148c-69ed-3d33-aa86-b509c6b0b25f",
-        "display": "PROMPT CARE WALK-IN CLINIC"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-7",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185349003",
-          "display": "Encounter for check up (procedure)"
-        } ],
-        "text": "Encounter for check up (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259",
-        "display": "Mr. Blaine377 Crona259"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
-          "display": "Dr. Renato359 Jenkins714"
-        }
-      } ],
-      "period": {
-        "start": "2018-11-25T22:43:06-05:00",
-        "end": "2018-11-25T22:58:06-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
-        "display": "HALLMARK HEALTH SYSTEM"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-7"
     }
   }, {
     "resource": {
@@ -600,7 +525,7 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Blaine377-Crona259-1",
+      "id": "encounter-Blaine377-Crona259-2",
       "status": "finished",
       "class": {
         "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -625,8 +550,8 @@
         }
       } ],
       "period": {
-        "start": "1982-05-22T23:43:06-04:00",
-        "end": "1982-05-22T23:58:06-04:00"
+        "start": "1982-06-05T23:43:06-04:00",
+        "end": "1982-06-06T00:27:06-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
@@ -635,68 +560,672 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Encounter/encounter-Blaine377-Crona259-1"
+      "url": "Encounter/encounter-Blaine377-Crona259-2"
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Blaine377-Crona259-3",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
+      "resourceType": "Encounter",
+      "id": "encounter-Blaine377-Crona259-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
       },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
+      "type": [ {
         "coding": [ {
           "system": "http://snomed.info/sct",
-          "code": "162864005",
-          "display": "Body mass index 30+ - obesity (finding)"
+          "code": "185345009",
+          "display": "Encounter for symptom"
         } ],
-        "text": "Body mass index 30+ - obesity (finding)"
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259",
+        "display": "Mr. Blaine377 Crona259"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
+          "display": "Dr. Renato359 Jenkins714"
+        }
+      } ],
+      "period": {
+        "start": "1983-10-01T23:43:06-04:00",
+        "end": "1983-10-15T23:43:06-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "446096008",
+          "display": "Perennial allergic rhinitis"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
+        "display": "HALLMARK HEALTH SYSTEM"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Blaine377-Crona259-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Blaine377-Crona259-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259",
+        "display": "Mr. Blaine377 Crona259"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000014a96",
+          "display": "Dr. Cameron381 Orn563"
+        }
+      } ],
+      "period": {
+        "start": "2017-12-03T22:43:06-05:00",
+        "end": "2017-12-03T22:58:06-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/c058856a-398b-3492-b656-b4befe50fdb2",
+        "display": "PSYCHOLOGICAL CARE ASSOCIATES, P.C."
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Blaine377-Crona259-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Blaine377-Crona259-5",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259",
+        "display": "Mr. Blaine377 Crona259"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
+          "display": "Dr. Renato359 Jenkins714"
+        }
+      } ],
+      "period": {
+        "start": "2010-11-09T22:43:06-05:00",
+        "end": "2010-11-09T23:13:06-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
+        "display": "HALLMARK HEALTH SYSTEM"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Blaine377-Crona259-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Blaine377-Crona259-6",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "702927004",
+          "display": "Urgent care clinic (procedure)"
+        } ],
+        "text": "Urgent care clinic (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259",
+        "display": "Mr. Blaine377 Crona259"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000016d8c",
+          "display": "Dr. Candyce305 Prohaska837"
+        }
+      } ],
+      "period": {
+        "start": "2010-11-18T22:43:06-05:00",
+        "end": "2010-11-18T22:58:06-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/90cf148c-69ed-3d33-aa86-b509c6b0b25f",
+        "display": "PROMPT CARE WALK-IN CLINIC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Blaine377-Crona259-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Blaine377-Crona259-7",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185349003",
+          "display": "Encounter for check up (procedure)"
+        } ],
+        "text": "Encounter for check up (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259",
+        "display": "Mr. Blaine377 Crona259"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
+          "display": "Dr. Renato359 Jenkins714"
+        }
+      } ],
+      "period": {
+        "start": "2018-11-25T22:43:06-05:00",
+        "end": "2018-11-25T22:58:06-05:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
+        "display": "HALLMARK HEALTH SYSTEM"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Blaine377-Crona259-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Blaine377-Crona259-8",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "702927004",
+          "display": "Urgent care clinic (procedure)"
+        } ],
+        "text": "Urgent care clinic (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259",
+        "display": "Mr. Blaine377 Crona259"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000016d8c",
+          "display": "Dr. Candyce305 Prohaska837"
+        }
+      } ],
+      "period": {
+        "start": "2012-10-04T23:43:06-04:00",
+        "end": "2012-10-04T23:58:06-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/90cf148c-69ed-3d33-aa86-b509c6b0b25f",
+        "display": "PROMPT CARE WALK-IN CLINIC"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Blaine377-Crona259-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Blaine377-Crona259-9",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259",
+        "display": "Mr. Blaine377 Crona259"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000010e",
+          "display": "Dr. Renato359 Jenkins714"
+        }
+      } ],
+      "period": {
+        "start": "2012-09-30T23:43:06-04:00",
+        "end": "2012-09-30T23:58:06-04:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444814009",
+          "display": "Viral sinusitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/d692e283-0833-3201-8e55-4f868a9c0736",
+        "display": "HALLMARK HEALTH SYSTEM"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Blaine377-Crona259-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
       },
       "subject": {
         "reference": "Patient/Blaine377-Crona259"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-7"
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
       },
-      "onsetDateTime": "2010-11-25T22:43:06-05:00",
-      "recordedDate": "2010-11-25T22:43:06-05:00"
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 176.7822201252218,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-Blaine377-Crona259-3"
+      "url": "Observation/observation-Blaine377-Crona259-1"
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Blaine377-Crona259-2",
-      "clinicalStatus": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-10",
+      "status": "final",
+      "category": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
         } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
+      } ],
       "code": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
         } ],
-        "text": "Acute viral pharyngitis (disorder)"
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 82.60590530986488,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-11",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 28.42817745531261,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-12",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 35.2354548877453,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-13",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 45.13866813625293,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-14",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 200.13611764902703,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-15",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 361.017145911836,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-16",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 11.60222612025748,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-17",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-18",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
       },
       "subject": {
         "reference": "Patient/Blaine377-Crona259"
@@ -704,37 +1233,1701 @@
       "encounter": {
         "reference": "Encounter/encounter-Blaine377-Crona259-5"
       },
-      "onsetDateTime": "2010-11-09T22:43:06-05:00",
-      "abatementDateTime": "2010-11-20T22:43:06-05:00",
-      "recordedDate": "2010-11-09T22:43:06-05:00"
+      "effectiveDateTime": "2010-11-09T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 37.08195422853911,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-Blaine377-Crona259-2"
+      "url": "Observation/observation-Blaine377-Crona259-18"
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Blaine377-Crona259-5",
-      "clinicalStatus": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-19",
+      "status": "final",
+      "category": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
         } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
+      } ],
       "code": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "195662009",
-          "display": "Acute viral pharyngitis (disorder)"
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
         } ],
-        "text": "Acute viral pharyngitis (disorder)"
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-7"
+      },
+      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 176.7822201252218,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-19"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 0.7386563363595027,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-20",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-7"
+      },
+      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 0.20246620125028691,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-20"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-21",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-7"
+      },
+      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 94.20853128139326,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-21"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-22",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-7"
+      },
+      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 30.144845737826916,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-23",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-7"
+      },
+      "effectiveDateTime": "2018-11-25T22:43:06-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 79,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 130,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-23"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-24",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-7"
+      },
+      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-25",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 176.7822201252218,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-25"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-26",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 0.4912156972173851,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-26"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-27",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 94.20853128139326,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-27"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-28",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 30.144845737826916,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-28"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-29",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2018-12-06T22:43:06-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 74,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 126,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 92.25851768230946,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-30",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 183.61747970085406,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-30"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-31",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 112.03758449536357,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-31"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-32",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 86.01104418946113,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-32"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-33",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 75.19891861232021,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-33"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-34",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-10"
+      },
+      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-34"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-35",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 176.7822201252218,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-35"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-36",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 0.16360918844580796,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-36"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-37",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 94.20853128139326,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-37"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-38",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 30.144845737826916,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-38"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-39",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2018-12-10T22:43:06-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 75.4043666584672,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 126,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-39"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 29.52088038849495,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-40",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 172.50497035885903,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-40"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-41",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 105.96627486600028,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-41"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-42",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 81.27692632403713,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-42"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-43",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 70.03478906162184,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-43"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-44",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 3.723816953569997,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-44"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-45",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 4.182083537698219,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-45"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-46",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 16.14606953475262,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-46"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-47",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 44.79293138744965,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-47"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-48",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 90.694805348985,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-48"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-49",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 29.995517127341888,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-49"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2017-12-03T22:43:06-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 81.16946377844343,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 151,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-50",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 34.30750604245012,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-50"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-51",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 44.042558088416165,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-51"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-52",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 151.14679693916983,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-52"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-53",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 461.84895462823897,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-53"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-54",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 11.458510378344737,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-54"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-55",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-11"
+      },
+      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-55"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-56",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
       },
       "subject": {
         "reference": "Patient/Blaine377-Crona259"
@@ -742,126 +2935,576 @@
       "encounter": {
         "reference": "Encounter/encounter-Blaine377-Crona259-12"
       },
-      "onsetDateTime": "2017-07-18T23:43:06-04:00",
-      "abatementDateTime": "2017-07-26T23:43:06-04:00",
-      "recordedDate": "2017-07-18T23:43:06-04:00"
+      "effectiveDateTime": "2017-07-18T23:43:06-04:00",
+      "valueQuantity": {
+        "value": 37.33902354784531,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-Blaine377-Crona259-5"
+      "url": "Observation/observation-Blaine377-Crona259-56"
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Blaine377-Crona259-4",
-      "clinicalStatus": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-57",
+      "status": "final",
+      "category": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
         } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
+      } ],
       "code": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
         } ],
-        "text": "Viral sinusitis (disorder)"
+        "text": "Body Height"
       },
       "subject": {
         "reference": "Patient/Blaine377-Crona259"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-9"
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
       },
-      "onsetDateTime": "2012-09-30T23:43:06-04:00",
-      "abatementDateTime": "2012-10-14T23:43:06-04:00",
-      "recordedDate": "2012-09-30T23:43:06-04:00"
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 176.7822201252218,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-Blaine377-Crona259-4"
+      "url": "Observation/observation-Blaine377-Crona259-57"
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Blaine377-Crona259-6",
-      "clinicalStatus": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-58",
+      "status": "final",
+      "category": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
         } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
+      } ],
       "code": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
         } ],
-        "text": "Viral sinusitis (disorder)"
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
       },
       "subject": {
         "reference": "Patient/Blaine377-Crona259"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-15"
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
       },
-      "onsetDateTime": "2019-05-19T23:43:06-04:00",
-      "abatementDateTime": "2019-06-09T23:43:06-04:00",
-      "recordedDate": "2019-05-19T23:43:06-04:00"
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 0.9571234663171269,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-Blaine377-Crona259-6"
+      "url": "Observation/observation-Blaine377-Crona259-58"
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Blaine377-Crona259-1",
-      "clinicalStatus": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-59",
+      "status": "final",
+      "category": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
         } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
+      } ],
       "code": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "446096008",
-          "display": "Perennial allergic rhinitis"
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
         } ],
-        "text": "Perennial allergic rhinitis"
+        "text": "Body Weight"
       },
       "subject": {
         "reference": "Patient/Blaine377-Crona259"
       },
       "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-3"
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
       },
-      "onsetDateTime": "1983-10-01T23:43:06-04:00",
-      "recordedDate": "1983-10-01T23:43:06-04:00"
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 94.20853128139326,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-Blaine377-Crona259-1"
+      "url": "Observation/observation-Blaine377-Crona259-59"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 4.1895701667996095,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-60",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
+      },
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 30.144845737826916,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-60"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-61",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
+      },
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 75,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 132,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-61"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-62",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
+      },
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 186.2496292508895,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-62"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-63",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
+      },
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 147.17729878209553,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-63"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-64",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
+      },
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 84.80061394250185,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-64"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-65",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
+      },
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 72.01355555196855,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-65"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-66",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-14"
+      },
+      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-66"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 4.489190166935853,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 16.358681864868174,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Blaine377-Crona259-9",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Blaine377-Crona259"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Blaine377-Crona259-4"
+      },
+      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
+      "valueQuantity": {
+        "value": 35.478688036214265,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Blaine377-Crona259-9"
     }
   }, {
     "resource": {
@@ -1018,2649 +3661,6 @@
     "request": {
       "method": "PUT",
       "url": "Patient/Blaine377-Crona259"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-39",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2018-12-10T22:43:06-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 75.4043666584672,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 126,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-39"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-15",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 361.017145911836,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-15"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-42",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 81.27692632403713,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-42"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-1",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 176.7822201252218,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-54",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 11.458510378344737,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-54"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-23",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-7"
-      },
-      "effectiveDateTime": "2018-11-25T22:43:06-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 79,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 130,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-23"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-35",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 176.7822201252218,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-35"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-62",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 186.2496292508895,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-62"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-19",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-7"
-      },
-      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 176.7822201252218,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-19"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-58",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 0.9571234663171269,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-58"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-59",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 94.20853128139326,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-59"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-18",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8331-1",
-          "display": "Oral temperature"
-        } ],
-        "text": "Oral temperature"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-5"
-      },
-      "effectiveDateTime": "2010-11-09T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 37.08195422853911,
-        "unit": "Cel",
-        "system": "http://unitsofmeasure.org",
-        "code": "Cel"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-18"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-63",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 147.17729878209553,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-63"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-34",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-34"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-22",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-7"
-      },
-      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 30.144845737826916,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-22"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-55",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-55"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-43",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 70.03478906162184,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-43"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-14",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 200.13611764902703,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-38",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 30.144845737826916,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-38"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-25",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 176.7822201252218,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-25"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-33",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 75.19891861232021,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-33"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-64",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 84.80061394250185,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-64"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-48",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 90.694805348985,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-48"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-29",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2018-12-06T22:43:06-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 74,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 126,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-29"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-13",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 45.13866813625293,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-13"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-7",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 4.489190166935853,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-44",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 3.723816953569997,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-44"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-52",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 151.14679693916983,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-52"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-53",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 461.84895462823897,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-53"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-6",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 4.1895701667996095,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-45",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 4.182083537698219,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-45"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-12",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 35.2354548877453,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-28",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 30.144845737826916,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-28"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-49",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 29.995517127341888,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-49"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-65",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 72.01355555196855,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-65"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-32",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 86.01104418946113,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-32"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-24",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-7"
-      },
-      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-24"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-9",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 35.478688036214265,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-9"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-66",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-66"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-31",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 112.03758449536357,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-31"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-27",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 94.20853128139326,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-27"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-50",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 34.30750604245012,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-50"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-5",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2017-12-03T22:43:06-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 81.16946377844343,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 151,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-46",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 16.14606953475262,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-46"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-11",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 28.42817745531261,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-11"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-10",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 82.60590530986488,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-10"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 29.52088038849495,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-47",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 44.79293138744965,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-47"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-51",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 44.042558088416165,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-51"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-26",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 0.4912156972173851,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-26"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-30",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-10"
-      },
-      "effectiveDateTime": "2012-12-06T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 183.61747970085406,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-30"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-8",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 16.358681864868174,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-56",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8331-1",
-          "display": "Oral temperature"
-        } ],
-        "text": "Oral temperature"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-12"
-      },
-      "effectiveDateTime": "2017-07-18T23:43:06-04:00",
-      "valueQuantity": {
-        "value": 37.33902354784531,
-        "unit": "Cel",
-        "system": "http://unitsofmeasure.org",
-        "code": "Cel"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-56"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-40",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 172.50497035885903,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-40"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 92.25851768230946,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-17",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "266919005",
-          "display": "Never smoker"
-        } ],
-        "text": "Never smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-17"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-60",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 30.144845737826916,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-60"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-37",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 94.20853128139326,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-37"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-21",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-7"
-      },
-      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 94.20853128139326,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-21"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-20",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-7"
-      },
-      "effectiveDateTime": "2010-11-25T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 0.20246620125028691,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-20"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-36",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 0.16360918844580796,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-36"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-61",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 75,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 132,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-61"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-16",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 11.60222612025748,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-16"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-41",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-11"
-      },
-      "effectiveDateTime": "2015-12-10T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 105.96627486600028,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-41"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-4"
-      },
-      "effectiveDateTime": "2009-12-03T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 0.7386563363595027,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Blaine377-Crona259-57",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Blaine377-Crona259"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Blaine377-Crona259-14"
-      },
-      "effectiveDateTime": "2018-12-13T22:43:06-05:00",
-      "valueQuantity": {
-        "value": 176.7822201252218,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Blaine377-Crona259-57"
     }
   } ]
 }
