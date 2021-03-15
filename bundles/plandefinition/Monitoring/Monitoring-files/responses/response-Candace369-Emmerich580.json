@@ -1,0 +1,19 @@
+{
+    "cards": [
+        {
+            "summary": "Hypertension Monitoring Process",
+            "indicator": "info",
+            "detail": "Candace369 Emmerich580",
+            "source": {
+                "label": "Info for those with normal blood pressure",
+                "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+            }
+        },
+        {
+            "summary": "Not at goal: Recommend treatment.",
+            "indicator": "warning",
+            "detail": "You had a high blood pressure reading recently and are not at your blood pressure goal. Treatment is recommended.  Please see your provider to lower your blood pressure and reduce your risk of stroke or other adverse events.  More severe hypertension, stage 2 hypertension is a systolic pressure of 140 mm Hg or higher or a diastolic pressure of 90 mm Hg or higher.",
+            "source": {}
+        }
+    ]
+}

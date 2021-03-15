@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Cameron381-Hamill307-12",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "195662009",
+              "display": "Acute viral pharyngitis (disorder)"
+            }
+          ],
+          "text": "Acute viral pharyngitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Cameron381-Hamill307"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Cameron381-Hamill307-20"
+        },
+        "onsetDateTime": "2016-10-20T17:23:48-04:00",
+        "abatementDateTime": "2016-11-01T17:23:48-04:00",
+        "recordedDate": "2016-10-20T17:23:48-04:00"
+      }

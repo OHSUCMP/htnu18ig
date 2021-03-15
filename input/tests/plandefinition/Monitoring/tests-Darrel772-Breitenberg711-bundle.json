@@ -1,0 +1,2565 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-Darrel772-Breitenberg711-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Darrel772-Breitenberg711-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ],
+        "text": "Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-1"
+      },
+      "onsetDateTime": "2001-07-07T21:56:16-04:00",
+      "recordedDate": "2001-07-07T21:56:16-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Darrel772-Breitenberg711-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Darrel772-Breitenberg711-2",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ],
+        "text": "Acute viral pharyngitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-4"
+      },
+      "onsetDateTime": "2012-02-13T20:56:16-05:00",
+      "abatementDateTime": "2012-02-25T20:56:16-05:00",
+      "recordedDate": "2012-02-13T20:56:16-05:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Darrel772-Breitenberg711-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Darrel772-Breitenberg711-3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "resolved"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444814009",
+          "display": "Viral sinusitis (disorder)"
+        } ],
+        "text": "Viral sinusitis (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-5"
+      },
+      "onsetDateTime": "2013-12-01T20:56:16-05:00",
+      "abatementDateTime": "2013-12-22T20:56:16-05:00",
+      "recordedDate": "2013-12-01T20:56:16-05:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Darrel772-Breitenberg711-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Darrel772-Breitenberg711-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711",
+        "display": "Mr. Darrel772 Breitenberg711"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000005244",
+          "display": "Dr. Berta524 Toro760"
+        }
+      } ],
+      "period": {
+        "start": "2001-07-07T21:56:16-04:00",
+        "end": "2001-07-07T22:26:16-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/f59df575-2846-3730-9552-111f42e3e2ea",
+        "display": "PCP31463"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Darrel772-Breitenberg711-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Darrel772-Breitenberg711-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "390906007",
+          "display": "Hypertension follow-up encounter"
+        } ],
+        "text": "Hypertension follow-up encounter"
+      } ],
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711",
+        "display": "Mr. Darrel772 Breitenberg711"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000028",
+          "display": "Dr. José3 Valentín837"
+        }
+      } ],
+      "period": {
+        "start": "2001-08-06T21:56:16-04:00",
+        "end": "2001-08-06T22:11:16-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/e002090d-4e92-300e-b41e-7d1f21dee4c6",
+        "display": "CAMBRIDGE HEALTH ALLIANCE"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Darrel772-Breitenberg711-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Darrel772-Breitenberg711-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711",
+        "display": "Mr. Darrel772 Breitenberg711"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000005244",
+          "display": "Dr. Berta524 Toro760"
+        }
+      } ],
+      "period": {
+        "start": "2011-07-23T21:56:16-04:00",
+        "end": "2011-07-23T22:26:16-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/f59df575-2846-3730-9552-111f42e3e2ea",
+        "display": "PCP31463"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Darrel772-Breitenberg711-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Darrel772-Breitenberg711-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711",
+        "display": "Mr. Darrel772 Breitenberg711"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000028",
+          "display": "Dr. José3 Valentín837"
+        }
+      } ],
+      "period": {
+        "start": "2012-02-13T20:56:16-05:00",
+        "end": "2012-02-13T21:11:16-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "195662009",
+          "display": "Acute viral pharyngitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/e002090d-4e92-300e-b41e-7d1f21dee4c6",
+        "display": "CAMBRIDGE HEALTH ALLIANCE"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Darrel772-Breitenberg711-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Darrel772-Breitenberg711-5",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "185345009",
+          "display": "Encounter for symptom"
+        } ],
+        "text": "Encounter for symptom"
+      } ],
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711",
+        "display": "Mr. Darrel772 Breitenberg711"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000028",
+          "display": "Dr. José3 Valentín837"
+        }
+      } ],
+      "period": {
+        "start": "2013-12-01T20:56:16-05:00",
+        "end": "2013-12-01T21:11:16-05:00"
+      },
+      "reasonCode": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "444814009",
+          "display": "Viral sinusitis (disorder)"
+        } ]
+      } ],
+      "serviceProvider": {
+        "reference": "Organization/e002090d-4e92-300e-b41e-7d1f21dee4c6",
+        "display": "CAMBRIDGE HEALTH ALLIANCE"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Darrel772-Breitenberg711-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Darrel772-Breitenberg711-6",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711",
+        "display": "Mr. Darrel772 Breitenberg711"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000005244",
+          "display": "Dr. Berta524 Toro760"
+        }
+      } ],
+      "period": {
+        "start": "2014-07-26T21:56:16-04:00",
+        "end": "2014-07-26T22:26:16-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/f59df575-2846-3730-9552-111f42e3e2ea",
+        "display": "PCP31463"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Darrel772-Breitenberg711-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-Darrel772-Breitenberg711-7",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711",
+        "display": "Mr. Darrel772 Breitenberg711"
+      },
+      "participant": [ {
+        "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000005244",
+          "display": "Dr. Berta524 Toro760"
+        }
+      } ],
+      "period": {
+        "start": "2017-07-29T21:56:16-04:00",
+        "end": "2017-07-29T22:11:16-04:00"
+      },
+      "serviceProvider": {
+        "reference": "Organization/f59df575-2846-3730-9552-111f42e3e2ea",
+        "display": "PCP31463"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-Darrel772-Breitenberg711-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "HTNU18GoalTemplateSystolic",
+      "lifecycleStatus": "planned",
+      "achievementStatus": {
+        "coding": [ {
+          "code": "in-progress"
+        } ]
+      },
+      "description": {
+        "text": "goals for HTNU18"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "startDate": "2020-06-17",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 132,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 82,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/HTNU18GoalTemplateSystolic"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 187.77045269696015,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-10",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 93.97563210971947,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-11",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 27.526061908425355,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-12",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 34.39982292377501,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-13",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 44.27392117289008,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-14",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 317.511736358748,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-14"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-15",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 284.7681960339282,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-15"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-16",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 10.610953734428954,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-16"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-17",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-17"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-18",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8331-1",
+          "display": "Oral temperature"
+        } ],
+        "text": "Oral temperature"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-4"
+      },
+      "effectiveDateTime": "2012-02-13T20:56:16-05:00",
+      "valueQuantity": {
+        "value": 37.26781813974467,
+        "unit": "Cel",
+        "system": "http://unitsofmeasure.org",
+        "code": "Cel"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-18"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-19",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 187.77045269696015,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-19"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 0.4985179527473993,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-20",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 2.2074073190181878,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-20"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-21",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 100.83441783313896,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-21"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-22",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 28.59922658745077,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-22"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-23",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.12103950610887,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 111.70091345684901,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-23"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-24",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 167.36510616577982,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-24"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-25",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 135.59011333471855,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-25"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-26",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 65.04370430180805,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-26"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-27",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 75.20337919702806,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-27"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-28",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+      },
+      "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-28"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-29",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "8302-2",
+          "display": "Body Height"
+        } ],
+        "text": "Body Height"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 187.77045269696015,
+        "unit": "cm",
+        "system": "http://unitsofmeasure.org",
+        "code": "cm"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-29"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 96.29602666608444,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-30",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        } ],
+        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 3.1531475307189933,
+        "unit": "{score}",
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-30"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-31",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Body Weight"
+        } ],
+        "text": "Body Weight"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 104.49865264934589,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-31"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-32",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 29.63849754304593,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-32"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-33",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 86,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 111.33645381010288,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-33"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-34",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2093-3",
+          "display": "Total Cholesterol"
+        } ],
+        "text": "Total Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 188.37086386257985,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-34"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-35",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2571-8",
+          "display": "Triglycerides"
+        } ],
+        "text": "Triglycerides"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 137.8990033282642,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-35"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-36",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "18262-6",
+          "display": "Low Density Lipoprotein Cholesterol"
+        } ],
+        "text": "Low Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 100.69486300074539,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-36"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-37",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "2085-9",
+          "display": "High Density Lipoprotein Cholesterol"
+        } ],
+        "text": "High Density Lipoprotein Cholesterol"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 60.096200196181634,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-37"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-38",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 10.077025368753755,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-38"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-39",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 4.641401127896362,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-39"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 27.312022474824648,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-40",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 15.73409131875036,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-40"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-41",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 47.3233278492019,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-41"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-42",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "787-2",
+          "display": "MCV [Entitic volume] by Automated count"
+        } ],
+        "text": "MCV [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 82.77167831681156,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-42"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-43",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "785-6",
+          "display": "MCH [Entitic mass] by Automated count"
+        } ],
+        "text": "MCH [Entitic mass] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 28.912229745938625,
+        "unit": "pg",
+        "system": "http://unitsofmeasure.org",
+        "code": "pg"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-43"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-44",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "786-4",
+          "display": "MCHC [Mass/volume] by Automated count"
+        } ],
+        "text": "MCHC [Mass/volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 33.91820844565318,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-44"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-45",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "21000-5",
+          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        } ],
+        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 45.67028386492851,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-45"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-46",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "777-3",
+          "display": "Platelets [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Platelets [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 186.98818949869022,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-46"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-47",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32207-3",
+          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 425.2380341623957,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-47"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-48",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "32623-1",
+          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        } ],
+        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 9.546046971414015,
+        "unit": "fL",
+        "system": "http://unitsofmeasure.org",
+        "code": "fL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-48"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-49",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-7"
+      },
+      "effectiveDateTime": "2017-07-29T21:56:16-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoker"
+        } ],
+        "text": "Never smoker"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-49"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 73.9872167425639,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 100.99686275913226,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "6690-2",
+          "display": "Leukocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Leukocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 8.731547038123992,
+        "unit": "10*3/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*3/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "789-8",
+          "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        } ],
+        "text": "Erythrocytes [#/volume] in Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 4.19686307448992,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "718-7",
+          "display": "Hemoglobin [Mass/volume] in Blood"
+        } ],
+        "text": "Hemoglobin [Mass/volume] in Blood"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 13.16206129137911,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-Darrel772-Breitenberg711-9",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "4544-3",
+          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        } ],
+        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+      },
+      "subject": {
+        "reference": "Patient/Darrel772-Breitenberg711"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Darrel772-Breitenberg711-3"
+      },
+      "effectiveDateTime": "2011-07-23T21:56:16-04:00",
+      "valueQuantity": {
+        "value": 46.6012775927074,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-Darrel772-Breitenberg711-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "Darrel772-Breitenberg711",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-404-ge7ce2295\n .   Person seed: 6527434954307481789  Population seed: 0</div>"
+      },
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        }, {
+          "url": "text",
+          "valueString": "White"
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+        "extension": [ {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        }, {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        } ]
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+        "valueString": "Dan465 Daugherty69"
+      }, {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+        "valueCode": "M"
+      }, {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress": {
+          "city": "Cambridge",
+          "state": "Massachusetts",
+          "country": "US"
+        }
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+        "valueDecimal": 0.0
+      }, {
+        "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+        "valueDecimal": 35.0
+      } ],
+      "identifier": [ {
+        "system": "https://github.com/synthetichealth/synthea",
+        "value": "b9253891-6240-41f2-bb48-0582d13548c7"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical Record Number"
+          } ],
+          "text": "Medical Record Number"
+        },
+        "system": "http://hospital.smarthealthit.org",
+        "value": "b9253891-6240-41f2-bb48-0582d13548c7"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS",
+            "display": "Social Security Number"
+          } ],
+          "text": "Social Security Number"
+        },
+        "system": "http://hl7.org/fhir/sid/us-ssn",
+        "value": "999-51-1482"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "DL",
+            "display": "Driver's License"
+          } ],
+          "text": "Driver's License"
+        },
+        "system": "urn:oid:2.16.840.1.113883.4.3.25",
+        "value": "S99951754"
+      }, {
+        "type": {
+          "coding": [ {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PPN",
+            "display": "Passport Number"
+          } ],
+          "text": "Passport Number"
+        },
+        "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+        "value": "X20935901X"
+      } ],
+      "name": [ {
+        "use": "official",
+        "family": "Breitenberg711",
+        "given": [ "Darrel772" ],
+        "prefix": [ "Mr." ]
+      } ],
+      "telecom": [ {
+        "system": "phone",
+        "value": "555-186-8848",
+        "use": "home"
+      } ],
+      "gender": "male",
+      "birthDate": "1983-05-14",
+      "address": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [ {
+            "url": "latitude",
+            "valueDecimal": 42.40019448227658
+          }, {
+            "url": "longitude",
+            "valueDecimal": -71.15351874266403
+          } ]
+        } ],
+        "line": [ "828 Pfannerstill Light Apt 19" ],
+        "city": "Newton",
+        "state": "Massachusetts",
+        "postalCode": "02458",
+        "country": "US"
+      } ],
+      "maritalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "S"
+        } ],
+        "text": "S"
+      },
+      "multipleBirthBoolean": false,
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "en-US",
+            "display": "English"
+          } ],
+          "text": "English"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/Darrel772-Breitenberg711"
+    }
+  } ]
+}

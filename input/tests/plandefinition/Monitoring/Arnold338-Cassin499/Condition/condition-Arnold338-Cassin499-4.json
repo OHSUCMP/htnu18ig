@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Arnold338-Cassin499-4",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "10509002",
+              "display": "Acute bronchitis (disorder)"
+            }
+          ],
+          "text": "Acute bronchitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Arnold338-Cassin499"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arnold338-Cassin499-5"
+        },
+        "onsetDateTime": "2010-04-18T15:53:16-04:00",
+        "abatementDateTime": "2010-04-25T15:53:16-04:00",
+        "recordedDate": "2010-04-18T15:53:16-04:00"
+      }

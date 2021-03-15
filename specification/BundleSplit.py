@@ -154,9 +154,24 @@ for bundlejsonfiles in glob.glob("*.json"):
 						# encounter, observation, and condition files need to be labeled as such
 						# The patient file just gets the name, no "patient" in front.
 						elif line.__contains__('"reference":') and lineN2.__contains__('"subject":'):
-							WriteFile.write('          "reference": "Patient/' + BundleDirectory + '"' + lineend)
+							if WriteDir == "Encounter":
+								WriteFile.write('          "reference": "Patient/' + BundleDirectory + '",' + lineend)
+							else:
+								WriteFile.write('          "reference": "Patient/' + BundleDirectory + '"' + lineend)
 						elif line.__contains__('"reference":') and lineN2.__contains__('"encounter":'):
 							WriteFile.write('          "reference": "Encounter/' + "encounter-" + str(BundleDirectory) + "-" + str(EncounterCount) + '"' + lineend)
+						
+						#Alphora request for removing absolute urn:uuid:123456-abc and replacing them with relative references, 
+						#for example "Provider/123456-abc" for participant and "Organization/123456-abc" for serviceProvider
+						elif line.__contains__('"reference":') and lineN4.__contains__('"participant":'):
+							relative_ref = re.search(r'("reference": "urn:uuid:)(.*)(",)', line).group(2)
+							WriteFile.write('          "reference": "Practitioner/' + str(relative_ref) + '",' + lineend)
+						elif line.__contains__('"reference":') and lineN2.__contains__('"serviceProvider":'):
+							relative_ref = re.search(r'("reference": "urn:uuid:)(.*)(",)', line).group(2)
+							WriteFile.write('          "reference": "Organization/' + str(relative_ref) + '",' + lineend)
+
+
+
 						# "issued": lines throws errors for observation files.  
 						# less than a second off the "effectivedate", so redundant	
 						elif line.__contains__('"issued":'):

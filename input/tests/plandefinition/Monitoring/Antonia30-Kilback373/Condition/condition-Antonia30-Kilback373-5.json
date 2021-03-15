@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Antonia30-Kilback373-5",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "55822004",
+              "display": "Hyperlipidemia"
+            }
+          ],
+          "text": "Hyperlipidemia"
+        },
+        "subject": {
+          "reference": "Patient/Antonia30-Kilback373"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antonia30-Kilback373-6"
+        },
+        "onsetDateTime": "1999-06-01T04:26:51-04:00",
+        "recordedDate": "1999-06-01T04:26:51-04:00"
+      }

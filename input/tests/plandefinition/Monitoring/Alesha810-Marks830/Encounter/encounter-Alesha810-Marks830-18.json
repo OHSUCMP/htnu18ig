@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Alesha810-Marks830-18",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003",
+                "display": "Encounter for check up (procedure)"
+              }
+            ],
+            "text": "Encounter for check up (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Alesha810-Marks830",
+          "display": "Ms. Alesha810 Marks830"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000001e",
+              "display": "Dr. Cedrick207 Lind531"
+            }
+          }
+        ],
+        "period": {
+          "start": "2017-04-14T01:24:38-04:00",
+          "end": "2017-04-14T01:39:38-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
+          "display": "LAWRENCE GENERAL HOSPITAL"
+        }
+      }

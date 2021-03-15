@@ -1,0 +1,19 @@
+{
+    "cards": [
+        {
+            "summary": "Hypertension Monitoring Process",
+            "indicator": "info",
+            "detail": "Cedric746 Wyman904",
+            "source": {
+                "label": "Info for those with normal blood pressure",
+                "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+            }
+        },
+        {
+            "summary": "Patient did not have above normal blood pressure.",
+            "indicator": "info",
+            "detail": "No Further Action Required.",
+            "source": {}
+        }
+    ]
+}

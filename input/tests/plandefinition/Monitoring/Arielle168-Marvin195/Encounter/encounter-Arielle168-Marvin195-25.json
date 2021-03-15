@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Arielle168-Marvin195-25",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195",
+          "display": "Mrs. Arielle168 Marvin195"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000082d2",
+              "display": "Dr. Quinton758 Hammes673"
+            }
+          }
+        ],
+        "period": {
+          "start": "2018-01-09T12:31:24-05:00",
+          "end": "2018-01-09T12:46:24-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/1502872d-de02-3dfc-91e0-9357b253333a",
+          "display": "PCP62889"
+        }
+      }

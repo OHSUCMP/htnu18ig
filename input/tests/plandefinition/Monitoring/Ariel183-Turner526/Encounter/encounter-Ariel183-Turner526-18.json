@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Ariel183-Turner526-18",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003",
+                "display": "Encounter for 'check-up'"
+              }
+            ],
+            "text": "Encounter for 'check-up'"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Ariel183-Turner526",
+          "display": "Mr. Ariel183 Turner526"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001f4",
+              "display": "Dr. Carlos172 Harber290"
+            }
+          }
+        ],
+        "period": {
+          "start": "2012-11-27T20:27:53-05:00",
+          "end": "2012-11-27T21:12:53-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/d5117822-5756-389d-9547-891a372d580f",
+          "display": "FALMOUTH HOSPITAL"
+        }
+      }

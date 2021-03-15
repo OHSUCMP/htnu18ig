@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Cedric746-Wyman904-16",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ],
+          "text": "Hemoglobin [Mass/volume] in Blood"
+        },
+        "subject": {
+          "reference": "Patient/Cedric746-Wyman904"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Cedric746-Wyman904-5"
+        },
+        "effectiveDateTime": "2010-04-03T15:42:56-04:00",
+        "valueQuantity": {
+          "value": 16.681276985001688,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        }
+      }

@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Cedric746-Wyman904-1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162864005",
+              "display": "Body mass index 30+ - obesity (finding)"
+            }
+          ],
+          "text": "Body mass index 30+ - obesity (finding)"
+        },
+        "subject": {
+          "reference": "Patient/Cedric746-Wyman904"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Cedric746-Wyman904-1"
+        },
+        "onsetDateTime": "1977-05-21T15:42:56-04:00",
+        "recordedDate": "1977-05-21T15:42:56-04:00"
+      }

@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Darrel772-Breitenberg711-20",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72514-3",
+              "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+            }
+          ],
+          "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+        },
+        "subject": {
+          "reference": "Patient/Darrel772-Breitenberg711"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Darrel772-Breitenberg711-6"
+        },
+        "effectiveDateTime": "2014-07-26T21:56:16-04:00",
+        "valueQuantity": {
+          "value": 2.2074073190181878,
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}"
+        }
+      }

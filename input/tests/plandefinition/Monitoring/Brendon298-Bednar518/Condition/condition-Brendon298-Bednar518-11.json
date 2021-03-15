@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Brendon298-Bednar518-11",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "284549007",
+              "display": "Laceration of hand"
+            }
+          ],
+          "text": "Laceration of hand"
+        },
+        "subject": {
+          "reference": "Patient/Brendon298-Bednar518"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brendon298-Bednar518-30"
+        },
+        "onsetDateTime": "2015-06-06T09:40:23-04:00",
+        "abatementDateTime": "2015-06-27T09:40:23-04:00",
+        "recordedDate": "2015-06-06T09:40:23-04:00"
+      }

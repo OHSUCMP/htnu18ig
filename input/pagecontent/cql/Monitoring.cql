@@ -53,6 +53,8 @@ define "Meets Exclusion Criteria":
     or exists "Condition Indicating End Stage Renal Disease"
     or exists "Condition Indicating Pregnancy"
 
+
+
 define "In Population":
   "Meets Inclusion Criteria"
   and not "Meets Exclusion Criteria"
@@ -103,6 +105,18 @@ define "Exclusion Reason":
     )
   else ''
 
+define "No Entry into Population":
+  not "Meets Inclusion Criteria"
+    and not "Meets Exclusion Criteria"
+
+define "No Entry Title":
+  if "Patient Has Above Normal BP" then
+   'Patient did not have above normal blood pressure.'
+  else 'Patient did not have a preexisting hypertensive condition.'
+
+define "No Entry Description":
+  'No Further Action Required.'
+
 
 /* Patient Entered Elevated BP Reading Today */
 // NOTE: Office-based visit Encounter valueset?
@@ -118,10 +132,11 @@ define "Patient Ambulatory Encounters":
 
 /* Blood Pressure Reading */
 define "Blood Pressure Observations":
-  (Common.WithUnit(Common.QualifiedObservation([Observation: "Blood Pressure Measured"]), 'mm[Hg]')) O
+  (Common.WithUnit(Common.QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
+    sort by Coalesce(start of Common."Normalize Interval"(effective), issued)
 
 define "Most Recent BP":
-  Last("Blood Pressure Observations" O sort by Coalesce(issued, start of Common."Normalize Interval"(effective)))
+  Last("Blood Pressure Observations" O sort by Coalesce(start of Common."Normalize Interval"(effective), issued))
 
 define "Blood Pressure Observations for Last 2 Years":
   ((
@@ -130,7 +145,7 @@ define "Blood Pressure Observations for Last 2 Years":
         such that Common."Normalize Interval"(BP.effective) starts 24 months or less before end of Common."Normalize Interval"(MostRecentBP.effective)
   )
   union { "Most Recent BP" }) O
-    sort by Coalesce(issued, start of Common."Normalize Interval"(effective))
+    sort by Coalesce(start of Common."Normalize Interval"(effective), issued)
 
 
 define "Ambulatory Blood Pressure Monitoring Procedures":
@@ -200,13 +215,6 @@ define "Condition Indicating Preexisting Hypertension":
 
 
 // Does patient have a BP goal?
-// Goal required lifecycleStatus of Active / planned / proposed / etc
-// Goal achievementStatus for determining if we're reaching the target.
-// Goal default primary path = category https://www.hl7.org/fhir/valueset-goal-category.html
-// Goal required description: Blood Pressure Measured? Text with target BP under 130/80?
-// Goal target.measure = Systolic / diastolic
-// Goal Quantity Value
-
 define "Qualifying Blood Pressure Goals":
   (Common.QualifiedGoal(["Goal"])) BPGoal
     where (

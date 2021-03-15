@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Candace369-Emmerich580-13",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "10509002",
+              "display": "Acute bronchitis (disorder)"
+            }
+          ],
+          "text": "Acute bronchitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Candace369-Emmerich580"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Candace369-Emmerich580-21"
+        },
+        "onsetDateTime": "2017-10-19T13:24:39-04:00",
+        "abatementDateTime": "2017-10-26T13:24:39-04:00",
+        "recordedDate": "2017-10-19T13:24:39-04:00"
+      }

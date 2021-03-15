@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Bud153-Lang846-18",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185347001",
+                "display": "Encounter for problem (procedure)"
+              }
+            ],
+            "text": "Encounter for problem (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Bud153-Lang846",
+          "display": "Mr. Bud153 Lang846"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000014a",
+              "display": "Dr. Roberto515 Haag279"
+            }
+          }
+        ],
+        "period": {
+          "start": "2011-02-27T16:00:49-05:00",
+          "end": "2011-02-27T16:15:49-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/a9f20dc1-5147-3789-bcef-bbecb41c5983",
+          "display": "HOLY FAMILY HOSPITAL"
+        }
+      }

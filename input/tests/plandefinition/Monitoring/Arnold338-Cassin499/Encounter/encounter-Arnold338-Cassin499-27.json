@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Arnold338-Cassin499-27",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Arnold338-Cassin499",
+          "display": "Mr. Arnold338 Cassin499"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c382",
+              "display": "Dr. Greg949 Kshlerin58"
+            }
+          }
+        ],
+        "period": {
+          "start": "2017-11-06T14:53:16-05:00",
+          "end": "2017-11-06T15:23:16-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/f28ce7cd-867f-3431-99e3-ab62ed072852",
+          "display": "PCP140496"
+        }
+      }

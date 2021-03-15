@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Bud153-Lang846-1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "40055000",
+              "display": "Chronic sinusitis (disorder)"
+            }
+          ],
+          "text": "Chronic sinusitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Bud153-Lang846"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Bud153-Lang846-1"
+        },
+        "onsetDateTime": "1994-04-24T17:00:49-04:00",
+        "recordedDate": "1994-04-24T17:00:49-04:00"
+      }

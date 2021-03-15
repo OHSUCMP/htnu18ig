@@ -1,0 +1,38 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Arielle168-Marvin195-2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "162864005",
+              "display": "Body mass index 30+ - obesity (finding)"
+            }
+          ],
+          "text": "Body mass index 30+ - obesity (finding)"
+        },
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arielle168-Marvin195-3"
+        },
+        "onsetDateTime": "1981-01-12T12:31:24-05:00",
+        "recordedDate": "1981-01-12T12:31:24-05:00"
+      }
