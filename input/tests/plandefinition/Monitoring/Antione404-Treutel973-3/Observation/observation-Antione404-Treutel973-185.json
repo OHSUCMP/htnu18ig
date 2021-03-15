@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Antione404-Treutel973-185",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "49765-1",
+              "display": "Calcium"
+            }
+          ],
+          "text": "Calcium"
+        },
+        "subject": {
+          "reference": "Patient/Antione404-Treutel973-3"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antione404-Treutel973-23"
+        },
+        "effectiveDateTime": "2018-09-13T14:44:10-04:00",
+        "valueQuantity": {
+          "value": 9.737630243977875,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

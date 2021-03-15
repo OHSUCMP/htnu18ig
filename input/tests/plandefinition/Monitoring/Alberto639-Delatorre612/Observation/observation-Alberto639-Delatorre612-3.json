@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Alberto639-Delatorre612-3",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/Alberto639-Delatorre612"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
+        },
+        "effectiveDateTime": "2009-12-06T21:19:43-05:00",
+        "valueQuantity": {
+          "value": 94.23624395850963,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }

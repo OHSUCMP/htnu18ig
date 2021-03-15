@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arielle168-Marvin195-278",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2885-2",
+              "display": "Protein [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Protein [Mass/volume] in Serum or Plasma"
+        },
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arielle168-Marvin195-40"
+        },
+        "effectiveDateTime": "2018-12-05T12:31:24-05:00",
+        "valueQuantity": {
+          "value": 61.84129456202246,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        }
+      }

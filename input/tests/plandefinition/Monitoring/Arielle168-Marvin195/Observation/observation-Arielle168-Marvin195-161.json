@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arielle168-Marvin195-161",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1920-8",
+              "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        },
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arielle168-Marvin195-31"
+        },
+        "effectiveDateTime": "2014-12-06T12:31:24-05:00",
+        "valueQuantity": {
+          "value": 19.470554552663778,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        }
+      }

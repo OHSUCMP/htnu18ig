@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Andreas188-Hoeger474-221",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1920-8",
+              "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+        },
+        "subject": {
+          "reference": "Patient/Andreas188-Hoeger474"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Andreas188-Hoeger474-47"
+        },
+        "effectiveDateTime": "2017-06-30T17:28:27-04:00",
+        "valueQuantity": {
+          "value": 10.83090117424352,
+          "unit": "U/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "U/L"
+        }
+      }

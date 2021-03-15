@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Andreas188-Hoeger474-195",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "High Density Lipoprotein Cholesterol"
+            }
+          ],
+          "text": "High Density Lipoprotein Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/Andreas188-Hoeger474"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Andreas188-Hoeger474-45"
+        },
+        "effectiveDateTime": "2016-06-30T17:28:27-04:00",
+        "valueQuantity": {
+          "value": 47.319202201113455,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

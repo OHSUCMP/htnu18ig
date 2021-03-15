@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Arielle168-Marvin195-89",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "21000-5",
+              "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+            }
+          ],
+          "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Arielle168-Marvin195"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Arielle168-Marvin195-25"
+        },
+        "effectiveDateTime": "2012-01-09T12:31:24-05:00",
+        "valueQuantity": {
+          "value": 39.08129235614537,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

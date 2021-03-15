@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Brendon298-Bednar518-144",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "procedure",
+                "display": "procedure"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "19926-5",
+              "display": "FEV1/FVC"
+            }
+          ],
+          "text": "FEV1/FVC"
+        },
+        "subject": {
+          "reference": "Patient/Brendon298-Bednar518"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Brendon298-Bednar518-25"
+        },
+        "effectiveDateTime": "2014-02-17T08:40:23-05:00",
+        "valueQuantity": {
+          "value": 19.55217280768185,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

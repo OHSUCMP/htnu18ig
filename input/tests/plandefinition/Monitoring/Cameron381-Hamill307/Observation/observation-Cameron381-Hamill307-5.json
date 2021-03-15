@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Cameron381-Hamill307-5",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "Body Mass Index"
+            }
+          ],
+          "text": "Body Mass Index"
+        },
+        "subject": {
+          "reference": "Patient/Cameron381-Hamill307"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Cameron381-Hamill307-10"
+        },
+        "effectiveDateTime": "2009-12-04T16:23:48-05:00",
+        "valueQuantity": {
+          "value": 29.961848599979906,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      }

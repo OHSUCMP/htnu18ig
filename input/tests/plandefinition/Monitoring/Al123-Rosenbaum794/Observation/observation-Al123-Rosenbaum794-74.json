@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Al123-Rosenbaum794-74",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/Al123-Rosenbaum794"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Al123-Rosenbaum794-15"
+        },
+        "effectiveDateTime": "2016-06-06T15:17:19-04:00",
+        "valueQuantity": {
+          "value": 80.28498450392476,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }

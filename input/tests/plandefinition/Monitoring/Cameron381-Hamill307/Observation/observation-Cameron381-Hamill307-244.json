@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Cameron381-Hamill307-244",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "38483-4",
+              "display": "Creatinine"
+            }
+          ],
+          "text": "Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/Cameron381-Hamill307"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Cameron381-Hamill307-25"
+        },
+        "effectiveDateTime": "2018-01-19T16:23:48-05:00",
+        "valueQuantity": {
+          "value": 0.9459495194014585,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }

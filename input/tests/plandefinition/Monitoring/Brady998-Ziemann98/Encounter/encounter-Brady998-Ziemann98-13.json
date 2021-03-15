@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Brady998-Ziemann98-13",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "162673000",
+                "display": "General examination of patient (procedure)"
+              }
+            ],
+            "text": "General examination of patient (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Brady998-Ziemann98",
+          "display": "Mr. Brady998 Ziemann98"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000008b4c",
+              "display": "Dr. Carroll471 Beer512"
+            }
+          }
+        ],
+        "period": {
+          "start": "2018-08-28T22:15:37-04:00",
+          "end": "2018-08-28T22:30:37-04:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/dfaa68c4-d3ff-3d23-8a29-235efa0b19a4",
+          "display": "PCP68677"
+        }
+      }

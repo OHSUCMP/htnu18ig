@@ -1,0 +1,52 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Alesha810-Marks830-14",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EMER"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "183478001",
+                "display": "Emergency hospital admission for asthma"
+              }
+            ],
+            "text": "Emergency hospital admission for asthma"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Alesha810-Marks830",
+          "display": "Ms. Alesha810 Marks830"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000001e",
+              "display": "Dr. Cedrick207 Lind531"
+            }
+          }
+        ],
+        "period": {
+          "start": "2016-02-12T00:24:38-05:00",
+          "end": "2016-02-12T01:24:38-05:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "195967001",
+                "display": "Asthma"
+              }
+            ]
+          }
+        ],
+        "serviceProvider": {
+          "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
+          "display": "LAWRENCE GENERAL HOSPITAL"
+        }
+      }

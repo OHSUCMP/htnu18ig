@@ -144,9 +144,9 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "onsetDateTime": "2019-05-06T01:24:38-04:00",
-      "abatementDateTime": "2019-05-20T01:24:38-04:00",
-      "recordedDate": "2019-05-06T01:24:38-04:00"
+      "onsetDateTime": "2012-05-06T01:24:38-04:00",
+      "abatementDateTime": "2012-05-20T01:24:38-04:00",
+      "recordedDate": "2012-05-06T01:24:38-04:00"
     },
     "request": {
       "method": "PUT",
@@ -182,9 +182,9 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-16"
       },
-      "onsetDateTime": "2019-03-29T01:24:38-04:00",
-      "abatementDateTime": "2019-04-10T01:24:38-04:00",
-      "recordedDate": "2019-03-29T01:24:38-04:00"
+      "onsetDateTime": "2016-03-29T01:24:38-04:00",
+      "abatementDateTime": "2016-04-10T01:24:38-04:00",
+      "recordedDate": "2016-03-29T01:24:38-04:00"
     },
     "request": {
       "method": "PUT",
@@ -265,8 +265,8 @@
         }
       } ],
       "period": {
-        "start": "2019-05-10T01:24:38-04:00",
-        "end": "2019-05-10T01:39:38-04:00"
+        "start": "2016-05-10T01:24:38-04:00",
+        "end": "2016-05-10T01:39:38-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
@@ -305,8 +305,8 @@
         }
       } ],
       "period": {
-        "start": "2019-05-06T01:24:38-04:00",
-        "end": "2019-05-06T01:39:38-04:00"
+        "start": "2012-05-06T01:24:38-04:00",
+        "end": "2012-05-06T01:39:38-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -352,8 +352,8 @@
         }
       } ],
       "period": {
-        "start": "2019-11-28T00:24:38-05:00",
-        "end": "2019-11-28T00:39:38-05:00"
+        "start": "2017-11-28T00:24:38-05:00",
+        "end": "2017-11-28T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -392,8 +392,8 @@
         }
       } ],
       "period": {
-        "start": "2019-11-05T00:24:38-05:00",
-        "end": "2019-11-05T00:39:38-05:00"
+        "start": "2017-11-05T00:24:38-05:00",
+        "end": "2017-11-05T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -432,8 +432,8 @@
         }
       } ],
       "period": {
-        "start": "2019-02-12T00:24:38-05:00",
-        "end": "2019-02-12T01:24:38-05:00"
+        "start": "2016-02-12T00:24:38-05:00",
+        "end": "2016-02-12T01:24:38-05:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -479,8 +479,8 @@
         }
       } ],
       "period": {
-        "start": "2019-02-14T00:24:38-05:00",
-        "end": "2019-02-14T00:39:38-05:00"
+        "start": "2016-02-14T00:24:38-05:00",
+        "end": "2016-02-14T00:39:38-05:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -526,8 +526,8 @@
         }
       } ],
       "period": {
-        "start": "2019-03-29T01:24:38-04:00",
-        "end": "2019-03-29T01:39:38-04:00"
+        "start": "2016-03-29T01:24:38-04:00",
+        "end": "2016-03-29T01:39:38-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -573,8 +573,8 @@
         }
       } ],
       "period": {
-        "start": "2019-04-07T01:24:38-04:00",
-        "end": "2019-04-07T01:39:38-04:00"
+        "start": "2016-04-07T01:24:38-04:00",
+        "end": "2016-04-07T01:39:38-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/f1313c7d-3148-335b-adc3-337f15567b82",
@@ -613,8 +613,8 @@
         }
       } ],
       "period": {
-        "start": "2019-04-14T01:24:38-04:00",
-        "end": "2019-04-14T01:39:38-04:00"
+        "start": "2017-04-14T01:24:38-04:00",
+        "end": "2017-04-14T01:39:38-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/f1fbcbfb-fcfa-3bd2-b7f4-df20f1b3c3a4",
@@ -653,8 +653,8 @@
         }
       } ],
       "period": {
-        "start": "2019-11-10T00:24:38-05:00",
-        "end": "2019-11-10T00:39:38-05:00"
+        "start": "2017-11-10T00:24:38-05:00",
+        "end": "2017-11-10T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -740,8 +740,8 @@
         }
       } ],
       "period": {
-        "start": "2019-11-16T00:24:38-05:00",
-        "end": "2019-11-16T00:54:38-05:00"
+        "start": "2017-11-16T00:24:38-05:00",
+        "end": "2017-11-16T00:54:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -780,8 +780,8 @@
         }
       } ],
       "period": {
-        "start": "2019-11-22T00:24:38-05:00",
-        "end": "2019-11-22T00:39:38-05:00"
+        "start": "2018-11-22T00:24:38-05:00",
+        "end": "2018-11-22T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -900,8 +900,8 @@
         }
       } ],
       "period": {
-        "start": "2019-11-19T00:24:38-05:00",
-        "end": "2019-11-19T00:39:38-05:00"
+        "start": "2016-11-19T00:24:38-05:00",
+        "end": "2016-11-19T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -1074,8 +1074,8 @@
         }
       } ],
       "period": {
-        "start": "2019-11-24T00:24:38-05:00",
-        "end": "2019-11-24T00:39:38-05:00"
+        "start": "2016-11-24T00:24:38-05:00",
+        "end": "2016-11-24T00:39:38-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/54f6fc59-7709-310f-9249-1e92d0464b00",
@@ -1090,19 +1090,22 @@
     "resource": {
       "resourceType": "Goal",
       "id": "goal-Alesha810-Marks830-1",
-      "lifecycleStatus": "planned",
+      "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
-          "code": "in-progress"
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "active",
+          "display": "Active"
         } ]
       },
       "description": {
-        "text": "goals for HTNU18"
+        "text": "Lower Blood Pressure to 139/89."
       },
       "subject": {
         "reference": "Patient/Alesha810-Marks830"
       },
-      "startDate": "2020-05-18",
+      "startDate": "2020-01-14",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -1113,7 +1116,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 111,
+          "value": 139,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -1128,7 +1131,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 75,
+          "value": 89,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -1165,7 +1168,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -1203,7 +1206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -1241,7 +1244,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -1279,70 +1282,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 72.98831814031367,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 131.85005905322754,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-12",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2016-11-24T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -1405,45 +1345,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 189.12126181004368,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-13"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-13",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 189.12126181004368,
         "unit": "mg/dL",
@@ -1481,45 +1383,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 110.93157888298342,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-14",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 110.93157888298342,
         "unit": "mg/dL",
@@ -1557,45 +1421,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 89.15392652380663,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-15"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-15",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 89.15392652380663,
         "unit": "mg/dL",
@@ -1633,7 +1459,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 77.78101950964036,
         "unit": "mg/dL",
@@ -1671,7 +1497,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 9.963408128633784,
         "unit": "10*3/uL",
@@ -1709,45 +1535,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 3.953323310741711,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-18"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-18",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 3.953323310741711,
         "unit": "10*6/uL",
@@ -1785,7 +1573,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 14.656768990520666,
         "unit": "g/dL",
@@ -1823,45 +1611,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 3.3512054198931174,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-5"
-      },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
       "valueQuantity": {
         "value": 3.3512054198931174,
         "unit": "{score}",
@@ -1899,7 +1649,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 48.44143477628018,
         "unit": "%",
@@ -1937,7 +1687,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 89.23779935011983,
         "unit": "fL",
@@ -1975,45 +1725,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 27.43081477867061,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-22"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-22",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.43081477867061,
         "unit": "pg",
@@ -2051,7 +1763,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 33.15719128456441,
         "unit": "g/dL",
@@ -2089,45 +1801,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 44.015084388458064,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-24"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-24",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 44.015084388458064,
         "unit": "fL",
@@ -2165,45 +1839,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 210.6273154244719,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-25"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-25",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 210.6273154244719,
         "unit": "10*3/uL",
@@ -2241,7 +1877,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 268.67951473420686,
         "unit": "fL",
@@ -2279,7 +1915,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueQuantity": {
         "value": 11.230019304893485,
         "unit": "fL",
@@ -2317,47 +1953,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-9"
       },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "8517006",
-          "display": "Former smoker"
-        } ],
-        "text": "Former smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-28"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-28",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
+      "effectiveDateTime": "2011-11-24T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -2397,45 +1993,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
-      "valueQuantity": {
-        "value": 155.01680645430415,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-29"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-29",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-11"
-      },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -2473,45 +2031,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 65.79684973105927,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-5"
-      },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -2549,7 +2069,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
       "valueQuantity": {
         "value": 1.3611606013389705,
         "unit": "{score}",
@@ -2587,7 +2107,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -2625,45 +2145,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
-      "valueQuantity": {
-        "value": 27.38088803859094,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-32"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-32",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-11"
-      },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -2701,70 +2183,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 73.43063713020616,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 124.97982289550339,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-33"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-33",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-11"
-      },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2016-05-10T01:24:38-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -2827,47 +2246,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-11"
       },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "8517006",
-          "display": "Former smoker"
-        } ],
-        "text": "Former smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-34"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-34",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-11"
-      },
-      "effectiveDateTime": "2019-05-10T01:24:38-04:00",
+      "effectiveDateTime": "2012-05-10T01:24:38-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -2907,7 +2286,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -2945,7 +2324,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
       "valueQuantity": {
         "value": 3.542390063459913,
         "unit": "{score}",
@@ -2983,7 +2362,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -3021,45 +2400,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 27.38088803859094,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-38"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-38",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-12"
-      },
-      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -3097,70 +2438,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 80.1030955878793,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 119.84972065684128,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-39"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-39",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-12"
-      },
-      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2017-11-28T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -3223,45 +2501,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 27.38088803859094,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-5"
-      },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -3299,7 +2539,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-12"
       },
-      "effectiveDateTime": "2019-11-28T00:24:38-05:00",
+      "effectiveDateTime": "2013-11-28T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -3339,7 +2579,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -3377,45 +2617,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 2.072250263933972,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-42"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-42",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-13"
-      },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 2.072250263933972,
         "unit": "{score}",
@@ -3453,45 +2655,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 65.79684973105927,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-43"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-43",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-13"
-      },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -3529,45 +2693,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 27.38088803859094,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-44"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-44",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-13"
-      },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -3605,70 +2731,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 73,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 116.58483903330045,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-45"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-45",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-13"
-      },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2017-11-05T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -3731,7 +2794,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 194.70322634025746,
         "unit": "mg/dL",
@@ -3769,7 +2832,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 116.72101146761173,
         "unit": "mg/dL",
@@ -3807,45 +2870,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 107.52292666005265,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-48"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-48",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-13"
-      },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 107.52292666005265,
         "unit": "mg/dL",
@@ -3883,45 +2908,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 63.83609738668246,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-49"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-49",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-13"
-      },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueQuantity": {
         "value": 63.83609738668246,
         "unit": "mg/dL",
@@ -3959,7 +2946,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2016-11-19T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -4022,7 +3009,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-13"
       },
-      "effectiveDateTime": "2019-11-05T00:24:38-05:00",
+      "effectiveDateTime": "2015-11-05T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -4062,7 +3049,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-16"
       },
-      "effectiveDateTime": "2019-03-29T01:24:38-04:00",
+      "effectiveDateTime": "2016-03-29T01:24:38-04:00",
       "valueQuantity": {
         "value": 37.25583508874942,
         "unit": "Cel",
@@ -4100,45 +3087,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
-      "valueQuantity": {
-        "value": 155.01680645430415,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-52"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-52",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-18"
-      },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -4176,45 +3125,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
-      "valueQuantity": {
-        "value": 3.7099253661720883,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-53"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-53",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-18"
-      },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
       "valueQuantity": {
         "value": 3.7099253661720883,
         "unit": "{score}",
@@ -4252,45 +3163,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
-      "valueQuantity": {
-        "value": 65.79684973105927,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-54"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-54",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-18"
-      },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -4328,45 +3201,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
-      "valueQuantity": {
-        "value": 27.38088803859094,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-55"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-55",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-18"
-      },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -4404,7 +3239,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2017-04-14T01:24:38-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -4467,7 +3302,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-18"
       },
-      "effectiveDateTime": "2019-04-14T01:24:38-04:00",
+      "effectiveDateTime": "2016-04-14T01:24:38-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -4507,7 +3342,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -4545,45 +3380,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 2.9070699112198977,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-59"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-59",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-19"
-      },
-      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
       "valueQuantity": {
         "value": 2.9070699112198977,
         "unit": "{score}",
@@ -4621,7 +3418,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-5"
       },
-      "effectiveDateTime": "2019-11-19T00:24:38-05:00",
+      "effectiveDateTime": "2009-11-19T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -4661,7 +3458,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
       "valueQuantity": {
         "value": 65.79684973105927,
         "unit": "kg",
@@ -4699,7 +3496,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2016-11-10T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -4737,7 +3534,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alesha810-Marks830-19"
       },
-      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
+      "effectiveDateTime": "2017-11-10T00:24:38-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -4817,46 +3614,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-63",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-19"
-      },
-      "effectiveDateTime": "2019-11-10T00:24:38-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "8517006",
-          "display": "Former smoker"
-        } ],
-        "text": "Former smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-63"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-64",
       "status": "final",
       "category": [ {
@@ -4881,44 +3638,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
       "effectiveDateTime": "2017-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 155.01680645430415,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-64"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-64",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -4971,44 +3690,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-65",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 2.481255645341747,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-65"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-66",
       "status": "final",
       "category": [ {
@@ -5047,44 +3728,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-66",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 65.79684973105927,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-66"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-67",
       "status": "final",
       "category": [ {
@@ -5109,44 +3752,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
       "effectiveDateTime": "2017-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 27.38088803859094,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-67"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-67",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -5224,69 +3829,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-68",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 89,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 115.02102510870571,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-68"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-69",
       "status": "final",
       "category": [ {
@@ -5311,44 +3853,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
       "effectiveDateTime": "2017-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 4.8536148008758175,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-69"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-69",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "6690-2",
-          "display": "Leukocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Leukocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 4.8536148008758175,
         "unit": "10*3/uL",
@@ -5439,44 +3943,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-70",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 4.352730111870313,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-70"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-71",
       "status": "final",
       "category": [ {
@@ -5501,44 +3967,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
       "effectiveDateTime": "2017-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 14.430972827914175,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-71"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-71",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "718-7",
-          "display": "Hemoglobin [Mass/volume] in Blood"
-        } ],
-        "text": "Hemoglobin [Mass/volume] in Blood"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 14.430972827914175,
         "unit": "g/dL",
@@ -5591,44 +4019,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-72",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "4544-3",
-          "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
-        } ],
-        "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 48.211447825793854,
-        "unit": "%",
-        "system": "http://unitsofmeasure.org",
-        "code": "%"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-72"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-73",
       "status": "final",
       "category": [ {
@@ -5653,44 +4043,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
       "effectiveDateTime": "2017-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 92.14681288834502,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-73"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-73",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "787-2",
-          "display": "MCV [Entitic volume] by Automated count"
-        } ],
-        "text": "MCV [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 92.14681288834502,
         "unit": "fL",
@@ -5743,44 +4095,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-74",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "785-6",
-          "display": "MCH [Entitic mass] by Automated count"
-        } ],
-        "text": "MCH [Entitic mass] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 32.348447496902125,
-        "unit": "pg",
-        "system": "http://unitsofmeasure.org",
-        "code": "pg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-74"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-75",
       "status": "final",
       "category": [ {
@@ -5805,44 +4119,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
       "effectiveDateTime": "2017-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 35.287986999768975,
-        "unit": "g/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "g/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-75"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-75",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "786-4",
-          "display": "MCHC [Mass/volume] by Automated count"
-        } ],
-        "text": "MCHC [Mass/volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 35.287986999768975,
         "unit": "g/dL",
@@ -5895,44 +4171,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-76",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "21000-5",
-          "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
-        } ],
-        "text": "Erythrocyte distribution width [Entitic volume] by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 39.44326306635944,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-76"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-77",
       "status": "final",
       "category": [ {
@@ -5957,44 +4195,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
       "effectiveDateTime": "2017-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 418.0016492722819,
-        "unit": "10*3/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*3/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-77"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-77",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "777-3",
-          "display": "Platelets [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Platelets [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 418.0016492722819,
         "unit": "10*3/uL",
@@ -6047,44 +4247,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-78",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32207-3",
-          "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 318.2642148107422,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-78"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-79",
       "status": "final",
       "category": [ {
@@ -6109,44 +4271,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-20"
       },
       "effectiveDateTime": "2017-11-16T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 10.58609485122474,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-79"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-79",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
       "valueQuantity": {
         "value": 10.58609485122474,
         "unit": "fL",
@@ -6199,44 +4323,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-8",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 155.01680645430415,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-80",
       "status": "final",
       "category": [ {
@@ -6277,46 +4363,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-80",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-20"
-      },
-      "effectiveDateTime": "2019-11-16T00:24:38-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "8517006",
-          "display": "Former smoker"
-        } ],
-        "text": "Former smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-80"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-81",
       "status": "final",
       "category": [ {
@@ -6341,44 +4387,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
       "effectiveDateTime": "2018-11-22T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 155.01680645430415,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-81"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-81",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 155.01680645430415,
         "unit": "cm",
@@ -6431,44 +4439,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-82",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 0.43073343370131845,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-82"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-83",
       "status": "final",
       "category": [ {
@@ -6507,44 +4477,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-83",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 65.79684973105927,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-83"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-84",
       "status": "final",
       "category": [ {
@@ -6569,44 +4501,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
       "effectiveDateTime": "2018-11-22T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 27.38088803859094,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-84"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-84",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 27.38088803859094,
         "unit": "kg/m2",
@@ -6684,69 +4578,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-85",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 96,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 109.29940925015008,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-85"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-86",
       "status": "final",
       "category": [ {
@@ -6771,44 +4602,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
       "effectiveDateTime": "2018-11-22T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 189.5461446255375,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-86"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-86",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2093-3",
-          "display": "Total Cholesterol"
-        } ],
-        "text": "Total Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 189.5461446255375,
         "unit": "mg/dL",
@@ -6861,44 +4654,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-87",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2571-8",
-          "display": "Triglycerides"
-        } ],
-        "text": "Triglycerides"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 147.2569551323221,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-87"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-88",
       "status": "final",
       "category": [ {
@@ -6937,44 +4692,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-88",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 99.45316057404943,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-88"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-89",
       "status": "final",
       "category": [ {
@@ -6999,44 +4716,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
       "effectiveDateTime": "2018-11-22T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 60.64159302502363,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-89"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-89",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueQuantity": {
         "value": 60.64159302502363,
         "unit": "mg/dL",
@@ -7089,44 +4768,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-9",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-9"
-      },
-      "effectiveDateTime": "2019-11-24T00:24:38-05:00",
-      "valueQuantity": {
-        "value": 2.5789023713849293,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-9"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alesha810-Marks830-90",
       "status": "final",
       "category": [ {
@@ -7151,46 +4792,6 @@
         "reference": "Encounter/encounter-Alesha810-Marks830-21"
       },
       "effectiveDateTime": "2018-11-22T00:24:38-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "8517006",
-          "display": "Former smoker"
-        } ],
-        "text": "Former smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alesha810-Marks830-90"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alesha810-Marks830-90",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Alesha810-Marks830"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alesha810-Marks830-21"
-      },
-      "effectiveDateTime": "2019-11-22T00:24:38-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",

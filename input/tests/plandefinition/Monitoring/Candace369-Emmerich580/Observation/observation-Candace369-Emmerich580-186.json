@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Candace369-Emmerich580-186",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "33914-3",
+              "display": "Estimated Glomerular Filtration Rate"
+            }
+          ],
+          "text": "Estimated Glomerular Filtration Rate"
+        },
+        "subject": {
+          "reference": "Patient/Candace369-Emmerich580"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Candace369-Emmerich580-20"
+        },
+        "effectiveDateTime": "2017-03-24T13:24:39-04:00",
+        "valueQuantity": {
+          "value": 125.75579156928035,
+          "unit": "mL/min/{1.73_m2}",
+          "system": "http://unitsofmeasure.org",
+          "code": "mL/min/{1.73_m2}"
+        }
+      }

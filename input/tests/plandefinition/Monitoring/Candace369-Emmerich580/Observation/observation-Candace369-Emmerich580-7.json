@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Candace369-Emmerich580-7",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "Hemoglobin A1c/Hemoglobin.total in Blood"
+        },
+        "subject": {
+          "reference": "Patient/Candace369-Emmerich580"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Candace369-Emmerich580-2"
+        },
+        "effectiveDateTime": "2010-03-19T13:24:39-04:00",
+        "valueQuantity": {
+          "value": 7.242916091398505,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

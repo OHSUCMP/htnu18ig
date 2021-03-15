@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Alesha810-Marks830-78",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "32207-3",
+              "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Alesha810-Marks830"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alesha810-Marks830-20"
+        },
+        "effectiveDateTime": "2017-11-16T00:24:38-05:00",
+        "valueQuantity": {
+          "value": 318.2642148107422,
+          "unit": "fL",
+          "system": "http://unitsofmeasure.org",
+          "code": "fL"
+        }
+      }

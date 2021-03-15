@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Candace369-Emmerich580-75",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/Candace369-Emmerich580"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Candace369-Emmerich580-12"
+        },
+        "effectiveDateTime": "2013-05-17T13:24:39-04:00",
+        "valueQuantity": {
+          "value": 73.9806509260267,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }

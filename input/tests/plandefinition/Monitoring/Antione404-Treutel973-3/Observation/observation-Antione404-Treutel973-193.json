@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Antione404-Treutel973-193",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4544-3",
+              "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+            }
+          ],
+          "text": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Antione404-Treutel973-3"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Antione404-Treutel973-23"
+        },
+        "effectiveDateTime": "2018-09-13T14:44:10-04:00",
+        "valueQuantity": {
+          "value": 48.79242631192873,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }

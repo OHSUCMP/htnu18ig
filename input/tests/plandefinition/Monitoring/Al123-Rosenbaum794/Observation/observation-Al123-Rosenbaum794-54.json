@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Al123-Rosenbaum794-54",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Erythrocytes [#/volume] in Blood by Automated count"
+        },
+        "subject": {
+          "reference": "Patient/Al123-Rosenbaum794"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Al123-Rosenbaum794-12"
+        },
+        "effectiveDateTime": "2015-04-27T15:17:19-04:00",
+        "valueQuantity": {
+          "value": 4.468579180879722,
+          "unit": "10*6/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*6/uL"
+        }
+      }

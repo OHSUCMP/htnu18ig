@@ -1,0 +1,39 @@
+{
+        "resourceType": "Condition",
+        "id": "condition-Candace369-Emmerich580-14",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444814009",
+              "display": "Viral sinusitis (disorder)"
+            }
+          ],
+          "text": "Viral sinusitis (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/Candace369-Emmerich580"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Candace369-Emmerich580-24"
+        },
+        "onsetDateTime": "2018-05-18T13:24:39-04:00",
+        "abatementDateTime": "2018-05-25T13:24:39-04:00",
+        "recordedDate": "2018-05-18T13:24:39-04:00"
+      }

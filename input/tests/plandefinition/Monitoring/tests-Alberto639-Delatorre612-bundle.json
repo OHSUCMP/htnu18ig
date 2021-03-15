@@ -42,117 +42,6 @@
   }, {
     "resource": {
       "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-1",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "59621000",
-          "display": "Hypertension"
-        } ],
-        "text": "Hypertension"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-1"
-      },
-      "onsetDateTime": "1960-10-23T22:19:43-04:00",
-      "recordedDate": "1960-10-23T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-1",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "59621000",
-          "display": "Hypertension"
-        } ],
-        "text": "Hypertension"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-1"
-      },
-      "onsetDateTime": "1960-10-23T22:19:43-04:00",
-      "recordedDate": "1960-10-23T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-1",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "59621000",
-          "display": "Hypertension"
-        } ],
-        "text": "Hypertension"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-1"
-      },
-      "onsetDateTime": "1960-10-23T22:19:43-04:00",
-      "recordedDate": "1960-10-23T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
       "id": "condition-Alberto639-Delatorre612-2",
       "clinicalStatus": {
         "coding": [ {
@@ -186,154 +75,6 @@
     "request": {
       "method": "PUT",
       "url": "Condition/condition-Alberto639-Delatorre612-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-2",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162864005",
-          "display": "Body mass index 30+ - obesity (finding)"
-        } ],
-        "text": "Body mass index 30+ - obesity (finding)"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-2"
-      },
-      "onsetDateTime": "1986-09-14T22:19:43-04:00",
-      "recordedDate": "1986-09-14T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-2",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162864005",
-          "display": "Body mass index 30+ - obesity (finding)"
-        } ],
-        "text": "Body mass index 30+ - obesity (finding)"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-2"
-      },
-      "onsetDateTime": "1986-09-14T22:19:43-04:00",
-      "recordedDate": "1986-09-14T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-2",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162864005",
-          "display": "Body mass index 30+ - obesity (finding)"
-        } ],
-        "text": "Body mass index 30+ - obesity (finding)"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-2"
-      },
-      "onsetDateTime": "1986-09-14T22:19:43-04:00",
-      "recordedDate": "1986-09-14T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-3",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "230690007",
-          "display": "Stroke"
-        } ],
-        "text": "Stroke"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-3"
-      },
-      "onsetDateTime": "2019-03-02T21:19:43-05:00",
-      "recordedDate": "2019-03-02T21:19:43-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-3"
     }
   }, {
     "resource": {
@@ -371,194 +112,6 @@
     "request": {
       "method": "PUT",
       "url": "Condition/condition-Alberto639-Delatorre612-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-3",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "230690007",
-          "display": "Stroke"
-        } ],
-        "text": "Stroke"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-3"
-      },
-      "onsetDateTime": "2003-03-02T21:19:43-05:00",
-      "recordedDate": "2003-03-02T21:19:43-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-3",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "230690007",
-          "display": "Stroke"
-        } ],
-        "text": "Stroke"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-3"
-      },
-      "onsetDateTime": "2019-03-02T21:19:43-05:00",
-      "recordedDate": "2019-03-02T21:19:43-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-4",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "62106007",
-          "display": "Concussion with no loss of consciousness"
-        } ],
-        "text": "Concussion with no loss of consciousness"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-5"
-      },
-      "onsetDateTime": "2010-04-16T22:19:43-04:00",
-      "abatementDateTime": "2010-05-16T22:19:43-04:00",
-      "recordedDate": "2010-04-16T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-4",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "62106007",
-          "display": "Concussion with no loss of consciousness"
-        } ],
-        "text": "Concussion with no loss of consciousness"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-5"
-      },
-      "onsetDateTime": "2010-04-16T22:19:43-04:00",
-      "abatementDateTime": "2010-05-16T22:19:43-04:00",
-      "recordedDate": "2010-04-16T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-4",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "62106007",
-          "display": "Concussion with no loss of consciousness"
-        } ],
-        "text": "Concussion with no loss of consciousness"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-5"
-      },
-      "onsetDateTime": "2010-04-16T22:19:43-04:00",
-      "abatementDateTime": "2010-05-16T22:19:43-04:00",
-      "recordedDate": "2010-04-16T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-4"
     }
   }, {
     "resource": {
@@ -677,44 +230,6 @@
   }, {
     "resource": {
       "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-6",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
-        } ],
-        "text": "Viral sinusitis (disorder)"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-13"
-      },
-      "onsetDateTime": "2019-01-22T21:19:43-05:00",
-      "abatementDateTime": "2019-02-12T21:19:43-05:00",
-      "recordedDate": "2019-01-22T21:19:43-05:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
       "id": "condition-Alberto639-Delatorre612-7",
       "clinicalStatus": {
         "coding": [ {
@@ -745,44 +260,6 @@
       "onsetDateTime": "2016-03-27T22:19:43-04:00",
       "abatementDateTime": "2016-04-10T22:19:43-04:00",
       "recordedDate": "2016-03-27T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-7",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "10509002",
-          "display": "Acute bronchitis (disorder)"
-        } ],
-        "text": "Acute bronchitis (disorder)"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-17"
-      },
-      "onsetDateTime": "2019-03-27T22:19:43-04:00",
-      "abatementDateTime": "2019-04-10T22:19:43-04:00",
-      "recordedDate": "2019-03-27T22:19:43-04:00"
     },
     "request": {
       "method": "PUT",
@@ -825,124 +302,6 @@
     "request": {
       "method": "PUT",
       "url": "Condition/condition-Alberto639-Delatorre612-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Condition",
-      "id": "condition-Alberto639-Delatorre612-8",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "resolved"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
-        } ],
-        "text": "Viral sinusitis (disorder)"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
-      },
-      "onsetDateTime": "2019-04-03T22:19:43-04:00",
-      "abatementDateTime": "2019-04-10T22:19:43-04:00",
-      "recordedDate": "2019-04-03T22:19:43-04:00"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Condition/condition-Alberto639-Delatorre612-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-1",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "1960-10-23T22:19:43-04:00",
-        "end": "1960-10-23T22:34:43-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-1",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "1960-10-23T22:19:43-04:00",
-        "end": "1960-10-23T22:34:43-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-1"
     }
   }, {
     "resource": {
@@ -1012,8 +371,8 @@
         }
       } ],
       "period": {
-        "start": "2011-12-18T21:19:43-05:00",
-        "end": "2011-12-18T21:34:43-05:00"
+        "start": "2017-12-18T21:19:43-05:00",
+        "end": "2017-12-18T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -1092,48 +451,8 @@
         }
       } ],
       "period": {
-        "start": "2012-12-23T21:19:43-05:00",
-        "end": "2012-12-23T21:49:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-12"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-12",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2012-12-23T21:19:43-05:00",
-        "end": "2012-12-23T21:49:43-05:00"
+        "start": "2017-12-23T21:19:43-05:00",
+        "end": "2017-12-23T21:49:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -1194,53 +513,6 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-13",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2019-01-22T21:19:43-05:00",
-        "end": "2019-01-22T21:34:43-05:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-13"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
       "id": "encounter-Alberto639-Delatorre612-14",
       "status": "finished",
       "class": {
@@ -1266,48 +538,8 @@
         }
       } ],
       "period": {
-        "start": "2013-12-29T21:19:43-05:00",
-        "end": "2013-12-29T21:49:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-14",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2019-12-29T21:19:43-05:00",
-        "end": "2019-12-29T21:49:43-05:00"
+        "start": "2017-12-29T21:19:43-05:00",
+        "end": "2017-12-29T21:49:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -1346,48 +578,8 @@
         }
       } ],
       "period": {
-        "start": "2015-01-04T21:19:43-05:00",
-        "end": "2015-01-04T21:34:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-15"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-15",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2019-01-04T21:19:43-05:00",
-        "end": "2019-01-04T21:34:43-05:00"
+        "start": "2018-01-04T21:19:43-05:00",
+        "end": "2018-01-04T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -1426,8 +618,8 @@
         }
       } ],
       "period": {
-        "start": "2019-01-10T21:19:43-05:00",
-        "end": "2019-01-10T21:34:43-05:00"
+        "start": "2018-01-10T21:19:43-05:00",
+        "end": "2018-01-10T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -1488,53 +680,6 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-17",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2019-03-27T22:19:43-04:00",
-        "end": "2019-03-27T22:34:43-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "10509002",
-          "display": "Acute bronchitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-17"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
       "id": "encounter-Alberto639-Delatorre612-18",
       "status": "finished",
       "class": {
@@ -1560,48 +705,8 @@
         }
       } ],
       "period": {
-        "start": "2016-04-03T22:19:43-04:00",
-        "end": "2016-04-03T22:34:43-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-18"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-18",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185349003",
-          "display": "Encounter for check up (procedure)"
-        } ],
-        "text": "Encounter for check up (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2019-04-03T22:19:43-04:00",
-        "end": "2019-04-03T22:34:43-04:00"
+        "start": "2017-04-03T22:19:43-04:00",
+        "end": "2017-04-03T22:34:43-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
@@ -1640,8 +745,8 @@
         }
       } ],
       "period": {
-        "start": "2016-04-03T22:19:43-04:00",
-        "end": "2016-04-03T22:34:43-04:00"
+        "start": "2017-04-03T22:19:43-04:00",
+        "end": "2017-04-03T22:34:43-04:00"
       },
       "reasonCode": [ {
         "coding": [ {
@@ -1658,93 +763,6 @@
     "request": {
       "method": "PUT",
       "url": "Encounter/encounter-Alberto639-Delatorre612-19"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-19",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185345009",
-          "display": "Encounter for symptom"
-        } ],
-        "text": "Encounter for symptom"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2019-04-03T22:19:43-04:00",
-        "end": "2019-04-03T22:34:43-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "444814009",
-          "display": "Viral sinusitis (disorder)"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-19"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-2",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "1986-09-14T22:19:43-04:00",
-        "end": "1986-09-14T22:49:43-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-2"
     }
   }, {
     "resource": {
@@ -1814,8 +832,8 @@
         }
       } ],
       "period": {
-        "start": "2019-04-10T22:19:43-04:00",
-        "end": "2019-04-10T22:34:43-04:00"
+        "start": "2016-04-10T22:19:43-04:00",
+        "end": "2016-04-10T22:34:43-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/62fa9127-485f-3032-87cc-6576d91fec94",
@@ -1854,48 +872,8 @@
         }
       } ],
       "period": {
-        "start": "2017-01-15T21:19:43-05:00",
-        "end": "2017-01-15T21:34:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-21"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-21",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2019-01-15T21:19:43-05:00",
-        "end": "2019-01-15T21:34:43-05:00"
+        "start": "2018-01-15T21:19:43-05:00",
+        "end": "2018-01-15T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -1934,8 +912,8 @@
         }
       } ],
       "period": {
-        "start": "2019-08-24T22:19:43-04:00",
-        "end": "2019-08-24T23:14:43-04:00"
+        "start": "2017-08-24T22:19:43-04:00",
+        "end": "2017-08-24T23:14:43-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
@@ -1974,8 +952,8 @@
         }
       } ],
       "period": {
-        "start": "2019-01-21T21:19:43-05:00",
-        "end": "2019-01-21T21:34:43-05:00"
+        "start": "2018-01-21T21:19:43-05:00",
+        "end": "2018-01-21T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -2029,86 +1007,6 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-24",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2019-01-27T21:19:43-05:00",
-        "end": "2019-01-27T21:34:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-24"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-3",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "EMER"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "230690007",
-          "display": "Stroke"
-        } ],
-        "text": "Stroke"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2019-03-02T21:19:43-05:00",
-        "end": "2019-03-02T22:49:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
       "id": "encounter-Alberto639-Delatorre612-3",
       "status": "finished",
       "class": {
@@ -2149,86 +1047,6 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-3",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "EMER"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "230690007",
-          "display": "Stroke"
-        } ],
-        "text": "Stroke"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2003-03-02T21:19:43-05:00",
-        "end": "2003-03-02T22:49:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-3",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "EMER"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "230690007",
-          "display": "Stroke"
-        } ],
-        "text": "Stroke"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2019-03-02T21:19:43-05:00",
-        "end": "2019-03-02T22:49:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
       "id": "encounter-Alberto639-Delatorre612-4",
       "status": "finished",
       "class": {
@@ -2254,8 +1072,8 @@
         }
       } ],
       "period": {
-        "start": "2019-12-06T21:19:43-05:00",
-        "end": "2019-12-06T21:34:43-05:00"
+        "start": "2017-12-06T21:19:43-05:00",
+        "end": "2017-12-06T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -2265,126 +1083,6 @@
     "request": {
       "method": "PUT",
       "url": "Encounter/encounter-Alberto639-Delatorre612-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-4",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2009-12-06T21:19:43-05:00",
-        "end": "2009-12-06T21:34:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-4",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2019-12-06T21:19:43-05:00",
-        "end": "2019-12-06T21:34:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-5",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "EMER"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "50849002",
-          "display": "Emergency room admission (procedure)"
-        } ],
-        "text": "Emergency room admission (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2010-04-16T22:19:43-04:00",
-        "end": "2010-04-16T23:19:43-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-5"
     }
   }, {
     "resource": {
@@ -2476,100 +1174,6 @@
   }, {
     "resource": {
       "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-6",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185349003",
-          "display": "Encounter for 'check-up'"
-        } ],
-        "text": "Encounter for 'check-up'"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2010-05-16T22:19:43-04:00",
-        "end": "2010-05-16T22:34:43-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "62106007",
-          "display": "Concussion with no loss of consciousness"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-6",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185349003",
-          "display": "Encounter for 'check-up'"
-        } ],
-        "text": "Encounter for 'check-up'"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2010-05-16T22:19:43-04:00",
-        "end": "2010-05-16T22:34:43-04:00"
-      },
-      "reasonCode": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "62106007",
-          "display": "Concussion with no loss of consciousness"
-        } ]
-      } ],
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
       "id": "encounter-Alberto639-Delatorre612-7",
       "status": "finished",
       "class": {
@@ -2595,88 +1199,8 @@
         }
       } ],
       "period": {
-        "start": "2010-12-12T21:19:43-05:00",
-        "end": "2010-12-12T21:34:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-7",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2010-12-12T21:19:43-05:00",
-        "end": "2010-12-12T21:34:43-05:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
-        "display": "PCP143874"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-7",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-00000000c5b2",
-          "display": "Dr. Tresa661 Wehner319"
-        }
-      } ],
-      "period": {
-        "start": "2010-12-12T21:19:43-05:00",
-        "end": "2010-12-12T21:34:43-05:00"
+        "start": "2017-12-12T21:19:43-05:00",
+        "end": "2017-12-12T21:34:43-05:00"
       },
       "serviceProvider": {
         "reference": "Organization/3ed98587-8c4c-33b4-9cbe-ec7fc451d2b6",
@@ -2762,48 +1286,8 @@
         }
       } ],
       "period": {
-        "start": "2011-05-22T22:19:43-04:00",
-        "end": "2011-05-22T22:34:43-04:00"
-      },
-      "serviceProvider": {
-        "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
-        "display": "BEVERLY HOSPITAL CORPORATION"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-Alberto639-Delatorre612-9"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-Alberto639-Delatorre612-9",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "185349003",
-          "display": "Encounter for check up (procedure)"
-        } ],
-        "text": "Encounter for check up (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612",
-        "display": "Mr. Alberto639 Delatorre612"
-      },
-      "participant": [ {
-        "individual": {
-          "reference": "Practitioner/0000016d-3a85-4cca-0000-000000000096",
-          "display": "Dr. Yanira774 Mills423"
-        }
-      } ],
-      "period": {
-        "start": "2011-05-22T22:19:43-04:00",
-        "end": "2011-05-22T22:34:43-04:00"
+        "start": "2017-05-22T22:19:43-04:00",
+        "end": "2017-05-22T22:34:43-04:00"
       },
       "serviceProvider": {
         "reference": "Organization/37c0de84-bcaf-3624-82bf-a89b2ac441b8",
@@ -2818,19 +1302,22 @@
     "resource": {
       "resourceType": "Goal",
       "id": "goal-Alberto639-Delatorre612-1",
-      "lifecycleStatus": "planned",
+      "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
-          "code": "in-progress"
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "active",
+          "display": "Active"
         } ]
       },
       "description": {
-        "text": "goals for HTNU18"
+        "text": "Lower Blood Pressure to 139/89."
       },
       "subject": {
         "reference": "Patient/Alberto639-Delatorre612"
       },
-      "startDate": "2020-06-20",
+      "startDate": "2020-01-14",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -2841,7 +1328,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 132,
+          "value": 139,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -2856,7 +1343,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 70,
+          "value": 89,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -2893,45 +1380,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 184.38082894969813,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-1",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
-      },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
+      "effectiveDateTime": "2009-12-06T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -3275,7 +1724,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-7"
       },
-      "effectiveDateTime": "2010-12-12T21:19:43-05:00",
+      "effectiveDateTime": "2017-12-12T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -3425,82 +1874,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-Alberto639-Delatorre612-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-14",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-7"
-      },
-      "effectiveDateTime": "2010-12-12T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 81.76557011337712,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-14"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-15",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-7"
-      },
-      "effectiveDateTime": "2010-12-12T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 73.261874422168,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-15"
     }
   }, {
     "resource": {
@@ -3697,44 +2070,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-19",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-9"
-      },
-      "effectiveDateTime": "2011-05-22T22:19:43-04:00",
-      "valueQuantity": {
-        "value": 94.23624395850963,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-19"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-2",
       "status": "final",
       "category": [ {
@@ -3758,45 +2093,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 0.39161892101295726,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
-      },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
+      "effectiveDateTime": "2009-12-06T21:19:43-05:00",
       "valueQuantity": {
         "value": 0.39161892101295726,
         "unit": "{score}",
@@ -3872,7 +2169,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-9"
       },
-      "effectiveDateTime": "2011-05-22T22:19:43-04:00",
+      "effectiveDateTime": "2017-05-22T22:19:43-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -4127,7 +2424,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-10"
       },
-      "effectiveDateTime": "2011-12-18T21:19:43-05:00",
+      "effectiveDateTime": "2017-12-18T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -4268,83 +2565,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 94.23624395850963,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
-      },
       "effectiveDateTime": "2009-12-06T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 94.23624395850963,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
-      },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -4496,7 +2717,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-12"
       },
-      "effectiveDateTime": "2012-12-23T21:19:43-05:00",
+      "effectiveDateTime": "2017-12-23T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -4576,46 +2797,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-34",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-12"
-      },
-      "effectiveDateTime": "2012-12-23T21:19:43-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "8517006",
-          "display": "Former smoker"
-        } ],
-        "text": "Former smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-34"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-35",
       "status": "final",
       "category": [ {
@@ -4654,44 +2835,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-35",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "8302-2",
-          "display": "Body Height"
-        } ],
-        "text": "Body Height"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
-      },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 184.38082894969813,
-        "unit": "cm",
-        "system": "http://unitsofmeasure.org",
-        "code": "cm"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-35"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-36",
       "status": "final",
       "category": [ {
@@ -4715,7 +2858,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 2.3807777709778186,
         "unit": "{score}",
@@ -4753,7 +2896,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -4806,44 +2949,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-38",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
-      },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 27.71956696603433,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-38"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-39",
       "status": "final",
       "category": [ {
@@ -4867,7 +2972,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2017-12-29T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -4930,83 +3035,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 27.71956696603433,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
-      },
       "effectiveDateTime": "2009-12-06T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 27.71956696603433,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
-      },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
       "valueQuantity": {
         "value": 27.71956696603433,
         "unit": "kg/m2",
@@ -5044,7 +3073,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 188.36655011004962,
         "unit": "mg/dL",
@@ -5082,7 +3111,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 128.90137295493838,
         "unit": "mg/dL",
@@ -5135,44 +3164,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-42",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
-      },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 90.8882620192995,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-42"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-43",
       "status": "final",
       "category": [ {
@@ -5211,44 +3202,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-43",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "2085-9",
-          "display": "High Density Lipoprotein Cholesterol"
-        } ],
-        "text": "High Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
-      },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 71.69801349176244,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-43"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-44",
       "status": "final",
       "category": [ {
@@ -5272,7 +3225,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 7.519782285681545,
         "unit": "10*3/uL",
@@ -5310,7 +3263,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 4.622916783534036,
         "unit": "10*6/uL",
@@ -5348,7 +3301,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 15.03209208167514,
         "unit": "g/dL",
@@ -5386,9 +3339,9 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
-        "value": 41.57412019744287,
+        "value": 41.57412007744287,
         "unit": "%",
         "system": "http://unitsofmeasure.org",
         "code": "%"
@@ -5424,7 +3377,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 91.09092284075504,
         "unit": "fL",
@@ -5462,7 +3415,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 29.903162272441136,
         "unit": "pg",
@@ -5500,70 +3453,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2009-12-06T21:19:43-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 76.99975348466884,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 144,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-5",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
-      },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
+      "effectiveDateTime": "2017-12-06T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -5626,7 +3516,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 35.48102584032309,
         "unit": "g/dL",
@@ -5664,7 +3554,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 45.28388646766939,
         "unit": "fL",
@@ -5702,7 +3592,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 370.7772057131567,
         "unit": "10*3/uL",
@@ -5740,7 +3630,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
       },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
+      "effectiveDateTime": "2013-12-29T21:19:43-05:00",
       "valueQuantity": {
         "value": 286.5772347658142,
         "unit": "fL",
@@ -5793,44 +3683,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-54",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "32623-1",
-          "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-        } ],
-        "text": "Platelet mean volume [Entitic volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
-      },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 11.208481645500328,
-        "unit": "fL",
-        "system": "http://unitsofmeasure.org",
-        "code": "fL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-54"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-55",
       "status": "final",
       "category": [ {
@@ -5871,46 +3723,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-55",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-14"
-      },
-      "effectiveDateTime": "2019-12-29T21:19:43-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "8517006",
-          "display": "Former smoker"
-        } ],
-        "text": "Former smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-55"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-56",
       "status": "final",
       "category": [ {
@@ -5934,7 +3746,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
       },
-      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
+      "effectiveDateTime": "2015-01-04T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -5972,7 +3784,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
       },
-      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
+      "effectiveDateTime": "2015-01-04T21:19:43-05:00",
       "valueQuantity": {
         "value": 1.5190164493474319,
         "unit": "{score}",
@@ -6025,44 +3837,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-58",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "29463-7",
-          "display": "Body Weight"
-        } ],
-        "text": "Body Weight"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
-      },
-      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 94.23624395850963,
-        "unit": "kg",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-58"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-59",
       "status": "final",
       "category": [ {
@@ -6101,44 +3875,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-59",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
-      },
-      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 27.71956696603433,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-59"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-6",
       "status": "final",
       "category": [ {
@@ -6162,47 +3898,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
       },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "8517006",
-          "display": "Former smoker"
-        } ],
-        "text": "Former smoker"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-6",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey",
-          "display": "survey"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status NHIS"
-        } ],
-        "text": "Tobacco smoking status NHIS"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-4"
-      },
-      "effectiveDateTime": "2019-12-06T21:19:43-05:00",
+      "effectiveDateTime": "2009-12-06T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -6242,7 +3938,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
       },
-      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
+      "effectiveDateTime": "2018-01-04T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -6305,7 +4001,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-15"
       },
-      "effectiveDateTime": "2019-01-04T21:19:43-05:00",
+      "effectiveDateTime": "2015-01-04T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -6345,7 +4041,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -6398,44 +4094,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-63",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
-      },
-      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 3.0820391712611386,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-63"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-64",
       "status": "final",
       "category": [ {
@@ -6459,7 +4117,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -6497,7 +4155,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
       "valueQuantity": {
         "value": 27.71956696603433,
         "unit": "kg/m2",
@@ -6535,7 +4193,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2018-01-10T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -6598,7 +4256,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-16"
       },
-      "effectiveDateTime": "2019-01-10T21:19:43-05:00",
+      "effectiveDateTime": "2016-01-10T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -6638,7 +4296,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -6676,7 +4334,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
       "valueQuantity": {
         "value": 1.4629857701159645,
         "unit": "{score}",
@@ -6752,7 +4410,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -6790,7 +4448,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
       "valueQuantity": {
         "value": 27.71956696603433,
         "unit": "kg/m2",
@@ -6828,7 +4486,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2017-04-03T22:19:43-04:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -6891,7 +4549,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-19"
       },
-      "effectiveDateTime": "2019-04-03T22:19:43-04:00",
+      "effectiveDateTime": "2016-04-03T22:19:43-04:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -6931,7 +4589,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -6984,44 +4642,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-75",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
-      },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 2.0589201917268376,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-75"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-76",
       "status": "final",
       "category": [ {
@@ -7045,7 +4665,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -7083,7 +4703,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 27.71956696603433,
         "unit": "kg/m2",
@@ -7121,70 +4741,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 72.25992692364835,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 135,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-78"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-78",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
-      },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2018-01-15T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -7247,7 +4804,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 161.7879189642797,
         "unit": "mg/dL",
@@ -7258,44 +4815,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-Alberto639-Delatorre612-79"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-8",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72514-3",
-          "display": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-        } ],
-        "text": "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-7"
-      },
-      "effectiveDateTime": "2010-12-12T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 3.9402696085451616,
-        "unit": "{score}",
-        "system": "http://unitsofmeasure.org",
-        "code": "{score}"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-8"
     }
   }, {
     "resource": {
@@ -7361,7 +4880,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 111.12997085658576,
         "unit": "mg/dL",
@@ -7414,44 +4933,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-81",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "18262-6",
-          "display": "Low Density Lipoprotein Cholesterol"
-        } ],
-        "text": "Low Density Lipoprotein Cholesterol"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
-      },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 73.52226929407944,
-        "unit": "mg/dL",
-        "system": "http://unitsofmeasure.org",
-        "code": "mg/dL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-81"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-82",
       "status": "final",
       "category": [ {
@@ -7475,7 +4956,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
       "valueQuantity": {
         "value": 66.0396554988831,
         "unit": "mg/dL",
@@ -7513,7 +4994,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-21"
       },
-      "effectiveDateTime": "2019-01-15T21:19:43-05:00",
+      "effectiveDateTime": "2017-01-15T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -7553,7 +5034,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
       "valueQuantity": {
         "value": 184.38082894969813,
         "unit": "cm",
@@ -7591,7 +5072,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
       "valueQuantity": {
         "value": 2.8158883112598976,
         "unit": "{score}",
@@ -7629,7 +5110,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
       "valueQuantity": {
         "value": 94.23624395850963,
         "unit": "kg",
@@ -7682,44 +5163,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-87",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
-      },
-      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 27.71956696603433,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-87"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-Alberto639-Delatorre612-88",
       "status": "final",
       "category": [ {
@@ -7743,7 +5186,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
       "component": [ {
         "code": {
           "coding": [ {
@@ -7806,7 +5249,7 @@
       "encounter": {
         "reference": "Encounter/encounter-Alberto639-Delatorre612-23"
       },
-      "effectiveDateTime": "2019-01-21T21:19:43-05:00",
+      "effectiveDateTime": "2018-01-21T21:19:43-05:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -8110,44 +5553,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-Alberto639-Delatorre612-95"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-Alberto639-Delatorre612-96",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory",
-          "display": "laboratory"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "789-8",
-          "display": "Erythrocytes [#/volume] in Blood by Automated count"
-        } ],
-        "text": "Erythrocytes [#/volume] in Blood by Automated count"
-      },
-      "subject": {
-        "reference": "Patient/Alberto639-Delatorre612"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-Alberto639-Delatorre612-24"
-      },
-      "effectiveDateTime": "2019-01-27T21:19:43-05:00",
-      "valueQuantity": {
-        "value": 3.9167251520928157,
-        "unit": "10*6/uL",
-        "system": "http://unitsofmeasure.org",
-        "code": "10*6/uL"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-Alberto639-Delatorre612-96"
     }
   }, {
     "resource": {

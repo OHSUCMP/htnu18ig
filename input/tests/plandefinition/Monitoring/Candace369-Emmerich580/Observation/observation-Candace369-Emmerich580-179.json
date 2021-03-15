@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Candace369-Emmerich580-179",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ],
+          "text": "Chloride"
+        },
+        "subject": {
+          "reference": "Patient/Candace369-Emmerich580"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Candace369-Emmerich580-20"
+        },
+        "effectiveDateTime": "2017-03-24T13:24:39-04:00",
+        "valueQuantity": {
+          "value": 109.65079739032113,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

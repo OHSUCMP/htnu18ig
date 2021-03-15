@@ -1,0 +1,39 @@
+{
+        "resourceType": "Observation",
+        "id": "observation-Alton320-Monahan736-158",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2069-3",
+              "display": "Chloride"
+            }
+          ],
+          "text": "Chloride"
+        },
+        "subject": {
+          "reference": "Patient/Alton320-Monahan736-3"
+        },
+        "encounter": {
+          "reference": "Encounter/encounter-Alton320-Monahan736-19"
+        },
+        "effectiveDateTime": "2018-10-29T15:37:24-04:00",
+        "valueQuantity": {
+          "value": 101.44751339259625,
+          "unit": "mmol/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }

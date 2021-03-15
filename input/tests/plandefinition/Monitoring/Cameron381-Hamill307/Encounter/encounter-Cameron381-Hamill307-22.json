@@ -1,0 +1,41 @@
+{
+        "resourceType": "Encounter",
+        "id": "encounter-Cameron381-Hamill307-22",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003",
+                "display": "Encounter for check up (procedure)"
+              }
+            ],
+            "text": "Encounter for check up (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/Cameron381-Hamill307",
+          "display": "Mr. Cameron381 Hamill307"
+        },
+        "participant": [
+          {
+            "individual": {
+          "reference": "Practitioner/0000016d-3a85-4cca-0000-0000000001d6",
+              "display": "Dr. Preston275 Halvorson124"
+            }
+          }
+        ],
+        "period": {
+          "start": "2018-12-16T16:23:48-05:00",
+          "end": "2018-12-16T16:38:48-05:00"
+        },
+        "serviceProvider": {
+          "reference": "Organization/b7175ab4-bde5-3848-891b-579bccb77c7c",
+          "display": "TUFTS MEDICAL CENTER"
+        }
+      }
