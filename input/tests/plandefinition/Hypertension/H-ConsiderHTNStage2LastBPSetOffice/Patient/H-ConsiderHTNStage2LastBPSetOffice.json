@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-ConsiderHTNStage2LastBPSetOffice",
+  "active": true,
+  "name": [
+    {
+      "text": "Consider HTN Stage 2 Last BP Set Office",
+      "family": "LastBPSetOffice",
+      "given": [
+        "Consider HTNStage2"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}
