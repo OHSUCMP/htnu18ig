@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-ExcludedNormalBP",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded Normal BP",
+      "family": "NormalBP",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}

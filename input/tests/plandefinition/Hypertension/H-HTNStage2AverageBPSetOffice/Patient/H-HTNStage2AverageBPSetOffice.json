@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-HTNStage2AverageBPSetOffice",
+  "active": true,
+  "name": [
+    {
+      "text": "HTN Stage 2 Average BP Set Office",
+      "family": "AverageBPSetOffice",
+      "given": [
+        "HTNStage2"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}

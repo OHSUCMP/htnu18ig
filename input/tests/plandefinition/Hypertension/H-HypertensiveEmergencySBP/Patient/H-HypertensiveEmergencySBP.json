@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-HypertensiveEmergencySBP",
+  "active": true,
+  "name": [
+    {
+      "text": "Hypertensive Emergency SBP",
+      "family": "SBP",
+      "given": [
+        "Hypertensive Emergency"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}
