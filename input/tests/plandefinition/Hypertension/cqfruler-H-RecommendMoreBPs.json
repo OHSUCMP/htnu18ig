@@ -5,7 +5,7 @@
   "applyCql": true,
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "H-HypertensiveEmergencySBP"
+    "patientId": "H-RecommendMoreBPs"
   },
   "prefetch": {
     "item1": {
@@ -19,14 +19,14 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "H-HypertensiveEmergencySBP",
+              "id": "H-RecommendMoreBPs",
               "active": true,
               "name": [
                 {
-                  "text": "Hypertensive Emergency SBP",
-                  "family": "SBP",
+                  "text": "Recommend More BPs",
+                  "family": "MoreBPs",
                   "given": [
-                    "Hypertensive Emergency"
+                    "Recommend"
                   ]
                 }
               ],
@@ -41,7 +41,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-HypertensiveEmergencySBP-1",
+              "id": "observation-H-RecommendMoreBPs-2",
               "status": "final",
               "note": [
                 {
@@ -70,10 +70,92 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-HypertensiveEmergencySBP"
+                "reference": "Patient/H-RecommendMoreBPs"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-HypertensiveEmergencySBP-0"
+                "reference": "Encounter/encounter-H-RecommendMoreBPs-0"
+              },
+              "effectiveDateTime": "2019-02-06T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 82.80326035473048,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 130.2679261542749,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-H-RecommendMoreBPs-1",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no matching encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/H-RecommendMoreBPs"
+              },
+              "encounter": {
+                "reference": "Encounter/encounter-H-RecommendMoreBPs-0"
               },
               "effectiveDateTime": "2016-02-03T15:16:21-05:00",
               "component": [
@@ -108,88 +190,6 @@
                   },
                   "valueQuantity": {
                     "value": 128.65064054117963,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-H-HypertensiveEmergencySBP-2",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Home Blood Pressure Reading (no matching encounter)"
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/H-HypertensiveEmergencySBP"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-H-HypertensiveEmergencySBP-0"
-              },
-              "effectiveDateTime": "2019-02-06T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 118.80326035473048,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 180.2679261542749,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"

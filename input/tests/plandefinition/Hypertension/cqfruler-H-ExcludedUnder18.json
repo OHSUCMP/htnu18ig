@@ -5,31 +5,10 @@
   "applyCql": true,
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "Patient/H-ExcludedUnder18"
+    "patientId": "H-ExcludedUnder18"
   },
   "prefetch": {
     "item1": {
-      "response": {
-        "status": "200 OK"
-      },
-      "resource": {
-          "resourceType": "Patient",
-          "id": "H-ExcludedUnder18",
-          "active": true,
-          "name": [
-              {
-              "text": "Excluded Under 18",
-              "family": "Under18",
-              "given": [
-                  "Excluded"
-              ]
-              }
-          ],
-          "gender": "male",
-          "birthDate": "2008-12-04"
-      }
-    },
-    "item2": {
       "response": {
         "status": "200 OK"
       },
@@ -39,86 +18,36 @@
         "entry": [
           {
             "resource": {
-              "resourceType": "Observation",
-              "id": "observation-H-ExcludedUnder18-9",
-              "status": "final",
-              "category": [
+              "resourceType": "Patient",
+              "id": "H-ExcludedUnder18",
+              "active": true,
+              "name": [
                 {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
+                  "text": "Excluded Under 18",
+                  "family": "Under18",
+                  "given": [
+                    "Excluded"
                   ]
                 }
               ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/H-ExcludedUnder18"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-H-ExcludedUnder18-0"
-              },
-              "effectiveDateTime": "2016-02-03T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 82.52660352979804,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 128.65064054117963,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
+              "gender": "male",
+              "birthDate": "2006-12-04"
             },
             "request": {
               "method": "PUT",
-              "url": "Observation/observation-H-ExcludedUnder18-9"
+              "url": "request-url"
             }
           },
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-ExcludedUnder18-10",
+              "id": "observation-H-ExcludedUnder18-2",
               "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no matching encounter)"
+                }
+              ],
               "category": [
                 {
                   "coding": [
@@ -188,7 +117,89 @@
             },
             "request": {
               "method": "PUT",
-              "url": "Observation/observation-H-ExcludedUnder18-10"
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-H-ExcludedUnder18-1",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no matching encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/H-ExcludedUnder18"
+              },
+              "encounter": {
+                "reference": "Encounter/encounter-H-ExcludedUnder18-0"
+              },
+              "effectiveDateTime": "2016-02-03T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 82.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 128.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
             }
           }
         ]

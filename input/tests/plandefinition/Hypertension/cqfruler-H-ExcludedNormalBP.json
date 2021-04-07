@@ -5,31 +5,10 @@
   "applyCql": true,
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "Patient/H-ExcludedNormalBP"
+    "patientId": "H-ExcludedNormalBP"
   },
   "prefetch": {
     "item1": {
-      "response": {
-        "status": "200 OK"
-      },
-      "resource": {
-          "resourceType": "Patient",
-          "id": "H-ExcludedNormalBP",
-          "active": true,
-          "name": [
-              {
-              "text": "Excluded Normal BP",
-              "family": "NormalBP",
-              "given": [
-                  "Excluded"
-              ]
-              }
-          ],
-          "gender": "male",
-          "birthDate": "1996-12-04"
-      }
-    },
-    "item2": {
       "response": {
         "status": "200 OK"
       },
@@ -39,9 +18,36 @@
         "entry": [
           {
             "resource": {
+              "resourceType": "Patient",
+              "id": "H-ExcludedNormalBP",
+              "active": true,
+              "name": [
+                {
+                  "text": "Excluded Normal BP",
+                  "family": "NormalBP",
+                  "given": [
+                    "Excluded"
+                  ]
+                }
+              ],
+              "gender": "male",
+              "birthDate": "1996-12-04"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-ExcludedNormalBP-9",
+              "id": "observation-H-ExcludedNormalBP-1",
               "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no matching encounter)"
+                }
+              ],
               "category": [
                 {
                   "coding": [
@@ -111,14 +117,19 @@
             },
             "request": {
               "method": "PUT",
-              "url": "Observation/observation-H-ExcludedNormalBP-9"
+              "url": "request-url"
             }
           },
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-ExcludedNormalBP-10",
+              "id": "observation-H-ExcludedNormalBP-2",
               "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no matching encounter)"
+                }
+              ],
               "category": [
                 {
                   "coding": [
@@ -188,7 +199,7 @@
             },
             "request": {
               "method": "PUT",
-              "url": "Observation/observation-H-ExcludedNormalBP-10"
+              "url": "request-url"
             }
           }
         ]

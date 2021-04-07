@@ -1,10 +1,6 @@
 {
   "resourceType": "Observation",
-<<<<<<< HEAD:input/tests/plandefinition/Hypertension/H-ConsiderHTNStage2/Observation/observation-H-ConsiderHTNStage2-1.json
   "id": "observation-H-ConsiderHTNStage2-1",
-=======
-  "id": "observation-H-ConsiderHTNStage2LastBPSetOffice-1",
->>>>>>> f5eb41d9bbe450c518779e2fdb34743f1e042f00:input/tests/plandefinition/Hypertension/H-ConsiderHTNStage2LastBPSetOffice/Observation/observation-H-ConsiderHTNStage2LastBPSetOffice-1.json
   "status": "final",
   "note": [
     {
@@ -33,17 +29,10 @@
     "text": "Blood Pressure"
   },
   "subject": {
-<<<<<<< HEAD:input/tests/plandefinition/Hypertension/H-ConsiderHTNStage2/Observation/observation-H-ConsiderHTNStage2-1.json
     "reference": "Patient/H-ConsiderHTNStage2"
   },
   "encounter": {
     "reference": "Encounter/encounter-H-ConsiderHTNStage2-1"
-=======
-    "reference": "Patient/H-ConsiderHTNStage2LastBPSetOffice"
-  },
-  "encounter": {
-    "reference": "Encounter/encounter-H-ConsiderHTNStage2LastBPSetOffice-1"
->>>>>>> f5eb41d9bbe450c518779e2fdb34743f1e042f00:input/tests/plandefinition/Hypertension/H-ConsiderHTNStage2LastBPSetOffice/Observation/observation-H-ConsiderHTNStage2LastBPSetOffice-1.json
   },
   "effectiveDateTime": "2019-01-26T15:16:21-05:00",
   "component": [
@@ -59,11 +48,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-<<<<<<< HEAD:input/tests/plandefinition/Hypertension/H-ConsiderHTNStage2/Observation/observation-H-ConsiderHTNStage2-1.json
         "value": 91.9349105113392,
-=======
-        "value": 80.9349105113392,
->>>>>>> f5eb41d9bbe450c518779e2fdb34743f1e042f00:input/tests/plandefinition/Hypertension/H-ConsiderHTNStage2LastBPSetOffice/Observation/observation-H-ConsiderHTNStage2LastBPSetOffice-1.json
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -81,11 +66,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-<<<<<<< HEAD:input/tests/plandefinition/Hypertension/H-ConsiderHTNStage2/Observation/observation-H-ConsiderHTNStage2-1.json
         "value": 124.53332100989888,
-=======
-        "value": 128.53332100989888,
->>>>>>> f5eb41d9bbe450c518779e2fdb34743f1e042f00:input/tests/plandefinition/Hypertension/H-ConsiderHTNStage2LastBPSetOffice/Observation/observation-H-ConsiderHTNStage2LastBPSetOffice-1.json
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
