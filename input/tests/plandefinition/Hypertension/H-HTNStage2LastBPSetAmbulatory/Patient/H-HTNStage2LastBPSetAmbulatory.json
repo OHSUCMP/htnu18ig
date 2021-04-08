@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-HTNStage2LastBPSetAmbulatory",
+  "active": true,
+  "name": [
+    {
+      "text": "HTN Stage 2 Last BP Set Ambulatory",
+      "family": "LastBPSetAmbulatory",
+      "given": [
+        "HTNStage2"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}

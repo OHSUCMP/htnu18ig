@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-HTNStage2AverageBPSetAmbulatory",
+  "active": true,
+  "name": [
+    {
+      "text": "HTN Stage 2 Average BP Set Ambulatory",
+      "family": "AverageBPSetAmbulatory",
+      "given": [
+        "HTNStage2"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}
