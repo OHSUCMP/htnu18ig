@@ -177,7 +177,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-HTNStage2AverageBPSetOffice-5",
+              "id": "observation-H-HTNStage2AverageBPSetOffice-6",
               "status": "final",
               "note": [
                 {
@@ -209,7 +209,7 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-5"
+                "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-0"
               },
               "effectiveDateTime": "2018-11-26T15:16:21-05:00",
               "component": [
@@ -537,7 +537,7 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-5"
+                "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-0"
               },
               "effectiveDateTime": "2019-09-26T15:16:21-05:00",
               "component": [

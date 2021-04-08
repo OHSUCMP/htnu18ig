@@ -1,10 +1,10 @@
 {
   "resourceType": "Observation",
-  "id": "observation-H-HTNStage2AverageBPSetOffice-6",
+  "id": "observation-H-HTNStage2LastBPSetHome-2",
   "status": "final",
   "note": [
     {
-      "text": "Home Blood Pressure Reading (no matching encounter)"
+      "text": "Office Blood Pressure Reading"
     }
   ],
   "category": [
@@ -29,12 +29,12 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/H-HTNStage2AverageBPSetOffice"
+    "reference": "Patient/H-HTNStage2LastBPSetHome"
   },
   "encounter": {
-    "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-0"
+    "reference": "Encounter/encounter-H-HTNStage2LastBPSetHome-2"
   },
-  "effectiveDateTime": "2018-11-26T15:16:21-05:00",
+  "effectiveDateTime": "2019-03-26T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -48,7 +48,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 93.52660352979804,
+        "value": 78.995226014274,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -66,7 +66,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 168.65064054117963,
+        "value": 131.4534388828563,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "observation-H-HTNStage2AverageBPSetOffice-6",
+  "id": "observation-H-HTNStage2AverageBPSetHome-6",
   "status": "final",
   "note": [
     {
@@ -29,10 +29,10 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/H-HTNStage2AverageBPSetOffice"
+    "reference": "Patient/H-HTNStage2AverageBPSetHome"
   },
   "encounter": {
-    "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-0"
+    "reference": "Encounter/encounter-H-HTNStage2AverageBPSetHome-0"
   },
   "effectiveDateTime": "2018-11-26T15:16:21-05:00",
   "component": [
@@ -48,7 +48,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 93.52660352979804,
+        "value": 72.52660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -66,7 +66,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 168.65064054117963,
+        "value": 163.65064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
