@@ -5,7 +5,7 @@
   "applyCql": true,
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "H-ConsiderHTNStage2"
+    "patientId": "H-ConsiderHTNStage1"
   },
   "prefetch": {
     "item1": {
@@ -19,7 +19,7 @@
           {
             "resource": {
               "resourceType": "Encounter",
-              "id": "encounter-H-ConsiderHTNStage2-4",
+              "id": "encounter-H-ConsiderHTNStage1-1",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -38,7 +38,41 @@
                 }
               ],
               "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
+                "reference": "Patient/H-ConsiderHTNStage1"
+              },
+              "period": {
+                "start": "2019-01-26T00:00:00-04:00",
+                "end": "2019-01-26T23:59:59-04:00"
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Encounter",
+              "id": "encounter-H-ConsiderHTNStage1-4",
+              "status": "finished",
+              "class": {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "AMB"
+              },
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "162673000",
+                      "display": "General examination of patient (procedure)"
+                    }
+                  ],
+                  "text": "General examination of patient (procedure)"
+                }
+              ],
+              "subject": {
+                "reference": "Patient/H-ConsiderHTNStage1"
               },
               "period": {
                 "start": "2019-07-26T00:00:00-04:00",
@@ -53,7 +87,7 @@
           {
             "resource": {
               "resourceType": "Encounter",
-              "id": "encounter-H-ConsiderHTNStage2-3",
+              "id": "encounter-H-ConsiderHTNStage1-2",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -72,41 +106,7 @@
                 }
               ],
               "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
-              },
-              "period": {
-                "start": "2019-05-26T00:00:00-04:00",
-                "end": "2019-05-26T23:59:59-04:00"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Encounter",
-              "id": "encounter-H-ConsiderHTNStage2-2",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
-                    }
-                  ],
-                  "text": "General examination of patient (procedure)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
+                "reference": "Patient/H-ConsiderHTNStage1"
               },
               "period": {
                 "start": "2019-03-26T00:00:00-04:00",
@@ -121,7 +121,7 @@
           {
             "resource": {
               "resourceType": "Encounter",
-              "id": "encounter-H-ConsiderHTNStage2-1",
+              "id": "encounter-H-ConsiderHTNStage1-3",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -140,11 +140,11 @@
                 }
               ],
               "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
+                "reference": "Patient/H-ConsiderHTNStage1"
               },
               "period": {
-                "start": "2019-01-26T00:00:00-04:00",
-                "end": "2019-01-26T23:59:59-04:00"
+                "start": "2019-05-26T00:00:00-04:00",
+                "end": "2019-05-26T23:59:59-04:00"
               }
             },
             "request": {
@@ -155,12 +155,12 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "H-ConsiderHTNStage2",
+              "id": "H-ConsiderHTNStage1",
               "active": true,
               "name": [
                 {
-                  "text": "Consider HTN Stage 2",
-                  "family": "HTNStage2",
+                  "text": "Consider HTN Stage 1",
+                  "family": "HTNStage1",
                   "given": [
                     "Consider"
                   ]
@@ -177,89 +177,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-ConsiderHTNStage2-6",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Home Blood Pressure Reading (no matching encounter)"
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-H-ConsiderHTNStage2-5"
-              },
-              "effectiveDateTime": "2018-11-26T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 83.52660352979804,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 144.65064054117963,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-H-ConsiderHTNStage2-1",
+              "id": "observation-H-ConsiderHTNStage1-3",
               "status": "final",
               "note": [
                 {
@@ -288,174 +206,10 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
+                "reference": "Patient/H-ConsiderHTNStage1"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-ConsiderHTNStage2-1"
-              },
-              "effectiveDateTime": "2019-01-26T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 91.9349105113392,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 124.53332100989888,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-H-ConsiderHTNStage2-2",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Office Blood Pressure Reading"
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-H-ConsiderHTNStage2-2"
-              },
-              "effectiveDateTime": "2019-03-26T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 93.995226014274,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 141.4534388828563,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-H-ConsiderHTNStage2-3",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Office Blood Pressure Reading"
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-H-ConsiderHTNStage2-3"
+                "reference": "Encounter/encounter-H-ConsiderHTNStage1-3"
               },
               "effectiveDateTime": "2019-05-26T15:16:21-05:00",
               "component": [
@@ -471,7 +225,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 89.45508952819434,
+                    "value": 88.45508952819434,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -489,7 +243,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 125.67001870978417,
+                    "value": 137.67001870978416,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -505,7 +259,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-ConsiderHTNStage2-4",
+              "id": "observation-H-ConsiderHTNStage1-2",
               "status": "final",
               "note": [
                 {
@@ -534,12 +288,12 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
+                "reference": "Patient/H-ConsiderHTNStage1"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-ConsiderHTNStage2-4"
+                "reference": "Encounter/encounter-H-ConsiderHTNStage1-2"
               },
-              "effectiveDateTime": "2019-07-26T15:16:21-05:00",
+              "effectiveDateTime": "2019-03-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -553,7 +307,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 92.52660352979804,
+                    "value": 83.995226014274,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -571,7 +325,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 131.65064054117963,
+                    "value": 131.4534388828563,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -587,7 +341,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-ConsiderHTNStage2-5",
+              "id": "observation-H-ConsiderHTNStage1-5",
               "status": "final",
               "note": [
                 {
@@ -616,10 +370,10 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-ConsiderHTNStage2"
+                "reference": "Patient/H-ConsiderHTNStage1"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-ConsiderHTNStage2-5"
+                "reference": "Encounter/encounter-H-ConsiderHTNStage1-5"
               },
               "effectiveDateTime": "2019-09-26T15:16:21-05:00",
               "component": [
@@ -653,7 +407,253 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 151.65064054117963,
+                    "value": 136.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-H-ConsiderHTNStage1-4",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Office Blood Pressure Reading"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/H-ConsiderHTNStage1"
+              },
+              "encounter": {
+                "reference": "Encounter/encounter-H-ConsiderHTNStage1-4"
+              },
+              "effectiveDateTime": "2019-07-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 82.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 131.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-H-ConsiderHTNStage1-6",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no matching encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/H-ConsiderHTNStage1"
+              },
+              "encounter": {
+                "reference": "Encounter/encounter-H-ConsiderHTNStage1-5"
+              },
+              "effectiveDateTime": "2018-11-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 83.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 140.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-H-ConsiderHTNStage1-1",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Office Blood Pressure Reading"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/H-ConsiderHTNStage1"
+              },
+              "encounter": {
+                "reference": "Encounter/encounter-H-ConsiderHTNStage1-1"
+              },
+              "effectiveDateTime": "2019-01-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 89.9349105113392,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 134.53332100989888,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"

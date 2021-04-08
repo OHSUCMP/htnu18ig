@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "observation-H-ConsiderHTNStage2-6",
+  "id": "observation-H-ConsiderHTNStage1-6",
   "status": "final",
   "note": [
     {
@@ -29,10 +29,10 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/H-ConsiderHTNStage2"
+    "reference": "Patient/H-ConsiderHTNStage1"
   },
   "encounter": {
-    "reference": "Encounter/encounter-H-ConsiderHTNStage2-5"
+    "reference": "Encounter/encounter-H-ConsiderHTNStage1-5"
   },
   "effectiveDateTime": "2018-11-26T15:16:21-05:00",
   "component": [
@@ -66,7 +66,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 144.65064054117963,
+        "value": 140.65064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

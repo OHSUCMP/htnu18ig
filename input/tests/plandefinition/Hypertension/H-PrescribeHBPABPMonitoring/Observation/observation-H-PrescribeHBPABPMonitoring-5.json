@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "observation-H-ConsiderHTNStage2-6",
+  "id": "observation-H-PrescribeHBPABPMonitoring-5",
   "status": "final",
   "note": [
     {
@@ -29,12 +29,12 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/H-ConsiderHTNStage2"
+    "reference": "Patient/H-PrescribeHBPABPMonitoring"
   },
   "encounter": {
-    "reference": "Encounter/encounter-H-ConsiderHTNStage2-5"
+    "reference": "Encounter/encounter-H-PrescribeHBPABPMonitoring-5"
   },
-  "effectiveDateTime": "2018-11-26T15:16:21-05:00",
+  "effectiveDateTime": "2019-09-26T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -48,7 +48,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 83.52660352979804,
+        "value": 70.52660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -66,7 +66,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 144.65064054117963,
+        "value": 130.65064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

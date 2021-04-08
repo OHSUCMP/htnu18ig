@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-ConsiderHTNStage1",
+  "active": true,
+  "name": [
+    {
+      "text": "Consider HTN Stage 1",
+      "family": "HTNStage1",
+      "given": [
+        "Consider"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}
