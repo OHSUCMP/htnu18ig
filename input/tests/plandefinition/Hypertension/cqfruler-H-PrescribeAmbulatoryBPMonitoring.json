@@ -5,7 +5,7 @@
   "applyCql": true,
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "H-PrescribeHBPABPMonitoring"
+    "patientId": "H-PrescribeAmbulatoryBPMonitoring"
   },
   "prefetch": {
     "item1": {
@@ -19,7 +19,7 @@
           {
             "resource": {
               "resourceType": "Encounter",
-              "id": "encounter-H-PrescribeHBPABPMonitoring-2",
+              "id": "encounter-H-PrescribeAmbulatoryBPMonitoring-1",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -38,11 +38,11 @@
                 }
               ],
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "period": {
-                "start": "2019-03-26T00:00:00-04:00",
-                "end": "2019-03-26T23:59:59-04:00"
+                "start": "2019-01-26T00:00:00-04:00",
+                "end": "2019-01-26T23:59:59-04:00"
               }
             },
             "request": {
@@ -53,7 +53,7 @@
           {
             "resource": {
               "resourceType": "Encounter",
-              "id": "encounter-H-PrescribeHBPABPMonitoring-3",
+              "id": "encounter-H-PrescribeAmbulatoryBPMonitoring-4",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -72,41 +72,7 @@
                 }
               ],
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
-              },
-              "period": {
-                "start": "2019-05-26T00:00:00-04:00",
-                "end": "2019-05-26T23:59:59-04:00"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Encounter",
-              "id": "encounter-H-PrescribeHBPABPMonitoring-4",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
-                    }
-                  ],
-                  "text": "General examination of patient (procedure)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "period": {
                 "start": "2019-07-26T00:00:00-04:00",
@@ -121,7 +87,7 @@
           {
             "resource": {
               "resourceType": "Encounter",
-              "id": "encounter-H-PrescribeHBPABPMonitoring-1",
+              "id": "encounter-H-PrescribeAmbulatoryBPMonitoring-2",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -140,11 +106,45 @@
                 }
               ],
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "period": {
-                "start": "2019-01-26T00:00:00-04:00",
-                "end": "2019-01-26T23:59:59-04:00"
+                "start": "2019-03-26T00:00:00-04:00",
+                "end": "2019-03-26T23:59:59-04:00"
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Encounter",
+              "id": "encounter-H-PrescribeAmbulatoryBPMonitoring-3",
+              "status": "finished",
+              "class": {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "AMB"
+              },
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "162673000",
+                      "display": "General examination of patient (procedure)"
+                    }
+                  ],
+                  "text": "General examination of patient (procedure)"
+                }
+              ],
+              "subject": {
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
+              },
+              "period": {
+                "start": "2019-05-26T00:00:00-04:00",
+                "end": "2019-05-26T23:59:59-04:00"
               }
             },
             "request": {
@@ -155,12 +155,12 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "H-PrescribeHBPABPMonitoring",
+              "id": "H-PrescribeAmbulatoryBPMonitoring",
               "active": true,
               "name": [
                 {
-                  "text": "Prescribe HBP or ABP Monitoring",
-                  "family": "HBPABPMonitoring",
+                  "text": "Prescribe Ambulatory BP Monitoring",
+                  "family": "AmbulatoryBPMonitoring",
                   "given": [
                     "Prescribe"
                   ]
@@ -177,7 +177,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-PrescribeHBPABPMonitoring-1",
+              "id": "observation-H-PrescribeAmbulatoryBPMonitoring-1",
               "status": "final",
               "note": [
                 {
@@ -206,10 +206,10 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-PrescribeHBPABPMonitoring-1"
+                "reference": "Encounter/encounter-H-PrescribeAmbulatoryBPMonitoring-1"
               },
               "effectiveDateTime": "2019-01-26T15:16:21-05:00",
               "component": [
@@ -225,7 +225,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 82.9349105113392,
+                    "value": 68.9349105113392,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -243,7 +243,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 134.53332100989888,
+                    "value": 121.53332100989888,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -259,7 +259,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-PrescribeHBPABPMonitoring-6",
+              "id": "observation-H-PrescribeAmbulatoryBPMonitoring-6",
               "status": "final",
               "note": [
                 {
@@ -288,10 +288,10 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-PrescribeHBPABPMonitoring-5"
+                "reference": "Encounter/encounter-H-PrescribeAmbulatoryBPMonitoring-5"
               },
               "effectiveDateTime": "2018-11-26T15:16:21-05:00",
               "component": [
@@ -307,7 +307,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 70.52660352979804,
+                    "value": 79.52660352979804,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -341,7 +341,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-PrescribeHBPABPMonitoring-4",
+              "id": "observation-H-PrescribeAmbulatoryBPMonitoring-4",
               "status": "final",
               "note": [
                 {
@@ -370,10 +370,10 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-PrescribeHBPABPMonitoring-4"
+                "reference": "Encounter/encounter-H-PrescribeAmbulatoryBPMonitoring-4"
               },
               "effectiveDateTime": "2019-07-26T15:16:21-05:00",
               "component": [
@@ -389,7 +389,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 82.52660352979804,
+                    "value": 70.52660352979804,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -407,7 +407,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 131.65064054117963,
+                    "value": 114.65064054117963,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -423,7 +423,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-PrescribeHBPABPMonitoring-5",
+              "id": "observation-H-PrescribeAmbulatoryBPMonitoring-5",
               "status": "final",
               "note": [
                 {
@@ -452,10 +452,10 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-PrescribeHBPABPMonitoring-5"
+                "reference": "Encounter/encounter-H-PrescribeAmbulatoryBPMonitoring-5"
               },
               "effectiveDateTime": "2019-09-26T15:16:21-05:00",
               "component": [
@@ -471,7 +471,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 70.52660352979804,
+                    "value": 64.52660352979804,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -505,7 +505,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-PrescribeHBPABPMonitoring-2",
+              "id": "observation-H-PrescribeAmbulatoryBPMonitoring-2",
               "status": "final",
               "note": [
                 {
@@ -534,10 +534,10 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-PrescribeHBPABPMonitoring-2"
+                "reference": "Encounter/encounter-H-PrescribeAmbulatoryBPMonitoring-2"
               },
               "effectiveDateTime": "2019-03-26T15:16:21-05:00",
               "component": [
@@ -553,7 +553,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 83.995226014274,
+                    "value": 86.995226014274,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -571,7 +571,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 131.4534388828563,
+                    "value": 123.4534388828563,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -587,7 +587,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-PrescribeHBPABPMonitoring-3",
+              "id": "observation-H-PrescribeAmbulatoryBPMonitoring-3",
               "status": "final",
               "note": [
                 {
@@ -616,10 +616,10 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-PrescribeHBPABPMonitoring"
+                "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
               },
               "encounter": {
-                "reference": "Encounter/encounter-H-PrescribeHBPABPMonitoring-3"
+                "reference": "Encounter/encounter-H-PrescribeAmbulatoryBPMonitoring-3"
               },
               "effectiveDateTime": "2019-05-26T15:16:21-05:00",
               "component": [
@@ -635,7 +635,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 88.45508952819434,
+                    "value": 91.45508952819434,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -653,7 +653,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 137.67001870978416,
+                    "value": 155.67001870978416,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"

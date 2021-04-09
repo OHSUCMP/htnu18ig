@@ -1,13 +1,13 @@
 {
   "resourceType": "Patient",
-  "id": "H-PrescribeHBPABPMonitoring",
+  "id": "H-NoFurtherAction",
   "active": true,
   "name": [
     {
-      "text": "Prescribe HBP or ABP Monitoring",
-      "family": "HBPABPMonitoring",
+      "text": "No Further Action",
+      "family": "FurtherAction",
       "given": [
-        "Prescribe"
+        "No"
       ]
     }
   ],

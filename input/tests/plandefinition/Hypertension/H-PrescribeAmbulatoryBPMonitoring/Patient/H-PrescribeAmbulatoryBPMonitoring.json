@@ -1,11 +1,11 @@
 {
   "resourceType": "Patient",
-  "id": "H-PrescribeHBPABPMonitoring",
+  "id": "H-PrescribeAmbulatoryBPMonitoring",
   "active": true,
   "name": [
     {
-      "text": "Prescribe HBP or ABP Monitoring",
-      "family": "HBPABPMonitoring",
+      "text": "Prescribe Ambulatory BP Monitoring",
+      "family": "AmbulatoryBPMonitoring",
       "given": [
         "Prescribe"
       ]
