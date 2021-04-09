@@ -31,9 +31,6 @@
   "subject": {
     "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
   },
-  "encounter": {
-    "reference": "Encounter/encounter-H-HTNStage2LastBPSetAmbulatory-0"
-  },
   "partOf": [{
     "reference": "Procedure/procedure-H-HTNStage2LastBPSetAmbulatory-1"
   }],

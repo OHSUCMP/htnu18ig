@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "condition-H-ExcludedEndStageRenalDisease-10",
+  "id": "condition-H-ExcludedEndStageRenalDisease-1",
   "clinicalStatus": {
     "coding": [
       {
@@ -30,9 +30,6 @@
   },
   "subject": {
     "reference": "Patient/H-ExcludedEndStageRenalDisease"
-  },
-  "encounter": {
-    "reference": "Encounter/encounter-H-ExcludedEndStageRenalDisease-7"
   },
   "onsetDateTime": "1987-05-18T10:16:50-04:00",
   "recordedDate": "1987-05-18T10:16:50-04:00"

@@ -30,9 +30,6 @@
   "subject": {
     "reference": "Patient/H-MonitoringPreexistingHTN"
   },
-  "encounter": {
-    "reference": "Encounter/encounter-H-MonitoringPreexistingHTN-0"
-  },
   "onsetDateTime": "2015-01-28T15:16:21-05:00",
   "recordedDate": "2015-01-28T15:16:21-05:00"
 }

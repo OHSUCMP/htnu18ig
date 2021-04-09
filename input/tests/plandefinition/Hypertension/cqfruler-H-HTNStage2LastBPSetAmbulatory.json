@@ -39,9 +39,6 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
               },
-              "encounter": {
-                "reference": "Encounter/encounter-H-HTNStage2LastBPSetAmbulatory-0"
-              },
               "performedPeriod": {
                 "start": "2019-01-06T07:00:00-04:00",
                 "end": "2019-01-06T20:00:00-04:00"
@@ -108,9 +105,6 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
               },
-              "encounter": {
-                "reference": "Encounter/encounter-H-HTNStage2LastBPSetAmbulatory-0"
-              },
               "partOf": [
                 {
                   "reference": "Procedure/procedure-H-HTNStage2LastBPSetAmbulatory-1"
@@ -168,7 +162,7 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading (no matching encounter)"
+                  "text": "Home Blood Pressure Reading (no encounter)"
                 }
               ],
               "category": [
@@ -194,9 +188,6 @@
               },
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-H-HTNStage2LastBPSetAmbulatory-0"
               },
               "effectiveDateTime": "2019-02-06T08:16:21-05:00",
               "component": [
@@ -277,9 +268,6 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
               },
-              "encounter": {
-                "reference": "Encounter/encounter-H-HTNStage2LastBPSetAmbulatory-0"
-              },
               "partOf": [
                 {
                   "reference": "Procedure/procedure-H-HTNStage2LastBPSetAmbulatory-1"
@@ -337,7 +325,7 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading (no matching encounter)"
+                  "text": "Home Blood Pressure Reading (no encounter)"
                 }
               ],
               "category": [
@@ -363,9 +351,6 @@
               },
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-H-HTNStage2LastBPSetAmbulatory-0"
               },
               "effectiveDateTime": "2019-02-03T15:16:21-05:00",
               "component": [

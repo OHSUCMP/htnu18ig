@@ -4,7 +4,7 @@
   "status": "final",
   "note": [
     {
-      "text": "Home Blood Pressure Reading (no matching encounter)"
+      "text": "Home Blood Pressure Reading (no encounter)"
     }
   ],
   "category": [
@@ -30,9 +30,6 @@
   },
   "subject": {
     "reference": "Patient/H-HTNStage2LastBPSetHome"
-  },
-  "encounter": {
-    "reference": "Encounter/encounter-H-HTNStage2LastBPSetHome-0"
   },
   "effectiveDateTime": "2019-07-26T15:16:21-05:00",
   "component": [

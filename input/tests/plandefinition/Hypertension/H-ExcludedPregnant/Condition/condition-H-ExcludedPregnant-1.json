@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "condition-H-ExcludedPregnant-10",
+  "id": "condition-H-ExcludedPregnant-1",
   "clinicalStatus": {
     "coding": [
       {
@@ -30,9 +30,6 @@
   },
   "subject": {
     "reference": "Patient/H-ExcludedPregnant"
-  },
-  "encounter": {
-    "reference": "Encounter/encounter-H-ExcludedPregnant-33"
   },
   "onsetDateTime": "2018-12-11T19:02:10-04:00",
   "recordedDate": "2018-12-11T19:02:10-04:00"

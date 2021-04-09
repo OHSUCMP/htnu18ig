@@ -31,9 +31,6 @@
   "subject": {
     "reference": "Patient/H-HTNStage2AverageBPSetAmbulatory"
   },
-  "encounter": {
-    "reference": "Encounter/encounter-H-HTNStage2AverageBPSetAmbulatory-0"
-  },
   "partOf": [{
     "reference": "Procedure/procedure-H-HTNStage2AverageBPSetAmbulatory-1"
   }],

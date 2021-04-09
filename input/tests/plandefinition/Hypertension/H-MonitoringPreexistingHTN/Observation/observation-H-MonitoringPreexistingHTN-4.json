@@ -4,7 +4,7 @@
   "status": "final",
   "note": [
     {
-      "text": "Home Blood Pressure Reading (no matching encounter)"
+      "text": "Home Blood Pressure Reading (no encounter)"
     }
   ],
   "category": [
@@ -30,9 +30,6 @@
   },
   "subject": {
     "reference": "Patient/H-MonitoringPreexistingHTN"
-  },
-  "encounter": {
-    "reference": "Encounter/encounter-H-MonitoringPreexistingHTN-0"
   },
   "effectiveDateTime": "2016-02-03T15:16:21-05:00",
   "component": [
