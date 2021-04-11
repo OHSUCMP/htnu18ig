@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-ExcludedNotDiagnosed",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded Over 80",
+      "family": "Over80",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}

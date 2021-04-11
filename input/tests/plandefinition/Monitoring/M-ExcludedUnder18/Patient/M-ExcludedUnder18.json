@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-ExcludedUnder18",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded Under 18",
+      "family": "Under18",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2006-04-07"
+}
