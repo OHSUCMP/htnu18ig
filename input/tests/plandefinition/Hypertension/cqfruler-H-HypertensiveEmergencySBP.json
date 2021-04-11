@@ -30,8 +30,8 @@
                   ]
                 }
               ],
-              "gender": "male",
-              "birthDate": "1996-12-04"
+              "gender": "female",
+              "birthDate": "1954-05-31"
             },
             "request": {
               "method": "PUT",

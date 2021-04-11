@@ -1,6 +1,11 @@
 {
   "resourceType": "Condition",
   "id": "condition-H-ExcludedPregnant-1",
+  "note": [
+    {
+      "text": "Indicates patient is pregnant at last BP Reading"
+    }
+  ],
   "clinicalStatus": {
     "coding": [
       {

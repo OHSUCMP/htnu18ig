@@ -167,7 +167,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1996-12-04"
+              "birthDate": "2002-07-02"
             },
             "request": {
               "method": "PUT",
