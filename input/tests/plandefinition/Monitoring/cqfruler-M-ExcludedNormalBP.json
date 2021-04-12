@@ -197,7 +197,7 @@
               "subject": {
                 "reference": "Patient/M-ExcludedNormalBP"
               },
-              "effectiveDateTime": "2016-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2018-02-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -229,7 +229,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 128.65064054117963,
+                    "value": 131.65064054117963,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
