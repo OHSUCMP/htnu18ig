@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-RecommendAmbulatoryBPMonitoring",
+  "active": true,
+  "name": [
+    {
+      "text": "Recommend Ambulatory BP Monitoring",
+      "family": "AmbulatoryBPMonitoring",
+      "given": [
+        "Recommend"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1973-03-17"
+}

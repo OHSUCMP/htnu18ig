@@ -1,13 +1,13 @@
 {
   "resourceType": "Patient",
-  "id": "M-ExcludedNotDiagnosed",
+  "id": "M-RecommendMoreBPs",
   "active": true,
   "name": [
     {
-      "text": "Excluded Not Diagnosed",
-      "family": "NotDiagnosed",
+      "text": "Recommend More BPs",
+      "family": "MoreBPs",
       "given": [
-        "Excluded"
+        "Recommend"
       ]
     }
   ],

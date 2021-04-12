@@ -1,10 +1,10 @@
 {
   "resourceType": "Observation",
-  "id": "observation-M-ExcludedNotDiagnosed-2",
+  "id": "observation-M-RecommendHBPABPMonitoring-5",
   "status": "final",
   "note": [
     {
-      "text": "Home Blood Pressure Reading (no matching encounter)"
+      "text": "Home Blood Pressure Reading (no encounter)"
     }
   ],
   "category": [
@@ -29,9 +29,9 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/M-ExcludedNotDiagnosed"
+    "reference": "Patient/M-RecommendHBPABPMonitoring"
   },
-  "effectiveDateTime": "2019-02-06T15:16:21-05:00",
+  "effectiveDateTime": "2019-09-26T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -45,7 +45,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 84.80326035473048,
+        "value": 84.52660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -63,7 +63,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 137.26792615427489,
+        "value": 135.65064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
