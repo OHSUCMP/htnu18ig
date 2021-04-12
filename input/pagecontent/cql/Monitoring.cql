@@ -110,7 +110,7 @@ define "No Entry into Population":
     and not "Meets Exclusion Criteria"
 
 define "No Entry Title":
-  if "Patient Has Above Normal BP" then
+  if not "Patient Has Above Normal BP" then
    'Patient did not have above normal blood pressure.'
   else 'Patient did not have a preexisting hypertensive condition.'
 
