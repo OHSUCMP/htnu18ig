@@ -5,7 +5,7 @@
   "applyCql": true,
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "NPI-SmokingCessationNew"
+    "patientId": "NPI-SmokingCessationIncrease"
   },
   "prefetch": {
     "item1": {
@@ -18,8 +18,43 @@
         "entry": [
           {
             "resource": {
+              "resourceType": "Procedure",
+              "id": "procedure-NPI-SmokingCessationIncrease-1",
+              "note": [
+                {
+                  "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
+                }
+              ],
+              "status": "completed",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "225323000",
+                    "display": "Smoking cessation education (procedure)"
+                  }
+                ],
+                "text": "Smoking cessation education (procedure)"
+              },
+              "subject": {
+                "reference": "Patient/NPI-SmokingCessationIncrease"
+              },
+              "performedDateTime": "2019-01-05T11:00:00-06:00",
+              "reasonReference": [
+                {
+                  "reference": "Observation/observation-NPI-SmokingCessationIncrease-1"
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
               "resourceType": "Condition",
-              "id": "condition-NPI-SmokingCessationNew-1",
+              "id": "condition-NPI-SmokingCessationIncrease-1",
               "note": [
                 {
                   "text": "Indicates Preexisting Diagnosis of Hypertension"
@@ -52,7 +87,7 @@
                 "text": "Hypertension"
               },
               "subject": {
-                "reference": "Patient/NPI-SmokingCessationNew"
+                "reference": "Patient/NPI-SmokingCessationIncrease"
               },
               "onsetDateTime": "2015-01-28T15:16:21-05:00",
               "recordedDate": "2015-01-28T15:16:21-05:00"
@@ -65,19 +100,19 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "NPI-SmokingCessationNew",
+              "id": "NPI-SmokingCessationIncrease",
               "active": true,
               "name": [
                 {
-                  "text": "Smoking Cessation New",
-                  "family": "New",
+                  "text": "Smoking Cessation Increase",
+                  "family": "Increase",
                   "given": [
                     "SmokingCessation"
                   ]
                 }
               ],
-              "gender": "female",
-              "birthDate": "1957-01-29"
+              "gender": "male",
+              "birthDate": "1949-04-12"
             },
             "request": {
               "method": "PUT",
@@ -87,11 +122,11 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-NPI-SmokingCessationNew-1",
+              "id": "observation-NPI-SmokingCessationIncrease-2",
               "status": "final",
               "note": [
                 {
-                  "text": "Indicates patient has been a heavy smoker since 1977. This is the most recent observation concerning smoking."
+                  "text": "Patient began smoking 1.5 packs/day in 2020. This is the most recent observation and an increase from the previous."
                 }
               ],
               "code": {
@@ -104,13 +139,13 @@
                 ]
               },
               "subject": {
-                "reference": "Patient/NPI-SmokingCessationNew"
+                "reference": "Patient/NPI-SmokingCessationIncrease"
               },
               "effectivePeriod": {
-                "start": "1977-08-18",
-                "end": "2018-03-02"
+                "start": "2020-03-13",
+                "end": "2020-03-31"
               },
-              "issued": "2018-03-02T00:00:00-07:00",
+              "issued": "2020-03-31T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -132,7 +167,66 @@
                     ]
                   },
                   "valueQuantity": {
-                    "value": 3,
+                    "value": 1.5,
+                    "unit": "Packs/Day"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-SmokingCessationIncrease-1",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Patient was smoking 1 pack/day as of 1/5/2019. Referred to counseling (related procedure)"
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "72166-2",
+                    "display": "Tobacco smoking status"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/NPI-SmokingCessationIncrease"
+              },
+              "effectivePeriod": {
+                "start": "2001-09-12",
+                "end": "2019-01-05"
+              },
+              "issued": "2019-01-05T00:00:00-07:00",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "428071000124103",
+                    "display": "Heavy tobacco smoker (finding)"
+                  }
+                ]
+              },
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8663-7",
+                        "display": "Cigarettes smoked current (pack per day) - Reported"
+                      }
+                    ]
+                  },
+                  "valueQuantity": {
+                    "value": 1,
                     "unit": "Packs/Day"
                   }
                 }
@@ -146,7 +240,7 @@
           {
             "resource": {
               "resourceType": "Goal",
-              "id": "goal-NPI-SmokingCessationNew-1",
+              "id": "goal-NPI-SmokingCessationIncrease-1",
               "lifecycleStatus": "planned",
               "achievementStatus": {
                 "coding": [
@@ -163,7 +257,7 @@
                 "text": "Goal of 135/85"
               },
               "subject": {
-                "reference": "Patient/NPI-SmokingCessationNew"
+                "reference": "Patient/NPI-SmokingCessationIncrease"
               },
               "target": [
                 {

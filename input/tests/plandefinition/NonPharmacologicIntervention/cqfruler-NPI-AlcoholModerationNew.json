@@ -5,7 +5,7 @@
   "applyCql": true,
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "NPI-SmokingCessationNew"
+    "patientId": "NPI-AlcoholModerationNew"
   },
   "prefetch": {
     "item1": {
@@ -19,7 +19,7 @@
           {
             "resource": {
               "resourceType": "Condition",
-              "id": "condition-NPI-SmokingCessationNew-1",
+              "id": "condition-NPI-AlcoholModerationNew-1",
               "note": [
                 {
                   "text": "Indicates Preexisting Diagnosis of Hypertension"
@@ -52,7 +52,7 @@
                 "text": "Hypertension"
               },
               "subject": {
-                "reference": "Patient/NPI-SmokingCessationNew"
+                "reference": "Patient/NPI-AlcoholModerationNew"
               },
               "onsetDateTime": "2015-01-28T15:16:21-05:00",
               "recordedDate": "2015-01-28T15:16:21-05:00"
@@ -65,19 +65,19 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "NPI-SmokingCessationNew",
+              "id": "NPI-AlcoholModerationNew",
               "active": true,
               "name": [
                 {
-                  "text": "Smoking Cessation New",
+                  "text": "Alcohol Moderation New",
                   "family": "New",
                   "given": [
-                    "SmokingCessation"
+                    "AlcoholModeration"
                   ]
                 }
               ],
               "gender": "female",
-              "birthDate": "1957-01-29"
+              "birthDate": "1968-03-27"
             },
             "request": {
               "method": "PUT",
@@ -87,56 +87,32 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-NPI-SmokingCessationNew-1",
+              "id": "observation-NPI-AlcoholModerationNew-1",
               "status": "final",
               "note": [
                 {
-                  "text": "Indicates patient has been a heavy smoker since 1977. This is the most recent observation concerning smoking."
+                  "text": "Patient is female and has more than 4 drinks a day. Considered a heavy alcoholic drinker."
                 }
               ],
               "code": {
                 "coding": [
                   {
                     "system": "http://loinc.org",
-                    "code": "72166-2",
-                    "display": "Tobacco smoking status"
+                    "version": "2.69",
+                    "code": "11287-0",
+                    "display": "Alcoholic drinks per drinking day - Reported"
                   }
                 ]
               },
               "subject": {
-                "reference": "Patient/NPI-SmokingCessationNew"
+                "reference": "Patient/NPI-AlcoholModerationNew"
               },
-              "effectivePeriod": {
-                "start": "1977-08-18",
-                "end": "2018-03-02"
-              },
-              "issued": "2018-03-02T00:00:00-07:00",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://snomed.info/sct",
-                    "code": "428071000124103",
-                    "display": "Heavy tobacco smoker (finding)"
-                  }
-                ]
-              },
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8663-7",
-                        "display": "Cigarettes smoked current (pack per day) - Reported"
-                      }
-                    ]
-                  },
-                  "valueQuantity": {
-                    "value": 3,
-                    "unit": "Packs/Day"
-                  }
-                }
-              ]
+              "effectiveDateTime": "2019-05-27T10:00:00-07:00",
+              "issued": "2019-05-27T00:00:00-07:00",
+              "valueQuantity": {
+                "value": 4.5,
+                "unit": "Drinks/Day"
+              }
             },
             "request": {
               "method": "PUT",
@@ -146,7 +122,7 @@
           {
             "resource": {
               "resourceType": "Goal",
-              "id": "goal-NPI-SmokingCessationNew-1",
+              "id": "goal-NPI-AlcoholModerationNew-1",
               "lifecycleStatus": "planned",
               "achievementStatus": {
                 "coding": [
@@ -163,7 +139,7 @@
                 "text": "Goal of 135/85"
               },
               "subject": {
-                "reference": "Patient/NPI-SmokingCessationNew"
+                "reference": "Patient/NPI-AlcoholModerationNew"
               },
               "target": [
                 {
