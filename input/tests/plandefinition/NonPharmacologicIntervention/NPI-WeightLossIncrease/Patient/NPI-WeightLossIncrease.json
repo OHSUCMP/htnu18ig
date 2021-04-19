@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-WeightLossIncrease",
+  "active": true,
+  "name": [
+    {
+      "text": "Weight Loss Increase",
+      "family": "Increase",
+      "given": [
+        "WeightLoss"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1974-12-31"
+}
