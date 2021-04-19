@@ -45,6 +45,9 @@ code "sustaining": 'sustaining' from "Goal achievement status" display 'sustaini
 
 context Patient
 
+define function "Packs Per Day"(O FHIR.Observation):
+  FHIRHelpers.ToQuantity(singleton from (O.component C where C.code = "PACKS A DAY").value)
+
 define "Info":
   'info'
 
@@ -277,11 +280,7 @@ define "Counseling BMI Observation":
       such that BMIObserved.id = Common.GetId(Counseling.reference))
 
 define "Patient Smoking Increased Since Last Visit":
-  from
-    "Most Recent Observation of Patient Smoking Status" SmokingThisVisit,
-    "Counseling Smoking Observation" SmokingLastVisit
-      return (FHIRHelpers.ToQuantity(SmokingThisVisit.value) > FHIRHelpers.ToQuantity(SmokingLastVisit.value)) is true
-      //(SmokingThisVisit.value as Quantity).value > (SmokingLastVisit.value as Quantity).value
+  "Packs Per Day"("Most Recent Observation of Patient Smoking Status") > "Packs Per Day"("Counseling Smoking Observation")
 
 define "Patient Drinking Increased Since Last Visit":
   from
@@ -383,3 +382,9 @@ define "TEST Most Recent Patient BMI":
       "Value": BMI.value.value,
       "Unit": BMI.value.unit
     }
+
+define "TEST Patient Packs Per Day Most Recent":
+  "Packs Per Day"("Most Recent Observation of Patient Smoking Status")
+
+define "TEST Patient Packs Per Day At Counseling":
+  "Packs Per Day"("Counseling Smoking Observation")

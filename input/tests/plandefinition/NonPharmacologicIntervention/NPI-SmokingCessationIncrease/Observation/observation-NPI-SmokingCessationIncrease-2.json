@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-SmokingCessationIncrease-2",
+  "status": "final",
+  "note": [
+    {
+      "text": "Patient began smoking 1.5 packs/day in 2020. This is the most recent observation and an increase from the previous."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72166-2",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/NPI-SmokingCessationIncrease"
+  },
+  "effectivePeriod": {
+    "start": "2020-03-13",
+    "end": "2020-03-31"
+  },
+  "issued": "2020-03-31T00:00:00-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "428071000124103",
+        "display": "Heavy tobacco smoker (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1.5,
+        "unit": "Packs/Day"
+      }
+    }
+  ]
+}
