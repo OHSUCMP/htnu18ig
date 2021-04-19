@@ -2,8 +2,8 @@
 import os
 import re
 
-old_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-SmokingCessationNew"
-new_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-SmokingCessationIncrease"
+old_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Hypertension/H-HTNStage2LastBPSetOffice"
+new_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Hypertension/H-HTNStage2AverageBPSetOffice"
 
 old_ident = re.search('.*/(.*)$', old_directory).group(1)
 new_ident = re.search('.*/(.*)$', new_directory).group(1)
