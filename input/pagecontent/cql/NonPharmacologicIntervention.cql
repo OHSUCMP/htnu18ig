@@ -200,7 +200,7 @@ define "Patient is Currently a Smoker":
   else
     "Most Recent Observation of Patient Smoking Status" is not null
 
-// Is patient’s BMI > 25?
+// Is patient's BMI > 25?
 define "Observations Specifying Patient BMI":
   (Common.QualifiedObservation(["Observation": "BMI Ratio"])) BMIObserved
     where BMIObserved.value is Quantity
