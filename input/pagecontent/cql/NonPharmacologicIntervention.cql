@@ -388,6 +388,3 @@ define "TEST Patient Packs Per Day Most Recent":
 
 define "TEST Patient Packs Per Day At Counseling":
   "Packs Per Day"("Counseling Smoking Observation")
-
-define "TEST today":
-  Today()

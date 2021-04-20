@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-RecommendationReminder-1",
+  "status": "final",
+  "note": [
+    {
+      "text": "Patient was smoking 1 pack/day as of 1/5/2019. Referred to counseling (related procedure)"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72166-2",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/NPI-RecommendationReminder"
+  },
+  "effectivePeriod": {
+    "start": "2001-09-12",
+    "end": "2019-01-05"
+  },
+  "issued": "2019-01-05T00:00:00-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "428071000124103",
+        "display": "Heavy tobacco smoker (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "Packs/Day"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-RecommendationReminder-2",
+  "status": "final",
+  "note": [
+    {
+      "text": "Patient quit smoking in 2020."
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72166-2",
+        "display": "Tobacco smoking status NHIS"
+      }
+    ],
+    "text": "Tobacco smoking status NHIS"
+  },
+  "subject": {
+    "reference": "Patient/NPI-RecommendationReminder"
+  },
+  "effectiveDateTime": "2020-03-02T00:17:51-04:00",
+  "issued": "2020-03-02T00:17:51.943-04:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "8517006",
+        "display": "Former smoker"
+      }
+    ],
+    "text": "Former smoker"
+  }
+}

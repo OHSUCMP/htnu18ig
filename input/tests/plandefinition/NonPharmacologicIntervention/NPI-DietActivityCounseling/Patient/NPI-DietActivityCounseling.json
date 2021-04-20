@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-DietActivityCounseling",
+  "active": true,
+  "name": [
+    {
+      "text": "Diet Activity Counseling",
+      "family": "Counseling",
+      "given": [
+        "DietActivity"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1994-07-03"
+}
