@@ -1,9 +1,9 @@
 {
   "resourceType": "Condition",
-  "id": "condition-NPI-ExcludedPregnant-1",
+  "id": "condition-NPI-ExcludedPregnant-3",
   "note": [
     {
-      "text": "Patient was pregnant previously (abatement present and in the past)"
+      "text": "Patient is currently pregnant (no abatement)"
     }
   ],
   "clinicalStatus": {
@@ -36,7 +36,6 @@
   "subject": {
     "reference": "Patient/NPI-ExcludedPregnant"
   },
-  "onsetDateTime": "2018-12-11T19:02:10-04:00",
-  "abatementDateTime": "2019-08-31T17:04:12",
-  "recordedDate": "2018-12-11T19:02:10-04:00"
+  "onsetDateTime": "2021-04-18T19:02:10-04:00",
+  "recordedDate": "2021-04-18T19:02:10-04:00"
 }

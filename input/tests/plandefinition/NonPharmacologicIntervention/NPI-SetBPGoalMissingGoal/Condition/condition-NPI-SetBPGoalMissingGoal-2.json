@@ -1,9 +1,9 @@
 {
   "resourceType": "Condition",
-  "id": "condition-NPI-ExcludedPregnant-1",
+  "id": "condition-NPI-SetBPGoalMissingGoal-2",
   "note": [
     {
-      "text": "Patient was pregnant previously (abatement present and in the past)"
+      "text": "Patient was pregnant previously (abatement present and in the past). They should not be excluded."
     }
   ],
   "clinicalStatus": {
@@ -34,7 +34,7 @@
     "text": "Normal pregnancy (finding)"
   },
   "subject": {
-    "reference": "Patient/NPI-ExcludedPregnant"
+    "reference": "Patient/NPI-SetBPGoalMissingGoal"
   },
   "onsetDateTime": "2018-12-11T19:02:10-04:00",
   "abatementDateTime": "2019-08-31T17:04:12",

@@ -365,7 +365,7 @@ define "Condition Indicating End Stage Renal Disease":
 
 define "Condition Indicating Pregnancy":
   (Common.QualifiedCondition(["Condition": "Pregnancy"])) Pregnancy
-
+    where end of Common."Prevalence Period"(Pregnancy) > Today()
 
 /* TEST */
 define "TEST Patient Age":
@@ -388,3 +388,6 @@ define "TEST Patient Packs Per Day Most Recent":
 
 define "TEST Patient Packs Per Day At Counseling":
   "Packs Per Day"("Counseling Smoking Observation")
+
+define "TEST today":
+  Today()
