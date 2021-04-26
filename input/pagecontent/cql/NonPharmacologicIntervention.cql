@@ -180,20 +180,23 @@ define "Patient does not have a BP Goal":
   else
     not exists "Qualifying Blood Pressure Goals"
 
+// All observations pertaining to smoking
+define "Smoking Status Observations":
+  (Common.QualifiedObservation(["Observation": "Tobacco Smoking Status [Current] (Social History) (LOINC)"]))
 
-// Does patient smoke right now?
+// All observations indicating patient is a smoker
 define "Observations Indicating Patient is a Smoker":
-  (Common.QualifiedObservation(["Observation": "Tobacco Smoking Status [Current] (Social History) (LOINC)"])) SmokingObserved
-      where SmokingObserved.value as CodeableConcept in "Tobacco User"
-        and singleton from (
-          SmokingObserved.component C
-            where FHIRHelpers.ToConcept(C.code) ~ "PACKS A DAY"
-              and C.value is Quantity and Common.WithUnit(C.value, 'Packs/Day')
-        ) is not null
+  "Smoking Status Observations" SmokingStatus
+    where SmokingStatus.value as CodeableConcept in "Tobacco User"
+      and singleton from (
+        SmokingStatus.component C
+          where FHIRHelpers.ToConcept(C.code) ~ "PACKS A DAY"
+            and C.value is Quantity and Common.WithUnit(C.value, 'Packs/Day')
+      ) is not null
 
 define "Most Recent Observation of Patient Smoking Status":
   Last(
-    "Observations Indicating Patient is a Smoker" SmokingObserved
+    "Smoking Status Observations" SmokingObserved
     sort by Coalesce(end of Common."Normalize Interval"(effective), issued)
   )
 
@@ -201,7 +204,7 @@ define "Patient is Currently a Smoker":
   if "In Population" is not true then
     false
   else
-    "Most Recent Observation of Patient Smoking Status" is not null
+    "Observations Indicating Patient is a Smoker" contains "Most Recent Observation of Patient Smoking Status"
 
 // Is patient's BMI > 25?
 define "Observations Specifying Patient BMI":
@@ -280,7 +283,7 @@ define "Counseling BMI Observation":
       such that BMIObserved.id = Common.GetId(Counseling.reference))
 
 define "Patient Smoking Increased Since Last Visit":
-  "Packs Per Day"("Most Recent Observation of Patient Smoking Status") > "Packs Per Day"("Counseling Smoking Observation")
+  "Patient is Currently a Smoker" and "Packs Per Day"("Most Recent Observation of Patient Smoking Status") > "Packs Per Day"("Counseling Smoking Observation")
 
 define "Patient Drinking Increased Since Last Visit":
   from
