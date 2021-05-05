@@ -8,10 +8,16 @@
 import os
 import re
 import requests
+import sys
+
+port = 8080
+if len(sys.argv) > 1:
+  port = sys.argv[1]
 
 paths = ["vocabulary/valueset", "resources/library", "resources/plandefinition"]
 
-cqf_ruler_url = "http://localhost:8080/cqf-ruler-r4/fhir/"
+cqf_ruler_url = "http://localhost:" + str(port) + "/cqf-ruler-r4/fhir/"
+print("CQF Ruler URL = " + cqf_ruler_url)
 
 for path in paths:
   for root, dirs, files in os.walk(path, topdown=False):
