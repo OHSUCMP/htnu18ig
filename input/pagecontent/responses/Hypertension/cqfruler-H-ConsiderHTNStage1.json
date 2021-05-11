@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "summary": "Hypertension Diagnosis",
+      "indicator": "info",
+      "detail": "Consider HTNStage1",
+      "source": {
+        "label": "Info for those with normal blood pressure",
+        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+      }
+    },
+    {
+      "summary": "Consider diagnosing with Stage 1 hypertension",
+      "indicator": "info",
+      "detail": "You had a high blood pressure reading recently.  Please see your provider to lower your blood pressure and reduce your risk of stroke or other adverse events.  Possible Stage 1 hypertension is a systolic pressure of 130 mm Hg or higher or a diastolic pressure of 80 mm Hg or higher.  You may be able to control your blood pressure through lifestyle changes or through medication.  Lifestyle changes will have other health benefits, whereas medications carry a small risk.;https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15022;;at-most-one;https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings",
+      "source": {}
+    }
+  ]
+}

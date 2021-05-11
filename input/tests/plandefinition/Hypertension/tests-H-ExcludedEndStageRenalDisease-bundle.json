@@ -1,0 +1,184 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-H-ExcludedEndStageRenalDisease-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-H-ExcludedEndStageRenalDisease-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "236435004",
+          "display": "End stage renal failure on dialysis (disorder)"
+        } ],
+        "text": "Diabetic renal disease (disorder)"
+      },
+      "subject": {
+        "reference": "Patient/H-ExcludedEndStageRenalDisease"
+      },
+      "onsetDateTime": "1987-05-18T10:16:50-04:00",
+      "recordedDate": "1987-05-18T10:16:50-04:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-H-ExcludedEndStageRenalDisease-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "H-ExcludedEndStageRenalDisease",
+      "active": true,
+      "name": [ {
+        "text": "Excluded End Stage Renal Disease",
+        "family": "EndStageRenalDisease",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1966-11-12"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/H-ExcludedEndStageRenalDisease"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-H-ExcludedEndStageRenalDisease-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/H-ExcludedEndStageRenalDisease"
+      },
+      "effectiveDateTime": "2019-02-06T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading (no matching encounter)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.80326035473048,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 118.26792615427489,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-H-ExcludedEndStageRenalDisease-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-H-ExcludedEndStageRenalDisease-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/H-ExcludedEndStageRenalDisease"
+      },
+      "effectiveDateTime": "2016-02-03T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading (no matching encounter)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 82.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 128.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-H-ExcludedEndStageRenalDisease-1"
+    }
+  } ]
+}

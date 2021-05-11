@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "summary": "Hypertension Diagnosis",
+      "indicator": "info",
+      "detail": "Hypertensive Emergency SBP",
+      "source": {
+        "label": "Info for those with normal blood pressure",
+        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+      }
+    },
+    {
+      "summary": "Warning: Potential hypertensive emergency. Consult doctor immediately.",
+      "indicator": "critical",
+      "detail": "Your blood pressure is too high.  Seek treatment immediately.  Systolic BP \u003e 180 mmHg and/or diastolic BP \u003e 120 mmHg may indicate a hypertensive emergency.;https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15018;;at-most-one;https://www.heart.org/en/health-topics/high-blood-pressure",
+      "source": {}
+    }
+  ]
+}
