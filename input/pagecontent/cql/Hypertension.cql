@@ -60,29 +60,29 @@ define "Recommendation":
   if exists "Condition Indicating Pregnancy" then 'Standard high blood pressure guidelines do not apply'
   else if "Diagnosis of Preexisting Hypertension" then 'Standard high blood pressure guidelines do not apply'
   else if exists "Condition Indicating End Stage Renal Disease" then 'Standard high blood pressure guidelines do not apply'
-  else if "HTN Crisis" then 'Warning: Potential hypertensive emergency. Consult doctor immediately.'
+  else if "HTN Crisis" then 'Warning: Potential hypertensive emergency. Consult care team immediately.'
   else if not "Has BP Set" then 'Consider obtaining additional blood pressure measurements'
-  else if "HTN Stage 2" then 'Recommend diagnosis of Stage 2 hypertension'
-  else if "Consider HTN Stage 2" then 'Consider diagnosing with Stage 2 hypertension'
-  else if "Consider HTN Stage 1" then 'Consider diagnosing with Stage 1 hypertension'
+  else if "HTN Stage 2" then 'Consider diagnosis of Stage 2 hypertension'
+  else if "Consider HTN Stage 2" then 'Consider diagnosis of Stage 2 hypertension'
+  else if "Consider HTN Stage 1" then 'Consider Diagnosis of Stage 1 hypertension.'
   else if "Prescribe HBP or ABP Monitoring" then 'Use ambulatory or home blood pressure monitoring to confirm diagnosis'
   else if "Prescribe Ambulatory BP Monitoring" then 'Use ambulatory blood pressure monitoring to address blood pressure variability'
   else 'Patient does not have an indication of a hypertensive state.'
 
 define "Rationale Combined Data":
-  "Rationale" + ';' + "Source" + ';' + "Suggestions" + ';' + "Selection Behavior" + ';' + "Links"
+  "Rationale" + '|' + "Source" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
-  if exists "Condition Indicating Pregnancy" then 'Please see your Ob-Gyn provider for specialized care regarding your high blood pressure reading while pregnant'
-  else if "Diagnosis of Preexisting Hypertension" then 'As you already have a high blood pressure diagnosis, please see your provider regarding your recent high blood pressure reading.'
-  else if exists "Condition Indicating End Stage Renal Disease" then 'Please see your nephrologist for specialized care regarding your recent high blood pressure reading.'
-  else if "HTN Crisis" then 'Your blood pressure is too high.  Seek treatment immediately.  Systolic BP > 180 mmHg and/or diastolic BP > 120 mmHg may indicate a hypertensive emergency.'
-  else if not "Has BP Set" then 'You had a high blood pressure reading recently.  We do not have enough blood pressure measurements to provide a full picture of your health.  Getting a full set of blood pressures will help us provide the best care.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.'
-  else if "HTN Stage 2" then 'You had a high blood pressure reading recently.  Please see your provider to lower your blood pressure and reduce your risk of stroke or other adverse events.  More severe hypertension, stage 2 hypertension is a systolic pressure of 140 mm Hg or higher or a diastolic pressure of 90 mm Hg or higher.'
-  else if "Consider HTN Stage 2" then 'You had a high blood pressure reading recently.  Please see your provider to lower your blood pressure and reduce your risk of stroke or other adverse events.  More severe hypertension, stage 2 hypertension is a systolic pressure of 140 mm Hg or higher or a diastolic pressure of 90 mm Hg or higher.'
-  else if "Consider HTN Stage 1" then 'You had a high blood pressure reading recently.  Please see your provider to lower your blood pressure and reduce your risk of stroke or other adverse events.  Possible Stage 1 hypertension is a systolic pressure of 130 mm Hg or higher or a diastolic pressure of 80 mm Hg or higher.  You may be able to control your blood pressure through lifestyle changes or through medication.  Lifestyle changes will have other health benefits, whereas medications carry a small risk.'
-  else if "Prescribe HBP or ABP Monitoring" then 'You had a high blood pressure reading recently and have a blood pressure that is in a borderline for a hypertension diagnosis.  Taking a full set of blood pressures, approximately 6 days of home measurements (twice a day), or 24 hours of ambulatory monitoring, will help find the right diagnosis.'
-  else if "Prescribe Ambulatory BP Monitoring" then 'You had a high blood pressure reading recently.  Your blood pressure has varied from reading to reading significantly.  Sometimes there is a health risk with highly variable blood pressure.  A 24 hour ambulatory/walking measurement will us provide the best care.'
+  if exists "Condition Indicating Pregnancy" then '{{#patient}}Please see your Ob-Gyn provider for specialized care regarding your high blood pressure reading while pregnant{{/patient}}{{#careTeam}}{{/careTeam}}'
+  else if "Diagnosis of Preexisting Hypertension" then '{{#patient}}As you already have a high blood pressure diagnosis, please see your provider regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}'
+  else if exists "Condition Indicating End Stage Renal Disease" then '{{#patient}}Please see your nephrologist for specialized care regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}'
+  else if "HTN Crisis" then '{{#patient}}Your blood pressure is high (>180 systolic or >120 diastolic).  Contact your care team immediately, OR, if you do not feel well, seek care.  {{/patient}}{{#careTeam}}Patient\'s blood pressure is > 180 systolic or > 120 diastolic. Consider immediate evaluation for treatment or escalation of care.{{/careTeam}}'
+  else if not "Has BP Set" then '{{#patient}}You had a high blood pressure reading recently.  We do not have enough blood pressure measurements to provide a full picture of your health.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
+  else if "HTN Stage 2" then '{{#patient}}You had multiple high blood pressure readings recently (>= 140 Systolic and/or 90 Diastolic).  This suggests you have Stage 2 hypertension, a treatable condition of high blood pressure. Please discuss with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP >= 140 mm HG and/or DBP >= 90 mm Hg. This strongly suggests the patient has Stage 2 Hypertension but no diagnosis was found.{{/careTeam}}'
+  else if "Consider HTN Stage 2" then '{{#patient}}You recently had high blood pressure readings (>140 systolic or > 90 diastolic) which suggests hypertension, but no diagnosis is in your chart.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 140mm Hg and/or DBP > 90. This suggests the patient may have Stage 2 Hypertension, but no diagnosis was found.{{/careTeam}}'
+  else if "Consider HTN Stage 1" then '{{#patient}}You recently had high blood pressure readings (> 130 systolic or > 80 diastolic), but do not have a recorded diagnosis of hypertension. You may want to discuss with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 130mm Hg and/or DBP > 80. This suggests the patient may have Stage 1 Hypertension, but no diagnosis was found.{{/careTeam}}'
+  else if "Prescribe HBP or ABP Monitoring" then '{{#patient}}You had a high blood pressure reading recently and have a blood pressure is high, but have no hypertension diagnosis.  Taking more blood pressures will help your care team decide if the high blood pressures need treatment.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}'
+  else if "Prescribe Ambulatory BP Monitoring" then '{{#patient}}You had some variation in your blood pressures recently. Sometimes variation in blood pressure is a health risk ; your care team may recommend ambulatory blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk.{{/careTeam}}'
   else 'No Further Action Required.'
 
 define "Indicator Status":
@@ -98,31 +98,30 @@ define "Indicator Status":
   else if "Prescribe Ambulatory BP Monitoring" then "Info"
   else "Info"
 
-
 define "Source":
   if exists "Condition Indicating Pregnancy" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15015'
   else if "Diagnosis of Preexisting Hypertension" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15016'
   else if exists "Condition Indicating End Stage Renal Disease" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15017'
-  else if "HTN Crisis" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15018'
-  else if not "Has BP Set" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15019'
-  else if "HTN Stage 2" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15020'
-  else if "Consider HTN Stage 2" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15021'
-  else if "Consider HTN Stage 1" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15022'
-  else if "Prescribe HBP or ABP Monitoring" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15023'
-  else if "Prescribe Ambulatory BP Monitoring" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15024'
+  else if "HTN Crisis" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
+  else if not "Has BP Set" then 'https://pubmed.ncbi.nlm.nih.gov/32773652/'
+  else if "HTN Stage 2" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
+  else if "Consider HTN Stage 2" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
+  else if "Consider HTN Stage 1" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15026'
+  else if "Prescribe HBP or ABP Monitoring" then ''
+  else if "Prescribe Ambulatory BP Monitoring" then ''
   else ''
 
 define "Suggestions":
   if exists "Condition Indicating Pregnancy" then ''
   else if "Diagnosis of Preexisting Hypertension" then ''
   else if exists "Condition Indicating End Stage Renal Disease" then ''
-  else if "HTN Crisis" then ''
-  else if not "Has BP Set" then ''
-  else if "HTN Stage 2" then ''
-  else if "Consider HTN Stage 2" then ''
-  else if "Consider HTN Stage 1" then ''
-  else if "Prescribe HBP or ABP Monitoring" then ''
-  else if "Prescribe Ambulatory BP Monitoring" then ''
+  else if "HTN Crisis" then '[ { "label": "Contact care team BP urgent", "actions": ["{{#patient}}<a data-id=\'CommunicationHBP\' data-recipient=\'CareTeam\' data-sender=\'Patient\' href=\'/contact\'> Contact your care team about your high blood pressure</a> {{/patient}}"] } ]'
+  else if not "Has BP Set" then '[ { "label": "Enter Blood Pressure", "actions": [ "ServiceRequest for High Blood Pressure Monitoring", "{{#patient}}<a href=\'/bp-readings\'>Click here to go to the Home Blood Pressure entry page</a>{{/patient}}" ] } ]'
+  else if "HTN Stage 2" then '[ { "label": "Contact care team diagnosis", "actions": ["{{#patient}}<a data-id=\'Communication\' data-recipient=\'CareTeam\' data-sender=\'Patient\' href=\'/contact\'> Contact your care team about high blood presure diagnosis</a> {{/patient}}"] } ]'
+  else if "Consider HTN Stage 2" then '[ { "label": "Contact care team diagnosis", "actions": ["{{#patient}}<a data-id=\'Communication\' data-recipient=\'CareTeam\' data-sender=\'Patient\' href=\'/contact\'> Contact your care team about high blood presure diagnosis</a> {{/patient}}"] } ]'
+  else if "Consider HTN Stage 1" then '[ { "label": "Contact care team diagnosis", "actions": ["{{#patient}}<a data-id=\'Communication\' data-recipient=\'CareTeam\' data-sender=\'Patient\' href=\'/contact\'> Contact your care team about high blood presure diagnosis</a> {{/patient}}"] } ]'
+  else if "Prescribe HBP or ABP Monitoring" then '[ { "label": "Enter Blood Pressure", "actions": [ "ServiceRequest for High Blood Pressure Monitoring", "{{#patient}}<a href=\'/bp-readings\'>Click here to go to the Home Blood Pressure entry page</a>{{/patient}}" ] } ]'
+  else if "Prescribe Ambulatory BP Monitoring" then '[ { "label": "Request Ambulatory Blood Pressure", "actions": [ "ServiceRequest for Ambulatory Blood Pressure Monitoring", "{{#patient}}<a href=\'/ambulatoryBP\'>Click here to request Ambulatory Blood Pressure</a>{{/patient}}" ] } ]'
   else ''
 
 define "Selection Behavior":
@@ -142,7 +141,7 @@ define "Links":
   if exists "Condition Indicating Pregnancy" then 'https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy/art-20046098#:~:text=High%20blood%20pressure%20during%20pregnancy%20poses%20various%20risks%2C%20including%3A,birth%20weight%20or%20premature%20birth.'
   else if "Diagnosis of Preexisting Hypertension" then 'https://www.mayoclinic.org/diseases-conditions/secondary-hypertension/symptoms-causes/syc-20350679#:~:text=Secondary%20hypertension%20(secondary%20high%20blood,arteries%2C%20heart%20or%20endocrine%20system.'
   else if exists "Condition Indicating End Stage Renal Disease" then 'https://www.mayoclinic.org/diseases-conditions/end-stage-renal-disease/symptoms-causes/syc-20354532'
-  else if "HTN Crisis" then 'https://www.heart.org/en/health-topics/high-blood-pressure'
+  else if "HTN Crisis" then ''
   else if not "Has BP Set" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home'
   else if "HTN Stage 2" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings'
   else if "Consider HTN Stage 2" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings'
