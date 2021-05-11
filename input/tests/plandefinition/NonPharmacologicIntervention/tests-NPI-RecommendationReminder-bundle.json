@@ -1,0 +1,233 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-NPI-RecommendationReminder-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "procedure-NPI-RecommendationReminder-1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "225323000",
+          "display": "Smoking cessation education (procedure)"
+        } ],
+        "text": "Smoking cessation education (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/NPI-RecommendationReminder"
+      },
+      "performedDateTime": "2019-01-05T11:00:00-06:00",
+      "reasonReference": [ {
+        "reference": "Observation/observation-NPI-RecommendationReminder-1"
+      } ],
+      "note": [ {
+        "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/procedure-NPI-RecommendationReminder-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-NPI-RecommendationReminder-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ],
+        "text": "Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/NPI-RecommendationReminder"
+      },
+      "onsetDateTime": "2015-01-28T15:16:21-05:00",
+      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "note": [ {
+        "text": "Indicates Preexisting Diagnosis of Hypertension"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-NPI-RecommendationReminder-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "NPI-RecommendationReminder",
+      "active": true,
+      "name": [ {
+        "text": "Recommendation Reminder",
+        "family": "Reminder",
+        "given": [ "Recommendation" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1961-12-26"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/NPI-RecommendationReminder"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-RecommendationReminder-1",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/NPI-RecommendationReminder"
+      },
+      "effectivePeriod": {
+        "start": "2001-09-12",
+        "end": "2019-01-05"
+      },
+      "issued": "2019-01-05T00:00:00-07:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "428071000124103",
+          "display": "Heavy tobacco smoker (finding)"
+        } ]
+      },
+      "note": [ {
+        "text": "Patient was smoking 1 pack/day as of 1/5/2019. Referred to counseling (related procedure)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          } ]
+        },
+        "valueQuantity": {
+          "value": 1,
+          "unit": "Packs/Day"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-RecommendationReminder-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-RecommendationReminder-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "survey"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status NHIS"
+        } ],
+        "text": "Tobacco smoking status NHIS"
+      },
+      "subject": {
+        "reference": "Patient/NPI-RecommendationReminder"
+      },
+      "effectiveDateTime": "2020-03-02T00:17:51-04:00",
+      "issued": "2020-03-02T00:17:51.943-04:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "8517006",
+          "display": "Former smoker"
+        } ],
+        "text": "Former smoker"
+      },
+      "note": [ {
+        "text": "Patient quit smoking in 2020."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-RecommendationReminder-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-NPI-RecommendationReminder-1",
+      "lifecycleStatus": "planned",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "description": {
+        "text": "Goal of 135/85"
+      },
+      "subject": {
+        "reference": "Patient/NPI-RecommendationReminder"
+      },
+      "startDate": "2020-02-12",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 135,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-NPI-RecommendationReminder-1"
+    }
+  } ]
+}

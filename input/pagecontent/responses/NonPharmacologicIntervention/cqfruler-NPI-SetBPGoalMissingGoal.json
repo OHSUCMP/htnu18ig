@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "summary": "Hypertension Non-Pharmacologic Intervention",
+      "indicator": "info",
+      "detail": "SetBPGoal MissingGoal",
+      "source": {
+        "label": "Info for those with normal blood pressure",
+        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+      }
+    },
+    {
+      "summary": "Discuss target blood pressure and set initial BP goal",
+      "indicator": "info",
+      "detail": "TODO",
+      "source": {}
+    },
+    {
+      "summary": "Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity",
+      "indicator": "info",
+      "detail": "TODO",
+      "source": {}
+    },
+    {
+      "summary": "Patient not on track of goal: Discuss pharmacological interventions.",
+      "indicator": "info",
+      "detail": "Patient not on track of goal: Discuss pharmacological treatment options with Patient.",
+      "source": {}
+    }
+  ]
+}

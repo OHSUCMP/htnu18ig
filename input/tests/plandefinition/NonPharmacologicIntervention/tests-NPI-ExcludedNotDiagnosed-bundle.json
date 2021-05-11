@@ -1,0 +1,23 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-NPI-ExcludedNotDiagnosed-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "NPI-ExcludedNotDiagnosed",
+      "active": true,
+      "name": [ {
+        "text": "Excluded Not Diagnosed",
+        "family": "NotDiagnosed",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1996-12-04"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/NPI-ExcludedNotDiagnosed"
+    }
+  } ]
+}

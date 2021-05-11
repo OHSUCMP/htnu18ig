@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "summary": "Hypertension Diagnosis",
+      "indicator": "info",
+      "detail": "Prescribe HBPABPMonitoring",
+      "source": {
+        "label": "Info for those with normal blood pressure",
+        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+      }
+    },
+    {
+      "summary": "Use ambulatory or home blood pressure monitoring to confirm diagnosis",
+      "indicator": "info",
+      "detail": "You had a high blood pressure reading recently and have a blood pressure that is in a borderline for a hypertension diagnosis.  Taking a full set of blood pressures, approximately 6 days of home measurements (twice a day), or 24 hours of ambulatory monitoring, will help find the right diagnosis.;https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15023;;at-most-one;https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home",
+      "source": {}
+    }
+  ]
+}
