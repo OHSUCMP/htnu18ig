@@ -62,23 +62,21 @@ define "In Population":
 define "Recommendation":
   if exists "Condition Indicating Pregnancy" then 'Standard high blood pressure guidelines do not apply'
   else if exists "Condition Indicating End Stage Renal Disease" then 'Standard high blood pressure guidelines do not apply'
-  else if not "Patient has a BP Goal" then 'Discuss target blood pressure and set initial BP goal'
+  else if not "Patient has a BP Goal" then 'Discuss target blood pressure and set a blood pressure goal'
   else if not "Has BP Set" then 'Consider obtaining additional blood pressure measurements'
-  else if "HTN Stage 2" then 'Not at goal: Recommend treatment.'
-  else if "Not At Goal" then 'Not at goal: Recommend treatment.'
-  else if "Prescribe HBP or ABP Monitoring" then 'Use ambulatory or home blood pressure monitoring to confirm not at BP goal'
+  else if ("HTN Stage 2" or "Not At Goal") then 'Blood pressure goal not reached. Discuss treatment options'
+  else if "Prescribe HBP or ABP Monitoring" then 'Use home or ambulatory blood pressure monitoring to confirm blood pressure'
   else if "Prescribe Ambulatory BP Monitoring" then 'Use ambulatory blood pressure monitoring to address blood pressure variability'
   else 'Patient at goal!'
 
 define "Rationale":
-  if exists "Condition Indicating Pregnancy" then 'Please see your Ob-Gyn provider for specialized care regarding your high blood pressure reading while pregnant'
-  else if exists "Condition Indicating End Stage Renal Disease" then 'Please see your nephrologist for specialized care regarding your recent high blood pressure reading.'
-  else if not "Patient has a BP Goal" then 'Please see your health-care provider to discuss a target blood pressure and set an initial BP goal.'
-  else if not "Has BP Set" then 'You had a high blood pressure reading recently.  We do not have enough blood pressure measurements to provide a full picture of your health.  Getting a full set of blood pressures will help us provide the best care.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.'
-  else if "HTN Stage 2" then 'You had a high blood pressure reading recently and are not at your blood pressure goal. Treatment is recommended.  Please see your provider to lower your blood pressure and reduce your risk of stroke or other adverse events.  More severe hypertension, stage 2 hypertension is a systolic pressure of 140 mm Hg or higher or a diastolic pressure of 90 mm Hg or higher.'
-  else if "Not At Goal" then 'You had a high blood pressure reading recently and are not at your blood pressure goal. Treatment is recommended. Please see your provider to lower your blood pressure and reduce your risk of stroke or other adverse events.'
-  else if "Prescribe HBP or ABP Monitoring" then 'You had a high blood pressure reading recently and have a blood pressure that is in a borderline for a hypertension diagnosis.  Taking a full set of blood pressures, approximately 6 days of home measurements (twice a day), or 24 hours of ambulatory monitoring, will help find the right diagnosis.'
-  else if "Prescribe Ambulatory BP Monitoring" then 'You had a high blood pressure reading recently.  Your blood pressure has varied from reading to reading significantly.  Sometimes there is a health risk with highly variable blood pressure.  A 24 hour ambulatory/walking measurement will us provide the best care.'
+  if exists "Condition Indicating Pregnancy" then '{{#patient}}Please see your Ob-Gyn provider for specialized care regarding your high blood pressure reading while pregnant{{/patient}}{{#careTeam}}{{/careTeam}}'
+  else if exists "Condition Indicating End Stage Renal Disease" then '{{#patient}}Please see your nephrologist for specialized care regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}'
+  else if not "Patient has a BP Goal" then '{{#patient}}You recently received a hypertension (high blood pressure) diagnosis.  Setting goals for lowering your blood pressure has been proven to help overall health and reduce your chance of stroke or other conditions.{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}'
+  else if not "Has BP Set" then '{{#patient}}Your recent blood pressure is above your goal.  We do not have enough blood pressures to provide a full picture of your blood pressure. Taking a full set of blood pressures can help.  We consider a full set to be ~4 in-office measurements, ~6 home measurements, or 12 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
+  else if ("HTN Stage 2" or "Not At Goal") then '{{#patient}}Your recent blood pressure is above your goal. Changing your behaviors may help - see the additional options. In addition, please consult your care team to consider additional treatment options. Please review the home blood pressure measurement protocol presented on the blood pressure entry page to make sure that the tool is accurately measuring your blood pressure.{{/patient}}{{#careTeam}}BP not at goal. Consider initiating antihypertensive drug therapy with a single antihypertinsive drug with dosage titration and sequential addition of other agents to achieve the target BP.{{/careTeam}}'
+  else if "Prescribe HBP or ABP Monitoring" then '{{#patient}}Your recent blood pressure is above your goal and is borderline for a hypertension diagnosis.  More measurements over a longer period could help.  We consider a full set to be ~4 in-office measurements, ~6 home measurements, or ~24 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
+  else if "Prescribe Ambulatory BP Monitoring" then '{{#patient}}Your recent blood pressure is above your goal and appears to be highly variable, which can indicate a health risk.  Ask your care team about ordering ambulatory blood pressure monitoring or how to get better measurements from home blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk. If ABPM is not available, discuss more better protocols for home blood pressure monitoring.{{/careTeam}}'
   else 'No Further Action Required.'
 
 define "Indicator Status":
@@ -90,6 +88,26 @@ define "Indicator Status":
   else if "Prescribe HBP or ABP Monitoring" then "Info"
   else if "Prescribe Ambulatory BP Monitoring" then "Info"
   else "Info"
+
+define "Source":
+  if exists "Condition Indicating Pregnancy" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15015'
+  else if exists "Condition Indicating End Stage Renal Disease" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15017'
+  else if not "Patient has a BP Goal" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
+  else if not "Has BP Set" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
+  else if ("HTN Stage 2" or "Not At Goal") then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
+  else if "Prescribe HBP or ABP Monitoring" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
+  else if "Prescribe Ambulatory BP Monitoring" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
+  else ''
+
+define "Suggestions":
+  if exists "Condition Indicating Pregnancy" then ''
+  else if exists "Condition Indicating End Stage Renal Disease" then ''
+  else if not "Patient has a BP Goal" then '[ { "label": "BPGoal", "actions": [ "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalhigh\'>BP target < 140/90</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalmedium\'>BP target < 130/80</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoallow\'>BP target < 120/80</input>{{/patient}}" ] } ]'
+  else if not "Has BP Set" then '[ { "label": "Enter Blood Pressure", "actions": [ "ServiceRequest for High Blood Pressure Monitoring", "{{#patient}}<a href=\'/bp-readings\'>Click here to go to the Home Blood Pressure entry page</a>{{/patient}}" ] } ]'
+  else if ("HTN Stage 2" or "Not At Goal") then '[ { "label": "Contact care team BP treatment", "actions": ["{{#patient}}<a data-id=\'CommunicationTreatment\' data-recipient=\'CareTeam\' data-sender=\'Patient\' href=\'/contact\'> Contact your care team about options to control your high blood pressure</a> {{/patient}}"] } ]'
+  else if "Prescribe HBP or ABP Monitoring" then '[ { "label": "Enter Blood Pressure", "actions": [ "ServiceRequest for High Blood Pressure Monitoring", "{{#patient}}<a href=\'/bp-readings\'>Click here to go to the Home Blood Pressure entry page</a>{{/patient}}" ] } ]'
+  else if "Prescribe Ambulatory BP Monitoring" then '[ { "label": "Request Ambulatory Blood Pressure", "actions": [ "ServiceRequest for Ambulatory Blood Pressure Monitoring", "{{#patient}}<a href=\'/ambulatoryBP\'>Click here to request Ambulatory Blood Pressure</a>{{/patient}}" ] } ]'
+  else ''
 
 define "Exclusion Reason":
   if "Meets Exclusion Criteria" then
