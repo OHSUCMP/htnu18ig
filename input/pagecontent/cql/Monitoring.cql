@@ -69,6 +69,9 @@ define "Recommendation":
   else if "Prescribe Ambulatory BP Monitoring" then 'Use ambulatory blood pressure monitoring to address blood pressure variability'
   else 'Patient at goal!'
 
+define "Rationale Combined Data":
+  "Rationale" + '|' + "Source" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
+
 define "Rationale":
   if exists "Condition Indicating Pregnancy" then '{{#patient}}Please see your Ob-Gyn provider for specialized care regarding your high blood pressure reading while pregnant{{/patient}}{{#careTeam}}{{/careTeam}}'
   else if exists "Condition Indicating End Stage Renal Disease" then '{{#patient}}Please see your nephrologist for specialized care regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}'
@@ -108,6 +111,12 @@ define "Suggestions":
   else if "Prescribe HBP or ABP Monitoring" then '[ { "label": "Enter Blood Pressure", "actions": [ "ServiceRequest for High Blood Pressure Monitoring", "{{#patient}}<a href=\'/bp-readings\'>Click here to go to the Home Blood Pressure entry page</a>{{/patient}}" ] } ]'
   else if "Prescribe Ambulatory BP Monitoring" then '[ { "label": "Request Ambulatory Blood Pressure", "actions": [ "ServiceRequest for Ambulatory Blood Pressure Monitoring", "{{#patient}}<a href=\'/ambulatoryBP\'>Click here to request Ambulatory Blood Pressure</a>{{/patient}}" ] } ]'
   else ''
+
+define "Selection Behavior":
+  'at-most-one'
+
+define "Links":
+  'tbd'
 
 define "Exclusion Reason":
   if "Meets Exclusion Criteria" then
