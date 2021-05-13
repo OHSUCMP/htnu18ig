@@ -12,7 +12,7 @@
     {
       "summary": "Patient does not have an indication of a hypertensive state.",
       "indicator": "info",
-      "detail": "No Further Action Required.;;;at-most-one;",
+      "detail": "No Further Action Required.|||at-most-one|",
       "source": {}
     }
   ]

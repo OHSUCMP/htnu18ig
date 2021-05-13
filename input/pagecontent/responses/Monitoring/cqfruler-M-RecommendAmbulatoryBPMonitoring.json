@@ -12,7 +12,7 @@
     {
       "summary": "Use ambulatory blood pressure monitoring to address blood pressure variability",
       "indicator": "info",
-      "detail": "You had a high blood pressure reading recently.  Your blood pressure has varied from reading to reading significantly.  Sometimes there is a health risk with highly variable blood pressure.  A 24 hour ambulatory/walking measurement will us provide the best care.",
+      "detail": "{{#patient}}Your recent blood pressure is above your goal and appears to be highly variable, which can indicate a health risk.  Ask your care team about ordering ambulatory blood pressure monitoring or how to get better measurements from home blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk. If ABPM is not available, discuss more better protocols for home blood pressure monitoring.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[ { \"label\": \"Request Ambulatory Blood Pressure\", \"actions\": [ \"ServiceRequest for Ambulatory Blood Pressure Monitoring\", \"{{#patient}}\u003ca href\u003d\u0027/ambulatoryBP\u0027\u003eClick here to request Ambulatory Blood Pressure\u003c/a\u003e{{/patient}}\" ] } ]|at-most-one|tbd",
       "source": {}
     }
   ]

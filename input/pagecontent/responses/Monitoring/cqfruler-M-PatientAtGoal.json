@@ -12,7 +12,7 @@
     {
       "summary": "Patient at goal!",
       "indicator": "info",
-      "detail": "No Further Action Required.",
+      "detail": "No Further Action Required.|||at-most-one|tbd",
       "source": {}
     }
   ]

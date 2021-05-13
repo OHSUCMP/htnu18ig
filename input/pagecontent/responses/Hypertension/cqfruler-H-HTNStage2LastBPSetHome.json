@@ -10,9 +10,9 @@
       }
     },
     {
-      "summary": "Recommend diagnosis of Stage 2 hypertension",
+      "summary": "Consider diagnosis of Stage 2 hypertension",
       "indicator": "warning",
-      "detail": "You had a high blood pressure reading recently.  Please see your provider to lower your blood pressure and reduce your risk of stroke or other adverse events.  More severe hypertension, stage 2 hypertension is a systolic pressure of 140 mm Hg or higher or a diastolic pressure of 90 mm Hg or higher.;https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15020;;at-most-one;https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings",
+      "detail": "{{#patient}}You had multiple high blood pressure readings recently (\u003e\u003d 140 Systolic and/or 90 Diastolic).  This suggests you have Stage 2 hypertension, a treatable condition of high blood pressure. Please discuss with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP \u003e\u003d 140 mm HG and/or DBP \u003e\u003d 90 mm Hg. This strongly suggests the patient has Stage 2 Hypertension but no diagnosis was found.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[ { \"label\": \"Contact care team diagnosis\", \"actions\": [\"{{#patient}}\u003ca data-id\u003d\u0027Communication\u0027 data-recipient\u003d\u0027CareTeam\u0027 data-sender\u003d\u0027Patient\u0027 href\u003d\u0027/contact\u0027\u003e Contact your care team about high blood presure diagnosis\u003c/a\u003e {{/patient}}\"] } ]|at-most-one|https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings",
       "source": {}
     }
   ]
