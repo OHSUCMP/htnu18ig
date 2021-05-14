@@ -148,7 +148,7 @@
         },
         {
           "title": "Does Patient Smoke Right Now?",
-          "description": "Determines if a recommendation regarding the Patient being a Smoker should be established.",
+          "description": "Determines if a recommendation or reminder regarding Patient smoking should be presented.",
           "condition": [
             {
               "kind": "applicability",
@@ -187,7 +187,7 @@
         },
         {
           "title": "Is Patient's BMI Greater Than 25?",
-          "description": "Determines if a recommendation regarding the Patient's BMI being over 25 should be established.",
+          "description": "Determines if a recommendation or reminder regarding the Patient's BMI being over 25 should be presented.",
           "condition": [
             {
               "kind": "applicability",
@@ -226,7 +226,7 @@
         },
         {
           "title": "Does the Patient Drink Heavily?",
-          "description": "Determines if a recommendation regarding the Patient's Alcohol Drinking should be established.",
+          "description": "Determines if a recommendation or reminder regarding the Patient's Alcohol Drinking should be presented.",
           "condition": [
             {
               "kind": "applicability",
@@ -291,45 +291,6 @@
                 "description": "Rationale for recommendation type.",
                 "language": "text/cql.identifier",
                 "expression": "Dietary Counseling Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Have Smoking, Drinking, or BMI Not Increased Since Last Visit?",
-          "description": "Determines if a recommendation regarding reminding the Patient should be established.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in the recommendation.",
-                "language": "text/cql.identifier",
-                "expression": "Patient Reminder Recommendations Action Path"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Applicable text for the Smoking, Drinking, or BMI Not Increased Recommendation Recommendation",
-                "language": "text/cql.identifier",
-                "expression": "Smoking, Drinking, BMI Not Increased Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "Smoking, Drinking, BMI Not Increased Rationale"
               }
             },
             {

@@ -32,6 +32,34 @@
     }
   }, {
     "resource": {
+      "resourceType": "Procedure",
+      "id": "procedure-NPI-AlcoholModerationIncrease-2",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "24165007",
+          "display": "Alcoholism counseling (procedure)"
+        } ],
+        "text": "Alcoholism counseling (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/NPI-AlcoholModerationIncrease"
+      },
+      "performedDateTime": "2019-05-30T11:00:00-06:00",
+      "reasonReference": [ {
+        "reference": "Observation/observation-NPI-AlcoholModerationIncrease-1"
+      } ],
+      "note": [ {
+        "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/procedure-NPI-AlcoholModerationIncrease-2"
+    }
+  }, {
+    "resource": {
       "resourceType": "Condition",
       "id": "condition-NPI-AlcoholModerationIncrease-1",
       "clinicalStatus": {
@@ -103,11 +131,11 @@
       "effectiveDateTime": "2019-05-27T10:00:00-07:00",
       "issued": "2019-05-27T00:00:00-07:00",
       "valueQuantity": {
-        "value": 3.5,
+        "value": 4.1,
         "unit": "Drinks/Day"
       },
       "note": [ {
-        "text": "Patient is female and has fewer than 4 drinks a day. Not a heavy alcoholic drinker."
+        "text": "Patient is female and has more than 4 drinks a day. Refer to counseling."
       } ]
     },
     "request": {
@@ -172,11 +200,11 @@
       "effectiveDateTime": "2020-06-15T10:00:00-07:00",
       "issued": "2020-06-15T00:00:00-07:00",
       "valueQuantity": {
-        "value": 4.2,
+        "value": 5,
         "unit": "Drinks/Day"
       },
       "note": [ {
-        "text": "Patient is female and drinking has increased to more than 4 drinks a day. Considered a heavy alcoholic drinker."
+        "text": "Patient is female and drinking has increased to more than 4 drinks a day. Drinking has increased."
       } ]
     },
     "request": {

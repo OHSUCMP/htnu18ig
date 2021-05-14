@@ -10,9 +10,9 @@
       }
     },
     {
-      "summary": "Provide Reminder of recommendations.",
+      "summary": "Provide alcohol moderation counseling",
       "indicator": "info",
-      "detail": "TODO",
+      "detail": "Alcohol counseling rationale",
       "source": {}
     },
     {

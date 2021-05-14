@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-DietaryCounseling",
+  "active": true,
+  "name": [
+    {
+      "text": "Dietary Counseling",
+      "family": "Counseling",
+      "given": [
+        "Dietary"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1994-07-03"
+}

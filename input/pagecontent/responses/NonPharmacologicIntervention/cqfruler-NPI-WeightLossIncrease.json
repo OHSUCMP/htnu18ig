@@ -12,13 +12,7 @@
     {
       "summary": "Recommend weight loss counseling.",
       "indicator": "info",
-      "detail": "TODO",
-      "source": {}
-    },
-    {
-      "summary": "Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity",
-      "indicator": "info",
-      "detail": "TODO",
+      "detail": "Weight loss counseling rationale",
       "source": {}
     },
     {

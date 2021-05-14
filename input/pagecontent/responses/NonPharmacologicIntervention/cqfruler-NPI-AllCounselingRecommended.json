@@ -12,19 +12,19 @@
     {
       "summary": "Recommend smoking cessation counseling",
       "indicator": "info",
-      "detail": "TODO",
+      "detail": "Smoking counseling rationale",
       "source": {}
     },
     {
       "summary": "Recommend weight loss counseling.",
       "indicator": "info",
-      "detail": "TODO",
+      "detail": "Weight loss counseling rationale",
       "source": {}
     },
     {
       "summary": "Provide alcohol moderation counseling",
       "indicator": "info",
-      "detail": "TODO",
+      "detail": "Alcohol counseling rationale",
       "source": {}
     },
     {

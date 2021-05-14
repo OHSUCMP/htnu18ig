@@ -10,7 +10,13 @@
       }
     },
     {
-      "summary": "Provide Reminder of recommendations.",
+      "summary": "Provide reminder of smoking recommendations",
+      "indicator": "info",
+      "detail": "Smoking reminder rationale",
+      "source": {}
+    },
+    {
+      "summary": "Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity",
       "indicator": "info",
       "detail": "TODO",
       "source": {}

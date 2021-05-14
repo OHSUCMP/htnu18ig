@@ -1,0 +1,60 @@
+{
+  "resourceType": "Goal",
+  "id": "goal-NPI-AlcoholModerationAchieved-1",
+  "lifecycleStatus": "planned",
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "version": "4.0.1",
+        "code": "in-progress",
+        "display": "In Progress"
+      }
+    ]
+  },
+  "startDate": "2020-02-12",
+  "description": {
+    "text": "Goal of 135/85"
+  },
+  "subject": {
+    "reference": "Patient/NPI-AlcoholModerationAchieved"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": 135,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": 85,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  ]
+}

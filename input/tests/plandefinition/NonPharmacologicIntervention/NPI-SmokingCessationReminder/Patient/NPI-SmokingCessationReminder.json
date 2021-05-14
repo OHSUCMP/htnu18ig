@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-SmokingCessationReminder",
+  "active": true,
+  "name": [
+    {
+      "text": "Smoking Cessation Reminder",
+      "family": "Reminder",
+      "given": [
+        "SmokingCessation"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1958-07-14"
+}

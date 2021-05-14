@@ -45,8 +45,13 @@ code "sustaining": 'sustaining' from "Goal achievement status" display 'sustaini
 
 context Patient
 
+/* Return the number of packs/day indicated in the Observation */
 define function "Packs Per Day"(O FHIR.Observation):
   FHIRHelpers.ToQuantity(singleton from (O.component C where C.code = "PACKS A DAY").value)
+
+/* Return a reference to the most recent observation related to the list of counseling procedures given */
+define function "Last Relevant Counseling"(procedures List<FHIR.Procedure>):
+  (Last(procedures P sort by start of Common."Normalize Interval"(performed))).reasonReference
 
 define "Info":
   'info'
@@ -64,7 +69,6 @@ define "Patient Name":
   First(Patient.name.given)
    + ' ' +
   First(Patient.name.family)
-
 
 /* Recommendation Criteria - Non-Pharmacologic Interventions  */
 define "Meets Inclusion Criteria":
@@ -85,36 +89,61 @@ define "BP Goal Recommendation":
   'Discuss target blood pressure and set initial BP goal'
 
 define "BP Goal Rationale":
-  'TODO'
+  '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have blood pressure goal yet.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}' + '|' + 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065' + '|' +
+  '[
+    {"label": "BPGoal",
+     "actions: [
+       "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalhigh\'>BP target < 140/90</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalmedium\'>BP target < 130/80</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoallow\'>BP target < 120/80</input>{{/patient}}"
+      ]
+    }
+  ]' + '|' + 'at-most-one' + '|' + 'tbd'
 
 define "Smoking Recommendation":
-  'Recommend smoking cessation counseling'
+  if "Patient is Currently a Smoker" then
+    if ("Counseling Smoking Observation" is null or "Patient Smoking Increased Since Last Visit") then 'Recommend smoking cessation counseling'
+    else 'Provide reminder of smoking recommendations'
+  else
+    'None'
 
 define "Smoking Rationale":
-  'TODO'
+if "Patient is Currently a Smoker" then
+  if ("Counseling Smoking Observation" is null or "Patient Smoking Increased Since Last Visit") then 'Smoking counseling rationale'
+  else 'Smoking reminder rationale'
+else
+  'None'
 
 define "BMI Recommendation":
-  'Recommend weight loss counseling.'
+  if "Patient BMI is Greater than 25 kg/m2" then
+    if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then 'Recommend weight loss counseling.'
+    else 'Provide reminder of BMI recommendations.'
+  else
+    'None'
 
 define "BMI Rationale":
-  'TODO'
+  if "Patient BMI is Greater than 25 kg/m2" then
+    if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then 'Weight loss counseling rationale'
+    else 'BMI reminder rationale'
+  else
+    'None'
 
 define "Alcohol Recommendation":
-  'Provide alcohol moderation counseling'
+  if "Patient is a Heavy Alcoholic Drinker" then
+    if ("Counseling Drinking Observation" is null or "Patient Drinking Increased Since Last Visit") then 'Provide alcohol moderation counseling'
+    else 'Provide reminder of alcohol recommendations'
+  else
+    'None'
 
 define "Alcohol Rationale":
-  'TODO'
+  if "Patient is a Heavy Alcoholic Drinker" then
+    if ("Counseling Drinking Observation" is null or "Patient Drinking Increased Since Last Visit") then 'Alcohol counseling rationale'
+    else 'Alcohol reminder rationale'
+  else
+    'None'
 
 define "Dietary Counseling Recommendation":
   'Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity'
 
 define "Dietary Counseling Rationale":
-  'TODO'
-
-define "Smoking, Drinking, BMI Not Increased Recommendation":
-  'Provide Reminder of recommendations.'
-
-define "Smoking, Drinking, BMI Not Increased Rationale":
   'TODO'
 
 define "Patient on Track of Goal Recommendation":
@@ -247,39 +276,32 @@ define "Patient is a Heavy Alcoholic Drinker":
   else
     "Most Recent Patient Drinking Observation".value.value >= "Heavy Daily Drinker"
 
+define "Last Smoking Counseling":
+  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Tobacco Use Cessation Counseling"]))
 
-// Has Patient received non-pharmacological instructions previously?
-define "Counseling for Non-Pharmacological Interventions":
-  (
-    Common.QualifiedProcedure(["Procedure": "Tobacco Use Cessation Counseling"])
-    union Common.QualifiedProcedure(["Procedure": "Weight Reduction Recommendations"])
-    union Common.QualifiedProcedure(["Procedure": "BMI Follow Up Plan SNOMEDCT"])
-    union Common.QualifiedProcedure(["Procedure": "Alcohol Brief Intervention and Counseling"])
-    union Common.QualifiedProcedure(["Procedure": "Counseling for Nutrition"])
-  ) NonPharmacologicalCounseling
+define "Last Drinking Counseling":
+  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Alcohol Brief Intervention and Counseling"]))
 
-define "Counseling from Last Visit":
-  (
-    Last(
-      "Counseling for Non-Pharmacological Interventions" Counseling
-      sort by start of Common."Normalize Interval"(performed)
-    )
-  ) RecentCounseling
-    return RecentCounseling.reasonReference
+define "Last BMI Counseling":
+  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Weight Reduction Recommendations"])
+  union Common.QualifiedProcedure(["Procedure": "BMI Follow Up Plan SNOMEDCT"]))
+
+define "Last Nutrition Counseling":
+  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Counseling for Nutrition"]))
 
 define "Counseling Smoking Observation":
   Last("Observations Indicating Patient is a Smoker" SmokingObserved
-    with "Counseling from Last Visit" Counseling
+    with "Last Smoking Counseling" Counseling
       such that SmokingObserved.id = Common.GetId(Counseling.reference))
 
 define "Counseling Drinking Observation":
   Last("Observations Measuring Amount of Alcoholic Drinks Patient has per Drinking Day" DrinksPerDay
-    with "Counseling from Last Visit" Counseling
+    with "Last Drinking Counseling" Counseling
       such that DrinksPerDay.id = Common.GetId(Counseling.reference))
 
 define "Counseling BMI Observation":
   Last("Observations Specifying Patient BMI" BMIObserved
-    with "Counseling from Last Visit" Counseling
+    with "Last BMI Counseling" Counseling
       such that BMIObserved.id = Common.GetId(Counseling.reference))
 
 define "Patient Smoking Increased Since Last Visit":
@@ -297,19 +319,6 @@ define "Patient BMI Increased Since Last Visit":
     "Counseling BMI Observation" BMILastVisit
       return (FHIRHelpers.ToQuantity(BMIThisVisit.value) > FHIRHelpers.ToQuantity(BMILastVisit.value)) is true
 
-define "Patient Has Not Increased in Smoking, BMI, Or Drinking Since Last Counseling":
-  if "In Population" is not true
-    then false
-  else (
-    exists "Counseling from Last Visit"
-      and not (
-        "Patient Smoking Increased Since Last Visit" is true
-        or "Patient Drinking Increased Since Last Visit" is true
-        or "Patient BMI Increased Since Last Visit" is true
-      )
-  )
-
-
 // Is Patient on Track to reach BP Goal?
 define "BP Goal Demonstrating Patient Improvement":
   "Most Recently Established Blood Pressure Goal" BPGoal
@@ -324,37 +333,26 @@ define "Patient at BP Goal":
   else
     "BP Goal Demonstrating Patient Improvement" is not null
 
-
 /* Action Conditionals */
 define "Patient is Currently a Smoker Action Path":
-  if "In Population" is not true then
+  if not "In Population" then
     false
-  else not "Patient Has Not Increased in Smoking, BMI, Or Drinking Since Last Counseling"
-    and ("Patient is Currently a Smoker" is true)
+  else "Patient is Currently a Smoker"
 
 define "Patient BMI is Greater than 25 kg/m2 Action Path":
-  if "In Population" is not true then
+  if not "In Population" then
     false
-  else not "Patient Has Not Increased in Smoking, BMI, Or Drinking Since Last Counseling"
-    and ("Patient BMI is Greater than 25 kg/m2" is true)
+  else "Patient BMI is Greater than 25 kg/m2"
 
 define "Patient is a Heavy Alcoholic Drinker Action Path":
-  if "In Population" is not true then
+  if not "In Population" then
     false
-  else not "Patient Has Not Increased in Smoking, BMI, Or Drinking Since Last Counseling"
-    and ("Patient is a Heavy Alcoholic Drinker" is true)
+  else "Patient is a Heavy Alcoholic Drinker"
 
 define "Patient is in Need of Dietary Counseling Action Path":
-  if "In Population" is not true then
+  if not "In Population" then
     false
-  else not exists "Counseling for Non-Pharmacological Interventions"
-    or (not "Patient Has Not Increased in Smoking, BMI, Or Drinking Since Last Counseling" is true)
-
-define "Patient Reminder Recommendations Action Path":
-  if "In Population" is not true then
-    false
-  else "Patient Has Not Increased in Smoking, BMI, Or Drinking Since Last Counseling" is true
-
+  else "Last Nutrition Counseling" is null
 
 /* Exclusion Criteria */
 define "Patient Under Age 18":
