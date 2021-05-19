@@ -57,9 +57,8 @@ define "In Population":
   and not "Meets Exclusion Criteria"
 
 define "Recommendation":
-  if exists "Condition Indicating Pregnancy" then 'Standard high blood pressure guidelines do not apply'
+  if not "In Population" then 'None'
   else if "Diagnosis of Preexisting Hypertension" then 'Standard high blood pressure guidelines do not apply'
-  else if exists "Condition Indicating End Stage Renal Disease" then 'Standard high blood pressure guidelines do not apply'
   else if "HTN Crisis" then 'Warning: Potential hypertensive emergency. Consult care team immediately.'
   else if not "Has BP Set" then 'Consider obtaining additional blood pressure measurements'
   else if "HTN Stage 2" then 'Consider diagnosis of Stage 2 hypertension'
@@ -73,9 +72,8 @@ define "Rationale Combined Data":
   "Rationale" + '|' + "Source" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
-  if exists "Condition Indicating Pregnancy" then '{{#patient}}Please see your Ob-Gyn provider for specialized care regarding your high blood pressure reading while pregnant{{/patient}}{{#careTeam}}{{/careTeam}}'
+  if not "In Population" then 'None'
   else if "Diagnosis of Preexisting Hypertension" then '{{#patient}}As you already have a high blood pressure diagnosis, please see your provider regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}'
-  else if exists "Condition Indicating End Stage Renal Disease" then '{{#patient}}Please see your nephrologist for specialized care regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}'
   else if "HTN Crisis" then '{{#patient}}Your blood pressure is high (>180 systolic or >120 diastolic).  Contact your care team immediately, OR, if you do not feel well, seek care.  {{/patient}}{{#careTeam}}Patient\'s blood pressure is > 180 systolic or > 120 diastolic. Consider immediate evaluation for treatment or escalation of care.{{/careTeam}}'
   else if not "Has BP Set" then '{{#patient}}You had a high blood pressure reading recently.  We do not have enough blood pressure measurements to provide a full picture of your health.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
   else if "HTN Stage 2" then '{{#patient}}You had multiple high blood pressure readings recently (>= 140 Systolic and/or 90 Diastolic).  This suggests you have Stage 2 hypertension, a treatable condition of high blood pressure. Please discuss with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP >= 140 mm HG and/or DBP >= 90 mm Hg. This strongly suggests the patient has Stage 2 Hypertension but no diagnosis was found.{{/careTeam}}'
@@ -86,9 +84,8 @@ define "Rationale":
   else 'No Further Action Required.'
 
 define "Indicator Status":
-  if exists "Condition Indicating Pregnancy" then "Info"
+  if not "In Population" then "Info"
   else if "Diagnosis of Preexisting Hypertension" then "Info"
-  else if exists "Condition Indicating End Stage Renal Disease" then "Info"
   else if "HTN Crisis" then "Critical"
   else if not "Has BP Set" then "Info"
   else if "HTN Stage 2" then "Warning"
@@ -99,9 +96,8 @@ define "Indicator Status":
   else "Info"
 
 define "Source":
-  if exists "Condition Indicating Pregnancy" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15015'
+  if not "In Population" then 'None'
   else if "Diagnosis of Preexisting Hypertension" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15016'
-  else if exists "Condition Indicating End Stage Renal Disease" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15017'
   else if "HTN Crisis" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
   else if not "Has BP Set" then 'https://pubmed.ncbi.nlm.nih.gov/32773652/'
   else if "HTN Stage 2" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
@@ -112,9 +108,8 @@ define "Source":
   else ''
 
 define "Suggestions":
-  if exists "Condition Indicating Pregnancy" then ''
+  if not "In Population" then 'None'
   else if "Diagnosis of Preexisting Hypertension" then ''
-  else if exists "Condition Indicating End Stage Renal Disease" then ''
   else if "HTN Crisis" then '[ { "label": "Contact care team BP urgent", "actions": ["{{#patient}}<a data-id=\'CommunicationHBP\' data-recipient=\'CareTeam\' data-sender=\'Patient\' href=\'/contact\'> Contact your care team about your high blood pressure</a> {{/patient}}"] } ]'
   else if not "Has BP Set" then '[ { "label": "Enter Blood Pressure", "actions": [ "ServiceRequest for High Blood Pressure Monitoring", "{{#patient}}<a href=\'/bp-readings\'>Click here to go to the Home Blood Pressure entry page</a>{{/patient}}" ] } ]'
   else if "HTN Stage 2" then '[ { "label": "Contact care team diagnosis", "actions": ["{{#patient}}<a data-id=\'Communication\' data-recipient=\'CareTeam\' data-sender=\'Patient\' href=\'/contact\'> Contact your care team about high blood presure diagnosis</a> {{/patient}}"] } ]'
@@ -125,9 +120,8 @@ define "Suggestions":
   else ''
 
 define "Selection Behavior":
-  if exists "Condition Indicating Pregnancy" then 'at-most-one'
+  if not "In Population" then 'None'
   else if "Diagnosis of Preexisting Hypertension" then 'at-most-one'
-  else if exists "Condition Indicating End Stage Renal Disease" then 'at-most-one'
   else if "HTN Crisis" then 'at-most-one'
   else if not "Has BP Set" then 'at-most-one'
   else if "HTN Stage 2" then 'at-most-one'
@@ -138,9 +132,8 @@ define "Selection Behavior":
   else 'at-most-one'
 
 define "Links":
-  if exists "Condition Indicating Pregnancy" then 'https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy/art-20046098#:~:text=High%20blood%20pressure%20during%20pregnancy%20poses%20various%20risks%2C%20including%3A,birth%20weight%20or%20premature%20birth.'
+  if not "In Population" then 'None'
   else if "Diagnosis of Preexisting Hypertension" then 'https://www.mayoclinic.org/diseases-conditions/secondary-hypertension/symptoms-causes/syc-20350679#:~:text=Secondary%20hypertension%20(secondary%20high%20blood,arteries%2C%20heart%20or%20endocrine%20system.'
-  else if exists "Condition Indicating End Stage Renal Disease" then 'https://www.mayoclinic.org/diseases-conditions/end-stage-renal-disease/symptoms-causes/syc-20354532'
   else if "HTN Crisis" then ''
   else if not "Has BP Set" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home'
   else if "HTN Stage 2" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings'

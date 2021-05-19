@@ -6,7 +6,7 @@ import os
 import re
 import requests
 
-directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Hypertension"
+directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention"
 print("Loading resources into FHIR server from " + directory)
 override = input("Override? y/n\n")
 if override.lower() == "y":
@@ -26,7 +26,7 @@ if (override.lower() == "y"):
 
 for root, dirs, files in os.walk(directory, topdown=False):
    for name in files:
-       if re.match('.*\.json', name) and not re.match('cqfruler-.*\.json', name):
+       if re.match('.*\.json', name) and not re.match('tests-.*\.json', name):
            with open(os.path.join(root, name), 'r') as f:
                whole = f.read()
                resourceType = re.search('.*"resourceType": "(.*?)",.*', whole).group(1)
