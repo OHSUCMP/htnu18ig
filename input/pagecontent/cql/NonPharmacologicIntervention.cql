@@ -87,83 +87,100 @@ define "In Population":
 
 // Separate Actions for each Decision Point Output. Separate Definitions for Action Conditions.
 define "BP Goal Recommendation":
-  'Discuss target blood pressure and set initial BP goal'
+  'Discuss target blood pressure and set a blood pressure goal'
 
 define "BP Goal Rationale":
-  '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have blood pressure goal yet.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}' + '|' + 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065' + '|' +
-  '[
-    {"label": "BPGoal",
-     "actions: [
-       "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalhigh\'>BP target < 140/90</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalmedium\'>BP target < 130/80</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoallow\'>BP target < 120/80</input>{{/patient}}"
-      ]
-    }
-  ]' + '|' + 'at-most-one' + '|' + 'tbd'
+  '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have blood pressure goal yet.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.<br><br>Stroke, MI, "Reduce risk of stroke, heart disease, or kidney disease"{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[    {      "label": "BPGoal",      "actions": [       "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalhigh\'>BP target < 140/90</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalmedium\'>BP target < 130/80</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoallow\'>BP target < 120/80</input>{{/patient}}"      ]    }  ]|at-most-one|'
 
 define "Smoking Recommendation":
   if "Patient is Currently a Smoker" then
-    if ("Counseling Smoking Observation" is null or "Patient Smoking Increased Since Last Visit") then 'Recommend smoking cessation counseling'
-    else 'Provide reminder of smoking recommendations'
+    if ("Counseling Smoking Observation" is null or "Patient Smoking Increased Since Last Visit") then
+      'Discuss smoking cessation'
+    else
+      'Smoking Reminder Recommendation Placeholder'
   else
     'None'
 
 define "Smoking Rationale":
-if "Patient is Currently a Smoker" then
-  if ("Counseling Smoking Observation" is null or "Patient Smoking Increased Since Last Visit") then 'Smoking counseling rationale'
-  else 'Smoking reminder rationale'
-else
-  'None'
+  if "Patient is Currently a Smoker" then
+    if ("Counseling Smoking Observation" is null or "Patient Smoking Increased Since Last Visit") then
+      '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking.  Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Smoking Cessation Assistance", "actions": [ "ServiceRequest for Smoking Cessation Counseling", "{{#patient}}<a href=\'/SmokingCessation\'>Click here to request Smoking Cessation Assistance</a>{{/patient}}" ] } ]|at-most-one|'
+    else
+      'Smoking Reminder Rationale Placeholder'
+  else
+    'None'
 
 define "BMI Recommendation":
   if "Patient BMI is Greater than 25 kg/m2" then
-    if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then 'Recommend weight loss counseling.'
-    else 'Provide reminder of BMI recommendations.'
+    if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then
+      'Consider weight loss strategies'
+    else
+      'Provide reminder of BMI recommendations placeholder.'
   else
     'None'
 
 define "BMI Rationale":
   if "Patient BMI is Greater than 25 kg/m2" then
-    if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then 'Weight loss counseling rationale'
-    else 'BMI reminder rationale'
+    if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then
+      '{{#patient}}Your body mass index suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has been diagnosed with Hypertension and has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "actions": [ "ServiceRequest for Weight Loss Counseling", "{{#patient}}<a href=\'/weightLoss\'>Click here to request Weight Loss Counseling</a>{{/patient}}" ] } ]|at-most-one|https://uhs.umich.edu/hypertensionhttps://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure'
+    else
+      'BMI reminder rationale placeholder'
   else
     'None'
 
 define "Alcohol Recommendation":
   if "Patient is a Heavy Alcoholic Drinker" then
-    if ("Counseling Drinking Observation" is null or "Patient Drinking Increased Since Last Visit") then 'Provide alcohol moderation counseling'
-    else 'Provide reminder of alcohol recommendations'
+    if ("Counseling Drinking Observation" is null or "Patient Drinking Increased Since Last Visit") then
+      'Discuss alcohol moderation'
+    else
+      'Provide reminder of alcohol recommendations placeholder'
   else
     'None'
 
 define "Alcohol Rationale":
   if "Patient is a Heavy Alcoholic Drinker" then
-    if ("Counseling Drinking Observation" is null or "Patient Drinking Increased Since Last Visit") then 'Alcohol counseling rationale'
-    else 'Alcohol reminder rationale'
+    if ("Counseling Drinking Observation" is null or "Patient Drinking Increased Since Last Visit") then
+      '{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Alcohol Moderation Assistance", "actions": [ "ServiceRequest for Alcohol Moderation Counseling", "{{#patient}}<a href=\'/alcoholModeration\'>Click here to request Alcohol Moderation Counseling</a>{{/patient}}" ] } ]|at-most-one|'
+    else
+      'Alcohol reminder rationale placeholder.'
   else
     'None'
 
 define "Dietary Counseling Recommendation":
-  if "Last Nutrition Counseling" is null then 'Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity'
-  else 'Dietary reminder recommendation'
+  if "Last Nutrition Counseling" is null then
+    'Discuss dietary changes (with salt/sodium reduction)'
+  else
+    'Dietary reminder recommendation placeholder'
 
 define "Dietary Counseling Rationale":
-  if "Last Nutrition Counseling" is null then 'Dietary counseling rationale'
-  else 'Dietary reminder rationale'
+  if "Last Nutrition Counseling" is null then
+    '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Diet", "actions": [  "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'lowNADiet\'>Goal: Low sodium diet</input>{{/patient}}" , "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'dashDiet\'>Goal: DASH Diet</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'otherDiet\'>Goal: Other Heart Healthy Diet</input>{{/patient}}" ] } ]|at-most-one|'
+  else
+    'Dietary reminder rationale placeholder.'
 
 define "Physical Activity Counseling Recommendation":
-  if "Last Physical Activity Counseling" is null then 'Provide physical activity counseling.'
-  else 'Provide physical activity reminder'
+  if "Last Physical Activity Counseling" is null then
+    'Discuss physical activity'
+  else
+    'Provide physical activity reminder placeholder'
 
 define "Physical Activity Counseling Rationale":
-  if "Last Physical Activity Counseling" is null then 'Provide physical activity counseling retionale'
-  else 'Provide physical activity reminder rationale'
+  if "Last Physical Activity Counseling" is null then
+    '{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Physical Activity", "actions": [  "{{#patient}}<input type=\'text\' class=\'goal\' data-id=\'physical activity\'>Physical Activity Goal</input>{{/patient}}" ] } ]|at-most-one|'
+  else
+    'Provide physical activity reminder rationale placeholder.'
 
 define "Patient on Track of Goal Recommendation":
-  if "Patient at BP Goal" then 'Patient on track of goal: End of non-pharmacologic interventions.'
-  else 'Patient not on track of goal: Discuss pharmacological interventions.'
+  if "Patient at BP Goal" then
+    'Patient on track of goal: End of non-pharmacologic interventions.'
+  else
+    'Patient not on track of goal: Discuss pharmacological interventions.'
 
 define "Patient on Track of Goal Rationale":
-  if "Patient at BP Goal" then 'Patient on track of goal: No Further Action Required.'
-  else 'Patient not on track of goal: Discuss pharmacological treatment options with Patient.'
+  if "Patient at BP Goal" then
+    'Patient on track of goal: No Further Action Required.'
+  else
+    'Patient not on track of goal: Discuss pharmacological treatment options with Patient.'
 
 define "Indicator Status":
   "Info"
