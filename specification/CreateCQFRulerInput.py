@@ -3,8 +3,13 @@ import os
 import re
 import json
 
-#patient_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Hypertension"
-patient_directory = input("Enter the path to the FHIR resources for all patients\n")
+# Locate the root directory of the project
+m = re.search('(.*?htnu18ig).*', os.getcwd())
+root_directory = m.group(1)
+patient_directory = os.path.join(root_directory, "input/tests/plandefinition/")
+plan_definition = input("Enter the plan definition\n")
+patient_directory = os.path.join(patient_directory, plan_definition)
+output_directory = os.path.join(root_directory, "input/pagecontent/requests/" + plan_definition)
 
 for patient_folder in os.listdir(patient_directory):
     patient_path = os.path.join(patient_directory, patient_folder)
@@ -40,10 +45,8 @@ for patient_folder in os.listdir(patient_directory):
 
         for folder in os.listdir(patient_path):
             folder_path = os.path.join(patient_path, folder)
-            print(folder)
             if os.path.isdir(folder_path):
                 for filename in os.listdir(folder_path):
-                    print(filename)
                     if re.match('.*\.json', filename):
                         with open(os.path.join(folder_path, filename), 'r') as f:
                             entry = {
@@ -57,5 +60,6 @@ for patient_folder in os.listdir(patient_directory):
                             entry_array.append(entry)
 
         template["prefetch"]["item1"]["resource"]["entry"] = entry_array
-        with open(os.path.join(directory, "cqfruler-" + ident + ".json"), 'w') as f:
+        with open(os.path.join(output_directory, "cqfruler-" + ident + ".json"), 'w') as f:
+            print(f.name)
             f.write(json.dumps(template, indent = 2))

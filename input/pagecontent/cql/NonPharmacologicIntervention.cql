@@ -23,6 +23,7 @@ valueset "Weight Reduction Recommendations": 'http://cts.nlm.nih.gov/fhir/ValueS
 valueset "BMI Follow Up Plan SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1195.111'
 valueset "Alcohol Brief Intervention and Counseling": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.124'
 valueset "Counseling for Nutrition": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.195.12.1003'
+valueset "Physical Activity Recommendations": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.418'
 // SMOKING
 valueset "Tobacco Smoking Status [Current] (Social History) (LOINC)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1330'
 valueset "Tobacco User": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.422'
@@ -141,10 +142,20 @@ define "Alcohol Rationale":
     'None'
 
 define "Dietary Counseling Recommendation":
-  'Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity'
+  if "Last Nutrition Counseling" is null then 'Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity'
+  else 'Dietary reminder recommendation'
 
 define "Dietary Counseling Rationale":
-  'TODO'
+  if "Last Nutrition Counseling" is null then 'Dietary counseling rationale'
+  else 'Dietary reminder rationale'
+
+define "Physical Activity Counseling Recommendation":
+  if "Last Physical Activity Counseling" is null then 'Provide physical activity counseling.'
+  else 'Provide physical activity reminder'
+
+define "Physical Activity Counseling Rationale":
+  if "Last Physical Activity Counseling" is null then 'Provide physical activity counseling retionale'
+  else 'Provide physical activity reminder rationale'
 
 define "Patient on Track of Goal Recommendation":
   if "Patient at BP Goal" then 'Patient on track of goal: End of non-pharmacologic interventions.'
@@ -289,6 +300,9 @@ define "Last BMI Counseling":
 define "Last Nutrition Counseling":
   "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Counseling for Nutrition"]))
 
+define "Last Physical Activity Counseling":
+  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Physical Activity Recommendations"]))
+
 define "Counseling Smoking Observation":
   Last("Observations Indicating Patient is a Smoker" SmokingObserved
     with "Last Smoking Counseling" Counseling
@@ -353,6 +367,11 @@ define "Patient is in Need of Dietary Counseling Action Path":
   if not "In Population" then
     false
   else "Last Nutrition Counseling" is null
+
+define "Patient is in Need of Physical Activity Counseling Action Path":
+  if not "In Population" then
+    false
+  else "Last Physical Activity Counseling" is null
 
 /* Exclusion Criteria */
 define "Patient Under Age 18":

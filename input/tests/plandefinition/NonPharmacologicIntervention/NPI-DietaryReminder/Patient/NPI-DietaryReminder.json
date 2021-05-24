@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-DietaryReminder",
+  "active": true,
+  "name": [
+    {
+      "text": "Dietary Reminder",
+      "family": "Reminder",
+      "given": [
+        "Dietary"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1977-09-09"
+}

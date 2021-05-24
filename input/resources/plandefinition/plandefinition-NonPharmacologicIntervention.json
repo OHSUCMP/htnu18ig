@@ -303,6 +303,45 @@
           ]
         },
         {
+          "title": "Does the Patient Need Physical Activity Counseling?",
+          "description": "Determines if a recommendation regarding the Patient's Physical Activity should be established.",
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "description": "Determine if Patient is in the recommendation.",
+                "language": "text/cql.identifier",
+                "expression": "Patient is in Need of Physical Activity Counseling Action Path"
+              }
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.title",
+              "expression": {
+                "description": "Applicable text for the Physical Activity Counseling Recommendation",
+                "language": "text/cql.identifier",
+                "expression": "Physical Activity Counseling Recommendation"
+              }
+            },
+            {
+              "path": "action.description",
+              "expression": {
+                "description": "Rationale for recommendation type.",
+                "language": "text/cql.identifier",
+                "expression": "Physical Activity Counseling Rationale"
+              }
+            },
+            {
+              "path": "action.extension",
+              "expression": {
+                "language": "text/cql.identifier",
+                "expression": "Indicator Status"
+              }
+            }
+          ]
+        },
+        {
           "title": "Is Patient on Track to Reach BP Goal?",
           "description": "Determines if a recommendation regarding tracking the Patient's BP Goal should be established.",
           "condition": [
