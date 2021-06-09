@@ -132,15 +132,15 @@ define "Selection Behavior":
   else 'at-most-one'
 
 define "Links":
-  if not "In Population" then 'None'
-  else if "Diagnosis of Preexisting Hypertension" then 'https://www.mayoclinic.org/diseases-conditions/secondary-hypertension/symptoms-causes/syc-20350679#:~:text=Secondary%20hypertension%20(secondary%20high%20blood,arteries%2C%20heart%20or%20endocrine%20system.'
+  if not "In Population" then ''
+  else if "Diagnosis of Preexisting Hypertension" then ''
   else if "HTN Crisis" then ''
-  else if not "Has BP Set" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home'
-  else if "HTN Stage 2" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings'
-  else if "Consider HTN Stage 2" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings'
-  else if "Consider HTN Stage 1" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings'
-  else if "Prescribe HBP or ABP Monitoring" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home'
-  else if "Prescribe Ambulatory BP Monitoring" then 'https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home'
+  else if not "Has BP Set" then ''
+  else if "HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
+  else if "Consider HTN Stage 2" then ''
+  else if "Consider HTN Stage 1" then ''
+  else if "Prescribe HBP or ABP Monitoring" then ''
+  else if "Prescribe Ambulatory BP Monitoring" then ''
   else ''
 
 define "Exclusion Reason":

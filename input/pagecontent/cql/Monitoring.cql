@@ -53,14 +53,12 @@ define "Meets Exclusion Criteria":
     or exists "Condition Indicating End Stage Renal Disease"
     or exists "Condition Indicating Pregnancy"
 
-
-
 define "In Population":
   "Meets Inclusion Criteria"
   and not "Meets Exclusion Criteria"
 
 define "Recommendation":
-  if not "In Population" then 'None'
+  if not "In Population" then ''
   else if not "Patient has a BP Goal" then 'Discuss target blood pressure and set a blood pressure goal'
   else if not "Has BP Set" then 'Consider obtaining additional blood pressure measurements'
   else if ("HTN Stage 2" or "Not At Goal") then 'Blood pressure goal not reached. Discuss treatment options'
@@ -72,7 +70,7 @@ define "Rationale Combined Data":
   "Rationale" + '|' + "Source" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
-  if not "In Population" then 'None'
+  if not "In Population" then ''
   else if not "Patient has a BP Goal" then '{{#patient}}You recently received a hypertension (high blood pressure) diagnosis.  Setting goals for lowering your blood pressure has been proven to help overall health and reduce your chance of stroke or other conditions.{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}'
   else if not "Has BP Set" then '{{#patient}}Your recent blood pressure is above your goal.  We do not have enough blood pressures to provide a full picture of your blood pressure. Taking a full set of blood pressures can help.  We consider a full set to be ~4 in-office measurements, ~6 home measurements, or 12 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
   else if ("HTN Stage 2" or "Not At Goal") then '{{#patient}}Your recent blood pressure is above your goal. Changing your behaviors may help - see the additional options. In addition, please consult your care team to consider additional treatment options. Please review the home blood pressure measurement protocol presented on the blood pressure entry page to make sure that the tool is accurately measuring your blood pressure.{{/patient}}{{#careTeam}}BP not at goal. Consider initiating antihypertensive drug therapy with a single antihypertinsive drug with dosage titration and sequential addition of other agents to achieve the target BP.{{/careTeam}}'
@@ -90,7 +88,7 @@ define "Indicator Status":
   else "Info"
 
 define "Source":
-  if not "In Population" then 'None'
+  if not "In Population" then ''
   else if not "Patient has a BP Goal" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
   else if not "Has BP Set" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
   else if ("HTN Stage 2" or "Not At Goal") then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
@@ -99,7 +97,7 @@ define "Source":
   else ''
 
 define "Suggestions":
-  if not "In Population" then 'None'
+  if not "In Population" then ''
   else if not "Patient has a BP Goal" then '[ { "label": "BPGoal", "actions": [ "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalhigh\'>BP target < 140/90</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalmedium\'>BP target < 130/80</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoallow\'>BP target < 120/80</input>{{/patient}}" ] } ]'
   else if not "Has BP Set" then '[ { "label": "Enter Blood Pressure", "actions": [ "ServiceRequest for High Blood Pressure Monitoring", "{{#patient}}<a href=\'/bp-readings\'>Click here to go to the Home Blood Pressure entry page</a>{{/patient}}" ] } ]'
   else if ("HTN Stage 2" or "Not At Goal") then '[ { "label": "Contact care team BP treatment", "actions": ["{{#patient}}<a data-id=\'CommunicationTreatment\' data-recipient=\'CareTeam\' data-sender=\'Patient\' href=\'/contact\'> Contact your care team about options to control your high blood pressure</a> {{/patient}}"] } ]'
@@ -111,7 +109,13 @@ define "Selection Behavior":
   'at-most-one'
 
 define "Links":
-  'tbd'
+  if not "In Population" then ''
+  else if not "Patient has a BP Goal" then ''
+  else if not "Has BP Set" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
+  else if ("HTN Stage 2" or "Not At Goal") then ''
+  else if "Prescribe HBP or ABP Monitoring" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
+  else if "Prescribe Ambulatory BP Monitoring" then ''
+  else '[]'
 
 define "Exclusion Reason":
   if "Meets Exclusion Criteria" then
