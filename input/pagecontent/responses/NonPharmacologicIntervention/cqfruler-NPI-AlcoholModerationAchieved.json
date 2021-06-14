@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "summary": "Hypertension Non-Pharmacologic Intervention",
+      "indicator": "info",
+      "detail": "AlcoholModeration Achieved",
+      "source": {
+        "label": "Info for those with normal blood pressure",
+        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+      }
+    },
+    {
+      "summary": "Patient on track of goal: End of non-pharmacologic interventions.",
+      "indicator": "info",
+      "detail": "Patient on track of goal: No Further Action Required.",
+      "source": {}
+    }
+  ]
+}

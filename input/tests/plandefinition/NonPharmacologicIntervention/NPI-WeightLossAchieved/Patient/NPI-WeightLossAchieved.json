@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-WeightLossAchieved",
+  "active": true,
+  "name": [
+    {
+      "text": "Weight Loss Achieved",
+      "family": "Achieved",
+      "given": [
+        "WeightLoss"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1949-10-01"
+}

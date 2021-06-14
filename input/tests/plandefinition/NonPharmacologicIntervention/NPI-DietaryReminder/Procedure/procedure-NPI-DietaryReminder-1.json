@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "procedure-NPI-DietaryReminder-1",
+  "note": [
+    {
+      "text": "The patient had nutrition counseling related to an observation on a BMI > 25"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "2020-09",
+        "code": "183063000",
+        "display": "Low salt diet education (procedure)"
+       }
+    ],
+    "text": "Low salt diet education (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/NPI-DietaryReminder"
+  },
+  "performedDateTime": "2019-05-29T11:00:00-06:00",
+  "reasonReference": [
+    {
+      "reference": "Observation/observation-NPI-DietaryReminder-1"
+    }
+  ]
+}

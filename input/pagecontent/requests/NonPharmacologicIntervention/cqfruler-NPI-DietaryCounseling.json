@@ -1,0 +1,192 @@
+{
+  "hookInstance": "test",
+  "fhirServer": "http://localhost:8080/cqf-ruler-r4/fhir",
+  "hook": "patient-view",
+  "applyCql": true,
+  "context": {
+    "userId": "Practitioner/example",
+    "patientId": "NPI-DietaryCounseling"
+  },
+  "prefetch": {
+    "item1": {
+      "response": {
+        "status": "200 OK"
+      },
+      "resource": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Condition",
+              "id": "condition-NPI-DietaryCounseling-1",
+              "note": [
+                {
+                  "text": "Indicates Preexisting Diagnosis of Hypertension"
+                }
+              ],
+              "clinicalStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                    "code": "active"
+                  }
+                ]
+              },
+              "verificationStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                    "code": "confirmed"
+                  }
+                ]
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "59621000",
+                    "display": "Hypertension"
+                  }
+                ],
+                "text": "Hypertension"
+              },
+              "subject": {
+                "reference": "Patient/NPI-DietaryCounseling"
+              },
+              "onsetDateTime": "2015-01-28T15:16:21-05:00",
+              "recordedDate": "2015-01-28T15:16:21-05:00"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Patient",
+              "id": "NPI-DietaryCounseling",
+              "active": true,
+              "name": [
+                {
+                  "text": "Dietary Counseling",
+                  "family": "Counseling",
+                  "given": [
+                    "Dietary"
+                  ]
+                }
+              ],
+              "gender": "male",
+              "birthDate": "1994-07-03"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-DietaryCounseling-1",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Patient drinks moderately."
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "version": "2.69",
+                    "code": "11287-0",
+                    "display": "Alcoholic drinks per drinking day - Reported"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/NPI-DietaryCounseling"
+              },
+              "effectiveDateTime": "2019-05-27T10:00:00-07:00",
+              "issued": "2019-05-27T00:00:00-07:00",
+              "valueQuantity": {
+                "value": 2,
+                "unit": "Drinks/Day"
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Goal",
+              "id": "goal-NPI-DietaryCounseling-1",
+              "lifecycleStatus": "planned",
+              "achievementStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+                    "version": "4.0.1",
+                    "code": "in-progress",
+                    "display": "In Progress"
+                  }
+                ]
+              },
+              "startDate": "2020-02-12",
+              "description": {
+                "text": "Goal of 135/85"
+              },
+              "subject": {
+                "reference": "Patient/NPI-DietaryCounseling"
+              },
+              "target": [
+                {
+                  "measure": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "version": "2.68",
+                        "code": "8480-6",
+                        "display": "Systolic blood pressure"
+                      }
+                    ]
+                  },
+                  "detailQuantity": {
+                    "value": 135,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "measure": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "version": "2.68",
+                        "code": "8462-4",
+                        "display": "Diastolic blood pressure"
+                      }
+                    ]
+                  },
+                  "detailQuantity": {
+                    "value": 85,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

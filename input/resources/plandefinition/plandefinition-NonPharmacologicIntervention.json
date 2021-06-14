@@ -66,26 +66,288 @@
   ],
   "action": [
     {
-      "title": "Hypertension Non-Pharmacologic Intervention",
-      "documentation": [
-        {
-          "type": "documentation",
-          "display": "Info for those with normal blood pressure",
-          "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-        }
-      ],
-      "trigger": [
-        {
-          "type": "named-event",
-          "name": "patient-view"
-        }
-      ],
+      "title": "Does Patient Have a BP Goal?",
+      "description": "Determines if a recommendation regarding a Blood Pressure Goal should be established.",
       "condition": [
         {
-          "kind": "start",
+          "kind": "applicability",
           "expression": {
-            "language": "text/cql",
-            "expression": "'true'"
+            "description": "Determine if Patient is in the recommendation.",
+            "language": "text/cql.identifier",
+            "expression": "Patient does not have a BP Goal"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Applicable text for the BP Goal Recommendation",
+            "language": "text/cql.identifier",
+            "expression": "BP Goal Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "BP Goal Rationale"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Does Patient Smoke Right Now?",
+      "description": "Determines if a recommendation or reminder regarding Patient smoking should be presented.",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient is in the recommendation.",
+            "language": "text/cql.identifier",
+            "expression": "Patient is Currently a Smoker Action Path"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Applicable text for the Smoking Recommendation",
+            "language": "text/cql.identifier",
+            "expression": "Smoking Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Smoking Rationale"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Is Patient's BMI Greater Than 25?",
+      "description": "Determines if a recommendation or reminder regarding the Patient's BMI being over 25 should be presented.",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient is in the recommendation.",
+            "language": "text/cql.identifier",
+            "expression": "Patient BMI is Greater than 25 kg/m2 Action Path"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Applicable text for the BMI Recommendation",
+            "language": "text/cql.identifier",
+            "expression": "BMI Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "BMI Rationale"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Does the Patient Drink Heavily?",
+      "description": "Determines if a recommendation or reminder regarding the Patient's Alcohol Drinking should be presented.",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient is in the recommendation.",
+            "language": "text/cql.identifier",
+            "expression": "Patient is a Heavy Alcoholic Drinker Action Path"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Applicable text for the Alcohol Recommendation",
+            "language": "text/cql.identifier",
+            "expression": "Alcohol Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Alcohol Rationale"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Does the Patient Need Dietary Counseling?",
+      "description": "Determines if a recommendation regarding the Patient's Nutrition should be established.",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient is in the recommendation.",
+            "language": "text/cql.identifier",
+            "expression": "Patient is in Need of Dietary Counseling Action Path"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Applicable text for the Dietary Counseling Recommendation",
+            "language": "text/cql.identifier",
+            "expression": "Dietary Counseling Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Dietary Counseling Rationale"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Does the Patient Need Physical Activity Counseling?",
+      "description": "Determines if a recommendation regarding the Patient's Physical Activity should be established.",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient is in the recommendation.",
+            "language": "text/cql.identifier",
+            "expression": "Patient is in Need of Physical Activity Counseling Action Path"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Applicable text for the Physical Activity Counseling Recommendation",
+            "language": "text/cql.identifier",
+            "expression": "Physical Activity Counseling Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Physical Activity Counseling Rationale"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Is Patient on Track to Reach BP Goal?",
+      "description": "Determines if a recommendation regarding tracking the Patient's BP Goal should be established.",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient is in the recommendation population.",
+            "language": "text/cql.identifier",
+            "expression": "In Population"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Applicable text for the Patient on Track of Goal Recommendation",
+            "language": "text/cql.identifier",
+            "expression": "Patient on Track of Goal Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Patient on Track of Goal Rationale"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Exclusion from Hypertension Non-Pharmacologic Interventions",
+      "description": "Determines if patient was excluded from Hypertension Non-Pharmacologic Interventions Recommendation.",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient is in hypertension exclusion population.",
+            "language": "text/cql.identifier",
+            "expression": "Meets Exclusion Criteria"
           }
         }
       ],
@@ -93,9 +355,9 @@
         {
           "path": "action.description",
           "expression": {
-            "description": "Patient Name.",
+            "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
             "language": "text/cql.identifier",
-            "expression": "Patient Name"
+            "expression": "Exclusion Reason"
           }
         },
         {
@@ -104,312 +366,6 @@
             "language": "text/cql.identifier",
             "expression": "Info"
           }
-        }
-      ],
-      "action": [
-        {
-          "title": "Does Patient Have a BP Goal?",
-          "description": "Determines if a recommendation regarding a Blood Pressure Goal should be established.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in the recommendation.",
-                "language": "text/cql.identifier",
-                "expression": "Patient does not have a BP Goal"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Applicable text for the BP Goal Recommendation",
-                "language": "text/cql.identifier",
-                "expression": "BP Goal Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "BP Goal Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Does Patient Smoke Right Now?",
-          "description": "Determines if a recommendation regarding the Patient being a Smoker should be established.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in the recommendation.",
-                "language": "text/cql.identifier",
-                "expression": "Patient is Currently a Smoker Action Path"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Applicable text for the Smoking Recommendation",
-                "language": "text/cql.identifier",
-                "expression": "Smoking Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "Smoking Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Is Patient's BMI Greater Than 25?",
-          "description": "Determines if a recommendation regarding the Patient's BMI being over 25 should be established.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in the recommendation.",
-                "language": "text/cql.identifier",
-                "expression": "Patient BMI is Greater than 25 kg/m2 Action Path"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Applicable text for the BMI Recommendation",
-                "language": "text/cql.identifier",
-                "expression": "BMI Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "BMI Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Does the Patient Drink Heavily?",
-          "description": "Determines if a recommendation regarding the Patient's Alcohol Drinking should be established.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in the recommendation.",
-                "language": "text/cql.identifier",
-                "expression": "Patient is a Heavy Alcoholic Drinker Action Path"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Applicable text for the Alcohol Recommendation",
-                "language": "text/cql.identifier",
-                "expression": "Alcohol Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "Alcohol Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Does the Patient Need Dietary Counseling?",
-          "description": "Determines if a recommendation regarding the Patient's Nutrition should be established.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in the recommendation.",
-                "language": "text/cql.identifier",
-                "expression": "Patient is in Need of Dietary Counseling Action Path"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Applicable text for the Dietary Counseling Recommendation",
-                "language": "text/cql.identifier",
-                "expression": "Dietary Counseling Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "Dietary Counseling Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Have Smoking, Drinking, or BMI Not Increased Since Last Visit?",
-          "description": "Determines if a recommendation regarding reminding the Patient should be established.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in the recommendation.",
-                "language": "text/cql.identifier",
-                "expression": "Patient Reminder Recommendations Action Path"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Applicable text for the Smoking, Drinking, or BMI Not Increased Recommendation Recommendation",
-                "language": "text/cql.identifier",
-                "expression": "Smoking, Drinking, BMI Not Increased Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "Smoking, Drinking, BMI Not Increased Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Is Patient on Track to Reach BP Goal?",
-          "description": "Determines if a recommendation regarding tracking the Patient's BP Goal should be established.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in the recommendation population.",
-                "language": "text/cql.identifier",
-                "expression": "In Population"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Applicable text for the Patient on Track of Goal Recommendation",
-                "language": "text/cql.identifier",
-                "expression": "Patient on Track of Goal Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "Patient on Track of Goal Rationale"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Exclusion from Hypertension Non-Pharmacologic Interventions",
-          "description": "Determines if patient was excluded from Hypertension Non-Pharmacologic Interventions Recommendation.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in hypertension exclusion population.",
-                "language": "text/cql.identifier",
-                "expression": "Meets Exclusion Criteria"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
-                "language": "text/cql.identifier",
-                "expression": "Exclusion Reason"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Info"
-              }
-            }
-          ]
         }
       ]
     }

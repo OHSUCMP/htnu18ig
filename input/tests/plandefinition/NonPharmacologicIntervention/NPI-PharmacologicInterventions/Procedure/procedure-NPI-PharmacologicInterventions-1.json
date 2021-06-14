@@ -1,0 +1,29 @@
+{
+  "resourceType": "Procedure",
+  "id": "procedure-NPI-PharmacologicInterventions-1",
+  "note": [
+    {
+      "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "225323000",
+        "display": "Smoking cessation education (procedure)"
+      }
+    ],
+    "text": "Smoking cessation education (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/NPI-PharmacologicInterventions"
+  },
+  "performedDateTime": "2019-01-05T11:00:00-06:00",
+  "reasonReference": [
+    {
+      "reference": "Observation/observation-NPI-PharmacologicInterventions-1"
+    }
+  ]
+}

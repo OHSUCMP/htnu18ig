@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-MonitoringPreexistingHTN",
+  "active": true,
+  "name": [
+    {
+      "text": "Monitoring Preexisting HTN",
+      "family": "PreexistingHTN",
+      "given": [
+        "Monitoring"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1978-11-01"
+}

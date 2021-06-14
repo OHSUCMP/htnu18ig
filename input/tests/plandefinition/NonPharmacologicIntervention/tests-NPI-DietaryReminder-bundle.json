@@ -1,0 +1,175 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-NPI-DietaryReminder-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "procedure-NPI-DietaryReminder-1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "version": "2020-09",
+          "code": "183063000",
+          "display": "Low salt diet education (procedure)"
+        } ],
+        "text": "Low salt diet education (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/NPI-DietaryReminder"
+      },
+      "performedDateTime": "2019-05-29T11:00:00-06:00",
+      "reasonReference": [ {
+        "reference": "Observation/observation-NPI-DietaryReminder-1"
+      } ],
+      "note": [ {
+        "text": "The patient had nutrition counseling related to an observation on a BMI > 25"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/procedure-NPI-DietaryReminder-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-NPI-DietaryReminder-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ],
+        "text": "Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/NPI-DietaryReminder"
+      },
+      "onsetDateTime": "2015-01-28T15:16:21-05:00",
+      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "note": [ {
+        "text": "Indicates Preexisting Diagnosis of Hypertension"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-NPI-DietaryReminder-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "NPI-DietaryReminder",
+      "active": true,
+      "name": [ {
+        "text": "Dietary Reminder",
+        "family": "Reminder",
+        "given": [ "Dietary" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1977-09-09"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/NPI-DietaryReminder"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-DietaryReminder-1",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "11287-0",
+          "display": "Alcoholic drinks per drinking day - Reported"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/NPI-DietaryReminder"
+      },
+      "effectiveDateTime": "2019-05-27T10:00:00-07:00",
+      "issued": "2019-05-27T00:00:00-07:00",
+      "valueQuantity": {
+        "value": 2,
+        "unit": "Drinks/Day"
+      },
+      "note": [ {
+        "text": "Patient drinks moderately."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-DietaryReminder-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-NPI-DietaryReminder-1",
+      "lifecycleStatus": "planned",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "description": {
+        "text": "Goal of 135/85"
+      },
+      "subject": {
+        "reference": "Patient/NPI-DietaryReminder"
+      },
+      "startDate": "2020-02-12",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 135,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-NPI-DietaryReminder-1"
+    }
+  } ]
+}

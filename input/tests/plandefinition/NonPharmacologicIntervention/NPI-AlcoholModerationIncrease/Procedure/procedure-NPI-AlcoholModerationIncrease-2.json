@@ -1,0 +1,29 @@
+{
+  "resourceType": "Procedure",
+  "id": "procedure-NPI-AlcoholModerationIncrease-2",
+  "note": [
+    {
+      "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24165007",
+        "display": "Alcoholism counseling (procedure)"
+      }
+    ],
+    "text": "Alcoholism counseling (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/NPI-AlcoholModerationIncrease"
+  },
+  "performedDateTime": "2019-05-30T11:00:00-06:00",
+  "reasonReference": [
+    {
+      "reference": "Observation/observation-NPI-AlcoholModerationIncrease-1"
+    }
+  ]
+}

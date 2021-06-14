@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-ExcludedOver80",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded Over 80",
+      "family": "Over80",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1938-01-29"
+}

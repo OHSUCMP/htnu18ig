@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-PrescribeHBPABPMonitoring",
+  "active": true,
+  "name": [
+    {
+      "text": "Prescribe HBP or ABP Monitoring",
+      "family": "HBPABPMonitoring",
+      "given": [
+        "Prescribe"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2000-07-02"
+}

@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-SetBPGoalMissingGoal",
+  "active": true,
+  "name": [
+    {
+      "text": "Set BP Goal Missing Goal",
+      "family": "MissingGoal",
+      "given": [
+        "SetBPGoal"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1983-05-09"
+}

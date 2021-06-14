@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-EndNonPharmacologicRecommendations",
+  "active": true,
+  "name": [
+    {
+      "text": "End NonPharmacologic Recommendations",
+      "family": "NonPharmacologic Recommendations",
+      "given": [
+        "End"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1946-01-30"
+}

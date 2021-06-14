@@ -1,0 +1,42 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-NPI-SetBPGoalMissingGoal-2",
+  "note": [
+    {
+      "text": "Patient was pregnant previously (abatement present and in the past). They should not be excluded."
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "2020-09",
+        "code": "72892002",
+        "display": "Normal pregnancy (finding)"
+      }
+    ],
+    "text": "Normal pregnancy (finding)"
+  },
+  "subject": {
+    "reference": "Patient/NPI-SetBPGoalMissingGoal"
+  },
+  "onsetDateTime": "2018-12-11T19:02:10-04:00",
+  "abatementDateTime": "2019-08-31T17:04:12",
+  "recordedDate": "2018-12-11T19:02:10-04:00"
+}

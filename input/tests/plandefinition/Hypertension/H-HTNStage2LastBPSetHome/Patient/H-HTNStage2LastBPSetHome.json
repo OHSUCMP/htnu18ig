@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-HTNStage2LastBPSetHome",
+  "active": true,
+  "name": [
+    {
+      "text": "HTN Stage 2 Last BP Set Home",
+      "family": "LastBPSetHome",
+      "given": [
+        "HTNStage2"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1982-07-12"
+}

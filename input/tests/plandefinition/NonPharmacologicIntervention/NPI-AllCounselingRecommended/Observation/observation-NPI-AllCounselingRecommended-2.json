@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-AllCounselingRecommended-2",
+  "status": "final",
+  "note": [
+    {
+      "text": "Patient is a heavy smoker."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72166-2",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/NPI-AllCounselingRecommended"
+  },
+  "effectivePeriod": {
+    "start": "2018-08-18",
+    "end": "2019-05-30"
+  },
+  "issued": "2019-05-30T00:00:00-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "428071000124103",
+        "display": "Heavy tobacco smoker (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1,
+        "unit": "Packs/Day"
+      }
+    }
+  ]
+}

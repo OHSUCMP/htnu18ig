@@ -1,0 +1,84 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1116.418",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2018-04-03T15:48:18.000-04:00"
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 8 concepts</p><p>All codes from system <code>http://snomed.info/sct</code></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a name=\"http---snomed.info-sct-281090004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=281090004\">281090004</a></td><td>Recommendation to exercise (procedure)</td></tr><tr><td><a name=\"http---snomed.info-sct-304507003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=304507003\">304507003</a></td><td>Exercise education (procedure)</td></tr><tr><td><a name=\"http---snomed.info-sct-304549008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=304549008\">304549008</a></td><td>Giving encouragement to exercise (procedure)</td></tr><tr><td><a name=\"http---snomed.info-sct-386291006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386291006\">386291006</a></td><td>Exercise promotion: strength training (procedure)</td></tr><tr><td><a name=\"http---snomed.info-sct-386292004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386292004\">386292004</a></td><td>Exercise promotion: stretching (procedure)</td></tr><tr><td><a name=\"http---snomed.info-sct-386373004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386373004\">386373004</a></td><td>Nutrition therapy (regime/therapy)</td></tr><tr><td><a name=\"http---snomed.info-sct-386463000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386463000\">386463000</a></td><td>Prescribed activity/exercise education (procedure)</td></tr><tr><td><a name=\"http---snomed.info-sct-410289001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=410289001\">410289001</a></td><td>Exercises education, guidance, and counseling (procedure)</td></tr></table></div>"
+    },
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.418",
+    "version": "20180117",
+    "name": "Physical Activity Recommendations",
+    "status": "active",
+    "date": "2018-01-17T01:00:04-05:00",
+    "publisher": "American Society of Clinical Oncology Steward",
+    "expansion": {
+        "identifier": "urn:uuid:6227dff5-4919-4755-a177-638a0854b68c",
+        "timestamp": "2021-05-20T16:36:04-04:00",
+        "total": 8,
+        "offset": 0,
+        "parameter": [
+            {
+                "name": "count",
+                "valueInteger": 1000
+            },
+            {
+                "name": "offset",
+                "valueInteger": 0
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "281090004",
+                "display": "Recommendation to exercise (procedure)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "304507003",
+                "display": "Exercise education (procedure)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "304549008",
+                "display": "Giving encouragement to exercise (procedure)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "386291006",
+                "display": "Exercise promotion: strength training (procedure)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "386292004",
+                "display": "Exercise promotion: stretching (procedure)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "386373004",
+                "display": "Nutrition therapy (regime/therapy)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "386463000",
+                "display": "Prescribed activity/exercise education (procedure)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "410289001",
+                "display": "Exercises education, guidance, and counseling (procedure)"
+            }
+        ]
+    }
+}

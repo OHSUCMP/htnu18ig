@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-NotAtGoalHTNStage2",
+  "active": true,
+  "name": [
+    {
+      "text": "Not At Goal HTN Stage 2",
+      "family": "HTNStage2",
+      "given": [
+        "NotAtGoal"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1967-01-29"
+}

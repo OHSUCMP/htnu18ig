@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-NoFurtherAction",
+  "active": true,
+  "name": [
+    {
+      "text": "No Further Action",
+      "family": "FurtherAction",
+      "given": [
+        "No"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1961-10-18"
+}

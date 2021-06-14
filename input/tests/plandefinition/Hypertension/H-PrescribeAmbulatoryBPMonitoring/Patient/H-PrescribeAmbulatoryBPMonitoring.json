@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-PrescribeAmbulatoryBPMonitoring",
+  "active": true,
+  "name": [
+    {
+      "text": "Prescribe Ambulatory BP Monitoring",
+      "family": "AmbulatoryBPMonitoring",
+      "given": [
+        "Prescribe"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1951-04-30"
+}

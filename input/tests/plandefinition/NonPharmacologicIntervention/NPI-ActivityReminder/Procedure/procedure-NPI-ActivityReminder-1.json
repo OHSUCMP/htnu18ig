@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "procedure-NPI-ActivityReminder-1",
+  "note": [
+    {
+      "text": "The patient had physical activity counseling related to an observation on a BMI > 25"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+         "system": "http://snomed.info/sct",
+         "version": "http://snomed.info/sct/731000124108/version/2021-03",
+         "code": "386463000",
+         "display": "Prescribed activity/exercise education (procedure)"
+       }
+    ],
+    "text": "Prescribed activity/exercise education (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/NPI-ActivityReminder"
+  },
+  "performedDateTime": "2019-05-29T11:00:00-06:00",
+  "reasonReference": [
+    {
+      "reference": "Observation/observation-NPI-ActivityReminder-1"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "summary": "Hypertension Diagnosis",
+      "indicator": "info",
+      "detail": "Hypertensive Emergency DBP",
+      "source": {
+        "label": "Info for those with normal blood pressure",
+        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
+      }
+    },
+    {
+      "summary": "Warning: Potential hypertensive emergency. Consult care team immediately.",
+      "indicator": "critical",
+      "detail": "{{#patient}}Your blood pressure is high (\u003e180 systolic or \u003e120 diastolic).  Contact your care team immediately, OR, if you do not feel well, seek care.  {{/patient}}{{#careTeam}}Patient\u0027s blood pressure is \u003e 180 systolic or \u003e 120 diastolic. Consider immediate evaluation for treatment or escalation of care.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[ { \"label\": \"Contact care team BP urgent\", \"actions\": [\"{{#patient}}\u003ca data-id\u003d\u0027CommunicationHBP\u0027 data-recipient\u003d\u0027CareTeam\u0027 data-sender\u003d\u0027Patient\u0027 href\u003d\u0027/contact\u0027\u003e Contact your care team about your high blood pressure\u003c/a\u003e {{/patient}}\"] } ]|at-most-one|",
+      "source": {}
+    }
+  ]
+}

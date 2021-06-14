@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-ExcludedEndStageRenalDisease",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded End Stage Renal Disease",
+      "family": "EndStageRenalDisease",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1966-11-12"
+}
