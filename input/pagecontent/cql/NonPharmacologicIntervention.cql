@@ -93,22 +93,28 @@ define "BP Goal Rationale":
   '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have blood pressure goal yet.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.<br><br>Stroke, MI, "Reduce risk of stroke, heart disease, or kidney disease"{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[    {      "label": "BPGoal",      "actions": [       "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalhigh\'>BP target < 140/90</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalmedium\'>BP target < 130/80</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoallow\'>BP target < 120/80</input>{{/patient}}"      ]    }  ]|at-most-one|'
 
 define "Smoking Recommendation":
-  if "Patient is Currently a Smoker" then
-    if ("Counseling Smoking Observation" is null or "Patient Smoking Increased Since Last Visit") then
-      'Discuss smoking cessation'
-    else
-      'Smoking Reminder Recommendation Placeholder'
+  if exists "Tobacco Cessation Goals" then
+    'Recommendation 19a or 19b will be shown, depending on whether a status update is needed.'
+  else
+    if "Patient is Currently a Smoker" then
+      if ("Counseling Smoking Observation" is null) then
+          'Recommendation 19c will be shown. This will provide two suggestions, one for counseling and one for setting a goal.'
+      else
+        'Recommendation 19d will be shown. This is a reminder with a suggestion to set a goal.'
   else
     'None'
 
 define "Smoking Rationale":
+if exists "Tobacco Cessation Goals" then
+  'Suggestion for 19a would be to update the goal. 19b will have no suggestions.'
+else
   if "Patient is Currently a Smoker" then
-    if ("Counseling Smoking Observation" is null or "Patient Smoking Increased Since Last Visit") then
-      '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking.  Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Smoking Cessation Assistance", "actions": [ "ServiceRequest for Smoking Cessation Counseling", "{{#patient}}<a href=\'/SmokingCessation\'>Click here to request Smoking Cessation Assistance</a>{{/patient}}" ] } ]|at-most-one|'
+    if ("Counseling Smoking Observation" is null) then
+      '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ {"id": "smoking-counseling", "type":"counseling", "category": "http://snomed.info/sct^225323000","label": "Suggested Reading","actions": ["<a href=\'/SmokingCessation\'>Click here to learn more about tobacco cessation.</a>"]},{ "id": "smoking-freetext-goal", "type":"goal", "category":"https//coach-dev.ohsu.edu^smoking-cessation", "label": "Set a Tobacco Cessation Goal", "actions": [  "<input type=\'text\' class=\'goal\' placeholder=\'Describe your goal here\'/>" ] } ]|at-most-one|'
     else
-      'Smoking Reminder Rationale Placeholder'
-  else
-    'None'
+      'Suggestion for 19d will be shown. This will suggest setting a goal.'
+else
+  'None'
 
 define "BMI Recommendation":
   if "Patient BMI is Greater than 25 kg/m2" then
@@ -237,6 +243,11 @@ define "Patient does not have a BP Goal":
   else
     not exists "Qualifying Blood Pressure Goals"
 
+// Look for custom tobacco goal coding
+define "Tobacco Cessation Goals":
+  (Common.QualifiedGoal(["Goal"])) Goal
+    where Goal.lifecycleStatus = 'active' and singleton from (Goal.category.coding.code) = 'smoking-cessation'
+
 // All observations pertaining to smoking
 define "Smoking Status Observations":
   (Common.QualifiedObservation(["Observation": "Tobacco Smoking Status [Current] (Social History) (LOINC)"]))
@@ -320,6 +331,7 @@ define "Last Nutrition Counseling":
 define "Last Physical Activity Counseling":
   "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Physical Activity Recommendations"]))
 
+// TODO: Update counseling so they don't have to match a specific observation? Or hand Matt the observation reference
 define "Counseling Smoking Observation":
   Last("Observations Indicating Patient is a Smoker" SmokingObserved
     with "Last Smoking Counseling" Counseling
@@ -334,9 +346,6 @@ define "Counseling BMI Observation":
   Last("Observations Specifying Patient BMI" BMIObserved
     with "Last BMI Counseling" Counseling
       such that BMIObserved.id = Common.GetId(Counseling.reference))
-
-define "Patient Smoking Increased Since Last Visit":
-  "Patient is Currently a Smoker" and "Packs Per Day"("Most Recent Observation of Patient Smoking Status") > "Packs Per Day"("Counseling Smoking Observation")
 
 define "Patient Drinking Increased Since Last Visit":
   from
