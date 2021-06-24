@@ -1,18 +1,15 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Non-Pharmacologic Intervention",
+      "summary": "Provide reminder of alcohol recommendations placeholder",
       "indicator": "info",
-      "detail": "AlcoholModeration Reminder",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
+      "detail": "Alcohol reminder rationale placeholder.",
+      "source": {}
     },
     {
-      "summary": "Provide reminder of alcohol recommendations",
+      "summary": "Discuss physical activity",
       "indicator": "info",
-      "detail": "Alcohol reminder rationale",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Physical Activity\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {

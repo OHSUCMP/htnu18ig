@@ -1,0 +1,232 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-NPI-SmokingCessationInProgress-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-NPI-SmokingCessationInProgress-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ],
+        "text": "Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationInProgress"
+      },
+      "onsetDateTime": "2015-01-28T15:16:21-05:00",
+      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "note": [ {
+        "text": "Indicates Preexisting Diagnosis of Hypertension"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-NPI-SmokingCessationInProgress-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "NPI-SmokingCessationInProgress",
+      "active": true,
+      "name": [ {
+        "text": "Smoking Cessation In Progress",
+        "family": "In Progress",
+        "given": [ "SmokingCessation" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1949-04-23"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/NPI-SmokingCessationInProgress"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-SmokingCessationInProgress-1",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationInProgress"
+      },
+      "effectivePeriod": {
+        "start": "1977-08-18",
+        "end": "2018-03-02"
+      },
+      "issued": "2018-03-02T00:00:00-07:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "428071000124103",
+          "display": "Heavy tobacco smoker (finding)"
+        } ]
+      },
+      "note": [ {
+        "text": "Indicates patient has been a heavy smoker since 1977. This is the most recent observation concerning smoking."
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          } ]
+        },
+        "valueQuantity": {
+          "value": 3,
+          "unit": "Packs/Day"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-SmokingCessationInProgress-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-NPI-SmokingCessationInProgress-2",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "https://coach-dev.ohsu.edu/",
+          "code": "smoking-cessation",
+          "display": "Smoking Cessation"
+        } ],
+        "text": "Smoking Cessation"
+      } ],
+      "description": {
+        "text": "Reduce smoking by half"
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationInProgress"
+      },
+      "startDate": "2021-02-12",
+      "statusDate": "2021-06-21"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-NPI-SmokingCessationInProgress-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-NPI-SmokingCessationInProgress-3",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "https://coach-dev.ohsu.edu/",
+          "code": "smoking-cessation",
+          "display": "Smoking Cessation"
+        } ],
+        "text": "Smoking Cessation"
+      } ],
+      "description": {
+        "text": "Join a support group."
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationInProgress"
+      },
+      "startDate": "2021-02-12",
+      "statusDate": "2021-06-21"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-NPI-SmokingCessationInProgress-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-NPI-SmokingCessationInProgress-1",
+      "lifecycleStatus": "planned",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "description": {
+        "text": "Goal of 135/85"
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationInProgress"
+      },
+      "startDate": "2020-02-12",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 135,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-NPI-SmokingCessationInProgress-1"
+    }
+  } ]
+}

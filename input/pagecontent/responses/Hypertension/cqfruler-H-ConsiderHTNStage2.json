@@ -1,18 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Diagnosis",
-      "indicator": "info",
-      "detail": "Consider HTNStage2",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
-    },
-    {
       "summary": "Consider diagnosis of Stage 2 hypertension",
       "indicator": "warning",
-      "detail": "{{#patient}}You recently had high blood pressure readings (\u003e140 systolic or \u003e 90 diastolic) which suggests hypertension, but no diagnosis is in your chart.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP \u003e 140mm Hg and/or DBP \u003e 90. This suggests the patient may have Stage 2 Hypertension, but no diagnosis was found.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[ { \"label\": \"Contact care team diagnosis\", \"actions\": [\"{{#patient}}\u003ca data-id\u003d\u0027Communication\u0027 data-recipient\u003d\u0027CareTeam\u0027 data-sender\u003d\u0027Patient\u0027 href\u003d\u0027/contact\u0027\u003e Contact your care team about high blood presure diagnosis\u003c/a\u003e {{/patient}}\"] } ]|at-most-one|https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings",
+      "detail": "{{#patient}}You recently had high blood pressure readings (\u003e140 systolic or \u003e 90 diastolic) which suggests hypertension, but no diagnosis is in your chart.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP \u003e 140mm Hg and/or DBP \u003e 90. This suggests the patient may have Stage 2 Hypertension, but no diagnosis was found.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[ { \"label\": \"Contact care team diagnosis\", \"actions\": [\"{{#patient}}\u003ca data-id\u003d\u0027Communication\u0027 data-recipient\u003d\u0027CareTeam\u0027 data-sender\u003d\u0027Patient\u0027 href\u003d\u0027/contact\u0027\u003e Contact your care team about high blood presure diagnosis\u003c/a\u003e {{/patient}}\"] } ]|at-most-one|",
       "source": {}
     }
   ]

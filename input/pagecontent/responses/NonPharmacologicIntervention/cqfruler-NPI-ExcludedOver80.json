@@ -1,15 +1,6 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Non-Pharmacologic Intervention",
-      "indicator": "info",
-      "detail": "Excluded Over80",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
-    },
-    {
       "summary": "Exclusion from Hypertension Non-Pharmacologic Interventions",
       "indicator": "info",
       "detail": "Patient was excluded from non-pharmacologic interventions for hypertension due to being over the age of 80.",

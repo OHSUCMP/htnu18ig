@@ -1,15 +1,6 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Monitoring Process",
-      "indicator": "info",
-      "detail": "Excluded Pregnant",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
-    },
-    {
       "summary": "Exclusion from Hypertension Monitoring Process",
       "indicator": "info",
       "detail": "Patient was excluded from monitoring of hypertension due to being pregnant.",

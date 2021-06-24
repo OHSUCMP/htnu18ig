@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-SmokingCessationInProgress",
+  "active": true,
+  "name": [
+    {
+      "text": "Smoking Cessation In Progress",
+      "family": "In Progress",
+      "given": [
+        "SmokingCessation"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1949-04-23"
+}
