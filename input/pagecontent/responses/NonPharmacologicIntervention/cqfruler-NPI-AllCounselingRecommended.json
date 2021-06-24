@@ -1,36 +1,33 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Non-Pharmacologic Intervention",
+      "summary": "Discuss Smoking Cessation",
       "indicator": "info",
-      "detail": "All CounselingRecommended",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
-    },
-    {
-      "summary": "Recommend smoking cessation counseling",
-      "indicator": "info",
-      "detail": "Smoking counseling rationale",
+      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ {\"id\": \"smoking-counseling\", \"type\":\"counseling\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"225323000\"},\"label\": \"Suggested Reading\",\"actions\": [{\"url\":\"/SmokingCessation\", \"label\":\"Click here to learn more about tobacco cessation.\"}]},{ \"id\": \"smoking-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"smoking-cessation\"}, \"label\": \"Set a Tobacco Cessation Goal\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {
-      "summary": "Recommend weight loss counseling.",
+      "summary": "Consider weight loss strategies",
       "indicator": "info",
-      "detail": "Weight loss counseling rationale",
+      "detail": "{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Request Weight Loss Counseling\", \"actions\": [ \"ServiceRequest for Weight Loss Counseling\", \"{{#patient}}\u003ca href\u003d\u0027/weightLoss\u0027\u003eClick here to request Weight Loss Counseling\u003c/a\u003e{{/patient}}\" ] } ]|at-most-one|[{\"label\":\"University of Michigan: Hypertension\", \"url\":\"https://uhs.umich.edu/hypertension\"}, {\"label\":\"AHA: Changes You Can Make to Manage High Blood Pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure\"}]",
       "source": {}
     },
     {
-      "summary": "Provide alcohol moderation counseling",
+      "summary": "Discuss alcohol moderation",
       "indicator": "info",
-      "detail": "Alcohol counseling rationale",
+      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Request Alcohol Moderation Assistance\", \"actions\": [ {\"label\":\"Click here to request Alcohol Moderation Counseling\", \"url\":\"/alcoholModeration\"} ] } ]|at-most-one|",
       "source": {}
     },
     {
-      "summary": "Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity",
+      "summary": "Discuss dietary changes (with salt/sodium reduction)",
       "indicator": "info",
-      "detail": "TODO",
+      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Diet\", \"actions\": [] } ]|at-most-one|",
+      "source": {}
+    },
+    {
+      "summary": "Discuss physical activity",
+      "indicator": "info",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Physical Activity\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {

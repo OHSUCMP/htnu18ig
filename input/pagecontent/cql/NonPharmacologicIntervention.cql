@@ -46,13 +46,19 @@ code "sustaining": 'sustaining' from "Goal achievement status" display 'sustaini
 
 context Patient
 
-/* Return the number of packs/day indicated in the Observation */
-define function "Packs Per Day"(O FHIR.Observation):
-  FHIRHelpers.ToQuantity(singleton from (O.component C where C.code = "PACKS A DAY").value)
-
 /* Return a reference to the most recent observation related to the list of counseling procedures given */
 define function "Last Relevant Counseling"(procedures List<FHIR.Procedure>):
   (Last(procedures P sort by start of Common."Normalize Interval"(performed))).reasonReference
+
+define function "Last Counseling Procedure"(procedures List<FHIR.Procedure>):
+    (Last(procedures P sort by start of Common."Normalize Interval"(performed)))
+
+/* Return a list containing the json string needed to update each given Goal */
+define function "Update Goals String"(goals List<FHIR.Goal>, code String):
+  goals Goal return '{"id": "' + Goal.id + '", "type": "update-goal", "references": {"system":"https//coach-dev.ohsu.edu", "code":"' + code + '"}, "label": "Update your goal."}'
+
+define function "Goal Summary"(goals List<FHIR.Goal>):
+  goals Goal return 'Goal: ' + Goal.description.text + ' Status: ' + (singleton from Goal.achievementStatus.coding).display
 
 define "Info":
   'info'
@@ -90,31 +96,44 @@ define "BP Goal Recommendation":
   'Discuss target blood pressure and set a blood pressure goal'
 
 define "BP Goal Rationale":
-  '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have blood pressure goal yet.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.<br><br>Stroke, MI, "Reduce risk of stroke, heart disease, or kidney disease"{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[    {      "label": "BPGoal",      "actions": [       "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalhigh\'>BP target < 140/90</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoalmedium\'>BP target < 130/80</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'BPGoallow\'>BP target < 120/80</input>{{/patient}}"      ]    }  ]|at-most-one|'
+  '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have blood pressure goal yet.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.<br><br>Stroke, MI, "Reduce risk of stroke, heart disease, or kidney disease"{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[    {      "label": "BPGoal", "actions": [ {"label":"Set a BP Goal"}]    }  ]|at-most-one|'
 
 define "Smoking Recommendation":
   if exists "Tobacco Cessation Goals" then
-    'Recommendation 19a or 19b will be shown, depending on whether a status update is needed.'
+    if exists "Tobacco Cessation Goals Needing Update" then
+      'Recommendation 19a'
+      else
+      'Recommendation 19b'
   else
     if "Patient is Currently a Smoker" then
-      if ("Counseling Smoking Observation" is null) then
-          'Recommendation 19c will be shown. This will provide two suggestions, one for counseling and one for setting a goal.'
+      if ("Last Smoking Counseling Procedure" is null) then
+          'Discuss Smoking Cessation'
       else
-        'Recommendation 19d will be shown. This is a reminder with a suggestion to set a goal.'
+        'Reminder about Smoking Cessation'
   else
     'None'
 
 define "Smoking Rationale":
-if exists "Tobacco Cessation Goals" then
-  'Suggestion for 19a would be to update the goal. 19b will have no suggestions.'
-else
-  if "Patient is Currently a Smoker" then
-    if ("Counseling Smoking Observation" is null) then
-      '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ {"id": "smoking-counseling", "type":"counseling", "category": "http://snomed.info/sct^225323000","label": "Suggested Reading","actions": ["<a href=\'/SmokingCessation\'>Click here to learn more about tobacco cessation.</a>"]},{ "id": "smoking-freetext-goal", "type":"goal", "category":"https//coach-dev.ohsu.edu^smoking-cessation", "label": "Set a Tobacco Cessation Goal", "actions": [  "<input type=\'text\' class=\'goal\' placeholder=\'Describe your goal here\'/>" ] } ]|at-most-one|'
+  if exists "Tobacco Cessation Goals" then
+    if exists "Tobacco Cessation Goals Needing Update" then
+      '{{#patient}}You have set some tobacco cessation goals. Tell us how you\'re doing.{{/patient}}||' + "Suggestions for Updating Tobacco Cessation Goals" + '|at-most-one|'
     else
-      'Suggestion for 19d will be shown. This will suggest setting a goal.'
-else
-  'None'
+      '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Tobacco Goal Summary" + '{{/patient}}|||at-most-one|'
+  else
+    if "Patient is Currently a Smoker" then
+      if ("Last Smoking Counseling Procedure" is null) then
+        '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ {"id": "smoking-counseling", "type":"counseling", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Suggested Reading","actions": [{"url":"/SmokingCessation", "label":"Click here to learn more about tobacco cessation."}]},{ "id": "smoking-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]|at-most-one|'
+      else
+        '{{#patient}}You received counseling about stopping smoking, which would lower your blood pressure and reduce stroke and heart attack risk.{{/patient}}{{#careTeam}}Patient still smokes, but has been counseled. Consider reminding about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "id": "smoking-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]|at-most-one|'
+    else
+      'None'
+
+// Convert the list to a string for use in suggestions
+define "Suggestions for Updating Tobacco Cessation Goals":
+  '[' + Combine("Update Goals String"("Tobacco Cessation Goals Needing Update", 'smoking-cessation'), ',') + ']'
+
+define "Tobacco Goal Summary":
+  Combine("Goal Summary"("Tobacco Cessation Goals"), '<br>')
 
 define "BMI Recommendation":
   if "Patient BMI is Greater than 25 kg/m2" then
@@ -130,7 +149,7 @@ define "BMI Rationale":
     if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then
       '{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "actions": [ "ServiceRequest for Weight Loss Counseling", "{{#patient}}<a href=\'/weightLoss\'>Click here to request Weight Loss Counseling</a>{{/patient}}" ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
     else
-      '{{#patient}}Your weight is not yet decreasing. When it\'s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseling, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "actions": [ "ServiceRequest for Weight Loss Counseling", "{{#patient}}<a href=\'/weightLoss\'>Click here to request Weight Loss Counseling</a>{{/patient}}" ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
+      '{{#patient}}Your weight is not yet decreasing. When it\'s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseling, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "actions": [ {"label":"Click here to request Weight Loss Counseling", "url":"/weightLoss"} ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
   else
     'None'
 
@@ -146,7 +165,7 @@ define "Alcohol Recommendation":
 define "Alcohol Rationale":
   if "Patient is a Heavy Alcoholic Drinker" then
     if ("Counseling Drinking Observation" is null or "Patient Drinking Increased Since Last Visit") then
-      '{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Alcohol Moderation Assistance", "actions": [ "ServiceRequest for Alcohol Moderation Counseling", "{{#patient}}<a href=\'/alcoholModeration\'>Click here to request Alcohol Moderation Counseling</a>{{/patient}}" ] } ]|at-most-one|'
+      '{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Alcohol Moderation Assistance", "actions": [ {"label":"Click here to request Alcohol Moderation Counseling", "url":"/alcoholModeration"} ] } ]|at-most-one|'
     else
       'Alcohol reminder rationale placeholder.'
   else
@@ -160,7 +179,7 @@ define "Dietary Counseling Recommendation":
 
 define "Dietary Counseling Rationale":
   if "Last Nutrition Counseling" is null then
-    '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Diet", "actions": [  "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'lowNADiet\'>Goal: Low sodium diet</input>{{/patient}}" , "{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'dashDiet\'>Goal: DASH Diet</input>{{/patient}}","{{#patient}}<input type=\'checkbox\' class=\'goal\' data-id=\'otherDiet\'>Goal: Other Heart Healthy Diet</input>{{/patient}}" ] } ]|at-most-one|'
+    '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Diet", "actions": [] } ]|at-most-one|'
   else
     'Dietary reminder rationale placeholder.'
 
@@ -172,7 +191,7 @@ define "Physical Activity Counseling Recommendation":
 
 define "Physical Activity Counseling Rationale":
   if "Last Physical Activity Counseling" is null then
-    '{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Physical Activity", "actions": [  "{{#patient}}<input type=\'text\' class=\'goal\' data-id=\'physical activity\'>Physical Activity Goal</input>{{/patient}}" ] } ]|at-most-one|'
+    '{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Physical Activity", "actions": [] } ]|at-most-one|'
   else
     'Provide physical activity reminder rationale placeholder.'
 
@@ -248,6 +267,10 @@ define "Tobacco Cessation Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
     where Goal.lifecycleStatus = 'active' and singleton from (Goal.category.coding.code) = 'smoking-cessation'
 
+// Return Goals that haven't been updated for at least 2 weeks
+define "Tobacco Cessation Goals Needing Update":
+  ("Tobacco Cessation Goals") Goal where Goal.statusDate < (Today() -  2 weeks)
+
 // All observations pertaining to smoking
 define "Smoking Status Observations":
   (Common.QualifiedObservation(["Observation": "Tobacco Smoking Status [Current] (Social History) (LOINC)"]))
@@ -315,9 +338,6 @@ define "Patient is a Heavy Alcoholic Drinker":
   else
     "Most Recent Patient Drinking Observation".value.value >= "Heavy Daily Drinker"
 
-define "Last Smoking Counseling":
-  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Tobacco Use Cessation Counseling"]))
-
 define "Last Drinking Counseling":
   "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Alcohol Brief Intervention and Counseling"]))
 
@@ -331,11 +351,8 @@ define "Last Nutrition Counseling":
 define "Last Physical Activity Counseling":
   "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Physical Activity Recommendations"]))
 
-// TODO: Update counseling so they don't have to match a specific observation? Or hand Matt the observation reference
-define "Counseling Smoking Observation":
-  Last("Observations Indicating Patient is a Smoker" SmokingObserved
-    with "Last Smoking Counseling" Counseling
-      such that SmokingObserved.id = Common.GetId(Counseling.reference))
+define "Last Smoking Counseling Procedure":
+  "Last Counseling Procedure"(["Procedure": "Tobacco Use Cessation Counseling"])
 
 define "Counseling Drinking Observation":
   Last("Observations Measuring Amount of Alcoholic Drinks Patient has per Drinking Day" DrinksPerDay
@@ -428,9 +445,3 @@ define "TEST Most Recent Patient BMI":
       "Value": BMI.value.value,
       "Unit": BMI.value.unit
     }
-
-define "TEST Patient Packs Per Day Most Recent":
-  "Packs Per Day"("Most Recent Observation of Patient Smoking Status")
-
-define "TEST Patient Packs Per Day At Counseling":
-  "Packs Per Day"("Counseling Smoking Observation")

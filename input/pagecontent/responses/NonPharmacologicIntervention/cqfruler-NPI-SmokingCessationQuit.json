@@ -1,18 +1,15 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Non-Pharmacologic Intervention",
+      "summary": "Discuss dietary changes (with salt/sodium reduction)",
       "indicator": "info",
-      "detail": "SmokingCessation Quit",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
+      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Diet\", \"actions\": [] } ]|at-most-one|",
+      "source": {}
     },
     {
-      "summary": "Provide dietary counseling, including salt/sodium reduction, as well as counseling regarding physical activity",
+      "summary": "Discuss physical activity",
       "indicator": "info",
-      "detail": "TODO",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Physical Activity\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {

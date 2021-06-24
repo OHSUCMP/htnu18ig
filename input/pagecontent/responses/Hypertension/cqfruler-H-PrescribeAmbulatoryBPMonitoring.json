@@ -1,18 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Diagnosis",
-      "indicator": "info",
-      "detail": "Prescribe AmbulatoryBPMonitoring",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
-    },
-    {
       "summary": "Use ambulatory blood pressure monitoring to address blood pressure variability",
       "indicator": "info",
-      "detail": "{{#patient}}You had some variation in your blood pressures recently. Sometimes variation in blood pressure is a health risk ; your care team may recommend ambulatory blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk.{{/careTeam}}||[ { \"label\": \"Request Ambulatory Blood Pressure\", \"actions\": [ \"ServiceRequest for Ambulatory Blood Pressure Monitoring\", \"{{#patient}}\u003ca href\u003d\u0027/ambulatoryBP\u0027\u003eClick here to request Ambulatory Blood Pressure\u003c/a\u003e{{/patient}}\" ] } ]|at-most-one|https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home",
+      "detail": "{{#patient}}You had some variation in your blood pressures recently. Sometimes variation in blood pressure is a health risk ; your care team may recommend ambulatory blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk.{{/careTeam}}||[ { \"label\": \"Request Ambulatory Blood Pressure\", \"actions\": [ \"ServiceRequest for Ambulatory Blood Pressure Monitoring\", \"{{#patient}}\u003ca href\u003d\u0027/ambulatoryBP\u0027\u003eClick here to request Ambulatory Blood Pressure\u003c/a\u003e{{/patient}}\" ] } ]|at-most-one|",
       "source": {}
     }
   ]

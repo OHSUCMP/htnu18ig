@@ -1,18 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Diagnosis",
-      "indicator": "info",
-      "detail": "Monitoring PreexistingHTN",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
-    },
-    {
       "summary": "Standard high blood pressure guidelines do not apply",
       "indicator": "info",
-      "detail": "{{#patient}}As you already have a high blood pressure diagnosis, please see your provider regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15016||at-most-one|https://www.mayoclinic.org/diseases-conditions/secondary-hypertension/symptoms-causes/syc-20350679#:~:text\u003dSecondary%20hypertension%20(secondary%20high%20blood,arteries%2C%20heart%20or%20endocrine%20system.",
+      "detail": "{{#patient}}As you already have a high blood pressure diagnosis, please see your provider regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15016||at-most-one|",
       "source": {}
     }
   ]

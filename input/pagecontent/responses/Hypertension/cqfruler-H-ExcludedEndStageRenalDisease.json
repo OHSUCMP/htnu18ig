@@ -1,15 +1,6 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Diagnosis",
-      "indicator": "info",
-      "detail": "Excluded EndStageRenalDisease",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
-    },
-    {
       "summary": "Exclusion from Hypertension Diagnosis",
       "indicator": "info",
       "detail": "Patient was excluded from initial diagnosis of hypertension due to having end stage renal disease.",

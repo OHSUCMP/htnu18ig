@@ -1,18 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Hypertension Diagnosis",
-      "indicator": "info",
-      "detail": "Prescribe HBPABPMonitoring",
-      "source": {
-        "label": "Info for those with normal blood pressure",
-        "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-      }
-    },
-    {
       "summary": "Use ambulatory or home blood pressure monitoring to confirm diagnosis",
       "indicator": "info",
-      "detail": "{{#patient}}You had a high blood pressure reading recently and have a blood pressure is high, but have no hypertension diagnosis.  Taking more blood pressures will help your care team decide if the high blood pressures need treatment.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}||[ { \"label\": \"Enter Blood Pressure\", \"actions\": [ \"ServiceRequest for High Blood Pressure Monitoring\", \"{{#patient}}\u003ca href\u003d\u0027/bp-readings\u0027\u003eClick here to go to the Home Blood Pressure entry page\u003c/a\u003e{{/patient}}\" ] } ]|at-most-one|https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home",
+      "detail": "{{#patient}}You had a high blood pressure reading recently and have a blood pressure is high, but have no hypertension diagnosis.  Taking more blood pressures will help your care team decide if the high blood pressures need treatment.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}||[ { \"label\": \"Enter Blood Pressure\", \"actions\": [ \"ServiceRequest for High Blood Pressure Monitoring\", \"{{#patient}}\u003ca href\u003d\u0027/bp-readings\u0027\u003eClick here to go to the Home Blood Pressure entry page\u003c/a\u003e{{/patient}}\" ] } ]|at-most-one|",
       "source": {}
     }
   ]
