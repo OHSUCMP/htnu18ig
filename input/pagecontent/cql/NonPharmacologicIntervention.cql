@@ -101,9 +101,9 @@ define "BP Goal Rationale":
 define "Smoking Recommendation":
   if exists "Tobacco Cessation Goals" then
     if exists "Tobacco Cessation Goals Needing Update" then
-      'Recommendation 19a'
+      'Update your Smoking Cessation Goals'
       else
-      'Recommendation 19b'
+      'Smoking Cessation'
   else
     if "Patient is Currently a Smoker" then
       if ("Last Smoking Counseling Procedure" is null) then
@@ -122,7 +122,7 @@ define "Smoking Rationale":
   else
     if "Patient is Currently a Smoker" then
       if ("Last Smoking Counseling Procedure" is null) then
-        '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ {"id": "smoking-counseling", "type":"counseling", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Suggested Reading","actions": [{"url":"/SmokingCessation", "label":"Click here to learn more about tobacco cessation."}]},{ "id": "smoking-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]|at-most-one|'
+        '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ {"id": "smoking-counseling", "type":"counseling", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Suggested Reading","actions": [{"url":"/SmokingCessation", "label":"Click here to learn more about tobacco cessation."}]},{ "id": "smoking-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]|at-most-one|[{"label":"Additional Link 1", "url":"https://www.google.com"}, {"label":"Additional Link 2", "url":"https://www.google.com"}]'
       else
         '{{#patient}}You received counseling about stopping smoking, which would lower your blood pressure and reduce stroke and heart attack risk.{{/patient}}{{#careTeam}}Patient still smokes, but has been counseled. Consider reminding about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "id": "smoking-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]|at-most-one|'
     else
@@ -147,9 +147,9 @@ define "BMI Recommendation":
 define "BMI Rationale":
   if "Patient BMI is Greater than 25 kg/m2" then
     if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then
-      '{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "actions": [ "ServiceRequest for Weight Loss Counseling", "{{#patient}}<a href=\'/weightLoss\'>Click here to request Weight Loss Counseling</a>{{/patient}}" ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
+      '{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "type": "counseling", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss.", "url":"/weightLoss"} ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
     else
-      '{{#patient}}Your weight is not yet decreasing. When it\'s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseling, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "actions": [ {"label":"Click here to request Weight Loss Counseling", "url":"/weightLoss"} ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
+      '{{#patient}}Your weight is not yet decreasing. When it\'s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseling, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "type": "counseling", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss", "url":"/weightLoss"} ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
   else
     'None'
 
@@ -165,9 +165,9 @@ define "Alcohol Recommendation":
 define "Alcohol Rationale":
   if "Patient is a Heavy Alcoholic Drinker" then
     if ("Counseling Drinking Observation" is null or "Patient Drinking Increased Since Last Visit") then
-      '{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Alcohol Moderation Assistance", "actions": [ {"label":"Click here to request Alcohol Moderation Counseling", "url":"/alcoholModeration"} ] } ]|at-most-one|'
+      '{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Alcohol Moderation Assistance", "type": "counseling", "references": {"system":"http://snomed.info/sct", "code":"24165007"}, "actions": [ {"label":"Click here to request Alcohol Moderation Counseling", "url":"/alcoholModeration"} ] } ]|at-most-one|'
     else
-      'Alcohol reminder rationale placeholder.'
+      'Alcohol reminder rationale placeholder.||||'
   else
     'None'
 
@@ -179,9 +179,9 @@ define "Dietary Counseling Recommendation":
 
 define "Dietary Counseling Rationale":
   if "Last Nutrition Counseling" is null then
-    '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Diet", "actions": [] } ]|at-most-one|'
+    '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59||at-most-one|'
   else
-    'Dietary reminder rationale placeholder.'
+    'Dietary reminder rationale placeholder.||||'
 
 define "Physical Activity Counseling Recommendation":
   if "Last Physical Activity Counseling" is null then
@@ -191,9 +191,9 @@ define "Physical Activity Counseling Recommendation":
 
 define "Physical Activity Counseling Rationale":
   if "Last Physical Activity Counseling" is null then
-    '{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Physical Activity", "actions": [] } ]|at-most-one|'
+    '{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59||at-most-one|'
   else
-    'Provide physical activity reminder rationale placeholder.'
+    'Provide physical activity reminder rationale placeholder.||||'
 
 define "Patient on Track of Goal Recommendation":
   if "Patient at BP Goal" then
