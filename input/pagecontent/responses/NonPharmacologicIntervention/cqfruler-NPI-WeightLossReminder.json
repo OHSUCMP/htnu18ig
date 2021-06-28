@@ -1,15 +1,15 @@
 {
   "cards": [
     {
-      "summary": "Provide reminder of BMI recommendations placeholder.",
+      "summary": "Remind about weight loss.",
       "indicator": "info",
-      "detail": "{{#patient}}Your weight is not yet decreasing. When it\u0027s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseling, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Request Weight Loss Counseling\", \"actions\": [ {\"label\":\"Click here to request Weight Loss Counseling\", \"url\":\"/weightLoss\"} ] } ]|at-most-one|[{\"label\":\"University of Michigan: Hypertension\", \"url\":\"https://uhs.umich.edu/hypertension\"}, {\"label\":\"AHA: Changes You Can Make to Manage High Blood Pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure\"}]",
+      "detail": "{{#patient}}Your weight is not yet decreasing. When it\u0027s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseled, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"id\": \"weight-loss-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"weight-loss\"}, \"label\": \"Set a Weight Loss Goal\", \"actions\": [] } ]|at-most-one|[{\"label\":\"University of Michigan: Hypertension\", \"url\":\"https://uhs.umich.edu/hypertension\"}, {\"label\":\"AHA: Changes You Can Make to Manage High Blood Pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure\"}]",
       "source": {}
     },
     {
       "summary": "Discuss physical activity",
       "indicator": "info",
-      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Physical Activity\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
       "source": {}
     },
     {

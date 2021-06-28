@@ -3,19 +3,19 @@
     {
       "summary": "Discuss alcohol moderation",
       "indicator": "info",
-      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Request Alcohol Moderation Assistance\", \"actions\": [ {\"label\":\"Click here to request Alcohol Moderation Counseling\", \"url\":\"/alcoholModeration\"} ] } ]|at-most-one|",
+      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Request Alcohol Moderation Assistance\", \"type\": \"counseling\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"24165007\"}, \"actions\": [ {\"label\":\"Click here to request Alcohol Moderation Counseling\", \"url\":\"/alcoholModeration\"} ] } ]|at-most-one|",
       "source": {}
     },
     {
       "summary": "Discuss dietary changes (with salt/sodium reduction)",
       "indicator": "info",
-      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Diet\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
       "source": {}
     },
     {
       "summary": "Discuss physical activity",
       "indicator": "info",
-      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Physical Activity\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
       "source": {}
     },
     {

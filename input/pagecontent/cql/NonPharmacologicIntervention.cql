@@ -96,7 +96,7 @@ define "BP Goal Recommendation":
   'Discuss target blood pressure and set a blood pressure goal'
 
 define "BP Goal Rationale":
-  '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have blood pressure goal yet.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.<br><br>Stroke, MI, "Reduce risk of stroke, heart disease, or kidney disease"{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065|[    {      "label": "BPGoal", "actions": [ {"label":"Set a BP Goal"}]    }  ]|at-most-one|'
+  '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have a blood pressure goal.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.<br><br>Stroke, MI, "Reduce risk of stroke, heart disease, or kidney disease"{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065||at-most-one|'
 
 define "Smoking Recommendation":
   if exists "Tobacco Cessation Goals" then
@@ -136,22 +136,41 @@ define "Tobacco Goal Summary":
   Combine("Goal Summary"("Tobacco Cessation Goals"), '<br>')
 
 define "BMI Recommendation":
-  if "Patient BMI is Greater than 25 kg/m2" then
-    if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then
-      'Consider weight loss strategies'
+  if exists "Weight Loss Goals" then
+    if exists "Weight Loss Goals Needing Update" then
+      'Goals need updating'
     else
-      'Provide reminder of BMI recommendations placeholder.'
+      'Tailored recommendation'
+  else
+    if "Patient BMI is Greater than 25 kg/m2" then
+      if ("Last BMI Counseling Procedure" is null) then
+        'Consider weight loss strategies.'
+      else
+        'Remind about weight loss.'
   else
     'None'
 
 define "BMI Rationale":
-  if "Patient BMI is Greater than 25 kg/m2" then
-    if ("Counseling BMI Observation" is null or "Patient BMI Increased Since Last Visit") then
-      '{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "type": "counseling", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss.", "url":"/weightLoss"} ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
+  if exists "Weight Loss Goals" then
+    if exists "Weight Loss Goals Needing Update" then
+      '{{#patient}}You have set some weight loss goals. Tell us how you\'re doing.{{/patient}}||' + "Suggestions for Updating Weight Loss Goals" + '|at-most-one|'
     else
-      '{{#patient}}Your weight is not yet decreasing. When it\'s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseling, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "label": "Request Weight Loss Counseling", "type": "counseling", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss", "url":"/weightLoss"} ] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
+      '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Weight Loss Goal Summary" + '{{/patient}}|||at-most-one|'
+  else
+    if "Patient BMI is Greater than 25 kg/m2" then
+      if ("Last BMI Counseling Procedure" is null) then
+        '{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "id": "weight-loss-counseling", "label": "Weight Loss Counseling", "type": "counseling", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss.", "url":"/weightLoss"}]}, { "id": "weight-loss-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"weight-loss"}, "label": "Set a Weight Loss Goal", "actions": [] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
+      else
+        '{{#patient}}Your weight is not yet decreasing. When it\'s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseled, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page=59|[ { "id": "weight-loss-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"weight-loss"}, "label": "Set a Weight Loss Goal", "actions": [] } ]|at-most-one|[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
   else
     'None'
+
+// Convert the list to a string for use in suggestions
+define "Suggestions for Updating Weight Loss Goals":
+  '[' + Combine("Update Goals String"("Weight Loss Goals Needing Update", 'weight-loss'), ',') + ']'
+
+define "Weight Loss Goal Summary":
+  Combine("Goal Summary"("Weight Loss Goals"), '<br>')
 
 define "Alcohol Recommendation":
   if "Patient is a Heavy Alcoholic Drinker" then
@@ -297,6 +316,15 @@ define "Patient is Currently a Smoker":
   else
     "Observations Indicating Patient is a Smoker" contains "Most Recent Observation of Patient Smoking Status"
 
+// Look for custom weight loss goal coding
+define "Weight Loss Goals":
+  (Common.QualifiedGoal(["Goal"])) Goal
+    where Goal.lifecycleStatus = 'active' and singleton from (Goal.category.coding.code) = 'weight-loss'
+
+// Return Goals that haven't been updated for at least 2 weeks
+define "Weight Loss Goals Needing Update":
+  ("Weight Loss Goals") Goal where Goal.statusDate < (Today() -  2 weeks)
+
 // Is patient's BMI > 25?
 define "Observations Specifying Patient BMI":
   (Common.QualifiedObservation(["Observation": "BMI Ratio"])) BMIObserved
@@ -341,9 +369,8 @@ define "Patient is a Heavy Alcoholic Drinker":
 define "Last Drinking Counseling":
   "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Alcohol Brief Intervention and Counseling"]))
 
-define "Last BMI Counseling":
-  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Weight Reduction Recommendations"])
-  union Common.QualifiedProcedure(["Procedure": "BMI Follow Up Plan SNOMEDCT"]))
+define "Last BMI Counseling Procedure":
+  "Last Counseling Procedure"((["Procedure": "Weight Reduction Recommendations"]) union (["Procedure": "BMI Follow Up Plan SNOMEDCT"]))
 
 define "Last Nutrition Counseling":
   "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Counseling for Nutrition"]))
@@ -359,22 +386,11 @@ define "Counseling Drinking Observation":
     with "Last Drinking Counseling" Counseling
       such that DrinksPerDay.id = Common.GetId(Counseling.reference))
 
-define "Counseling BMI Observation":
-  Last("Observations Specifying Patient BMI" BMIObserved
-    with "Last BMI Counseling" Counseling
-      such that BMIObserved.id = Common.GetId(Counseling.reference))
-
 define "Patient Drinking Increased Since Last Visit":
   from
     "Most Recent Patient Drinking Observation" DrinkingThisVisit,
     "Counseling Drinking Observation" DrinkingLastVisit
       return (FHIRHelpers.ToQuantity(DrinkingThisVisit.value) > FHIRHelpers.ToQuantity(DrinkingLastVisit.value)) is true
-
-define "Patient BMI Increased Since Last Visit":
-  from
-    "Most Recent Patient BMI" BMIThisVisit,
-    "Counseling BMI Observation" BMILastVisit
-      return (FHIRHelpers.ToQuantity(BMIThisVisit.value) > FHIRHelpers.ToQuantity(BMILastVisit.value)) is true
 
 // Is Patient on Track to reach BP Goal?
 define "BP Goal Demonstrating Patient Improvement":
