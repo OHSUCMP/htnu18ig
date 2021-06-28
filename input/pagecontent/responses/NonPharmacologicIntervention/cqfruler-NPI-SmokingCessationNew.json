@@ -3,19 +3,19 @@
     {
       "summary": "Discuss Smoking Cessation",
       "indicator": "info",
-      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ {\"id\": \"smoking-counseling\", \"type\":\"counseling\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"225323000\"},\"label\": \"Suggested Reading\",\"actions\": [{\"url\":\"/SmokingCessation\", \"label\":\"Click here to learn more about tobacco cessation.\"}]},{ \"id\": \"smoking-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"smoking-cessation\"}, \"label\": \"Set a Tobacco Cessation Goal\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ {\"id\": \"smoking-counseling\", \"type\":\"counseling\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"225323000\"},\"label\": \"Suggested Reading\",\"actions\": [{\"url\":\"/SmokingCessation\", \"label\":\"Click here to learn more about tobacco cessation.\"}]},{ \"id\": \"smoking-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"smoking-cessation\"}, \"label\": \"Set a Tobacco Cessation Goal\", \"actions\": [] } ]|at-most-one|[{\"label\":\"Additional Link 1\", \"url\":\"https://www.google.com\"}, {\"label\":\"Additional Link 2\", \"url\":\"https://www.google.com\"}]",
       "source": {}
     },
     {
       "summary": "Discuss dietary changes (with salt/sodium reduction)",
       "indicator": "info",
-      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Diet\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
       "source": {}
     },
     {
       "summary": "Discuss physical activity",
       "indicator": "info",
-      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Physical Activity\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
       "source": {}
     },
     {

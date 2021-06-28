@@ -1,21 +1,21 @@
 {
   "cards": [
     {
-      "summary": "Consider weight loss strategies",
+      "summary": "Consider weight loss strategies.",
       "indicator": "info",
-      "detail": "{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Request Weight Loss Counseling\", \"actions\": [ \"ServiceRequest for Weight Loss Counseling\", \"{{#patient}}\u003ca href\u003d\u0027/weightLoss\u0027\u003eClick here to request Weight Loss Counseling\u003c/a\u003e{{/patient}}\" ] } ]|at-most-one|[{\"label\":\"University of Michigan: Hypertension\", \"url\":\"https://uhs.umich.edu/hypertension\"}, {\"label\":\"AHA: Changes You Can Make to Manage High Blood Pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure\"}]",
+      "detail": "{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"id\": \"weight-loss-counseling\", \"label\": \"Weight Loss Counseling\", \"type\": \"counseling\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"266724001\"}, \"actions\": [ {\"label\":\"Learn more about weight loss.\", \"url\":\"/weightLoss\"}]}, { \"id\": \"weight-loss-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"weight-loss\"}, \"label\": \"Set a Weight Loss Goal\", \"actions\": [] } ]|at-most-one|[{\"label\":\"University of Michigan: Hypertension\", \"url\":\"https://uhs.umich.edu/hypertension\"}, {\"label\":\"AHA: Changes You Can Make to Manage High Blood Pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure\"}]",
       "source": {}
     },
     {
       "summary": "Discuss dietary changes (with salt/sodium reduction)",
       "indicator": "info",
-      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Diet\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
       "source": {}
     },
     {
       "summary": "Discuss physical activity",
       "indicator": "info",
-      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Physical Activity\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
       "source": {}
     },
     {
