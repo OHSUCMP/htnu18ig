@@ -98,13 +98,13 @@ define "Indicator Status":
 define "Suggestions":
   if not "In Population" then 'None'
   else if "Diagnosis of Preexisting Hypertension" then ''
-  else if "HTN Crisis" then '[ { "label": "Contact care team BP urgent", "type": "link", "actions": [{"label":"Contact your care team about your high blood pressure", "url":"/contact"}] } ]'
-  else if not "Has BP Set" then '[ { "label": "Enter Blood Pressure", "type": "link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
-  else if "HTN Stage 2" then '[ { "label": "Contact care team diagnosis", "type": "link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
-  else if "Consider HTN Stage 2" then '[ { "label": "Contact care team diagnosis", "type": "link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
-  else if "Consider HTN Stage 1" then '[ { "label": "Contact care team diagnosis", "type": "link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
-  else if "Prescribe HBP or ABP Monitoring" then '[ { "label": "Enter Blood Pressure", "type": "link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
-  else if "Prescribe Ambulatory BP Monitoring" then '[ { "label": "Request Ambulatory Blood Pressure", "type": "link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/ambulatoryBP"}] } ]'
+  else if "HTN Crisis" then '[ { "label": "Contact care team BP urgent", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your high blood pressure", "url":"/contact"}] } ]'
+  else if not "Has BP Set" then '[ { "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
+  else if "HTN Stage 2" then '[ { "label": "Contact care team diagnosis", "type": "suggestion-link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
+  else if "Consider HTN Stage 2" then '[ { "label": "Contact care team diagnosis", "type": "suggestion-link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
+  else if "Consider HTN Stage 1" then '[ { "label": "Contact care team diagnosis", "type": "suggestion-link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
+  else if "Prescribe HBP or ABP Monitoring" then '[ { "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
+  else if "Prescribe Ambulatory BP Monitoring" then '[ { "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/ambulatoryBP"}] } ]'
   else ''
 
 define "Selection Behavior":
