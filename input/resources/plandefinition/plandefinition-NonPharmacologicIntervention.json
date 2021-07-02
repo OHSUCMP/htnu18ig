@@ -105,7 +105,7 @@
       ]
     },
     {
-      "title": "Does Patient Smoke Right Now?",
+      "title": "Does Patient Smoke or have a Tobacco Cessation Goal?",
       "description": "Determines if a recommendation or reminder regarding Patient smoking should be presented.",
       "condition": [
         {
@@ -113,7 +113,7 @@
           "expression": {
             "description": "Determine if Patient is in the recommendation.",
             "language": "text/cql.identifier",
-            "expression": "Patient is Currently a Smoker Action Path"
+            "expression": "Patient Smoking Goals Action Path"
           }
         }
       ],
@@ -131,7 +131,7 @@
           "expression": {
             "description": "Rationale for recommendation type.",
             "language": "text/cql.identifier",
-            "expression": "Smoking Rationale"
+            "expression": "Smoking Rationale Combined Data"
           }
         },
         {
@@ -152,7 +152,7 @@
           "expression": {
             "description": "Determine if Patient is in the recommendation.",
             "language": "text/cql.identifier",
-            "expression": "Patient BMI is Greater than 25 kg/m2 Action Path"
+            "expression": "Patient Weight Loss Goals Action Path"
           }
         }
       ],
@@ -170,7 +170,7 @@
           "expression": {
             "description": "Rationale for recommendation type.",
             "language": "text/cql.identifier",
-            "expression": "BMI Rationale"
+            "expression": "BMI Rationale Combined Data"
           }
         },
         {
@@ -191,7 +191,7 @@
           "expression": {
             "description": "Determine if Patient is in the recommendation.",
             "language": "text/cql.identifier",
-            "expression": "Patient is a Heavy Alcoholic Drinker Action Path"
+            "expression": "Patient Alcohol Goals Action Path"
           }
         }
       ],
@@ -209,7 +209,7 @@
           "expression": {
             "description": "Rationale for recommendation type.",
             "language": "text/cql.identifier",
-            "expression": "Alcohol Rationale"
+            "expression": "Alcohol Rationale Combined Data"
           }
         },
         {
