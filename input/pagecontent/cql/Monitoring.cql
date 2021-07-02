@@ -67,7 +67,7 @@ define "Recommendation":
   else 'Patient at goal!'
 
 define "Rationale Combined Data":
-  "Rationale" + '|' + "Source" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
+  "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
   if not "In Population" then ''
@@ -87,22 +87,13 @@ define "Indicator Status":
   else if "Prescribe Ambulatory BP Monitoring" then "Info"
   else "Info"
 
-define "Source":
-  if not "In Population" then ''
-  else if not "Patient has a BP Goal" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if not "Has BP Set" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if ("HTN Stage 2" or "Not At Goal") then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if "Prescribe HBP or ABP Monitoring" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if "Prescribe Ambulatory BP Monitoring" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else ''
-
 define "Suggestions":
   if not "In Population" then ''
   else if not "Patient has a BP Goal" then '[ { "id": "bp-radio-goal", "label": "BP Goal", "type": "goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"blood-pressure"}, "actions": [{"label":"BP target < 140/90"}, {"label":"BP target < 130/80"}, {"label":"BP target < 120/80"}]}]'
-  else if not "Has BP Set" then '[ { "label": "Enter Blood Pressure", "type": "link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
-  else if ("HTN Stage 2" or "Not At Goal") then '[ { "label": "Contact care team BP Treatment", "type": "link", "actions": [{"label":"Contact your care team about options to control your high blood pressure", "url":"/contact"}] } ]'
-  else if "Prescribe HBP or ABP Monitoring" then '[ { "label": "Enter Blood Pressure", "type": "link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
-  else if "Prescribe Ambulatory BP Monitoring" then '[ { "label": "Request Ambulatory Blood Pressure", "type": "link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/ambulatoryBP"}] } ]'
+  else if not "Has BP Set" then '[ { "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
+  else if ("HTN Stage 2" or "Not At Goal") then '[ { "label": "Contact care team BP Treatment", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure", "url":"/contact"}] } ]'
+  else if "Prescribe HBP or ABP Monitoring" then '[ { "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
+  else if "Prescribe Ambulatory BP Monitoring" then '[ { "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/ambulatoryBP"}] } ]'
   else ''
 
 define "Selection Behavior":
