@@ -67,7 +67,7 @@ define "Recommendation":
   else 'Patient at goal!'
 
 define "Rationale Combined Data":
-  "Rationale" + '|' + "Source" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
+  "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
   if not "In Population" then ''
@@ -86,15 +86,6 @@ define "Indicator Status":
   else if "Prescribe HBP or ABP Monitoring" then "Info"
   else if "Prescribe Ambulatory BP Monitoring" then "Info"
   else "Info"
-
-define "Source":
-  if not "In Population" then ''
-  else if not "Patient has a BP Goal" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if not "Has BP Set" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if ("HTN Stage 2" or "Not At Goal") then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if "Prescribe HBP or ABP Monitoring" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if "Prescribe Ambulatory BP Monitoring" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else ''
 
 define "Suggestions":
   if not "In Population" then ''

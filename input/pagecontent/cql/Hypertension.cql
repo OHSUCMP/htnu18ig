@@ -69,7 +69,7 @@ define "Recommendation":
   else 'Patient does not have an indication of a hypertensive state.'
 
 define "Rationale Combined Data":
-  "Rationale" + '|' + "Source" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
+  "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
   if not "In Population" then 'None'
@@ -94,18 +94,6 @@ define "Indicator Status":
   else if "Prescribe HBP or ABP Monitoring" then "Info"
   else if "Prescribe Ambulatory BP Monitoring" then "Info"
   else "Info"
-
-define "Source":
-  if not "In Population" then 'None'
-  else if "Diagnosis of Preexisting Hypertension" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15016'
-  else if "HTN Crisis" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if not "Has BP Set" then 'https://pubmed.ncbi.nlm.nih.gov/32773652/'
-  else if "HTN Stage 2" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if "Consider HTN Stage 2" then 'https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065'
-  else if "Consider HTN Stage 1" then 'https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15026'
-  else if "Prescribe HBP or ABP Monitoring" then ''
-  else if "Prescribe Ambulatory BP Monitoring" then ''
-  else ''
 
 define "Suggestions":
   if not "In Population" then 'None'
