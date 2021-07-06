@@ -213,31 +213,67 @@ define "Alcohol Moderation Goal Summary":
 
 /***** NUTRITION CARD OUTPUT *****/
 
-define "Dietary Counseling Recommendation":
-  if "Last Nutrition Counseling" is null then
-    'Discuss dietary changes (with salt/sodium reduction)'
-  else
-    'Dietary reminder recommendation placeholder'
+define "Nutrition Recommendation":
+  if exists "Nutrition Goals Needing Update" then 'Update your Nutrition Goals'
+  else if exists "Nutrition Goals" then 'Nutrition'
+  else if "Last Nutrition Counseling Procedure" is null then 'Discuss dietary changes (with salt/sodium reduction)'
+  else 'Reminder about dietary changes'
 
-define "Dietary Counseling Rationale":
-  if "Last Nutrition Counseling" is null then
-    '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}||at-most-one|'
-  else
-    'Dietary reminder rationale placeholder.|||'
+define "Nutrition Rationale Combined Data":
+  "Nutrition Rationale" + '|' + "Nutrition Suggestions" + '|at-most-one|' + "Nutrition Links"
+
+define "Nutrition Rationale":
+  if exists "Nutrition Goals Needing Update" then '{{#patient}}You have set some nutrition goals. Tell us how you\'re doing.{{/patient}}'
+  else if exists "Nutrition Goals" then '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Nutrition Goal Summary" + '{{/patient}}'
+  else if "Last Nutrition Counseling Procedure" is null then '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}'
+  else 'Nutrition Reminder Rationale Placeholder'
+
+define "Nutrition Suggestions":
+  if exists "Nutrition Goals Needing Update" then '[' + Combine("Update Goals String"("Nutrition Goals Needing Update", 'nutrition'), ',') + ']'
+  else if exists "Nutrition Goals" then ''
+  else if "Last Nutrition Counseling Procedure" is null then '[ { "id": "nutrition-counseling", "label": "Nutrition Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"11816003"}, "actions": [ {"label":"Learn more about nutrition and diet changes.", "url":"/nutrition"}]}, { "id": "nutrition-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"nutrition"}, "label": "Set a Nutrition/Diet Change Goal", "actions": [] } ]'
+  else '[{ "id": "nutrition-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"nutrition"}, "label": "Set a Nutrition/Diet Change Goal", "actions": [] } ]'
+
+define "Nutrition Links":
+  if exists "Nutrition Goals Needing Update" then ''
+  else if exists "Nutrition Goals" then ''
+  else if "Last Nutrition Counseling Procedure" is null then ''
+  else ''
+
+define "Nutrition Goal Summary":
+    Combine("Goal Summary"("Nutrition Goals"), '<br>')
 
 /***** PHYSICAL ACTIVITY CARD OUTPUT *****/
 
-define "Physical Activity Counseling Recommendation":
-  if "Last Physical Activity Counseling" is null then
-    'Discuss physical activity'
-  else
-    'Provide physical activity reminder placeholder'
+define "Physical Activity Recommendation":
+  if exists "Physical Activity Goals Needing Update" then 'Update your Physical Activity Goals'
+  else if exists "Physical Activity Goals" then 'Physical Activity'
+  else if "Last Physical Activity Counseling Procedure" is null then 'Discuss physical activity'
+  else 'Reminder about physical activity'
 
-define "Physical Activity Counseling Rationale":
-  if "Last Physical Activity Counseling" is null then
-    '{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}||at-most-one|'
-  else
-    'Provide physical activity reminder rationale placeholder.|||'
+define "Physical Activity Rationale Combined Data":
+  "Physical Activity Rationale" + '|' + "Physical Activity Suggestions" + '|at-most-one|' + "Physical Activity Links"
+
+define "Physical Activity Rationale":
+  if exists "Physical Activity Goals Needing Update" then '{{#patient}}You have set some physical activity goals. Tell us how you\'re doing.{{/patient}}'
+  else if exists "Physical Activity Goals" then '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Physical Activity Goal Summary" + '{{/patient}}'
+  else if "Last Physical Activity Counseling Procedure" is null then '{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}'
+  else 'Rationale placeholder for physical activity'
+
+define "Physical Activity Suggestions":
+  if exists "Physical Activity Goals Needing Update" then '[' + Combine("Update Goals String"("Physical Activity Goals Needing Update", 'physical-activity'), ',') + ']'
+  else if exists "Physical Activity Goals" then ''
+  else if "Last Physical Activity Counseling Procedure" is null then '[ { "id": "physical-activity-counseling", "label": "Physical Activity Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"304507003"}, "actions": [ {"label":"Learn more about physical activity.", "url":"/physicalActivity"}]}, { "id": "physical-activity-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"physical-activity"}, "label": "Set a Physical Activity Goal", "actions": [] } ]'
+  else '[{ "id": "physical-activity-freetext-goal", "type":"goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"physical-activity"}, "label": "Set a Physical Activity Goal", "actions": [] } ]'
+
+define "Physical Activity Links":
+  if exists "Physical Activity Goals Needing Update" then ''
+  else if exists "Physical Activity Goals" then ''
+  else if "Last Physical Activity Counseling Procedure" is null then ''
+  else ''
+
+define "Physical Activity Goal Summary":
+    Combine("Goal Summary"("Physical Activity Goals"), '<br>')
 
 /***** PATIENT ON TRACK CARD OUTPUT *****/
 
@@ -343,7 +379,7 @@ define "Patient is Currently a Smoker":
 // Look for custom weight loss goal coding
 define "Weight Loss Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
-    where Goal.lifecycleStatus = 'active' and singleton from (Goal.category.coding.code) = 'weight-loss'
+    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'weight-loss'
 
 // Return Goals that haven't been updated for at least 2 weeks
 define "Weight Loss Goals Needing Update":
@@ -370,7 +406,7 @@ define "Patient BMI is Greater than 25 kg/m2":
 // Look for custom alcohol goal coding
 define "Alcohol Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
-    where Goal.lifecycleStatus = 'active' and singleton from (Goal.category.coding.code) = 'alcohol-moderation'
+    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'alcohol-moderation'
 
 // Return Goals that haven't been updated for at least 2 weeks
 define "Alcohol Goals Needing Update":
@@ -398,20 +434,35 @@ define "Patient is a Heavy Alcoholic Drinker":
   else
     "Most Recent Patient Drinking Observation".value.value >= "Heavy Daily Drinker"
 
-define "Last BMI Counseling Procedure":
-  "Last Counseling Procedure"((["Procedure": "Weight Reduction Recommendations"]) union (["Procedure": "BMI Follow Up Plan SNOMEDCT"]))
+define "Nutrition Goals":
+  (Common.QualifiedGoal(["Goal"])) Goal
+    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'nutrition'
 
-define "Last Nutrition Counseling":
-  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Counseling for Nutrition"]))
+define "Nutrition Goals Needing Update":
+  ("Nutrition Goals") Goal where Goal.statusDate < (Today() -  2 weeks)
 
-define "Last Physical Activity Counseling":
-  "Last Relevant Counseling"(Common.QualifiedProcedure(["Procedure": "Physical Activity Recommendations"]))
+define "Physical Activity Goals":
+  (Common.QualifiedGoal(["Goal"])) Goal
+    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'physical-activity'
+
+define "Physical Activity Goals Needing Update":
+  ("Physical Activity Goals") Goal where Goal.statusDate < (Today() -  2 weeks)
+
+/***** COUNSELING PROCEDURES *****/
+define "Last Alcohol Counseling Procedure":
+  "Last Counseling Procedure"(["Procedure": "Alcohol Brief Intervention and Counseling"])
 
 define "Last Smoking Counseling Procedure":
   "Last Counseling Procedure"(["Procedure": "Tobacco Use Cessation Counseling"])
 
-define "Last Alcohol Counseling Procedure":
-  "Last Counseling Procedure"(["Procedure": "Alcohol Brief Intervention and Counseling"])
+define "Last BMI Counseling Procedure":
+  "Last Counseling Procedure"((["Procedure": "Weight Reduction Recommendations"]) union (["Procedure": "BMI Follow Up Plan SNOMEDCT"]))
+
+define "Last Nutrition Counseling Procedure":
+  "Last Counseling Procedure"(["Procedure": "Counseling for Nutrition"])
+
+define "Last Physical Activity Counseling Procedure":
+  "Last Counseling Procedure"(["Procedure": "Physical Activity Recommendations"])
 
 // Is Patient on Track to reach BP Goal?
 define "BP Goal Demonstrating Patient Improvement":
@@ -443,15 +494,15 @@ define "Patient Alcohol Goals Action Path":
     false
   else "Patient is a Heavy Alcoholic Drinker"
 
-define "Patient is in Need of Dietary Counseling Action Path":
+define "Patient Nutrition Goals Action Path":
   if not "In Population" then
     false
-  else "Last Nutrition Counseling" is null
+  else true
 
-define "Patient is in Need of Physical Activity Counseling Action Path":
+define "Patient Physical Activity Goals Action Path":
   if not "In Population" then
     false
-  else "Last Physical Activity Counseling" is null
+  else true
 
 /* Exclusion Criteria */
 define "Patient Under Age 18":
@@ -482,13 +533,3 @@ define "TEST Most Recent Patient BMI":
       "Value": BMI.value.value,
       "Unit": BMI.value.unit
     }
-
-define "TEST Smoking Rationale":
-  if exists "Tobacco Cessation Goals Needing Update" then 'A'
-  else if exists "Tobacco Cessation Goals" then "Tobacco Goal Summary"
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}'
-  else if "Patient is Currently a Smoker" then '{{#patient}}You received counseling about stopping smoking, which would lower your blood pressure and reduce stroke and heart attack risk.{{/patient}}{{#careTeam}}Patient still smokes, but has been counseled. Consider reminding about quitting according to your local protocol.{{/careTeam}}'
-  else ''
-
-define "TEST Blah":
-  "Goal Summary"("Tobacco Cessation Goals")
