@@ -2,7 +2,7 @@
   "resourceType": "Goal",
   "id": "goal-NPI-SmokingCessationInProgress-3",
   "lifecycleStatus": "active",
-  "category": {
+  "category": [{
     "coding": [
       {
         "system": "https://coach-dev.ohsu.edu/",
@@ -11,7 +11,7 @@
       }
     ],
     "text": "Smoking Cessation"
-  },
+  }],
   "achievementStatus": {
     "coding": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   "startDate": "2021-02-12",
-  "statusDate": "2021-06-21",
+  "statusDate": "2021-07-01",
   "description": {
     "text": "Join a support group."
   },

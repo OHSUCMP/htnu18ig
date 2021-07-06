@@ -105,7 +105,7 @@
       ]
     },
     {
-      "title": "Does Patient Smoke Right Now?",
+      "title": "Does Patient Smoke or have a Tobacco Cessation Goal?",
       "description": "Determines if a recommendation or reminder regarding Patient smoking should be presented.",
       "condition": [
         {
@@ -113,7 +113,7 @@
           "expression": {
             "description": "Determine if Patient is in the recommendation.",
             "language": "text/cql.identifier",
-            "expression": "Patient is Currently a Smoker Action Path"
+            "expression": "Patient Smoking Goals Action Path"
           }
         }
       ],
@@ -131,7 +131,7 @@
           "expression": {
             "description": "Rationale for recommendation type.",
             "language": "text/cql.identifier",
-            "expression": "Smoking Rationale"
+            "expression": "Smoking Rationale Combined Data"
           }
         },
         {
@@ -152,7 +152,7 @@
           "expression": {
             "description": "Determine if Patient is in the recommendation.",
             "language": "text/cql.identifier",
-            "expression": "Patient BMI is Greater than 25 kg/m2 Action Path"
+            "expression": "Patient Weight Loss Goals Action Path"
           }
         }
       ],
@@ -170,7 +170,7 @@
           "expression": {
             "description": "Rationale for recommendation type.",
             "language": "text/cql.identifier",
-            "expression": "BMI Rationale"
+            "expression": "BMI Rationale Combined Data"
           }
         },
         {
@@ -191,7 +191,7 @@
           "expression": {
             "description": "Determine if Patient is in the recommendation.",
             "language": "text/cql.identifier",
-            "expression": "Patient is a Heavy Alcoholic Drinker Action Path"
+            "expression": "Patient Alcohol Goals Action Path"
           }
         }
       ],
@@ -209,7 +209,7 @@
           "expression": {
             "description": "Rationale for recommendation type.",
             "language": "text/cql.identifier",
-            "expression": "Alcohol Rationale"
+            "expression": "Alcohol Rationale Combined Data"
           }
         },
         {
@@ -222,7 +222,7 @@
       ]
     },
     {
-      "title": "Does the Patient Need Dietary Counseling?",
+      "title": "Does the Patient Need Nutrition Counseling?",
       "description": "Determines if a recommendation regarding the Patient's Nutrition should be established.",
       "condition": [
         {
@@ -230,7 +230,7 @@
           "expression": {
             "description": "Determine if Patient is in the recommendation.",
             "language": "text/cql.identifier",
-            "expression": "Patient is in Need of Dietary Counseling Action Path"
+            "expression": "Patient Nutrition Goals Action Path"
           }
         }
       ],
@@ -238,9 +238,9 @@
         {
           "path": "action.title",
           "expression": {
-            "description": "Applicable text for the Dietary Counseling Recommendation",
+            "description": "Applicable text for the Nutrition Recommendation",
             "language": "text/cql.identifier",
-            "expression": "Dietary Counseling Recommendation"
+            "expression": "Nutrition Recommendation"
           }
         },
         {
@@ -248,7 +248,7 @@
           "expression": {
             "description": "Rationale for recommendation type.",
             "language": "text/cql.identifier",
-            "expression": "Dietary Counseling Rationale"
+            "expression": "Nutrition Rationale Combined Data"
           }
         },
         {
@@ -269,7 +269,7 @@
           "expression": {
             "description": "Determine if Patient is in the recommendation.",
             "language": "text/cql.identifier",
-            "expression": "Patient is in Need of Physical Activity Counseling Action Path"
+            "expression": "Patient Physical Activity Goals Action Path"
           }
         }
       ],
@@ -277,9 +277,9 @@
         {
           "path": "action.title",
           "expression": {
-            "description": "Applicable text for the Physical Activity Counseling Recommendation",
+            "description": "Applicable text for the Physical Activity Recommendation",
             "language": "text/cql.identifier",
-            "expression": "Physical Activity Counseling Recommendation"
+            "expression": "Physical Activity Recommendation"
           }
         },
         {
@@ -287,7 +287,7 @@
           "expression": {
             "description": "Rationale for recommendation type.",
             "language": "text/cql.identifier",
-            "expression": "Physical Activity Counseling Rationale"
+            "expression": "Physical Activity Rationale Combined Data"
           }
         },
         {

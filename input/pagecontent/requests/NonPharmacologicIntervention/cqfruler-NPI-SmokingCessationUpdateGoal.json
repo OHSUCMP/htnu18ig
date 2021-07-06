@@ -214,16 +214,18 @@
               "resourceType": "Goal",
               "id": "goal-NPI-SmokingCessationUpdateGoal-3",
               "lifecycleStatus": "active",
-              "category": {
-                "coding": [
-                  {
-                    "system": "https://coach-dev.ohsu.edu/",
-                    "code": "smoking-cessation",
-                    "display": "Smoking Cessation"
-                  }
-                ],
-                "text": "Smoking Cessation"
-              },
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://coach-dev.ohsu.edu/",
+                      "code": "smoking-cessation",
+                      "display": "Smoking Cessation"
+                    }
+                  ],
+                  "text": "Smoking Cessation"
+                }
+              ],
               "achievementStatus": {
                 "coding": [
                   {
@@ -253,16 +255,18 @@
               "resourceType": "Goal",
               "id": "goal-NPI-SmokingCessationUpdateGoal-2",
               "lifecycleStatus": "active",
-              "category": {
-                "coding": [
-                  {
-                    "system": "https://coach-dev.ohsu.edu/",
-                    "code": "smoking-cessation",
-                    "display": "Smoking Cessation"
-                  }
-                ],
-                "text": "Smoking Cessation"
-              },
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://coach-dev.ohsu.edu/",
+                      "code": "smoking-cessation",
+                      "display": "Smoking Cessation"
+                    }
+                  ],
+                  "text": "Smoking Cessation"
+                }
+              ],
               "achievementStatus": {
                 "coding": [
                   {

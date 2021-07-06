@@ -132,7 +132,7 @@
         "reference": "Patient/NPI-SmokingCessationInProgress"
       },
       "startDate": "2021-02-12",
-      "statusDate": "2021-06-21"
+      "statusDate": "2021-07-01"
     },
     "request": {
       "method": "PUT",
@@ -166,7 +166,7 @@
         "reference": "Patient/NPI-SmokingCessationInProgress"
       },
       "startDate": "2021-02-12",
-      "statusDate": "2021-06-21"
+      "statusDate": "2021-07-01"
     },
     "request": {
       "method": "PUT",

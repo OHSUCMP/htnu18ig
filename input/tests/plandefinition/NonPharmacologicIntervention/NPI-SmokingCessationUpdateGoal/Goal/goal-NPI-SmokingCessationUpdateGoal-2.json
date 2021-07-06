@@ -2,7 +2,7 @@
   "resourceType": "Goal",
   "id": "goal-NPI-SmokingCessationUpdateGoal-2",
   "lifecycleStatus": "active",
-  "category": {
+  "category": [{
     "coding": [
       {
         "system": "https://coach-dev.ohsu.edu/",
@@ -11,7 +11,7 @@
       }
     ],
     "text": "Smoking Cessation"
-  },
+  }],
   "achievementStatus": {
     "coding": [
       {
