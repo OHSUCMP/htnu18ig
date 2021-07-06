@@ -58,7 +58,7 @@ define function "Update Goals String"(goals List<FHIR.Goal>, code String):
   goals Goal return '{"id": "' + Goal.id + '", "type": "update-goal", "references": {"system":"https//coach-dev.ohsu.edu", "code":"' + code + '"}, "label": "Update your goal."}'
 
 define function "Goal Summary"(goals List<FHIR.Goal>):
-  goals Goal return 'Goal: ' + Goal.description.text + ' Status: ' + (singleton from Goal.achievementStatus.coding).display
+  goals Goal return 'Goal: ' + Goal.description.text + ' Status: ' + (singleton from Goal.achievementStatus.coding).code
 
 define "Info":
   'info'
@@ -308,7 +308,7 @@ define "Patient does not have a BP Goal":
 // Look for custom tobacco goal coding
 define "Tobacco Cessation Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
-    where Goal.lifecycleStatus = 'active' and singleton from (Goal.category.coding.code) = 'smoking-cessation'
+    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'smoking-cessation'
 
 // Return Goals that haven't been updated for at least 2 weeks
 define "Tobacco Cessation Goals Needing Update":
@@ -482,3 +482,13 @@ define "TEST Most Recent Patient BMI":
       "Value": BMI.value.value,
       "Unit": BMI.value.unit
     }
+
+define "TEST Smoking Rationale":
+  if exists "Tobacco Cessation Goals Needing Update" then 'A'
+  else if exists "Tobacco Cessation Goals" then "Tobacco Goal Summary"
+  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}'
+  else if "Patient is Currently a Smoker" then '{{#patient}}You received counseling about stopping smoking, which would lower your blood pressure and reduce stroke and heart attack risk.{{/patient}}{{#careTeam}}Patient still smokes, but has been counseled. Consider reminding about quitting according to your local protocol.{{/careTeam}}'
+  else ''
+
+define "TEST Blah":
+  "Goal Summary"("Tobacco Cessation Goals")
