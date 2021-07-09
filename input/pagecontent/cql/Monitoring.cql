@@ -44,7 +44,7 @@ define "Patient Name":
 
 /* Recommendation Criteria - Monitoring Hypertension  */
 define "Meets Inclusion Criteria":
- "Patient Has Above Normal BP"
+ ("Patient Has Above Normal BP" or "Patient has a BP Goal")
     and exists "Condition Indicating Preexisting Hypertension"
 
 define "Meets Exclusion Criteria":
@@ -246,6 +246,7 @@ define "Qualifying Blood Pressure Goals":
             and Diastolic.detail is Quantity
             and Common.WithUnit(Diastolic.detail, 'mm[Hg]'))
       ) DiastolicTarget is not null
+      and ({'active', 'planned', 'proposed', 'accepted'} contains BPGoal.lifecycleStatus)
 
 define "Most Recently Established Blood Pressure Goal":
   Last (
@@ -254,11 +255,7 @@ define "Most Recently Established Blood Pressure Goal":
   )
 
 define "Patient has a BP Goal":
-  if "In Population" is not true then
-    false
-  else
-    exists "Qualifying Blood Pressure Goals"
-
+  exists "Qualifying Blood Pressure Goals"
 
 // Does patient have 'set' of BPs?
 define "Patient has Set of BP Observations":
