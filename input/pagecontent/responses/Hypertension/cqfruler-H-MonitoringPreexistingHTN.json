@@ -3,7 +3,7 @@
     {
       "summary": "Standard high blood pressure guidelines do not apply",
       "indicator": "info",
-      "detail": "{{#patient}}As you already have a high blood pressure diagnosis, please see your provider regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYPERTENSIONAHA.120.15016||at-most-one|",
+      "detail": "{{#patient}}As you already have a high blood pressure diagnosis, please see your provider regarding your recent high blood pressure reading.{{/patient}}{{#careTeam}}{{/careTeam}}||at-most-one|",
       "source": {}
     }
   ]

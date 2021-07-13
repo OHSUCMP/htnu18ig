@@ -40,8 +40,8 @@
                 "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
               },
               "performedPeriod": {
-                "start": "2019-01-06T07:00:00-04:00",
-                "end": "2019-01-06T20:00:00-04:00"
+                "start": "2021-01-06T07:00:00-04:00",
+                "end": "2021-01-06T20:00:00-04:00"
               }
             },
             "request": {
@@ -110,7 +110,7 @@
                   "reference": "Procedure/procedure-H-HTNStage2LastBPSetAmbulatory-1"
                 }
               ],
-              "effectiveDateTime": "2019-01-06T17:16:21-05:00",
+              "effectiveDateTime": "2021-01-06T17:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -189,7 +189,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
               },
-              "effectiveDateTime": "2019-02-06T08:16:21-05:00",
+              "effectiveDateTime": "2021-02-06T08:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -273,7 +273,7 @@
                   "reference": "Procedure/procedure-H-HTNStage2LastBPSetAmbulatory-1"
                 }
               ],
-              "effectiveDateTime": "2019-01-06T15:16:21-05:00",
+              "effectiveDateTime": "2021-01-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -352,7 +352,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetAmbulatory"
               },
-              "effectiveDateTime": "2019-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2021-02-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {

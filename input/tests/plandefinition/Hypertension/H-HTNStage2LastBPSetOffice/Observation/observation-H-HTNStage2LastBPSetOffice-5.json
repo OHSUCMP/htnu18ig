@@ -31,7 +31,7 @@
   "subject": {
     "reference": "Patient/H-HTNStage2LastBPSetOffice"
   },
-  "effectiveDateTime": "2019-09-26T15:16:21-05:00",
+  "effectiveDateTime": "2021-03-06T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -45,7 +45,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 82.52660352979804,
+        "value": 72.52660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -63,7 +63,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 120.65064054117963,
+        "value": 102.65064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
