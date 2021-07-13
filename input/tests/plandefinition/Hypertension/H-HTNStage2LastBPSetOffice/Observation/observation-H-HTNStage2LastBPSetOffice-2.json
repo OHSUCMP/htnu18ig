@@ -34,7 +34,7 @@
   "encounter": {
     "reference": "Encounter/encounter-H-HTNStage2LastBPSetOffice-2"
   },
-  "effectiveDateTime": "2019-03-26T15:16:21-05:00",
+  "effectiveDateTime": "2021-02-26T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -66,7 +66,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 181.4534388828563,
+        "value": 161.4534388828563,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

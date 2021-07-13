@@ -3,7 +3,7 @@
     {
       "summary": "Use ambulatory or home blood pressure monitoring to confirm diagnosis",
       "indicator": "info",
-      "detail": "{{#patient}}You had a high blood pressure reading recently and have a blood pressure is high, but have no hypertension diagnosis.  Taking more blood pressures will help your care team decide if the high blood pressures need treatment.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}||[ { \"label\": \"Enter Blood Pressure\", \"actions\": [ \"ServiceRequest for High Blood Pressure Monitoring\", \"{{#patient}}\u003ca href\u003d\u0027/bp-readings\u0027\u003eClick here to go to the Home Blood Pressure entry page\u003c/a\u003e{{/patient}}\" ] } ]|at-most-one|",
+      "detail": "{{#patient}}You had a high blood pressure reading recently and have a blood pressure is high, but have no hypertension diagnosis.  Taking more blood pressures will help your care team decide if the high blood pressures need treatment.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}|[ { \"id\": \"enter-bp-suggestion\", \"label\": \"Enter Blood Pressure\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Click here to go to the Home Blood Pressure entry page\", \"url\":\"/bp-readings\"}] } ]|at-most-one|",
       "source": {}
     }
   ]
