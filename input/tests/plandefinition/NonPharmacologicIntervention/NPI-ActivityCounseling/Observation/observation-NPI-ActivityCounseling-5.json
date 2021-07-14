@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-ActivityCounseling-5",
+  "status": "final",
+  "note": [
+    {
+      "text": "Patient drinks moderately."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.69",
+        "code": "11287-0",
+        "display": "Alcoholic drinks per drinking day - Reported"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/NPI-ActivityCounseling"
+  },
+  "effectiveDateTime": "2021-05-27T10:00:00-07:00",
+  "issued": "2021-05-27T00:00:00-07:00",
+  "valueQuantity": {
+    "value": 2,
+    "unit": "Drinks/Day"
+  }
+}

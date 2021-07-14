@@ -4,6 +4,122 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-NPI-ActivityCounseling-2",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/NPI-ActivityCounseling"
+      },
+      "period": {
+        "start": "2021-02-26T00:00:00-04:00",
+        "end": "2021-02-26T23:59:59-04:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-NPI-ActivityCounseling-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-NPI-ActivityCounseling-3",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/NPI-ActivityCounseling"
+      },
+      "period": {
+        "start": "2021-03-26T00:00:00-04:00",
+        "end": "2021-03-26T23:59:59-04:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-NPI-ActivityCounseling-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-NPI-ActivityCounseling-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/NPI-ActivityCounseling"
+      },
+      "period": {
+        "start": "2021-04-26T00:00:00-04:00",
+        "end": "2021-04-26T23:59:59-04:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-NPI-ActivityCounseling-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Encounter",
+      "id": "encounter-NPI-ActivityCounseling-1",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+      },
+      "type": [ {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/NPI-ActivityCounseling"
+      },
+      "period": {
+        "start": "2021-01-26T00:00:00-04:00",
+        "end": "2021-01-26T23:59:59-04:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-NPI-ActivityCounseling-1"
+    }
+  }, {
+    "resource": {
       "resourceType": "Condition",
       "id": "condition-NPI-ActivityCounseling-1",
       "clinicalStatus": {
@@ -61,6 +177,72 @@
       "resourceType": "Observation",
       "id": "observation-NPI-ActivityCounseling-1",
       "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityCounseling"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-NPI-ActivityCounseling-1"
+      },
+      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Office Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 89.9349105113392,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 134.53332100989888,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityCounseling-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityCounseling-5",
+      "status": "final",
       "code": {
         "coding": [ {
           "system": "http://loinc.org",
@@ -72,8 +254,8 @@
       "subject": {
         "reference": "Patient/NPI-ActivityCounseling"
       },
-      "effectiveDateTime": "2019-05-27T10:00:00-07:00",
-      "issued": "2019-05-27T00:00:00-07:00",
+      "effectiveDateTime": "2021-05-27T10:00:00-07:00",
+      "issued": "2021-05-27T00:00:00-07:00",
       "valueQuantity": {
         "value": 2,
         "unit": "Drinks/Day"
@@ -84,7 +266,205 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityCounseling-1"
+      "url": "Observation/observation-NPI-ActivityCounseling-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityCounseling-4",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityCounseling"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-NPI-ActivityCounseling-4"
+      },
+      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Office Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 82.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 131.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityCounseling-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityCounseling-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityCounseling"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-NPI-ActivityCounseling-3"
+      },
+      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Office Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.45508952819434,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 137.67001870978417,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityCounseling-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityCounseling-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityCounseling"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-NPI-ActivityCounseling-2"
+      },
+      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Office Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 83.995226014274,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 131.4534388828563,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityCounseling-2"
     }
   }, {
     "resource": {
@@ -105,7 +485,7 @@
       "subject": {
         "reference": "Patient/NPI-ActivityCounseling"
       },
-      "startDate": "2020-02-12",
+      "startDate": "2021-02-12",
       "target": [ {
         "measure": {
           "coding": [ {

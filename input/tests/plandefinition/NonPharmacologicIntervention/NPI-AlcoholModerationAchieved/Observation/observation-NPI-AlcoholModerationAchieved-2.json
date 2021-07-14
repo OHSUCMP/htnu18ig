@@ -4,39 +4,26 @@
   "status": "final",
   "note": [
     {
-      "text": "Patient has a BMI > 25. Refer to counseling for weight loss. Patient is only a moderate drinker so not being referred at this time."
-    }
-  ],
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        }
-      ]
+      "text": "Patient is male and drinking has decreased since counseling."
     }
   ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "39156-5",
-        "display": "Body Mass Index"
+        "version": "2.69",
+        "code": "11287-0",
+        "display": "Alcoholic drinks per drinking day - Reported"
       }
-    ],
-    "text": "Body Mass Index"
+    ]
   },
   "subject": {
     "reference": "Patient/NPI-AlcoholModerationAchieved"
   },
-  "effectiveDateTime": "2019-05-27T03:14:57-05:00",
-  "issued": "2019-05-27T03:14:57.429-05:00",
+  "effectiveDateTime": "2021-05-15T10:00:00-07:00",
+  "issued": "2021-05-15T00:00:00-07:00",
   "valueQuantity": {
-    "value": 27.690689692990766,
-    "unit": "kg/m2",
-    "system": "http://unitsofmeasure.org",
-    "code": "kg/m2"
+    "value": 2,
+    "unit": "Drinks/Day"
   }
 }

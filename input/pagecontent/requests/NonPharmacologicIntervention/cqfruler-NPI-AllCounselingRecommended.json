@@ -87,6 +87,322 @@
           {
             "resource": {
               "resourceType": "Observation",
+              "id": "observation-NPI-AllCounselingRecommended-4",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AllCounselingRecommended"
+              },
+              "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 83.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 132.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AllCounselingRecommended-8",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AllCounselingRecommended"
+              },
+              "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 89.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 135.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AllCounselingRecommended-9",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AllCounselingRecommended"
+              },
+              "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 91.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 139.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AllCounselingRecommended-5",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AllCounselingRecommended"
+              },
+              "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 97.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 141.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
               "id": "observation-NPI-AllCounselingRecommended-2",
               "status": "final",
               "note": [
@@ -228,6 +544,164 @@
           },
           {
             "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AllCounselingRecommended-6",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AllCounselingRecommended"
+              },
+              "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 91.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 137.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AllCounselingRecommended-7",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AllCounselingRecommended"
+              },
+              "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 90.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 133.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
               "resourceType": "Goal",
               "id": "goal-NPI-AllCounselingRecommended-1",
               "lifecycleStatus": "planned",
@@ -241,7 +715,7 @@
                   }
                 ]
               },
-              "startDate": "2020-02-12",
+              "startDate": "2021-02-12",
               "description": {
                 "text": "Goal of 135/85"
               },

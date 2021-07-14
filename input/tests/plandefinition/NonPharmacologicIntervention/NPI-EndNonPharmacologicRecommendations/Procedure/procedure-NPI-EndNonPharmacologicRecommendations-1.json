@@ -20,10 +20,5 @@
   "subject": {
     "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
   },
-  "performedDateTime": "2019-01-05T11:00:00-06:00",
-  "reasonReference": [
-    {
-      "reference": "Observation/observation-NPI-EndNonPharmacologicRecommendations-1"
-    }
-  ]
+  "performedDateTime": "2021-01-05T11:00:00-06:00"
 }

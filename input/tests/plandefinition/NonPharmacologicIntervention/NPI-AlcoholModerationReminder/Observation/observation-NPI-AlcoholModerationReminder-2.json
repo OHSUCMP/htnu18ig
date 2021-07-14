@@ -4,7 +4,7 @@
   "status": "final",
   "note": [
     {
-      "text": "Patient has a BMI > 25. Refer to counseling for weight loss. Patient is only a moderate drinker so not being referred at this time."
+      "text": "Home Blood Pressure Reading (no encounter)"
     }
   ],
   "category": [
@@ -22,21 +22,52 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "39156-5",
-        "display": "Body Mass Index"
+        "code": "55284-4",
+        "display": "Blood Pressure"
       }
     ],
-    "text": "Body Mass Index"
+    "text": "Blood Pressure"
   },
   "subject": {
     "reference": "Patient/NPI-AlcoholModerationReminder"
   },
-  "effectiveDateTime": "2019-05-27T03:14:57-05:00",
-  "issued": "2019-05-27T03:14:57.429-05:00",
-  "valueQuantity": {
-    "value": 27.690689692990766,
-    "unit": "kg/m2",
-    "system": "http://unitsofmeasure.org",
-    "code": "kg/m2"
-  }
+  "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          }
+        ],
+        "text": "Diastolic Blood Pressure"
+      },
+      "valueQuantity": {
+        "value": 98.52660352979804,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          }
+        ],
+        "text": "Systolic Blood Pressure"
+      },
+      "valueQuantity": {
+        "value": 150.65064054117963,
+        "unit": "mm[Hg]",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  ]
 }
