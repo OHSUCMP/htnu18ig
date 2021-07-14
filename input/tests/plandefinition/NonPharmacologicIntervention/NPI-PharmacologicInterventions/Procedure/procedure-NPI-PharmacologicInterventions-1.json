@@ -20,10 +20,5 @@
   "subject": {
     "reference": "Patient/NPI-PharmacologicInterventions"
   },
-  "performedDateTime": "2019-01-05T11:00:00-06:00",
-  "reasonReference": [
-    {
-      "reference": "Observation/observation-NPI-PharmacologicInterventions-1"
-    }
-  ]
+  "performedDateTime": "2021-01-05T11:00:00-06:00"
 }

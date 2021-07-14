@@ -4,7 +4,7 @@
   "status": "final",
   "note": [
     {
-      "text": "Patient was smoking 1 pack/day as of 1/5/2019. Referred to counseling (related procedure)"
+      "text": "Patient was smoking 1 pack/day as of 1/5/2021. Referred to counseling (related procedure)"
     }
   ],
   "code": {
@@ -21,9 +21,9 @@
   },
   "effectivePeriod": {
     "start": "2001-09-12",
-    "end": "2019-01-05"
+    "end": "2021-01-05"
   },
-  "issued": "2019-01-05T00:00:00-07:00",
+  "issued": "2021-01-05T00:00:00-07:00",
   "valueCodeableConcept": {
     "coding": [
       {

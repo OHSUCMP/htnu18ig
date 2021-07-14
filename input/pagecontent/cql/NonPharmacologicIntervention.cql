@@ -46,10 +46,6 @@ code "sustaining": 'sustaining' from "Goal achievement status" display 'sustaini
 
 context Patient
 
-/* Return a reference to the most recent observation related to the list of counseling procedures given */
-define function "Last Relevant Counseling"(procedures List<FHIR.Procedure>):
-  (Last(procedures P sort by start of Common."Normalize Interval"(performed))).reasonReference
-
 define function "Last Counseling Procedure"(procedures List<FHIR.Procedure>):
     (Last(procedures P sort by start of Common."Normalize Interval"(performed)))
 
