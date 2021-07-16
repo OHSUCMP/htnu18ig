@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-AlcoholModerationGoalExists",
+  "active": true,
+  "name": [
+    {
+      "text": "Alcohol Moderation Goal Exists",
+      "family": "Exists",
+      "given": [
+        "AlcoholModerationGoal"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1997-05-10"
+}

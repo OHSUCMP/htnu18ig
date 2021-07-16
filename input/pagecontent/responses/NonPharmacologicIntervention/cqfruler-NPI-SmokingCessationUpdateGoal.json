@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "summary": "Update your Smoking Cessation Goals",
+      "indicator": "info",
+      "detail": "{{#patient}}You have set some tobacco cessation goals. Tell us how you\u0027re doing.{{/patient}}|[{\"id\": \"goal-NPI-SmokingCessationUpdateGoal-3\", \"type\": \"update-goal\", \"references\": {\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"smoking-cessation\"}, \"label\": \"Update your goal.\"},{\"id\": \"goal-NPI-SmokingCessationUpdateGoal-2\", \"type\": \"update-goal\", \"references\": {\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"smoking-cessation\"}, \"label\": \"Update your goal.\"}]|at-most-one|",
+      "source": {}
+    },
+    {
+      "summary": "Discuss dietary changes (with salt/sodium reduction)",
+      "indicator": "info",
+      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|[ { \"id\": \"nutrition-counseling\", \"label\": \"Nutrition Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"11816003\"}, \"actions\": [ {\"label\":\"Learn more about nutrition and diet changes.\", \"url\":\"/nutrition\"}]}, { \"id\": \"nutrition-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"nutrition\"}, \"label\": \"Set a Nutrition/Diet Change Goal\", \"actions\": [] } ]|at-most-one|",
+      "source": {}
+    },
+    {
+      "summary": "Discuss physical activity",
+      "indicator": "info",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|[ { \"id\": \"physical-activity-counseling\", \"label\": \"Physical Activity Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"304507003\"}, \"actions\": [ {\"label\":\"Learn more about physical activity.\", \"url\":\"/physicalActivity\"}]}, { \"id\": \"physical-activity-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"physical-activity\"}, \"label\": \"Set a Physical Activity Goal\", \"actions\": [] } ]|at-most-one|",
+      "source": {}
+    },
+    {
+      "summary": "Patient on track of goal: End of non-pharmacologic interventions.",
+      "indicator": "info",
+      "detail": "Patient on track of goal: No Further Action Required.",
+      "source": {}
+    }
+  ]
+}

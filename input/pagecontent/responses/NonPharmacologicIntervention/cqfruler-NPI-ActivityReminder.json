@@ -3,13 +3,19 @@
     {
       "summary": "Remind about weight loss.",
       "indicator": "info",
-      "detail": "{{#patient}}Your weight is not yet decreasing. When it\u0027s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseled, but may need a reminder.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"id\": \"weight-loss-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"weight-loss\"}, \"label\": \"Set a Weight Loss Goal\", \"actions\": [] } ]|at-most-one|[{\"label\":\"University of Michigan: Hypertension\", \"url\":\"https://uhs.umich.edu/hypertension\"}, {\"label\":\"AHA: Changes You Can Make to Manage High Blood Pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure\"}]",
+      "detail": "{{#patient}}Your weight is not yet decreasing. When it\u0027s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseled, but may need a reminder.{{/careTeam}}|[ { \"id\": \"weight-loss-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"weight-loss\"}, \"label\": \"Set a Weight Loss Goal\", \"actions\": [] } ]|at-most-one|[{\"label\":\"University of Michigan: Hypertension\", \"url\":\"https://uhs.umich.edu/hypertension\"}, {\"label\":\"AHA: Changes You Can Make to Manage High Blood Pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure\"}]",
       "source": {}
     },
     {
       "summary": "Discuss dietary changes (with salt/sodium reduction)",
       "indicator": "info",
-      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
+      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|[ { \"id\": \"nutrition-counseling\", \"label\": \"Nutrition Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"11816003\"}, \"actions\": [ {\"label\":\"Learn more about nutrition and diet changes.\", \"url\":\"/nutrition\"}]}, { \"id\": \"nutrition-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"nutrition\"}, \"label\": \"Set a Nutrition/Diet Change Goal\", \"actions\": [] } ]|at-most-one|",
+      "source": {}
+    },
+    {
+      "summary": "Reminder about physical activity",
+      "indicator": "info",
+      "detail": "Rationale placeholder for physical activity|[{ \"id\": \"physical-activity-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"physical-activity\"}, \"label\": \"Set a Physical Activity Goal\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {

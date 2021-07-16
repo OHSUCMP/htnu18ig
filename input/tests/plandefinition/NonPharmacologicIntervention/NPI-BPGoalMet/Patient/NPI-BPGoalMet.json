@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-BPGoalMet",
+  "active": true,
+  "name": [
+    {
+      "text": "BP Goal Met",
+      "family": "Met",
+      "given": [
+        "BPGoal"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1971-12-01"
+}

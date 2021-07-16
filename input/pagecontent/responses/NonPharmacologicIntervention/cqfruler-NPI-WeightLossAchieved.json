@@ -1,9 +1,15 @@
 {
   "cards": [
     {
+      "summary": "Reminder about dietary changes",
+      "indicator": "info",
+      "detail": "Nutrition Reminder Rationale Placeholder|[{ \"id\": \"nutrition-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"nutrition\"}, \"label\": \"Set a Nutrition/Diet Change Goal\", \"actions\": [] } ]|at-most-one|",
+      "source": {}
+    },
+    {
       "summary": "Discuss physical activity",
       "indicator": "info",
-      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|[ { \"id\": \"physical-activity-counseling\", \"label\": \"Physical Activity Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"304507003\"}, \"actions\": [ {\"label\":\"Learn more about physical activity.\", \"url\":\"/physicalActivity\"}]}, { \"id\": \"physical-activity-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"physical-activity\"}, \"label\": \"Set a Physical Activity Goal\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {
