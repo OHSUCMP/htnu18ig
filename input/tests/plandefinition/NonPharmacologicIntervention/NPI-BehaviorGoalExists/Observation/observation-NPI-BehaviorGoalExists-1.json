@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-BehaviorGoalExists-1",
+  "status": "final",
+  "note": [
+    {
+      "text": "Indicates patient has been a heavy smoker since 1999. This is the most recent observation concerning smoking."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72166-2",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/NPI-BehaviorGoalExists"
+  },
+  "effectivePeriod": {
+    "start": "1999-09-17",
+    "end": "2020-03-02"
+  },
+  "issued": "2020-03-02T00:00:00-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "428071000124103",
+        "display": "Heavy tobacco smoker (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "Packs/Day"
+      }
+    }
+  ]
+}

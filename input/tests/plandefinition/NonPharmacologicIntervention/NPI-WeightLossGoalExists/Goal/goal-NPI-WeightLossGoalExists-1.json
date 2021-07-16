@@ -1,0 +1,33 @@
+{
+  "resourceType": "Goal",
+  "id": "goal-NPI-WeightLossGoalExists-1",
+  "lifecycleStatus": "active",
+  "category": [{
+    "coding": [
+      {
+        "system": "https://coach-dev.ohsu.edu/",
+        "code": "weight-loss",
+        "display": "Weight Loss"
+      }
+    ],
+    "text": "Weight Loss"
+  }],
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "version": "4.0.1",
+        "code": "in-progress",
+        "display": "In Progress"
+      }
+    ]
+  },
+  "startDate": "2021-02-12",
+  "statusDate": "2021-07-15",
+  "description": {
+    "text": "Lose 25 pounds"
+  },
+  "subject": {
+    "reference": "Patient/NPI-WeightLossGoalExists"
+  }
+}

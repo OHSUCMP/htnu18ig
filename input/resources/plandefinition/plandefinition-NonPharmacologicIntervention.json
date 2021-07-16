@@ -144,7 +144,7 @@
       ]
     },
     {
-      "title": "Is Patient's BMI Greater Than 25?",
+      "title": "Is Patient's BMI Greater Than 25 or do they have a weight loss goal?",
       "description": "Determines if a recommendation or reminder regarding the Patient's BMI being over 25 should be presented.",
       "condition": [
         {

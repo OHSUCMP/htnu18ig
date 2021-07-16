@@ -1,21 +1,21 @@
 {
   "cards": [
     {
-      "summary": "Discuss alcohol moderation",
+      "summary": "Discuss alcohol moderation.",
       "indicator": "info",
-      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis.  Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59|[ { \"label\": \"Request Alcohol Moderation Assistance\", \"type\": \"counseling\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"24165007\"}, \"actions\": [ {\"label\":\"Click here to request Alcohol Moderation Counseling\", \"url\":\"/alcoholModeration\"} ] } ]|at-most-one|",
+      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis. Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}|[ { \"id\": \"alcohol-counseling\", \"label\": \"Alcohol Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"24165007\"}, \"actions\": [ {\"label\":\"Learn more about alcohol moderation.\", \"url\":\"/alcoholModeration\"}]}, { \"id\": \"alcohol-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"alcohol-moderation\"}, \"label\": \"Set an Alcohol Moderation Goal\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {
       "summary": "Discuss dietary changes (with salt/sodium reduction)",
       "indicator": "info",
-      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
+      "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|[ { \"id\": \"nutrition-counseling\", \"label\": \"Nutrition Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"11816003\"}, \"actions\": [ {\"label\":\"Learn more about nutrition and diet changes.\", \"url\":\"/nutrition\"}]}, { \"id\": \"nutrition-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"nutrition\"}, \"label\": \"Set a Nutrition/Diet Change Goal\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {
       "summary": "Discuss physical activity",
       "indicator": "info",
-      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|https://www.ahajournals.org/doi/10.1161/HYP.0000000000000065#page\u003d59||at-most-one|",
+      "detail": "{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}|[ { \"id\": \"physical-activity-counseling\", \"label\": \"Physical Activity Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"304507003\"}, \"actions\": [ {\"label\":\"Learn more about physical activity.\", \"url\":\"/physicalActivity\"}]}, { \"id\": \"physical-activity-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"physical-activity\"}, \"label\": \"Set a Physical Activity Goal\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {

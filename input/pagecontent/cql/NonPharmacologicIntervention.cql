@@ -483,12 +483,12 @@ define "Patient Smoking Goals Action Path":
 define "Patient Weight Loss Goals Action Path":
   if not "In Population" then
     false
-  else "Patient BMI is Greater than 25 kg/m2"
+  else ("Patient BMI is Greater than 25 kg/m2" or exists "Weight Loss Goals")
 
 define "Patient Alcohol Goals Action Path":
   if not "In Population" then
     false
-  else "Patient is a Heavy Alcoholic Drinker"
+  else ("Patient is a Heavy Alcoholic Drinker" or exists "Alcohol Goals")
 
 define "Patient Nutrition Goals Action Path":
   if not "In Population" then
