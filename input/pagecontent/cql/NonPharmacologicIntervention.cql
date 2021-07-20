@@ -54,7 +54,7 @@ define function "Update Goals String"(goals List<FHIR.Goal>, code String):
   goals Goal return '{"id": "' + Goal.id + '", "type": "update-goal", "references": {"system":"https//coach-dev.ohsu.edu", "code":"' + code + '"}, "label": "Update your goal."}'
 
 define function "Goal Summary"(goals List<FHIR.Goal>):
-  goals Goal return 'Goal: ' + Goal.description.text + ' Status: ' + (singleton from Goal.achievementStatus.coding).code
+  goals Goal return 'Goal: ' + Goal.description.text + ' Status: ' + First(Goal.achievementStatus.coding).code
 
 define "Info":
   'info'
