@@ -9,14 +9,9 @@ codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-A
 codesystem "LOINC": 'http://loinc.org'
 codesystem "Goal achievement status": 'http://terminology.hl7.org/CodeSystem/goal-achievement'
 
+valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
+
 /* Inclusion */
-// HYPERTENSION DIAGNOSIS
-valueset "Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012'
-valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
-// BLOOD PRESSURE
-valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
-valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
-valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
 // COUNSELING
 valueset "Tobacco Use Cessation Counseling": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.509'
 valueset "Weight Reduction Recommendations": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.420'
@@ -31,10 +26,6 @@ valueset "Tobacco User": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883
 valueset "BMI Ratio": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1.1490'
 // ALCOHOL
 valueset "Average Number of Drinks per Drinking Day": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.106.11.1030'
-
-/* Exclusion */
-valueset "Pregnancy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378'
-valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
 
 
 code "PACKS A DAY": '8663-7' from "LOINC" display 'Cigarettes smoked current (pack per day) - Reported'
@@ -54,7 +45,7 @@ define function "Update Goals String"(goals List<FHIR.Goal>, code String):
   goals Goal return '{"id": "' + Goal.id + '", "type": "update-goal", "references": {"system":"https//coach-dev.ohsu.edu", "code":"' + code + '"}, "label": "Update your goal."}'
 
 define function "Goal Summary"(goals List<FHIR.Goal>):
-  goals Goal return 'Goal: ' + Goal.description.text + ' Status: ' + (singleton from Goal.achievementStatus.coding).code
+  goals Goal return 'Goal: ' + Goal.description.text + ' Status: ' + First(Goal.achievementStatus.coding).code
 
 define "Info":
   'info'
@@ -75,17 +66,29 @@ define "Patient Name":
 
 /* Recommendation Criteria - Non-Pharmacologic Interventions  */
 define "Meets Inclusion Criteria":
-  exists "Condition Indicating Preexisting Hypertension"
+  exists Common."Condition Indicating Preexisting Hypertension"
 
 define "Meets Exclusion Criteria":
-  "Patient Under Age 18"
-    or "Patient Over Age 80"
-    or exists "Condition Indicating End Stage Renal Disease"
-    or exists "Condition Indicating Pregnancy"
+  Common."Patient Under Age 18"
+    or Common."Patient Over Age 80"
+    or exists Common."Condition Indicating End Stage Renal Disease"
+    or exists Common."Condition Indicating Pregnancy"
 
 define "In Population":
   "Meets Inclusion Criteria"
   and not "Meets Exclusion Criteria"
+
+/***** Decision Diamonds *****/
+define "Patient Has Behavioral Goals":
+  exists "Tobacco Cessation Goals" or
+  exists "Weight Loss Goals" or
+  exists "Alcohol Goals" or
+  exists "Physical Activity Goals" or
+  exists "Nutrition Goals"
+
+// TODO: AEY
+define "BP Goal Met":
+  Common."Patient has a BP Goal" and Common."Has BP Set" and not Common."BP Average is Above Goal"
 
 /***** COMMON CARD OUTPUT *****/
 define "Indicator Status":
@@ -290,10 +293,10 @@ define "Exclusion Reason":
     (
       'Patient was excluded from non-pharmacologic interventions for hypertension due to '
       + (
-          if "Patient Under Age 18" then 'being under the age of 18.'
-          else if "Patient Over Age 80" then 'being over the age of 80.'
-          else if exists "Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
-          else if exists "Condition Indicating Pregnancy" then 'being pregnant.'
+          if Common."Patient Under Age 18" then 'being under the age of 18.'
+          else if Common."Patient Over Age 80" then 'being over the age of 80.'
+          else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
+          else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
           else ''
         )
     )
@@ -301,42 +304,6 @@ define "Exclusion Reason":
 
 
 /* Non-Pharmacologic Interventions Workflow */
-// Diagnosis of HTN in Problem List.
-define "Condition Indicating Preexisting Hypertension":
-  (
-    (Common.QualifiedCondition(["Condition": "Hypertension"]))
-    union (Common.QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
-  ) PreexistingCondition
-
-
-// Does Patient have a BP Goal?
-define "Qualifying Blood Pressure Goals":
-  (Common.QualifiedGoal(["Goal"])) BPGoal
-    where (
-      singleton from (BPGoal.target Systolic
-        where Systolic.measure in "Systolic blood pressure"
-          and Systolic.detail is Quantity
-          and Common.WithUnit(Systolic.detail, 'mm[Hg]'))
-    ) SystolicTarget is not null
-      and (
-        singleton from (BPGoal.target Diastolic
-          where Diastolic.measure in "Diastolic Blood Pressure"
-            and Diastolic.detail is Quantity
-            and Common.WithUnit(Diastolic.detail, 'mm[Hg]'))
-      ) DiastolicTarget is not null
-
-define "Most Recently Established Blood Pressure Goal":
-  Last (
-    "Qualifying Blood Pressure Goals" BPGoal
-      sort by (start as date)
-  )
-
-define "Patient does not have a BP Goal":
-  if "In Population" is not true then
-    false
-  else
-    not exists "Qualifying Blood Pressure Goals"
-
 // Look for custom tobacco goal coding
 define "Tobacco Cessation Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
@@ -367,7 +334,7 @@ define "Most Recent Observation of Patient Smoking Status":
   )
 
 define "Patient is Currently a Smoker":
-  if "In Population" is not true then
+  if not "In Population" then
     false
   else
     "Observations Indicating Patient is a Smoker" contains "Most Recent Observation of Patient Smoking Status"
@@ -425,7 +392,7 @@ define "Heavy Daily Drinker":
   else 4.0
 
 define "Patient is a Heavy Alcoholic Drinker":
-  if "In Population" is not true then
+  if not "In Population" then
     false
   else
     "Most Recent Patient Drinking Observation".value.value >= "Heavy Daily Drinker"
@@ -462,14 +429,14 @@ define "Last Physical Activity Counseling Procedure":
 
 // Is Patient on Track to reach BP Goal?
 define "BP Goal Demonstrating Patient Improvement":
-  "Most Recently Established Blood Pressure Goal" BPGoal
+  Common."Most Recently Established Blood Pressure Goal" BPGoal
     where FHIRHelpers.ToConcept(BPGoal.achievementStatus) ~ "in-progress"
       or FHIRHelpers.ToConcept(BPGoal.achievementStatus) ~ "improving"
       or FHIRHelpers.ToConcept(BPGoal.achievementStatus) ~ "achieved"
       or FHIRHelpers.ToConcept(BPGoal.achievementStatus) ~ "sustaining"
 
 define "Patient at BP Goal":
-  if "In Population" is not true then
+  if not "In Population" then
     false
   else
     "BP Goal Demonstrating Patient Improvement" is not null
@@ -500,20 +467,6 @@ define "Patient Physical Activity Goals Action Path":
     false
   else true
 
-/* Exclusion Criteria */
-define "Patient Under Age 18":
-  AgeInYearsAt(Today()) < 18
-
-define "Patient Over Age 80":
-  AgeInYearsAt(Today()) > 80
-
-define "Condition Indicating End Stage Renal Disease":
-  (Common.QualifiedCondition(["Condition": "End Stage Renal Disease"])) ESRD
-
-define "Condition Indicating Pregnancy":
-  (Common.QualifiedCondition(["Condition": "Pregnancy"])) Pregnancy
-    where end of Common."Prevalence Period"(Pregnancy) > Today()
-
 /* TEST */
 define "TEST Patient Age":
   AgeInYears()
@@ -529,3 +482,9 @@ define "TEST Most Recent Patient BMI":
       "Value": BMI.value.value,
       "Unit": BMI.value.unit
     }
+
+define "Patient does not have a BP Goal":
+  if not "In Population" then
+    false
+  else
+    not exists Common."Qualifying Blood Pressure Goals"

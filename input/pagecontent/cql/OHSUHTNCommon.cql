@@ -7,10 +7,21 @@ include FHIRHelpers version '4.0.1' called FHIRHelpers
 codesystem "LOINC": 'http://loinc.org'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
+codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
 valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
+valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
+valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
 
+/* Possible exclusions from workflows */
+valueset "Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012'
+valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
+valueset "Pregnancy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378'
+valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
+valueset "Hospice care ambulatory": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.15'
+
+code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
 // Condition Clinical Status Codes - Consider value sets for these
 code "active": 'active' from "ConditionClinicalStatusCodes"
@@ -237,3 +248,160 @@ define function "Normalize Abatement"(condition Condition):
 
 define function "Prevalence Period"(condition Condition):
   Interval[start of "Normalize Onset"(condition.onset), end of "Normalize Abatement"(condition))
+
+/***** Common Data *****/
+
+/* Potential Exclusion Criteria */
+define "Patient Under Age 18":
+  AgeInYearsAt(Today()) < 18
+
+define "Patient Over Age 80":
+  AgeInYearsAt(Today()) > 80
+
+define "Condition Indicating End Stage Renal Disease":
+  (QualifiedCondition(["Condition": "End Stage Renal Disease"])) ESRD
+    where end of "Prevalence Period"(ESRD) >= Today()
+
+define "Condition Indicating Pregnancy":
+  (QualifiedCondition(["Condition": "Pregnancy"])) Pregnancy
+    where end of "Prevalence Period"(Pregnancy) >= Today()
+
+define "Blood Pressure Observations":
+  (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
+      sort by Coalesce(start of "Normalize Interval"(effective), issued)
+
+define "Most Recent BP":
+  Last("Blood Pressure Observations" O sort by Coalesce(start of "Normalize Interval"(effective), issued))
+
+define "Blood Pressure Observations for Last 2 Years":
+  ((
+    "Blood Pressure Observations" BP
+      with "Most Recent BP" MostRecentBP
+        such that "Normalize Interval"(BP.effective) starts 24 months or less before end of "Normalize Interval"(MostRecentBP.effective)
+  )
+  union { "Most Recent BP" }) O
+    sort by Coalesce(start of "Normalize Interval"(effective), issued)
+
+// NOTE: Office-based visit Encounter valueset?
+define "Patient Ambulatory Encounters":
+  ["Encounter"] PE
+    where (
+      PE.status ~ 'arrived'
+      or PE.status ~ 'in-progress'
+      or PE.status ~ 'finished'
+    )
+      and PE.class ~ "ambulatory"
+
+define "Ambulatory Blood Pressure Monitoring Procedures":
+  (QualifiedProcedure(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
+    let ABPMProcedureInterval: "Normalize Interval"(ABPMProcedure.performed)
+      where exists (
+        "Blood Pressure Observations for Last 2 Years" BPObservation
+          where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
+      )
+      and hours between start of ABPMProcedureInterval and end of ABPMProcedureInterval >= 12
+
+define "Office Blood Pressure Observations":
+  "Blood Pressure Observations for Last 2 Years" BPObservation
+    with "Patient Ambulatory Encounters" BPEncounter
+      such that BPEncounter.class ~ "ambulatory"
+        and "Normalize Interval"(BPObservation.effective) during BPEncounter.period
+
+define "Home Blood Pressure Observations":
+  "Blood Pressure Observations for Last 2 Years" BPObservation
+    without "Patient Ambulatory Encounters" BPEncounter
+      such that BPEncounter.class ~ "ambulatory"
+        and "Normalize Interval"(BPObservation.effective) during BPEncounter.period
+
+define "Ambulatory Blood Pressure Monitoring Observations":
+  (Last("Ambulatory Blood Pressure Monitoring Procedures" P sort by end of "Normalize Interval"(performed))) ABPMProcedure
+    return (
+      "Blood Pressure Observations for Last 2 Years" BPObservation
+      where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
+    )
+
+define "Has BP Set":
+  if exists "Ambulatory Blood Pressure Monitoring Procedures" then true
+  else if Count("Office Blood Pressure Observations") >= 4 then true
+  else if Count("Home Blood Pressure Observations") >= 6 then true
+  else false
+
+define "Most Recent BP Set":
+  if exists "Ambulatory Blood Pressure Monitoring Procedures" then
+    "Ambulatory Blood Pressure Monitoring Observations"
+  else if Count("Office Blood Pressure Observations") >= 4 then
+    Take(
+      ("Office Blood Pressure Observations" O
+        sort by Coalesce(issued, end of "Normalize Interval"(effective)) desc
+      ), 4)
+  else if Count("Home Blood Pressure Observations") >= 6 then
+    Take(
+      ("Home Blood Pressure Observations" O
+        sort by Coalesce(issued, end of "Normalize Interval"(effective)) desc
+      ), 6)
+  else null
+
+define "Patient Has Above Normal BP":
+  "Elevated or Above BP"({ "Most Recent BP" }) is not null
+
+define "Average All BP Last 2 Years":
+  "Avg BP"("Blood Pressure Observations for Last 2 Years")
+
+define "Average Most Recent BP Set":
+  "Avg BP"("Most Recent BP Set")
+
+define "Condition Indicating Preexisting Hypertension":
+  (
+    (QualifiedCondition(["Condition": "Hypertension"]))
+    union (QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
+  ) PreexistingCondition
+    with "Most Recent BP" RecentBP
+      such that "Prevalence Period"(PreexistingCondition) overlaps "Normalize Interval"(RecentBP.effective)
+
+// Does patient have a BP goal?
+define "Qualifying Blood Pressure Goals":
+  (QualifiedGoal(["Goal"])) BPGoal
+    where (
+      singleton from (BPGoal.target Systolic
+        where Systolic.measure in "Systolic blood pressure"
+          and Systolic.detail is Quantity
+          and WithUnit(Systolic.detail, 'mm[Hg]'))
+    ) SystolicTarget is not null
+      and (
+        singleton from (BPGoal.target Diastolic
+          where Diastolic.measure in "Diastolic Blood Pressure"
+            and Diastolic.detail is Quantity
+            and WithUnit(Diastolic.detail, 'mm[Hg]'))
+      ) DiastolicTarget is not null
+      and ({'active', 'planned', 'proposed', 'accepted'} contains BPGoal.lifecycleStatus)
+
+define "Most Recently Established Blood Pressure Goal":
+  Last (
+    "Qualifying Blood Pressure Goals" BPGoal
+      sort by (start as date)
+  )
+
+define "Patient has a BP Goal":
+  exists "Qualifying Blood Pressure Goals"
+
+
+define "BP from Most Recent Goal":
+  "Most Recently Established Blood Pressure Goal" BPGoal
+    return Tuple {
+      systolic: singleton from (BPGoal.target Systolic where Systolic.measure in "Systolic blood pressure").detail as Quantity,
+      diastolic: singleton from (BPGoal.target Diastolic where Diastolic.measure in "Diastolic Blood Pressure").detail as Quantity
+    }
+
+define "BP Average is Above Goal":
+  AllTrue (
+    from
+      (
+        { "Average All BP Last 2 Years" }
+        union { "Average Most Recent BP Set" }
+      ) BPAverages,
+      "BP from Most Recent Goal" BPGoal
+      return (
+        BPAverages.systolic > BPGoal.systolic
+          and BPAverages.diastolic > BPGoal.diastolic
+      )
+  )
