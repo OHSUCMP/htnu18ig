@@ -1,12 +1,6 @@
 {
   "cards": [
     {
-      "summary": "Discuss target blood pressure and set a blood pressure goal",
-      "indicator": "info",
-      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have a blood pressure goal.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.\u003cbr\u003e\u003cbr\u003eStroke, MI, \"Reduce risk of stroke, heart disease, or kidney disease\"{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between \u003c120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk \u003e10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}||at-most-one||",
-      "source": {}
-    },
-    {
       "summary": "Discuss dietary changes (with salt/sodium reduction)",
       "indicator": "info",
       "detail": "{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}|[ { \"id\": \"nutrition-counseling\", \"label\": \"Nutrition Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"11816003\"}, \"actions\": [ {\"label\":\"Learn more about nutrition and diet changes.\", \"url\":\"/nutrition\"}]}, { \"id\": \"nutrition-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach-dev.ohsu.edu\", \"code\":\"nutrition\"}, \"label\": \"Set a Nutrition/Diet Change Goal\", \"actions\": [] } ]|at-most-one|",
@@ -19,9 +13,9 @@
       "source": {}
     },
     {
-      "summary": "Patient not on track of goal: Discuss pharmacological interventions.",
+      "summary": "Patient on track of goal: End of non-pharmacologic interventions.",
       "indicator": "info",
-      "detail": "Patient not on track of goal: Discuss pharmacological treatment options with Patient.",
+      "detail": "Patient on track of goal: No Further Action Required.",
       "source": {}
     }
   ]

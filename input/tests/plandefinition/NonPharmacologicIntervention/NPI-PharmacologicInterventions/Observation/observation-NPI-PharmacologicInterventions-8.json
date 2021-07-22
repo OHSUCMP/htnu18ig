@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "observation-NPI-WeightLossAchieved-7",
+  "id": "observation-NPI-PharmacologicInterventions-8",
   "status": "final",
   "note": [
     {
@@ -29,9 +29,9 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/NPI-WeightLossAchieved"
+    "reference": "Patient/NPI-PharmacologicInterventions"
   },
-  "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+  "effectiveDateTime": "2021-07-20T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -45,7 +45,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 84.1660352979804,
+        "value": 85.1660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -63,7 +63,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 141.1064054117963,
+        "value": 135.2064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

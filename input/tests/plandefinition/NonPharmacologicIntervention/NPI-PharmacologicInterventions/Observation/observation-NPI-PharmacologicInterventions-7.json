@@ -45,7 +45,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 97.0660352979804,
+        "value": 84.1660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -63,7 +63,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 139.4064054117963,
+        "value": 139.2064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

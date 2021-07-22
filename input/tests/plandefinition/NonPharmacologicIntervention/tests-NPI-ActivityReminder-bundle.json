@@ -521,7 +521,7 @@
       "subject": {
         "reference": "Patient/NPI-ActivityReminder"
       },
-      "startDate": "2021-02-12",
+      "startDate": "2021-07-12",
       "target": [ {
         "measure": {
           "coding": [ {
