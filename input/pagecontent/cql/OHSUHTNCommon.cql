@@ -275,12 +275,7 @@ define "Most Recent BP Reading":
   Last("Blood Pressure Observations" O sort by Coalesce(start of "Normalize Interval"(effective), issued))
 
 define "Blood Pressure Observations for Last 2 Years":
-  ((
-    "Blood Pressure Observations" BP
-      with "Most Recent BP Reading" MostRecentBP
-        such that "Normalize Interval"(BP.effective) starts 24 months or less before Today()
-  )
-  union { "Most Recent BP Reading" }) O
+  "Blood Pressure Observations" BP where "Normalize Interval"(BP.effective) starts 24 months or less before Today()
     sort by Coalesce(start of "Normalize Interval"(effective), issued)
 
 // NOTE: Office-based visit Encounter valueset?
@@ -372,7 +367,6 @@ define "Qualifying Blood Pressure Goals":
             and Diastolic.detail is Quantity
             and WithUnit(Diastolic.detail, 'mm[Hg]'))
       ) DiastolicTarget is not null
-      and ({'active', 'planned', 'proposed', 'accepted'} contains BPGoal.lifecycleStatus)
 
 define "Most Recently Established Blood Pressure Goal":
   Last (

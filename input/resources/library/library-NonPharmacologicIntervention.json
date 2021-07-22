@@ -284,12 +284,6 @@
     "max": "*",
     "type": "Observation"
   }, {
-    "name": "Most Recent BP Reading",
-    "use": "out",
-    "min": 0,
-    "max": "1",
-    "type": "Observation"
-  }, {
     "name": "Average Most Recent BP Set",
     "use": "out",
     "min": 0,
