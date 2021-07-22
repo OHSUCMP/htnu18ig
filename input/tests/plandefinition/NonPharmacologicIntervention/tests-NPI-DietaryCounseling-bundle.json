@@ -448,12 +448,12 @@
         } ]
       },
       "description": {
-        "text": "Goal of 135/85"
+        "text": "Goal of 130/85"
       },
       "subject": {
         "reference": "Patient/NPI-DietaryCounseling"
       },
-      "startDate": "2021-02-12",
+      "startDate": "2021-07-12",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -464,7 +464,7 @@
           } ]
         },
         "detailQuantity": {
-          "value": 135,
+          "value": 130,
           "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"

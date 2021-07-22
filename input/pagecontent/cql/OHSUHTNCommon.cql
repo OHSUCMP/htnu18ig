@@ -270,16 +270,17 @@ define "Blood Pressure Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
       sort by Coalesce(start of "Normalize Interval"(effective), issued)
 
-define "Most Recent BP":
+// Issues with CQL evaluation - evaluates differently in Common!
+define "Most Recent BP Reading":
   Last("Blood Pressure Observations" O sort by Coalesce(start of "Normalize Interval"(effective), issued))
 
 define "Blood Pressure Observations for Last 2 Years":
   ((
     "Blood Pressure Observations" BP
-      with "Most Recent BP" MostRecentBP
-        such that "Normalize Interval"(BP.effective) starts 24 months or less before end of "Normalize Interval"(MostRecentBP.effective)
+      with "Most Recent BP Reading" MostRecentBP
+        such that "Normalize Interval"(BP.effective) starts 24 months or less before Today()
   )
-  union { "Most Recent BP" }) O
+  union { "Most Recent BP Reading" }) O
     sort by Coalesce(start of "Normalize Interval"(effective), issued)
 
 // NOTE: Office-based visit Encounter valueset?
@@ -342,7 +343,7 @@ define "Most Recent BP Set":
   else null
 
 define "Patient Has Above Normal BP":
-  "Elevated or Above BP"({ "Most Recent BP" }) is not null
+  "Elevated or Above BP"({ "Most Recent BP Reading" }) is not null
 
 define "Average All BP Last 2 Years":
   "Avg BP"("Blood Pressure Observations for Last 2 Years")
@@ -354,9 +355,7 @@ define "Condition Indicating Preexisting Hypertension":
   (
     (QualifiedCondition(["Condition": "Hypertension"]))
     union (QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
-  ) PreexistingCondition
-    with "Most Recent BP" RecentBP
-      such that "Prevalence Period"(PreexistingCondition) overlaps "Normalize Interval"(RecentBP.effective)
+  ) PreexistingCondition where end of "Prevalence Period"(PreexistingCondition) >= Today()
 
 // Does patient have a BP goal?
 define "Qualifying Blood Pressure Goals":

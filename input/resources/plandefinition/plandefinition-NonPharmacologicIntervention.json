@@ -66,45 +66,6 @@
   ],
   "action": [
     {
-      "title": "Does Patient Have a BP Goal?",
-      "description": "Determines if a recommendation regarding a Blood Pressure Goal should be established.",
-      "condition": [
-        {
-          "kind": "applicability",
-          "expression": {
-            "description": "Determine if Patient is in the recommendation.",
-            "language": "text/cql.identifier",
-            "expression": "Patient does not have a BP Goal"
-          }
-        }
-      ],
-      "dynamicValue": [
-        {
-          "path": "action.title",
-          "expression": {
-            "description": "Applicable text for the BP Goal Recommendation",
-            "language": "text/cql.identifier",
-            "expression": "BP Goal Recommendation"
-          }
-        },
-        {
-          "path": "action.description",
-          "expression": {
-            "description": "Rationale for recommendation type.",
-            "language": "text/cql.identifier",
-            "expression": "BP Goal Rationale"
-          }
-        },
-        {
-          "path": "action.extension",
-          "expression": {
-            "language": "text/cql.identifier",
-            "expression": "Indicator Status"
-          }
-        }
-      ]
-    },
-    {
       "title": "Does Patient Smoke or have a Tobacco Cessation Goal?",
       "description": "Determines if a recommendation or reminder regarding Patient smoking should be presented.",
       "condition": [

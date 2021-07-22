@@ -10,30 +10,20 @@ codesystem "LOINC": 'http://loinc.org'
 codesystem "Goal achievement status": 'http://terminology.hl7.org/CodeSystem/goal-achievement'
 
 valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
-
-/* Inclusion */
-// COUNSELING
+valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Tobacco Use Cessation Counseling": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.509'
 valueset "Weight Reduction Recommendations": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.420'
 valueset "BMI Follow Up Plan SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1195.111'
 valueset "Alcohol Brief Intervention and Counseling": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.124'
 valueset "Counseling for Nutrition": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.195.12.1003'
 valueset "Physical Activity Recommendations": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.418'
-// SMOKING
 valueset "Tobacco Smoking Status [Current] (Social History) (LOINC)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1330'
 valueset "Tobacco User": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.422'
-// BMI
 valueset "BMI Ratio": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1.1490'
-// ALCOHOL
 valueset "Average Number of Drinks per Drinking Day": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.106.11.1030'
 
-
 code "PACKS A DAY": '8663-7' from "LOINC" display 'Cigarettes smoked current (pack per day) - Reported'
-code "in-progress": 'in-progress' from "Goal achievement status" display 'In Progress'
-code "improving": 'improving' from "Goal achievement status" display 'Improving'
-code "achieved": 'achieved' from "Goal achievement status" display 'Achieved'
-code "sustaining": 'sustaining' from "Goal achievement status" display 'sustaining'
-
+code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
 context Patient
 
@@ -86,21 +76,36 @@ define "Patient Has Behavioral Goals":
   exists "Physical Activity Goals" or
   exists "Nutrition Goals"
 
-// TODO: AEY
 define "BP Goal Met":
   Common."Patient has a BP Goal" and Common."Has BP Set" and not Common."BP Average is Above Goal"
+
+define "Enter Workflow":
+  "In Population" and ("Patient Has Behavioral Goals" or (Common."Patient has a BP Goal" and not "BP Goal Met"))
+
+define "Goal Interval":
+  Interval[(Common."Most Recently Established Blood Pressure Goal".start as date),
+    (Common."Most Recently Established Blood Pressure Goal".start as date) + 3 months]
+
+define "Patient on Track":
+  not Common."Patient has a BP Goal" or not Common."Has BP Set" or "BP Goal Met" or end of "Goal Interval" > Today()
+
+/***** PATIENT ON TRACK CARD OUTPUT *****/
+
+define "Patient on Track of Goal Recommendation":
+  if "Patient on Track" then
+    'Patient on track of goal: End of non-pharmacologic interventions.'
+  else
+    'Patient not on track of goal: Discuss pharmacological interventions.'
+
+define "Patient on Track of Goal Rationale":
+  if "Patient on Track" then
+    'Patient on track of goal: No Further Action Required.'
+  else
+    'Patient not on track of goal: Discuss pharmacological treatment options with Patient.'
 
 /***** COMMON CARD OUTPUT *****/
 define "Indicator Status":
   "Info"
-
-/***** BP CARD OUTPUT *****/
-
-define "BP Goal Recommendation":
-  'Discuss target blood pressure and set a blood pressure goal'
-
-define "BP Goal Rationale":
-  '{{#patient}}You have a hypertension (high blood pressure) diagnosis and do not currently have a blood pressure goal.  Setting goals to achieve better health has been proven to help.  Please set up an appointment with your care team to identify an initial blood pressure goal.  Lowering your blood pressure will reduce your risk of stroke and other conditions.<br><br>Stroke, MI, "Reduce risk of stroke, heart disease, or kidney disease"{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}||at-most-one||'
 
 /***** SMOKING CARD OUTPUT *****/
 
@@ -274,20 +279,6 @@ define "Physical Activity Links":
 define "Physical Activity Goal Summary":
     Combine("Goal Summary"("Physical Activity Goals"), '<br>')
 
-/***** PATIENT ON TRACK CARD OUTPUT *****/
-
-define "Patient on Track of Goal Recommendation":
-  if "Patient at BP Goal" then
-    'Patient on track of goal: End of non-pharmacologic interventions.'
-  else
-    'Patient not on track of goal: Discuss pharmacological interventions.'
-
-define "Patient on Track of Goal Rationale":
-  if "Patient at BP Goal" then
-    'Patient on track of goal: No Further Action Required.'
-  else
-    'Patient not on track of goal: Discuss pharmacological treatment options with Patient.'
-
 define "Exclusion Reason":
   if "Meets Exclusion Criteria" then
     (
@@ -301,7 +292,6 @@ define "Exclusion Reason":
         )
     )
   else ''
-
 
 /* Non-Pharmacologic Interventions Workflow */
 // Look for custom tobacco goal coding
@@ -427,64 +417,53 @@ define "Last Nutrition Counseling Procedure":
 define "Last Physical Activity Counseling Procedure":
   "Last Counseling Procedure"(["Procedure": "Physical Activity Recommendations"])
 
-// Is Patient on Track to reach BP Goal?
-define "BP Goal Demonstrating Patient Improvement":
-  Common."Most Recently Established Blood Pressure Goal" BPGoal
-    where FHIRHelpers.ToConcept(BPGoal.achievementStatus) ~ "in-progress"
-      or FHIRHelpers.ToConcept(BPGoal.achievementStatus) ~ "improving"
-      or FHIRHelpers.ToConcept(BPGoal.achievementStatus) ~ "achieved"
-      or FHIRHelpers.ToConcept(BPGoal.achievementStatus) ~ "sustaining"
-
-define "Patient at BP Goal":
-  if not "In Population" then
-    false
-  else
-    "BP Goal Demonstrating Patient Improvement" is not null
-
 /* Action Conditionals defined in Plan Definition */
 define "Patient Smoking Goals Action Path":
-  if not "In Population" then
-    false
-  else ("Patient is Currently a Smoker" or exists "Tobacco Cessation Goals")
+  "Enter Workflow" and ("Patient is Currently a Smoker" or exists "Tobacco Cessation Goals")
 
 define "Patient Weight Loss Goals Action Path":
-  if not "In Population" then
-    false
-  else ("Patient BMI is Greater than 25 kg/m2" or exists "Weight Loss Goals")
+  "Enter Workflow" and ("Patient BMI is Greater than 25 kg/m2" or exists "Weight Loss Goals")
 
 define "Patient Alcohol Goals Action Path":
-  if not "In Population" then
-    false
-  else ("Patient is a Heavy Alcoholic Drinker" or exists "Alcohol Goals")
+  "Enter Workflow" and ("Patient is a Heavy Alcoholic Drinker" or exists "Alcohol Goals")
 
 define "Patient Nutrition Goals Action Path":
-  if not "In Population" then
-    false
-  else true
+  "Enter Workflow"
 
 define "Patient Physical Activity Goals Action Path":
-  if not "In Population" then
-    false
-  else true
+  "Enter Workflow"
 
-/* TEST */
-define "TEST Patient Age":
-  AgeInYears()
+define "TEST Get Average All BP Last 2 Years":
+  Common."Avg BP"(Common."Blood Pressure Observations for Last 2 Years")
 
-define "TEST Patient BMI Resources":
-  "Observations Specifying Patient BMI".id
+define "TEST Get Average Most Recent BP Set":
+  Common."Avg BP"(Common."Most Recent BP Set")
 
-define "TEST Most Recent Patient BMI":
-  "Most Recent Patient BMI" BMI
-    return Tuple {
-      "ID": BMI.id,
-      "Date": BMI.effective.end,
-      "Value": BMI.value.value,
-      "Unit": BMI.value.unit
-    }
+define "TEST BP Average Above Goal":
+  Common."BP Average is Above Goal"
 
-define "Patient does not have a BP Goal":
-  if not "In Population" then
-    false
-  else
-    not exists Common."Qualifying Blood Pressure Goals"
+define "TEST Systolic Above Goal":
+  AllTrue (
+    from
+      (
+        { Common."Average All BP Last 2 Years" }
+        union { Common."Average Most Recent BP Set" }
+      ) BPAverages,
+      Common."BP from Most Recent Goal" BPGoal
+      return (
+        BPAverages.systolic > BPGoal.systolic
+      )
+  )
+
+define "TEST Diastolic Above Goal":
+  AllTrue (
+    from
+      (
+        { Common."Average All BP Last 2 Years" }
+        union { Common."Average Most Recent BP Set" }
+      ) BPAverages,
+      Common."BP from Most Recent Goal" BPGoal
+      return (
+        BPAverages.diastolic > BPGoal.diastolic
+      )
+  )

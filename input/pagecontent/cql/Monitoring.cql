@@ -156,13 +156,13 @@ define "Confirm need for Patient Ambulatory BP Monitoring":
 
 /* TESTS */
 define "Test Patient Age on BP Reading":
-  AgeInYearsAt(start of Common."Normalize Interval"(Common."Most Recent BP".effective))
+  AgeInYearsAt(start of Common."Normalize Interval"(Common."Most Recent BP Reading".effective))
 
 define "Test Count All BP":
   Count(Common."Blood Pressure Observations for Last 2 Years")
 
 define "Test Most Recent BP":
-  Common."Most Recent BP" BP
+  Common."Most Recent BP Reading" BP
     return Tuple {
       "ID": BP.id,
       "Date": BP.effective.end,

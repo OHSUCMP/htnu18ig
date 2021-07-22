@@ -12,9 +12,9 @@
       }
     ]
   },
-  "startDate": "2021-02-12",
+  "startDate": "2021-07-12",
   "description": {
-    "text": "Goal of 135/85"
+    "text": "Goal of 139/84"
   },
   "subject": {
     "reference": "Patient/NPI-WeightLossNew"
@@ -32,7 +32,7 @@
         ]
       },
       "detailQuantity": {
-        "value": 135,
+        "value": 139,
         "unit": "mmHg",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -50,7 +50,7 @@
         ]
       },
       "detailQuantity": {
-        "value": 85,
+        "value": 84,
         "unit": "mmHg",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

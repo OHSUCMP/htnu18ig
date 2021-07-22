@@ -154,7 +154,7 @@ define "Patient has Set of BP Observations":
 
 // Is SBP > 180 and/or DBP > 120?
 define "Patient Has Hypertensive BP":
-  Common."HTN Crisis BP"({ Common."Most Recent BP" }) is not null
+  Common."HTN Crisis BP"({ Common."Most Recent BP Reading" }) is not null
 
 define "HTN Crisis":
   if "In Population" is not true then
@@ -227,13 +227,13 @@ define "Diagnosis of Preexisting Hypertension":
 
 /* TESTS */
 define "Test Patient Age on BP Reading":
-  AgeInYearsAt(start of Common."Normalize Interval"(Common."Most Recent BP".effective))
+  AgeInYearsAt(start of Common."Normalize Interval"(Common."Most Recent BP Reading".effective))
 
 define "Test Count All BP":
   Count(Common."Blood Pressure Observations for Last 2 Years")
 
 define "Test Most Recent BP":
-  Common."Most Recent BP" BP
+  Common."Most Recent BP Reading" BP
     return Tuple {
       "ID": BP.id,
       "Date": BP.effective.end,

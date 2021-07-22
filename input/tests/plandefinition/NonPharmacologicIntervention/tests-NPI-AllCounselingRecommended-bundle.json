@@ -570,7 +570,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "startDate": "2021-02-12",
+      "startDate": "2021-07-12",
       "target": [ {
         "measure": {
           "coding": [ {
