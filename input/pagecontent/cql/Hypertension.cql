@@ -8,17 +8,8 @@ include OHSUHTNCommon version '0.1' called Common
 codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
 /* Inclusion */
-valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
-valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
 valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
-
-/* Exclusion */
-valueset "Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012'
-valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
-valueset "Pregnancy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378'
-valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
-valueset "Hospice care ambulatory": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.15'
 
 code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
@@ -64,8 +55,8 @@ define "Recommendation":
   else if "HTN Stage 2" then 'Consider diagnosis of Stage 2 hypertension'
   else if "Consider HTN Stage 2" then 'Consider diagnosis of Stage 2 hypertension'
   else if "Consider HTN Stage 1" then 'Consider Diagnosis of Stage 1 hypertension.'
-  else if "Confirm HTN" then 'Use ambulatory or home blood pressure monitoring to confirm diagnosis'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then 'Use ambulatory blood pressure monitoring to address blood pressure variability'
+  else if "Prescribe Monitoring to Confirm HTN" then 'Use ambulatory or home blood pressure monitoring to confirm diagnosis'
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then 'Use ambulatory blood pressure monitoring to address blood pressure variability'
   else 'Patient does not have an indication of a hypertensive state.'
 
 define "Rationale Combined Data":
@@ -79,8 +70,8 @@ define "Rationale":
   else if "HTN Stage 2" then '{{#patient}}You had multiple high blood pressure readings recently (>= 140 Systolic and/or 90 Diastolic).  This suggests you have Stage 2 hypertension, a treatable condition of high blood pressure. Please discuss with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP >= 140 mm HG and/or DBP >= 90 mm Hg. This strongly suggests the patient has Stage 2 Hypertension but no diagnosis was found.{{/careTeam}}'
   else if "Consider HTN Stage 2" then '{{#patient}}You recently had high blood pressure readings (>140 systolic or > 90 diastolic) which suggests hypertension, but no diagnosis is in your chart.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 140mm Hg and/or DBP > 90. This suggests the patient may have Stage 2 Hypertension, but no diagnosis was found.{{/careTeam}}'
   else if "Consider HTN Stage 1" then '{{#patient}}You recently had high blood pressure readings (> 130 systolic or > 80 diastolic), but do not have a recorded diagnosis of hypertension. You may want to discuss with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 130mm Hg and/or DBP > 80. This suggests the patient may have Stage 1 Hypertension, but no diagnosis was found.{{/careTeam}}'
-  else if "Confirm HTN" then '{{#patient}}You had a high blood pressure reading recently and have a blood pressure is high, but have no hypertension diagnosis.  Taking more blood pressures will help your care team decide if the high blood pressures need treatment.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then '{{#patient}}You had some variation in your blood pressures recently. Sometimes variation in blood pressure is a health risk ; your care team may recommend ambulatory blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk.{{/careTeam}}'
+  else if "Prescribe Monitoring to Confirm HTN" then '{{#patient}}You had a high blood pressure reading recently and have a blood pressure is high, but have no hypertension diagnosis.  Taking more blood pressures will help your care team decide if the high blood pressures need treatment.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}'
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then '{{#patient}}You had some variation in your blood pressures recently. Sometimes variation in blood pressure is a health risk ; your care team may recommend ambulatory blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk.{{/careTeam}}'
   else 'No Further Action Required.'
 
 define "Indicator Status":
@@ -91,8 +82,8 @@ define "Indicator Status":
   else if "HTN Stage 2" then "Warning"
   else if "Consider HTN Stage 2" then "Warning"
   else if "Consider HTN Stage 1" then "Info"
-  else if "Confirm HTN" then "Info"
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then "Info"
+  else if "Prescribe Monitoring to Confirm HTN" then "Info"
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then "Info"
   else "Info"
 
 define "Suggestions":
@@ -103,8 +94,8 @@ define "Suggestions":
   else if "HTN Stage 2" then '[ { "id": "contact-suggestion", "label": "Contact care team diagnosis", "type": "suggestion-link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
   else if "Consider HTN Stage 2" then '[ { "id": "contact-suggestion", "label": "Contact care team diagnosis", "type": "suggestion-link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
   else if "Consider HTN Stage 1" then '[ { "id": "contact-suggestion", "label": "Contact care team diagnosis", "type": "suggestion-link", "actions": [{"label":"Contact your care team about high blood presure diagnosis", "url":"/contact"}] } ]'
-  else if "Confirm HTN" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then '[ { "id": "ambulatory-suggestion", "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/ambulatoryBP"}] } ]'
+  else if "Prescribe Monitoring to Confirm HTN" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then '[ { "id": "ambulatory-suggestion", "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/ambulatoryBP"}] } ]'
   else ''
 
 define "Selection Behavior":
@@ -115,8 +106,8 @@ define "Selection Behavior":
   else if "HTN Stage 2" then 'at-most-one'
   else if "Consider HTN Stage 2" then 'at-most-one'
   else if "Consider HTN Stage 1" then 'at-most-one'
-  else if "Confirm HTN" then 'at-most-one'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then 'at-most-one'
+  else if "Prescribe Monitoring to Confirm HTN" then 'at-most-one'
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then 'at-most-one'
   else 'at-most-one'
 
 define "Links":
@@ -127,8 +118,8 @@ define "Links":
   else if "HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if "Consider HTN Stage 2" then ''
   else if "Consider HTN Stage 1" then ''
-  else if "Confirm HTN" then ''
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then ''
+  else if "Prescribe Monitoring to Confirm HTN" then ''
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then ''
   else ''
 
 define "Exclusion Reason":
@@ -145,85 +136,39 @@ define "Exclusion Reason":
     )
   else ''
 
-// Does patient have 'set' of BPs?
-define "Patient has Set of BP Observations":
+define "HTN Crisis":
   if not "In Population" then
     false
   else
-    Common."Has BP Set"
-
-// Is SBP > 180 and/or DBP > 120?
-define "Patient Has Hypertensive BP":
-  Common."HTN Crisis BP"({ Common."Most Recent BP Reading" }) is not null
-
-define "HTN Crisis":
-  if "In Population" is not true then
-    false
-  else
-    "Patient Has Hypertensive BP"
-
-// Is last BP set or all BPs average > 140 SBP or > 90 DBP?
-define "Patient Has Potential HTN Stage 2 BP":
-  (
-    Common."HTN Stage 2 BP"(Common."Most Recent BP Set") is not null
-    or Common."HTN Stage 2 BP"(Common."Blood Pressure Observations for Last 2 Years") is not null
-  )
+    Common."HTN Crisis BP"({ Common."Most Recent BP Reading" }) is not null
 
 // Is last BP set or all BPs average > 160 SBP?
 define "Patient Has HTN Stage 2 BP":
-  "Patient Has Potential HTN Stage 2 BP"
+  Common."Patient Has Potential HTN Stage 2 BP"
     and (
         Common."HTN Stage 2 BP Systolic Second Test"(Common."Most Recent BP Set") is not null
         or Common."HTN Stage 2 BP Systolic Second Test"(Common."Blood Pressure Observations for Last 2 Years") is not null
     )
 
 define "HTN Stage 2":
-  if "In Population" is not true then
-    false
-  else
-    "Patient Has HTN Stage 2 BP"
+  "In Population" and "Patient Has HTN Stage 2 BP"
 
 define "Consider HTN Stage 2":
-  if "In Population" is not true then
-    false
-  else
-    "Patient Has Potential HTN Stage 2 BP"
+  "In Population" and Common."Patient Has Potential HTN Stage 2 BP"
       and not "Patient Has HTN Stage 2 BP"
 
 // Is last BP set AND all BPs avg > 130/80?
-define "Patient Has Potential HTN Stage 1 BP":
-  (
+define "Consider HTN Stage 1":
+  "In Population" and (
     Common."HTN Stage 1 BP"(Common."Most Recent BP Set") is not null
     and Common."HTN Stage 1 BP"(Common."Blood Pressure Observations for Last 2 Years") is not null
   )
 
-define "Consider HTN Stage 1":
-  if "In Population" is not true then
-    false
-  else
-    "Patient Has Potential HTN Stage 1 BP"
-
-// Is last BP set or all BPs avge > 130/80?
-define "Confirm HTN":
-  (
-    Common."HTN Stage 1 BP"(Common."Most Recent BP Set") is not null
-    or Common."HTN Stage 1 BP"(Common."Blood Pressure Observations for Last 2 Years") is not null
-  )
-
-// Is SBP Coeff of Var > 11 for all BPs and no ABPM?
-define "Confirm need for Patient Ambulatory BP Monitoring":
-  if "In Population" and "Patient has Set of BP Observations" then
-    (
-      Common."Systolic BP Variability"(Common."Blood Pressure Observations for Last 2 Years").value > 11
-      and not exists Common."Ambulatory Blood Pressure Monitoring Procedures"
-    )
-  else null
+define "Prescribe Monitoring to Confirm HTN":
+  "In Population" and Common."Patient Has Potential HTN Stage 1 BP" and not "Consider HTN Stage 1"
 
 define "Diagnosis of Preexisting Hypertension":
-  if not "In Population" then
-    false
-  else
-    exists Common."Condition Indicating Preexisting Hypertension"
+  "In Population" and exists Common."Condition Indicating Preexisting Hypertension"
 
 /* TESTS */
 define "Test Patient Age on BP Reading":

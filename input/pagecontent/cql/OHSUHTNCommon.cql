@@ -346,6 +346,29 @@ define "Average All BP Last 2 Years":
 define "Average Most Recent BP Set":
   "Avg BP"("Most Recent BP Set")
 
+// Is last BP set or all BPs avge > 130/80?
+define "Patient Has Potential HTN Stage 1 BP":
+  (
+    "HTN Stage 1 BP"("Most Recent BP Set") is not null
+    or "HTN Stage 1 BP"("Blood Pressure Observations for Last 2 Years") is not null
+  )
+
+// Is last BP set or all BPs average > 140 SBP or > 90 DBP?
+define "Patient Has Potential HTN Stage 2 BP":
+  (
+    "HTN Stage 2 BP"("Most Recent BP Set") is not null
+    or "HTN Stage 2 BP"("Blood Pressure Observations for Last 2 Years") is not null
+  )
+
+// Is SBP Coeff of Var > 11 for all BPs and no ABPM?
+define "Confirm need for Patient Ambulatory BP Monitoring":
+  if "Has BP Set" then
+    (
+      "Systolic BP Variability"("Blood Pressure Observations for Last 2 Years").value > 11
+      and not exists "Ambulatory Blood Pressure Monitoring Procedures"
+    )
+  else null
+
 define "Condition Indicating Preexisting Hypertension":
   (
     (QualifiedCondition(["Condition": "Hypertension"]))

@@ -5,12 +5,9 @@ using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 include OHSUHTNCommon version '0.1' called Common
 
-codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 codesystem "LOINC": 'http://loinc.org'
 codesystem "Goal achievement status": 'http://terminology.hl7.org/CodeSystem/goal-achievement'
 
-valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
-valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Tobacco Use Cessation Counseling": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.509'
 valueset "Weight Reduction Recommendations": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.420'
 valueset "BMI Follow Up Plan SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1195.111'
@@ -23,7 +20,6 @@ valueset "BMI Ratio": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.
 valueset "Average Number of Drinks per Drinking Day": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.106.11.1030'
 
 code "PACKS A DAY": '8663-7' from "LOINC" display 'Cigarettes smoked current (pack per day) - Reported'
-code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
 context Patient
 
@@ -324,10 +320,7 @@ define "Most Recent Observation of Patient Smoking Status":
   )
 
 define "Patient is Currently a Smoker":
-  if not "In Population" then
-    false
-  else
-    "Observations Indicating Patient is a Smoker" contains "Most Recent Observation of Patient Smoking Status"
+  "In Population" and "Observations Indicating Patient is a Smoker" contains "Most Recent Observation of Patient Smoking Status"
 
 // Look for custom weight loss goal coding
 define "Weight Loss Goals":
@@ -351,10 +344,7 @@ define "Most Recent Patient BMI":
   )
 
 define "Patient BMI is Greater than 25 kg/m2":
-  if "In Population" is not true then
-    false
-  else
-    "Most Recent Patient BMI".value >= 25.0 'kg/m2'
+  "In Population" and "Most Recent Patient BMI".value >= 25.0 'kg/m2'
 
 // Look for custom alcohol goal coding
 define "Alcohol Goals":
@@ -403,19 +393,19 @@ define "Physical Activity Goals Needing Update":
 
 /***** COUNSELING PROCEDURES *****/
 define "Last Alcohol Counseling Procedure":
-  "Last Counseling Procedure"(["Procedure": "Alcohol Brief Intervention and Counseling"])
+  "Last Counseling Procedure"(Common.QualifiedProcedure(["Procedure": "Alcohol Brief Intervention and Counseling"]))
 
 define "Last Smoking Counseling Procedure":
-  "Last Counseling Procedure"(["Procedure": "Tobacco Use Cessation Counseling"])
+  "Last Counseling Procedure"(Common.QualifiedProcedure(["Procedure": "Tobacco Use Cessation Counseling"]))
 
 define "Last BMI Counseling Procedure":
-  "Last Counseling Procedure"((["Procedure": "Weight Reduction Recommendations"]) union (["Procedure": "BMI Follow Up Plan SNOMEDCT"]))
+  "Last Counseling Procedure"((Common.QualifiedProcedure(["Procedure": "Weight Reduction Recommendations"])) union (Common.QualifiedProcedure(["Procedure": "BMI Follow Up Plan SNOMEDCT"])))
 
 define "Last Nutrition Counseling Procedure":
-  "Last Counseling Procedure"(["Procedure": "Counseling for Nutrition"])
+  "Last Counseling Procedure"(Common.QualifiedProcedure(["Procedure": "Counseling for Nutrition"]))
 
 define "Last Physical Activity Counseling Procedure":
-  "Last Counseling Procedure"(["Procedure": "Physical Activity Recommendations"])
+  "Last Counseling Procedure"(Common.QualifiedProcedure(["Procedure": "Physical Activity Recommendations"]))
 
 /* Action Conditionals defined in Plan Definition */
 define "Patient Smoking Goals Action Path":
