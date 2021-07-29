@@ -73,7 +73,7 @@ define "Patient Has Behavioral Goals":
   exists "Nutrition Goals"
 
 define "BP Goal Met":
-  Common."Patient has a BP Goal" and Common."Has BP Set" and not Common."BP Average is Above Goal"
+  Common."Patient has a BP Goal" and Common."Has BP Set" and not Common."BP Average Potentially Above Goal"
 
 define "Enter Workflow":
   "In Population" and ("Patient Has Behavioral Goals" or (Common."Patient has a BP Goal" and not "BP Goal Met"))

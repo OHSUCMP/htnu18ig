@@ -408,16 +408,16 @@ define "BP from Most Recent Goal":
       diastolic: singleton from (BPGoal.target Diastolic where Diastolic.measure in "Diastolic Blood Pressure").detail as Quantity
     }
 
+define "Above Goal Average Last 2 Years":
+  "Average All BP Last 2 Years".systolic > "BP from Most Recent Goal".systolic or
+  "Average All BP Last 2 Years".diastolic > "BP from Most Recent Goal".diastolic
+
+define "Above Goal Average Most Recent":
+  "Average Most Recent BP Set".systolic > "BP from Most Recent Goal".systolic or
+  "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
+
 define "BP Average is Above Goal":
-  AllTrue (
-    from
-      (
-        { "Average All BP Last 2 Years" }
-        union { "Average Most Recent BP Set" }
-      ) BPAverages,
-      "BP from Most Recent Goal" BPGoal
-      return (
-        BPAverages.systolic > BPGoal.systolic
-          and BPAverages.diastolic > BPGoal.diastolic
-      )
-  )
+  "Above Goal Average Last 2 Years" and "Above Goal Average Most Recent"
+
+define "BP Average Potentially Above Goal":
+  "Above Goal Average Last 2 Years" or "Above Goal Average Most Recent"
