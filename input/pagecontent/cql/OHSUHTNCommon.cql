@@ -270,9 +270,15 @@ define "Blood Pressure Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
       sort by Coalesce(start of "Normalize Interval"(effective), issued)
 
-// Issues with CQL evaluation - evaluates differently in Common!
 define "Most Recent BP Reading":
   Last("Blood Pressure Observations" O sort by Coalesce(start of "Normalize Interval"(effective), issued))
+
+define "BP Within 14 days":
+  "Most Recent BP Reading" BP
+  return Coalesce(start of "Normalize Interval"(BP.effective), BP.issued) + 14 days >= Today()
+
+define "HTN Crisis":
+  "BP Within 14 days" and "HTN Crisis BP"({ "Most Recent BP Reading" }) is not null
 
 define "Blood Pressure Observations for Last 2 Years":
   "Blood Pressure Observations" BP where "Normalize Interval"(BP.effective) starts 24 months or less before Today()

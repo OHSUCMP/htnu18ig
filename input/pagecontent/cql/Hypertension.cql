@@ -42,6 +42,7 @@ define "Meets Exclusion Criteria":
     or Common."Patient Over Age 80"
     or exists Common."Condition Indicating End Stage Renal Disease"
     or exists Common."Condition Indicating Pregnancy"
+    or Common."HTN Crisis"
 
 define "In Population":
   "Meets Inclusion Criteria"
@@ -131,6 +132,7 @@ define "Exclusion Reason":
           else if Common."Patient Over Age 80" then 'being over the age of 80.'
           else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
           else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
+          else if Common."HTN Crisis" then 'a recent hypertensive emergency.'
           else ''
         )
     )

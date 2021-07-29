@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "HE-HypertensiveEmergencyIssued",
+  "active": true,
+  "name": [
+    {
+      "text": "Hypertensive Emergency Issued",
+      "family": "Issued",
+      "given": [
+        "Hypertensive Emergency"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1973-02-12"
+}
