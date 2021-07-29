@@ -5,8 +5,6 @@ using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 include OHSUHTNCommon version '0.1' called Common
 
-codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
-
 context Patient
 
 define "Info":
@@ -45,9 +43,9 @@ define "Recommendation":
   if not "In Population" then ''
   else if not Common."Patient has a BP Goal" then 'Discuss target blood pressure and set a blood pressure goal'
   else if not Common."Has BP Set" then 'Consider obtaining additional blood pressure measurements'
-  else if ("HTN Stage 2" or Common."BP Average is Above Goal") then 'Blood pressure goal not reached. Discuss treatment options'
-  else if "Confirm HTN" then 'Use home or ambulatory blood pressure monitoring to confirm blood pressure'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then 'Use ambulatory blood pressure monitoring to address blood pressure variability'
+  else if (Common."Patient Has Potential HTN Stage 2 BP" or Common."BP Average is Above Goal") then 'Blood pressure goal not reached. Discuss treatment options'
+  else if "Prescribe Monitoring to Confirm Not At Goal" then 'Use home or ambulatory blood pressure monitoring to confirm blood pressure'
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then 'Use ambulatory blood pressure monitoring to address blood pressure variability'
   else 'Patient at goal!'
 
 define "Rationale Combined Data":
@@ -57,27 +55,27 @@ define "Rationale":
   if not "In Population" then ''
   else if not Common."Patient has a BP Goal" then '{{#patient}}You recently received a hypertension (high blood pressure) diagnosis.  Setting goals for lowering your blood pressure has been proven to help overall health and reduce your chance of stroke or other conditions.{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}'
   else if not Common."Has BP Set" then '{{#patient}}Your recent blood pressure is above your goal.  We do not have enough blood pressures to provide a full picture of your blood pressure. Taking a full set of blood pressures can help.  We consider a full set to be ~4 in-office measurements, ~6 home measurements, or 12 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
-  else if ("HTN Stage 2" or Common."BP Average is Above Goal") then '{{#patient}}Your recent blood pressure is above your goal. Changing your behaviors may help - see the additional options. In addition, please consult your care team to consider additional treatment options. Please review the home blood pressure measurement protocol presented on the blood pressure entry page to make sure that the tool is accurately measuring your blood pressure.{{/patient}}{{#careTeam}}BP not at goal. Consider initiating antihypertensive drug therapy with a single antihypertinsive drug with dosage titration and sequential addition of other agents to achieve the target BP.{{/careTeam}}'
-  else if "Confirm HTN" then '{{#patient}}Your recent blood pressure is above your goal and is borderline for a hypertension diagnosis.  More measurements over a longer period could help.  We consider a full set to be ~4 in-office measurements, ~6 home measurements, or ~24 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then '{{#patient}}Your recent blood pressure is above your goal and appears to be highly variable, which can indicate a health risk.  Ask your care team about ordering ambulatory blood pressure monitoring or how to get better measurements from home blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk. If ABPM is not available, discuss more better protocols for home blood pressure monitoring.{{/careTeam}}'
+  else if (Common."Patient Has Potential HTN Stage 2 BP" or Common."BP Average is Above Goal") then '{{#patient}}Your recent blood pressure is above your goal. Changing your behaviors may help - see the additional options. In addition, please consult your care team to consider additional treatment options. Please review the home blood pressure measurement protocol presented on the blood pressure entry page to make sure that the tool is accurately measuring your blood pressure.{{/patient}}{{#careTeam}}BP not at goal. Consider initiating antihypertensive drug therapy with a single antihypertinsive drug with dosage titration and sequential addition of other agents to achieve the target BP.{{/careTeam}}'
+  else if "Prescribe Monitoring to Confirm Not At Goal" then '{{#patient}}Your recent blood pressure is above your goal and is borderline for a hypertension diagnosis.  More measurements over a longer period could help.  We consider a full set to be ~4 in-office measurements, ~6 home measurements, or ~24 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then '{{#patient}}Your recent blood pressure is above your goal and appears to be highly variable, which can indicate a health risk.  Ask your care team about ordering ambulatory blood pressure monitoring or how to get better measurements from home blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk. If ABPM is not available, discuss more better protocols for home blood pressure monitoring.{{/careTeam}}'
   else 'No Further Action Required.'
 
 define "Indicator Status":
   if not "In Population" then "Info"
   else if not Common."Patient has a BP Goal" then "Info"
   else if not Common."Has BP Set" then "Info"
-  else if ("HTN Stage 2" or Common."BP Average is Above Goal") then "Warning"
-  else if "Confirm HTN" then "Info"
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then "Info"
+  else if (Common."Patient Has Potential HTN Stage 2 BP" or Common."BP Average is Above Goal") then "Warning"
+  else if "Prescribe Monitoring to Confirm Not At Goal" then "Info"
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then "Info"
   else "Info"
 
 define "Suggestions":
   if not "In Population" then ''
-  else if not Common."Patient has a BP Goal" then '[ { "id": "bp-radio-goal", "label": "BP Goal", "type": "bp-goal", "references":{"system":"https//coach-dev.ohsu.edu", "code":"blood-pressure"}, "actions": [{"label":"140/90"}, {"label":"130/80"}, {"label":"120/80"}]}]'
+  else if not Common."Patient has a BP Goal" then '[ { "id": "bp-radio-goal", "label": "BP Goal", "type": "bp-goal", "references":{"system":"https//coach.ohsu.edu", "code":"blood-pressure"}, "actions": [{"label":"140/90"}, {"label":"130/80"}, {"label":"120/80"}]}]'
   else if not Common."Has BP Set" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
-  else if ("HTN Stage 2" or Common."BP Average is Above Goal") then '[ { "id": "contact-suggestion", "label": "Contact care team BP Treatment", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure", "url":"/contact"}] } ]'
-  else if "Confirm HTN" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then '[ {"id": "ambulatory-suggestion", "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/ambulatoryBP"}] } ]'
+  else if (Common."Patient Has Potential HTN Stage 2 BP" or Common."BP Average is Above Goal") then '[ { "id": "contact-suggestion", "label": "Contact care team BP Treatment", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure", "url":"/contact"}] } ]'
+  else if "Prescribe Monitoring to Confirm Not At Goal" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then '[ {"id": "ambulatory-suggestion", "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/ambulatoryBP"}] } ]'
   else ''
 
 define "Selection Behavior":
@@ -87,9 +85,9 @@ define "Links":
   if not "In Population" then ''
   else if not Common."Patient has a BP Goal" then ''
   else if not Common."Has BP Set" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
-  else if ("HTN Stage 2" or Common."BP Average is Above Goal") then ''
-  else if "Confirm HTN" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
-  else if "Confirm need for Patient Ambulatory BP Monitoring" then ''
+  else if (Common."Patient Has Potential HTN Stage 2 BP" or Common."BP Average is Above Goal") then ''
+  else if "Prescribe Monitoring to Confirm Not At Goal" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
+  else if Common."Confirm need for Patient Ambulatory BP Monitoring" then ''
   else '[]'
 
 define "Exclusion Reason":
@@ -118,41 +116,8 @@ define "No Entry Title":
 define "No Entry Description":
   'No Further Action Required.'
 
-// Does patient have 'set' of BPs?
-define "Patient has Set of BP Observations":
-  if not "In Population" then
-    false
-  else
-    Common."Has BP Set"
-
-// Is last BP set or all BPs average > 140 SBP or > 90 DBP?
-define "Patient Has Potential HTN Stage 2 BP":
-  (
-    Common."HTN Stage 2 BP"(Common."Most Recent BP Set") is not null
-    or Common."HTN Stage 2 BP"(Common."Blood Pressure Observations for Last 2 Years") is not null
-  )
-
-define "HTN Stage 2":
-  if "In Population" is not true then
-    false
-  else
-    "Patient Has Potential HTN Stage 2 BP"
-
-// Is Last BP set or all BPs avg > 130/80?
-define "Confirm HTN":
-  (
-    Common."HTN Stage 1 BP"(Common."Most Recent BP Set") is not null
-    or Common."HTN Stage 1 BP"(Common."Blood Pressure Observations for Last 2 Years") is not null
-  )
-
-// Is SBP Coeff of Var > 11 for all BPs and no ABPM?
-define "Confirm need for Patient Ambulatory BP Monitoring":
-  if "Patient has Set of BP Observations" then
-    (
-      Common."Systolic BP Variability"(Common."Blood Pressure Observations for Last 2 Years").value > 11
-      and not exists Common."Ambulatory Blood Pressure Monitoring Procedures"
-    )
-  else null
+define "Prescribe Monitoring to Confirm Not At Goal":
+  "In Population" and Common."Patient Has Potential HTN Stage 1 BP"
 
 /* TESTS */
 define "Test Patient Age on BP Reading":
