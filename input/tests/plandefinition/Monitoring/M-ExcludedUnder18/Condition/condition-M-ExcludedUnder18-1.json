@@ -6,6 +6,16 @@
       "text": "Indicates Preexisting Diagnosis of Hypertension"
     }
   ],
+  "category": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "encounter-diagnosis",
+        "display": "Encounter Diagnosis"
+      }
+    ],
+    "text": "Encounter Diagnosis"
+  },
   "clinicalStatus": {
     "coding": [
       {
