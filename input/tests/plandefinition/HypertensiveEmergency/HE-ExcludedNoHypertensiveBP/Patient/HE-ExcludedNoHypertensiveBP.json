@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "HE-ExcludedNoHypertensiveBP",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded No Hypertensive BP",
+      "family": "NoHypertensiveBP",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1993-10-14"
+}

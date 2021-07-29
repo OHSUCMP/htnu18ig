@@ -59,6 +59,7 @@ define "Meets Exclusion Criteria":
     or Common."Patient Over Age 80"
     or exists Common."Condition Indicating End Stage Renal Disease"
     or exists Common."Condition Indicating Pregnancy"
+    or Common."HTN Crisis"
 
 define "In Population":
   "Meets Inclusion Criteria"
@@ -73,7 +74,7 @@ define "Patient Has Behavioral Goals":
   exists "Nutrition Goals"
 
 define "BP Goal Met":
-  Common."Patient has a BP Goal" and Common."Has BP Set" and not Common."BP Average is Above Goal"
+  Common."Patient has a BP Goal" and Common."Has BP Set" and not Common."BP Average Potentially Above Goal"
 
 define "Enter Workflow":
   "In Population" and ("Patient Has Behavioral Goals" or (Common."Patient has a BP Goal" and not "BP Goal Met"))
@@ -284,6 +285,7 @@ define "Exclusion Reason":
           else if Common."Patient Over Age 80" then 'being over the age of 80.'
           else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
           else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
+          else if Common."HTN Crisis" then 'a recent hypertensive emergency.'
           else ''
         )
     )

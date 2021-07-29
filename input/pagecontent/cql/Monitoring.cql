@@ -34,6 +34,7 @@ define "Meets Exclusion Criteria":
     or Common."Patient Over Age 80"
     or exists Common."Condition Indicating End Stage Renal Disease"
     or exists Common."Condition Indicating Pregnancy"
+    or Common."HTN Crisis"
 
 define "In Population":
   "Meets Inclusion Criteria"
@@ -99,6 +100,7 @@ define "Exclusion Reason":
           else if Common."Patient Over Age 80" then 'being over the age of 80.'
           else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
           else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
+          else if Common."HTN Crisis" then 'a recent hypertensive emergency.'
           else ''
         )
     )
@@ -117,12 +119,9 @@ define "No Entry Description":
   'No Further Action Required.'
 
 define "Prescribe Monitoring to Confirm Not At Goal":
-  "In Population" and Common."Patient Has Potential HTN Stage 1 BP"
+  "In Population" and Common."BP Average Potentially Above Goal"
 
 /* TESTS */
-define "Test Patient Age on BP Reading":
-  AgeInYearsAt(start of Common."Normalize Interval"(Common."Most Recent BP Reading".effective))
-
 define "Test Count All BP":
   Count(Common."Blood Pressure Observations for Last 2 Years")
 

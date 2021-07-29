@@ -270,9 +270,15 @@ define "Blood Pressure Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
       sort by Coalesce(start of "Normalize Interval"(effective), issued)
 
-// Issues with CQL evaluation - evaluates differently in Common!
 define "Most Recent BP Reading":
   Last("Blood Pressure Observations" O sort by Coalesce(start of "Normalize Interval"(effective), issued))
+
+define "BP Within 14 days":
+  "Most Recent BP Reading" BP
+  return Coalesce(start of "Normalize Interval"(BP.effective), BP.issued) + 14 days >= Today()
+
+define "HTN Crisis":
+  "BP Within 14 days" and "HTN Crisis BP"({ "Most Recent BP Reading" }) is not null
 
 define "Blood Pressure Observations for Last 2 Years":
   "Blood Pressure Observations" BP where "Normalize Interval"(BP.effective) starts 24 months or less before Today()
@@ -408,16 +414,16 @@ define "BP from Most Recent Goal":
       diastolic: singleton from (BPGoal.target Diastolic where Diastolic.measure in "Diastolic Blood Pressure").detail as Quantity
     }
 
+define "Above Goal Average Last 2 Years":
+  "Average All BP Last 2 Years".systolic > "BP from Most Recent Goal".systolic or
+  "Average All BP Last 2 Years".diastolic > "BP from Most Recent Goal".diastolic
+
+define "Above Goal Average Most Recent":
+  "Average Most Recent BP Set".systolic > "BP from Most Recent Goal".systolic or
+  "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
+
 define "BP Average is Above Goal":
-  AllTrue (
-    from
-      (
-        { "Average All BP Last 2 Years" }
-        union { "Average Most Recent BP Set" }
-      ) BPAverages,
-      "BP from Most Recent Goal" BPGoal
-      return (
-        BPAverages.systolic > BPGoal.systolic
-          and BPAverages.diastolic > BPGoal.diastolic
-      )
-  )
+  "Above Goal Average Last 2 Years" and "Above Goal Average Most Recent"
+
+define "BP Average Potentially Above Goal":
+  "Above Goal Average Last 2 Years" or "Above Goal Average Most Recent"
