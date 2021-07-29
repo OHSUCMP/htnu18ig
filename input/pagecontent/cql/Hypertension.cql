@@ -35,7 +35,7 @@ define "Patient Name":
 
 /* Recommendation Criteria - Hypertension  */
 define "Meets Inclusion Criteria":
- Common."Patient Has Above Normal BP"
+ true
 
 define "Meets Exclusion Criteria":
   Common."Patient Under Age 18"

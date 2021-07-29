@@ -26,8 +26,7 @@ define "Patient Name":
 
 /* Recommendation Criteria - Monitoring Hypertension  */
 define "Meets Inclusion Criteria":
- (Common."Patient Has Above Normal BP" or Common."Patient has a BP Goal")
-    and exists Common."Condition Indicating Preexisting Hypertension"
+ exists Common."Condition Indicating Preexisting Hypertension"
 
 define "Meets Exclusion Criteria":
   Common."Patient Under Age 18"
@@ -111,9 +110,7 @@ define "No Entry into Population":
     and not "Meets Exclusion Criteria"
 
 define "No Entry Title":
-  if not Common."Patient Has Above Normal BP" then
-   'Patient did not have above normal blood pressure.'
-  else 'Patient did not have a preexisting hypertensive condition.'
+  'Patient did not have a preexisting hypertensive condition.'
 
 define "No Entry Description":
   'No Further Action Required.'
