@@ -656,7 +656,7 @@
                 {
                   "coding": [
                     {
-                      "system": "https://coach-dev.ohsu.edu/",
+                      "system": "https://coach.ohsu.edu/",
                       "code": "smoking-cessation",
                       "display": "Smoking Cessation"
                     }

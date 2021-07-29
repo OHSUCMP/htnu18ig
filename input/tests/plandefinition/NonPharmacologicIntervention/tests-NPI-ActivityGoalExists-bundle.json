@@ -527,7 +527,7 @@
       },
       "category": [ {
         "coding": [ {
-          "system": "https://coach-dev.ohsu.edu/",
+          "system": "https://coach.ohsu.edu/",
           "code": "physical-activity",
           "display": "Physical Activity"
         } ],
