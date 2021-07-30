@@ -73,18 +73,15 @@ define "Patient Has Behavioral Goals":
   exists "Physical Activity Goals" or
   exists "Nutrition Goals"
 
-define "BP Goal Met":
-  Common."Patient has a BP Goal" and Common."Has BP Set" and not Common."BP Average Potentially Above Goal"
-
 define "Enter Workflow":
-  "In Population" and ("Patient Has Behavioral Goals" or (Common."Patient has a BP Goal" and not "BP Goal Met"))
+  "In Population" and ("Patient Has Behavioral Goals" or (Common."Patient has a BP Goal" and not Common."BP Goal Met"))
 
 define "Goal Interval":
   Interval[(Common."Most Recently Established Blood Pressure Goal".start as date),
     (Common."Most Recently Established Blood Pressure Goal".start as date) + 3 months]
 
 define "Patient on Track":
-  not Common."Patient has a BP Goal" or not Common."Has BP Set" or "BP Goal Met" or end of "Goal Interval" > Today()
+  not Common."Patient has a BP Goal" or not Common."Has BP Set" or Common."BP Goal Met" or end of "Goal Interval" > Today()
 
 /***** PATIENT ON TRACK CARD OUTPUT *****/
 
@@ -430,32 +427,3 @@ define "TEST Get Average All BP Last 2 Years":
 
 define "TEST Get Average Most Recent BP Set":
   Common."Avg BP"(Common."Most Recent BP Set")
-
-define "TEST BP Average Above Goal":
-  Common."BP Average is Above Goal"
-
-define "TEST Systolic Above Goal":
-  AllTrue (
-    from
-      (
-        { Common."Average All BP Last 2 Years" }
-        union { Common."Average Most Recent BP Set" }
-      ) BPAverages,
-      Common."BP from Most Recent Goal" BPGoal
-      return (
-        BPAverages.systolic > BPGoal.systolic
-      )
-  )
-
-define "TEST Diastolic Above Goal":
-  AllTrue (
-    from
-      (
-        { Common."Average All BP Last 2 Years" }
-        union { Common."Average Most Recent BP Set" }
-      ) BPAverages,
-      Common."BP from Most Recent Goal" BPGoal
-      return (
-        BPAverages.diastolic > BPGoal.diastolic
-      )
-  )
