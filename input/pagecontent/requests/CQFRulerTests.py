@@ -8,13 +8,13 @@ import re
 import requests
 
 cqf_ruler_url = "http://localhost:8080/cqf-ruler-r4/cds-services/plandefinition-"
-only_folders = ["Hypertension", "Monitoring", "NonPharmacologicIntervention"]
-only_files = []
+only_folders = ["NonPharmacologicIntervention"]
+only_files = ["cqfruler-NPI-SetBPGoalMissingGoal.json", "cqfruler-NPI-DietaryReminder.json"]
 
 for folder in os.listdir("."):
     if os.path.isdir(folder):
         if not only_folders or folder in only_folders:
-            for filename in os.listdir(folder):
+            for filename in sorted(os.listdir(folder)):
                 if not only_files or filename in only_files:
                     print(filename)
                     path = os.path.join(folder, filename)

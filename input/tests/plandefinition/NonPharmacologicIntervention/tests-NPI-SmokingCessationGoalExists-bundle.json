@@ -517,7 +517,7 @@
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
       "startDate": "2021-07-12",
-      "statusDate": "2021-07-15"
+      "statusDate": "2021-07-29"
     },
     "request": {
       "method": "PUT",

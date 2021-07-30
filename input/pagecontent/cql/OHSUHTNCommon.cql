@@ -343,9 +343,6 @@ define "Most Recent BP Set":
       ), 6)
   else null
 
-define "Patient Has Above Normal BP":
-  "Elevated or Above BP"({ "Most Recent BP Reading" }) is not null
-
 define "Average All BP Last 2 Years":
   "Avg BP"("Blood Pressure Observations for Last 2 Years")
 
@@ -367,7 +364,7 @@ define "Patient Has Potential HTN Stage 2 BP":
   )
 
 // Is SBP Coeff of Var > 11 for all BPs and no ABPM?
-define "Confirm need for Patient Ambulatory BP Monitoring":
+define "BP Highly Variable":
   if "Has BP Set" then
     (
       "Systolic BP Variability"("Blood Pressure Observations for Last 2 Years").value > 11
@@ -414,16 +411,10 @@ define "BP from Most Recent Goal":
       diastolic: singleton from (BPGoal.target Diastolic where Diastolic.measure in "Diastolic Blood Pressure").detail as Quantity
     }
 
-define "Above Goal Average Last 2 Years":
-  "Average All BP Last 2 Years".systolic > "BP from Most Recent Goal".systolic or
-  "Average All BP Last 2 Years".diastolic > "BP from Most Recent Goal".diastolic
-
 define "Above Goal Average Most Recent":
   "Average Most Recent BP Set".systolic > "BP from Most Recent Goal".systolic or
   "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
 
-define "BP Average is Above Goal":
-  "Above Goal Average Last 2 Years" and "Above Goal Average Most Recent"
-
-define "BP Average Potentially Above Goal":
-  "Above Goal Average Last 2 Years" or "Above Goal Average Most Recent"
+define "BP Goal Met":
+  "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
+  and not "BP Highly Variable"

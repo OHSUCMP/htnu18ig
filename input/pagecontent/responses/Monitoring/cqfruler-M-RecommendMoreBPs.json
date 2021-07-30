@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-      "summary": "Consider obtaining additional blood pressure measurements",
+      "summary": "13. Consider obtaining additional blood pressure measurements",
       "indicator": "info",
       "detail": "{{#patient}}Your recent blood pressure is above your goal.  We do not have enough blood pressures to provide a full picture of your blood pressure. Taking a full set of blood pressures can help.  We consider a full set to be ~4 in-office measurements, ~6 home measurements, or 12 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}|[ { \"id\": \"enter-bp-suggestion\", \"label\": \"Enter Blood Pressure\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Click here to go to the Home Blood Pressure entry page\", \"url\":\"/bp-readings\"}] } ]|at-most-one|[{\"label\":\"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines\", \"url\":\"https://pubmed.ncbi.nlm.nih.gov/32773652/\"}]",
       "source": {}
