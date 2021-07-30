@@ -562,7 +562,7 @@
             "resource": {
               "resourceType": "Goal",
               "id": "goal-NPI-DietaryCounseling-1",
-              "lifecycleStatus": "planned",
+              "lifecycleStatus": "active",
               "achievementStatus": {
                 "coding": [
                   {

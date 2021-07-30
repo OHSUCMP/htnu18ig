@@ -6,7 +6,7 @@
       "text": "There has been no change toward patient goal."
     }
   ],
-  "lifecycleStatus": "planned",
+  "lifecycleStatus": "active",
   "achievementStatus": {
     "coding": [
       {

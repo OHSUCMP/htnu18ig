@@ -704,7 +704,7 @@
             "resource": {
               "resourceType": "Goal",
               "id": "goal-NPI-AllCounselingRecommended-1",
-              "lifecycleStatus": "planned",
+              "lifecycleStatus": "active",
               "achievementStatus": {
                 "coding": [
                   {

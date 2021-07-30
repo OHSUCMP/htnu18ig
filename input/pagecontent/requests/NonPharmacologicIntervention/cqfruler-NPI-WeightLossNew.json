@@ -610,7 +610,7 @@
             "resource": {
               "resourceType": "Goal",
               "id": "goal-NPI-WeightLossNew-1",
-              "lifecycleStatus": "planned",
+              "lifecycleStatus": "active",
               "achievementStatus": {
                 "coding": [
                   {

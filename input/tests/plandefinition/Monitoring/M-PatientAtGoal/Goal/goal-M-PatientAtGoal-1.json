@@ -1,7 +1,7 @@
 {
   "resourceType": "Goal",
   "id": "goal-M-PatientAtGoal-1",
-  "lifecycleStatus": "planned",
+  "lifecycleStatus": "active",
   "achievementStatus": {
     "coding": [
       {

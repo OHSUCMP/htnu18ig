@@ -566,7 +566,7 @@
     "resource": {
       "resourceType": "Goal",
       "id": "goal-M-NotAtGoalAboveGoal-1",
-      "lifecycleStatus": "planned",
+      "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",

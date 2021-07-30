@@ -574,7 +574,7 @@
     "resource": {
       "resourceType": "Goal",
       "id": "goal-NPI-PharmacologicInterventions-1",
-      "lifecycleStatus": "planned",
+      "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
