@@ -7,9 +7,9 @@
       "source": {}
     },
     {
-      "summary": "Physical Activity",
+      "summary": "Update your Physical Activity Goals",
       "indicator": "info",
-      "detail": "{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.\u003cbr\u003eGoal: Train for a 5K Status: in-progress{{/patient}}||at-most-one|",
+      "detail": "{{#patient}}You have set some physical activity goals. Tell us how you\u0027re doing.{{/patient}}|[{\"id\": \"goal-NPI-ActivityGoalExists-1\", \"type\": \"update-goal\", \"references\": {\"system\":\"https//coach.ohsu.edu\", \"code\":\"physical-activity\"}, \"label\": \"Update your goal.\"}]|at-most-one|",
       "source": {}
     },
     {

@@ -9,7 +9,7 @@ import requests
 
 cqf_ruler_url = "http://localhost:8080/cqf-ruler-r4/cds-services/plandefinition-"
 only_folders = ["NonPharmacologicIntervention"]
-only_files = ["cqfruler-NPI-SetBPGoalMissingGoal.json", "cqfruler-NPI-DietaryReminder.json"]
+only_files = []
 
 for folder in os.listdir("."):
     if os.path.isdir(folder):

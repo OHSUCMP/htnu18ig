@@ -2,7 +2,7 @@
 import os
 import re
 
-old_bp = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-DietaryCounseling/Observation/observation-NPI-DietaryCounseling-1.json"
+old_bp = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Hypertension/H-HTNStage2LastBPSetAmbulatory/Observation/observation-H-HTNStage2LastBPSetAmbulatory-5.json"
 new_bp = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-DietaryReminder/Observation/observation-NPI-DietaryReminder-2.json"
 
 new_bp = input("Path to new BP observation\n")
@@ -23,9 +23,9 @@ with open(old_bp, 'r') as f:
     whole = f.read()
     new_file_content = whole.replace(old_observation_id, new_observation_id)
     new_file_content = new_file_content.replace(old_ident, new_ident)
-    new_file_content = new_file_content.replace('2021-01-26', effectiveDate)
-    new_file_content = new_file_content.replace('132.65', sbp)
-    new_file_content = new_file_content.replace('83.52', dbp)
+    new_file_content = new_file_content.replace('2021-01-06', effectiveDate)
+    new_file_content = new_file_content.replace('165.50', sbp)
+    new_file_content = new_file_content.replace('89.96', dbp)
 
     with open(new_bp, 'w') as nf:
         nf.write(new_file_content)
