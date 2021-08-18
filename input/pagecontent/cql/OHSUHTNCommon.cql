@@ -284,6 +284,9 @@ define "Blood Pressure Observations for Last 2 Years":
   "Blood Pressure Observations" BP where "Normalize Interval"(BP.effective) starts 24 months or less before Today()
     sort by Coalesce(start of "Normalize Interval"(effective), issued)
 
+define "Blood Pressure Observations for Last 2 Years Descending":
+  "Blood Pressure Observations for Last 2 Years" O sort by Coalesce(start of "Normalize Interval"(effective), issued) desc
+
 // NOTE: Office-based visit Encounter valueset?
 define "Patient Ambulatory Encounters":
   ["Encounter"] PE
@@ -323,12 +326,32 @@ define "Ambulatory Blood Pressure Monitoring Observations":
     )
 
 define "Has BP Set":
-  if exists "Ambulatory Blood Pressure Monitoring Procedures" then true
-  else if Count("Office Blood Pressure Observations") >= 4 then true
-  else if Count("Home Blood Pressure Observations") >= 6 then true
-  else false
+    calculateScore("Blood Pressure Observations for Last 2 Years") >= 4
+
+define function score(observation Observation):
+  if observation in "Ambulatory Blood Pressure Monitoring Observations" then 0.333
+  else if observation in "Home Blood Pressure Observations" then 0.667
+  else 1
+
+define function calculateScore(list List<FHIR.Observation>):
+  Sum(list O
+    return all score(O)
+  )
 
 define "Most Recent BP Set":
+  if not "Has BP Set" then null
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 4)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 4)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 5)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 5)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 6)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 6)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 7)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 7)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 8)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 8)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 9)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 9)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 10)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 10)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 11)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 11)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 12)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 12)
+  else null
+
+define "OLD Most Recent BP Set":
   if exists "Ambulatory Blood Pressure Monitoring Procedures" then
     "Ambulatory Blood Pressure Monitoring Observations"
   else if Count("Office Blood Pressure Observations") >= 4 then

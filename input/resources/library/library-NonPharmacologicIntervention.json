@@ -278,6 +278,12 @@
     "max": "1",
     "type": "boolean"
   }, {
+    "name": "Blood Pressure Observations for Last 2 Years",
+    "use": "out",
+    "min": 0,
+    "max": "*",
+    "type": "Observation"
+  }, {
     "name": "Above Goal Average Most Recent",
     "use": "out",
     "min": 0,
@@ -691,12 +697,6 @@
     "min": 0,
     "max": "1",
     "type": "Any"
-  }, {
-    "name": "Blood Pressure Observations for Last 2 Years",
-    "use": "out",
-    "min": 0,
-    "max": "*",
-    "type": "Observation"
   }, {
     "name": "TEST Get Average Most Recent BP Set",
     "use": "out",

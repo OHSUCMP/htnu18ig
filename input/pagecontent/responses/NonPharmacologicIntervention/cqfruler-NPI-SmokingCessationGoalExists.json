@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Smoking Cessation",
+      "summary": "Update your Smoking Cessation Goals",
       "indicator": "info",
-      "detail": "{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.\u003cbr\u003eGoal: Reduce smoking by half Status: in-progress{{/patient}}||at-most-one|",
+      "detail": "{{#patient}}You have set some tobacco cessation goals. Tell us how you\u0027re doing.{{/patient}}|[{\"id\": \"goal-NPI-SmokingCessationGoalExists-1\", \"type\": \"update-goal\", \"references\": {\"system\":\"https//coach.ohsu.edu\", \"code\":\"smoking-cessation\"}, \"label\": \"Update your goal.\"}]|at-most-one|",
       "source": {}
     },
     {

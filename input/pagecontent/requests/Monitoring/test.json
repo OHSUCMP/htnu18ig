@@ -1,0 +1,13 @@
+{
+  "hookInstance": "test",
+  "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
+  "hook": "patient-view",
+  "applyCql": true,
+  "context": {
+    "userId": "Practitioner/example",
+    "patientId": "M-PatientAtGoal"
+  },
+  "prefetch": {
+    "problem-list-conditions": "Condition?patient={{context.patientId}}&category='problem-list-item'"
+  }
+}
