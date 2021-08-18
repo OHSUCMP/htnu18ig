@@ -326,7 +326,8 @@ define "Ambulatory Blood Pressure Monitoring Observations":
     )
 
 define "Has BP Set":
-    calculateScore("Blood Pressure Observations for Last 2 Years") >= 4
+    if not exists "Blood Pressure Observations for Last 2 Years" then false
+    else calculateScore("Blood Pressure Observations for Last 2 Years") >= 4
 
 define function score(observation Observation):
   if observation in "Ambulatory Blood Pressure Monitoring Observations" then 0.333

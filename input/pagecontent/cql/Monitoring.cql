@@ -149,6 +149,9 @@ define "Test Get Encounter BP Observations":
         "Encounter ID": BPEncounter.id
         }
 
+define "Test Get Has BP Set":
+  Common."Has BP Set"
+
 define "Test Get Most Recent BP Set":
   Common."Most Recent BP Set" BPSet
     return Tuple {
