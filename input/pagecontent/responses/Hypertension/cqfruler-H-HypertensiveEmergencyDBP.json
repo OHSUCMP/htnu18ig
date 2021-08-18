@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Warning: Potential hypertensive emergency. Consult care team immediately.",
-      "indicator": "critical",
-      "detail": "{{#patient}}Your blood pressure is high (\u003e180 systolic or \u003e120 diastolic).  Contact your care team immediately, OR, if you do not feel well, seek care.  {{/patient}}{{#careTeam}}Patient\u0027s blood pressure is \u003e 180 systolic or \u003e 120 diastolic. Consider immediate evaluation for treatment or escalation of care.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team BP urgent\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your high blood pressure\", \"url\":\"/contact\"}] } ]|at-most-one|",
+      "summary": "Exclusion from Hypertension Diagnosis",
+      "indicator": "info",
+      "detail": "Patient was excluded from initial diagnosis of hypertension due to a recent hypertensive emergency.",
       "source": {}
     }
   ]

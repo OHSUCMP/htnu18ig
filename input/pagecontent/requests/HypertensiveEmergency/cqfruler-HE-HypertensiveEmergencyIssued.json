@@ -72,7 +72,7 @@
               "subject": {
                 "reference": "Patient/HE-HypertensiveEmergencyIssued"
               },
-              "issued": "2021-07-28T15:16:21.123-05:00",
+              "issued": "2021-08-17T15:16:21.123-05:00",
               "component": [
                 {
                   "code": {

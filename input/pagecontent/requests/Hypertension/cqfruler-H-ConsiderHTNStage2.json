@@ -404,7 +404,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 141.4534388828563,
+                    "value": 143.4534388828563,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -486,7 +486,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 125.67001870978417,
+                    "value": 135.67001870978416,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
