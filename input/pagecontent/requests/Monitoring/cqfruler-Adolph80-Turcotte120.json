@@ -416,6 +416,18 @@
             "resource": {
               "resourceType": "Condition",
               "id": "condition-Adolph80-Turcotte120-1",
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                      "code": "problem-list-item",
+                      "display": "Problem List Item"
+                    }
+                  ],
+                  "text": "Problem List Item"
+                }
+              ],
               "clinicalStatus": {
                 "coding": [
                   {
@@ -461,6 +473,18 @@
             "resource": {
               "resourceType": "Condition",
               "id": "condition-Adolph80-Turcotte120-2",
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                      "code": "problem-list-item",
+                      "display": "Problem List Item"
+                    }
+                  ],
+                  "text": "Problem List Item"
+                }
+              ],
               "clinicalStatus": {
                 "coding": [
                   {

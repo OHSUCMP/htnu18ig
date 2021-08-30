@@ -25,6 +25,18 @@
                   "text": "Indicates Preexisting Diagnosis of Hypertension"
                 }
               ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                      "code": "problem-list-item",
+                      "display": "Problem List Item"
+                    }
+                  ],
+                  "text": "Problem List Item"
+                }
+              ],
               "clinicalStatus": {
                 "coding": [
                   {
@@ -69,6 +81,18 @@
               "note": [
                 {
                   "text": "Patient was pregnant previously (abatement present and in the past). They should not be excluded."
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                      "code": "problem-list-item",
+                      "display": "Problem List Item"
+                    }
+                  ],
+                  "text": "Problem List Item"
                 }
               ],
               "clinicalStatus": {
