@@ -43,6 +43,14 @@
           "code": "confirmed"
         } ]
       },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ],
+        "text": "Problem List Item"
+      } ],
       "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
