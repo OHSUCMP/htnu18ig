@@ -18,6 +18,14 @@
           "code": "confirmed"
         } ]
       },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ],
+        "text": "Problem List Item"
+      } ],
       "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -57,6 +65,14 @@
           "code": "confirmed"
         } ]
       },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ],
+        "text": "Problem List Item"
+      } ],
       "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -69,8 +85,8 @@
       "subject": {
         "reference": "Patient/NPI-ExcludedPregnant"
       },
-      "onsetDateTime": "2021-04-18T19:02:10-04:00",
-      "recordedDate": "2021-04-18T19:02:10-04:00",
+      "onsetDateTime": "2021-08-18T19:02:10-04:00",
+      "recordedDate": "2021-08-18T19:02:10-04:00",
       "note": [ {
         "text": "Patient is currently pregnant (no abatement)"
       } ]
@@ -95,6 +111,14 @@
           "code": "confirmed"
         } ]
       },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ],
+        "text": "Problem List Item"
+      } ],
       "code": {
         "coding": [ {
           "system": "http://snomed.info/sct",
