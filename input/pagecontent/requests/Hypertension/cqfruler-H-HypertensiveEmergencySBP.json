@@ -1,6 +1,6 @@
 {
   "hookInstance": "test",
-  "fhirServer": "http://localhost:8080/cqf-ruler-r4/fhir",
+  "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
   "hook": "patient-view",
   "applyCql": true,
   "context": {
@@ -151,7 +151,7 @@
               "subject": {
                 "reference": "Patient/H-HypertensiveEmergencySBP"
               },
-              "effectiveDateTime": "2021-08-17T15:16:21-05:00",
+              "effectiveDateTime": "2021-09-02T15:16:21-05:00",
               "component": [
                 {
                   "code": {

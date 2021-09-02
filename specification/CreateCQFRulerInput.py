@@ -18,7 +18,7 @@ for patient_folder in os.listdir(patient_directory):
         ident = patient_folder
         template = {
           "hookInstance": "test",
-          "fhirServer": "http://localhost:8080/cqf-ruler-r4/fhir",
+          "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
           "hook": "patient-view",
           "applyCql": True,
           "context": {

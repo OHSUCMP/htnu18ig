@@ -42,7 +42,7 @@
       "subject": {
         "reference": "Patient/H-HypertensiveEmergencyDBP"
       },
-      "effectiveDateTime": "2021-08-17T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-02T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading (no encounter)"
       } ],

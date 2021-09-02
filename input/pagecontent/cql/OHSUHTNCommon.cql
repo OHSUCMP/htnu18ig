@@ -8,6 +8,7 @@ codesystem "LOINC": 'http://loinc.org'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
+codesystem "ConditionCategorySystem": 'http://terminology.hl7.org/CodeSystem/condition-category'
 
 valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
@@ -39,6 +40,7 @@ code "confirmed": 'confirmed' from ConditionVerificationStatusCodes
 code "refuted": 'refuted' from ConditionVerificationStatusCodes
 code "entered-in-error": 'entered-in-error' from ConditionVerificationStatusCodes
 
+code "problem-list-item": 'problem-list-item' from "ConditionCategorySystem" display 'Problem List Item'
 
 context Patient
 
@@ -258,13 +260,17 @@ define "Patient Under Age 18":
 define "Patient Over Age 80":
   AgeInYearsAt(Today()) > 80
 
+// Grab all conditions for patients since we can't limit by code in Epic.
+define "Conditions":
+  (QualifiedCondition(["Condition": category ~ "problem-list-item"]))
+
 define "Condition Indicating End Stage Renal Disease":
-  (QualifiedCondition(["Condition": "End Stage Renal Disease"])) ESRD
-    where end of "Prevalence Period"(ESRD) >= Today()
+  "Conditions" Problem
+    where Problem.code in "End Stage Renal Disease" and end of "Prevalence Period"(Problem) >= Today()
 
 define "Condition Indicating Pregnancy":
-  (QualifiedCondition(["Condition": "Pregnancy"])) Pregnancy
-    where end of "Prevalence Period"(Pregnancy) >= Today()
+  "Conditions" Problem
+    where Problem.code in "Pregnancy" and end of "Prevalence Period"(Problem) >= Today()
 
 define "Blood Pressure Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
@@ -397,10 +403,8 @@ define "BP Highly Variable":
   else null
 
 define "Condition Indicating Preexisting Hypertension":
-  (
-    (QualifiedCondition(["Condition": "Hypertension"]))
-    union (QualifiedCondition(["Condition": "Non essential Hypertension SNOMEDCT"]))
-  ) PreexistingCondition where end of "Prevalence Period"(PreexistingCondition) >= Today()
+  "Conditions" Problem
+    where (Problem.code in "Hypertension" or Problem.code in "Non essential Hypertension SNOMEDCT") and end of "Prevalence Period"(Problem) >= Today()
 
 // Does patient have a BP goal?
 define "Qualifying Blood Pressure Goals":
