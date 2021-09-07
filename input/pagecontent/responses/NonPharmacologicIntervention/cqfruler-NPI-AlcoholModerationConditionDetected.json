@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Reminder about alcohol moderation",
+      "summary": "Discuss alcohol moderation.",
       "indicator": "info",
-      "detail": "Alcohol Reminder Rationale Placeholder|[{ \"id\": \"alcohol-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach.ohsu.edu\", \"code\":\"alcohol-moderation\"}, \"label\": \"Set an Alcohol Moderation Goal\", \"actions\": [] } ]|at-most-one|",
+      "detail": "{{#patient}}You have a hypertension (high blood pressure) diagnosis. Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}|[ { \"id\": \"alcohol-counseling\", \"label\": \"Alcohol Counseling\", \"type\": \"counseling-link\", \"references\": {\"system\":\"http://snomed.info/sct\", \"code\":\"24165007\"}, \"actions\": [ {\"label\":\"Learn more about alcohol moderation.\", \"url\":\"/alcoholModeration\"}]}, { \"id\": \"alcohol-freetext-goal\", \"type\":\"goal\", \"references\":{\"system\":\"https//coach.ohsu.edu\", \"code\":\"alcohol-moderation\"}, \"label\": \"Set an Alcohol Moderation Goal\", \"actions\": [] } ]|at-most-one|",
       "source": {}
     },
     {

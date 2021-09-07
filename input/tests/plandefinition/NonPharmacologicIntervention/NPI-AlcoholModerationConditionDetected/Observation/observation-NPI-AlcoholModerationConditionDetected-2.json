@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "observation-H-HypertensiveEmergencyDBP-2",
+  "id": "observation-NPI-AlcoholModerationConditionDetected-2",
   "status": "final",
   "note": [
     {
@@ -29,9 +29,9 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/H-HypertensiveEmergencyDBP"
+    "reference": "Patient/NPI-AlcoholModerationConditionDetected"
   },
-  "effectiveDateTime": "2021-09-02T15:16:21-05:00",
+  "effectiveDateTime": "2021-02-26T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -45,7 +45,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 121.80326035473048,
+        "value": 89.52660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -63,7 +63,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 160.26792615427489,
+        "value": 121.65064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
