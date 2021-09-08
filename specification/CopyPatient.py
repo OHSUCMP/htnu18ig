@@ -2,8 +2,8 @@
 import os
 import re
 
-old_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/HypertensiveEmergency/HE-HypertensiveEmergencyEffective"
-new_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/HypertensiveEmergency/HE-ExcludedNoHypertensiveBP"
+old_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-AlcoholModerationNewConditionDetected"
+new_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-AlcoholModerationConditionDetected"
 
 old_ident = re.search('.*/(.*)$', old_directory).group(1)
 new_ident = re.search('.*/(.*)$', new_directory).group(1)

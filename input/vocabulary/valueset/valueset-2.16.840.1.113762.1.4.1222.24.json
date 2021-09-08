@@ -1,0 +1,570 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1222.24",
+    "meta": {
+        "versionId": "6",
+        "lastUpdated": "2020-04-25T01:00:20.000-04:00"
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Value Set Contents</h3><p>This value set contains 89 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-10741871000119101\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10741871000119101\">10741871000119101</a></td><td>http://snomed.info/sct</td><td>Alcohol dependence in pregnancy (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-10755041000119100\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10755041000119100\">10755041000119100</a></td><td>http://snomed.info/sct</td><td>Alcohol dependence in childbirth (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-15167005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=15167005\">15167005</a></td><td>http://snomed.info/sct</td><td>Alcohol abuse (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-191811004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=191811004\">191811004</a></td><td>http://snomed.info/sct</td><td>Continuous chronic alcoholism (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-191812006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=191812006\">191812006</a></td><td>http://snomed.info/sct</td><td>Episodic chronic alcoholism (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-191813001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=191813001\">191813001</a></td><td>http://snomed.info/sct</td><td>Chronic alcoholism in remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-191882002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=191882002\">191882002</a></td><td>http://snomed.info/sct</td><td>Nondependent alcohol abuse, continuous (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-191883007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=191883007\">191883007</a></td><td>http://snomed.info/sct</td><td>Nondependent alcohol abuse, episodic (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-191884001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=191884001\">191884001</a></td><td>http://snomed.info/sct</td><td>Nondependent alcohol abuse in remission (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-268645007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=268645007\">268645007</a></td><td>http://snomed.info/sct</td><td>Nondependent alcohol abuse (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-284591009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=284591009\">284591009</a></td><td>http://snomed.info/sct</td><td>Persistent alcohol abuse (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-288031000119105\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=288031000119105\">288031000119105</a></td><td>http://snomed.info/sct</td><td>Alcohol induced disorder co-occurrent and due to alcohol dependence (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-66590003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=66590003\">66590003</a></td><td>http://snomed.info/sct</td><td>Alcohol dependence (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-713583005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713583005\">713583005</a></td><td>http://snomed.info/sct</td><td>Mild alcohol dependence (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-713862009\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=713862009\">713862009</a></td><td>http://snomed.info/sct</td><td>Severe alcohol dependence (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-714829008\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=714829008\">714829008</a></td><td>http://snomed.info/sct</td><td>Moderate alcohol dependence (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-7200002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7200002\">7200002</a></td><td>http://snomed.info/sct</td><td>Alcoholism (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-97571000119109\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=97571000119109\">97571000119109</a></td><td>http://snomed.info/sct</td><td>Thrombocytopenia co-occurrent and due to alcoholism (disorder)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.1\"> </a>F10.1</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.10\"> </a>F10.10</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse, uncomplicated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.11\"> </a>F10.11</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse, in remission</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.12\"> </a>F10.12</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with intoxication</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.120\"> </a>F10.120</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with intoxication, uncomplicated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.121\"> </a>F10.121</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with intoxication delirium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.129\"> </a>F10.129</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with intoxication, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.13\"> </a>F10.13</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse, with withdrawal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.130\"> </a>F10.130</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with withdrawal, uncomplicated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.131\"> </a>F10.131</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with withdrawal delirium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.132\"> </a>F10.132</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with withdrawal with perceptual disturbance</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.139\"> </a>F10.139</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with withdrawal, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.14\"> </a>F10.14</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced mood disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.15\"> </a>F10.15</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced psychotic disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.150\"> </a>F10.150</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced psychotic disorder with delusions</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.151\"> </a>F10.151</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced psychotic disorder with hallucinations</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.159\"> </a>F10.159</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced psychotic disorder, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.18\"> </a>F10.18</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with other alcohol-induced disorders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.180\"> </a>F10.180</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.181\"> </a>F10.181</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced sexual dysfunction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.182\"> </a>F10.182</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with alcohol-induced sleep disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.188\"> </a>F10.188</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with other alcohol-induced disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.19\"> </a>F10.19</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol abuse with unspecified alcohol-induced disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.2\"> </a>F10.2</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.20\"> </a>F10.20</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence, uncomplicated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.21\"> </a>F10.21</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence, in remission</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.22\"> </a>F10.22</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with intoxication</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.220\"> </a>F10.220</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with intoxication, uncomplicated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.221\"> </a>F10.221</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with intoxication delirium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.229\"> </a>F10.229</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with intoxication, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.23\"> </a>F10.23</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with withdrawal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.230\"> </a>F10.230</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with withdrawal, uncomplicated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.231\"> </a>F10.231</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with withdrawal delirium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.232\"> </a>F10.232</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with withdrawal with perceptual disturbance</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.239\"> </a>F10.239</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with withdrawal, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.24\"> </a>F10.24</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced mood disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.25\"> </a>F10.25</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced psychotic disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.250\"> </a>F10.250</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced psychotic disorder with delusions</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.251\"> </a>F10.251</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced psychotic disorder with hallucinations</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.259\"> </a>F10.259</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced psychotic disorder, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.26\"> </a>F10.26</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced persisting amnestic disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.27\"> </a>F10.27</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced persisting dementia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.28\"> </a>F10.28</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with other alcohol-induced disorders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.280\"> </a>F10.280</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.281\"> </a>F10.281</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced sexual dysfunction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.282\"> </a>F10.282</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with alcohol-induced sleep disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.288\"> </a>F10.288</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with other alcohol-induced disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.29\"> </a>F10.29</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol dependence with unspecified alcohol-induced disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.9\"> </a>F10.9</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.92\"> </a>F10.92</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with intoxication</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.920\"> </a>F10.920</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with intoxication, uncomplicated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.921\"> </a>F10.921</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with intoxication delirium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.929\"> </a>F10.929</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with intoxication, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.93\"> </a>F10.93</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with withdrawal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.930\"> </a>F10.930</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with withdrawal, uncomplicated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.931\"> </a>F10.931</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with withdrawal delirium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.932\"> </a>F10.932</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with withdrawal with perceptual disturbance</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.939\"> </a>F10.939</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with withdrawal, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.94\"> </a>F10.94</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced mood disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.95\"> </a>F10.95</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced psychotic disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.950\"> </a>F10.950</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced psychotic disorder with delusions</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.951\"> </a>F10.951</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced psychotic disorder with hallucinations</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.959\"> </a>F10.959</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced psychotic disorder, unspecified</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.96\"> </a>F10.96</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced persisting amnestic disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.97\"> </a>F10.97</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced persisting dementia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.98\"> </a>F10.98</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with other alcohol-induced disorders</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.980\"> </a>F10.980</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced anxiety disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.981\"> </a>F10.981</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced sexual dysfunction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.982\"> </a>F10.982</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with alcohol-induced sleep disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.988\"> </a>F10.988</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with other alcohol-induced disorder</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-cm-F10.99\"> </a>F10.99</td><td>http://hl7.org/fhir/sid/icd-10-cm</td><td>Alcohol use, unspecified with unspecified alcohol-induced disorder</td></tr></table></div>"
+    },
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.24",
+    "version": "20200425",
+    "name": "Alcohol Abuse Disorder",
+    "status": "active",
+    "date": "2020-04-25T01:00:20-04:00",
+    "publisher": "HL7 Patient Care WG Steward",
+    "expansion": {
+        "identifier": "urn:uuid:e3988731-5642-429f-b587-1b5df4e06089",
+        "timestamp": "2021-09-07T16:57:03-04:00",
+        "total": 89,
+        "offset": 0,
+        "parameter": [
+            {
+                "name": "count",
+                "valueInteger": 1000
+            },
+            {
+                "name": "offset",
+                "valueInteger": 0
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "10741871000119101",
+                "display": "Alcohol dependence in pregnancy (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "10755041000119100",
+                "display": "Alcohol dependence in childbirth (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "15167005",
+                "display": "Alcohol abuse (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "191811004",
+                "display": "Continuous chronic alcoholism (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "191812006",
+                "display": "Episodic chronic alcoholism (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "191813001",
+                "display": "Chronic alcoholism in remission (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "191882002",
+                "display": "Nondependent alcohol abuse, continuous (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "191883007",
+                "display": "Nondependent alcohol abuse, episodic (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "191884001",
+                "display": "Nondependent alcohol abuse in remission (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "268645007",
+                "display": "Nondependent alcohol abuse (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "284591009",
+                "display": "Persistent alcohol abuse (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "288031000119105",
+                "display": "Alcohol induced disorder co-occurrent and due to alcohol dependence (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "66590003",
+                "display": "Alcohol dependence (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "713583005",
+                "display": "Mild alcohol dependence (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "713862009",
+                "display": "Severe alcohol dependence (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "714829008",
+                "display": "Moderate alcohol dependence (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "7200002",
+                "display": "Alcoholism (disorder)"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108/version/2021-03",
+                "code": "97571000119109",
+                "display": "Thrombocytopenia co-occurrent and due to alcoholism (disorder)"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.1",
+                "display": "Alcohol abuse"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.10",
+                "display": "Alcohol abuse, uncomplicated"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.11",
+                "display": "Alcohol abuse, in remission"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.12",
+                "display": "Alcohol abuse with intoxication"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.120",
+                "display": "Alcohol abuse with intoxication, uncomplicated"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.121",
+                "display": "Alcohol abuse with intoxication delirium"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.129",
+                "display": "Alcohol abuse with intoxication, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.13",
+                "display": "Alcohol abuse, with withdrawal"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.130",
+                "display": "Alcohol abuse with withdrawal, uncomplicated"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.131",
+                "display": "Alcohol abuse with withdrawal delirium"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.132",
+                "display": "Alcohol abuse with withdrawal with perceptual disturbance"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.139",
+                "display": "Alcohol abuse with withdrawal, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.14",
+                "display": "Alcohol abuse with alcohol-induced mood disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.15",
+                "display": "Alcohol abuse with alcohol-induced psychotic disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.150",
+                "display": "Alcohol abuse with alcohol-induced psychotic disorder with delusions"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.151",
+                "display": "Alcohol abuse with alcohol-induced psychotic disorder with hallucinations"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.159",
+                "display": "Alcohol abuse with alcohol-induced psychotic disorder, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.18",
+                "display": "Alcohol abuse with other alcohol-induced disorders"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.180",
+                "display": "Alcohol abuse with alcohol-induced anxiety disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.181",
+                "display": "Alcohol abuse with alcohol-induced sexual dysfunction"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.182",
+                "display": "Alcohol abuse with alcohol-induced sleep disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.188",
+                "display": "Alcohol abuse with other alcohol-induced disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.19",
+                "display": "Alcohol abuse with unspecified alcohol-induced disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.2",
+                "display": "Alcohol dependence"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.20",
+                "display": "Alcohol dependence, uncomplicated"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.21",
+                "display": "Alcohol dependence, in remission"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.22",
+                "display": "Alcohol dependence with intoxication"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.220",
+                "display": "Alcohol dependence with intoxication, uncomplicated"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.221",
+                "display": "Alcohol dependence with intoxication delirium"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.229",
+                "display": "Alcohol dependence with intoxication, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.23",
+                "display": "Alcohol dependence with withdrawal"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.230",
+                "display": "Alcohol dependence with withdrawal, uncomplicated"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.231",
+                "display": "Alcohol dependence with withdrawal delirium"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.232",
+                "display": "Alcohol dependence with withdrawal with perceptual disturbance"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.239",
+                "display": "Alcohol dependence with withdrawal, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.24",
+                "display": "Alcohol dependence with alcohol-induced mood disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.25",
+                "display": "Alcohol dependence with alcohol-induced psychotic disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.250",
+                "display": "Alcohol dependence with alcohol-induced psychotic disorder with delusions"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.251",
+                "display": "Alcohol dependence with alcohol-induced psychotic disorder with hallucinations"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.259",
+                "display": "Alcohol dependence with alcohol-induced psychotic disorder, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.26",
+                "display": "Alcohol dependence with alcohol-induced persisting amnestic disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.27",
+                "display": "Alcohol dependence with alcohol-induced persisting dementia"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.28",
+                "display": "Alcohol dependence with other alcohol-induced disorders"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.280",
+                "display": "Alcohol dependence with alcohol-induced anxiety disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.281",
+                "display": "Alcohol dependence with alcohol-induced sexual dysfunction"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.282",
+                "display": "Alcohol dependence with alcohol-induced sleep disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.288",
+                "display": "Alcohol dependence with other alcohol-induced disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.29",
+                "display": "Alcohol dependence with unspecified alcohol-induced disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.9",
+                "display": "Alcohol use, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.92",
+                "display": "Alcohol use, unspecified with intoxication"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.920",
+                "display": "Alcohol use, unspecified with intoxication, uncomplicated"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.921",
+                "display": "Alcohol use, unspecified with intoxication delirium"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.929",
+                "display": "Alcohol use, unspecified with intoxication, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.93",
+                "display": "Alcohol use, unspecified with withdrawal"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.930",
+                "display": "Alcohol use, unspecified with withdrawal, uncomplicated"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.931",
+                "display": "Alcohol use, unspecified with withdrawal delirium"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.932",
+                "display": "Alcohol use, unspecified with withdrawal with perceptual disturbance"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.939",
+                "display": "Alcohol use, unspecified with withdrawal, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.94",
+                "display": "Alcohol use, unspecified with alcohol-induced mood disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.95",
+                "display": "Alcohol use, unspecified with alcohol-induced psychotic disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.950",
+                "display": "Alcohol use, unspecified with alcohol-induced psychotic disorder with delusions"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.951",
+                "display": "Alcohol use, unspecified with alcohol-induced psychotic disorder with hallucinations"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.959",
+                "display": "Alcohol use, unspecified with alcohol-induced psychotic disorder, unspecified"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.96",
+                "display": "Alcohol use, unspecified with alcohol-induced persisting amnestic disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.97",
+                "display": "Alcohol use, unspecified with alcohol-induced persisting dementia"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.98",
+                "display": "Alcohol use, unspecified with other alcohol-induced disorders"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.980",
+                "display": "Alcohol use, unspecified with alcohol-induced anxiety disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.981",
+                "display": "Alcohol use, unspecified with alcohol-induced sexual dysfunction"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.982",
+                "display": "Alcohol use, unspecified with alcohol-induced sleep disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.988",
+                "display": "Alcohol use, unspecified with other alcohol-induced disorder"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2022",
+                "code": "F10.99",
+                "display": "Alcohol use, unspecified with unspecified alcohol-induced disorder"
+            }
+        ]
+    }
+}

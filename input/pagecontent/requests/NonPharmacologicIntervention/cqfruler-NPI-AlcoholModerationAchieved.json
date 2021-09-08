@@ -138,7 +138,7 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Patient is male and has more than 5 drinks a day. Refer to counseling."
+                  "text": "Patient is male and has more than 3 drinks a day. Refer to counseling."
                 }
               ],
               "code": {
@@ -157,7 +157,7 @@
               "effectiveDateTime": "2021-01-27T10:00:00-07:00",
               "issued": "2021-01-27T00:00:00-07:00",
               "valueQuantity": {
-                "value": 6,
+                "value": 3.5,
                 "unit": "Drinks/Day"
               }
             },

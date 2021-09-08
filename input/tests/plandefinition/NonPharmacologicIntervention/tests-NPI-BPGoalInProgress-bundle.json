@@ -238,7 +238,7 @@
         "unit": "Drinks/Day"
       },
       "note": [ {
-        "text": "Patient is female and has more than 4 drinks a day. Refer to counseling."
+        "text": "Patient is female and has more than 2 drinks a day. Refer to counseling."
       } ]
     },
     "request": {
