@@ -68,6 +68,10 @@
     {
       "title": "Does Patient Smoke or have a Tobacco Cessation Goal?",
       "description": "Determines if a recommendation or reminder regarding Patient smoking should be presented.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
@@ -107,6 +111,10 @@
     {
       "title": "Is Patient's BMI Greater Than 25 or do they have a weight loss goal?",
       "description": "Determines if a recommendation or reminder regarding the Patient's BMI being over 25 should be presented.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
@@ -146,6 +154,10 @@
     {
       "title": "Does the Patient Drink Heavily?",
       "description": "Determines if a recommendation or reminder regarding the Patient's Alcohol Drinking should be presented.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
@@ -185,6 +197,10 @@
     {
       "title": "Does the Patient Need Nutrition Counseling?",
       "description": "Determines if a recommendation regarding the Patient's Nutrition should be established.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
@@ -224,6 +240,10 @@
     {
       "title": "Does the Patient Need Physical Activity Counseling?",
       "description": "Determines if a recommendation regarding the Patient's Physical Activity should be established.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
@@ -263,6 +283,10 @@
     {
       "title": "Is Patient on Track to Reach BP Goal?",
       "description": "Determines if a recommendation regarding tracking the Patient's BP Goal should be established.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
@@ -302,6 +326,10 @@
     {
       "title": "Exclusion from Hypertension Non-Pharmacologic Interventions",
       "description": "Determines if patient was excluded from Hypertension Non-Pharmacologic Interventions Recommendation.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",

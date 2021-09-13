@@ -68,6 +68,10 @@
     {
       "title": "Recommendation",
       "description": "Determines type of recommendation regarding status of Hypertension Diagnosis.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
@@ -107,6 +111,10 @@
     {
       "title": "Exclusion from Hypertension Diagnosis",
       "description": "Determines if patient was excluded from Hypertension Recommendation.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
