@@ -50,6 +50,10 @@
     {
       "title": "Recommendation",
       "description": "Determines recommendation for a Hypertensive Emergency.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
           "kind": "applicability",
