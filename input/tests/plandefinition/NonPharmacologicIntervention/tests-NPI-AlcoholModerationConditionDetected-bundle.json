@@ -1,9 +1,6 @@
 {
   "resourceType": "Bundle",
   "id": "tests-NPI-AlcoholModerationConditionDetected-bundle",
-<<<<<<< HEAD
-  "type": "transaction"
-=======
   "type": "transaction",
   "entry": [ {
     "resource": {
@@ -547,5 +544,4 @@
       "url": "Goal/goal-NPI-AlcoholModerationConditionDetected-1"
     }
   } ]
->>>>>>> 8bbf0339f735fa376d787808e8f60a9d0c354334
 }
