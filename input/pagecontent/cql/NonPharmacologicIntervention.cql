@@ -18,6 +18,7 @@ valueset "Tobacco Smoking Status [Current] (Social History) (LOINC)": 'http://ct
 valueset "Tobacco User": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.422'
 valueset "BMI Ratio": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.1.1490'
 valueset "Average Number of Drinks per Drinking Day": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.106.11.1030'
+valueset "Alcohol Abuse Disorder": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.24'
 
 code "PACKS A DAY": '8663-7' from "LOINC" display 'Cigarettes smoked current (pack per day) - Reported'
 
@@ -367,14 +368,19 @@ define "Most Recent Patient Drinking Observation":
   )
 
 define "Heavy Daily Drinker":
-  if Patient.gender = 'male' then 5.0
-  else 4.0
+  if Patient.gender = 'male' then 3.0
+  else 2.0
+
+define "Condition Indicating Alcohol Abuse Disorder":
+  Common."Conditions" Problem
+    where Problem.code in "Alcohol Abuse Disorder" and end of Common."Prevalence Period"(Problem) >= Today()
 
 define "Patient is a Heavy Alcoholic Drinker":
   if not "In Population" then
     false
   else
-    "Most Recent Patient Drinking Observation".value.value >= "Heavy Daily Drinker"
+    "Most Recent Patient Drinking Observation".value.value >= "Heavy Daily Drinker" or
+      exists "Condition Indicating Alcohol Abuse Disorder"
 
 define "Nutrition Goals":
   (Common.QualifiedGoal(["Goal"])) Goal

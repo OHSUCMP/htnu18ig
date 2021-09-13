@@ -5,7 +5,7 @@
   "applyCql": true,
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "NPI-ActivityCounseling"
+    "patientId": "NPI-AlcoholModerationConditionDetected"
   },
   "prefetch": {
     "item1": {
@@ -18,134 +18,56 @@
         "entry": [
           {
             "resource": {
-              "resourceType": "Encounter",
-              "id": "encounter-NPI-ActivityCounseling-2",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
+              "resourceType": "Condition",
+              "id": "condition-NPI-AlcoholModerationConditionDetected-2",
+              "note": [
+                {
+                  "text": "Indicates Alcohol Abuse Disorder"
+                }
+              ],
+              "category": [
                 {
                   "coding": [
                     {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
+                      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                      "code": "problem-list-item",
+                      "display": "Problem List Item"
                     }
                   ],
-                  "text": "General examination of patient (procedure)"
+                  "text": "Problem List Item"
                 }
               ],
+              "clinicalStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                    "code": "active"
+                  }
+                ]
+              },
+              "verificationStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                    "code": "confirmed"
+                  }
+                ]
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "15167005",
+                    "display": "Alcohol abuse (disorder)"
+                  }
+                ],
+                "text": "Alcohol abuse (disorder)"
+              },
               "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
               },
-              "period": {
-                "start": "2021-02-26T00:00:00-04:00",
-                "end": "2021-02-26T23:59:59-04:00"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Encounter",
-              "id": "encounter-NPI-ActivityCounseling-3",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
-                    }
-                  ],
-                  "text": "General examination of patient (procedure)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
-              },
-              "period": {
-                "start": "2021-03-26T00:00:00-04:00",
-                "end": "2021-03-26T23:59:59-04:00"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Encounter",
-              "id": "encounter-NPI-ActivityCounseling-4",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
-                    }
-                  ],
-                  "text": "General examination of patient (procedure)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
-              },
-              "period": {
-                "start": "2021-04-26T00:00:00-04:00",
-                "end": "2021-04-26T23:59:59-04:00"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Encounter",
-              "id": "encounter-NPI-ActivityCounseling-1",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
-                    }
-                  ],
-                  "text": "General examination of patient (procedure)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
-              },
-              "period": {
-                "start": "2021-01-26T00:00:00-04:00",
-                "end": "2021-01-26T23:59:59-04:00"
-              }
+              "onsetDateTime": "2021-01-28T15:16:21-05:00",
+              "recordedDate": "2021-01-28T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -155,7 +77,7 @@
           {
             "resource": {
               "resourceType": "Condition",
-              "id": "condition-NPI-ActivityCounseling-1",
+              "id": "condition-NPI-AlcoholModerationConditionDetected-1",
               "note": [
                 {
                   "text": "Indicates Preexisting Diagnosis of Hypertension"
@@ -200,7 +122,7 @@
                 "text": "Hypertension"
               },
               "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
               },
               "onsetDateTime": "2015-01-28T15:16:21-05:00",
               "recordedDate": "2015-01-28T15:16:21-05:00"
@@ -213,19 +135,19 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "NPI-ActivityCounseling",
+              "id": "NPI-AlcoholModerationConditionDetected",
               "active": true,
               "name": [
                 {
-                  "text": "Activity Counseling",
-                  "family": "Counseling",
+                  "text": "Alcohol Moderation - Condition Detected",
+                  "family": "Condition Detected",
                   "given": [
-                    "Activity"
+                    "AlcoholModeration"
                   ]
                 }
               ],
-              "gender": "female",
-              "birthDate": "1987-02-28"
+              "gender": "male",
+              "birthDate": "1964-07-14"
             },
             "request": {
               "method": "PUT",
@@ -235,11 +157,11 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-NPI-ActivityCounseling-1",
+              "id": "observation-NPI-AlcoholModerationConditionDetected-3",
               "status": "final",
               "note": [
                 {
-                  "text": "Office Blood Pressure Reading"
+                  "text": "Home Blood Pressure Reading (no encounter)"
                 }
               ],
               "category": [
@@ -264,209 +186,7 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-NPI-ActivityCounseling-1"
-              },
-              "effectiveDateTime": "2021-01-26T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 89.9349105113392,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 134.53332100989888,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-NPI-ActivityCounseling-5",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Patient drinks moderately."
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "version": "2.69",
-                    "code": "11287-0",
-                    "display": "Alcoholic drinks per drinking day - Reported"
-                  }
-                ]
-              },
-              "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
-              },
-              "effectiveDateTime": "2021-05-27T10:00:00-07:00",
-              "issued": "2021-05-27T00:00:00-07:00",
-              "valueQuantity": {
-                "value": 1.9,
-                "unit": "Drinks/Day"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-NPI-ActivityCounseling-4",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Office Blood Pressure Reading"
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-NPI-ActivityCounseling-4"
-              },
-              "effectiveDateTime": "2021-04-26T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 82.52660352979804,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 131.65064054117963,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-NPI-ActivityCounseling-3",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Office Blood Pressure Reading"
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-NPI-ActivityCounseling-3"
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
               },
               "effectiveDateTime": "2021-03-26T15:16:21-05:00",
               "component": [
@@ -482,7 +202,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 88.45508952819434,
+                    "value": 96.52660352979804,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -500,7 +220,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 137.67001870978416,
+                    "value": 135.65064054117963,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -516,11 +236,11 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-NPI-ActivityCounseling-2",
+              "id": "observation-NPI-AlcoholModerationConditionDetected-2",
               "status": "final",
               "note": [
                 {
-                  "text": "Office Blood Pressure Reading"
+                  "text": "Home Blood Pressure Reading (no encounter)"
                 }
               ],
               "category": [
@@ -545,10 +265,7 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
-              },
-              "encounter": {
-                "reference": "Encounter/encounter-NPI-ActivityCounseling-2"
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
               },
               "effectiveDateTime": "2021-02-26T15:16:21-05:00",
               "component": [
@@ -564,7 +281,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 83.995226014274,
+                    "value": 89.52660352979804,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -582,7 +299,323 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 131.4534388828563,
+                    "value": 121.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AlcoholModerationConditionDetected-5",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
+              },
+              "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 86.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 136.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AlcoholModerationConditionDetected-4",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
+              },
+              "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 88.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 141.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AlcoholModerationConditionDetected-6",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
+              },
+              "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 89.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 143.65064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-AlcoholModerationConditionDetected-1",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading (no encounter)"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
+              },
+              "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 88.52660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 141.65064054117963,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -598,7 +631,7 @@
           {
             "resource": {
               "resourceType": "Goal",
-              "id": "goal-NPI-ActivityCounseling-1",
+              "id": "goal-NPI-AlcoholModerationConditionDetected-1",
               "lifecycleStatus": "active",
               "achievementStatus": {
                 "coding": [
@@ -612,10 +645,10 @@
               },
               "startDate": "2021-07-12",
               "description": {
-                "text": "Goal of 130/80"
+                "text": "Goal of 135/85"
               },
               "subject": {
-                "reference": "Patient/NPI-ActivityCounseling"
+                "reference": "Patient/NPI-AlcoholModerationConditionDetected"
               },
               "target": [
                 {
@@ -630,7 +663,7 @@
                     ]
                   },
                   "detailQuantity": {
-                    "value": 130,
+                    "value": 135,
                     "unit": "mmHg",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -648,7 +681,7 @@
                     ]
                   },
                   "detailQuantity": {
-                    "value": 80,
+                    "value": 85,
                     "unit": "mmHg",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"

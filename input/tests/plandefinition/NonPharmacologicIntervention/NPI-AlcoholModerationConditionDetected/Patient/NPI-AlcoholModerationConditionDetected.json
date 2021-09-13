@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-AlcoholModerationConditionDetected",
+  "active": true,
+  "name": [
+    {
+      "text": "Alcohol Moderation - Condition Detected",
+      "family": "Condition Detected",
+      "given": [
+        "AlcoholModeration"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1964-07-14"
+}
