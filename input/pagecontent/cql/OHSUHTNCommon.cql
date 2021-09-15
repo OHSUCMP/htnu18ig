@@ -41,6 +41,7 @@ code "refuted": 'refuted' from ConditionVerificationStatusCodes
 code "entered-in-error": 'entered-in-error' from ConditionVerificationStatusCodes
 
 code "problem-list-item": 'problem-list-item' from "ConditionCategorySystem" display 'Problem List Item'
+code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategorySystem" display 'Encounter Diagnosis'
 
 context Patient
 
@@ -262,7 +263,8 @@ define "Patient Over Age 80":
 
 // Grab all conditions for patients since we can't limit by code in Epic.
 define "Conditions":
-  (QualifiedCondition(["Condition": category ~ "problem-list-item"]))
+  (QualifiedCondition(["Condition": category ~ "problem-list-item"])) union
+  (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
 
 define "Condition Indicating End Stage Renal Disease":
   "Conditions" Problem
