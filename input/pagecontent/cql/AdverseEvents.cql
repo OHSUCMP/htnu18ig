@@ -11,6 +11,12 @@ code "resolved": 'resolved' from "AdverseEventOutcomeCodeSystem" display 'Resolv
 
 context Patient
 
+define function "AE Suggestion String"(aes List<FHIR.AdverseEvent>):
+  aes AE return '{"id": "' + AE.id + '", "type": "adverse-event", "label": "' + First(AE.event.coding).display + '"}'
+
+define function "Contact Suggestion String"(aes List<FHIR.AdverseEvent>):
+  aes AE return First(AE.event.coding).display
+
 define "Untreated Recommendation":
   'Consider adjusting treatment.'
 
@@ -21,7 +27,9 @@ define "Untreated Rationale":
   'You recently had a condition recorded that may be an adverse event from high blood pressure treatment. Contacting your care team will help them resolve it.'
 
 define "Untreated Suggestions":
-  '[ { "id": "contact-suggestion", "label": "Contact care team Adverse Event", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your adverse reaction", "url":"/contact"}] } ]'
+  '[' +
+  Combine("AE Suggestion String"("Untreated Adverse Events"), ',') +
+  ']'
 
 define "Indicator Status":
   'warning'
@@ -42,7 +50,7 @@ define "Treated Rationale":
   'You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but if it recurs or doesn\'t get better, please contact your care team.'
 
 define "Treated Suggestions":
-  '[ { "id": "contact-suggestion", "label": "Contact care team Adverse Event", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your adverse reaction", "url":"/contact"}] } ]'
+  '[ { "id": "contact-suggestion", "label": "Contact care team Adverse Event", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your condition(s): ' + Combine("Contact Suggestion String"("Treated Adverse Events"), ', ') + '" , "url":"/contact"}] } ]'
 
 define "Adverse Events":
   [AdverseEvent]
