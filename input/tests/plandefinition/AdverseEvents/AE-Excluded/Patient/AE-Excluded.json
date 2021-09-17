@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "AE-Excluded",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded Adverse Event",
+      "family": "Adverse Event",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-02-12"
+}

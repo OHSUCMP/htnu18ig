@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "AE-UntreatedAdverseEvent",
+  "active": true,
+  "name": [
+    {
+      "text": "Untreated Adverse Event",
+      "family": "Adverse Event",
+      "given": [
+        "Untreated"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1969-01-14"
+}

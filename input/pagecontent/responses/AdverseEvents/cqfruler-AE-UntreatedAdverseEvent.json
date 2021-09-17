@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Consider adjusting treatment.",
+      "indicator": "warning",
+      "detail": "You recently had a condition recorded that may be an adverse event from high blood pressure treatment. Contacting your care team will help them resolve it.|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team Adverse Event\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your adverse reaction\", \"url\":\"/contact\"}] } ]|at-most-one|",
+      "source": {}
+    }
+  ]
+}

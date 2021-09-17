@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "AE-TreatedAdverseEvent",
+  "active": true,
+  "name": [
+    {
+      "text": "Treated Adverse Event",
+      "family": "Adverse Event",
+      "given": [
+        "Treated"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1987-12-24"
+}
