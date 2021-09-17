@@ -1,0 +1,52 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-AE-TreatedAndUntreated-2",
+  "note": [
+    {
+      "text": "Indicates An Adverse Reaction that Could be Related to Medications"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ],
+      "text": "Encounter Diagnosis"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "N17.0",
+        "display": "Acute kidney problem"
+      }
+    ],
+    "text": "Acute kidney problem"
+  },
+  "subject": {
+    "reference": "Patient/AE-TreatedAndUntreated"
+  },
+  "onsetDateTime": "2021-09-15T15:16:21-05:00",
+  "recordedDate": "2021-09-15T15:16:21-05:00"
+}

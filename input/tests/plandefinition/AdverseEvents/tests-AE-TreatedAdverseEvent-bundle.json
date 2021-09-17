@@ -1,11 +1,11 @@
 {
   "resourceType": "Bundle",
-  "id": "tests-NPI-BPGoalInProgress-bundle",
+  "id": "tests-AE-TreatedAdverseEvent-bundle",
   "type": "transaction",
   "entry": [ {
     "resource": {
       "resourceType": "Procedure",
-      "id": "procedure-NPI-BPGoalInProgress-2",
+      "id": "procedure-AE-TreatedAdverseEvent-2",
       "status": "completed",
       "code": {
         "coding": [ {
@@ -16,7 +16,7 @@
         "text": "Alcoholism counseling (procedure)"
       },
       "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
+        "reference": "Patient/AE-TreatedAdverseEvent"
       },
       "performedDateTime": "2021-05-30T11:00:00-06:00",
       "note": [ {
@@ -25,12 +25,12 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Procedure/procedure-NPI-BPGoalInProgress-2"
+      "url": "Procedure/procedure-AE-TreatedAdverseEvent-2"
     }
   }, {
     "resource": {
       "resourceType": "Condition",
-      "id": "condition-NPI-BPGoalInProgress-1",
+      "id": "condition-AE-TreatedAdverseEvent-1",
       "clinicalStatus": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -60,7 +60,7 @@
         "text": "Hypertension"
       },
       "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
+        "reference": "Patient/AE-TreatedAdverseEvent"
       },
       "onsetDateTime": "2015-01-28T15:16:21-05:00",
       "recordedDate": "2015-01-28T15:16:21-05:00",
@@ -70,29 +70,183 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-NPI-BPGoalInProgress-1"
+      "url": "Condition/condition-AE-TreatedAdverseEvent-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-AE-TreatedAdverseEvent-2",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ],
+        "text": "Encounter Diagnosis"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "N17.0",
+          "display": "Acute kidney problem"
+        } ],
+        "text": "Acute kidney problem"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "onsetDateTime": "2021-09-15T15:16:21-05:00",
+      "recordedDate": "2021-09-15T15:16:21-05:00",
+      "note": [ {
+        "text": "Indicates An Adverse Reaction that Could be Related to Medications"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-AE-TreatedAdverseEvent-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-AE-TreatedAdverseEvent-3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ],
+        "text": "Encounter Diagnosis"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "32834005",
+          "display": "Brief loss of consciousness"
+        } ],
+        "text": "Brief loss of consciousness"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "onsetDateTime": "2021-09-17T15:16:21-05:00",
+      "recordedDate": "2021-09-17T15:16:21-05:00",
+      "note": [ {
+        "text": "Indicates An Adverse Reaction that Could be Related to Medications"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-AE-TreatedAdverseEvent-3"
     }
   }, {
     "resource": {
       "resourceType": "Patient",
-      "id": "NPI-BPGoalInProgress",
+      "id": "AE-TreatedAdverseEvent",
       "active": true,
       "name": [ {
-        "text": "BP Goal In Progress",
-        "family": "In Progress",
-        "given": [ "BPGoal" ]
+        "text": "Treated Adverse Event",
+        "family": "Adverse Event",
+        "given": [ "Treated" ]
       } ],
-      "gender": "male",
-      "birthDate": "1979-08-26"
+      "gender": "female",
+      "birthDate": "1987-12-24"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/NPI-BPGoalInProgress"
+      "url": "Patient/AE-TreatedAdverseEvent"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AdverseEvent",
+      "id": "adverseevent-AE-TreatedAdverseEvent-1",
+      "event": {
+        "coding": [ {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "N17.0",
+          "display": "Acute kidney problem"
+        } ],
+        "text": "Acute kidney problem"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "date": "2021-09-15T07:25:02-07:00",
+      "detected": "2021-09-15T07:25:02-07:00",
+      "recordedDate": "2021-09-15T13:16:21-07:00",
+      "resultingCondition": [ {
+        "reference": "Condition/condition-AE-TreatedAdverseEvent-2"
+      } ],
+      "outcome": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+          "code": "resolved"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "AdverseEvent/adverseevent-AE-TreatedAdverseEvent-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AdverseEvent",
+      "id": "adverseevent-AE-TreatedAdverseEvent-2",
+      "event": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "32834005",
+          "display": "Brief loss of consciousness"
+        } ],
+        "text": "Brief loss of consciousness"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "date": "2021-09-17T07:25:02-07:00",
+      "detected": "2021-09-17T07:25:02-07:00",
+      "recordedDate": "2021-09-17T13:16:21-07:00",
+      "resultingCondition": [ {
+        "reference": "Condition/condition-AE-TreatedAdverseEvent-3"
+      } ],
+      "outcome": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+          "code": "resolved"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "AdverseEvent/adverseevent-AE-TreatedAdverseEvent-2"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-BPGoalInProgress-7",
+      "id": "observation-AE-TreatedAdverseEvent-4",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -110,352 +264,7 @@
         "text": "Blood Pressure"
       },
       "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
-      },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 88.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 144.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-BPGoalInProgress-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-BPGoalInProgress-6",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
-      },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 91.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 137.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-BPGoalInProgress-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-BPGoalInProgress-1",
-      "status": "final",
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "version": "2.69",
-          "code": "11287-0",
-          "display": "Alcoholic drinks per drinking day - Reported"
-        } ]
-      },
-      "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
-      },
-      "effectiveDateTime": "2021-05-27T10:00:00-07:00",
-      "issued": "2021-05-27T00:00:00-07:00",
-      "valueQuantity": {
-        "value": 4.1,
-        "unit": "Drinks/Day"
-      },
-      "note": [ {
-        "text": "Patient is male and has more than 3 drinks a day. Refer to counseling."
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-BPGoalInProgress-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-BPGoalInProgress-3",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
-      },
-      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 88.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 140.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-BPGoalInProgress-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-BPGoalInProgress-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
-      },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 98.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 150.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-BPGoalInProgress-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-BPGoalInProgress-5",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
-      },
-      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 87.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 136.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-BPGoalInProgress-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-BPGoalInProgress-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
+        "reference": "Patient/AE-TreatedAdverseEvent"
       },
       "effectiveDateTime": "2021-03-26T15:16:21-05:00",
       "note": [ {
@@ -495,12 +304,357 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-BPGoalInProgress-4"
+      "url": "Observation/observation-AE-TreatedAdverseEvent-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-AE-TreatedAdverseEvent-5",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading (no encounter)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 87.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 136.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-AE-TreatedAdverseEvent-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-AE-TreatedAdverseEvent-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading (no encounter)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 98.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 150.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-AE-TreatedAdverseEvent-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-AE-TreatedAdverseEvent-3",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading (no encounter)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 140.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-AE-TreatedAdverseEvent-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-AE-TreatedAdverseEvent-1",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "11287-0",
+          "display": "Alcoholic drinks per drinking day - Reported"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "effectiveDateTime": "2021-05-27T10:00:00-07:00",
+      "issued": "2021-05-27T00:00:00-07:00",
+      "valueQuantity": {
+        "value": 4.1,
+        "unit": "Drinks/Day"
+      },
+      "note": [ {
+        "text": "Patient is female and has more than 2 drinks a day. Refer to counseling."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-AE-TreatedAdverseEvent-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-AE-TreatedAdverseEvent-6",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading (no encounter)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 137.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-AE-TreatedAdverseEvent-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-AE-TreatedAdverseEvent-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/AE-TreatedAdverseEvent"
+      },
+      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading (no encounter)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 144.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-AE-TreatedAdverseEvent-7"
     }
   }, {
     "resource": {
       "resourceType": "Goal",
-      "id": "goal-NPI-BPGoalInProgress-1",
+      "id": "goal-AE-TreatedAdverseEvent-1",
       "lifecycleStatus": "active",
       "achievementStatus": {
         "coding": [ {
@@ -514,7 +668,7 @@
         "text": "Goal of 135/85"
       },
       "subject": {
-        "reference": "Patient/NPI-BPGoalInProgress"
+        "reference": "Patient/AE-TreatedAdverseEvent"
       },
       "startDate": "2021-07-12",
       "target": [ {
@@ -551,7 +705,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-NPI-BPGoalInProgress-1"
+      "url": "Goal/goal-AE-TreatedAdverseEvent-1"
     }
   } ]
 }
