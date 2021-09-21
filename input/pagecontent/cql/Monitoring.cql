@@ -138,17 +138,6 @@ define "Test Get All BP Observation Resources":
       "Observation ID": BP.id
       }
 
-define "Test Get Encounter BP Observations":
-  from
-    Common."Blood Pressure Observations" BPObservation,
-      Common."Patient Ambulatory Encounters" BPEncounter
-        where BPEncounter.class ~ Common."ambulatory"
-          and Common."Normalize Interval"(BPObservation.effective) during BPEncounter.period
-      return Tuple {
-        "Observation ID": BPObservation.id,
-        "Encounter ID": BPEncounter.id
-        }
-
 define "Test Get Has BP Set":
   Common."Has BP Set"
 

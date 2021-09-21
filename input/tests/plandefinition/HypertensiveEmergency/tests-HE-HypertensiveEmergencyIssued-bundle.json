@@ -23,6 +23,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-HE-HypertensiveEmergencyIssued-2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -42,9 +49,9 @@
       "subject": {
         "reference": "Patient/HE-HypertensiveEmergencyIssued"
       },
-      "issued": "2021-09-02T15:16:21.123-05:00",
+      "issued": "2021-09-20T15:16:21.123-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -86,6 +93,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-HE-HypertensiveEmergencyIssued-1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -107,7 +121,7 @@
       },
       "effectiveDateTime": "2021-02-03T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
