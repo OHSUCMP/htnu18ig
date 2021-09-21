@@ -69,6 +69,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-H-ExcludedPregnant-2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -90,7 +97,7 @@
       },
       "effectiveDateTime": "2019-02-06T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no matching encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -132,6 +139,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-H-ExcludedPregnant-1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -153,7 +167,7 @@
       },
       "effectiveDateTime": "2016-02-03T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no matching encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {

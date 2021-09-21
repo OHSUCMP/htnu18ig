@@ -68,6 +68,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-NPI-AlcoholModerationNew-3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -89,7 +96,7 @@
       },
       "effectiveDateTime": "2021-03-26T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -131,6 +138,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-NPI-AlcoholModerationNew-2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -152,7 +166,7 @@
       },
       "effectiveDateTime": "2021-02-26T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -194,6 +208,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-NPI-AlcoholModerationNew-5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -215,7 +236,7 @@
       },
       "effectiveDateTime": "2021-05-26T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -257,6 +278,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-NPI-AlcoholModerationNew-4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -278,7 +306,7 @@
       },
       "effectiveDateTime": "2021-04-26T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -350,6 +378,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-NPI-AlcoholModerationNew-6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -371,7 +406,7 @@
       },
       "effectiveDateTime": "2021-06-26T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -413,6 +448,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-NPI-AlcoholModerationNew-1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -434,7 +476,7 @@
       },
       "effectiveDateTime": "2021-01-26T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading (no encounter)"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {

@@ -45,7 +45,16 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading (no encounter)"
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
                 }
               ],
               "category": [
@@ -72,7 +81,7 @@
               "subject": {
                 "reference": "Patient/HE-HypertensiveEmergencyIssued"
               },
-              "issued": "2021-09-02T15:16:21.123-05:00",
+              "issued": "2021-09-20T15:16:21.123-05:00",
               "component": [
                 {
                   "code": {
@@ -124,7 +133,16 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading (no encounter)"
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
                 }
               ],
               "category": [

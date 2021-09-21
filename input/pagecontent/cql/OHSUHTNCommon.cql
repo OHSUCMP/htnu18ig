@@ -5,6 +5,7 @@ using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 
 codesystem "LOINC": 'http://loinc.org'
+codesystem "SNOMED": 'http://snomed.info/sct'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
@@ -42,6 +43,8 @@ code "entered-in-error": 'entered-in-error' from ConditionVerificationStatusCode
 
 code "problem-list-item": 'problem-list-item' from "ConditionCategorySystem" display 'Problem List Item'
 code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategorySystem" display 'Encounter Diagnosis'
+
+code "home-measurement": '264362003' from "SNOMED"
 
 context Patient
 
@@ -295,43 +298,21 @@ define "Blood Pressure Observations for Last 2 Years":
 define "Blood Pressure Observations for Last 2 Years Descending":
   "Blood Pressure Observations for Last 2 Years" O sort by Coalesce(start of "Normalize Interval"(effective), issued) desc
 
-// NOTE: Office-based visit Encounter valueset?
-define "Patient Ambulatory Encounters":
-  ["Encounter"] PE
-    where (
-      PE.status ~ 'arrived'
-      or PE.status ~ 'in-progress'
-      or PE.status ~ 'finished'
-    )
-      and PE.class ~ "ambulatory"
-
-define "Ambulatory Blood Pressure Monitoring Procedures":
-  (QualifiedProcedure(["Procedure": "Ambulatory Blood Pressure Monitoring (ABPM)"])) ABPMProcedure
-    let ABPMProcedureInterval: "Normalize Interval"(ABPMProcedure.performed)
-      where exists (
-        "Blood Pressure Observations for Last 2 Years" BPObservation
-          where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
-      )
-      and hours between start of ABPMProcedureInterval and end of ABPMProcedureInterval >= 12
-
-define "Office Blood Pressure Observations":
-  "Blood Pressure Observations for Last 2 Years" BPObservation
-    with "Patient Ambulatory Encounters" BPEncounter
-      such that BPEncounter.class ~ "ambulatory"
-        and "Normalize Interval"(BPObservation.effective) during BPEncounter.period
+define function MeasurementSettings(list List<Extension>):
+  list Extension
+    where Extension.url = 'http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt'
+  return FHIRHelpers.ToCode(Extension.value)
 
 define "Home Blood Pressure Observations":
   "Blood Pressure Observations for Last 2 Years" BPObservation
-    without "Patient Ambulatory Encounters" BPEncounter
-      such that BPEncounter.class ~ "ambulatory"
-        and "Normalize Interval"(BPObservation.effective) during BPEncounter.period
+    where "MeasurementSettings"(BPObservation.extension) contains "home-measurement"
 
+define "Office Blood Pressure Observations":
+  "Blood Pressure Observations for Last 2 Years" except "Home Blood Pressure Observations"
+
+// Revisit logic when ready to address ambulatory observations. Check out commit 57046448a24d24a767d402e5fa8a96779a488f02 for old logic
 define "Ambulatory Blood Pressure Monitoring Observations":
-  (Last("Ambulatory Blood Pressure Monitoring Procedures" P sort by end of "Normalize Interval"(performed))) ABPMProcedure
-    return (
-      "Blood Pressure Observations for Last 2 Years" BPObservation
-      where BPObservation.partOf.reference includes ('Procedure/' + ABPMProcedure.id)
-    )
+  {}
 
 define "Has BP Set":
     if not exists "Blood Pressure Observations for Last 2 Years" then false
@@ -360,21 +341,6 @@ define "Most Recent BP Set":
   else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 12)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 12)
   else null
 
-define "OLD Most Recent BP Set":
-  if exists "Ambulatory Blood Pressure Monitoring Procedures" then
-    "Ambulatory Blood Pressure Monitoring Observations"
-  else if Count("Office Blood Pressure Observations") >= 4 then
-    Take(
-      ("Office Blood Pressure Observations" O
-        sort by Coalesce(issued, end of "Normalize Interval"(effective)) desc
-      ), 4)
-  else if Count("Home Blood Pressure Observations") >= 6 then
-    Take(
-      ("Home Blood Pressure Observations" O
-        sort by Coalesce(issued, end of "Normalize Interval"(effective)) desc
-      ), 6)
-  else null
-
 define "Average All BP Last 2 Years":
   "Avg BP"("Blood Pressure Observations for Last 2 Years")
 
@@ -400,7 +366,8 @@ define "BP Highly Variable":
   if "Has BP Set" then
     (
       "Systolic BP Variability"("Blood Pressure Observations for Last 2 Years").value > 11
-      and not exists "Ambulatory Blood Pressure Monitoring Procedures"
+      // This logic was removed
+      //and not exists "Ambulatory Blood Pressure Monitoring Procedures"
     )
   else null
 
