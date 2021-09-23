@@ -284,7 +284,7 @@ define "Exclusion Reason":
 // Look for custom tobacco goal coding
 define "Tobacco Cessation Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
-    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'smoking-cessation'
+    where Goal.lifecycleStatus = 'active' and Goal.category.coding.code contains 'smoking-cessation'
 
 // Return Goals that haven't been updated for at least 2 weeks
 define "Tobacco Cessation Goals Needing Update":
@@ -316,7 +316,7 @@ define "Patient is Currently a Smoker":
 // Look for custom weight loss goal coding
 define "Weight Loss Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
-    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'weight-loss'
+    where Goal.lifecycleStatus = 'active' and Goal.category.coding.code contains 'weight-loss'
 
 // Return Goals that haven't been updated for at least 2 weeks
 define "Weight Loss Goals Needing Update":
@@ -340,7 +340,7 @@ define "Patient BMI is Greater than 25 kg/m2":
 // Look for custom alcohol goal coding
 define "Alcohol Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
-    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'alcohol-moderation'
+    where Goal.lifecycleStatus = 'active' and Goal.category.coding.code contains 'alcohol-moderation'
 
 // Return Goals that haven't been updated for at least 2 weeks
 define "Alcohol Goals Needing Update":
@@ -375,14 +375,14 @@ define "Patient is a Heavy Alcoholic Drinker":
 
 define "Nutrition Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
-    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'nutrition'
+    where Goal.lifecycleStatus = 'active' and Goal.category.coding.code contains 'nutrition'
 
 define "Nutrition Goals Needing Update":
   ("Nutrition Goals") Goal where Goal.statusDate < (Today() -  2 weeks)
 
 define "Physical Activity Goals":
   (Common.QualifiedGoal(["Goal"])) Goal
-    where Goal.lifecycleStatus = 'active' and First(Goal.category.coding.code) = 'physical-activity'
+    where Goal.lifecycleStatus = 'active' and Goal.category.coding.code contains 'physical-activity'
 
 define "Physical Activity Goals Needing Update":
   ("Physical Activity Goals") Goal where Goal.statusDate < (Today() -  2 weeks)
