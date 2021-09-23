@@ -23,7 +23,7 @@
   "status": "draft",
   "date": "2020-02-04T00:00:00-08:00",
   "publisher": "Oregon Health and Science University (OHSU)",
-  "description": "This PlanDefinition detects a adverse reactions that could be related to Hypertension medication",
+  "description": "This PlanDefinition detects adverse reactions that could be related to Hypertension medication",
   "purpose": "The purpose is to identify any adverse reactions and recommend the patient contact their care team.",
   "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
   "jurisdiction": [
