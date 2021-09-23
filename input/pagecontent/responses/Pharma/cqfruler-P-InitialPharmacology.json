@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Initial Pharmacology",
+      "indicator": "warning",
+      "detail": "placeholder||at-most-one|",
+      "source": {}
+    }
+  ]
+}

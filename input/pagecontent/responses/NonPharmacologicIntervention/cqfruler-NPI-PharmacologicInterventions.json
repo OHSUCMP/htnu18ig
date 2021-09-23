@@ -19,9 +19,9 @@
       "source": {}
     },
     {
-      "summary": "Patient not on track of goal: Discuss pharmacological interventions.",
+      "summary": "Patient not on track of goal: Discuss pharmacological interventions",
       "indicator": "info",
-      "detail": "Patient not on track of goal: Discuss pharmacological treatment options with Patient.",
+      "detail": "Patient not on track of goal: Discuss pharmacological interventions",
       "source": {}
     }
   ]

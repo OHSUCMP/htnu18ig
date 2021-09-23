@@ -77,26 +77,17 @@ define "Patient Has Behavioral Goals":
 define "Enter Workflow":
   "In Population" and ("Patient Has Behavioral Goals" or (Common."Patient has a BP Goal" and not Common."BP Goal Met"))
 
-define "Goal Interval":
-  Interval[(Common."Most Recently Established Blood Pressure Goal".start as date),
-    (Common."Most Recently Established Blood Pressure Goal".start as date) + 3 months]
-
-define "Patient on Track":
-  not Common."Patient has a BP Goal" or not Common."Has BP Set" or Common."BP Goal Met" or end of "Goal Interval" > Today()
-
 /***** PATIENT ON TRACK CARD OUTPUT *****/
 
 define "Patient on Track of Goal Recommendation":
-  if "Patient on Track" then
+  if Common."Patient on Track" then
     'Patient on track of goal: End of non-pharmacologic interventions.'
-  else
-    'Patient not on track of goal: Discuss pharmacological interventions.'
+  else 'Patient not on track of goal: Discuss pharmacological interventions'
 
 define "Patient on Track of Goal Rationale":
-  if "Patient on Track" then
+  if Common."Patient on Track" then
     'Patient on track of goal: No Further Action Required.'
-  else
-    'Patient not on track of goal: Discuss pharmacological treatment options with Patient.'
+  else 'Patient not on track of goal: Discuss pharmacological interventions'
 
 /***** COMMON CARD OUTPUT *****/
 define "Indicator Status":
