@@ -10,11 +10,13 @@ codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSyste
 codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 codesystem "ConditionCategorySystem": 'http://terminology.hl7.org/CodeSystem/condition-category'
+codesystem "Medication request status": 'http://hl7.org/fhir/CodeSystem/medicationrequest-status'
 
 valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
 valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
+valueset "Antihypertensive Medications": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.10'
 
 /* Possible exclusions from workflows */
 valueset "Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012'
@@ -45,6 +47,8 @@ code "problem-list-item": 'problem-list-item' from "ConditionCategorySystem" dis
 code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategorySystem" display 'Encounter Diagnosis'
 
 code "home-measurement": '264362003' from "SNOMED"
+
+code "Active Medication Request": 'active' from "Medication request status"
 
 context Patient
 
@@ -415,3 +419,33 @@ define "Above Goal Average Most Recent":
 define "BP Goal Met":
   "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
   and not "BP Highly Variable"
+
+define "Goal Interval":
+  Interval[("Most Recently Established Blood Pressure Goal".start as date),
+    ("Most Recently Established Blood Pressure Goal".start as date) + 3 months]
+
+define "Patient on Track":
+  not "Patient has a BP Goal" or not "Has BP Set" or "BP Goal Met" or end of "Goal Interval" > Today()
+
+define "Active Medication Requests":
+  ["MedicationRequest"] Rx where Rx.status.value ~ "Active Medication Request".code
+
+define "Medication Requests With Medication":
+  "Active Medication Requests" Rx
+    let medication: singleton from ([Medication: id in Last(Split(Rx.medication.reference, '/'))])
+    return
+      MedicationRequest {
+        id: Rx.id,
+        status: Rx.status,
+        intent: Rx.intent,
+        category: Rx.category,
+        medication: medication.code,
+        subject: Rx.subject,
+        authoredOn: Rx.authoredOn,
+        recorder: Rx.recorder,
+        dosageInstruction: Rx.dosageInstruction,
+        dispenseRequest: Rx.dispenseRequest
+      }
+
+define "Patient is Using Antihypertensive Medications":
+  "Medication Requests With Medication".medication in "Antihypertensive Medications"
