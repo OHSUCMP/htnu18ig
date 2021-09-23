@@ -11,11 +11,14 @@ code "resolved": 'resolved' from "AdverseEventOutcomeCodeSystem" display 'Resolv
 
 context Patient
 
+define function "AE Event Display"(codes List<FHIR.Coding>):
+  First(codes C where C.code != 'coach-adverse-event').display
+
 define function "AE Suggestion String"(aes List<FHIR.AdverseEvent>):
-  aes AE return '{"id": "' + AE.id + '", "type": "adverse-event", "label": "' + First(AE.event.coding).display + '"}'
+  aes AE return '{"id": "' + AE.id + '", "type": "adverse-event", "label": "' + "AE Event Display"(AE.event.coding) + '"}'
 
 define function "Contact Suggestion String"(aes List<FHIR.AdverseEvent>):
-  aes AE return First(AE.event.coding).display
+  aes AE return "AE Event Display"(AE.event.coding)
 
 define "Untreated Recommendation":
   'Consider adjusting treatment.'
@@ -52,8 +55,9 @@ define "Treated Rationale":
 define "Treated Suggestions":
   '[ { "id": "contact-suggestion", "label": "Contact care team Adverse Event", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your condition(s): ' + Combine("Contact Suggestion String"("Treated Adverse Events"), ', ') + '" , "url":"/contact"}] } ]'
 
+// Only get the adverse events coded from the application
 define "Adverse Events":
-  [AdverseEvent]
+  [AdverseEvent] AE where AE.event.coding.code contains 'coach-adverse-event'
 
 define "Treated Adverse Events":
   "Adverse Events" AE where AE.outcome ~ "resolved"

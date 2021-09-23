@@ -185,6 +185,10 @@
       "id": "adverseevent-AE-UntreatedAdverseEvent-2",
       "event": {
         "coding": [ {
+          "system": "https://coach.ohsu.edu/",
+          "code": "coach-adverse-event",
+          "display": "Adverse Event reported by COACH"
+        }, {
           "system": "http://snomed.info/sct",
           "code": "32834005",
           "display": "Brief loss of consciousness"
@@ -220,6 +224,10 @@
           "system": "http://hl7.org/fhir/sid/icd-10-cm",
           "code": "N17.0",
           "display": "Acute kidney problem"
+        }, {
+          "system": "https://coach.ohsu.edu/",
+          "code": "coach-adverse-event",
+          "display": "Adverse Event reported by COACH"
         } ],
         "text": "Acute kidney problem"
       },
