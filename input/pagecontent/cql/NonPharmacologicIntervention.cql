@@ -397,20 +397,29 @@ define "Physical Activity Goals Needing Update":
   ("Physical Activity Goals") Goal where Goal.statusDate < (Today() -  2 weeks)
 
 /***** COUNSELING PROCEDURES *****/
+// Get all procedures for subject since Epic does not support getting by code
+define "Procedures":
+  Common.QualifiedProcedure(["Procedure"])
+
 define "Last Alcohol Counseling Procedure":
-  "Last Counseling Procedure"(Common.QualifiedProcedure(["Procedure": "Alcohol Brief Intervention and Counseling"]))
+  "Last Counseling Procedure"("Procedures" Procedure
+    where Procedure.code in "Alcohol Brief Intervention and Counseling")
 
 define "Last Smoking Counseling Procedure":
-  "Last Counseling Procedure"(Common.QualifiedProcedure(["Procedure": "Tobacco Use Cessation Counseling"]))
+  "Last Counseling Procedure"("Procedures" Procedure
+    where Procedure.code in "Tobacco Use Cessation Counseling")
 
 define "Last BMI Counseling Procedure":
-  "Last Counseling Procedure"((Common.QualifiedProcedure(["Procedure": "Weight Reduction Recommendations"])) union (Common.QualifiedProcedure(["Procedure": "BMI Follow Up Plan SNOMEDCT"])))
+  "Last Counseling Procedure"("Procedures" Procedure
+    where Procedure.code in "Weight Reduction Recommendations" or Procedure.code in "BMI Follow Up Plan SNOMEDCT")
 
 define "Last Nutrition Counseling Procedure":
-  "Last Counseling Procedure"(Common.QualifiedProcedure(["Procedure": "Counseling for Nutrition"]))
+  "Last Counseling Procedure"("Procedures" Procedure
+    where Procedure.code in "Counseling for Nutrition")
 
 define "Last Physical Activity Counseling Procedure":
-  "Last Counseling Procedure"(Common.QualifiedProcedure(["Procedure": "Physical Activity Recommendations"]))
+  "Last Counseling Procedure"("Procedures" Procedure
+    where Procedure.code in "Physical Activity Recommendations")
 
 /* Action Conditionals defined in Plan Definition */
 define "Patient Smoking Goals Action Path":
