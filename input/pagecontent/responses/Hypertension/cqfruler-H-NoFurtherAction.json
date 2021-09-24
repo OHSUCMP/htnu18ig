@@ -1,10 +1,9 @@
 {
-  "cards": [
-    {
-      "summary": "Patient does not have an indication of a hypertensive state.",
-      "indicator": "info",
-      "detail": "No Further Action Required.||at-most-one|",
-      "source": {}
-    }
-  ]
+"cause2":"org.opencds.cqf.cds.exceptions.MissingRequiredFieldException: The summary field must be specified in the action.title or action.dynamicValue field in the PlanDefinition",
+"cause1":"javax.servlet.ServletException: ERROR: Exception in cds-hooks processing.",
+"servlet":"cds-services",
+"cause0":"javax.servlet.ServletException: javax.servlet.ServletException: ERROR: Exception in cds-hooks processing.",
+"message":"javax.servlet.ServletException: javax.servlet.ServletException: ERROR: Exception in cds-hooks processing.",
+"url":"/cqf-ruler-r4/cds-services/plandefinition-Hypertension",
+"status":"500"
 }
