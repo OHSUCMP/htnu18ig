@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "summary": "14.a Blood pressure goal not reached. Discuss treatment options",
+      "summary": "Blood pressure goal not reached. Discuss treatment options.",
       "indicator": "warning",
-      "detail": "{{#patient}}Your recent blood pressure is above your goal. Changing your behaviors may help - see the additional options. In addition, please consult your care team to consider additional treatment options. Please review the home blood pressure measurement protocol presented on the blood pressure entry page to make sure that the tool is accurately measuring your blood pressure.{{/patient}}{{#careTeam}}BP not at goal. Consider initiating antihypertensive drug therapy with a single antihypertinsive drug with dosage titration and sequential addition of other agents to achieve the target BP.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team BP Treatment\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure\", \"url\":\"/contact\"}] } ]|at-most-one|",
+      "detail": "{{#patient}}Your blood pressures are above your goal; see lifestyle and medication treatment options.{{/patient}}\n    {{#careTeam}}BP not at goal. Consider initiating antihypertensive drug therapy with a single antihypertensive drug with dosage titration and sequential addition of other agents to achieve the target BP.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure\", \"url\":\"/contact?token\u003drecommend-pharma-and-nonpharma\"}] } ]|at-most-one|[{\"label\":\"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf\", \"url\":\"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf\"}]",
       "source": {}
     }
   ]
