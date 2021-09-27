@@ -24,6 +24,9 @@ code "PACKS A DAY": '8663-7' from "LOINC" display 'Cigarettes smoked current (pa
 
 context Patient
 
+define "Info":
+  'info'
+
 define function "Last Counseling Procedure"(procedures List<FHIR.Procedure>):
     (Last(procedures P sort by start of Common."Normalize Interval"(performed)))
 
@@ -33,18 +36,6 @@ define function "Update Goals String"(goals List<FHIR.Goal>, code String):
 
 define function "Goal Summary"(goals List<FHIR.Goal>):
   goals Goal return 'Goal: ' + Goal.description.text + ' Status: ' + First(Goal.achievementStatus.coding).code
-
-define "Info":
-  'info'
-
-define "Warning":
-  'warning'
-
-define "Critical":
-  'critical'
-
-define "Errors":
-  null
 
 define "Patient Name":
   First(Patient.name.given)
@@ -77,63 +68,56 @@ define "Patient Has Behavioral Goals":
 define "Enter Workflow":
   "In Population" and ("Patient Has Behavioral Goals" or (Common."Patient has a BP Goal" and not Common."BP Goal Met"))
 
-/***** PATIENT ON TRACK CARD OUTPUT *****/
-
-define "Patient on Track of Goal Recommendation":
-  if Common."Patient on Track" then
-    'Patient on track of goal: End of non-pharmacologic interventions.'
-  else 'Patient not on track of goal: Discuss pharmacological interventions'
-
-define "Patient on Track of Goal Rationale":
-  if Common."Patient on Track" then
-    'Patient on track of goal: No Further Action Required.'
-  else 'Patient not on track of goal: Discuss pharmacological interventions'
-
-/***** COMMON CARD OUTPUT *****/
-define "Indicator Status":
-  "Info"
-
 /***** SMOKING CARD OUTPUT *****/
 
 define "Smoking Recommendation":
-  if exists "Tobacco Cessation Goals Needing Update" then 'Update your Smoking Cessation Goals'
-  else if exists "Tobacco Cessation Goals" then 'Smoking Cessation'
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then 'Discuss Smoking Cessation'
-  else if "Patient is Currently a Smoker" then 'Reminder about Smoking Cessation'
+  if exists "Tobacco Cessation Goals Needing Update" then 'Smoking cessation goal due for update.'
+  else if exists "Tobacco Cessation Goals" then 'Smoking cessation goal check-in.'
+  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then 'Discuss smoking cessation.'
+  else if "Patient is Currently a Smoker" then 'Remind about smoking cessation.'
   else ''
 
 define "Smoking Rationale Combined Data":
   "Smoking Rationale" + '|' + "Smoking Suggestions" + '|at-most-one|' + "Smoking Links"
 
 define "Smoking Rationale":
-  if exists "Tobacco Cessation Goals Needing Update" then '{{#patient}}You have set some tobacco cessation goals. Tell us how you\'re doing.{{/patient}}'
-  else if exists "Tobacco Cessation Goals" then '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Tobacco Goal Summary" + '{{/patient}}'
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '{{#patient}}You have a hypertension (high blood pressure) diagnosis and reported smoking. Reducing smoking will help lower blood pressure, the risk of stroke, and other harmful events; talk to your care team about quitting smoking.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}'
-  else if "Patient is Currently a Smoker" then '{{#patient}}You received counseling about stopping smoking, which would lower your blood pressure and reduce stroke and heart attack risk.{{/patient}}{{#careTeam}}Patient still smokes, but has been counseled. Consider reminding about quitting according to your local protocol.{{/careTeam}}'
+  if exists "Tobacco Cessation Goals Needing Update" then '{{#patient}}You set a smoking cessation goal and it is time to update how that goal went.{{/patient}}'
+  else if exists "Tobacco Cessation Goals" then '{{#patient}}You set a smoking cessation goal; it isn\'t quite the time you set to update, but you can update that goal at any time.<br>' + "Tobacco Goal Summary" + '{{/patient}}'
+  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '{{#patient}}Reducing your smoking will help lower blood pressure, the risk of stroke, and other harmful events. Please discuss methods to reduce smoking with your care team.{{/patient}}
+    {{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}'
+  else if "Patient is Currently a Smoker" then '{{#patient}}You previously received counseling about quitting smoking, which would lower your blood pressure and other health risks. Please consider readdressing this goal.{{/patient}}
+    {{#careTeam}}Patient still smokes, but has been counseled. Consider reminding about quitting according to your local protocol.{{/careTeam}}'
   else ''
 
 define "Smoking Suggestions":
   if exists "Tobacco Cessation Goals Needing Update" then '[' + Combine("Update Goals String"("Tobacco Cessation Goals Needing Update", 'smoking-cessation'), ',') + ']'
   else if exists "Tobacco Cessation Goals" then ''
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '[ {"id": "smoking-counseling", "type":"counseling-link", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Suggested Reading","actions": [{"url":"/SmokingCessation", "label":"Click here to learn more about tobacco cessation."}]},{ "id": "smoking-freetext-goal", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]'
+  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '[ {"id": "smoking-counseling", "type":"counseling-link", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Smoking Cessation Counseling","actions": [{"url":"/SmokingCessation", "label":"Click here to learn more about tobacco cessation."}]},{ "id": "smoking-freetext-goal", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]'
   else if "Patient is Currently a Smoker" then '[ { "id": "smoking-freetext-goal", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]'
   else ''
 
 define "Smoking Links":
   if exists "Tobacco Cessation Goals Needing Update" then ''
   else if exists "Tobacco Cessation Goals" then ''
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then ''
+  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '[
+    { "label": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/smoking-high-blood-pressure-and-your-health", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/smoking-high-blood-pressure-and-your-health"},
+    { "label": "https://www.cancer.org/healthy/stay-away-from-tobacco/guide-quitting-smoking.html", "url": "https://www.cancer.org/healthy/stay-away-from-tobacco/guide-quitting-smoking.html"}
+  ]'
   else if "Patient is Currently a Smoker" then ''
   else ''
 
 define "Tobacco Goal Summary":
   Combine("Goal Summary"("Tobacco Cessation Goals"), '<br>')
 
+define "Smoking Indicator Status":
+  if exists "Tobacco Cessation Goals Needing Update" then 'warning'
+  else 'info'
+
 /***** WEIGHT LOSS CARD OUTPUT *****/
 
 define "BMI Recommendation":
-  if exists "Weight Loss Goals Needing Update" then 'Update your Weight Loss Goals'
-  else if exists "Weight Loss Goals" then 'Weight Loss'
+  if exists "Weight Loss Goals Needing Update" then 'Weight loss goal due for update.'
+  else if exists "Weight Loss Goals" then 'Weight loss goal check-in.'
   else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then 'Consider weight loss strategies.'
   else if "Patient BMI is Greater than 25 kg/m2" then 'Remind about weight loss.'
   else ''
@@ -142,10 +126,12 @@ define "BMI Rationale Combined Data":
   "BMI Rationale" + '|' + "BMI Suggestions" + '|at-most-one|' + "BMI Links"
 
 define "BMI Rationale":
-  if exists "Weight Loss Goals Needing Update" then '{{#patient}}You have set some weight loss goals. Tell us how you\'re doing.{{/patient}}'
-  else if exists "Weight Loss Goals" then '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Weight Loss Goal Summary" + '{{/patient}}'
-  else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '{{#patient}}Your weight suggests that weight reduction will help lower your blood pressure, and with it the risk of stroke and other harmful events. Selecting a weight loss goal can help reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}'
-  else if "Patient BMI is Greater than 25 kg/m2" then '{{#patient}}Your weight is not yet decreasing. When it\'s time, consider readdressing your weight loss goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseled, but may need a reminder.{{/careTeam}}'
+  if exists "Weight Loss Goals Needing Update" then '{{#patient}}You set a goal for weight loss and it is time to update how that goal went.{{/patient}}'
+  else if exists "Weight Loss Goals" then '{{#patient}}You set a goal for weight loss; it isn\'t quite the time you set to update, but you can update at any time.<br>' + "Weight Loss Goal Summary" + '{{/patient}}'
+  else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '{{#patient}}Your current weight suggests that weight reduction will help lower your blood pressure, the risk of stroke, and other harmful events. Consider selecting a weight loss goal which can help you reduce weight.{{/patient}}
+    {{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}'
+  else if "Patient BMI is Greater than 25 kg/m2" then '{{#patient}}Your current weight still suggests that weight reduction will help lower your blood pressure; please consider readdressing your weight loss goal.{{/patient}}
+    {{#careTeam}}Patient has a BMI of 25 or greater; they have been counseling, but may need a reminder.{{/careTeam}}'
   else ''
 
 define "BMI Suggestions":
@@ -158,30 +144,40 @@ define "BMI Suggestions":
 define "BMI Links":
   if exists "Weight Loss Goals Needing Update" then ''
   else if exists "Weight Loss Goals" then ''
-  else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
-  else if "Patient BMI is Greater than 25 kg/m2" then '[{"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"}, {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}]'
+  else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '[
+    {"label":"Healthy Weight Loss", "url":"https://www.cdc.gov/healthyweight/losing_weight/index.html"},
+    {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}
+  ]'
+  else if "Patient BMI is Greater than 25 kg/m2" then '[
+    {"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"},
+    {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}
+    ]'
   else ''
 
 define "Weight Loss Goal Summary":
   Combine("Goal Summary"("Weight Loss Goals"), '<br>')
 
+define "Weight Loss Indicator Status":
+  if exists "Weight Loss Goals Needing Update" then 'warning'
+  else 'info'
+
 /***** ALCOHOL CARD OUTPUT *****/
 
 define "Alcohol Recommendation":
-  if exists "Alcohol Goals Needing Update" then 'Update your Alcohol Moderation Goals'
-  else if exists "Alcohol Goals" then 'Alcohol Moderation'
+  if exists "Alcohol Goals Needing Update" then 'Alcohol moderation goal due for update.'
+  else if exists "Alcohol Goals" then 'Alcohol moderation check-in.'
   else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then 'Discuss alcohol moderation.'
-  else if "Patient is a Heavy Alcoholic Drinker" then 'Reminder about alcohol moderation'
+  else if "Patient is a Heavy Alcoholic Drinker" then 'Reminder about Alcohol counseling.'
   else ''
 
 define "Alcohol Rationale Combined Data":
   "Alcohol Rationale" + '|' + "Alcohol Suggestions" + '|at-most-one|' + "Alcohol Links"
 
 define "Alcohol Rationale":
-  if exists "Alcohol Goals Needing Update" then '{{#patient}}You have set some alcohol moderation goals. Tell us how you\'re doing.{{/patient}}'
-  else if exists "Alcohol Goals" then '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Alcohol Moderation Goal Summary" + '{{/patient}}'
-  else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then '{{#patient}}You have a hypertension (high blood pressure) diagnosis. Lowering your blood pressure will help improve your overall health.  Reducing alcohol use will help lower blood pressure, the risk of stroke, and other harmful events.{{/patient}}'
-  else if "Patient is a Heavy Alcoholic Drinker" then 'Alcohol Reminder Rationale Placeholder'
+  if exists "Alcohol Goals Needing Update" then '{{#patient}}You set a goal to reduce alcohol and it is time to update how that goal went.{{/patient}}'
+  else if exists "Alcohol Goals" then '{{#patient}}You set a goal to reduce alcohol; it isn\'t quite the time you set to update, but you can update at any time.<br>' + "Alcohol Moderation Goal Summary" + '{{/patient}}'
+  else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then '{{#patient}}Reducing your alcohol consumption will help lower your blood pressure, along with other health risks. Please discuss methods to reduce your alcohol consumption with your care team.{{/patient}}'
+  else if "Patient is a Heavy Alcoholic Drinker" then 'You selected the following alcohol goal. You may update these goals as you see fit.'
   else ''
 
 define "Alcohol Suggestions":
@@ -194,29 +190,37 @@ define "Alcohol Suggestions":
 define "Alcohol Links":
   if exists "Alcohol Goals Needing Update" then ''
   else if exists "Alcohol Goals" then ''
-  else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then ''
+  else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then '[
+    {"label": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/limiting-alcohol-to-manage-high-blood-pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/limiting-alcohol-to-manage-high-blood-pressure"},
+    {"label":"https://www.alcohol.org/effects/blood-pressure/", "url":"https://www.alcohol.org/effects/blood-pressure/"}
+  ]'
   else if "Patient is a Heavy Alcoholic Drinker" then ''
   else ''
 
 define "Alcohol Moderation Goal Summary":
   Combine("Goal Summary"("Alcohol Goals"), '<br>')
 
+define "Alcohol Moderation Indicator Status":
+  if exists "Alcohol Goals Needing Update" then 'warning'
+  else 'info'
+
 /***** NUTRITION CARD OUTPUT *****/
 
 define "Nutrition Recommendation":
-  if exists "Nutrition Goals Needing Update" then 'Update your Nutrition Goals'
-  else if exists "Nutrition Goals" then 'Nutrition'
-  else if "Last Nutrition Counseling Procedure" is null then 'Discuss dietary changes (with salt/sodium reduction)'
-  else 'Reminder about dietary changes'
+  if exists "Nutrition Goals Needing Update" then 'Nutrition goal update.'
+  else if exists "Nutrition Goals" then 'Nutrition goal check-in.'
+  else if "Last Nutrition Counseling Procedure" is null then 'Discuss dietary changes (with salt/sodium reduction).'
+  else 'Reminder about nutrition code.'
 
 define "Nutrition Rationale Combined Data":
   "Nutrition Rationale" + '|' + "Nutrition Suggestions" + '|at-most-one|' + "Nutrition Links"
 
 define "Nutrition Rationale":
-  if exists "Nutrition Goals Needing Update" then '{{#patient}}You have set some nutrition goals. Tell us how you\'re doing.{{/patient}}'
-  else if exists "Nutrition Goals" then '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Nutrition Goal Summary" + '{{/patient}}'
-  else if "Last Nutrition Counseling Procedure" is null then '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}'
-  else 'Nutrition Reminder Rationale Placeholder'
+  if exists "Nutrition Goals Needing Update" then '{{#patient}}You set a nutrition goal and it is time to update it.{{/patient}}'
+  else if exists "Nutrition Goals" then '{{#patient}}You set a nutrition goal; it isn\'t quite the time you set to update it, but you may update that goal at any time.<br>' + "Nutrition Goal Summary" + '{{/patient}}'
+  else if "Last Nutrition Counseling Procedure" is null then '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart-healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke. Please discuss choosing a diet with your care team.{{/patient}}
+    {{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}'
+  else 'You selected the following nutrition goal. You may update this goal as you see fit.'
 
 define "Nutrition Suggestions":
   if exists "Nutrition Goals Needing Update" then '[' + Combine("Update Goals String"("Nutrition Goals Needing Update", 'nutrition'), ',') + ']'
@@ -227,28 +231,36 @@ define "Nutrition Suggestions":
 define "Nutrition Links":
   if exists "Nutrition Goals Needing Update" then ''
   else if exists "Nutrition Goals" then ''
-  else if "Last Nutrition Counseling Procedure" is null then ''
+  else if "Last Nutrition Counseling Procedure" is null then '[
+    {"label": "https://www.nhlbi.nih.gov/health-topics/dash-eating-plan", "url": "https://www.nhlbi.nih.gov/health-topics/dash-eating-plan"},
+    {"label": "https://www.cdc.gov/healthyweight/healthy_eating/index.html", "url": "https://www.cdc.gov/healthyweight/healthy_eating/index.html"}
+  ]'
   else ''
 
 define "Nutrition Goal Summary":
     Combine("Goal Summary"("Nutrition Goals"), '<br>')
 
+define "Nutrition Indicator Status":
+  if exists "Nutrition Goals Needing Update" then 'warning'
+  else 'info'
+
 /***** PHYSICAL ACTIVITY CARD OUTPUT *****/
 
 define "Physical Activity Recommendation":
-  if exists "Physical Activity Goals Needing Update" then 'Update your Physical Activity Goals'
-  else if exists "Physical Activity Goals" then 'Physical Activity'
-  else if "Last Physical Activity Counseling Procedure" is null then 'Discuss physical activity'
-  else 'Reminder about physical activity'
+  if exists "Physical Activity Goals Needing Update" then 'Physical activity goal update.'
+  else if exists "Physical Activity Goals" then 'Physical activity goal check-in.'
+  else if "Last Physical Activity Counseling Procedure" is null then 'Discuss physical activity.'
+  else 'Reminder about physical activity.'
 
 define "Physical Activity Rationale Combined Data":
   "Physical Activity Rationale" + '|' + "Physical Activity Suggestions" + '|at-most-one|' + "Physical Activity Links"
 
 define "Physical Activity Rationale":
-  if exists "Physical Activity Goals Needing Update" then '{{#patient}}You have set some physical activity goals. Tell us how you\'re doing.{{/patient}}'
-  else if exists "Physical Activity Goals" then '{{#patient}}This might be some tailored output based on the achievementStatus of your goals or we could list goals here or on the right.<br>' + "Physical Activity Goal Summary" + '{{/patient}}'
-  else if "Last Physical Activity Counseling Procedure" is null then '{{#patient}}Physical activity can help reduce your blood pressure and risk of stroke and other harmful events. {{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}'
-  else 'Rationale placeholder for physical activity'
+  if exists "Physical Activity Goals Needing Update" then '{{#patient}}You set a physical activity goal and it is time to update how that goal went.{{/patient}}'
+  else if exists "Physical Activity Goals" then '{{#patient}}You set a physical activity goal; it isn\'t quite the time you set to update it, but you may update that goal at any time.<br>' + "Physical Activity Goal Summary" + '{{/patient}}'
+  else if "Last Physical Activity Counseling Procedure" is null then '{{#patient}}Physical activity can help reduce your blood pressure, risk of stroke, and other harmful events. Please discuss methods to increase your physical activity with your care team.{{/patient}}
+    {{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}'
+  else 'You selected the following physical activity goal(s). You may update these goals as you see fit.'
 
 define "Physical Activity Suggestions":
   if exists "Physical Activity Goals Needing Update" then '[' + Combine("Update Goals String"("Physical Activity Goals Needing Update", 'physical-activity'), ',') + ']'
@@ -259,11 +271,19 @@ define "Physical Activity Suggestions":
 define "Physical Activity Links":
   if exists "Physical Activity Goals Needing Update" then ''
   else if exists "Physical Activity Goals" then ''
-  else if "Last Physical Activity Counseling Procedure" is null then ''
+  else if "Last Physical Activity Counseling Procedure" is null then '[
+    {"label": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure"},
+    {"label": "https://health.gov/our-work/physical-activity/current-guidelines", "url": "https://health.gov/our-work/physical-activity/current-guidelines"},
+    {"label": "https://www.cdc.gov/physicalactivity/index.html", "url": "https://www.cdc.gov/physicalactivity/index.html"}
+  ]'
   else ''
 
 define "Physical Activity Goal Summary":
     Combine("Goal Summary"("Physical Activity Goals"), '<br>')
+
+define "Physical Activity Indicator Status":
+  if exists "Physical Activity Goals Needing Update" then 'warning'
+  else 'info'
 
 define "Exclusion Reason":
   if "Meets Exclusion Criteria" then

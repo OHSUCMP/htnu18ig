@@ -103,7 +103,7 @@
           "path": "action.extension",
           "expression": {
             "language": "text/cql.identifier",
-            "expression": "Indicator Status"
+            "expression": "Smoking Indicator Status"
           }
         }
       ]
@@ -146,7 +146,7 @@
           "path": "action.extension",
           "expression": {
             "language": "text/cql.identifier",
-            "expression": "Indicator Status"
+            "expression": "Weight Loss Indicator Status"
           }
         }
       ]
@@ -189,7 +189,7 @@
           "path": "action.extension",
           "expression": {
             "language": "text/cql.identifier",
-            "expression": "Indicator Status"
+            "expression": "Alcohol Moderation Indicator Status"
           }
         }
       ]
@@ -232,7 +232,7 @@
           "path": "action.extension",
           "expression": {
             "language": "text/cql.identifier",
-            "expression": "Indicator Status"
+            "expression": "Nutrition Indicator Status"
           }
         }
       ]
@@ -275,50 +275,7 @@
           "path": "action.extension",
           "expression": {
             "language": "text/cql.identifier",
-            "expression": "Indicator Status"
-          }
-        }
-      ]
-    },
-    {
-      "title": "Is Patient on Track to Reach BP Goal?",
-      "description": "Determines if a recommendation regarding tracking the Patient's BP Goal should be established.",
-      "trigger": [{
-        "type": "named-event",
-        "name":"patient-view"
-      }],
-      "condition": [
-        {
-          "kind": "applicability",
-          "expression": {
-            "description": "Determine if Patient is in the recommendation population.",
-            "language": "text/cql.identifier",
-            "expression": "In Population"
-          }
-        }
-      ],
-      "dynamicValue": [
-        {
-          "path": "action.title",
-          "expression": {
-            "description": "Applicable text for the Patient on Track of Goal Recommendation",
-            "language": "text/cql.identifier",
-            "expression": "Patient on Track of Goal Recommendation"
-          }
-        },
-        {
-          "path": "action.description",
-          "expression": {
-            "description": "Rationale for recommendation type.",
-            "language": "text/cql.identifier",
-            "expression": "Patient on Track of Goal Rationale"
-          }
-        },
-        {
-          "path": "action.extension",
-          "expression": {
-            "language": "text/cql.identifier",
-            "expression": "Indicator Status"
+            "expression": "Physical Activity Indicator Status"
           }
         }
       ]
