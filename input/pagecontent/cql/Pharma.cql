@@ -26,17 +26,21 @@ define "Enter Workflow":
     "In Population" and (Common."Patient Has Potential HTN Stage 2 BP" or not Common."Patient on Track")
 
 define "Recommendation":
-  if Common."Patient is Using Antihypertensive Medications" then 'Advancing Treatment'
-  else 'Initial Pharmacology'
+  if Common."Patient is Using Antihypertensive Medications" then 'Use shared decision making for treatment.'
+  else 'Consider using medication to treat high blood pressure.'
 
 define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
-  'placeholder'
+  if Common."Patient is Using Antihypertensive Medications" then '{{#patient}}Your blood pressure is still high despite being on medication and working on other ways to lower it; changing your medication may be an option. This may occur sooner than expected.{{/patient}}
+    {{#careTeam}}Employ shared decision making practices when discussing treatment for high blood pressure with your patient.{{/careTeam}}'
+  else '{{#patient}}Your blood pressure is substantially elevated, to the point where medication should be considered to help manage it. This may occur sooner than expected. Speak with your care team to discuss medication options.{{/patient}}
+    {{#careTeam}}In patients under 55 with high blood pressure and listed comorbidities, use thiazide-type diuretic, ACE-I, ARB, or CCB for first-line therapy{{/careTeam}}'
 
 define "Suggestions":
-  ''
+  if Common."Patient is Using Antihypertensive Medications" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure.", "url":"/contact?token=recommend-advancing-treatment"}] } ]'
+  else '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure.", "url":"/contact?token=recommend-pharma"}] } ]'
 
 define "Indicator Status":
   'warning'

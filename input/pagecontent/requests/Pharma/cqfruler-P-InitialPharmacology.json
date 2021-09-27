@@ -111,15 +111,15 @@
               "active": true,
               "name": [
                 {
-                  "text": "Pharmacology Advancing Treatment",
-                  "family": "Advancing Treatment",
+                  "text": "Pharmacology Initial",
+                  "family": "Initial",
                   "given": [
                     "Pharmacology"
                   ]
                 }
               ],
-              "gender": "female",
-              "birthDate": "1984-06-01"
+              "gender": "male",
+              "birthDate": "1992-06-01"
             },
             "request": {
               "method": "PUT",
