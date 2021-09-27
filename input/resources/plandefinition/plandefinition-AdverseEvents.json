@@ -85,7 +85,7 @@
           "path": "action.extension",
           "expression": {
             "language": "text/cql.identifier",
-            "expression": "Indicator Status"
+            "expression": "Untreated Indicator Status"
           }
         }
       ]
@@ -128,7 +128,7 @@
           "path": "action.extension",
           "expression": {
             "language": "text/cql.identifier",
-            "expression": "Indicator Status"
+            "expression": "Treated Indicator Status"
           }
         }
       ]

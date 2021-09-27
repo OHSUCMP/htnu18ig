@@ -2,14 +2,14 @@
   "cards": [
     {
       "summary": "Consider adjusting treatment.",
-      "indicator": "warning",
-      "detail": "You recently had a condition recorded that may be an adverse event from high blood pressure treatment. Contacting your care team will help them resolve it.|[{\"id\": \"adverseevent-AE-TreatedAndUntreated-2\", \"type\": \"adverse-event\", \"label\": \"Brief loss of consciousness\"}]|at-most-one|",
+      "indicator": "critical",
+      "detail": "You recently had a condition recorded that may be an adverse event from high blood pressure treatment. Contacting your care team will help them resolve it.|[{ \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Brief loss of consciousness\" , \"url\":\"/contact?token\u003duntreated-adverse-event\"}] },{\"id\": \"adverseevent-AE-TreatedAndUntreated-2\", \"type\": \"adverse-event\", \"label\": \"Brief loss of consciousness\"}]|at-most-one|",
       "source": {}
     },
     {
-      "summary": "See care team and discuss treatment for hypertension.",
+      "summary": "See care team and discuss treatment for hypertension if event recurs.",
       "indicator": "warning",
-      "detail": "You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but if it recurs or doesn\u0027t get better, please contact your care team.|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team Adverse Event\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Acute kidney problem\" , \"url\":\"/contact\"}] } ]|at-most-one|",
+      "detail": "You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but if it recurs or doesn\u0027t get better, please contact your care team.|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Acute kidney problem\" , \"url\":\"/contact?token\u003dtreated-adverse-event\"}] } ]|at-most-one|",
       "source": {}
     }
   ]
