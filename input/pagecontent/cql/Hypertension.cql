@@ -35,7 +35,7 @@ define "Patient Name":
 
 /* Recommendation Criteria - Hypertension  */
 define "Meets Inclusion Criteria":
- true
+ not "Diagnosis of Preexisting Hypertension"
 
 define "Meets Exclusion Criteria":
   Common."Patient Under Age 18"
@@ -153,7 +153,7 @@ define "Prescribe Monitoring to Confirm HTN":
   "In Population" and Common."Patient Has Potential HTN Stage 1 BP" and not "Consider HTN Stage 1"
 
 define "Diagnosis of Preexisting Hypertension":
-  "In Population" and exists Common."Condition Indicating Preexisting Hypertension"
+  exists Common."Condition Indicating Preexisting Hypertension"
 
 /* TESTS */
 define "Test Patient Age on BP Reading":
