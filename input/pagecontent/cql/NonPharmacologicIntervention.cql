@@ -97,7 +97,7 @@ define "Smoking Suggestions":
   //else if exists "Tobacco Cessation Goals" then '[' + Combine("Update Goals String"("Tobacco Cessation Goals", 'smoking-cessation'), ',') + ']'
   else if exists "Tobacco Cessation Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '[
-    {"id": "smoking-counseling", "type":"counseling-link", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Smoking Cessation Counseling","actions": [{"url":"/SmokingCessation", "label":"Click here to learn more about tobacco cessation."}]},
+    {"id": "smoking-counseling", "type":"counseling-link", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Smoking Cessation Counseling","actions": [{"url":"/counseling/smoking-cessation", "label":"Click here to learn more about tobacco cessation."}]},
     {"id": "' + "Unique Goal Id"('smoking-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] }
   ]'
   else if "Patient is Currently a Smoker" then '[ { "id": "' + "Unique Goal Id"('smoking-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"smoking-cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]'
@@ -145,7 +145,7 @@ define "BMI Suggestions":
   if exists "Weight Loss Goals Needing Update" then '[' + Combine("Update Goals String"("Weight Loss Goals Needing Update", 'weight-loss'), ',') + ']'
   else if exists "Weight Loss Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '[
-    {"id": "weight-loss-counseling", "label": "Weight Loss Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss.", "url":"/weightLoss"}]},
+    {"id": "weight-loss-counseling", "label": "Weight Loss Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss.", "url":"/counseling/weight-loss"}]},
     {"id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"weight-loss"}, "label": "Set a Weight Loss Goal", "actions": [] }
   ]'
   else if "Patient BMI is Greater than 25 kg/m2" then '[ { "id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"weight-loss"}, "label": "Set a Weight Loss Goal", "actions": [] } ]'
@@ -194,7 +194,7 @@ define "Alcohol Suggestions":
   if exists "Alcohol Goals Needing Update" then '[' + Combine("Update Goals String"("Alcohol Goals Needing Update", 'alcohol-moderation'), ',') + ']'
   else if exists "Alcohol Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then '[
-    {"id": "alcohol-counseling", "label": "Alcohol Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"24165007"}, "actions": [ {"label":"Learn more about alcohol moderation.", "url":"/alcoholModeration"}]},
+    {"id": "alcohol-counseling", "label": "Alcohol Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"24165007"}, "actions": [ {"label":"Learn more about alcohol moderation.", "url":"/counseling/alcohol-moderation"}]},
     {"id": "' + "Unique Goal Id"('alcohol-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"alcohol-moderation"}, "label": "Set an Alcohol Moderation Goal", "actions": [] }
   ]'
   else if "Patient is a Heavy Alcoholic Drinker" then '[{ "id": "' + "Unique Goal Id"('alcohol-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"alcohol-moderation"}, "label": "Set an Alcohol Moderation Goal", "actions": [] } ]'
@@ -239,7 +239,7 @@ define "Nutrition Suggestions":
   if exists "Nutrition Goals Needing Update" then '[' + Combine("Update Goals String"("Nutrition Goals Needing Update", 'nutrition'), ',') + ']'
   else if exists "Nutrition Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Last Nutrition Counseling Procedure" is null then '[
-    {"id": "nutrition-counseling", "label": "Nutrition Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"11816003"}, "actions": [ {"label":"Learn more about nutrition and diet changes.", "url":"/nutrition"}]},
+    {"id": "nutrition-counseling", "label": "Nutrition Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"11816003"}, "actions": [ {"label":"Learn more about nutrition and diet changes.", "url":"/counseling/diet"}]},
     {"id": "' + "Unique Goal Id"('nutrition-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"nutrition"}, "label": "Set a Nutrition/Diet Change Goal", "actions": [] }
   ]'
   else '[{ "id": "' + "Unique Goal Id"('nutrition-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"nutrition"}, "label": "Set a Nutrition/Diet Change Goal", "actions": [] } ]'
@@ -282,7 +282,7 @@ define "Physical Activity Suggestions":
   if exists "Physical Activity Goals Needing Update" then '[' + Combine("Update Goals String"("Physical Activity Goals Needing Update", 'physical-activity'), ',') + ']'
   else if exists "Physical Activity Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Last Physical Activity Counseling Procedure" is null then '[
-    {"id": "physical-activity-counseling", "label": "Physical Activity Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"304507003"}, "actions": [ {"label":"Learn more about physical activity.", "url":"/physicalActivity"}]},
+    {"id": "physical-activity-counseling", "label": "Physical Activity Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"304507003"}, "actions": [ {"label":"Learn more about physical activity.", "url":"/counseling/physical-activity"}]},
     {"id": "' + "Unique Goal Id"('physical-activity-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"physical-activity"}, "label": "Set a Physical Activity Goal", "actions": [] }
   ]'
   else '[{ "id": "' + "Unique Goal Id"('physical-activity-goal-') + '", "type":"goal", "references":{"system":"https//coach.ohsu.edu", "code":"physical-activity"}, "label": "Set a Physical Activity Goal", "actions": [] } ]'
