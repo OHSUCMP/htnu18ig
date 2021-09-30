@@ -590,6 +590,9 @@
         "reference": "Patient/NPI-WeightLossGoalExists"
       },
       "startDate": "2021-07-12",
+      "target": [ {
+        "dueDate": "2021-09-29"
+      } ],
       "statusDate": "2021-07-29"
     },
     "request": {

@@ -718,7 +718,12 @@
               },
               "subject": {
                 "reference": "Patient/NPI-ActivityGoalExists"
-              }
+              },
+              "target": [
+                {
+                  "dueDate": "2021-09-29"
+                }
+              ]
             },
             "request": {
               "method": "PUT",

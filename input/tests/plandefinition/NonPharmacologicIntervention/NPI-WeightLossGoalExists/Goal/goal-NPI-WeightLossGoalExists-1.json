@@ -29,5 +29,10 @@
   },
   "subject": {
     "reference": "Patient/NPI-WeightLossGoalExists"
-  }
+  },
+  "target": [
+    {
+      "dueDate": "2021-09-29"
+    }
+  ]
 }

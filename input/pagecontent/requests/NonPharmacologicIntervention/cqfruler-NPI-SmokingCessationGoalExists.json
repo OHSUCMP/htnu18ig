@@ -723,7 +723,12 @@
               },
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
-              }
+              },
+              "target": [
+                {
+                  "dueDate": "2021-09-29"
+                }
+              ]
             },
             "request": {
               "method": "PUT",
