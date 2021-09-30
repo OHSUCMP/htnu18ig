@@ -7,7 +7,7 @@
   "event": {
     "coding": [
       {
-        "system": "https://coach.ohsu.edu/",
+        "system": "https://coach.ohsu.edu",
         "code": "coach-adverse-event",
         "display": "Adverse Event reported by COACH"
       },

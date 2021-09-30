@@ -693,7 +693,7 @@
                 {
                   "coding": [
                     {
-                      "system": "https://coach.ohsu.edu/",
+                      "system": "https://coach.ohsu.edu",
                       "code": "physical-activity",
                       "display": "Physical Activity"
                     }

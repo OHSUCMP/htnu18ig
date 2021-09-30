@@ -577,7 +577,7 @@
       },
       "category": [ {
         "coding": [ {
-          "system": "https://coach.ohsu.edu/",
+          "system": "https://coach.ohsu.edu",
           "code": "nutrition",
           "display": "Nutrition"
         } ],

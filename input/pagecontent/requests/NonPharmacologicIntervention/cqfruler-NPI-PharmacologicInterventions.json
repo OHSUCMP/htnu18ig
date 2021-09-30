@@ -128,6 +128,137 @@
           },
           {
             "resource": {
+              "resourceType": "Medication",
+              "id": "medication-NPI-PharmacologicInterventions-2",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "153008",
+                    "display": "ibuprofen 200 MG Oral Tablet [Advil]"
+                  }
+                ]
+              },
+              "form": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "385055001",
+                    "display": "Tablet dose form (qualifier value)"
+                  }
+                ]
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Medication",
+              "id": "medication-NPI-PharmacologicInterventions-1",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "104222",
+                    "display": "bumetanide 5 MG Oral Tablet"
+                  }
+                ]
+              },
+              "form": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "385055001",
+                    "display": "Tablet dose form (qualifier value)"
+                  }
+                ]
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "MedicationRequest",
+              "id": "medicationrequest-NPI-PharmacologicInterventions-1",
+              "note": [
+                {
+                  "text": "Active Request for Antihypertensive"
+                }
+              ],
+              "status": "active",
+              "intent": "order",
+              "medicationReference": {
+                "reference": "Medication/medication-NPI-PharmacologicInterventions-1",
+                "display": "bumetanide 5 MG Oral Tablet"
+              },
+              "subject": {
+                "reference": "Patient/NPI-PharmacologicInterventions"
+              },
+              "authoredOn": "2021-05-01T16:00:00-08:00"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "MedicationRequest",
+              "id": "medicationrequest-NPI-PharmacologicInterventions-3",
+              "note": [
+                {
+                  "text": "Active Request for Medication - Not an Antihypertensive"
+                }
+              ],
+              "status": "active",
+              "intent": "order",
+              "medicationReference": {
+                "reference": "Medication/medication-NPI-PharmacologicInterventions-2",
+                "display": "ibuprofen 200 MG Oral Tablet [Advil]"
+              },
+              "subject": {
+                "reference": "Patient/NPI-PharmacologicInterventions"
+              },
+              "authoredOn": "2021-05-01T16:00:00-08:00"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "MedicationRequest",
+              "id": "medicationrequest-NPI-PharmacologicInterventions-1",
+              "note": [
+                {
+                  "text": "Completed Request"
+                }
+              ],
+              "status": "completed",
+              "intent": "order",
+              "medicationReference": {
+                "reference": "Medication/medication-NPI-PharmacologicInterventions-2",
+                "display": "bumetanide 5 MG Oral Tablet"
+              },
+              "subject": {
+                "reference": "Patient/NPI-PharmacologicInterventions"
+              },
+              "authoredOn": "2020-05-01T16:00:00-08:00"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
               "resourceType": "Observation",
               "id": "observation-NPI-PharmacologicInterventions-6",
               "status": "final",
