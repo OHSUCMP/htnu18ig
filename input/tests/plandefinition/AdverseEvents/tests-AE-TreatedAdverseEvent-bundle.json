@@ -189,7 +189,7 @@
           "code": "N17.0",
           "display": "Acute kidney problem"
         }, {
-          "system": "https://coach.ohsu.edu/",
+          "system": "https://coach.ohsu.edu",
           "code": "coach-adverse-event",
           "display": "Adverse Event reported by COACH"
         } ],
@@ -225,7 +225,7 @@
           "code": "32834005",
           "display": "Brief loss of consciousness"
         }, {
-          "system": "https://coach.ohsu.edu/",
+          "system": "https://coach.ohsu.edu",
           "code": "coach-adverse-event",
           "display": "Adverse Event reported by COACH"
         } ],

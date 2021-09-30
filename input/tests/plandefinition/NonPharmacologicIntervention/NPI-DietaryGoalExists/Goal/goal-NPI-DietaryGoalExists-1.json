@@ -5,7 +5,7 @@
   "category": [{
     "coding": [
       {
-        "system": "https://coach.ohsu.edu/",
+        "system": "https://coach.ohsu.edu",
         "code": "nutrition",
         "display": "Nutrition"
       }
@@ -29,5 +29,10 @@
   },
   "subject": {
     "reference": "Patient/NPI-DietaryGoalExists"
-  }
+  },
+  "target": [
+    {
+      "dueDate": "2021-09-29"
+    }
+  ]
 }

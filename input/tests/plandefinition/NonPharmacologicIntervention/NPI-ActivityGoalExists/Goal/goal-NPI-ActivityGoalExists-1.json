@@ -2,16 +2,18 @@
   "resourceType": "Goal",
   "id": "goal-NPI-ActivityGoalExists-1",
   "lifecycleStatus": "active",
-  "category": [{
-    "coding": [
-      {
-        "system": "https://coach.ohsu.edu/",
-        "code": "physical-activity",
-        "display": "Physical Activity"
-      }
-    ],
-    "text": "Physical Activitys"
-  }],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://coach.ohsu.edu",
+          "code": "physical-activity",
+          "display": "Physical Activity"
+        }
+      ],
+      "text": "Physical Activitys"
+    }
+  ],
   "achievementStatus": {
     "coding": [
       {
@@ -29,5 +31,10 @@
   },
   "subject": {
     "reference": "Patient/NPI-ActivityGoalExists"
-  }
+  },
+  "target": [
+    {
+      "dueDate": "2021-09-29"
+    }
+  ]
 }
