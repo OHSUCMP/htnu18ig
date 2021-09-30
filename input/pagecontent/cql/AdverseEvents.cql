@@ -27,7 +27,7 @@ define "Untreated Rationale Combined Data":
   "Untreated Rationale" + '|' + "Untreated Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Untreated Rationale":
-  'You recently had a condition recorded that may be an adverse event from high blood pressure treatment. Contacting your care team will help them resolve it.'
+  'You recently had a condition recorded that <strong>may be an adverse event from high blood pressure treatment</strong>. Contacting your care team will help them resolve it.'
 
 define "Untreated Suggestions":
   '[{ "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your condition(s): ' + Combine("Contact Suggestion String"("Untreated Adverse Events"), ', ') + '" , "url":"/contact?token=untreated-adverse-event"}] },' +
@@ -53,7 +53,7 @@ define "Treated Rationale Combined Data":
   "Treated Rationale" + '|' + "Treated Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Treated Rationale":
-  'You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but if it recurs or doesn\'t get better, please contact your care team.'
+  'You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but <strong>if it recurs or doesn\'t get better, please contact your care team</strong>.'
 
 define "Treated Suggestions":
   '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your condition(s): ' + Combine("Contact Suggestion String"("Treated Adverse Events"), ', ') + '" , "url":"/contact?token=treated-adverse-event"}] } ]'

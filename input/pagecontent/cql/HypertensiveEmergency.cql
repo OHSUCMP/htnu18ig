@@ -18,7 +18,7 @@ define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
-  if "In Population" then '{{#patient}}Your blood pressure is high (> 180 mmHg systolic and/or > 120 mmHg diastolic). Contact your care team immediately, or seek immediate care if you do not feel well.{{/patient}}{{#careTeam}}Patient\'s blood pressure is > 180 systolic or > 120 diastolic. Consider immediate evaluation for treatment or escalation of care.{{/careTeam}}'
+  if "In Population" then '{{#patient}}Your blood pressure is high (> 180 mmHg systolic and/or > 120 mmHg diastolic). Contact your care team immediately, or <strong>seek immediate care</strong> if you do not feel well.{{/patient}}{{#careTeam}}Patient\'s blood pressure is > 180 systolic or > 120 diastolic. Consider immediate evaluation for treatment or escalation of care.{{/careTeam}}'
   else null
 
 define "Indicator Status":
