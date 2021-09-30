@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-BPGoalInProgress",
+  "active": true,
+  "name": [
+    {
+      "text": "BP Goal In Progress",
+      "family": "In Progress",
+      "given": [
+        "BPGoal"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1979-08-26"
+}

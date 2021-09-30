@@ -1,0 +1,112 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "plandefinition-Pharma",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/PlanDefinition/plandefinition-Pharma",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "ohsu-pharma"
+    }
+  ],
+  "version": "0.1",
+  "name": "Pharma",
+  "title": "OHSU Pharmacologic Intervention",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/plan-definition-type",
+        "code": "eca-rule",
+        "display": "ECA Rule"
+      }
+    ]
+  },
+  "status": "draft",
+  "date": "2020-02-04T00:00:00-08:00",
+  "publisher": "Oregon Health and Science University (OHSU)",
+  "description": "This PlanDefinition provides pharmacologic recommendations for patients with Hypertension",
+  "purpose": "The purpose of this is to test the system to make sure we have complete end-to-end functionality",
+  "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "371622005",
+            "display": "Elevated BP without HTN diagnosis"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "Hypertension Management"
+    }
+  ],
+  "copyright": "© OHSU 2020+.",
+  "library": [
+     "http://fhir.org/guides/ohsu/htnu18ig/Library/library-Pharma"
+  ],
+  "action": [
+    {
+      "title": "Recommendation",
+      "description": "Determines type of recommendation regarding pharmacologic intervention.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient should enter this workflow.",
+            "language": "text/cql.identifier",
+            "expression": "Enter Workflow"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Determines if and what type of recommendation patient should be recommended.",
+            "language": "text/cql.identifier",
+            "expression": "Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Rationale Combined Data"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    }
+  ]
+}

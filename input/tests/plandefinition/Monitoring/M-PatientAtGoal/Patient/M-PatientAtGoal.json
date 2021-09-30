@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-PatientAtGoal",
+  "active": true,
+  "name": [
+    {
+      "text": "Patient At Goal",
+      "family": "AtGoal",
+      "given": [
+        "Patient"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1992-04-12"
+}

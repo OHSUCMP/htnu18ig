@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Exclusion from Hypertension Diagnosis",
+      "indicator": "info",
+      "detail": "Patient was excluded from initial diagnosis of hypertension due to being pregnant.",
+      "source": {}
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "medicationrequest-P-AdvancingTreatment-1",
+  "note": [
+    {
+      "text": "Completed Request"
+    }
+  ],
+  "status": "completed",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/medication-P-AdvancingTreatment-2",
+    "display": "bumetanide 5 MG Oral Tablet"
+  },
+  "subject": {
+    "reference": "Patient/P-AdvancingTreatment"
+  },
+  "authoredOn": "2020-05-01T16:00:00-08:00"
+}

@@ -1,0 +1,137 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "plandefinition-AdverseEvents",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/PlanDefinition/plandefinition-AdverseEvents",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "ohsu-adverse-events"
+    }
+  ],
+  "version": "0.1",
+  "name": "AdverseEvents",
+  "title": "OHSU Adverse Reaction Detection",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/plan-definition-type",
+        "code": "eca-rule",
+        "display": "ECA Rule"
+      }
+    ]
+  },
+  "status": "draft",
+  "date": "2020-02-04T00:00:00-08:00",
+  "publisher": "Oregon Health and Science University (OHSU)",
+  "description": "This PlanDefinition detects adverse reactions that could be related to Hypertension medication",
+  "purpose": "The purpose is to identify any adverse reactions and recommend the patient contact their care team.",
+  "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "Hypertension Management"
+    }
+  ],
+  "copyright": "© OHSU 2020+.",
+  "library": [
+     "http://fhir.org/guides/ohsu/htnu18ig/Library/library-AdverseEvents"
+  ],
+  "action": [
+    {
+      "title": "Untreated Adverse Reaction Recommendation",
+      "description": "Determines recommendation for any Adverse Reactions that are ongoing/untreated.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient had a recent adverse reaction that may not be treated.",
+            "language": "text/cql.identifier",
+            "expression": "Untreated Adverse Events Action Path"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Determines if and what type of recommendation patient should receive.",
+            "language": "text/cql.identifier",
+            "expression": "Untreated Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Untreated Rationale Combined Data"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Untreated Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Treated Adverse Reaction Recommendation",
+      "description": "Determines recommendation for any Adverse Reactions that are resolved/treated.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient had a recent adverse reaction that was treated.",
+            "language": "text/cql.identifier",
+            "expression": "Treated Adverse Events Action Path"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Determines if and what type of recommendation patient should receive.",
+            "language": "text/cql.identifier",
+            "expression": "Treated Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Treated Rationale Combined Data"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Treated Indicator Status"
+          }
+        }
+      ]
+    }
+  ]
+}

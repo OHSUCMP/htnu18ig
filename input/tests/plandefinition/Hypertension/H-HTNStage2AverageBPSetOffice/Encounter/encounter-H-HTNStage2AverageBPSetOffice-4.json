@@ -1,0 +1,28 @@
+{
+  "resourceType": "Encounter",
+  "id": "encounter-H-HTNStage2AverageBPSetOffice-4",
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        }
+      ],
+      "text": "General examination of patient (procedure)"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/H-HTNStage2AverageBPSetOffice"
+  },
+  "period": {
+    "start": "2021-04-26T00:00:00-04:00",
+    "end": "2021-04-26T23:59:59-04:00"
+  }
+}

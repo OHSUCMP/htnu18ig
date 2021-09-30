@@ -1,0 +1,45 @@
+{
+  "hookInstance": "test",
+  "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
+  "hook": "patient-view",
+  "applyCql": true,
+  "context": {
+    "userId": "Practitioner/example",
+    "patientId": "NPI-ExcludedNotDiagnosed"
+  },
+  "prefetch": {
+    "item1": {
+      "response": {
+        "status": "200 OK"
+      },
+      "resource": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Patient",
+              "id": "NPI-ExcludedNotDiagnosed",
+              "active": true,
+              "name": [
+                {
+                  "text": "Excluded Not Diagnosed",
+                  "family": "NotDiagnosed",
+                  "given": [
+                    "Excluded"
+                  ]
+                }
+              ],
+              "gender": "male",
+              "birthDate": "1996-12-04"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

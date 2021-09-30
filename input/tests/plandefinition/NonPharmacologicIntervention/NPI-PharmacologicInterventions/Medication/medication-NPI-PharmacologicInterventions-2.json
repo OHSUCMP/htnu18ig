@@ -1,0 +1,22 @@
+{
+  "resourceType": "Medication",
+  "id": "medication-NPI-PharmacologicInterventions-2",
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "153008",
+        "display": "ibuprofen 200 MG Oral Tablet [Advil]"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "385055001",
+        "display": "Tablet dose form (qualifier value)"
+      }
+    ]
+  }
+}

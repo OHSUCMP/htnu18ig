@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-SmokingCessationQuit",
+  "active": true,
+  "name": [
+    {
+      "text": "Smoking Cessation Quit",
+      "family": "Quit",
+      "given": [
+        "SmokingCessation"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1979-11-02"
+}

@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Patient did not have a preexisting hypertensive condition.",
+      "indicator": "info",
+      "detail": "No Further Action Required.",
+      "source": {}
+    }
+  ]
+}

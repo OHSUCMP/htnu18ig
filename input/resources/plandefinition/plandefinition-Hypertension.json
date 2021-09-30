@@ -66,26 +66,62 @@
   ],
   "action": [
     {
-      "title": "Hypertension Diagnosis",
-      "documentation": [
-        {
-          "type": "documentation",
-          "display": "Info for those with normal blood pressure",
-          "url": "https://en.wikipedia.org/wiki/Blood_pressure"
-        }
-      ],
-      "trigger": [
-        {
-          "type": "named-event",
-          "name": "patient-view"
-        }
-      ],
+      "title": "Recommendation",
+      "description": "Determines type of recommendation regarding status of Hypertension Diagnosis.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
       "condition": [
         {
-          "kind": "start",
+          "kind": "applicability",
           "expression": {
-            "language": "text/cql",
-            "expression": "'true'"
+            "description": "Determine if Patient is in hypertension population.",
+            "language": "text/cql.identifier",
+            "expression": "In Population"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Determines if and what type of recommendation patient should be recommended.",
+            "language": "text/cql.identifier",
+            "expression": "Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Rationale Combined Data"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Exclusion from Hypertension Diagnosis",
+      "description": "Determines if patient was excluded from Hypertension Recommendation.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient is in hypertension exclusion population.",
+            "language": "text/cql.identifier",
+            "expression": "Meets Exclusion Criteria"
           }
         }
       ],
@@ -93,9 +129,9 @@
         {
           "path": "action.description",
           "expression": {
-            "description": "Patient Name.",
+            "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
             "language": "text/cql.identifier",
-            "expression": "Patient Name"
+            "expression": "Exclusion Reason"
           }
         },
         {
@@ -104,78 +140,6 @@
             "language": "text/cql.identifier",
             "expression": "Info"
           }
-        }
-      ],
-      "action": [
-        {
-          "title": "Recommendation",
-          "description": "Determines type of recommendation regarding status of Hypertension Diagnosis.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in hypertension population.",
-                "language": "text/cql.identifier",
-                "expression": "In Population"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.title",
-              "expression": {
-                "description": "Determines if and what type of recommendation patient should be recommended.",
-                "language": "text/cql.identifier",
-                "expression": "Recommendation"
-              }
-            },
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for recommendation type.",
-                "language": "text/cql.identifier",
-                "expression": "Rationale Combined Data"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Indicator Status"
-              }
-            }
-          ]
-        },
-        {
-          "title": "Exclusion from Hypertension Diagnosis",
-          "description": "Determines if patient was excluded from Hypertension Recommendation.",
-          "condition": [
-            {
-              "kind": "applicability",
-              "expression": {
-                "description": "Determine if Patient is in hypertension exclusion population.",
-                "language": "text/cql.identifier",
-                "expression": "Meets Exclusion Criteria"
-              }
-            }
-          ],
-          "dynamicValue": [
-            {
-              "path": "action.description",
-              "expression": {
-                "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
-                "language": "text/cql.identifier",
-                "expression": "Exclusion Reason"
-              }
-            },
-            {
-              "path": "action.extension",
-              "expression": {
-                "language": "text/cql.identifier",
-                "expression": "Info"
-              }
-            }
-          ]
         }
       ]
     }

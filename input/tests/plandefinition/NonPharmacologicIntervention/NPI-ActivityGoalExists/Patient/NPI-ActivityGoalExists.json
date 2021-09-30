@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-ActivityGoalExists",
+  "active": true,
+  "name": [
+    {
+      "text": "Activity Goal Exists",
+      "family": "Exists",
+      "given": [
+        "ActivityGoal"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1983-06-11"
+}

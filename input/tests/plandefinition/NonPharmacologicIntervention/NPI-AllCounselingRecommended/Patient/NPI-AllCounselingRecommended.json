@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-AllCounselingRecommended",
+  "active": true,
+  "name": [
+    {
+      "text": "All Counseling Recommended",
+      "family": "CounselingRecommended",
+      "given": [
+        "All"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1998-09-02"
+}

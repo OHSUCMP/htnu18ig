@@ -1,0 +1,38 @@
+{
+  "resourceType": "Goal",
+  "id": "goal-NPI-AlcoholModerationGoalExists-1",
+  "lifecycleStatus": "active",
+  "category": [{
+    "coding": [
+      {
+        "system": "https://coach.ohsu.edu",
+        "code": "alcohol-moderation",
+        "display": "Alcohol Moderation"
+      }
+    ],
+    "text": "Alcohol Moderation"
+  }],
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "version": "4.0.1",
+        "code": "in-progress",
+        "display": "In Progress"
+      }
+    ]
+  },
+  "startDate": "2021-08-12",
+  "statusDate": "2021-08-19",
+  "description": {
+    "text": "Cut out alcohol on weekdays"
+  },
+  "subject": {
+    "reference": "Patient/NPI-AlcoholModerationGoalExists"
+  },
+  "target": [
+    {
+      "dueDate": "2021-09-29"
+    }
+  ]
+}

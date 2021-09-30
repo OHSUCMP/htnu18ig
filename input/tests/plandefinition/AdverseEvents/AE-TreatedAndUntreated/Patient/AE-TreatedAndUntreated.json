@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "AE-TreatedAndUntreated",
+  "active": true,
+  "name": [
+    {
+      "text": "Treated and Untreated",
+      "family": "Adverse Event",
+      "given": [
+        "Treated And Untreated"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1992-07-17"
+}

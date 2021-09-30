@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-AlcoholModerationGoalExists-1",
+  "status": "final",
+  "note": [
+    {
+      "text": "Patient is female and has more than 2 drinks a day. Considered a heavy alcoholic drinker."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.69",
+        "code": "11287-0",
+        "display": "Alcoholic drinks per drinking day - Reported"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/NPI-AlcoholModerationGoalExists"
+  },
+  "effectiveDateTime": "2020-12-27T10:00:00-07:00",
+  "issued": "2020-12-27T00:00:00-07:00",
+  "valueQuantity": {
+    "value": 3,
+    "unit": "Drinks/Day"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Exclusion from Hypertension Non-Pharmacologic Interventions",
+      "indicator": "info",
+      "detail": "Patient was excluded from non-pharmacologic interventions for hypertension due to being under the age of 18.",
+      "source": {}
+    }
+  ]
+}

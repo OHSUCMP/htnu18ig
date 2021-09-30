@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Consider adjusting treatment.",
+      "indicator": "critical",
+      "detail": "You recently had a condition recorded that may be an adverse event from high blood pressure treatment. Contacting your care team will help them resolve it.|[{ \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Brief loss of consciousness, Acute kidney problem\" , \"url\":\"/contact?token\u003duntreated-adverse-event\"}] },{\"id\": \"adverseevent-AE-UntreatedAdverseEvent-2\", \"type\": \"adverse-event\", \"label\": \"Brief loss of consciousness\"},{\"id\": \"adverseevent-AE-UntreatedAdverseEvent-1\", \"type\": \"adverse-event\", \"label\": \"Acute kidney problem\"}]|at-most-one|",
+      "source": {}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-ExcludedNotDiagnosed",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded Not Diagnosed",
+      "family": "NotDiagnosed",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1996-12-04"
+}

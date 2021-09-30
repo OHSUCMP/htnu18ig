@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-WeightLossGoalExists",
+  "active": true,
+  "name": [
+    {
+      "text": "Weight Loss Goal Exists",
+      "family": "Exists",
+      "given": [
+        "WeightLossGoal"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1967-02-12"
+}

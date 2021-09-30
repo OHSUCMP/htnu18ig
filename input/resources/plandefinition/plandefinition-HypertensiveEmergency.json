@@ -1,0 +1,94 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "plandefinition-HypertensiveEmergency",
+  "url": "http://fhir.org/guides/ohsu/htnu18ig/PlanDefinition/plandefinition-HypertensiveEmergency",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "ohsu-hypertensive-emergency"
+    }
+  ],
+  "version": "0.1",
+  "name": "HypertensiveEmergency",
+  "title": "OHSU Hypertensive Emergency Detection",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/plan-definition-type",
+        "code": "eca-rule",
+        "display": "ECA Rule"
+      }
+    ]
+  },
+  "status": "draft",
+  "date": "2020-02-04T00:00:00-08:00",
+  "publisher": "Oregon Health and Science University (OHSU)",
+  "description": "This PlanDefinition detects a recent hypertensive emergency",
+  "purpose": "The purpose is to identify a hypertensive emergency and recommend the patient seek treatment.",
+  "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "Hypertension Management"
+    }
+  ],
+  "copyright": "© OHSU 2020+.",
+  "library": [
+     "http://fhir.org/guides/ohsu/htnu18ig/Library/library-HypertensiveEmergency"
+  ],
+  "action": [
+    {
+      "title": "Recommendation",
+      "description": "Determines recommendation for a Hypertensive Emergency.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "Determine if Patient had a recent hypertensive emergency",
+            "language": "text/cql.identifier",
+            "expression": "In Population"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Determines if and what type of recommendation patient should be recommended.",
+            "language": "text/cql.identifier",
+            "expression": "Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Rationale Combined Data"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-WeightLossReminder",
+  "active": true,
+  "name": [
+    {
+      "text": "Weight Loss Reminder",
+      "family": "Reminder",
+      "given": [
+        "WeightLoss"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1972-01-29"
+}

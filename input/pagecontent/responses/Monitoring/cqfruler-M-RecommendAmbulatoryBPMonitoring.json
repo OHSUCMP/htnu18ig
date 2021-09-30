@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Use ambulatory blood pressure monitoring to address blood pressure variability.",
+      "indicator": "info",
+      "detail": "{{#patient}}Your recent blood pressure is above your goal and appears to be highly variable, which can indicate a health risk. Please reach out to your care team about ordering ambulatory blood pressure monitoring or obtaining better measurements from home blood pressure monitoring.{{/patient}}\n    {{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk. If ABPM is not available, discuss more better protocols for home blood pressure monitoring.{{/careTeam}}|[ {\"id\": \"ambulatory-suggestion\", \"label\": \"Request Ambulatory Blood Pressure\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Click here to request Ambulatory Blood Pressure\", \"url\":\"/contact?token\u003dambulatory-bps\"}] } ]|at-most-one|[{\"label\":\"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring\", \"url\":\"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring\"}]",
+      "source": {}
+    }
+  ]
+}

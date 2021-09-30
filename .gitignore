@@ -28,3 +28,8 @@ Thumbs.db
 /.idea
 /specification/JSON
 /specification/*.xlsx#
+/specification/~*.xlsx
+
+# Python environment #
+################
+/specification/venv

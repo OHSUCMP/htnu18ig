@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-ExcludedPregnant",
+  "active": true,
+  "name": [
+    {
+      "text": "Excluded Pregnant",
+      "family": "Pregnant",
+      "given": [
+        "Excluded"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1987-12-09"
+}

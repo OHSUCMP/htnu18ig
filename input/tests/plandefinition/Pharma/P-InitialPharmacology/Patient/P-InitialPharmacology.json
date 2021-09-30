@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "P-InitialPharmacology",
+  "active": true,
+  "name": [
+    {
+      "text": "Pharmacology Initial",
+      "family": "Initial",
+      "given": [
+        "Pharmacology"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1992-06-01"
+}

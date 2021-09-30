@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Use ambulatory blood pressure monitoring to address blood pressure variability.",
+      "indicator": "info",
+      "detail": "{{#patient}}You recently have had some variation in your blood pressure readings. Sometimes variation in blood pressure is a health risk; please contact your care team, as they may recommend ambulatory blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk.{{/careTeam}}|[ { \"id\": \"ambulatory-suggestion\", \"label\": \"Request Ambulatory Blood Pressure\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Click here to request Ambulatory Blood Pressure\", \"url\":\"/contact?token\u003dambulatory-bps\"}] } ]|at-most-one|[{\"label\":\"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring\", \"url\":\"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring\"}]",
+      "source": {}
+    }
+  ]
+}

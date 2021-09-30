@@ -5,12 +5,27 @@ using FHIR version '4.0.1'
 include FHIRHelpers version '4.0.1' called FHIRHelpers
 
 codesystem "LOINC": 'http://loinc.org'
+codesystem "SNOMED": 'http://snomed.info/sct'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionVerificationStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
+codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
+codesystem "ConditionCategorySystem": 'http://terminology.hl7.org/CodeSystem/condition-category'
+codesystem "Medication request status": 'http://hl7.org/fhir/CodeSystem/medicationrequest-status'
 
 valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
+valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
+valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
+valueset "Antihypertensive Medications": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.10'
 
+/* Possible exclusions from workflows */
+valueset "Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012'
+valueset "Non essential Hypertension SNOMEDCT": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.10'
+valueset "Pregnancy": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378'
+valueset "End Stage Renal Disease": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.590'
+valueset "Hospice care ambulatory": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1108.15'
+
+code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
 // Condition Clinical Status Codes - Consider value sets for these
 code "active": 'active' from "ConditionClinicalStatusCodes"
@@ -28,6 +43,12 @@ code "confirmed": 'confirmed' from ConditionVerificationStatusCodes
 code "refuted": 'refuted' from ConditionVerificationStatusCodes
 code "entered-in-error": 'entered-in-error' from ConditionVerificationStatusCodes
 
+code "problem-list-item": 'problem-list-item' from "ConditionCategorySystem" display 'Problem List Item'
+code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategorySystem" display 'Encounter Diagnosis'
+
+code "home-measurement": '264362003' from "SNOMED"
+
+code "Active Medication Request": 'active' from "Medication request status"
 
 context Patient
 
@@ -237,3 +258,194 @@ define function "Normalize Abatement"(condition Condition):
 
 define function "Prevalence Period"(condition Condition):
   Interval[start of "Normalize Onset"(condition.onset), end of "Normalize Abatement"(condition))
+
+/***** Common Data *****/
+
+/* Potential Exclusion Criteria */
+define "Patient Under Age 18":
+  AgeInYearsAt(Today()) < 18
+
+define "Patient Over Age 80":
+  AgeInYearsAt(Today()) > 80
+
+// Grab all conditions for patients since we can't limit by code in Epic.
+define "Conditions":
+  (QualifiedCondition(["Condition": category ~ "problem-list-item"])) union
+  (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
+
+define "Condition Indicating End Stage Renal Disease":
+  "Conditions" Problem
+    where Problem.code in "End Stage Renal Disease" and end of "Prevalence Period"(Problem) >= Today()
+
+define "Condition Indicating Pregnancy":
+  "Conditions" Problem
+    where Problem.code in "Pregnancy" and end of "Prevalence Period"(Problem) >= Today()
+
+define "Blood Pressure Observations":
+  (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
+      sort by Coalesce(start of "Normalize Interval"(effective), issued)
+
+define "Most Recent BP Reading":
+  Last("Blood Pressure Observations" O sort by Coalesce(start of "Normalize Interval"(effective), issued))
+
+define "BP Within 14 days":
+  "Most Recent BP Reading" BP
+  return Coalesce(start of "Normalize Interval"(BP.effective), BP.issued) + 14 days >= Today()
+
+define "HTN Crisis":
+  "BP Within 14 days" and "HTN Crisis BP"({ "Most Recent BP Reading" }) is not null
+
+define "Blood Pressure Observations for Last 2 Years":
+  "Blood Pressure Observations" BP where "Normalize Interval"(BP.effective) starts 24 months or less before Today()
+    sort by Coalesce(start of "Normalize Interval"(effective), issued)
+
+define "Blood Pressure Observations for Last 2 Years Descending":
+  "Blood Pressure Observations for Last 2 Years" O sort by Coalesce(start of "Normalize Interval"(effective), issued) desc
+
+define function MeasurementSettings(list List<Extension>):
+  list Extension
+    where Extension.url = 'http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt'
+  return FHIRHelpers.ToCode(Extension.value)
+
+define "Home Blood Pressure Observations":
+  "Blood Pressure Observations for Last 2 Years" BPObservation
+    where "MeasurementSettings"(BPObservation.extension) contains "home-measurement"
+
+define "Office Blood Pressure Observations":
+  "Blood Pressure Observations for Last 2 Years" except "Home Blood Pressure Observations"
+
+// Revisit logic when ready to address ambulatory observations. Check out commit 57046448a24d24a767d402e5fa8a96779a488f02 for old logic
+define "Ambulatory Blood Pressure Monitoring Observations":
+  {}
+
+define "Has BP Set":
+    if not exists "Blood Pressure Observations for Last 2 Years" then false
+    else calculateScore("Blood Pressure Observations for Last 2 Years") >= 4
+
+define function score(observation Observation):
+  if observation in "Ambulatory Blood Pressure Monitoring Observations" then 0.333
+  else if observation in "Home Blood Pressure Observations" then 0.667
+  else 1
+
+define function calculateScore(list List<FHIR.Observation>):
+  Sum(list O
+    return all score(O)
+  )
+
+define "Most Recent BP Set":
+  if not "Has BP Set" then null
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 4)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 4)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 5)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 5)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 6)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 6)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 7)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 7)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 8)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 8)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 9)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 9)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 10)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 10)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 11)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 11)
+  else if calculateScore(Take("Blood Pressure Observations for Last 2 Years Descending", 12)) >= 4 then Take("Blood Pressure Observations for Last 2 Years Descending", 12)
+  else null
+
+define "Average All BP Last 2 Years":
+  "Avg BP"("Blood Pressure Observations for Last 2 Years")
+
+define "Average Most Recent BP Set":
+  "Avg BP"("Most Recent BP Set")
+
+// Is last BP set or all BPs avge > 130/80?
+define "Patient Has Potential HTN Stage 1 BP":
+  (
+    "HTN Stage 1 BP"("Most Recent BP Set") is not null
+    or "HTN Stage 1 BP"("Blood Pressure Observations for Last 2 Years") is not null
+  )
+
+// Is last BP set or all BPs average > 140 SBP or > 90 DBP?
+define "Patient Has Potential HTN Stage 2 BP":
+  (
+    "HTN Stage 2 BP"("Most Recent BP Set") is not null
+    or "HTN Stage 2 BP"("Blood Pressure Observations for Last 2 Years") is not null
+  )
+
+// Is SBP Coeff of Var > 11 for all BPs and no ABPM?
+define "BP Highly Variable":
+  if "Has BP Set" then
+    (
+      "Systolic BP Variability"("Blood Pressure Observations for Last 2 Years").value > 11
+      // This logic was removed
+      //and not exists "Ambulatory Blood Pressure Monitoring Procedures"
+    )
+  else null
+
+define "Condition Indicating Preexisting Hypertension":
+  "Conditions" Problem
+    where (Problem.code in "Hypertension" or Problem.code in "Non essential Hypertension SNOMEDCT") and end of "Prevalence Period"(Problem) >= Today()
+
+// Does patient have a BP goal?
+define "Qualifying Blood Pressure Goals":
+  (QualifiedGoal(["Goal"])) BPGoal
+    where (
+      singleton from (BPGoal.target Systolic
+        where Systolic.measure in "Systolic blood pressure"
+          and Systolic.detail is Quantity
+          and WithUnit(Systolic.detail, 'mm[Hg]'))
+    ) SystolicTarget is not null
+      and (
+        singleton from (BPGoal.target Diastolic
+          where Diastolic.measure in "Diastolic Blood Pressure"
+            and Diastolic.detail is Quantity
+            and WithUnit(Diastolic.detail, 'mm[Hg]'))
+      ) DiastolicTarget is not null
+
+define "Most Recently Established Blood Pressure Goal":
+  Last (
+    "Qualifying Blood Pressure Goals" BPGoal
+      sort by (start as date)
+  )
+
+define "Patient has a BP Goal":
+  exists "Qualifying Blood Pressure Goals"
+
+
+define "BP from Most Recent Goal":
+  "Most Recently Established Blood Pressure Goal" BPGoal
+    return Tuple {
+      systolic: singleton from (BPGoal.target Systolic where Systolic.measure in "Systolic blood pressure").detail as Quantity,
+      diastolic: singleton from (BPGoal.target Diastolic where Diastolic.measure in "Diastolic Blood Pressure").detail as Quantity
+    }
+
+define "Above Goal Average Most Recent":
+  "Average Most Recent BP Set".systolic > "BP from Most Recent Goal".systolic or
+  "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
+
+define "BP Goal Met":
+  "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
+  and not "BP Highly Variable"
+
+define "Goal Interval":
+  Interval[("Most Recently Established Blood Pressure Goal".start as date),
+    ("Most Recently Established Blood Pressure Goal".start as date) + 3 months]
+
+define "Patient on Track":
+  not "Patient has a BP Goal" or not "Has BP Set" or "BP Goal Met" or end of "Goal Interval" > Today()
+
+define "Active Medication Requests":
+  ["MedicationRequest"] Rx where Rx.status.value ~ "Active Medication Request".code
+
+define "Medication Requests With Medication":
+  "Active Medication Requests" Rx
+    let medication: singleton from ([Medication: id in Last(Split(Rx.medication.reference, '/'))])
+    return
+      MedicationRequest {
+        id: Rx.id,
+        status: Rx.status,
+        intent: Rx.intent,
+        category: Rx.category,
+        medication: medication.code,
+        subject: Rx.subject,
+        authoredOn: Rx.authoredOn,
+        recorder: Rx.recorder,
+        dosageInstruction: Rx.dosageInstruction,
+        dispenseRequest: Rx.dispenseRequest
+      }
+
+define "Patient is Using Antihypertensive Medications":
+  "Medication Requests With Medication".medication in "Antihypertensive Medications"

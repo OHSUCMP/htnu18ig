@@ -1,0 +1,29 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-AlcoholModerationAchieved-2",
+  "status": "final",
+  "note": [
+    {
+      "text": "Patient is male and drinking has decreased since counseling."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.69",
+        "code": "11287-0",
+        "display": "Alcoholic drinks per drinking day - Reported"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/NPI-AlcoholModerationAchieved"
+  },
+  "effectiveDateTime": "2021-05-15T10:00:00-07:00",
+  "issued": "2021-05-15T00:00:00-07:00",
+  "valueQuantity": {
+    "value": 2,
+    "unit": "Drinks/Day"
+  }
+}

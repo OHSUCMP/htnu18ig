@@ -1,0 +1,38 @@
+{
+  "resourceType": "Goal",
+  "id": "goal-NPI-DietaryGoalExists-1",
+  "lifecycleStatus": "active",
+  "category": [{
+    "coding": [
+      {
+        "system": "https://coach.ohsu.edu",
+        "code": "nutrition",
+        "display": "Nutrition"
+      }
+    ],
+    "text": "Nutrition"
+  }],
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "version": "4.0.1",
+        "code": "in-progress",
+        "display": "In Progress"
+      }
+    ]
+  },
+  "startDate": "2021-07-12",
+  "statusDate": "2021-07-29",
+  "description": {
+    "text": "DASH Diet"
+  },
+  "subject": {
+    "reference": "Patient/NPI-DietaryGoalExists"
+  },
+  "target": [
+    {
+      "dueDate": "2021-09-29"
+    }
+  ]
+}

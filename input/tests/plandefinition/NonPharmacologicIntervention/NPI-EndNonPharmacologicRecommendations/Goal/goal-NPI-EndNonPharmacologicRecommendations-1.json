@@ -1,0 +1,66 @@
+{
+  "resourceType": "Goal",
+  "id": "goal-NPI-EndNonPharmacologicRecommendations-1",
+  "note": [
+    {
+      "text": "Goal has been achieved."
+    }
+  ],
+  "lifecycleStatus": "accepted",
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "version": "4.0.1",
+        "code": "achieved",
+        "display": "Achieved"
+      }
+    ]
+  },
+  "startDate": "2021-07-12",
+  "statusDate": "2021-07-11",
+  "description": {
+    "text": "Goal of 135/85"
+  },
+  "subject": {
+    "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": 135,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": 85,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    }
+  ]
+}

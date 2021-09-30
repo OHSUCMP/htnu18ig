@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Exclusion from Hypertension Monitoring Process",
+      "indicator": "info",
+      "detail": "Patient was excluded from monitoring of hypertension due to having end stage renal disease.",
+      "source": {}
+    }
+  ]
+}
