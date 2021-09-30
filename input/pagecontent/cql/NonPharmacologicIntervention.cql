@@ -43,7 +43,7 @@ define function "Goal Category"(goal FHIR.Goal):
 define function "Update Goals String"(goals List<FHIR.Goal>):
   goals Goal
     let coding: "Goal Category"(Goal)
-    return '{"id": "' + Goal.id + '", "type": "update-goal", "references": {"system":"' + coding.system + '", "code":"' + coding.code + ', "display":"' + coding.display + '"}, "label": "Goal: '+ Goal.description.text + '"}'
+    return '{"id": "' + Goal.id + '", "type": "update-goal", "references": {"system":"' + coding.system + '", "code":"' + coding.code + '"}, "label": "Goal: '+ Goal.description.text + '"}'
 
 define function "Goal Summary"(goals List<FHIR.Goal>):
   goals Goal return '<strong>' + Goal.description.text + '</strong>'
