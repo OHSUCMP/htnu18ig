@@ -3,7 +3,7 @@
     {
       "summary": "See care team and discuss treatment for hypertension if event recurs.",
       "indicator": "warning",
-      "detail": "You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but if it recurs or doesn\u0027t get better, please contact your care team.|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Acute kidney problem, Brief loss of consciousness\" , \"url\":\"/contact?token\u003dtreated-adverse-event\"}] } ]|at-most-one|",
+      "detail": "You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but \u003cstrong\u003eif it recurs or doesn\u0027t get better, please contact your care team\u003c/strong\u003e.|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Acute kidney problem, Brief loss of consciousness\" , \"url\":\"/contact?token\u003dtreated-adverse-event\"}] } ]|at-most-one|",
       "source": {}
     }
   ]

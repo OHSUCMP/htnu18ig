@@ -92,12 +92,11 @@ define "Selection Behavior":
 
 define "Links":
   if not "In Population" then ''
-  else if not Common."Patient has a BP Goal" then '[{"label": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"},
-    {"label": "https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf", "url": "https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf"}]'
+  else if not Common."Patient has a BP Goal" then '[{"label": "AHA: Understanding High Blood Pressure Readings", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if not Common."Has BP Set" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
-  else if Common."Patient Has Potential HTN Stage 2 BP" then '[{"label":"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf", "url":"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf"}]'
-  else if Common."Above Goal Average Most Recent" then '[{"label":"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf", "url":"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf"}]'
-  else if Common."BP Highly Variable" then '[{"label":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring", "url":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring"}]'
+  else if Common."Patient Has Potential HTN Stage 2 BP" then '[{"label":"NIH: Controlling blood pressure", "url":"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf"}]'
+  else if Common."Above Goal Average Most Recent" then '[{"label":"NIH: Controlling blood pressure", "url":"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf"}]'
+  else if Common."BP Highly Variable" then '[{"label":"24-hour Ambulatory Blood Pressure Monitoring", "url":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring"}]'
   else '[]'
 
 define "Exclusion Reason":
