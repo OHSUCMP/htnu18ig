@@ -3,7 +3,7 @@
     {
       "summary": "Consider using medication to treat high blood pressure.",
       "indicator": "warning",
-      "detail": "{{#patient}}Your blood pressure is substantially elevated, to the point where medication should be considered to help manage it. This may occur sooner than expected. Speak with your care team to discuss medication options.{{/patient}}\n    {{#careTeam}}In patients under 55 with high blood pressure and listed comorbidities, use thiazide-type diuretic, ACE-I, ARB, or CCB for first-line therapy{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure.\", \"url\":\"/contact?token\u003drecommend-pharma\"}] } ]|at-most-one|",
+      "detail": "{{#patient}}Your blood pressure is substantially elevated, to the point where \u003cstrong\u003emedication should be considered\u003c/strong\u003e to help manage it. This may occur sooner than expected. Speak with your care team to discuss medication options.{{/patient}}\n    {{#careTeam}}In patients under 55 with high blood pressure and listed comorbidities, use thiazide-type diuretic, ACE-I, ARB, or CCB for first-line therapy{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure.\", \"url\":\"/contact?token\u003drecommend-pharma\"}] } ]|at-most-one|",
       "source": {}
     }
   ]

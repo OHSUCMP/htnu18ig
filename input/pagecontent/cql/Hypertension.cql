@@ -35,7 +35,7 @@ define "Patient Name":
 
 /* Recommendation Criteria - Hypertension  */
 define "Meets Inclusion Criteria":
- not "Diagnosis of Preexisting Hypertension"
+ not exists Common."Condition Indicating Preexisting Hypertension"
 
 define "Meets Exclusion Criteria":
   Common."Patient Under Age 18"
@@ -105,11 +105,10 @@ define "Links":
   if not "In Population" then ''
   else if not Common."Has BP Set" then '[{"label":"CDC: How to measure blood pressure", "url":"https://www.cdc.gov/bloodpressure/measure.htm"}]'
   else if "HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
-  else if "Consider HTN Stage 2" then '[{"label": "https://uhs.umich.edu/hypertension", "url": "https://uhs.umich.edu/hypertension"}, {"label":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
-  else if "Consider HTN Stage 1" then '[{"label": "https://uhs.umich.edu/hypertension", "url": "https://uhs.umich.edu/hypertension"}, {"label":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
-  else if "Prescribe Monitoring to Confirm HTN" then '[{"label":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"},
-    {"label":"https://www.cdc.gov/bloodpressure/measure.htm", "url":"https://www.cdc.gov/bloodpressure/measure.htm"}]'
-  else if Common."BP Highly Variable" then '[{"label":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring", "url":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring"}]'
+  else if "Consider HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
+  else if "Consider HTN Stage 1" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
+  else if "Prescribe Monitoring to Confirm HTN" then '[{"label":"AHA: Monitoring your blood pressure at home", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"}]'
+  else if Common."BP Highly Variable" then '[{"label":"24-hour Ambulatory Blood Pressure Monitoring", "url":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring"}]'
   else ''
 
 define "Exclusion Reason":
@@ -151,9 +150,6 @@ define "Consider HTN Stage 1":
 
 define "Prescribe Monitoring to Confirm HTN":
   "In Population" and Common."Patient Has Potential HTN Stage 1 BP" and not "Consider HTN Stage 1"
-
-define "Diagnosis of Preexisting Hypertension":
-  exists Common."Condition Indicating Preexisting Hypertension"
 
 /* TESTS */
 define "Test Patient Age on BP Reading":

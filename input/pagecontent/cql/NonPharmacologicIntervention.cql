@@ -102,24 +102,17 @@ define "Smoking Rationale":
 
 define "Smoking Suggestions":
   if exists "Tobacco Cessation Goals Needing Update" then '[' + Combine("Update Goals String"("Tobacco Cessation Goals Needing Update"), ',') + ']'
-  //else if exists "Tobacco Cessation Goals" then '[' + Combine("Update Goals String"("Tobacco Cessation Goals", 'smoking-cessation'), ',') + ']'
   else if exists "Tobacco Cessation Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '[
     {"id": "smoking-counseling", "type":"counseling-link", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Smoking Cessation Counseling","actions": [{"url":"/counseling/smoking-cessation", "label":"Click here to learn more about tobacco cessation."}]},
-    {"id": "' + "Unique Goal Id"('smoking-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"smoking-cessation", "display": "Smoking Cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] }
-  ]'
-  else if "Patient is Currently a Smoker" then '[ { "id": "' + "Unique Goal Id"('smoking-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"smoking-cessation", "display": "Smoking Cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [] } ]'
+    {"id": "' + "Unique Goal Id"('smoking-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"smoking-cessation", "display": "Smoking Cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [{"label":"Reduce my tobacco use to [quantity] [method:cigarettes] per [time period]."}] }]'
+  else if "Patient is Currently a Smoker" then '[ { "id": "' + "Unique Goal Id"('smoking-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"smoking-cessation", "display": "Smoking Cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [{"label":"Reduce my tobacco use to [quantity] [method:cigarettes] per [time period]."}] } ]'
   else ''
 
 define "Smoking Links":
-  if exists "Tobacco Cessation Goals Needing Update" then ''
-  else if exists "Tobacco Cessation Goals" then ''
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '[
-    { "label": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/smoking-high-blood-pressure-and-your-health", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/smoking-high-blood-pressure-and-your-health"},
-    { "label": "https://www.cancer.org/healthy/stay-away-from-tobacco/guide-quitting-smoking.html", "url": "https://www.cancer.org/healthy/stay-away-from-tobacco/guide-quitting-smoking.html"}
+  '[
+    { "label": "AHA: Smoking and your Health", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/smoking-high-blood-pressure-and-your-health"}
   ]'
-  else if "Patient is Currently a Smoker" then ''
-  else ''
 
 define "Tobacco Goal Summary":
   Combine("Goal Summary"("Tobacco Cessation Goals"), '<br>')
@@ -154,23 +147,16 @@ define "BMI Suggestions":
   else if exists "Weight Loss Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '[
     {"id": "weight-loss-counseling", "label": "Weight Loss Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss.", "url":"/counseling/weight-loss"}]},
-    {"id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": [] }
+    {"id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": [{"label":"Reduce my weight by [quantity] pounds."}] }
   ]'
-  else if "Patient BMI is Greater than 25 kg/m2" then '[ { "id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": [] } ]'
+  else if "Patient BMI is Greater than 25 kg/m2" then '[ { "id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": ["label":"Reduce my weight by [quantity] pounds."}] } ]'
   else ''
 
 define "BMI Links":
-  if exists "Weight Loss Goals Needing Update" then ''
-  else if exists "Weight Loss Goals" then ''
-  else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '[
-    {"label":"Healthy Weight Loss", "url":"https://www.cdc.gov/healthyweight/losing_weight/index.html"},
-    {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}
-  ]'
-  else if "Patient BMI is Greater than 25 kg/m2" then '[
+  '[
     {"label":"University of Michigan: Hypertension", "url":"https://uhs.umich.edu/hypertension"},
     {"label":"AHA: Changes You Can Make to Manage High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure"}
-    ]'
-  else ''
+  ]'
 
 define "Weight Loss Goal Summary":
   Combine("Goal Summary"("Weight Loss Goals"), '<br>')
@@ -203,20 +189,15 @@ define "Alcohol Suggestions":
   else if exists "Alcohol Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then '[
     {"id": "alcohol-counseling", "label": "Alcohol Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"24165007"}, "actions": [ {"label":"Learn more about alcohol moderation.", "url":"/counseling/alcohol-moderation"}]},
-    {"id": "' + "Unique Goal Id"('alcohol-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"alcohol-moderation", "display": "Alcohol Moderation"}, "label": "Set an Alcohol Moderation Goal", "actions": [] }
+    {"id": "' + "Unique Goal Id"('alcohol-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"alcohol-moderation", "display": "Alcohol Moderation"}, "label": "Set an Alcohol Moderation Goal", "actions": [{"label":"Reduce my alcohol consumption to [quantity] drinks per [time period]."}] }
   ]'
-  else if "Patient is a Heavy Alcoholic Drinker" then '[{ "id": "' + "Unique Goal Id"('alcohol-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"alcohol-moderation", "display": "Alcohol Moderation"}, "label": "Set an Alcohol Moderation Goal", "actions": [] } ]'
+  else if "Patient is a Heavy Alcoholic Drinker" then '[{ "id": "' + "Unique Goal Id"('alcohol-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"alcohol-moderation", "display": "Alcohol Moderation"}, "label": "Set an Alcohol Moderation Goal", "actions": [{"label":"Reduce my alcohol consumption to [quantity] drinks per [time period]."}] } ]'
   else ''
 
 define "Alcohol Links":
-  if exists "Alcohol Goals Needing Update" then ''
-  else if exists "Alcohol Goals" then ''
-  else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then '[
-    {"label": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/limiting-alcohol-to-manage-high-blood-pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/limiting-alcohol-to-manage-high-blood-pressure"},
-    {"label":"https://www.alcohol.org/effects/blood-pressure/", "url":"https://www.alcohol.org/effects/blood-pressure/"}
+  '[
+    {"label":"AHA: Alcohol and High Blood Pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/limiting-alcohol-to-manage-high-blood-pressure"}
   ]'
-  else if "Patient is a Heavy Alcoholic Drinker" then ''
-  else ''
 
 define "Alcohol Moderation Goal Summary":
   Combine("Goal Summary"("Alcohol Goals"), '<br>')
@@ -248,18 +229,15 @@ define "Nutrition Suggestions":
   else if exists "Nutrition Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Last Nutrition Counseling Procedure" is null then '[
     {"id": "nutrition-counseling", "label": "Nutrition Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"11816003"}, "actions": [ {"label":"Learn more about nutrition and diet changes.", "url":"/counseling/diet"}]},
-    {"id": "' + "Unique Goal Id"('nutrition-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"nutrition", "display": "Nutrition"}, "label": "Set a Nutrition/Diet Change Goal", "actions": [] }
+    {"id": "' + "Unique Goal Id"('nutrition-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"nutrition", "display": "Nutrition"}, "label": "Set a Nutrition/Diet Change Goal", "actions": [{"label":"Avoid eating [food item] for the next [quantity] [time period:week(s)]."}]}
   ]'
-  else '[{ "id": "' + "Unique Goal Id"('nutrition-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"nutrition", "display": "Nutrition"}, "label": "Set a Nutrition/Diet Change Goal", "actions": [] } ]'
+  else '[{ "id": "' + "Unique Goal Id"('nutrition-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"nutrition", "display": "Nutrition"}, "label": "Set a Nutrition/Diet Change Goal", "actions": [{"label":"Avoid eating [food item] for the next [quantity] [time period:week(s)]."}] } ]'
 
 define "Nutrition Links":
-  if exists "Nutrition Goals Needing Update" then ''
-  else if exists "Nutrition Goals" then ''
-  else if "Last Nutrition Counseling Procedure" is null then '[
-    {"label": "https://www.nhlbi.nih.gov/health-topics/dash-eating-plan", "url": "https://www.nhlbi.nih.gov/health-topics/dash-eating-plan"},
-    {"label": "https://www.cdc.gov/healthyweight/healthy_eating/index.html", "url": "https://www.cdc.gov/healthyweight/healthy_eating/index.html"}
+  '[
+    {"label": "NIH: DASH Eating", "url": "https://www.nhlbi.nih.gov/health-topics/dash-eating-plan"},
+    {"label": "CDC: Healthy Eating", "url": "https://www.cdc.gov/healthyweight/healthy_eating/index.html"}
   ]'
-  else ''
 
 define "Nutrition Goal Summary":
     Combine("Goal Summary"("Nutrition Goals"), '<br>')
@@ -291,19 +269,15 @@ define "Physical Activity Suggestions":
   else if exists "Physical Activity Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
   else if "Last Physical Activity Counseling Procedure" is null then '[
     {"id": "physical-activity-counseling", "label": "Physical Activity Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"304507003"}, "actions": [ {"label":"Learn more about physical activity.", "url":"/counseling/physical-activity"}]},
-    {"id": "' + "Unique Goal Id"('physical-activity-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"physical-activity", "display": "Physical Activity"}, "label": "Set a Physical Activity Goal", "actions": [] }
+    {"id": "' + "Unique Goal Id"('physical-activity-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"physical-activity", "display": "Physical Activity"}, "label": "Set a Physical Activity Goal", "actions": [{"label":"Exercise for [quantity] [time period:hours], [quantity] times per [time period]."}] }
   ]'
-  else '[{ "id": "' + "Unique Goal Id"('physical-activity-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"physical-activity", "display": "Physical Activity"}, "label": "Set a Physical Activity Goal", "actions": [] } ]'
+  else '[{ "id": "' + "Unique Goal Id"('physical-activity-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"physical-activity", "display": "Physical Activity"}, "label": "Set a Physical Activity Goal", "actions": [{"label":"Exercise for [quantity] [time period:hours], [quantity] times per [time period]."}] } ]'
 
 define "Physical Activity Links":
-  if exists "Physical Activity Goals Needing Update" then ''
-  else if exists "Physical Activity Goals" then ''
-  else if "Last Physical Activity Counseling Procedure" is null then '[
-    {"label": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure"},
-    {"label": "https://health.gov/our-work/physical-activity/current-guidelines", "url": "https://health.gov/our-work/physical-activity/current-guidelines"},
-    {"label": "https://www.cdc.gov/physicalactivity/index.html", "url": "https://www.cdc.gov/physicalactivity/index.html"}
+  '[
+    {"label": "AHA: Getting Active", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure"},
+    {"label": "CDC: Physical Activity Information", "url": "https://www.cdc.gov/physicalactivity/index.html"}
   ]'
-  else ''
 
 define "Physical Activity Goal Summary":
     Combine("Goal Summary"("Physical Activity Goals"), '<br>')
