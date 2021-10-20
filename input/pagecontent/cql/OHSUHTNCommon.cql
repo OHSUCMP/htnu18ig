@@ -185,6 +185,26 @@ define function ActiveOrRecurring(list List<Condition>):
       )
       or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "relapse"
 
+// Epic sometimes provides the oid instead of the named system, but we need the named system for comparing to ValueSets
+define function FixEpicSystemMapping(system String):
+  if Matches(system, 'urn:oid:2.16.840.1.113883.6.96') then 'http://snomed.info/sct'
+  else if Matches(system, 'urn:oid:2.16.840.1.113883.6.90') then 'http://hl7.org/fhir/sid/icd-10-cm'
+  else system
+
+// Take the list of Codes and replace the systems when needed
+define function TranformCodeList(list List<System.Code>):
+  list coding
+  return System.Code {
+    code: coding.code,
+    system: FixEpicSystemMapping(coding.system),
+    version: coding.version,
+    display: coding.display
+  }
+
+// Transform the codes in the CodeableConcept, replacing the systems when needed
+define function TransformCodeableConcept(cc FHIR.CodeableConcept):
+  TranformCodeList(FHIRHelpers.ToConcept(cc).codes)
+
 define function QualifiedGoal(list List<Goal>):
   list Goal
     //proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected
@@ -275,11 +295,11 @@ define "Conditions":
 
 define "Condition Indicating End Stage Renal Disease":
   "Conditions" Problem
-    where Problem.code in "End Stage Renal Disease" and end of "Prevalence Period"(Problem) >= Today()
+    where TransformCodeableConcept(Problem.code) in "End Stage Renal Disease" and end of "Prevalence Period"(Problem) >= Today()
 
 define "Condition Indicating Pregnancy":
   "Conditions" Problem
-    where Problem.code in "Pregnancy" and end of "Prevalence Period"(Problem) >= Today()
+    where TransformCodeableConcept(Problem.code) in "Pregnancy" and end of "Prevalence Period"(Problem) >= Today()
 
 define "Blood Pressure Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
@@ -377,7 +397,7 @@ define "BP Highly Variable":
 
 define "Condition Indicating Preexisting Hypertension":
   "Conditions" Problem
-    where (Problem.code in "Hypertension" or Problem.code in "Non essential Hypertension SNOMEDCT") and end of "Prevalence Period"(Problem) >= Today()
+    where (TransformCodeableConcept(Problem.code) in "Hypertension" or TransformCodeableConcept(Problem.code) in "Non essential Hypertension SNOMEDCT") and end of "Prevalence Period"(Problem) >= Today()
 
 // Does patient have a BP goal?
 define "Qualifying Blood Pressure Goals":

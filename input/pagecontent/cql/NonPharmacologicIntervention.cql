@@ -212,7 +212,7 @@ define "Nutrition Recommendation":
   if exists "Nutrition Goals Needing Update" then 'Nutrition goal update.'
   else if exists "Nutrition Goals" then 'Nutrition goal check-in.'
   else if "Last Nutrition Counseling Procedure" is null then 'Discuss dietary changes (with salt/sodium reduction).'
-  else 'Reminder about nutrition code.'
+  else 'Reminder about nutrition.'
 
 define "Nutrition Rationale Combined Data":
   "Nutrition Rationale" + '|' + "Nutrition Suggestions" + '|at-most-one|' + "Nutrition Links"

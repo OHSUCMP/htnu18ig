@@ -173,3 +173,18 @@ define "Test Get BP Goal":
 
 define "Test Get All BP SBP Coefficient Variability":
   Common."Systolic BP Variability"(Common."Blood Pressure Observations for Last 2 Years").value
+
+define "TEST Condition Prevalence Period":
+  Common."Conditions" Problem
+    return Common."Prevalence Period"(Problem)
+
+define "TEST Condition Indicating Preexisting Hypertension":
+  Common."Condition Indicating Preexisting Hypertension"
+
+/* define "TEST Code List":
+  TranformCodeList(flatten(Common."Conditions" Problem
+    let C: FHIRHelpers.ToConcept(Problem.code)
+    return C.codes))
+
+define "TEST Valueset":
+  "TEST Code List" in Common."Hypertension" */
