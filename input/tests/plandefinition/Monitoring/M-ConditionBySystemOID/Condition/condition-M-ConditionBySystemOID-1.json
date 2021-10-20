@@ -1,0 +1,52 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-M-ConditionBySystemOID-1",
+  "note": [
+    {
+      "text": "Indicates Preexisting Diagnosis of Hypertension where System is defined using the OID for SNOMED"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        }
+      ],
+      "text": "Problem List Item"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.6.96",
+        "code": "59621000",
+        "display": "Hypertension"
+      }
+    ],
+    "text": "Hypertension"
+  },
+  "subject": {
+    "reference": "Patient/M-ConditionBySystemOID"
+  },
+  "onsetDateTime": "2015-01-28T15:16:21-05:00",
+  "recordedDate": "2015-01-28T15:16:21-05:00"
+}

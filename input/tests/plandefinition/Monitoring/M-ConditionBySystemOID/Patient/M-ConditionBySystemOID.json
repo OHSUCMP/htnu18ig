@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-ConditionBySystemOID",
+  "active": true,
+  "name": [
+    {
+      "text": "Condition By System OID",
+      "family": "BySystemOID",
+      "given": [
+        "Condition"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1977-04-11"
+}

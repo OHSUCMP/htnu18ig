@@ -2,8 +2,8 @@
 import os
 import re
 
-old_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Pharma/P-AdvancingTreatment"
-new_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Pharma/P-InitialPharmacology"
+old_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Monitoring/M-NotAtGoalAboveGoal"
+new_directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Monitoring/M-ConditionBySystemOID"
 
 old_ident = re.search('.*/(.*)$', old_directory).group(1)
 new_ident = re.search('.*/(.*)$', new_directory).group(1)
