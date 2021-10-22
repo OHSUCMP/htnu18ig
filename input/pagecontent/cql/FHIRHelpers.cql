@@ -7,9 +7,21 @@ define function ToInterval(period FHIR.Period):
         null
     else
         if period."start" is null then
-            Interval(period."start".value, period."end".value]
+            Interval(period."start".value, FormatDateTime(period."end".value)]
         else
-            Interval[period."start".value, period."end".value]
+            Interval[FormatDateTime(period."start".value), FormatDateTime(period."end".value)]
+
+/* Sometimes datetimes are defined with no time element at all rather than defaulting to midnight.
+   This can cause boundary errors when defining Intervals on the same date. For example, the following
+   throws an error:
+     Interval[ToDateTime('2021-10-22'), ToDateTime('2021-10-22T10:05:33.554')]
+   By converting the dateTime to a date and back again, the time is added.
+*/
+define function FormatDateTime(dt System.DateTime):
+  if (hour from dt is null) then
+    ToDateTime(ToDate(dt))
+  else
+    dt
 
 define function ToCalendarUnit(unit System.String):
     case unit
@@ -358,7 +370,7 @@ define function ToString(value XPathUsageType): value.value
 define function ToString(value base64Binary): value.value
 define function ToBoolean(value boolean): value.value
 define function ToDate(value date): value.value
-define function ToDateTime(value dateTime): value.value
+define function ToDateTime(value dateTime): FormatDateTime(value.value)
 define function ToDecimal(value decimal): value.value
 define function ToDateTime(value instant): value.value
 define function ToInteger(value integer): value.value
