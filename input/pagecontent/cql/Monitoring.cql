@@ -180,11 +180,3 @@ define "TEST Condition Prevalence Period":
 
 define "TEST Condition Indicating Preexisting Hypertension":
   Common."Condition Indicating Preexisting Hypertension"
-
-/* define "TEST Code List":
-  TranformCodeList(flatten(Common."Conditions" Problem
-    let C: FHIRHelpers.ToConcept(Problem.code)
-    return C.codes))
-
-define "TEST Valueset":
-  "TEST Code List" in Common."Hypertension" */
