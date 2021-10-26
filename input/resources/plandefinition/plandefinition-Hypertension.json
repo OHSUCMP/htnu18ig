@@ -10,7 +10,7 @@
   ],
   "version": "0.1",
   "name": "Hypertension",
-  "title": "OHSU Hypertension",
+  "title": "Hypertension Diagnosis",
   "type": {
     "coding": [
       {
