@@ -10,7 +10,7 @@
   ],
   "version": "0.1",
   "name": "HypertensiveEmergency",
-  "title": "OHSU Hypertensive Emergency Detection",
+  "title": "High Blood Pressure Warning",
   "type": {
     "coding": [
       {

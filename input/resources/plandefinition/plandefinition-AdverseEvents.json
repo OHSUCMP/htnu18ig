@@ -10,7 +10,7 @@
   ],
   "version": "0.1",
   "name": "AdverseEvents",
-  "title": "OHSU Adverse Reaction Detection",
+  "title": "Potential Adverse Reaction Detection",
   "type": {
     "coding": [
       {
