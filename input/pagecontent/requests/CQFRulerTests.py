@@ -8,8 +8,8 @@ import re
 import requests
 
 cqf_ruler_url = "http://localhost:8080/cqf-ruler-r4/cds-services/plandefinition-"
-only_folders = ["Monitoring"]
-only_files = ["cqfruler-M-ConditionBySystemOID.json"]
+only_folders = ["NonPharmacologicIntervention"]
+only_files = []
 
 for folder in os.listdir("."):
     if os.path.isdir(folder):
