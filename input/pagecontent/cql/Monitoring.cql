@@ -108,7 +108,7 @@ define "Exclusion Reason":
           else if Common."Patient Over Age 80" then 'being over the age of 80.'
           else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
           else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
-          else if Common."HTN Crisis" then 'a recent hypertensive emergency.'
+          else if Common."HTN Crisis" then 'a recent high blood pressure warning.'
           else ''
         )
     )
