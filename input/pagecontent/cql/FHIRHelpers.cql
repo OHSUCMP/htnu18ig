@@ -2,26 +2,32 @@ library FHIRHelpers version '4.0.1'
 
 using FHIR version '4.0.1'
 
+/* At the start of an interval declaration, if the datetime is missing a timestamp, set it to the beginning of the day */
+define function DateTimeIntervalStart(dt System.DateTime):
+  if (dt is null) then
+    null
+  else if (hour from dt is null) then
+    DateTime(year from dt, month from dt, day from dt, 0, 0, 0, 0)
+  else
+    dt
+
+/* At the end of an interval declaration, if the datetime is missing a timestamp, set it to the end of the day */
+define function DateTimeIntervalEnd(dt System.DateTime):
+  if (dt is null) then
+    null
+  else if (hour from dt is null) then
+    DateTime(year from dt, month from dt, day from dt, 23, 59, 59, 999)
+  else
+    dt
+
 define function ToInterval(period FHIR.Period):
     if period is null then
         null
     else
         if period."start" is null then
-            Interval(period."start".value, FormatDateTime(period."end".value)]
+            Interval(period."start".value, DateTimeIntervalEnd(period."end".value)]
         else
-            Interval[FormatDateTime(period."start".value), FormatDateTime(period."end".value)]
-
-/* Sometimes datetimes are defined with no time element at all rather than defaulting to midnight.
-   This can cause boundary errors when defining Intervals on the same date. For example, the following
-   throws an error:
-     Interval[ToDateTime('2021-10-22'), ToDateTime('2021-10-22T10:05:33.554')]
-   By converting the dateTime to a date and back again, the time is added.
-*/
-define function FormatDateTime(dt System.DateTime):
-  if (hour from dt is null) then
-    ToDateTime(ToDate(dt))
-  else
-    dt
+            Interval[DateTimeIntervalStart(period."start".value), DateTimeIntervalEnd(period."end".value)]
 
 define function ToCalendarUnit(unit System.String):
     case unit
@@ -370,7 +376,7 @@ define function ToString(value XPathUsageType): value.value
 define function ToString(value base64Binary): value.value
 define function ToBoolean(value boolean): value.value
 define function ToDate(value date): value.value
-define function ToDateTime(value dateTime): FormatDateTime(value.value)
+define function ToDateTime(value dateTime): value.value
 define function ToDecimal(value decimal): value.value
 define function ToDateTime(value instant): value.value
 define function ToInteger(value integer): value.value

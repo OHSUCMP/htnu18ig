@@ -7,7 +7,7 @@ include OHSUHTNCommon version '0.1' called Common
 
 context Patient
 
-define "Info":
+/* define "Info":
   'info'
 
 define "Warning":
@@ -25,7 +25,7 @@ define "Patient Name":
   First(Patient.name.family)
 
 /* Recommendation Criteria - Monitoring Hypertension  */
-define "Meets Inclusion Criteria":
+/* define "Meets Inclusion Criteria":
  exists Common."Condition Indicating Preexisting Hypertension"
 
 define "Meets Exclusion Criteria":
@@ -122,10 +122,10 @@ define "No Entry Title":
   'Patient did not have a preexisting hypertensive condition.'
 
 define "No Entry Description":
-  'No Further Action Required.'
+  'No Further Action Required.' */
 
 /* TESTS */
-define "Test Count All BP":
+/* define "Test Count All BP":
   Count(Common."Blood Pressure Observations for Last 2 Years")
 
 define "Test Most Recent BP":
@@ -172,11 +172,31 @@ define "Test Get BP Goal":
     return Tuple { systolic: BPGoal.systolic.value,  diastolic: BPGoal.diastolic.value }
 
 define "Test Get All BP SBP Coefficient Variability":
-  Common."Systolic BP Variability"(Common."Blood Pressure Observations for Last 2 Years").value
+  Common."Systolic BP Variability"(Common."Blood Pressure Observations for Last 2 Years").value */
 
-define "TEST Condition Prevalence Period":
-  Common."Conditions" Problem
-    return Common."Prevalence Period"(Problem)
+define "TEST Conditions":
+  singleton from (Common."Conditions" Problem where Problem.id = 'eplo77ZTpQReOyclIgsvoO6vUYlc-kAitaBn9zMD6dXo3')
 
-define "TEST Condition Indicating Preexisting Hypertension":
-  Common."Condition Indicating Preexisting Hypertension"
+define "TEST Onset":
+  start of Common."Normalize Interval"("TEST Conditions".onset)
+
+define "TEST Abatement":
+  null
+
+define "TEST PP":
+  ToDateTime('2021-11-10T23:59:59.998') on or after end of Interval["TEST Onset", "TEST Abatement")
+
+define "DT":
+  ToDateTime('2021-11-16')
+
+define "TEST Blah":
+  DateTime(year from "DT", month from "DT", day from "DT", 0, 0, 0, 0)
+
+
+
+/* define "TEST Condition Prevalence Period":
+  "TEST Conditions" Problem
+    return Common."Prevalence Period"(Problem) */
+
+/* define "TEST Condition Indicating Preexisting Hypertension":
+  Common."Condition Indicating Preexisting Hypertension" */

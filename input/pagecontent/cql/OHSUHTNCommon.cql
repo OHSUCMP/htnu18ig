@@ -231,11 +231,11 @@ with a Timing or String.
 define function "Normalize Interval"(choice Choice<FHIR.dateTime, FHIR.Period, FHIR.Timing, FHIR.instant, FHIR.string, FHIR.Age, FHIR.Range>):
   case
 	  when choice is FHIR.dateTime then
-    	Interval[FHIRHelpers.ToDateTime(choice as FHIR.dateTime), FHIRHelpers.ToDateTime(choice as FHIR.dateTime)]
+    	Interval[FHIRHelpers.DateTimeIntervalStart(FHIRHelpers.ToDateTime(choice as FHIR.dateTime)), FHIRHelpers.DateTimeIntervalEnd(FHIRHelpers.ToDateTime(choice as FHIR.dateTime))]
 		when choice is FHIR.Period then
   		FHIRHelpers.ToInterval(choice as FHIR.Period)
 		when choice is FHIR.instant then
-			Interval[FHIRHelpers.ToDateTime(choice as FHIR.instant), FHIRHelpers.ToDateTime(choice as FHIR.instant)]
+			Interval[FHIRHelpers.DateTimeIntervalStart(FHIRHelpers.ToDateTime(choice as FHIR.instant)), FHIRHelpers.DateTimeIntervalEnd(FHIRHelpers.ToDateTime(choice as FHIR.instant))]
 		when choice is FHIR.Age then
 		  Interval[FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(choice as FHIR.Age),
 			  FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(choice as FHIR.Age) + 1 year)
@@ -257,7 +257,7 @@ a run-time exception if used with a Condition instance that has a String as the 
 */
 define function "Normalize Abatement"(condition Condition):
   if condition.abatement is FHIR.dateTime then
-    Interval[FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime), FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime)]
+    Interval[FHIRHelpers.DateTimeIntervalStart(FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime)), FHIRHelpers.DateTimeIntervalEnd(FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime))]
   else if condition.abatement is FHIR.Period then
     FHIRHelpers.ToInterval(condition.abatement as FHIR.Period)
   else if condition.abatement is FHIR.string then
