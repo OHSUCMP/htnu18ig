@@ -231,11 +231,11 @@ with a Timing or String.
 define function "Normalize Interval"(choice Choice<FHIR.dateTime, FHIR.Period, FHIR.Timing, FHIR.instant, FHIR.string, FHIR.Age, FHIR.Range>):
   case
 	  when choice is FHIR.dateTime then
-    	Interval[FHIRHelpers.DateTimeIntervalStart(FHIRHelpers.ToDateTime(choice as FHIR.dateTime)), FHIRHelpers.DateTimeIntervalEnd(FHIRHelpers.ToDateTime(choice as FHIR.dateTime))]
+    	Interval[FHIRHelpers.ToDateTime(choice as FHIR.dateTime), FHIRHelpers.ToDateTime(choice as FHIR.dateTime)]
 		when choice is FHIR.Period then
   		FHIRHelpers.ToInterval(choice as FHIR.Period)
 		when choice is FHIR.instant then
-			Interval[FHIRHelpers.DateTimeIntervalStart(FHIRHelpers.ToDateTime(choice as FHIR.instant)), FHIRHelpers.DateTimeIntervalEnd(FHIRHelpers.ToDateTime(choice as FHIR.instant))]
+			Interval[FHIRHelpers.ToDateTime(choice as FHIR.instant), FHIRHelpers.ToDateTime(choice as FHIR.instant)]
 		when choice is FHIR.Age then
 		  Interval[FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(choice as FHIR.Age),
 			  FHIRHelpers.ToDate(Patient.birthDate) + FHIRHelpers.ToQuantity(choice as FHIR.Age) + 1 year)
@@ -257,7 +257,7 @@ a run-time exception if used with a Condition instance that has a String as the 
 */
 define function "Normalize Abatement"(condition Condition):
   if condition.abatement is FHIR.dateTime then
-    Interval[FHIRHelpers.DateTimeIntervalStart(FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime)), FHIRHelpers.DateTimeIntervalEnd(FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime))]
+    Interval[FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime), FHIRHelpers.ToDateTime(condition.abatement as FHIR.dateTime)]
   else if condition.abatement is FHIR.Period then
     FHIRHelpers.ToInterval(condition.abatement as FHIR.Period)
   else if condition.abatement is FHIR.string then
@@ -274,16 +274,17 @@ define function "Normalize Abatement"(condition Condition):
 
 /*
 @description: Returns an interval representing the normalized prevalence period of a given Condition resource.
-@comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from
-onset to abatement as specified in the given Condition.
 */
 define function "Prevalence Period"(condition Condition):
   if condition.clinicalStatus ~ "active"
     or condition.clinicalStatus ~ "recurrence"
-    or condition.clinicalStatus ~ "relapse" then
+    or condition.clinicalStatus ~ "relapse"
+    // This prevents errors when a condition has an onset and abatement on the same day and no timestamp is provided (Epic)
+    or end of "Normalize Abatement"(condition) is not null then
     Interval[start of "Normalize Interval"(condition.onset), end of "Normalize Abatement"(condition)]
   else
-    Interval[start of "Normalize Interval"(condition.onset), end of "Normalize Abatement"(condition))
+    // The condition is not active but has no abatement date, so we can't say when it ended
+    Interval[start of "Normalize Interval"(condition.onset), null)
 
 /***** Common Data *****/
 

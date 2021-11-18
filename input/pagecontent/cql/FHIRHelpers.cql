@@ -2,32 +2,14 @@ library FHIRHelpers version '4.0.1'
 
 using FHIR version '4.0.1'
 
-/* At the start of an interval declaration, if the datetime is missing a timestamp, set it to the beginning of the day */
-define function DateTimeIntervalStart(dt System.DateTime):
-  if (dt is null) then
-    null
-  else if (hour from dt is null) then
-    DateTime(year from dt, month from dt, day from dt, 0, 0, 0, 0)
-  else
-    dt
-
-/* At the end of an interval declaration, if the datetime is missing a timestamp, set it to the end of the day */
-define function DateTimeIntervalEnd(dt System.DateTime):
-  if (dt is null) then
-    null
-  else if (hour from dt is null) then
-    DateTime(year from dt, month from dt, day from dt, 23, 59, 59, 999)
-  else
-    dt
-
 define function ToInterval(period FHIR.Period):
     if period is null then
         null
     else
         if period."start" is null then
-            Interval(period."start".value, DateTimeIntervalEnd(period."end".value)]
+            Interval(period."start".value, period."end".value]
         else
-            Interval[DateTimeIntervalStart(period."start".value), DateTimeIntervalEnd(period."end".value)]
+            Interval[period."start".value, period."end".value]
 
 define function ToCalendarUnit(unit System.String):
     case unit
