@@ -274,16 +274,17 @@ define function "Normalize Abatement"(condition Condition):
 
 /*
 @description: Returns an interval representing the normalized prevalence period of a given Condition resource.
-@comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from
-onset to abatement as specified in the given Condition.
 */
 define function "Prevalence Period"(condition Condition):
   if condition.clinicalStatus ~ "active"
     or condition.clinicalStatus ~ "recurrence"
-    or condition.clinicalStatus ~ "relapse" then
+    or condition.clinicalStatus ~ "relapse"
+    // This prevents errors when a condition has an onset and abatement on the same day and no timestamp is provided (Epic)
+    or end of "Normalize Abatement"(condition) is not null then
     Interval[start of "Normalize Interval"(condition.onset), end of "Normalize Abatement"(condition)]
   else
-    Interval[start of "Normalize Interval"(condition.onset), end of "Normalize Abatement"(condition))
+    // The condition is not active but has no abatement date, so we can't say when it ended
+    Interval[start of "Normalize Interval"(condition.onset), null)
 
 /***** Common Data *****/
 
