@@ -47,12 +47,17 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="flowLogic.html"/>
+        <nameUrl value="flow-intro.html"/>
         <title value="Flow Logic"/>
         <generation value="html"/>
         <page>
-          <nameUrl value="veryHighBP.html"/>
+          <nameUrl value="flow-very-high-bp.html"/>
           <title value="Very High Blood Pressure Alert"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-initial-diagnosis.html"/>
+          <title value="Initial Diagnosis"/>
           <generation value="html"/>
         </page>
       </page>

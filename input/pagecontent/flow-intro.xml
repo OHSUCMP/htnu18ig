@@ -69,23 +69,4 @@
     </ul>
     <br/>
 
-    <h3>Diagnosis</h3>
-    <img height="500" src="dxLogic.PNG" alt="Diagnosis Logic"/>
-    <br/>
-
-    <h3>Monitoring</h3>
-    <img height="500" src="monitorLogic.PNG" alt="Monitoring Logic"/>
-    <br/>
-
-    <h3>Lifestyle Changes</h3>
-    <img height="500" src="lifestyleLogic.PNG" alt="Lifestyle Intervention Logic"/>
-    <br/>
-
-    <h3>Pharmacologic Intervention</h3>
-    <img height="500" src="drugLogic.PNG" alt="Medication Logic"/>
-    <br/>
-
-    <h3>Adverse Events</h3>
-    <img height="500" src="adverseLogic.PNG" alt="Adverse Event Logic"/>
-
 </div>

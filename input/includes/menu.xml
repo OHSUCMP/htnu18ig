@@ -17,7 +17,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="veryHighBP.html">Very High Blood Pressure Alert</a>
+        <a href="flow-intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="flow-very-high-bp.html">Very High Blood Pressure Alert</a>
+      </li>
+      <li>
+        <a href="flow-initial-diagnosis.html">Initial Diagnosis</a>
       </li>
     </ul>
   </li>
