@@ -23,8 +23,8 @@
   "status": "draft",
   "date": "2020-02-04T00:00:00-08:00",
   "publisher": "Oregon Health and Science University (OHSU)",
-  "description": "This PlanDefinition identifies monitoring hypertension",
-  "purpose": "The purpose of this is to test the system to make sure we have complete end-to-end functionality",
+  "description": "This PlanDefinition provides patient recommendations for monitoring a preexisting Hypertension condition.",
+  "purpose": "Provide guidance and monitoring to patients regarding their hypertension diagnosis.",
   "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
   "useContext": [
     {
@@ -67,7 +67,7 @@
   "action": [
     {
       "title": "Recommendation",
-      "description": "Determines type of recommendation regarding status of Hypertension Monitoring Process.",
+      "description": "Recommendation for patient with hypertension requiring monitoring.",
       "trigger": [{
         "type": "named-event",
         "name":"patient-view"
@@ -76,7 +76,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is in hypertension population.",
+            "description": "If the patient is in the population",
             "language": "text/cql.identifier",
             "expression": "In Population"
           }
@@ -86,7 +86,7 @@
         {
           "path": "action.title",
           "expression": {
-            "description": "Determines if and what type of recommendation patient should be recommended.",
+            "description": "Patient Recommendation",
             "language": "text/cql.identifier",
             "expression": "Recommendation"
           }
@@ -110,7 +110,7 @@
     },
     {
       "title": "Exclusion from Hypertension Monitoring Process",
-      "description": "Determines if patient was excluded from Hypertension Recommendation.",
+      "description": "Recommendation for patient that is excluded from Monitoring.",
       "trigger": [{
         "type": "named-event",
         "name":"patient-view"
@@ -119,7 +119,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is in hypertension exclusion population.",
+            "description": "If the patient is excluded from intervention",
             "language": "text/cql.identifier",
             "expression": "Meets Exclusion Criteria"
           }
@@ -129,7 +129,7 @@
         {
           "path": "action.description",
           "expression": {
-            "description": "Rationale for why patient was excluded from the hypertension mmonitoring process.",
+            "description": "Rationale for why patient is excluded from the hypertension mmonitoring process.",
             "language": "text/cql.identifier",
             "expression": "Exclusion Reason"
           }
@@ -145,7 +145,7 @@
     },
     {
       "title": "No Entry into Hypertension Monitoring Process",
-      "description": "Determines if patient was excluded from Hypertension Recommendation.",
+      "description": "Recommendation for a patient without hypertension.",
       "trigger": [{
         "type": "named-event",
         "name":"patient-view"
@@ -154,7 +154,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is not in hypertension population.",
+            "description": "If the patient does not have hypertension",
             "language": "text/cql.identifier",
             "expression": "No Entry into Population"
           }
@@ -164,7 +164,7 @@
         {
           "path": "action.title",
           "expression": {
-            "description": "Determines if and what type of recommendation patient should be recommended.",
+            "description": "Recommendation for patient without hypertension",
             "language": "text/cql.identifier",
             "expression": "No Entry Title"
           }
@@ -172,7 +172,7 @@
         {
           "path": "action.description",
           "expression": {
-            "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
+            "description": "Rationale",
             "language": "text/cql.identifier",
             "expression": "No Entry Description"
           }
