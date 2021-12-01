@@ -12,6 +12,16 @@
     </ul>
   </li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flow Logic<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="veryHighBP.html">Very High Blood Pressure Alert</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
       </b>
     </a>
@@ -35,4 +45,4 @@
       </li>
     </ul>
   </li>
-</ul>      
+</ul>
