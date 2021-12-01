@@ -1,0 +1,7 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+    <p>
+        Functional Description of Very High Blood Pressure Workflow
+    </p>
+    <img height="500" src="veryHighBP.png" alt="Very High Blood Pressure Alert Logic"/>
+
+</div>

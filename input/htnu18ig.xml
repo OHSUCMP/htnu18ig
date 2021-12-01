@@ -47,6 +47,16 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="flowLogic.html"/>
+        <title value="Flow Logic"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="veryHighBP.html"/>
+          <title value="Very High Blood Pressure Alert"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
         <nameUrl value="spec.html"/>
         <title value="Detailed Specification"/>
         <generation value="markdown"/>
