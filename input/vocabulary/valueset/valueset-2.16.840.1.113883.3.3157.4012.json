@@ -26,6 +26,7 @@
   "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012",
   "version": "20190216",
   "title": "Hypertension",
+  "description": "A set of SNOMED codes for Hypertension",
   "status": "active",
   "experimental": false,
   "publisher": "Lewin EH Steward",
