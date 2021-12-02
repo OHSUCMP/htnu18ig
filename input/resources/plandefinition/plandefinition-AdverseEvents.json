@@ -23,7 +23,7 @@
   "status": "draft",
   "date": "2020-02-04T00:00:00-08:00",
   "publisher": "Oregon Health and Science University (OHSU)",
-  "description": "This PlanDefinition detects adverse reactions that could be related to Hypertension medication",
+  "description": "This PlanDefinition detects recent adverse reactions that could be related to Hypertension medication.",
   "purpose": "The purpose is to identify any adverse reactions and recommend the patient contact their care team.",
   "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
   "jurisdiction": [
@@ -49,7 +49,7 @@
   "action": [
     {
       "title": "Untreated Adverse Reaction Recommendation",
-      "description": "Determines recommendation for any Adverse Reactions that are ongoing/untreated.",
+      "description": "Recommendation for any Adverse Reactions that are ongoing/untreated.",
       "trigger": [{
         "type": "named-event",
         "name":"patient-view"
@@ -58,7 +58,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient had a recent adverse reaction that may not be treated.",
+            "description": "Determine if patient had a recent adverse reaction that may not be treated.",
             "language": "text/cql.identifier",
             "expression": "Untreated Adverse Events Action Path"
           }
@@ -68,7 +68,7 @@
         {
           "path": "action.title",
           "expression": {
-            "description": "Determines if and what type of recommendation patient should receive.",
+            "description": "Recommendation for untreated adverse reactions",
             "language": "text/cql.identifier",
             "expression": "Untreated Recommendation"
           }
@@ -76,7 +76,7 @@
         {
           "path": "action.description",
           "expression": {
-            "description": "Rationale for recommendation type.",
+            "description": "Rationale for untreated adverse reactions",
             "language": "text/cql.identifier",
             "expression": "Untreated Rationale Combined Data"
           }
@@ -92,7 +92,7 @@
     },
     {
       "title": "Treated Adverse Reaction Recommendation",
-      "description": "Determines recommendation for any Adverse Reactions that are resolved/treated.",
+      "description": "Recommendation for any Adverse Reactions that are resolved/treated.",
       "trigger": [{
         "type": "named-event",
         "name":"patient-view"
@@ -101,7 +101,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient had a recent adverse reaction that was treated.",
+            "description": "Determine if patient had a recent adverse reaction that was treated.",
             "language": "text/cql.identifier",
             "expression": "Treated Adverse Events Action Path"
           }
@@ -111,7 +111,7 @@
         {
           "path": "action.title",
           "expression": {
-            "description": "Determines if and what type of recommendation patient should receive.",
+            "description": "Recommendation for treated adverse reactions",
             "language": "text/cql.identifier",
             "expression": "Treated Recommendation"
           }
@@ -119,7 +119,7 @@
         {
           "path": "action.description",
           "expression": {
-            "description": "Rationale for recommendation type.",
+            "description": "Rationale for treated adverse reactions",
             "language": "text/cql.identifier",
             "expression": "Treated Rationale Combined Data"
           }
