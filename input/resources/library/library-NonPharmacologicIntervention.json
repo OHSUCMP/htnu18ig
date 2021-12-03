@@ -10,6 +10,8 @@
   "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/NonPharmacologicIntervention",
   "version": "0.1",
   "name": "NonPharmacologicIntervention",
+  "title": "Non-medicinal Therapy Logic",
+  "description": "Decision logic for providing tailored lifestyle recommendations based on patient behaviors.",
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",

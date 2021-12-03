@@ -10,6 +10,8 @@
   "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/Pharma",
   "version": "0.1",
   "name": "Pharma",
+  "title": "Therapy - Medicines Logic",
+  "description": "Decision logic for recommendations concerning hypertension medications",
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",

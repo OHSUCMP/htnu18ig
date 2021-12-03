@@ -10,6 +10,8 @@
   "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/OHSUHTNCommon",
   "version": "0.1",
   "name": "OHSUHTNCommon",
+  "title": "Common Logic",
+  "description": "Common logic spanning multiple interventions.",
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",

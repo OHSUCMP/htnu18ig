@@ -10,6 +10,8 @@
   "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/Monitoring",
   "version": "0.1",
   "name": "Monitoring",
+  "title": "Monitoring Logic",
+  "description": "Decision logic for monitoring progress in a patient previously diagnosed with hypertension",
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",

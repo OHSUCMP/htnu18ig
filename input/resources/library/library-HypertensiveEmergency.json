@@ -10,6 +10,8 @@
   "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/HypertensiveEmergency",
   "version": "0.1",
   "name": "HypertensiveEmergency",
+  "title": "Very High Blood Pressure Alert Logic",
+  "description": "Decision logic for identifying a recent very high blood pressure",
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",

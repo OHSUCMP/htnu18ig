@@ -10,6 +10,8 @@
   "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/AdverseEvents",
   "version": "0.1",
   "name": "AdverseEvents",
+  "title": "Adverse Event Logic",
+  "description": "Decision logic for identifying recent adverse reactions that may be related to hypertension medications",
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",

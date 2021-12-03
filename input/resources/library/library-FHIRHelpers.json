@@ -10,6 +10,8 @@
   "url": "http://hl7.org/fhir/Library/FHIRHelpers",
   "version": "4.0.1",
   "name": "FHIRHelpers",
+  "title": "FHIRHelpers R4 Logic",
+  "description": "FHIRHelpers R4 conversion logic library",
   "relatedArtifact": [ {
     "type": "depends-on",
     "display": "FHIR model information",
