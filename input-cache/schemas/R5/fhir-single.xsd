@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Dec 2, 2021 19:18+0000 for FHIR v4.6.0 
+  Generated on Mon, Dec 6, 2021 21:03+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -8359,12 +8359,12 @@ The duration (usually in minutes) could also be provided to indicate the length 
               <xs:documentation xml:lang="en">A copyright statement relating to the artifact assessment and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the artifact assessment.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="approvalDate" minOccurs="0" maxOccurs="1" type="date">
+          <xs:element name="approvalDate" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="lastReviewDate" minOccurs="0" maxOccurs="1" type="date">
+          <xs:element name="lastReviewDate" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">The date on which the resource content was last reviewed. Review happens periodically after approval but does not change the original approval date.</xs:documentation>
            </xs:annotation>
@@ -8423,13 +8423,11 @@ The duration (usually in minutes) could also be provided to indicate the length 
               <xs:documentation xml:lang="en">Represents a rating, classifier, or assessment of the artifact.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:choice minOccurs="0" maxOccurs="1" >
+          <xs:element name="author" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates who or what authored the content.</xs:documentation>
-            </xs:annotation>
-            <xs:element name="authorReference" type="Reference"/>
-            <xs:element name="authorString" type="string"/>
-          </xs:choice>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="path" minOccurs="0" maxOccurs="unbounded" type="uri">
             <xs:annotation>
               <xs:documentation xml:lang="en">A URI that points to what the comment is about, such as a line of text in the CQL, or a specific element in a resource.</xs:documentation>
@@ -8888,7 +8886,7 @@ The duration (usually in minutes) could also be provided to indicate the length 
   </xs:simpleType>
   <xs:complexType name="AuditEventAction">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Indicator for type of action performed during the event that generated the event.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -8943,7 +8941,7 @@ The duration (usually in minutes) could also be provided to indicate the length 
   </xs:simpleType>
   <xs:complexType name="AuditEventSeverity">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The severity of the audit entry.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -20392,6 +20390,11 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="DomainResource">
         <xs:sequence>
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Additional information to describe the device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
               <xs:documentation xml:lang="en">Unique instance identifiers assigned to a device by the software, manufacturers, other organizations or owners. For example: handle ID. The identifier is typically valued if the udiDeviceIdentifier, partNumber or modelNumber is not valued and represents a different type of identifier.  However, it is permissible to still include those identifiers in DeviceDefinition.identifier with the appropriate identifier.type.</xs:documentation>
@@ -28216,7 +28219,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
   </xs:simpleType>
   <xs:complexType name="ImmunizationStatusCodes">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A set of codes indicating the current status of an Immunization.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -34742,7 +34745,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
   </xs:simpleType>
   <xs:complexType name="MeasureReportStatus">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The status of the measure report.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -34777,7 +34780,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
   </xs:simpleType>
   <xs:complexType name="MeasureReportType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The type of the measure report.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -35421,7 +35424,7 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
   </xs:simpleType>
   <xs:complexType name="MedicationDispenseStatusCodes">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A coded concept specifying the state of the dispense event.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -37139,7 +37142,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:simpleType>
   <xs:complexType name="messageheaderResponseRequest">
     <xs:annotation>
-      <xs:documentation xml:lang="en">HL7-defined table of codes which identify conditions under which acknowledgments are required to be returned in response to a message.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -37806,7 +37809,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:simpleType>
   <xs:complexType name="strandType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Type for strand.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -37831,7 +37834,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:simpleType>
   <xs:complexType name="orientationType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Type for orientation.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -37871,7 +37874,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:simpleType>
   <xs:complexType name="repositoryType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Type for access of external URI.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -37901,7 +37904,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
   </xs:simpleType>
   <xs:complexType name="qualityType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Type for quality report.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -42839,7 +42842,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">Where the activity occurred, if relevant.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="authorization" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="authorization" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The authorization (e.g., PurposeOfUse) that was used during the event being recorded.</xs:documentation>
            </xs:annotation>
@@ -50965,7 +50968,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:simpleType>
   <xs:complexType name="TestReportStatus">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The current status of the test report.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -51005,7 +51008,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:simpleType>
   <xs:complexType name="TestReportActionResult">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The results of executing an action.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -51065,7 +51068,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:simpleType>
   <xs:complexType name="TestReportResult">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The reported execution result.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -53495,7 +53498,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:simpleType>
   <xs:complexType name="AssertionDirectionType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The type of direction to use for assertion.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -53565,7 +53568,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:simpleType>
   <xs:complexType name="AssertionOperatorType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The type of operator to use for assertion.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -53640,7 +53643,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:simpleType>
   <xs:complexType name="AssertionResponseTypes">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The type of response code to use for assertion.</xs:documentation>
+      <xs:documentation xml:lang="en"></xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
