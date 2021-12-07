@@ -35,6 +35,12 @@
       <li>
         <a href="spec.html">Detailed Specification</a>
       </li>
+      <li>
+        <a href="cqf-ruler.html">Using CQF Ruler</a>
+      </li>
+      <li>
+        <a href="epic-integration.html">Epic Integration</a>
+      </li>
     </ul>
   </li>
   <li><a href="artifacts.html">Artifact Index</a></li>

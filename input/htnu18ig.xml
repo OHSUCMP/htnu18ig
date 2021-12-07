@@ -65,6 +65,16 @@
         <nameUrl value="spec.html"/>
         <title value="Detailed Specification"/>
         <generation value="markdown"/>
+        <page>
+          <nameUrl value="cqf-ruler.html"/>
+          <title value="Using CQF Ruler"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="epic-integration.html"/>
+          <title value="Considerations for Epic Integration"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
