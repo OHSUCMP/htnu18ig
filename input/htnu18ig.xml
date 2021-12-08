@@ -64,7 +64,7 @@
       <page>
         <nameUrl value="spec.html"/>
         <title value="Detailed Specification"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
         <page>
           <nameUrl value="cqf-ruler.html"/>
           <title value="Using CQF Ruler"/>
