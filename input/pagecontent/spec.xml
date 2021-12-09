@@ -225,7 +225,8 @@
 
   <p>The implementing application is responsible for detecting adverse event conditions that
     may have occurred due to Antihypertensive Medication and creating AdverseEvent resources
-    that can be passed to the IG in the prefetch. When the decision support system receives an
+    that can be passed to the IG in the prefetch. We use this <a href="ValueSet-conditions-related-to-antihypertensives.html">Value Set</a>
+    in our reference application. When the decision support system receives an
     Adverse Event, a recommendation is triggered, and that recommendation will change depending
     on whether the Adverse Event is 'ongoing' or 'resolved'. For an ongoing event, CQL is used
     to iterate through the adverse events, so it can't be hard-coded in JSON. But generally,
