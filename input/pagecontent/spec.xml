@@ -26,11 +26,22 @@
     The 'detail' field of CDS Cards is used to encapsulate all of the customization. This field
     is a pipe-delimited string with 4 elements:
     <ul>
-      <li>Rationale</li>
-      <li>Suggestions</li>
       <li>Selection Behavior</li>
       <li>Links</li>
+      <li>Rationale</li>
+      <li>Suggestions</li>
     </ul>
+  </p>
+
+  <h4>Selection Behavior</h4>
+
+  <p>There is no customization of selection-behavior. For now, all recommendations use 'at-most-one'.</p>
+
+  <h4>Links</h4>
+
+  <p>
+    There is no real customization for links except that we do not provide the required element 'type'.
+    This is really just a convenience, as the type is always 'absolute'.
   </p>
 
   <h4>Rationale</h4>
@@ -156,16 +167,85 @@
     ]
 }]</pre>
 
-
-  <h4>Selection Behavior</h4>
-
-  <p>There is no customization of selection-behavior. For now, all recommendations use 'at-most-one'.</p>
-
-  <h4>Links</h4>
-
   <p>
-    There is no real customization for links except that we do not provide the required element 'type'.
-    This is really just a convenience, as the type is always 'absolute'.
+    The "references" element above can be ignored by the implementing application when constructing the goal.
   </p>
+
+  <h5>Set a Behavioral Goal</h5>
+
+  <p>This suggestion allows a patient to set behavior goals. We experimented with a number of goal types in our reference implementation, including free text, radio button choices, and prescribed goals. In the end, we only implemented one type of goal suggestion in this IG. This is a "Mad Libs" style goal where some text is prescribed while the patient can fill out other text. In our reference implementation, the goal might look something like this:</p>
+
+  <img height="200px" src="mad-libs-goal.png" style="vertical-align:middle;margin:15px 0px"/>
+
+  <p>In the image above, the reference application has made several choices. It allows a freetext option and expects a commit date for the goal. The suggestion itself provides the text for the Mad Lib style goal, a label, and reference information so the application can create the Goal appropriately.</p>
+
+  <pre>[{
+    "id": "smoking-goal-madlibs",
+    "type":"goal",
+    "references": {"system":"https//coach.ohsu.edu", "code":"smoking-cessation", "display":"Smoking Cessation"},
+    "label": "Set a Tobacco Cessation Goal",
+    "actions": [
+        {"label": "Reduce tobacco to [quantity] [product:cigarettes] per week."}
+    ]
+}]</pre>
+
+  <p>The Mad Lib entry is constructed using square brackets, where the first word is placeholder text for the input, and the second word if present is a default value that should be used.
+  </p>
+
+  <p>The id of the goal does need to be unique so that multiple goals can be supported and the application and CQL can effectively communicate about the status of these goals. The CQL ensures a goal suggestion provides a unique id by appending a date/timestamp to the ids. So a suggestion will generally look more like this:
+  </p>
+
+  <pre># CQL adds timestamp so id is unique
+  [{
+      "id": "alcohol-goal-2021-09-30T12:37:34.245",
+      "type": "goal",
+      "references": {"system":"https//coach.ohsu.edu", "code":"alcohol-moderation", "display":"Alcohol Moderation"},
+      "label": "Set an alcohol moderation goal:",
+      "actions": [
+      ]
+  }]</pre>
+
+  <h5>Update Behavioral Goal Progress</h5>
+
+  <p>This suggestion tells the application that at least one goal needs to be updated (because the commit date has passed). The id and references should be the same as what was provided in the previous goals suggestion.</p>
+
+  <pre># Suggestion to Update goal
+[{
+    "id": "smoking-goal-madlibs",
+    "type": "update-goal",
+    "references": {"system":"https//coach.ohsu.edu", "code":"smoking-cessation", "display":"Smoking Cessation"},
+    "label": "Update your goal.",
+    "actions": [
+    ]
+}]</pre>
+
+  <p>The above goal example does not offer a Mad Libs style suggestions, so the implementing application might provide free text in this case. In the end, suggestions are just that, and the implementer can decide how a goal might be created. As long as the Goal uses the reference information provided, the decision support system will recognize it.</p>
+
+  <h5>Confirm Adverse Event Treatment</h5>
+
+  <p>The implementing application is responsible for detecting adverse event conditions that
+    may have occurred due to Antihypertensive Medication and creating AdverseEvent resources
+    that can be passed to the IG in the prefetch. When the decision support system receives an
+    Adverse Event, a recommendation is triggered, and that recommendation will change depending
+    on whether the Adverse Event is 'ongoing' or 'resolved'. For an ongoing event, CQL is used
+    to iterate through the adverse events, so it can't be hard-coded in JSON. But generally,
+    it ends up looking like this:</p>
+
+  <pre>[
+ {
+	"id": &lt;adverse_event_id&gt;,
+	"label": "Acute Kidney Problem",
+	"type": "adverse-event"
+ },
+ {
+	"id": &lt;adverse_event_id&gt;,
+	"label": "Brief Loss of Consciousness",
+	"type": "adverse-event"
+ }
+]</pre>
+
+  <p>This allows the implementing application the opportunity to display the Adverse Events to the patient and ask them whether the issue has been addressed. Here's an example:</p>
+
+  <img height="200px" src="adverse-event-suggestion.png" style="vertical-align:middle;margin:15px 0px"/>
 
 </div>

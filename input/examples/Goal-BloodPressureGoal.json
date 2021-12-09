@@ -14,7 +14,7 @@
   },
   "startDate": "2021-07-12",
   "description": {
-    "text": "Goal of 135/85"
+    "text": "Example of an active Blood Pressure Goal of 135/85"
   },
   "subject": {
     "reference": "Patient/12345"
