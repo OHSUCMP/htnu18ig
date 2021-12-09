@@ -59,7 +59,7 @@
     Because we wanted to provide a more interactive feel to the decision support model, most of
     the customization is in the suggestions element of the card's detail field. This is complex
     logic to support a number of different suggestion types. Full details are provided in
-    <a href="CQLSuggestions-StructuralDefinition.doc">this document</a>.
+    <a href="CQLSuggestions-StructuralDefinition.pdf">this document</a>.
   </p>
 
   <h4>Selection Behavior</h4>
