@@ -23,3 +23,38 @@ v: {
   "system" : "http://loinc.org"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "55284-4",
+  "display" : "Blood Pressure"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Blood pressure systolic and diastolic",
+  "code" : "55284-4",
+  "system" : "http://loinc.org",
+  "severity" : "warning",
+  "error" : "The display \"Blood Pressure\" is not a valid display for the code {http://loinc.org}55284-4 - should be one of ['Blood pressure systolic and diastolic', 'BP sys/dias', '一般血压' (zh-CN), '血压.原子型' (zh-CN), '血压指标.原子型 压强 多重' (zh-CN), '多重型' (zh-CN), '多重标尺类型' (zh-CN), '多重精度类型 心脏收缩期与心脏舒张期血压' (zh-CN), '心收缩期与心舒张期血压 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血' (zh-CN), '全血' (zh-CN), '' (zh-CN), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Art sys' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'Dias' (pt-BR), 'Diastoli' (pt-BR), 'Diast' (pt-BR), 'BLOOD PRESSURE MEASUREMENTS.ATOM' (pt-BR), 'Pressione arteriosa - atomica Pressione sanguigna sistolica e diastolica Punto nel tempo (episodio)' (it-IT), 'Точка во времени' (ru-RU), 'Момент' (ru-RU)] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8462-4",
+  "display" : "Diastolic Blood Pressure"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Diastolic blood pressure",
+  "code" : "8462-4",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8480-6",
+  "display" : "Systolic Blood Pressure"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Systolic blood pressure",
+  "code" : "8480-6",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------

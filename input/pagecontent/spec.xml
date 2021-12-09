@@ -1,10 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
   <p>
-    This describes the overall approach to implementing the Clinical Decision
-    Support system. Subsequent sections explore the various customizations to the
-    more standardized approach. The CDS Hooks framework is used to tap into the patient
-    view action, execute plan definitions for each of the workflows, and return
-    relevant recommendations.
+    This describes the overall approach to implementing the Clinical Decision Support system. Subsequent sections explore the various customizations to the more standardized approach. The CDS Hooks framework is used to tap into the patient view action,
+    execute plan definitions for each of the workflows, and return relevant recommendations.
   </p>
 
   <img height="400px" style="vertical-align:middle;margin:15px 0px" src="htn-architecture.png" alt="Architecture diagram"/>
@@ -12,19 +9,14 @@
   <h3>Customization of CDS Cards Components</h3>
 
   <p>
-    Recommendations are returned as <a href="https://cds-hooks.hl7.org/1.0/#card-attributes">CDS Cards</a>.
-    However, during implementation, we found the rigid structure of cards was placing
-    limitations on the richness of the output we
-    wanted to support. For example, we wanted the ability to return both a patient-facing
-    and a provider-facing recommendation in the same card to avoid duplication of code and
-    allow the client more flexibility in what to display. We also wanted to provide custom
-    suggestions that could easily be displayed as components in a web application, allowing the
-    patient to interact with them to contact their care team or set a goal, for example.
+    Recommendations are returned as
+    <a href="https://cds-hooks.hl7.org/1.0/#card-attributes">CDS Cards</a>. However, during implementation, we found the rigid structure of cards was placing limitations on the richness of the output we wanted to support. For example, we wanted the
+    ability to return both a patient-facing and a provider-facing recommendation in the same card to avoid duplication of code and allow the client more flexibility in what to display. We also wanted to provide custom suggestions that could easily be
+    displayed as components in a web application, allowing the patient to interact with them to contact their care team or set a goal, for example.
   </p>
 
   <p>
-    The 'detail' field of CDS Cards is used to encapsulate all of the customization. This field
-    is a pipe-delimited string with 4 elements:
+    The 'detail' field of CDS Cards is used to encapsulate all of the customization. This field is a pipe-delimited string with 4 elements:
     <ul>
       <li>Selection Behavior</li>
       <li>Links</li>
@@ -40,26 +32,21 @@
   <h4>Links</h4>
 
   <p>
-    There is no real customization for links except that we do not provide the required element 'type'.
-    This is really just a convenience, as the type is always 'absolute'.
+    There is no real customization for links except that we do not provide the required element 'type'. This is really just a convenience, as the type is always 'absolute'.
   </p>
 
   <h4>Rationale</h4>
 
   <p>
-    The rationale is the descriptive text for the recommendation. It provides the patient
-    or provider more detailed information about why the recommendation was made or how it can
-    be accomplished. To allow the rationale to be tailored to the audience (patient vs. provider),
-    we employ Mustache-style templates to separate the two recommendations. Anything inside the
-    patient template can be displayed to the patient, and anything inside the careTeam template
-    can be displayed to the provider. For example:
+    The rationale is the descriptive text for the recommendation. It provides the patient or provider more detailed information about why the recommendation was made or how it can be accomplished. To allow the rationale to be tailored to the audience
+    (patient vs. provider), we employ Mustache-style templates to separate the two recommendations. Anything inside the patient template can be displayed to the patient, and anything inside the careTeam template can be displayed to the provider. For
+    example:
   </p>
 
-  <pre>{% raw %}{{patient}}Consider limiting your salt intake.{{/patient}}{{careTeam}}Discuss limiting salt intake with patient.{{/careTeam}}{% endraw %}</pre>
+  <pre>{% raw %}{{#patient}}Consider limiting your salt intake.{{/patient}}{{#careTeam}}Discuss limiting salt intake with patient.{{/careTeam}}{% endraw %}</pre>
 
   <p>
-    The rationale may also contain string escaped HTML formatting elements to provide emphasis or other visual
-    cues.
+    The rationale may also contain string escaped HTML formatting elements to provide emphasis or other visual cues.
   </p>
 
   <pre>You recently had a condition recorded that &lt;strong&gt;may be an adverse event&lt;/strong&gt; from high blood pressure treatment.</pre>
@@ -67,10 +54,8 @@
   <h4>Suggestions</h4>
 
   <p>
-    Because we wanted to provide a more interactive feel to the decision support model, most of
-    the customization is in the suggestions element of the card's detail field. This complex
-    logic supports a number of different suggestion types. An attribute "type" is added to the
-    suggestion element, and 6 kinds of suggestions are supported.
+    Because we wanted to provide a more interactive feel to the decision support model, most of the customization is in the suggestions element of the card's detail field. This complex logic supports a number of different suggestion types. An attribute
+    "type" is added to the suggestion element, and 6 kinds of suggestions are supported.
 
     <ul>
       <li>Follow a Link (suggestion-link)</li>
@@ -83,20 +68,15 @@
   </p>
 
   <p>
-    Multiple suggestions are possible for any single recommendation and do not
-    have to be of the same type. For example, if a patient is a current smoker,
-    they may get two suggestions - one to get counseling and one to set a goal.
-    A suggestion must always have an id. This id is somewhat arbitrary except
-    when suggesting a behavioral goal, as will be discussed later.
+    Multiple suggestions are possible for any single recommendation and do not have to be of the same type. For example, if a patient is a current smoker, they may get two suggestions - one to get counseling and one to set a goal. A suggestion must
+    always have an id. This id is somewhat arbitrary except when suggesting a behavioral goal, as will be discussed later.
   </p>
 
   <h5>Follow a Link</h5>
 
   <p>
-    This is meant for general actions we want the patient to take such as entering
-    more blood pressure readings. The suggestion will often contain a hard-coded
-    relative url that would need to be implemented. Multiple links are possible
-    for a single suggestion using the actions array.
+    This is meant for general actions we want the patient to take such as entering more blood pressure readings. The suggestion will often contain a hard-coded relative url that would need to be implemented. Multiple links are possible for a single
+    suggestion using the actions array.
   </p>
 
   <pre>[{
