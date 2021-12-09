@@ -57,10 +57,105 @@
 
   <p>
     Because we wanted to provide a more interactive feel to the decision support model, most of
-    the customization is in the suggestions element of the card's detail field. This is complex
-    logic to support a number of different suggestion types. Full details are provided in
-    <a href="CQLSuggestions-StructuralDefinition.pdf">this document</a>.
+    the customization is in the suggestions element of the card's detail field. This complex
+    logic supports a number of different suggestion types. An attribute "type" is added to the
+    suggestion element, and 6 kinds of suggestions are supported.
+
+    <ul>
+      <li>Follow a Link (suggestion-link)</li>
+      <li>Get Counseling (counseling-link)</li>
+      <li>Set a Blood Pressure Goal (bp-goal)</li>
+      <li>Set a Behavioral Goal (goal)</li>
+      <li>Update Behavioral Goal Progress (update-goal)</li>
+      <li>Confirm Adverse Event Treatment (adverse-event)</li>
+    </ul>
   </p>
+
+  <p>
+    Multiple suggestions are possible for any single recommendation and do not
+    have to be of the same type. For example, if a patient is a current smoker,
+    they may get two suggestions - one to get counseling and one to set a goal.
+    A suggestion must always have an id. This id is somewhat arbitrary except
+    when suggesting a behavioral goal, as will be discussed later.
+  </p>
+
+  <h5>Follow a Link</h5>
+
+  <p>
+    This is meant for general actions we want the patient to take such as entering
+    more blood pressure readings. The suggestion will often contain a hard-coded
+    relative url that would need to be implemented. Multiple links are possible
+    for a single suggestion using the actions array.
+  </p>
+
+  <pre>[{
+    "id": "suggestion-id",
+    "type": "suggestion-link",
+    "label": "Actions:",
+    "actions": [
+        {"label":"Contact your care provider", "url":"/contact"},
+        {"label":"Enter more Blood Pressure readings", "url":"/bp-readings"}
+    ]
+}]</pre>
+
+  <p>
+    The CQL suggestion that links to an implementing application's contact page has special processing that provides a token in the url. For example:
+  </p>
+
+  <pre>[{
+    "id": "suggestion-id",
+    "type": "suggestion-link",
+    "label": "Actions:",
+    "actions": [
+        {"label":"Contact us", "url":"/contact?token=possible-htn-stage2”}
+    ]
+}]</pre>
+
+  <p>
+    The implementing application can associate these tokens with a message that could be used to prepopulate the contact form. For example:
+  </p>
+
+  <img height="200px" src="contact-form.png" style="vertical-align:middle;margin:15px 0px" alt="Contact Form Example"/>
+
+  <h5>Get Counseling</h5>
+
+  <p>
+    This is similar to following a link with a few differences:
+
+    <ul>
+      <li>A FHIR Procedure record should be created indicating the patient was counseled.</li>
+      <li>A references object is provided to be saved with the counseling record. This allows the decision support system to distinguish between different types of counseling (e.g. smoking vs weight loss)</li>
+    </ul>
+  </p>
+
+  <p>Here is an example counseling suggestion</p>
+  <pre>[{
+    "id": "smoking-counseling",
+    "type": "counseling-link",
+    "references": {"system":"http://snomed.info/sct", "code":"225323000"},
+    "label": "Suggested Counseling:",
+    "actions": [
+        {"label":"Learn more about tobacco cessation.", "url":"/counseling/smoking-cessation"}
+    ]
+}]</pre>
+
+  <p>The implementing application would create a link with an onclick event and an internal page "/counseling/smoking-cessation" that provides counseling resources related to smoking. When the link is clicked, the implementing application must create either locally or in the FHIR server a procedure resource for the counseling session using the system and code provided in the suggestion. On subsequent executions of decision support, this counseling resource would be used to trigger different recommendations.</p>
+
+  <h5>Set a Blood Pressure Goal</h5>
+
+  <p>This suggestion allows the implementing application to create a component for a patient to set a blood pressure goal. The application can then construct a Goal like <a href="Goal-BloodPressureGoal.html">this example</a> and provide to the decision support system to update recommendations.</p>
+  <pre>[{
+    "id": "bp-radio-goal",
+    "label": "BP Goal",
+    "type": "bp-goal",
+    "references":{"system":"https//coach.ohsu.edu", "code":"blood-pressure"},
+    "actions": [
+        {"label":"140/90"},
+        {"label":"130/80"},
+        {"label":"120/80"}
+    ]
+}]</pre>
+
 
   <h4>Selection Behavior</h4>
 
