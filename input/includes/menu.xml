@@ -25,6 +25,18 @@
       <li>
         <a href="flow-initial-diagnosis.html">Initial Diagnosis</a>
       </li>
+      <li>
+        <a href="flow-monitoring.html">Monitoring of Diagnosed Patients</a>
+      </li>
+      <li>
+        <a href="flow-nonpharma.html">Therapy - Non-medicinal</a>
+      </li>
+      <li>
+        <a href="flow-pharma.html">Therapy - Medicines</a>
+      </li>
+      <li>
+        <a href="flow-adverse-events.html">Potential Adverse Reaction Detection</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">

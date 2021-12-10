@@ -60,6 +60,26 @@
           <title value="Initial Diagnosis"/>
           <generation value="html"/>
         </page>
+        <page>
+          <nameUrl value="flow-monitoring.html"/>
+          <title value="Monitoring of Diagnosed Patients"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-nonpharma.html"/>
+          <title value="Therapy - Non-medicinal"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-pharma.html"/>
+          <title value="Therapy - Medicines"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-adverse-events.html"/>
+          <title value="Potential Adverse Reaction Detection"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
         <nameUrl value="spec.html"/>

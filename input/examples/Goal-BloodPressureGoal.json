@@ -1,6 +1,6 @@
 {
   "resourceType": "Goal",
-  "id": "BloodPressureGoal",
+  "id": "example-BloodPressureGoal",
   "lifecycleStatus": "active",
   "achievementStatus": {
     "coding": [
