@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "104222",
+  "display" : "bumetanide 5 MG Oral Tablet"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "bumetanide 5 MG Oral Tablet",
+  "code" : "104222",
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm"
+}
+-------------------------------------------------------------------------------------
