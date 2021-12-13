@@ -2,6 +2,85 @@
   <p>The IG and reference implementation were initially vetted against a Logica Sandbox preloaded with resources to trigger all possible recommendations. As we integrated the system into the OHSU Epic instance, we faced a number of challenges due to
     restrictions in the May 2021 version. This page summarizes those challenges and how the CQL was modified to address them.</p>
 
+  <h3>Resource Summary</h3>
+
+  This is the summary of Incoming APIs to request when integrating this IG with an Epic instance and what the IG uses them for.
+
+  <table class="table table-striped" style="width:75%; margin-top:15px;">
+    <tr>
+      <th>Epic Incoming API</th>
+      <th>Usage</th>
+    </tr>
+    <tr>
+      <td>Patient.Read (R4)</td>
+      <td>Basic demographics</td>
+    </tr>
+    <tr>
+      <td>Condition.Read (Encounter Diagnosis) (R4)</td>
+      <td>Examine conditions for a patient (e.g., look for preexisting hypertension diagnosis, recent adverse events, or exclusionary criteria such as end-stage renal disease).</td>
+    </tr>
+    <tr>
+      <td>Condition.Search (Encounter Diagnosis) (R4)</td>
+      <td>Find encounter diagnosis conditions for a patient.</td>
+    </tr>
+    <tr>
+      <td>Condition.Read (Problems) (R4)</td>
+      <td>Examine conditions for a patient (e.g., look for preexisting hypertension diagnosis, recent adverse events, or exclusionary criteria such as end-stage renal disease).</td>
+    </tr>
+    <tr>
+      <td>Condition.Search (Problems) (R4)</td>
+      <td>Find problem list item conditions for a patient.</td>
+    </tr>
+    <tr>
+      <td>Goal.Read (Patient) (R4)</td>
+      <td>Examine goals, looking for active Blood Pressure target.</td>
+    </tr>
+    <tr>
+      <td>Goal.Search (Patient) (R4)</td>
+      <td>Find all patient goals.</td>
+    </tr>
+    <tr>
+      <td>Observation.Read (Core Characteristics) (R4)</td>
+      <td>Examine observations found through search.</td>
+    </tr>
+    <tr>
+      <td>Observation.Search (Core Characteristics) (R4)</td>
+      <td>Search for observations providing a value set. This is used to find blood pressure and BMI observations.</td>
+    </tr>
+    <tr>
+      <td>Observation.Read (Social History) (R4)</td>
+      <td>Examine observations found through search.</td>
+    </tr>
+    <tr>
+      <td>Observation.Search (Social History) (R4)</td>
+      <td>Search for smoking observations using LOINC 72166-2.</td>
+    </tr>
+    <tr>
+      <td>Procedure.Read (R4)</td>
+      <td>Examine patient procedures for counseling related to drinking, smoking, and weight loss.</td>
+    </tr>
+    <tr>
+      <td>Procedure.Search (R4)</td>
+      <td>Search for all procedures for a patient.</td>
+    </tr>
+    <tr>
+      <td>Medication.Read (R4)</td>
+      <td>Get medication information referenced by MedicationRequest.</td>
+    </tr>
+    <tr>
+      <td>MedicationRequest.Read (R4)</td>
+      <td>Examine medication requests found in search, join with Medication, and determine if any are considered antihypertensive meds.</td>
+    </tr>
+    <tr>
+      <td>MedicationRequest.Search (R4)</td>
+      <td>Get medication requests for a patient.</td>
+    </tr>
+    <tr>
+      <td>Encounter.Read (R4)</td>
+      <td>This is not currently used, but may be helpful in the future for determining an onset date for encounter diagnosis conditions when none is provided. See discussion in Condition Search section below.</td>
+    </tr>
+  </table>
+
   <h3>Condition Search</h3>
 
   <p>The decision support system searches for several conditions by code, to identify things like a Hypertension diagnosis or exclusion conditions such as end stage renal disease. Epic does not allow a search for conditions by code. A category must be
