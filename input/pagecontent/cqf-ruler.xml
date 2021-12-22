@@ -1,3 +1,197 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-  <h3>TBD</h3>
+  <style>
+  pre.code {
+    padding: 2px 2px 2px 10px;
+    background-color: black;
+    color: white;
+    width:800px;
+    overflow-x: scroll;
+  }
+
+  pre.inline {
+    display: inline;
+  }
+
+  span.path {
+    color: #ffff00;
+  }
+
+  span.comment {
+    color: #cce6ff;
+	font-style: italic;
+  }
+
+  span.highlight {
+    background-color: #ffffcc;
+  }
+  </style>
+
+  <h3>Use of CQF Ruler</h3>
+
+  <h4>Overview</h4>
+  <p>
+	<a href="https://github.com/DBCG/cqf-ruler">CQF Ruler</a> is a <a href="https://hapifhir.io/">HAPI FHIR</a> Server implementation with extensions built-in to implement FHIR's <a href="http://www.hl7.org/fhir/clinicalreasoning-module.html">Clinical Reasoning Module</a>, allowing it to execute <a href="http://cql.hl7.org/">CQL</a>.
+  </p>
+  <p>
+	In this system, CQL is used to encode the workflows associated with evaluating different <a href="flowLogic.html">hypertension-related recommendations</a> for a given Patient record.  These workflows are triggered via CQF Ruler's CDS Hooks execution framework, each of which incorporates clinical data about the Patient (Observations, Conditions, etc.) obtained either via "prefetch" block attached to the request itself, or by way of direct FHIR queries executed by CQF Ruler in response to required resources that are missing from the prefetch.
+  </p>
+  <p>
+	When a CDS Hook is executed, the associated PlanDefinition resource is processed, which in turn executes CQL that represents the Recommendation logic.  Once completed, resultant Cards are returned, which are then parsed by the client application, and is used to drive how the user-interface is rendered to the user.
+  </p>
+  <p>
+    See the <a href="spec.html">Detailed Specification</a> for more information on how this process occurs.
+  </p>
+
+  <h4>Installation</h4>
+  <p>
+    To install CQF Ruler, use <a href="https://git-scm.com/">git</a> to execute the following:
+	<pre class="code"><span class="path">/git</span> $ git clone https://github.com/DBCG/cqf-ruler.git</pre>
+	This will clone the current version of CQF Ruler to the folder in which the above command was executed.
+  </p>
+
+  <h4>Running the Service</h4>
+  <p>
+    To run CQF Ruler, use <a href="https://maven.apache.org/">Apache Maven</a> to execute the following:
+	<pre class="code"><span class="path">/git/cqf-ruler</span> $ mvn -Djetty.port=8080 jetty:run -am --projects cqf-ruler-r4</pre>
+	This will execute the CQF Ruler service, using its FHIR R4 configuration, on <em>localhost</em> port <em>8080</em>.
+  </p>
+  <p>
+    <em>Note that at the time of this writing, CQF Ruler <strong>must</strong> be run on port 8080 in order for CDS Services to operate correctly.  See <a href="https://github.com/DBCG/cqf-ruler/issues/329">this issue</a> documented on CQF Ruler's bug tracker for details.</em>
+  </p>
+
+  <h4>Configuration</h4>
+  <p>
+    To configure CQF Ruler with artifacts in this Implementation Guide, use the <a href="https://github.com/OHSUCMP/htnu18ig/blob/master/input/PopulateCQFRuler.py">PopulateCQFRuler.py</a> script found in this IG's <em>input/</em> folder:
+	<pre class="code"><span class="path">/git/htnu18ig/input</span> $ python PopulateCQFRuler.py
+CQF Ruler URL = http://localhost:8080/cqf-ruler-r4/fhir/
+processing valueset-2.16.840.1.113762.1.4.1032.10.json
+processing valueset-2.16.840.1.113762.1.4.1032.124.json
+processing valueset-2.16.840.1.113762.1.4.1047.511.json
+processing valueset-2.16.840.1.113762.1.4.1104.2.json
+processing valueset-2.16.840.1.113762.1.4.1108.15.json
+processing valueset-2.16.840.1.113762.1.4.1116.418.json
+processing valueset-2.16.840.1.113762.1.4.1116.420.json
+processing valueset-2.16.840.1.113762.1.4.1146.1330.json
+processing valueset-2.16.840.1.113762.1.4.1178.10.json
+processing valueset-2.16.840.1.113762.1.4.1195.111.json
+processing valueset-2.16.840.1.113762.1.4.1222.24.json
+processing valueset-2.16.840.1.113883.3.3157.4012.json
+processing valueset-2.16.840.1.113883.3.464.1003.106.11.1030.json
+processing valueset-2.16.840.1.113883.3.464.1003.195.12.1003.json
+processing valueset-2.16.840.1.113883.3.526.2.1045.json
+processing valueset-2.16.840.1.113883.3.526.2.422.json
+processing valueset-2.16.840.1.113883.3.526.2.590.json
+processing valueset-2.16.840.1.113883.3.526.3.378.json
+processing valueset-2.16.840.1.113883.3.526.3.509.json
+processing valueset-2.16.840.1.113883.3.600.1.1490.json
+processing valueset-2.16.840.1.113883.3.600.2012.json
+processing library-AdverseEvents.json
+processing library-FHIR-ModelInfo.json
+processing library-FHIRHelpers.json
+processing library-Hypertension.json
+processing library-HypertensiveEmergency.json
+processing library-Monitoring.json
+processing library-NonPharmacologicIntervention.json
+processing library-OHSUHTNCommon.json
+processing library-Pharma.json
+processing plandefinition-AdverseEvents.json
+processing plandefinition-Hypertension.json
+processing plandefinition-HypertensiveEmergency.json
+processing plandefinition-Monitoring.json
+processing plandefinition-NonPharmacologicIntervention.json
+processing plandefinition-Pharma.json
+processing cqf-tooling.json
+
+<span class="path">/git/htnu18ig/input</span> $</pre>
+  </p>
+
+
+  <h4>Retrieving Available CDS Hooks to Request</h4>
+  <p>
+    To retrieve a list of executable CDS Hooks available on a running instance of CQF Ruler, perform an HTTP GET to <em>http://localhost:8080/cqf-ruler-r4/cds-services</em>, which will return a JSON array of <em>services</em>, with each object in the list representing a CDS Hook, e.g.:
+
+	<pre class="code"><span class="path">~</span> $ wget -qO- http://localhost:8080/cqf-ruler-r4/cds-services
+{
+  "services": [
+    {
+      "hook": "patient-view",
+      "name": "Hypertension",
+      "title": "Hypertension Diagnosis",
+      "description": "This PlanDefinition identifies hypertension",
+      "id": "plandefinition-Hypertension",
+      "prefetch": {
+        "item1": "Patient?_id\u003d{{context.patientId}}",
+        "item2": "Patient?_id\u003dPatient/{{context.patientId}}",
+        "item3": "Condition?patient\u003dPatient/{{context.patientId}}\u0026category\u003dhttp://terminology.hl7.org/CodeSystem/condition-category|problem-list-item",
+        "item4": "Condition?patient\u003dPatient/{{context.patientId}}\u0026category\u003dhttp://terminology.hl7.org/CodeSystem/condition-category|encounter-diagnosis",
+        "item5": "Observation?subject\u003dPatient/{{context.patientId}}\u0026code\u003dhttp://loinc.org|55284-4"
+      }
+    },
+    <span class="comment">&lt;!-- cut --&gt;</span>
+  ]
+}
+<span class="path">~</span> $</pre>
+  See <a href="https://cds-hooks.hl7.org/1.0/#http-request">CDS Hooks HTTP Request</a> for details.
+  </p>
+
+  <h4>Executing CDS Hook Requests</h4>
+  <p>
+    To execute a CDS Hook, collect any FHIR resources to include in the prefetch per <a href="https://cds-hooks.hl7.org/1.0/#providing-fhir-resources-to-a-cds-service">these instructions</a>, and execute an HTTP POST to the appropriate CDS Services Hook endpoint, per <a href="https://cds-hooks.hl7.org/1.0/#calling-a-cds-service">these instructions</a>.
+  </p>
+
+  <h4>HACK : Adverse Events</h4>
+  <p>
+    Adverse Events are processed a little differently in this system.  They are conceived to originate as a collection of Conditions that map to a specific, curated set of CodeSystems <a href="ValueSet-conditions-related-to-antihypertensives.html">represented in this ValueSet</a>.  Matching Condition resources are queried and converted by the client application into AdverseEvent resources, each of which <strong>must</strong> contain the following <em>event</em> CodeSystem in order to be recognized and processed by the Recommendation logic:
+	<pre>"event": {
+  "coding": [
+    {
+      "system": "https://coach.ohsu.edu",
+      "code": "coach-adverse-event",
+    }
+  ]
+}</pre>
+    These constructed AdverseEvent resources must be included in the prefetch block on calls to CQF Ruler via CDS Services when processing Recommendations.
+  </p>
+
+  <p>
+    This is done in large part due to the environment in which this system was developed, which employs a FHIR server backed by an Epic system.  At the time of development, Epic requires a <em>ResearchStudy FHIR ID</em> to be included in any AdverseEvent searches, which in the context of our usage both doesn't make sense, and we don't have any such FHIR IDs to reference, making searching for all AdverseEvent resources for a given Patient impossible.  In fact, an error is thrown by the FHIR server if a study FHIR ID isn't included on an AdverseEvent search, which cascades through CQF Ruler causing the Recommendation execution to crash.  See <a href="https://fhir.epic.com/Specifications?api=982">Epic's FHIR API Specification for AdverseEvent.Search (R4)</a> for details.
+  </p>
+  <p>
+    Because of this limitation, at least one AdverseEvent resource <strong>must</strong> be included in the prefetch block, even if logically none exist.  To account for this edge case, a dummy AdverseEvent must be crafted and included in the prefetch block, such as the following:
+	<pre>{
+  "fullUrl": "adverseevent-FAKE-HACK",
+  "resource": {
+    "resourceType": "AdverseEvent",
+    "id": "adverseevent-FAKE-HACK",
+    "event": {
+      "coding": [
+        {
+          "system": "https://coach.ohsu.edu",
+          "code": "coach-fake-adverse-event",
+          "display": "***FAKE*** Adverse Event generated by COACH to prevent CQF-Ruler from querying the FHIR server"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "https://example.com/fhir/Patient/SomeTestPatientID"
+    },
+    "date": "2021-11-24T14:40:54-08:00"
+  }
+}</pre>
+    Note that almost anything will do when populating the dummy AdverseEvent resource, just so long as it does <strong>not</strong> have a valid <em>event</em> CodeSystem (as defined above).
+  </p>
+
+  <h4>Processing Cards into POJOs using Google GSON</h4>
+  <p>
+    The client application developed alongside this Implementation Guide (<a href="https://github.com/OHSUCMP/coach">COACH</a>) uses <a href="https://github.com/google/gson">Google Gson</a> to deserialize JSON objects produced by CQF Ruler into Java Objects for further processing.  See <a href="https://github.com/OHSUCMP/coach/blob/master/src/main/java/edu/ohsu/cmp/coach/cqfruler/CDSHookExecutor.java#L203-L237">this code fragment</a> for technical details relating to how the JSON is deserialized and processed.
+  </p>
+
+  <p>
+    <strong>Note:</strong> <em>There is limited functionality at this time by CQF Ruler allowing CQL to populate CDS Hook Card attributes.  The attributes that may be populated in this manner are limited to </em>summary<em>, </em>detail<em>, and </em>indicator<em>.  As such, in order to pass back the kind of structured data required by the system against which this IG has been developed, these additional data are serialized and transmitted via the Card's </em>detail<em> attribute (i.e. </em>"rationale"<em>).</em>
+  </p>
+
+  <p>
+    <strong>Note:</strong> All data serialized into the Card response is processed by the client application through the <a href="https://mustache.github.io/">Mustache templating engine</a>, in order to tailor the displayed text to the appropriate <a href="https://github.com/OHSUCMP/coach/blob/master/src/main/java/edu/ohsu/cmp/coach/model/recommendation/Audience.java">Audience</a>, either <em>patient</em> or <em>careTeam</em>.  That is, when a user logs into the client application via a </em>patient<em> context, any text enclosed within <pre class="inline">{{#careTeam}}...{{/careTeam}}</pre> will be discarded, prior to display.  Similarly, when a user logs into the client application via an </em>EHR<em> context, any text enclosed within <pre class="inline">{{#patient}}...{{/patient}}</pre> will be discarded, prior to display.
+  </p>
+
 </div>
