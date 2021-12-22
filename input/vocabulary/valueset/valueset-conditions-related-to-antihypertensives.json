@@ -1,0 +1,367 @@
+{
+  "resourceType": "ValueSet",
+  "id": "conditions-related-to-antihypertensives",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "narrative"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "executable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "executable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-usageWarning",
+      "valueString": "This value set contains a point-in-time expansion enumerating the codes that meet the value set intent. As new versions of the code systems used by the value set are released, the contents of this expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. The value set expansion specifies the timestamp when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the value set definition. If this is ONLY an executable value set, a distributable definition of the value set must be obtained to compute the updated expansion."
+    }
+  ],
+  "title": "Conditions Adversely Related to Antihypertensives",
+  "description": "A set of condition codes that may indicate an adverse reaction to an Antihypertensive Medication",
+  "status": "active",
+  "experimental": true,
+  "publisher": "OHSU",
+  "expansion": {
+    "timestamp": "2021-12-09T12:32:24-07:00",
+    "contains": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "N17",
+        "display": "Acute kidney problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "N17.0",
+        "display": "Acute kidney problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "N17.1",
+        "display": "Acute kidney problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "N17.2",
+        "display": "Acute kidney problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "N17.8",
+        "display": "Acute kidney problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "N17.9",
+        "display": "Acute kidney problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I49.5",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I49.8",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "R00.1",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "427.81",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "427.89",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "251162005",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "29894000",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "397841007",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "44602002",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "49044005",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "49710005",
+        "display": "Bradycardia"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "code": "80048",
+        "display": "Electrolyte problems / metabolic panel"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "code": "80053",
+        "display": "Electrolyte problems / metabolic panel"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "code": "80069",
+        "display": "Electrolyte problems / metabolic panel"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "code": "82310",
+        "display": "Electrolyte problems / metabolic panel"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W19",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W11",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W13",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W12",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W14",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W15",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W06",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W07",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "W09",
+        "display": "Fall"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I95.0",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I95.1",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I95.2",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I95.3",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I95.81",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I95.89",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I95.9",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "458",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "458.1",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "458.21",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "458.29",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "458.8",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "458.9",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "195506001",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "200113008",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "200114002",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "230664009",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "234171009",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "271870002",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "286963007",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371073003",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "408667000",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "408668005",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "429561008",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "45007003",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "61933008",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "70247006",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "75181005",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "77545000",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "88887003",
+        "display": "Hypotension"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "32834005",
+        "display": "Syncope / Loss of consciousness"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "40863000",
+        "display": "Syncope / Loss of consciousness"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "419045004",
+        "display": "Syncope / Loss of consciousness"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "7862002",
+        "display": "Syncope / Loss of consciousness"
+      }
+    ]
+  }
+}

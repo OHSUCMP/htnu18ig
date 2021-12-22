@@ -1,0 +1,148 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <p>The IG and reference implementation were initially vetted against a Logica Sandbox preloaded with resources to trigger all possible recommendations. As we integrated the system into the OHSU Epic instance, we faced a number of challenges due to
+    restrictions in the May 2021 version. This page summarizes those challenges and how the CQL was modified to address them.</p>
+
+  <h3>Resource Summary</h3>
+
+  This is the summary of Incoming APIs to request when integrating this IG with an Epic instance and what the IG uses them for.
+
+  <table class="table table-striped" style="width:75%; margin-top:15px;">
+    <tr>
+      <th>Epic Incoming API</th>
+      <th>Usage</th>
+    </tr>
+    <tr>
+      <td>Patient.Read (R4)</td>
+      <td>Basic demographics</td>
+    </tr>
+    <tr>
+      <td>Condition.Read (Encounter Diagnosis) (R4)</td>
+      <td>Examine conditions for a patient (e.g., look for preexisting hypertension diagnosis, recent adverse events, or exclusionary criteria such as end-stage renal disease).</td>
+    </tr>
+    <tr>
+      <td>Condition.Search (Encounter Diagnosis) (R4)</td>
+      <td>Find encounter diagnosis conditions for a patient.</td>
+    </tr>
+    <tr>
+      <td>Condition.Read (Problems) (R4)</td>
+      <td>Examine conditions for a patient (e.g., look for preexisting hypertension diagnosis, recent adverse events, or exclusionary criteria such as end-stage renal disease).</td>
+    </tr>
+    <tr>
+      <td>Condition.Search (Problems) (R4)</td>
+      <td>Find problem list item conditions for a patient.</td>
+    </tr>
+    <tr>
+      <td>Goal.Read (Patient) (R4)</td>
+      <td>Examine goals, looking for active Blood Pressure target.</td>
+    </tr>
+    <tr>
+      <td>Goal.Search (Patient) (R4)</td>
+      <td>Find all patient goals.</td>
+    </tr>
+    <tr>
+      <td>Observation.Read (Core Characteristics) (R4)</td>
+      <td>Examine observations found through search.</td>
+    </tr>
+    <tr>
+      <td>Observation.Search (Core Characteristics) (R4)</td>
+      <td>Search for observations providing a value set. This is used to find blood pressure and BMI observations.</td>
+    </tr>
+    <tr>
+      <td>Observation.Read (Social History) (R4)</td>
+      <td>Examine observations found through search.</td>
+    </tr>
+    <tr>
+      <td>Observation.Search (Social History) (R4)</td>
+      <td>Search for smoking observations using LOINC 72166-2.</td>
+    </tr>
+    <tr>
+      <td>Procedure.Read (R4)</td>
+      <td>Examine patient procedures for counseling related to drinking, smoking, and weight loss.</td>
+    </tr>
+    <tr>
+      <td>Procedure.Search (R4)</td>
+      <td>Search for all procedures for a patient.</td>
+    </tr>
+    <tr>
+      <td>Medication.Read (R4)</td>
+      <td>Get medication information referenced by MedicationRequest.</td>
+    </tr>
+    <tr>
+      <td>MedicationRequest.Read (R4)</td>
+      <td>Examine medication requests found in search, join with Medication, and determine if any are considered antihypertensive meds.</td>
+    </tr>
+    <tr>
+      <td>MedicationRequest.Search (R4)</td>
+      <td>Get medication requests for a patient.</td>
+    </tr>
+    <tr>
+      <td>Encounter.Read (R4)</td>
+      <td>This is not currently used, but may be helpful in the future for determining an onset date for encounter diagnosis conditions when none is provided. See discussion in Condition Search section below.</td>
+    </tr>
+  </table>
+
+  <h3>Condition Search</h3>
+
+  <p>The decision support system searches for several conditions by code, to identify things like a Hypertension diagnosis or exclusion conditions such as end stage renal disease. Epic does not allow a search for conditions by code. A category must be
+    provided, and the codes need to be post-filtered from the FHIR response. The IG searches the condition categories 'encounter-diagnosis' and 'problem-list-item' to try and identify active conditions. So the queries to Epic look like this:</p>
+
+  <pre>{% raw %}/Condition?subject={{context.patientId}}&amp;category='problem-list-item'
+/Condition?subject={{context.patientId}}&amp;category='encounter-diagnosis'{% endraw %}</pre>
+
+  <p>Unfortunately, Epic does not provide an onset date for encounter diagnosis conditions. Without some information about onset and abatement, the decision support system cannot determine whether the condition is current and will likely ignore it. In
+    the future, the CQL may need to be modified to address this.</p>
+
+  <p>There is also a reported bug in Epic (QA note 6575473) with problem list conditions. The code system provided is the oid of the system rather than the url. So the condition code might look something like this where the SNOMED url is replaced by
+    its oid:</p>
+
+  <pre>...
+"code": {
+  "coding": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.6.96",
+      "code": "59621000",
+      "display": "Hypertension"
+    }
+  ],
+  "text": "Hypertension"
+},...</pre>
+
+  <p>The CQL has special processing to handle the oids for ICD-10 and SNOMED.</p>
+
+  <h3>Distinguising Home/Office/Ambulatory Blood Pressure Observations</h3>
+
+  <p>The decision support system scores blood pressure observations based on how they were collected to ensure enough readings are present to make decisions. However, these types are not easily distinguishable in Epic. Patient entered Blood Pressure
+    observations generally don't flow in Epic - the only exception being a video visit where the patient takes their own blood pressure and it is recorded by the physician. A nonstandard coding is used in the FHIR resource in this rare case. Ambulatory
+    blood pressures would normally reference an Ambulatory Blood Pressure Monitoring Procedure, but Epic does not reference Procedures or Encounters from Observations. As a result, this implementation will simply treat all BP observations coming from
+    Epic as "Office" observations.</p>
+
+  <p>Home observations can still be provided by the implementing application using the prefetch object during plan definition execution. To create a home observation use a MeasurementSettingExt extension and SNOMED code 264362003 as shown in
+    <a href="Observation-example-HomeBloodPressure.html">this example</a>.
+    <strong>Please note that if you plan to send home blood pressure observations through the prefetch, you will need to send ALL blood pressure observations through, including any from the FHIR server. CQF Ruler will not query the FHIR server directly
+      if it gets any results back from the prefetch.</strong>
+  </p>
+
+  <h3>Alcohol Use Observations</h3>
+
+  <p>To make a determination about a patient's drinking habits, the implementation looks specifically for observations with the LOINC code 11287-0 and a value with unit drinks/day. This is not how alcohol consumption is tracked in OHSU's instance of Epic. We did attempt to map other comparable codes from the AUDIT-C questionnaire, but the Epic mappings were not consistent or fine-grained enough to make any judgments about whether the patient might need recommendations regarding alcohol use. The implementation does map a set of <a href="ValueSet-2.16.840.1.113762.1.4.1222.24.html">Alcohol Abuse conditions</a>, so those may still trigger recommendations.</p>
+
+  <h3>Condition Onset/Abatement</h3>
+
+  <p>Epic Condition FHIR resources provide onset and abatement values as a date with no timestamp information. This can cause issues in the CQL engine, because it treats these fields as dateTime values with uncertainty, and the CQL must be written carefully to ensure that any intervals declared are constructed to consider this. In the original CQL borrowed from the <a href="https://github.com/cqframework/cqf/blob/master/input/cql/FHIRCommon.cql">FHIR Common file</a> in the CQ Framework, the prevalence period of an inactive condition is declared to be:</p>
+
+  <pre>[start of onset, end of abatement)</pre>
+
+  <p>The [ means inclusion, while the ) means exclusion. This works fine with normal datetime values that include timestamps, but fails in the case where no timestamp is included and the start and end are the same, e.g.</p>
+
+  <pre>[2021-11-18, 2021-11-18)</pre>
+
+  <p>This is not a valid interval because with uncertainty considered it is possible for some values of the end of the interval to be smaller than some values of the start. We now use inclusion when we know the end interval is not null. So this is valid:</p>
+
+  <pre>[2021-11-18, 2021-11-18]</pre>
+
+  <p>When a condition has no abatement date, we preserve the exclusion if the condition is not active, and use inclusion when the condition is active.</p>
+
+  <pre>[2021-11-18, null) This means we don't know when it ended, and cannot determine whether the condition is current.
+[2021-11-18, null] This means it hasn't ended which is equivalent to [2021-11-18, 9999-12-31]</pre>
+
+</div>

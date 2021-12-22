@@ -1,0 +1,232 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <p>
+    This describes the overall approach to implementing the Clinical Decision Support system. Subsequent sections explore the various customizations to the more standardized approach. The CDS Hooks framework is used to tap into the patient view action,
+    execute plan definitions for each of the workflows, and return relevant recommendations.
+  </p>
+
+  <img height="400px" style="vertical-align:middle;margin:15px 0px" src="htn-architecture.png" alt="Architecture diagram"/>
+
+  <h3>Customization of CDS Cards Components</h3>
+
+  <p>
+    Recommendations are returned as
+    <a href="https://cds-hooks.hl7.org/1.0/#card-attributes">CDS Cards</a>. However, during implementation, we found the rigid structure of cards was placing limitations on the richness of the output we wanted to support. For example, we wanted the
+    ability to return both a patient-facing and a provider-facing recommendation in the same card to avoid duplication of code and allow the client more flexibility in what to display. We also wanted to provide custom suggestions that could easily be
+    displayed as components in a web application, allowing the patient to interact with them to contact their care team or set a goal, for example.
+  </p>
+
+  <p>
+    The 'detail' field of CDS Cards is used to encapsulate all of the customization. This field is a pipe-delimited string with 4 elements:
+    <ul>
+      <li>Selection Behavior</li>
+      <li>Links</li>
+      <li>Rationale</li>
+      <li>Suggestions</li>
+    </ul>
+  </p>
+
+  <h4>Selection Behavior</h4>
+
+  <p>There is no customization of selection-behavior. For now, all recommendations use 'at-most-one'.</p>
+
+  <h4>Links</h4>
+
+  <p>
+    There is no real customization for links except that we do not provide the required element 'type'. This is really just a convenience, as the type is always 'absolute'.
+  </p>
+
+  <h4>Rationale</h4>
+
+  <p>
+    The rationale is the descriptive text for the recommendation. It provides the patient or provider more detailed information about why the recommendation was made or how it can be accomplished. To allow the rationale to be tailored to the audience
+    (patient vs. provider), we employ Mustache-style templates to separate the two recommendations. Anything inside the patient template can be displayed to the patient, and anything inside the careTeam template can be displayed to the provider. For
+    example:
+  </p>
+
+  <pre>{% raw %}{{#patient}}Consider limiting your salt intake.{{/patient}}{{#careTeam}}Discuss limiting salt intake with patient.{{/careTeam}}{% endraw %}</pre>
+
+  <p>
+    The rationale may also contain string escaped HTML formatting elements to provide emphasis or other visual cues.
+  </p>
+
+  <pre>You recently had a condition recorded that &lt;strong&gt;may be an adverse event&lt;/strong&gt; from high blood pressure treatment.</pre>
+
+  <h4>Suggestions</h4>
+
+  <p>
+    Because we wanted to provide a more interactive feel to the decision support model, most of the customization is in the suggestions element of the card's detail field. This complex logic supports a number of different suggestion types. An attribute
+    "type" is added to the suggestion element, and 6 kinds of suggestions are supported.
+
+    <ul>
+      <li>Follow a Link (suggestion-link)</li>
+      <li>Get Counseling (counseling-link)</li>
+      <li>Set a Blood Pressure Goal (bp-goal)</li>
+      <li>Set a Behavioral Goal (goal)</li>
+      <li>Update Behavioral Goal Progress (update-goal)</li>
+      <li>Confirm Adverse Event Treatment (adverse-event)</li>
+    </ul>
+  </p>
+
+  <p>
+    Multiple suggestions are possible for any single recommendation and do not have to be of the same type. For example, if a patient is a current smoker, they may get two suggestions - one to get counseling and one to set a goal. A suggestion must
+    always have an id. This id is somewhat arbitrary except when suggesting a behavioral goal, as will be discussed later.
+  </p>
+
+  <h5>Follow a Link</h5>
+
+  <p>
+    This is meant for general actions we want the patient to take such as entering more blood pressure readings. The suggestion will often contain a hard-coded relative url that would need to be implemented. Multiple links are possible for a single
+    suggestion using the actions array.
+  </p>
+
+  <pre>[{
+    "id": "suggestion-id",
+    "type": "suggestion-link",
+    "label": "Actions:",
+    "actions": [
+        {"label":"Contact your care provider", "url":"/contact"},
+        {"label":"Enter more Blood Pressure readings", "url":"/bp-readings"}
+    ]
+}]</pre>
+
+  <p>
+    The CQL suggestion that links to an implementing application's contact page has special processing that provides a token in the url. For example:
+  </p>
+
+  <pre>[{
+    "id": "suggestion-id",
+    "type": "suggestion-link",
+    "label": "Actions:",
+    "actions": [
+        {"label":"Contact us", "url":"/contact?token=possible-htn-stage2”}
+    ]
+}]</pre>
+
+  <p>
+    The implementing application can associate these tokens with a message that could be used to prepopulate the contact form. For example:
+  </p>
+
+  <img height="200px" src="contact-form.png" style="vertical-align:middle;margin:15px 0px" alt="Contact Form Example"/>
+
+  <h5>Get Counseling</h5>
+
+  <p>
+    This is similar to following a link with a few differences:
+
+    <ul>
+      <li>A FHIR Procedure record should be created indicating the patient was counseled.</li>
+      <li>A references object is provided to be saved with the counseling record. This allows the decision support system to distinguish between different types of counseling (e.g. smoking vs weight loss)</li>
+    </ul>
+  </p>
+
+  <p>Here is an example counseling suggestion</p>
+  <pre>[{
+    "id": "smoking-counseling",
+    "type": "counseling-link",
+    "references": {"system":"http://snomed.info/sct", "code":"225323000"},
+    "label": "Suggested Counseling:",
+    "actions": [
+        {"label":"Learn more about tobacco cessation.", "url":"/counseling/smoking-cessation"}
+    ]
+}]</pre>
+
+  <p>The implementing application would create a link with an onclick event and an internal page "/counseling/smoking-cessation" that provides counseling resources related to smoking. When the link is clicked, the implementing application must create either locally or in the FHIR server a procedure resource for the counseling session using the system and code provided in the suggestion. On subsequent executions of decision support, this counseling resource would be used to trigger different recommendations.</p>
+
+  <h5>Set a Blood Pressure Goal</h5>
+
+  <p>This suggestion allows the implementing application to create a component for a patient to set a blood pressure goal. The application can then construct a Goal like <a href="Goal-BloodPressureGoal.html">this example</a> and provide to the decision support system to update recommendations.</p>
+  <pre>[{
+    "id": "bp-radio-goal",
+    "label": "BP Goal",
+    "type": "bp-goal",
+    "references":{"system":"https//coach.ohsu.edu", "code":"blood-pressure"},
+    "actions": [
+        {"label":"140/90"},
+        {"label":"130/80"},
+        {"label":"120/80"}
+    ]
+}]</pre>
+
+  <p>
+    The "references" element above can be ignored by the implementing application when constructing the goal.
+  </p>
+
+  <h5>Set a Behavioral Goal</h5>
+
+  <p>This suggestion allows a patient to set behavior goals. We experimented with a number of goal types in our reference implementation, including free text, radio button choices, and prescribed goals. In the end, we only implemented one type of goal suggestion in this IG. This is a "Mad Libs" style goal where some text is prescribed while the patient can fill out other text. In our reference implementation, the goal might look something like this:</p>
+
+  <img height="200px" src="mad-libs-goal.png" style="vertical-align:middle;margin:15px 0px"/>
+
+  <p>In the image above, the reference application has made several choices. It allows a freetext option and expects a commit date for the goal. The suggestion itself provides the text for the Mad Lib style goal, a label, and reference information so the application can create the Goal appropriately.</p>
+
+  <pre>[{
+    "id": "smoking-goal-madlibs",
+    "type":"goal",
+    "references": {"system":"https//coach.ohsu.edu", "code":"smoking-cessation", "display":"Smoking Cessation"},
+    "label": "Set a Tobacco Cessation Goal",
+    "actions": [
+        {"label": "Reduce tobacco to [quantity] [product:cigarettes] per week."}
+    ]
+}]</pre>
+
+  <p>The Mad Lib entry is constructed using square brackets, where the first word is placeholder text for the input, and the second word if present is a default value that should be used.
+  </p>
+
+  <p>The id of the goal does need to be unique so that multiple goals can be supported and the application and CQL can effectively communicate about the status of these goals. The CQL ensures a goal suggestion provides a unique id by appending a date/timestamp to the ids. So a suggestion will generally look more like this:
+  </p>
+
+  <pre># CQL adds timestamp so id is unique
+  [{
+      "id": "alcohol-goal-2021-09-30T12:37:34.245",
+      "type": "goal",
+      "references": {"system":"https//coach.ohsu.edu", "code":"alcohol-moderation", "display":"Alcohol Moderation"},
+      "label": "Set an alcohol moderation goal:",
+      "actions": [
+      ]
+  }]</pre>
+
+  <h5>Update Behavioral Goal Progress</h5>
+
+  <p>This suggestion tells the application that at least one goal needs to be updated (because the commit date has passed). The id and references should be the same as what was provided in the previous goals suggestion.</p>
+
+  <pre># Suggestion to Update goal
+[{
+    "id": "smoking-goal-madlibs",
+    "type": "update-goal",
+    "references": {"system":"https//coach.ohsu.edu", "code":"smoking-cessation", "display":"Smoking Cessation"},
+    "label": "Update your goal.",
+    "actions": [
+    ]
+}]</pre>
+
+  <p>The above goal example does not offer a Mad Libs style suggestions, so the implementing application might provide free text in this case. In the end, suggestions are just that, and the implementer can decide how a goal might be created. As long as the Goal uses the reference information provided, the decision support system will recognize it.</p>
+
+  <h5>Confirm Adverse Event Treatment</h5>
+
+  <p>The implementing application is responsible for detecting adverse event conditions that
+    may have occurred due to Antihypertensive Medication and creating AdverseEvent resources
+    that can be passed to the IG in the prefetch. We use this <a href="ValueSet-conditions-related-to-antihypertensives.html">Value Set</a>
+    in our reference application. When the decision support system receives an
+    Adverse Event, a recommendation is triggered, and that recommendation will change depending
+    on whether the Adverse Event is 'ongoing' or 'resolved'. For an ongoing event, CQL is used
+    to iterate through the adverse events, so it can't be hard-coded in JSON. But generally,
+    it ends up looking like this:</p>
+
+  <pre>[
+ {
+	"id": &lt;adverse_event_id&gt;,
+	"label": "Acute Kidney Problem",
+	"type": "adverse-event"
+ },
+ {
+	"id": &lt;adverse_event_id&gt;,
+	"label": "Brief Loss of Consciousness",
+	"type": "adverse-event"
+ }
+]</pre>
+
+  <p>This allows the implementing application the opportunity to display the Adverse Events to the patient and ask them whether the issue has been addressed. Here's an example:</p>
+
+  <img height="200px" src="adverse-event-suggestion.png" style="vertical-align:middle;margin:15px 0px"/>
+
+</div>
