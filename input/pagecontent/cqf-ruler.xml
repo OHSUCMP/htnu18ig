@@ -82,7 +82,7 @@
   <h3>Configuration</h3>
   <p>
     To configure CQF Ruler with artifacts in this Implementation Guide, use the
-    <a href="https://github.com/OHSUCMP/htnu18ig/blob/master/input/PopulateCQFRuler.py">PopulateCQFRuler.py</a>
+    <a href="https://github.com/OHSUCMP/htnu18ig/blob/master/specification/PopulateCQFRuler.py">PopulateCQFRuler.py</a>
     script found in this IG's
     <em>input/</em>
     folder:
