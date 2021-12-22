@@ -1,7 +1,19 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-    <p>
-        Functional Description of Initial Diagnosis Workflow
-    </p>
     <img height="500" src="flow-initial-diagnosis.png" alt="Initial Diagnosis Logic"/>
-
+    <p>
+      When the patient first accesses the tool, it will check to see if that patient has an existing diagnosis of hypertension. If the patient does, the tool will proceed through the monitoring and treatment pathway. If the patient has not been diagnosed, the tool will check how many blood pressure measurements the patient has within the last 2 years. If a full set as defined by the <a href="flow-intro.html#last-set-of-blood-pressure-readings">scoring algorithm</a> does not exist for the patient, the tool will recommend home blood pressure monitoring be used to obtain additional measurements.
+    </p>
+    <p>
+      If a set of measurements exists, the tool will evaluate the set. If the mean value of the set OR of all recorded blood pressures is > 140 SBP or > 90 DBP, the tool will recommend diagnosis with stage 2 hypertension, assigning greater likelihood of diagnosis if average of blood pressures or all recorded blood pressures are > 160 DBP.
+    </p>
+    <p>
+      If blood pressure set average is not > 140 SBP or >90 DBP, the tool will assess the likelihood of stage 1 hypertension. If the most recent blood pressure set averages >130/80, the tool will suggest diagnosis of stage 1 hypertension. If the average of all blood pressure readings is >130/80, the tool will recommend the use of home or ambulatory blood pressure monitoring to collect more readings.
+    </p>
+    <p>
+      If the blood pressure average is not >130/80, but <a href="flow-intro.html#blood-pressure-variability">high variability exists</a>, the tool will recommend the use of ambulatory blood pressure monitoring.
+    </p>
+    <p>
+      This will proceed to the monitoring and treatment pathway, but no further recommendations are given until the patient receives an official diagnosis.
+      If the patient does not have high variability in their blood pressure, no further action is taken.
+    </p>
 </div>
