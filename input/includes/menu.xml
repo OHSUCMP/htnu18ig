@@ -12,12 +12,46 @@
     </ul>
   </li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flow Logic<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flow-intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="flow-very-high-bp.html">Very High Blood Pressure Alert</a>
+      </li>
+      <li>
+        <a href="flow-initial-diagnosis.html">Initial Diagnosis</a>
+      </li>
+      <li>
+        <a href="flow-monitoring.html">Monitoring of Diagnosed Patients</a>
+      </li>
+      <li>
+        <a href="flow-nonpharma.html">Therapy - Non-medicinal</a>
+      </li>
+      <li>
+        <a href="flow-pharma.html">Therapy - Medicines</a>
+      </li>
+      <li>
+        <a href="flow-adverse-events.html">Potential Adverse Reaction Detection</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
       <li>
         <a href="spec.html">Detailed Specification</a>
+      </li>
+      <li>
+        <a href="cqf-ruler.html">Using CQF Ruler</a>
+      </li>
+      <li>
+        <a href="epic-integration.html">Epic Integration</a>
       </li>
     </ul>
   </li>
@@ -35,4 +69,4 @@
       </li>
     </ul>
   </li>
-</ul>      
+</ul>

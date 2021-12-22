@@ -47,9 +47,54 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="flow-intro.html"/>
+        <title value="Flow Logic"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="flow-very-high-bp.html"/>
+          <title value="Very High Blood Pressure Alert"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-initial-diagnosis.html"/>
+          <title value="Initial Diagnosis"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-monitoring.html"/>
+          <title value="Monitoring of Diagnosed Patients"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-nonpharma.html"/>
+          <title value="Therapy - Non-medicinal"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-pharma.html"/>
+          <title value="Therapy - Medicines"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-adverse-events.html"/>
+          <title value="Potential Adverse Reaction Detection"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
         <nameUrl value="spec.html"/>
         <title value="Detailed Specification"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="cqf-ruler.html"/>
+          <title value="Using CQF Ruler"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="epic-integration.html"/>
+          <title value="Considerations for Epic Integration"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
         <nameUrl value="downloads.html"/>
@@ -59,11 +104,6 @@
       <page>
         <nameUrl value="changes.html"/>
         <title value="IG Change History"/>
-        <generation value="html"/>
-      </page>
-      <page>
-        <nameUrl value="flowLogic.html"/>
-        <title value="Flow Logic"/>
         <generation value="html"/>
       </page>
     </page>

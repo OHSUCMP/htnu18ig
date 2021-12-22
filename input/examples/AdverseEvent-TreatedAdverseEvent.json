@@ -1,0 +1,38 @@
+{
+  "resourceType": "AdverseEvent",
+  "id": "example-TreatedAdverseEvent",
+  "subject": {
+    "reference": "Patient/12345"
+  },
+  "event": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "N17.0",
+        "display": "Acute kidney problem"
+      },
+      {
+        "system": "https://coach.ohsu.edu",
+        "code": "coach-adverse-event",
+        "display": "Adverse Event reported by COACH"
+      }
+    ],
+    "text": "Acute kidney problem"
+  },
+  "date": "2021-09-15T07:25:02-07:00",
+  "detected": "2021-09-15T07:25:02-07:00",
+  "recordedDate": "2021-09-15T13:16:21-07:00",
+  "resultingCondition": [
+    {
+      "reference": "Condition/condition-12345"
+    }
+  ],
+  "outcome": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+        "code": "resolved"
+      }
+    ]
+  }
+}

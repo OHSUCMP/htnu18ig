@@ -24,7 +24,7 @@
   "date": "2020-02-04T00:00:00-08:00",
   "publisher": "Oregon Health and Science University (OHSU)",
   "description": "This PlanDefinition identifies Non-Pharmacologic Interventions for Hypertension",
-  "purpose": "The purpose of this is to test the system to make sure we have complete end-to-end functionality",
+  "purpose": "The purpose of this is to recommend lifestyle changes that may help address high blood pressure.",
   "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
   "useContext": [
     {
@@ -76,7 +76,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is in the recommendation.",
+            "description": "Determine if patient is in the recommendation.",
             "language": "text/cql.identifier",
             "expression": "Patient Smoking Goals Action Path"
           }
@@ -119,7 +119,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is in the recommendation.",
+            "description": "Determine if patient is in the recommendation.",
             "language": "text/cql.identifier",
             "expression": "Patient Weight Loss Goals Action Path"
           }
@@ -162,7 +162,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is in the recommendation.",
+            "description": "Determine if patient is in the recommendation.",
             "language": "text/cql.identifier",
             "expression": "Patient Alcohol Goals Action Path"
           }
@@ -196,7 +196,7 @@
     },
     {
       "title": "Does the Patient Need Nutrition Counseling?",
-      "description": "Determines if a recommendation regarding the Patient's Nutrition should be established.",
+      "description": "Determines if a recommendation regarding the patient's Nutrition should be established.",
       "trigger": [{
         "type": "named-event",
         "name":"patient-view"
@@ -205,7 +205,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is in the recommendation.",
+            "description": "Determine if patient is in the recommendation.",
             "language": "text/cql.identifier",
             "expression": "Patient Nutrition Goals Action Path"
           }
@@ -239,7 +239,7 @@
     },
     {
       "title": "Does the Patient Need Physical Activity Counseling?",
-      "description": "Determines if a recommendation regarding the Patient's Physical Activity should be established.",
+      "description": "Determines if a recommendation regarding the patient's Physical Activity should be established.",
       "trigger": [{
         "type": "named-event",
         "name":"patient-view"
@@ -248,7 +248,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is in the recommendation.",
+            "description": "Determine if patient is in the recommendation.",
             "language": "text/cql.identifier",
             "expression": "Patient Physical Activity Goals Action Path"
           }
@@ -291,7 +291,7 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if Patient is in hypertension exclusion population.",
+            "description": "Determine if patient is in hypertension exclusion population.",
             "language": "text/cql.identifier",
             "expression": "Meets Exclusion Criteria"
           }

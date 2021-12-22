@@ -14,7 +14,7 @@ port = 8080
 if len(sys.argv) > 1:
   port = sys.argv[1]
 
-paths = ["vocabulary/valueset", "resources/library", "resources/plandefinition", "resources/device"]
+paths = ["../input/vocabulary/valueset", "../input/resources/library", "../input/resources/plandefinition", "../input/resources/device"]
 
 cqf_ruler_url = "http://localhost:" + str(port) + "/cqf-ruler-r4/fhir/"
 print("CQF Ruler URL = " + cqf_ruler_url)
