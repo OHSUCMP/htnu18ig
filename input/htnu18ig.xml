@@ -11,10 +11,11 @@
   <experimental value="false"/>
   <publisher value="Oregon Health and Science University"/>
   <contact>
+    <name value="Oregon Health and Science University"/>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
-      <system value="email"/>
-      <value value="storer@ohsu.edu"/>
+      <system value="url"/>
+      <value value="https://www.ohsu.edu/"/>
     </telecom>
   </contact>
   <description value="IG for OHSU's Hypertension U18 grant involving a patient-facing FHIR app and associated logic"/>
@@ -27,7 +28,7 @@
   </jurisdiction>
   <packageId value="hl7.fhir.us.ohsu-htnu18ig"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
-  <license value="CC0-1.0"/>
+  <license value="Apache-2.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
   <definition>
