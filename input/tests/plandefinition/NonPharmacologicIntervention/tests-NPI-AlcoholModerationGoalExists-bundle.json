@@ -4,31 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Procedure",
-      "id": "procedure-NPI-AlcoholModerationGoalExists-1",
-      "status": "completed",
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "24165007",
-          "display": "Alcoholism counseling (procedure)"
-        } ],
-        "text": "Alcoholism counseling (procedure)"
-      },
-      "subject": {
-        "reference": "Patient/NPI-AlcoholModerationGoalExists"
-      },
-      "performedDateTime": "2020-12-27T11:00:00-06:00",
-      "note": [ {
-        "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Procedure/procedure-NPI-AlcoholModerationGoalExists-1"
-    }
-  }, {
-    "resource": {
       "resourceType": "Condition",
       "id": "condition-NPI-AlcoholModerationGoalExists-1",
       "clinicalStatus": {
@@ -74,20 +49,70 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "NPI-AlcoholModerationGoalExists",
-      "active": true,
-      "name": [ {
-        "text": "Alcohol Moderation Goal Exists",
-        "family": "Exists",
-        "given": [ "AlcoholModerationGoal" ]
+      "resourceType": "Goal",
+      "id": "goal-NPI-AlcoholModerationGoalExists-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "https://coach.ohsu.edu",
+          "code": "alcohol-moderation",
+          "display": "Alcohol Moderation"
+        } ],
+        "text": "Alcohol Moderation"
       } ],
-      "gender": "female",
-      "birthDate": "1997-05-10"
+      "description": {
+        "text": "Cut out alcohol on weekdays"
+      },
+      "subject": {
+        "reference": "Patient/NPI-AlcoholModerationGoalExists"
+      },
+      "startDate": "2021-08-12",
+      "target": [ {
+        "dueDate": "2021-09-29"
+      } ],
+      "statusDate": "2021-08-19"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/NPI-AlcoholModerationGoalExists"
+      "url": "Goal/goal-NPI-AlcoholModerationGoalExists-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-AlcoholModerationGoalExists-1",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "11287-0",
+          "display": "Alcoholic drinks per drinking day - Reported"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/NPI-AlcoholModerationGoalExists"
+      },
+      "effectiveDateTime": "2020-12-27T10:00:00-07:00",
+      "issued": "2020-12-27T00:00:00-07:00",
+      "valueQuantity": {
+        "value": 3,
+        "unit": "Drinks/Day"
+      },
+      "note": [ {
+        "text": "Patient is female and has more than 2 drinks a day. Considered a heavy alcoholic drinker."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-AlcoholModerationGoalExists-1"
     }
   }, {
     "resource": {
@@ -228,36 +253,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-NPI-AlcoholModerationGoalExists-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-AlcoholModerationGoalExists-8",
-      "status": "final",
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "version": "2.69",
-          "code": "11287-0",
-          "display": "Alcoholic drinks per drinking day - Reported"
-        } ]
-      },
-      "subject": {
-        "reference": "Patient/NPI-AlcoholModerationGoalExists"
-      },
-      "effectiveDateTime": "2021-07-15T10:00:00-07:00",
-      "issued": "2021-07-15T00:00:00-07:00",
-      "valueQuantity": {
-        "value": 1,
-        "unit": "Drinks/Day"
-      },
-      "note": [ {
-        "text": "Patient is female and has reduced drinking. Goal still active."
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-AlcoholModerationGoalExists-8"
     }
   }, {
     "resource": {
@@ -542,7 +537,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-AlcoholModerationGoalExists-1",
+      "id": "observation-NPI-AlcoholModerationGoalExists-8",
       "status": "final",
       "code": {
         "coding": [ {
@@ -555,56 +550,61 @@
       "subject": {
         "reference": "Patient/NPI-AlcoholModerationGoalExists"
       },
-      "effectiveDateTime": "2020-12-27T10:00:00-07:00",
-      "issued": "2020-12-27T00:00:00-07:00",
+      "effectiveDateTime": "2021-07-15T10:00:00-07:00",
+      "issued": "2021-07-15T00:00:00-07:00",
       "valueQuantity": {
-        "value": 3,
+        "value": 1,
         "unit": "Drinks/Day"
       },
       "note": [ {
-        "text": "Patient is female and has more than 2 drinks a day. Considered a heavy alcoholic drinker."
+        "text": "Patient is female and has reduced drinking. Goal still active."
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-AlcoholModerationGoalExists-1"
+      "url": "Observation/observation-NPI-AlcoholModerationGoalExists-8"
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-NPI-AlcoholModerationGoalExists-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
-        } ]
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "https://coach.ohsu.edu",
-          "code": "alcohol-moderation",
-          "display": "Alcohol Moderation"
-        } ],
-        "text": "Alcohol Moderation"
+      "resourceType": "Patient",
+      "id": "NPI-AlcoholModerationGoalExists",
+      "active": true,
+      "name": [ {
+        "text": "Alcohol Moderation Goal Exists",
+        "family": "Exists",
+        "given": [ "AlcoholModerationGoal" ]
       } ],
-      "description": {
-        "text": "Cut out alcohol on weekdays"
+      "gender": "female",
+      "birthDate": "1997-05-10"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/NPI-AlcoholModerationGoalExists"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "procedure-NPI-AlcoholModerationGoalExists-1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "24165007",
+          "display": "Alcoholism counseling (procedure)"
+        } ],
+        "text": "Alcoholism counseling (procedure)"
       },
       "subject": {
         "reference": "Patient/NPI-AlcoholModerationGoalExists"
       },
-      "startDate": "2021-08-12",
-      "target": [ {
-        "dueDate": "2021-09-29"
-      } ],
-      "statusDate": "2021-08-19"
+      "performedDateTime": "2020-12-27T11:00:00-06:00",
+      "note": [ {
+        "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
+      } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-NPI-AlcoholModerationGoalExists-1"
+      "url": "Procedure/procedure-NPI-AlcoholModerationGoalExists-1"
     }
   } ]
 }

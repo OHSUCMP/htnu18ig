@@ -26,6 +26,7 @@
       <code value="840"/> <!-- USA -->
     </coding>
   </jurisdiction>
+  <copyright value="Published by OHSU under an Apache 2.0 License"/>
   <packageId value="hl7.fhir.us.ohsu-htnu18ig"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="Apache-2.0"/>
@@ -143,10 +144,15 @@
       <code value="path-resource"/>
       <value value="input/history"/>
     </parameter>
+
+<!-- storer : commenting out path-binary per Bryn's recommendation -->
+<!--
     <parameter>
       <code value="path-binary"/>
       <value value="input/cql"/>
     </parameter>
+-->
+
     <parameter>
       <code value="path-liquid"/>
       <value value="templates/liquid"/>

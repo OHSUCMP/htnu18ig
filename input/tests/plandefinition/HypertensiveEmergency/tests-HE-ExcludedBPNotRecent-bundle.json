@@ -4,23 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Patient",
-      "id": "HE-ExcludedBPNotRecent",
-      "active": true,
-      "name": [ {
-        "text": "Excluded BPNotRecent",
-        "family": "BPNotRecent",
-        "given": [ "Excluded" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1982-04-19"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/HE-ExcludedBPNotRecent"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-HE-ExcludedBPNotRecent-1",
       "extension": [ {
@@ -158,6 +141,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-HE-ExcludedBPNotRecent-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "HE-ExcludedBPNotRecent",
+      "active": true,
+      "name": [ {
+        "text": "Excluded BPNotRecent",
+        "family": "BPNotRecent",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1982-04-19"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/HE-ExcludedBPNotRecent"
     }
   } ]
 }

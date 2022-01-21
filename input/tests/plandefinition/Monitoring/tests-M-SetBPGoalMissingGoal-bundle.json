@@ -4,6 +4,51 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
+      "resourceType": "Condition",
+      "id": "condition-M-SetBPGoalMissingGoal-1",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ],
+        "text": "Problem List Item"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ],
+        "text": "Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/M-SetBPGoalMissingGoal"
+      },
+      "onsetDateTime": "2015-01-28T15:16:21-05:00",
+      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "note": [ {
+        "text": "Indicates Preexisting Diagnosis of Hypertension"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-M-SetBPGoalMissingGoal-1"
+    }
+  }, {
+    "resource": {
       "resourceType": "Encounter",
       "id": "encounter-M-SetBPGoalMissingGoal-1",
       "status": "finished",
@@ -30,35 +75,6 @@
     "request": {
       "method": "PUT",
       "url": "Encounter/encounter-M-SetBPGoalMissingGoal-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Encounter",
-      "id": "encounter-M-SetBPGoalMissingGoal-4",
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB"
-      },
-      "type": [ {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "162673000",
-          "display": "General examination of patient (procedure)"
-        } ],
-        "text": "General examination of patient (procedure)"
-      } ],
-      "subject": {
-        "reference": "Patient/M-SetBPGoalMissingGoal"
-      },
-      "period": {
-        "start": "2021-04-26T00:00:00-04:00",
-        "end": "2021-04-26T23:59:59-04:00"
-      }
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Encounter/encounter-M-SetBPGoalMissingGoal-4"
     }
   }, {
     "resource": {
@@ -120,65 +136,164 @@
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-M-SetBPGoalMissingGoal-1",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
+      "resourceType": "Encounter",
+      "id": "encounter-M-SetBPGoalMissingGoal-4",
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
       },
-      "verificationStatus": {
+      "type": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        } ],
+        "text": "General examination of patient (procedure)"
+      } ],
+      "subject": {
+        "reference": "Patient/M-SetBPGoalMissingGoal"
       },
+      "period": {
+        "start": "2021-04-26T00:00:00-04:00",
+        "end": "2021-04-26T23:59:59-04:00"
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Encounter/encounter-M-SetBPGoalMissingGoal-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-M-SetBPGoalMissingGoal-1",
+      "status": "final",
       "category": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "problem-list-item",
-          "display": "Problem List Item"
-        } ],
-        "text": "Problem List Item"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
       } ],
       "code": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "59621000",
-          "display": "Hypertension"
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
         } ],
-        "text": "Hypertension"
+        "text": "Blood Pressure"
       },
       "subject": {
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
-      "onsetDateTime": "2015-01-28T15:16:21-05:00",
-      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "encounter": {
+        "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-1"
+      },
+      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
       "note": [ {
-        "text": "Indicates Preexisting Diagnosis of Hypertension"
+        "text": "Office Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 89.9349105113392,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 134.53332100989888,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-M-SetBPGoalMissingGoal-1"
+      "url": "Observation/observation-M-SetBPGoalMissingGoal-1"
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "M-SetBPGoalMissingGoal",
-      "active": true,
-      "name": [ {
-        "text": "Set BP Goal Missing Goal",
-        "family": "MissingGoal",
-        "given": [ "SetBPGoal" ]
+      "resourceType": "Observation",
+      "id": "observation-M-SetBPGoalMissingGoal-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
       } ],
-      "gender": "female",
-      "birthDate": "1955-12-17"
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/M-SetBPGoalMissingGoal"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-2"
+      },
+      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Office Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 83.995226014274,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 131.4534388828563,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/M-SetBPGoalMissingGoal"
+      "url": "Observation/observation-M-SetBPGoalMissingGoal-2"
     }
   }, {
     "resource": {
@@ -249,7 +364,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-M-SetBPGoalMissingGoal-2",
+      "id": "observation-M-SetBPGoalMissingGoal-4",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -270,9 +385,9 @@
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
       "encounter": {
-        "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-2"
+        "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-4"
       },
-      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -286,7 +401,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 83.995226014274,
+          "value": 82.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -301,7 +416,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 131.4534388828563,
+          "value": 131.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -310,7 +425,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-M-SetBPGoalMissingGoal-2"
+      "url": "Observation/observation-M-SetBPGoalMissingGoal-4"
     }
   }, {
     "resource": {
@@ -385,72 +500,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-M-SetBPGoalMissingGoal-4",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/M-SetBPGoalMissingGoal"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-4"
-      },
-      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Office Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 82.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 131.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-M-SetBPGoalMissingGoal-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-M-SetBPGoalMissingGoal-6",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
@@ -520,69 +569,20 @@
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-M-SetBPGoalMissingGoal-1",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
+      "resourceType": "Patient",
+      "id": "M-SetBPGoalMissingGoal",
+      "active": true,
+      "name": [ {
+        "text": "Set BP Goal Missing Goal",
+        "family": "MissingGoal",
+        "given": [ "SetBPGoal" ]
       } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/M-SetBPGoalMissingGoal"
-      },
-      "encounter": {
-        "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-1"
-      },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Office Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 89.9349105113392,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 134.53332100989888,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
+      "gender": "female",
+      "birthDate": "1955-12-17"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-M-SetBPGoalMissingGoal-1"
+      "url": "Patient/M-SetBPGoalMissingGoal"
     }
   } ]
 }

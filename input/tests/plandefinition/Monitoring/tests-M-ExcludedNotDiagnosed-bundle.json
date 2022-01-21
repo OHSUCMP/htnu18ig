@@ -4,23 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Patient",
-      "id": "M-ExcludedNotDiagnosed",
-      "active": true,
-      "name": [ {
-        "text": "Excluded Not Diagnosed",
-        "family": "NotDiagnosed",
-        "given": [ "Excluded" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1996-12-04"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/M-ExcludedNotDiagnosed"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-M-ExcludedNotDiagnosed-1",
       "extension": [ {
@@ -158,6 +141,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-M-ExcludedNotDiagnosed-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "M-ExcludedNotDiagnosed",
+      "active": true,
+      "name": [ {
+        "text": "Excluded Not Diagnosed",
+        "family": "NotDiagnosed",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1996-12-04"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/M-ExcludedNotDiagnosed"
     }
   } ]
 }

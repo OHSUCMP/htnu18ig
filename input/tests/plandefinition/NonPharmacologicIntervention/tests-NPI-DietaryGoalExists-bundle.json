@@ -49,32 +49,45 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "NPI-DietaryGoalExists",
-      "active": true,
-      "name": [ {
-        "text": "Dietary Goal Exists",
-        "family": "Exists",
-        "given": [ "DietaryGoal" ]
+      "resourceType": "Goal",
+      "id": "goal-NPI-DietaryGoalExists-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "https://coach.ohsu.edu",
+          "code": "nutrition",
+          "display": "Nutrition"
+        } ],
+        "text": "Nutrition"
       } ],
-      "gender": "male",
-      "birthDate": "1991-10-28"
+      "description": {
+        "text": "DASH Diet"
+      },
+      "subject": {
+        "reference": "Patient/NPI-DietaryGoalExists"
+      },
+      "startDate": "2021-07-12",
+      "target": [ {
+        "dueDate": "2021-09-29"
+      } ],
+      "statusDate": "2021-07-29"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/NPI-DietaryGoalExists"
+      "url": "Goal/goal-NPI-DietaryGoalExists-1"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-DietaryGoalExists-3",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
+      "id": "observation-NPI-DietaryGoalExists-1",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -86,53 +99,29 @@
       "code": {
         "coding": [ {
           "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
+          "code": "39156-5",
+          "display": "Body Mass Index"
         } ],
-        "text": "Blood Pressure"
+        "text": "Body Mass Index"
       },
       "subject": {
         "reference": "Patient/NPI-DietaryGoalExists"
       },
-      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "effectiveDateTime": "2020-12-15T03:14:57-05:00",
+      "issued": "2020-12-15T03:14:57.429-05:00",
+      "valueQuantity": {
+        "value": 27.690689692990766,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
       "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 88.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 140.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
+        "text": "Patient has a BMI > 25."
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryGoalExists-3"
+      "url": "Observation/observation-NPI-DietaryGoalExists-1"
     }
   }, {
     "resource": {
@@ -207,7 +196,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-DietaryGoalExists-5",
+      "id": "observation-NPI-DietaryGoalExists-3",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -234,7 +223,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryGoalExists"
       },
-      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -248,7 +237,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 78.52660352979804,
+          "value": 88.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -263,7 +252,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 136.65064054117963,
+          "value": 140.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -272,7 +261,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryGoalExists-5"
+      "url": "Observation/observation-NPI-DietaryGoalExists-3"
     }
   }, {
     "resource": {
@@ -347,46 +336,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-DietaryGoalExists-8",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/NPI-DietaryGoalExists"
-      },
-      "effectiveDateTime": "2021-07-15T03:14:57-05:00",
-      "issued": "2021-07-15T03:14:57.429-05:00",
-      "valueQuantity": {
-        "value": 23.690689692990766,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      },
-      "note": [ {
-        "text": "Patient's most recent BMI is lower, so no weight loss recommendations."
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryGoalExists-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-DietaryGoalExists-7",
+      "id": "observation-NPI-DietaryGoalExists-5",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -413,7 +363,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryGoalExists"
       },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -427,7 +377,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 88.52660352979804,
+          "value": 78.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -442,7 +392,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 133.65064054117963,
+          "value": 136.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -451,7 +401,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryGoalExists-7"
+      "url": "Observation/observation-NPI-DietaryGoalExists-5"
     }
   }, {
     "resource": {
@@ -526,7 +476,77 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-DietaryGoalExists-1",
+      "id": "observation-NPI-DietaryGoalExists-7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-DietaryGoalExists"
+      },
+      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 133.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-DietaryGoalExists-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-DietaryGoalExists-8",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -546,58 +566,38 @@
       "subject": {
         "reference": "Patient/NPI-DietaryGoalExists"
       },
-      "effectiveDateTime": "2020-12-15T03:14:57-05:00",
-      "issued": "2020-12-15T03:14:57.429-05:00",
+      "effectiveDateTime": "2021-07-15T03:14:57-05:00",
+      "issued": "2021-07-15T03:14:57.429-05:00",
       "valueQuantity": {
-        "value": 27.690689692990766,
+        "value": 23.690689692990766,
         "unit": "kg/m2",
         "system": "http://unitsofmeasure.org",
         "code": "kg/m2"
       },
       "note": [ {
-        "text": "Patient has a BMI > 25."
+        "text": "Patient's most recent BMI is lower, so no weight loss recommendations."
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryGoalExists-1"
+      "url": "Observation/observation-NPI-DietaryGoalExists-8"
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-NPI-DietaryGoalExists-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
-        } ]
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "https://coach.ohsu.edu",
-          "code": "nutrition",
-          "display": "Nutrition"
-        } ],
-        "text": "Nutrition"
+      "resourceType": "Patient",
+      "id": "NPI-DietaryGoalExists",
+      "active": true,
+      "name": [ {
+        "text": "Dietary Goal Exists",
+        "family": "Exists",
+        "given": [ "DietaryGoal" ]
       } ],
-      "description": {
-        "text": "DASH Diet"
-      },
-      "subject": {
-        "reference": "Patient/NPI-DietaryGoalExists"
-      },
-      "startDate": "2021-07-12",
-      "target": [ {
-        "dueDate": "2021-09-29"
-      } ],
-      "statusDate": "2021-07-29"
+      "gender": "male",
+      "birthDate": "1991-10-28"
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-NPI-DietaryGoalExists-1"
+      "url": "Patient/NPI-DietaryGoalExists"
     }
   } ]
 }
