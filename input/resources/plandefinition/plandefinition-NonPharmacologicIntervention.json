@@ -1,7 +1,7 @@
 {
   "resourceType": "PlanDefinition",
   "id": "plandefinition-NonPharmacologicIntervention",
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/PlanDefinition/plandefinition-NonPharmacologicIntervention",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/PlanDefinition/plandefinition-NonPharmacologicIntervention",
   "identifier": [
     {
       "use": "official",
@@ -62,7 +62,7 @@
   ],
   "copyright": "© OHSU 2020+.",
   "library": [
-     "http://fhir.org/guides/ohsu/htnu18ig/Library/library-NonPharmacologicIntervention"
+     "http://fhir.org/guides/ohsuhypertensionig/Library/library-NonPharmacologicIntervention"
   ],
   "action": [
     {

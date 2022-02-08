@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/Pharma",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/Library/Pharma",
   "version": "0.1",
   "name": "Pharma",
   "title": "Therapy - Medicines Logic",

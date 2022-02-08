@@ -11,7 +11,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/Hypertension",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/Library/Hypertension",
   "version": "0.1",
   "name": "Hypertension",
   "title": "Initial Diagnosis Logic",

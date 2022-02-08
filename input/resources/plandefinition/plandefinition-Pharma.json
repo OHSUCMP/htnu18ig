@@ -1,7 +1,7 @@
 {
   "resourceType": "PlanDefinition",
   "id": "plandefinition-Pharma",
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/PlanDefinition/plandefinition-Pharma",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/PlanDefinition/plandefinition-Pharma",
   "identifier": [
     {
       "use": "official",
@@ -62,7 +62,7 @@
   ],
   "copyright": "© OHSU 2020+.",
   "library": [
-     "http://fhir.org/guides/ohsu/htnu18ig/Library/library-Pharma"
+     "http://fhir.org/guides/ohsuhypertensionig/Library/library-Pharma"
   ],
   "action": [
     {

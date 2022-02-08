@@ -1,7 +1,10 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-    <p>
-        Functional Description of AE Workflow
-    </p>
-    <img height="500" src="anImage.png" alt="Potential Adverse Reaction Logic"/>
+    <a name="top" />
+    <h3>Adverse Events Workflow</h3>
 
+    <img height="500" src="flow-adverse-events.png" alt="Adverse Events Workflow diagram"/>
+
+    <p>When a patient who has at least one current medication for hypertension logs into the tool, it checks against a list of adverse reactions specific to hypertension treatment to see if that event has been entered into the EHR. These are drawn from the SPRINT trial monitoring for safety: orthostatic hypotension (or other hypotension), electrolyte disturbances, changes in kidney function, presyncope / syncope / dizziness, and falls. If one or more of these codes is found, it then checks to see if there is a treatment code corresponding to that reaction. If the reaction has been treated, the tool will recommend that the patient contact their care team to discuss adjusting treatment if the reaction recurs.</p>
+
+    <p>If no corresponding treatment code is found, an alert is triggered in the tool and the patient is advised to contact their care team immediately to address the reaction and discuss course of treatment. Specific language is provided to the patient that can be copied from the tool and pasted into a MyChart message to the care team to provide context for the alert.</p>
 </div>

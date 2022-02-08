@@ -1,64 +1,137 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-    <img height="500" src="flow-nonpharma.png" alt="Non-medicinal Therapy Logic"/>
-    <p>
-      Non-pharmacologic intervention, including lifestyle and behavior modification goals, are an important part of blood pressure management. This is a prime area for patient engagement in care, as patients are encouraged to set and regularly update goals that suit their lifestyle that they can reasonably achieve and which can help in lowering their blood pressure.
-    </p>
-    <p>
-      For each time the patient logs into the tool and has progressed to this workflow, the tool will check to see if patient has current non-pharmacologic goals. If they do, a sub-workflow to set, check-in on, and update goals will activate for each type of goal. After those workflows have completed, the tool will check to assess if patient is at their blood pressure goal. If the patient is <a href="flow-intro.html#patient-on-track-to-reach-blood-pressure-goal">not on track</a> to reach their blood pressure goal, the tool will direct the patient towards considering pharmacologic intervention. If they are on track, no further action is taken.
-    </p>
-    <p>
-      If the patient does not have any current non-pharmacologic goals, the tool will check if the patient has reached their blood pressure goal, whether the default of 140/90 or a custom goal set by the patient. If that goal has been met, no further action is taken. If the goal has not been met, the goalsetting sub-workflows proceed as described below.
-    </p>
-    <p>
-      Sub-workflows include:
-      <ul>
-        <li>Tobacco cessation</li>
-        <li>Weight loss (according to BMI)</li>
-        <li>Alcohol moderation</li>
-        <li>Physical activity</li>
-        <li>Dietary changes (with salt/sodium reduction)</li>
-      </ul>
-    </p>
-    <p>
-      These categories of lifestyle change goals have been shown to substantially influence blood pressure in hypertensive patients. All are supported by clinical literature. This tool allows patients to prioritize types of goals suitable to their own preferences for care when setting goals.
-    </p>
-    <p>
-      Link: <a href="https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf">NHLBI Guide to Lowering Blood Pressure</a>
-    </p>
+
+    <a name="top" />
+    <h3>Non-Pharmacologic Interventions Workflow</h3>
+
+    <img height="500" src="flow-nonpharma.png" alt="Workflow diagram"/>
+
+    <p>Non-pharmacologic intervention, including lifestyle and behavior modification goals, are an important part of blood pressure management. This is a prime area for patient engagement in care, as patients are encouraged to set and regularly update goals that suit their lifestyle that they can reasonably achieve and which can help in lowering their blood pressure.</p>
+
+    <p>For each time the patient logs into the tool and has progressed to this workflow, the tool will check to see if patient has current non-pharmacologic goals. If they do, a sub-workflow to set, check-in on, and update goals will activate for each type of goal. After those workflows have completed, the tool will check to assess if patient is at their blood pressure goal. If the patient is not on track to reach their blood pressure goal, the tool will direct the patient towards considering pharmacologic intervention. If they are on track, no further action is taken.</p>
+
+    <p>If the patient does not have any current non-pharmacologic goals, the tool will check if the patient has reached their blood pressure goal, whether the default of 140/90 or a custom goal set by the patient. If that goal has been met, no further action is taken. If the goal has not been met, the workflow proceeds through the goalsetting sub-workflows proceed as described above.</p>
+
+    <p>Sub-workflows include:</p>
+
+    <ul>
+        <li><a href="#tobacco_cessation">Tobacco cessation</a></li>
+        <li><a href="#weight_loss">Weight loss (according to BMI)</a></li>
+        <li><a href="#alcohol_moderation">Alcohol moderation</a></li>
+        <li><a href="#physical_activity">Physical activity</a></li>
+        <li><a href="#dietary_changes">Dietary changes (with salt/sodium reduction)</a></li>
+    </ul>
+
+    <p>These categories of lifestyle change goals have been shown to substantially influence blood pressure in hypertensive patients. All are supported by clinical literature. This tool allows patients to prioritize types of goals suitable to their own preferences for care when setting goals.</p>
+
+    <a name="links1" />
+    <h3>Links</h3>
+
+    <ul>
+        <li><a href="https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf">NHLBI Guide to Lowering Blood Pressure</a></li>
+    </ul>
+
+    <a name="sub_workflows" />
     <h3>Sub-Workflows</h3>
-    <p>
-      For all sub-workflows, the tool first checks to see if the patient has a current goal in this category. If the patient does not, the tool then queries the EHR to see if that category of goal is appropriate for the patient. If it is not relevant to the patient, it is not displayed as an option. For example, non-smokers should never receive a recommendation to set a goal that will help them stop smoking.
-    </p>
-    <p>
-      If the patient does not currently have an active goal relating to a sub-workflow, but that workflow is relevant to the patient, the tool will check to see if the patient has received counseling from their care team about that category of lifestyle change. If the patient has not received counseling, the tool will provide information about the potential health benefits to taking action and will ask the patient to set a goal. If the patient has received counseling, including previously being asked to set a goal, the tool will provide a reminder of the recommendations relating to this category of lifestyle change.
-    </p>
-    <p>
-      Patients are able to set goals using a <a href="file:///Users/yateam/HTN/htnu18ig/output/spec.html#set-a-behavioral-goal">"Mad Libs"</a> interface. This allows implementers to define goals according to their clinical practice guidelines and policies. In our reference application, any goals set require the patient to identify a date when they would like to have achieved this goal. It is recommended that patients focus on short-term, achievable goals that can be accomplished within two weeks and to iterate upon those goals as the patient sees fit. This is in accordance with SMART goal setting practices (<a href="https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/setting-smart-goals">Link to Mayo Clinic SMART goals page</a>), which have been shown to assist with achieving personal goals in healthcare.
-    </p>
-    <p>
-      If the patient has an active goal within a sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.
-    </p>
-    <p>
-      Once a sub-workflow has completed, the next will run.
-    </p>
+
+    <p>For all sub-workflows, the tool first checks to see if the patient has a current goal in this category. If the patient does not, the tool then queries the EHR to see if that category of goal is appropriate for the patient. If it is not relevant to the patient, it is not displayed as an option. For example, non-smokers should never receive a recommendation to set a goal that will help them stop smoking.</p>
+
+    <p>If the patient does not currently have an active goal relating to a sub-workflow, but that workflow is relevant to the patient, the tool will check to see if the patient has received counseling from their care team about that category of lifestyle change. If the patient has not received counseling, the tool will provide information about the potential health benefits to taking action and will ask the patient to set a goal. If the patient has received counseling, including previously being asked to set a goal, the tool will provide a reminder of the recommendations relating to this category of lifestyle change.</p>
+
+    <p>Patients are able to set goals using a mad-libs interface with dropdown options. This allows implementers to define goals according to their clinical practice guidelines and policies. A free text option is also available to patients for goalsetting. All goals require the patient to identify a date when they would like to have achieved this goal. It is recommended that patients focus on short-term, achievable goals that can be accomplished within two weeks and to iterate upon those goals as the patient sees fit. This is in accordance with SMART goal setting practices (Link to Mayo Clinic SMART goals page), which have been shown to assist with achieving personal goals in healthcare.</p>
+
+    <p>If the patient has an active goal within a sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+
+    <p>Once a sub-workflow has completed, the next will run.</p>
+
+    <a name="tobacco_cessation" />
+    <h3>Tobacco cessation</h3>
+
     <figure>
-      <img height="400" src="flow-tobacco-subworkflow.png" alt="Tobacco Sub-Workflow Logic"/>
-      <figcaption>The tool checks to see if the patient currently smokes. If the patient does, this workflow will activate. If the patient does not smoke or has quit smoking, this workflow will not activate.</figcaption>
+        <img height="400" src="flow-tobacco-subworkflow.png" alt="Tobacco Cessation Sub-Workflow diagram"/>
+        <figcaption>The tool checks to see if the patient currently smokes. If the patient does, this workflow will activate. If the patient does not smoke or has quit smoking, this workflow will not activate.</figcaption>
     </figure>
+
+    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+
+    <p>Once this sub-workflow has completed, the weight loss sub-workflow will run.</p>
+
+    <a name="links2" />
+    <h3>Links</h3>
+
+    <ul>
+        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/smoking-high-blood-pressure-and-your-health">AHA: Smoking, High Blood Pressure and Your Health</a></li>
+    </ul>
+
+    <a name="weight_loss" />
+    <h3>Weight loss (according to BMI)</h3>
+
     <figure>
-      <img height="400" src="flow-bmi-subworkflow.png" alt="BMI Sub-Workflow Logic"/>
-      <figcaption>The tool checks the patient’s BMI. If the patient’s BMI is above 25, this workflow will activate.</figcaption>
+        <img height="400" src="flow-bmi-subworkflow.png" alt="Weight Loss Sub-Workflow diagram"/>
+        <figcaption>The tool checks the patient’s BMI. If the patient’s BMI is above 25, this workflow will activate.</figcaption>
     </figure>
+
+    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+
+    <p>Once this sub-workflow has completed, the alcohol use sub-workflow will run.</p>
+
+    <a name="links3" />
+    <h3>Links</h3>
+
+    <ul>
+        <li><a href="https://uhs.umich.edu/hypertension">University of Michigan: Hypertension</a></li>
+        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure">AHA: Changes You Can Make to Manage High Blood Pressure</a></li>
+    </ul>
+
+    <a name="alcohol_moderation" />
+    <h3>Alcohol moderation</h3>
+
     <figure>
-      <img height="400" src="flow-alcohol-subworkflow.png" alt="Alcohol Sub-Workflow Logic"/>
-      <figcaption>The tool checks whether a patient is classified as a heavy drinker. Heavy drinking is defined as consuming 2+ drinks per day for women or 3+ drinks per day for men. The system also checks for <a href="ValueSet-2.16.840.1.113762.1.4.1222.24.html">conditions indicating alcohol abuse disorder</a>. Link: <a href="https://www.cdc.gov/alcohol/faqs.htm">CDC FAQ on Alcohol</a>.</figcaption>
+        <img height="400" src="flow-alcohol-subworkflow.png" alt="Alcohol Moderation Sub-Workflow diagram"/>
+        <figcaption>The tool checks whether a patient is classified as a heavy drinker. Heavy drinking is defined as consuming 8+ drinks per week for women or 15+ drinks per week for men.</figcaption>
     </figure>
+
+    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+
+    <p>Once this sub-workflow has completed, the physical activity sub-workflow will run.</p>
+
+    <a name="links4" />
+    <h3>Links</h3>
+
+    <ul>
+        <li><a href="https://www.cdc.gov/alcohol/faqs.htm">CDC FAQ on Alcohol</a></li>
+        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/limiting-alcohol-to-manage-high-blood-pressure">AHA: Limiting Alcohol to Manage High Blood Pressure</a></li>
+    </ul>
+
+    <a name="physical_activity" />
+    <h3>Physical activity</h3>
+
     <figure>
-      <img height="400" src="flow-activity-subworkflow.png" alt="Activity Sub-Workflow Logic"/>
-      <figcaption>The tool does not check to see if the patient needs to engage in physical activity. Instead, it presents physical activity as a potential goal to all users. This allows patients and care teams to implement physical activity goals if and as appropriate to patient lifestyle and priorities for care.</figcaption>
+        <img height="400" src="flow-activity-subworkflow.png" alt="Activity Sub-Workflow Logic"/>
+        <figcaption>The tool does not check to see if the patient needs to engage in physical activity. Instead, it presents physical activity as a potential goal to all users. This allows patients and care teams to implement physical activity goals if and as appropriate to patient lifestyle and priorities for care.</figcaption>
     </figure>
+
+    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+
+    <p>Once this sub-workflow has completed, the nutrition sub-workflow will run.</p>
+
+    <a name="links5" />
+    <h3>Links</h3>
+
+    <ul>
+        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure">AHA: Getting Active to Control your High Blood Pressure</a></li>
+        <li><a href="https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines">Health.gov: Current Physical Activity Guidelines</a></li>
+        <li><a href="https://www.cdc.gov/physicalactivity/index.html">CDC: Physical Activity Index</a></li>
+    </ul>
+
+    <a name="dietary_changes" />
+    <h3>Dietary changes</h3>
+
     <figure>
-      <img height="400" src="flow-nutrition-subworkflow.png" alt="Nutrition Sub-Workflow Logic"/>
-      <figcaption>The tool does not check to see if the patient needs to adjust their diet. Instead, it presents dietary change recommendations as potential goals to all users. This allows patients and care teams to implement dietary change goals if and as appropriate to patient lifestyle and priorities for care.</figcaption>
+        <img height="400" src="flow-nutrition-subworkflow.png" alt="Nutrition Sub-Workflow Logic"/>
+        <figcaption>The tool does not check to see if the patient needs to adjust their diet. Instead, it presents dietary change recommendations as potential goals to all users. This allows patients and care teams to implement dietary change goals if and as appropriate to patient lifestyle and priorities for care.</figcaption>
     </figure>
+
+    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+
+    <p>Once this sub-workflow has completed, the tool will return to the main non-pharmacologic workflow.</p>
 </div>

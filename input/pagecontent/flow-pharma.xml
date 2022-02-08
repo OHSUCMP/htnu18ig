@@ -1,4 +1,24 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-    <img height="500" src="flow-pharma.png" alt="Medicinal Therapy Logic"/>
+
+    <a name="top" />
+    <h3>Pharmacology / Medicine-based Recommendations Workflow</h3>
+
+    <img height="500" src="flow-pharma.png" alt="Pharmacology / Medicine-based Recommendations Workflow diagram"/>
+
+    <p>When a patient has a high enough average blood pressure or has not been able to bring their blood pressure under control via behavioral goalsetting, the tool will present information about antihypertensive medication classes to patients. The information presented describes when each class of medication is typically used for hypertension treatment, provides examples of medications within that class, and briefly describes the mechanism by which the medication class functions. Links to additional information are also provided.</p>
+
+    <p>Antihypertensive medication classes described:</p>
+
+    <ul>
+        <li>ACE-Inhibitors</li>
+        <li>ARBs</li>
+        <li>Diuretics, including a focus on thiazides</li>
+        <li>Calcium Channel Blockers</li>
+        <li>Beta-Blockers</li>
+    </ul>
+
+    <p>The tool checks to see if the patient currently takes any antihypertensive medications. If the patient does not currently take any medication to help manage their blood pressure, information presented focuses on ACE-Inhibitors and ARBs as primary first-line medications, with additional information about other classes. Beta-blockers are noted to not be a commonly used first-line medication and that these medications are usually used following major cardiovascular events. Patients are advised to read this information to be better informed when discussing initial pharmacotherapy with their care team.</p>
+
+    <p>If the patient already takes medication to manage their blood pressure, the information about antihypertensive medication classes is also presented to them, but they are encouraged to discuss dosage and additional medications with their care team.</p>
 
 </div>

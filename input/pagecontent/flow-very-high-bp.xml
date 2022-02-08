@@ -1,15 +1,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
-    <img height="500" src="flow-very-high-bp.png" alt="Very High Blood Pressure Alert Logic"/>
+    <a name="top" />
+    <h3>Very High Blood Pressure Warning Workflow</h3>
 
-    <p>
-      If the system detects a home or office based blood pressure is >= 180 mmHg systolic OR >=120 mmHg diastolic within the previous 2 weeks, a recommendation is generated. In the reference application, an alert will be displayed
-      at the top of the recommendations to call attention to this condition. The recommendation is congruent with guidelines: a high blood pressure MAY
-      be concerning, but doesn’t automatically tell the user if they have a hypertensive emergency or urgency, both of which require symptoms
-      to diagnose. In all cases, they are recommended to contact their care team or seek care immediately if they have symptoms; otherwise,
-      they are asked to remeasure their blood pressure and contact if their care team is still high. This <a href="https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/hypertensive-crisis-when-you-should-call-911-for-high-blood-pressure">link</a> is provided to additional information.
-    </p>
-    <p>
-      This component may be edited by those who want to enact additional safety protocols – the language can be changed by changing the recommendation text for the card, available in the CQL.
-      Please review this section with your local clinical standards committees to be assured it meets expectations for such a tool.
-    </p>
+    <img height="500" src="flow-very-high-bp.png" alt="Very High Blood Pressure Warning Workflow diagram"/>
+
+    <p>If at any time the system detects a home or office-based blood pressure is >= 180 mmHg systolic OR >=120 mmHg diastolic, an alert will be displayed at the top of the recommendations when they are next loaded. The recommendation is congruent with guidelines: a high blood pressure MAY be concerning, but doesn’t automatically tell the user if they have a hypertensive emergency or urgency, both of which require symptoms to diagnose. In all cases, they are recommended to contact their care team or seek care immediately if they have symptoms; otherwise, they are asked to re-measure their blood pressure and contact if their care team is still high.</p>
+
+    <p>This component may be edited by those who want to enact additional safety protocols – the language can be changed by changing the recommendation text for the card, available in the CQL. Please review this section with your local clinical standards committees to be assured it meets expectations for such a tool.</p>
+
+    <a name="links" />
+    <h3>Links</h3>
+
+    <ul>
+        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/hypertensive-crisis-when-you-should-call-911-for-high-blood-pressure">AHA: When to call 911 for high blood pressure</a></li>
+    </ul>
 </div>

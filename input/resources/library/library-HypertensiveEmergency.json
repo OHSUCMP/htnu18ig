@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/HypertensiveEmergency",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/Library/HypertensiveEmergency",
   "version": "0.1",
   "name": "HypertensiveEmergency",
   "title": "Very High Blood Pressure Alert Logic",

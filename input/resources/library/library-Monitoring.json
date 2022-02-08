@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/Monitoring",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/Library/Monitoring",
   "version": "0.1",
   "name": "Monitoring",
   "title": "Monitoring Logic",

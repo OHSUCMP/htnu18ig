@@ -1,7 +1,7 @@
 {
   "resourceType": "PlanDefinition",
   "id": "plandefinition-AdverseEvents",
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/PlanDefinition/plandefinition-AdverseEvents",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/PlanDefinition/plandefinition-AdverseEvents",
   "identifier": [
     {
       "use": "official",
@@ -44,7 +44,7 @@
   ],
   "copyright": "© OHSU 2020+.",
   "library": [
-     "http://fhir.org/guides/ohsu/htnu18ig/Library/library-AdverseEvents"
+     "http://fhir.org/guides/ohsuhypertensionig/Library/library-AdverseEvents"
   ],
   "action": [
     {

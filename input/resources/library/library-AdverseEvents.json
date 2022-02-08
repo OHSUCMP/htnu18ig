@@ -7,7 +7,7 @@
       "reference": "Device/cqf-tooling"
     }
   } ],
-  "url": "http://fhir.org/guides/ohsu/htnu18ig/Library/AdverseEvents",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/Library/AdverseEvents",
   "version": "0.1",
   "name": "AdverseEvents",
   "title": "Adverse Event Logic",

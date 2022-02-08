@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-  <id value="hl7.fhir.us.ohsu-htnu18ig"/>
-  <url value="http://fhir.org/guides/ohsu/htnu18ig/ImplementationGuide/hl7.fhir.us.ohsu-htnu18ig"/>
+  <id value="hl7.fhir.us.ohsuhypertensionig"/>
+  <url value="http://fhir.org/guides/ohsuhypertensionig/ImplementationGuide/hl7.fhir.us.ohsuhypertensionig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0"/>
-  <name value="htnu18ig"/>
-  <title value="OHSU Hypertension U18 Implementation Guide"/>
+  <name value="ohsuhypertensionig"/>
+  <title value="OHSU Hypertension Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="Oregon Health and Science University"/>
@@ -18,7 +18,7 @@
       <value value="https://www.ohsu.edu/"/>
     </telecom>
   </contact>
-  <description value="IG for OHSU's Hypertension U18 grant involving a patient-facing FHIR app and associated logic"/>
+  <description value="Implementation Guide for OHSU Hypertension and associated logic"/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
@@ -27,7 +27,7 @@
     </coding>
   </jurisdiction>
   <copyright value="Published by OHSU under an Apache 2.0 License"/>
-  <packageId value="hl7.fhir.us.ohsu-htnu18ig"/>
+  <packageId value="hl7.fhir.us.ohsuhypertensionig"/>
   <!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
   <license value="Apache-2.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
@@ -40,7 +40,7 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="OHSU htnu18ig Home Page"/>
+        <title value="OHSU Hypertension IG Home Page"/>
         <generation value="html"/>
       </page>
       <page>
