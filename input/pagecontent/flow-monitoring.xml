@@ -6,7 +6,7 @@
 
     <p>If a patient who has a diagnosis of hypertension accesses this tool, this workflow will run.</p>
 
-    <p>First, the tool checks to see if the patient has a current blood pressure goal. If the patient does not, it sets a default goal of <140/90 mmHg and checks to see if the patient would like to adjust that goal. The tool will then check whether it can find a complete set of blood pressure readings. If it cannot, it will recommend taking additional blood pressure readings either at home or in a clinical setting.</p>
+    <p>First, the tool checks to see if the patient has a current blood pressure goal. If the patient does not, it sets a default goal of &lt;140/90 mmHg and checks to see if the patient would like to adjust that goal. The tool will then check whether it can find a complete set of blood pressure readings. If it cannot, it will recommend taking additional blood pressure readings either at home or in a clinical setting.</p>
 
     <p>If either all blood pressure readings or the set of blood pressures averages greater than 140/90 mmHg, the tool will recommend that the patient begin both pharmacologic and non-pharmacologic treatment to control their blood pressure. These are separate workflows.</p>
 
