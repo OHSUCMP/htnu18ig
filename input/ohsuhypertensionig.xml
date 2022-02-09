@@ -53,33 +53,33 @@
         <title value="Flow Logic"/>
         <generation value="html"/>
         <page>
-          <nameUrl value="flow-very-high-bp.html"/>
-          <title value="Very High Blood Pressure Alert"/>
-          <generation value="html"/>
-        </page>
-        <page>
           <nameUrl value="flow-initial-diagnosis.html"/>
-          <title value="Initial Diagnosis"/>
+          <title value="Initial Diagnosis and Monitoring"/>
           <generation value="html"/>
         </page>
         <page>
-          <nameUrl value="flow-monitoring.html"/>
-          <title value="Monitoring of Diagnosed Patients"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <nameUrl value="flow-nonpharma.html"/>
-          <title value="Therapy - Non-medicinal"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <nameUrl value="flow-pharma.html"/>
-          <title value="Therapy - Medicines"/>
+          <nameUrl value="flow-very-high-bp.html"/>
+          <title value="Very High Blood Pressure Warning - Safety"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="flow-adverse-events.html"/>
-          <title value="Potential Adverse Reaction Detection"/>
+          <title value="Adverse Events - Safety"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-monitoring.html"/>
+          <title value="Monitoring of Already Diagnosed Patient"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-nonpharma.html"/>
+          <title value="Non-Pharmacologic Interventions"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="flow-pharma.html"/>
+          <title value="Pharmacology / Medicine-based Recommendations"/>
           <generation value="html"/>
         </page>
       </page>
