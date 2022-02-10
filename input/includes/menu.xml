@@ -20,22 +20,22 @@
         <a href="flow-intro.html">Introduction</a>
       </li>
       <li>
-        <a href="flow-very-high-bp.html">Very High Blood Pressure Alert</a>
+        <a href="flow-initial-diagnosis.html">Initial Diagnosis and Monitoring</a>
       </li>
       <li>
-        <a href="flow-initial-diagnosis.html">Initial Diagnosis</a>
+        <a href="flow-very-high-bp.html">Very High Blood Pressure Warning - Safety</a>
       </li>
       <li>
-        <a href="flow-monitoring.html">Monitoring of Diagnosed Patients</a>
+        <a href="flow-adverse-events.html">Adverse Events - Safety</a>
       </li>
       <li>
-        <a href="flow-nonpharma.html">Therapy - Non-medicinal</a>
+        <a href="flow-monitoring.html">Monitoring of Already Diagnosed Patient</a>
       </li>
       <li>
-        <a href="flow-pharma.html">Therapy - Medicines</a>
+        <a href="flow-nonpharma.html">Non-Pharmacologic Interventions</a>
       </li>
       <li>
-        <a href="flow-adverse-events.html">Potential Adverse Reaction Detection</a>
+        <a href="flow-pharma.html">Pharmacology / Medicine-based Recommendations</a>
       </li>
     </ul>
   </li>
