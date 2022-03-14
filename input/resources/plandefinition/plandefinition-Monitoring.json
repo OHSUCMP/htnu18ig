@@ -62,7 +62,7 @@
   ],
   "copyright": "© OHSU 2020+.",
   "library": [
-     "http://fhir.org/guides/ohsuhypertensionig/Library/library-Monitoring"
+     "http://fhir.org/guides/ohsuhypertensionig/Library/Monitoring"
   ],
   "action": [
     {
