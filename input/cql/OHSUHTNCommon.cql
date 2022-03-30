@@ -298,16 +298,35 @@ define "Patient Over Age 80":
 
 // Grab all conditions for patients since we can't limit by code in Epic.
 define "Conditions":
-  (QualifiedCondition(["Condition": category ~ "problem-list-item"])) union
+  "Problem Conditions" union "Encounter Conditions"
+//  (QualifiedCondition(["Condition": category ~ "problem-list-item"])) union
+//  (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
+
+define "Problem Conditions":
+  (QualifiedCondition(["Condition": category ~ "problem-list-item"]))
+
+define "Encounter Conditions":
   (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
 
 define "Condition Indicating End Stage Renal Disease":
-  "Conditions" Problem
-    where TransformCodeableConcept(Problem.code) in "End Stage Renal Disease" and end of "Prevalence Period"(Problem) >= Today()
+  "Conditions" Condition
+    where TransformCodeableConcept(Condition.code) in "End Stage Renal Disease" and end of "Prevalence Period"(Condition) >= Today()
 
 define "Condition Indicating Pregnancy":
-  "Conditions" Problem
-    where TransformCodeableConcept(Problem.code) in "Pregnancy" and end of "Prevalence Period"(Problem) >= Today()
+  "Conditions" Condition
+    where TransformCodeableConcept(Condition.code) in "Pregnancy" and end of "Prevalence Period"(Condition) >= Today()
+
+define "Condition Indicating Preexisting Hypertension":
+  "Problem Condition Indicating Preexisting Hypertension" union 
+  "Encounter Condition Indicating Preexisting Hypertension"
+
+define "Problem Condition Indicating Preexisting Hypertension":
+  "Problem Conditions" Condition
+    where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in "Non essential Hypertension SNOMEDCT") and end of "Prevalence Period"(Condition) >= Today()
+	
+define "Encounter Condition Indicating Preexisting Hypertension":
+  "Encounter Conditions" Condition
+    where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in "Non essential Hypertension SNOMEDCT")
 
 define "Blood Pressure Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
@@ -402,10 +421,6 @@ define "BP Highly Variable":
       //and not exists "Ambulatory Blood Pressure Monitoring Procedures"
     )
   else null
-
-define "Condition Indicating Preexisting Hypertension":
-  "Conditions" Problem
-    where (TransformCodeableConcept(Problem.code) in "Hypertension" or TransformCodeableConcept(Problem.code) in "Non essential Hypertension SNOMEDCT") and end of "Prevalence Period"(Problem) >= Today()
 
 // Does patient have a BP goal?
 define "Qualifying Blood Pressure Goals":
