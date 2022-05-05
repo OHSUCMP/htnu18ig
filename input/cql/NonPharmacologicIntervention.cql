@@ -149,7 +149,7 @@ define "BMI Suggestions":
     {"id": "weight-loss-counseling", "label": "Weight Loss Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss.", "url":"/counseling/weight-loss"}]},
     {"id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": [{"label":"Reduce my weight by [quantity] pounds."}] }
   ]'
-  else if "Patient BMI is Greater than 25 kg/m2" then '[ { "id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": ["label":"Reduce my weight by [quantity] pounds."}] } ]'
+  else if "Patient BMI is Greater than 25 kg/m2" then '[ { "id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": [{"label":"Reduce my weight by [quantity] pounds."}] } ]'
   else ''
 
 define "BMI Links":
