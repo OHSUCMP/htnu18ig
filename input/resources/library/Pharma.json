@@ -190,8 +190,8 @@
       "path": "category",
       "code": [ {
         "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "problem-list-item",
-        "display": "Problem List Item"
+        "code": "encounter-diagnosis",
+        "display": "Encounter Diagnosis"
       } ]
     } ]
   }, {
@@ -202,14 +202,10 @@
       "path": "category",
       "code": [ {
         "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "encounter-diagnosis",
-        "display": "Encounter Diagnosis"
+        "code": "problem-list-item",
+        "display": "Problem List Item"
       } ]
     } ]
-  }, {
-    "type": "Goal",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Goal" ],
-    "mustSupport": [ "target" ]
   }, {
     "type": "Observation",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
@@ -218,6 +214,10 @@
       "path": "code",
       "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012"
     } ]
+  }, {
+    "type": "Goal",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Goal" ],
+    "mustSupport": [ "target" ]
   }, {
     "type": "Patient",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Patient" ]

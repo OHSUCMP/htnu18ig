@@ -83,7 +83,7 @@ define "Indicator Status":
 
 define "Suggestions":
   if not "In Population" then 'None'
-  else if not Common."Has BP Set" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/bp-readings"}] } ]'
+  else if not Common."Has BP Set" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/vitals"}] } ]'
   else if "HTN Stage 2" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about a high blood pressure diagnosis", "url":"/contact?token=suspect-htn-stage2"}] } ]'
   else if "Consider HTN Stage 2" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about a high blood pressure diagnosis", "url":"/contact?token=possible-htn-stage2"}] } ]'
   else if "Consider HTN Stage 1" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about a high blood pressure diagnosis", "url":"/contact?token=possible-htn-stage1"}] } ]'
