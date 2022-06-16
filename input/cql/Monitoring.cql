@@ -50,7 +50,7 @@ define "Recommendation":
   // 14.b
   else if Common."Above Goal Average Most Recent" then 'Blood pressure goal not reached. Discuss treatment options.'
   // 16
-  else if Common."BP Highly Variable" then 'Use ambulatory blood pressure monitoring to address blood pressure variability.'
+//  else if Common."BP Highly Variable" then 'Use ambulatory blood pressure monitoring to address blood pressure variability.'
   else 'Patient at goal'
 
 define "Rationale Combined Data":
@@ -66,7 +66,7 @@ define "Rationale":
     {{#careTeam}}BP not at goal. Consider initiating antihypertensive drug therapy with a single antihypertensive drug with dosage titration and sequential addition of other agents to achieve the target BP.{{/careTeam}}'
   else if Common."Above Goal Average Most Recent" then '{{#patient}}Your blood pressures are above your goal and may be managed via lifestyle change efforts, such as dietary change or increased physical activity. If these efforts do not improve blood pressure control, antihypertensive medication can be considered at a future time.{{/patient}}
     {{#careTeam}}BP not at goal. Consider initiating antihypertensive drug therapy with a single antihypertensive drug with dosage titration and sequential addition of other agents to achieve the target BP.{{/careTeam}}'
-  else if Common."BP Highly Variable" then '{{#patient}}Your recent blood pressure is above your goal and appears to be highly variable, which can indicate a health risk. Please reach out to your care team about ordering ambulatory blood pressure monitoring or obtaining better measurements from home blood pressure monitoring.{{/patient}}
+//  else if Common."BP Highly Variable" then '{{#patient}}Your recent blood pressure is above your goal and appears to be highly variable, which can indicate a health risk. Please reach out to your care team about ordering ambulatory blood pressure monitoring or obtaining better measurements from home blood pressure monitoring.{{/patient}}
     {{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk. If ABPM is not available, discuss more better protocols for home blood pressure monitoring.{{/careTeam}}'
   else 'No Further Action Required'
 
@@ -76,7 +76,7 @@ define "Indicator Status":
   else if not Common."Has BP Set" then "Info"
   else if Common."Patient Has Potential HTN Stage 2 BP" then "Warning"
   else if Common."Above Goal Average Most Recent" then "Warning"
-  else if Common."BP Highly Variable" then "Info"
+//  else if Common."BP Highly Variable" then "Info"
   else "Info"
 
 define "Suggestions":
@@ -85,7 +85,7 @@ define "Suggestions":
   else if not Common."Has BP Set" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page.", "url":"/vitals"}] } ]'
   else if Common."Patient Has Potential HTN Stage 2 BP" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure", "url":"/contact?token=recommend-pharma-and-nonpharma"}] } ]'
   else if Common."Above Goal Average Most Recent" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure", "url":"/contact?token=recommend-nonpharma"}] } ]'
-  else if Common."BP Highly Variable" then '[ {"id": "ambulatory-suggestion", "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/contact?token=ambulatory-bps"}] } ]'
+//  else if Common."BP Highly Variable" then '[ {"id": "ambulatory-suggestion", "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/contact?token=ambulatory-bps"}] } ]'
   else ''
 
 define "Selection Behavior":
@@ -97,7 +97,7 @@ define "Links":
   else if not Common."Has BP Set" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
   else if Common."Patient Has Potential HTN Stage 2 BP" then '[{"label":"NIH: Controlling blood pressure", "url":"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf"}]'
   else if Common."Above Goal Average Most Recent" then '[{"label":"NIH: Controlling blood pressure", "url":"https://www.nhlbi.nih.gov/files/docs/public/heart/hbp_low.pdf"}]'
-  else if Common."BP Highly Variable" then '[{"label":"24-hour Ambulatory Blood Pressure Monitoring", "url":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring"}]'
+//  else if Common."BP Highly Variable" then '[{"label":"24-hour Ambulatory Blood Pressure Monitoring", "url":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring"}]'
   else '[]'
 
 define "Exclusion Reason":
