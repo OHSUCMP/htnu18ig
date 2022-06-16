@@ -461,7 +461,9 @@ define "Above Goal Average Most Recent":
 
 define "BP Goal Met":
   "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
-//  and not "BP Highly Variable"
+/*
+    and not "BP Highly Variable"
+*/
 
 define "Goal Interval":
   Interval[("Most Recently Established Blood Pressure Goal".start as date),
