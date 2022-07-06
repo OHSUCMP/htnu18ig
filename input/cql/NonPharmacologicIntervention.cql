@@ -392,7 +392,7 @@ define "Heavy Daily Drinker":
 
 define "Condition Indicating Alcohol Abuse Disorder":
   Common."Conditions" Problem
-    where Problem.code in "Alcohol Abuse Disorder" and end of Common."Prevalence Period"(Problem) >= Today()
+    where Problem.code in "Alcohol Abuse Disorder" and Common."Is Valid Prevalence Period"(Problem)
 
 define "Patient is a Heavy Alcoholic Drinker":
   if not "In Population" then

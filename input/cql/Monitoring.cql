@@ -189,5 +189,9 @@ define "TEST Condition Prevalence Period":
   Common."Conditions" Problem
     return Common."Prevalence Period"(Problem)
 
+define "TEST Condition Is Valid Prevalence Period":
+  Common."Conditions" Problem
+    return Common."Is Valid Prevalence Period"(Problem)
+
 define "TEST Condition Indicating Preexisting Hypertension":
   Common."Condition Indicating Preexisting Hypertension"

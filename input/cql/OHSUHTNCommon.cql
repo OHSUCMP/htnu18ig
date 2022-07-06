@@ -162,28 +162,37 @@ define function QualifiedProcedure(list List<FHIR.Procedure>):
 
 define function ConfirmedCondition(list List<Condition>):
   list Condition
-    where FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
+    where Condition.verificationStatus is null
+      or FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
 
 define function ConfirmedCondition(value Condition):
   value Condition
-    where FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
+    where Condition.verificationStatus is null
+      or FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
 
 define function ActiveCondition(list List<Condition>):
   list Condition
-    where FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+    where (
+      Condition.clinicalStatus is null
+        or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+      )
       and Condition.abatement is null
 
 define function ActiveCondition(value Condition):
   value Condition
-    where FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+    where (
+      Condition.clinicalStatus is null
+        or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+      )
       and Condition.abatement is null
 
 define function ActiveOrRecurring(list List<Condition>):
   list Condition
-    where (
-      FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
-        and Condition.abatement is null
-      )
+    where ActiveCondition(Condition) is not null
+//      (
+//      FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+//        and Condition.abatement is null
+//      )
       or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "relapse"
 
 // Epic sometimes provides the oid instead of the named system, but we need the named system for comparing to ValueSets
@@ -274,7 +283,28 @@ define function "Normalize Abatement"(condition Condition):
   else null
 
 /*
+@description: returns TRUE if the prevalence period is specified and encompasses today.  considers clinical status
+              as a surrogate in the absence of prevalence period components (onset, abatement)
+*/
+define function "Is Valid Prevalence Period"(condition Condition):
+  if condition.onset is not null and condition.abatement is not null then
+    start of "Normalize Interval"(condition.onset) <= Today() and end of "Normalize Abatement"(condition) >= Today()
+  else if condition.clinicalStatus is null
+    or condition.clinicalStatus ~ "active"
+    or condition.clinicalStatus ~ "recurrence"
+    or condition.clinicalStatus ~ "relapse" then
+      if condition.onset is not null then
+        start of "Normalize Interval"(condition.onset) <= Today()
+      else if condition.abatement is not null then
+        end of "Normalize Abatement"(condition) >= Today()
+      else
+        true
+  else
+    false
+
+/*
 @description: Returns an interval representing the normalized prevalence period of a given Condition resource.
+              DEPRECATED - storer 2022-07-06 - use "Is Valid Prevalence Period" function above instead
 */
 define function "Prevalence Period"(condition Condition):
   if condition.clinicalStatus ~ "active"
@@ -282,7 +312,7 @@ define function "Prevalence Period"(condition Condition):
     or condition.clinicalStatus ~ "relapse"
     // This prevents errors when a condition has an onset and abatement on the same day and no timestamp is provided (Epic)
     or end of "Normalize Abatement"(condition) is not null then
-    Interval[start of "Normalize Interval"(condition.onset), end of "Normalize Abatement"(condition)]
+      Interval[start of "Normalize Interval"(condition.onset), end of "Normalize Abatement"(condition)]
   else
     // The condition is not active but has no abatement date, so we can't say when it ended
     Interval[start of "Normalize Interval"(condition.onset), null)
@@ -310,11 +340,11 @@ define "Encounter Conditions":
 
 define "Condition Indicating End Stage Renal Disease":
   "Conditions" Condition
-    where TransformCodeableConcept(Condition.code) in "End Stage Renal Disease" and end of "Prevalence Period"(Condition) >= Today()
+    where TransformCodeableConcept(Condition.code) in "End Stage Renal Disease" and "Is Valid Prevalence Period"(Condition)
 
 define "Condition Indicating Pregnancy":
   "Conditions" Condition
-    where TransformCodeableConcept(Condition.code) in "Pregnancy" and end of "Prevalence Period"(Condition) >= Today()
+    where TransformCodeableConcept(Condition.code) in "Pregnancy" and "Is Valid Prevalence Period"(Condition)
 
 define "Condition Indicating Preexisting Hypertension":
   "Problem Condition Indicating Preexisting Hypertension" union 
@@ -322,11 +352,13 @@ define "Condition Indicating Preexisting Hypertension":
 
 define "Problem Condition Indicating Preexisting Hypertension":
   "Problem Conditions" Condition
-    where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in "Non essential Hypertension SNOMEDCT") and end of "Prevalence Period"(Condition) >= Today()
+    where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in
+        "Non essential Hypertension SNOMEDCT") and "Is Valid Prevalence Period"(Condition)
 	
 define "Encounter Condition Indicating Preexisting Hypertension":
   "Encounter Conditions" Condition
-    where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in "Non essential Hypertension SNOMEDCT")
+    where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in
+        "Non essential Hypertension SNOMEDCT")
 
 define "Blood Pressure Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O

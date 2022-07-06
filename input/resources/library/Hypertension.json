@@ -288,84 +288,84 @@
     "type": "decimal"
   } ],
   "dataRequirement": [ {
-    "type": "Condition",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "category" ],
-    "codeFilter": [ {
-      "path": "category",
-      "code": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "problem-list-item",
-        "display": "Problem List Item"
-      } ]
-    } ]
-  }, {
-    "type": "Condition",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "category" ],
-    "codeFilter": [ {
-      "path": "category",
-      "code": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "encounter-diagnosis",
-        "display": "Encounter Diagnosis"
-      } ]
-    } ]
-  }, {
-    "type": "Condition",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "code", "category" ],
-    "codeFilter": [ {
-      "path": "category",
-      "code": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "encounter-diagnosis",
-        "display": "Encounter Diagnosis"
-      } ]
-    } ]
-  }, {
-    "type": "Condition",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "code", "category" ],
-    "codeFilter": [ {
-      "path": "category",
-      "code": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "problem-list-item",
-        "display": "Problem List Item"
-      } ]
-    } ]
-  }, {
-    "type": "Condition",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "category" ],
-    "codeFilter": [ {
-      "path": "category",
-      "code": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "problem-list-item",
-        "display": "Problem List Item"
-      } ]
-    } ]
-  }, {
-    "type": "Condition",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "category" ],
-    "codeFilter": [ {
-      "path": "category",
-      "code": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "encounter-diagnosis",
-        "display": "Encounter Diagnosis"
-      } ]
-    } ]
-  }, {
     "type": "Observation",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
     "mustSupport": [ "code" ],
     "codeFilter": [ {
       "path": "code",
       "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012"
+    } ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "category" ],
+    "codeFilter": [ {
+      "path": "category",
+      "code": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "problem-list-item",
+        "display": "Problem List Item"
+      } ]
+    } ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "category" ],
+    "codeFilter": [ {
+      "path": "category",
+      "code": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "encounter-diagnosis",
+        "display": "Encounter Diagnosis"
+      } ]
+    } ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "code", "category" ],
+    "codeFilter": [ {
+      "path": "category",
+      "code": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "encounter-diagnosis",
+        "display": "Encounter Diagnosis"
+      } ]
+    } ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "code", "category" ],
+    "codeFilter": [ {
+      "path": "category",
+      "code": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "problem-list-item",
+        "display": "Problem List Item"
+      } ]
+    } ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "category" ],
+    "codeFilter": [ {
+      "path": "category",
+      "code": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "problem-list-item",
+        "display": "Problem List Item"
+      } ]
+    } ]
+  }, {
+    "type": "Condition",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "mustSupport": [ "category" ],
+    "codeFilter": [ {
+      "path": "category",
+      "code": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+        "code": "encounter-diagnosis",
+        "display": "Encounter Diagnosis"
+      } ]
     } ]
   }, {
     "type": "Patient",
