@@ -76,9 +76,9 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if patient is in population.",
+            "description": "Determine if patient has a recommendation.",
             "language": "text/cql.identifier",
-            "expression": "In Population"
+            "expression": "Recommendation Needed"
           }
         }
       ],

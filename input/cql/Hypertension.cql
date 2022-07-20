@@ -48,6 +48,12 @@ define "In Population":
   "Meets Inclusion Criteria"
   and not "Meets Exclusion Criteria"
 
+define "No Further Action":
+  "In Population" and Common."Has BP Set" and not "HTN Stage 2" and not "Consider HTN Stage 2" and not "Consider HTN Stage 1" and not "Prescribe Monitoring to Confirm HTN"
+
+define "Recommendation Needed":
+  "In Population" and not "No Further Action"
+
 define "Recommendation":
   if not "In Population" then 'None'
   else if not Common."Has BP Set" then 'Consider obtaining additional blood pressure measurements.'
@@ -55,10 +61,7 @@ define "Recommendation":
   else if "Consider HTN Stage 2" then 'Consider diagnosis of Stage 2 hypertension.'
   else if "Consider HTN Stage 1" then 'Consider diagnosis of Stage 1 hypertension.'
   else if "Prescribe Monitoring to Confirm HTN" then 'Use ambulatory or home blood pressure monitoring to confirm diagnosis.'
-/*
-    else if Common."BP Highly Variable" then 'Use ambulatory blood pressure monitoring to address blood pressure variability.'
-*/
-  else ''
+  else 'No Further Action'
 
 define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
@@ -70,10 +73,7 @@ define "Rationale":
   else if "Consider HTN Stage 2" then '{{#patient}}You recently had high blood pressure readings (≥ 140 mmHg systolic and/or ≥ mmHg 90 diastolic) which <strong>suggest you have hypertension</strong>, but there is no diagnosis in your chart. You may want to discuss your blood pressure with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 140mm Hg and/or DBP > 90. This suggests the patient may have Stage 2 Hypertension, but no diagnosis was found.{{/careTeam}}'
   else if "Consider HTN Stage 1" then '{{#patient}}You recently had high blood pressure readings (≥ 130 mmHg systolic and/or ≥ 80 mmHg diastolic) which <strong>suggest you have hypertension</strong>, but do not have a recorded diagnosis of hypertension. You may want to discuss your blood pressure with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 130mm Hg and/or DBP > 80. This suggests the patient may have Stage 1 Hypertension, but no diagnosis was found.{{/careTeam}}'
   else if "Prescribe Monitoring to Confirm HTN" then '{{#patient}}You recently had a <strong>high blood pressure reading</strong>, but do not have a recorded diagnosis of hypertension. Discuss out of office blood pressure monitoring with your care team.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}'
-/*
-    else if Common."BP Highly Variable" then '{{#patient}}You recently have had some <strong>variation in your blood pressure readings</strong>. Sometimes variation in blood pressure is a health risk; please contact your care team, as they may recommend ambulatory blood pressure monitoring.{{/patient}}{{#careTeam}}In adults with suspected blood pressure variability, use Ambulatory Blood Pressure Monitoring to better understand risk.{{/careTeam}}'
-*/
-  else ''
+  else 'None'
 
 define "Indicator Status":
   if not "In Population" then "Info"
@@ -82,9 +82,6 @@ define "Indicator Status":
   else if "Consider HTN Stage 2" then "Info"
   else if "Consider HTN Stage 1" then "Info"
   else if "Prescribe Monitoring to Confirm HTN" then "Info"
-/*
-    else if Common."BP Highly Variable" then "Info"
-*/
   else "Info"
 
 define "Suggestions":
@@ -94,10 +91,7 @@ define "Suggestions":
   else if "Consider HTN Stage 2" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about a high blood pressure diagnosis", "url":"/contact?token=possible-htn-stage2"}] } ]'
   else if "Consider HTN Stage 1" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about a high blood pressure diagnosis", "url":"/contact?token=possible-htn-stage1"}] } ]'
   else if "Prescribe Monitoring to Confirm HTN" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about out of office blood pressure measurements", "url":"/contact?token=office-bps"}] } ]'
-/*
-    else if Common."BP Highly Variable" then '[ { "id": "ambulatory-suggestion", "label": "Request Ambulatory Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to request Ambulatory Blood Pressure", "url":"/contact?token=ambulatory-bps"}] } ]'
-*/
-  else ''
+  else 'None'
 
 define "Selection Behavior":
   if not "In Population" then 'None'
@@ -106,9 +100,6 @@ define "Selection Behavior":
   else if "Consider HTN Stage 2" then 'at-most-one'
   else if "Consider HTN Stage 1" then 'at-most-one'
   else if "Prescribe Monitoring to Confirm HTN" then 'at-most-one'
-/*
-    else if Common."BP Highly Variable" then 'at-most-one'
-*/
   else 'at-most-one'
 
 define "Links":
@@ -118,10 +109,7 @@ define "Links":
   else if "Consider HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if "Consider HTN Stage 1" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if "Prescribe Monitoring to Confirm HTN" then '[{"label":"AHA: Monitoring your blood pressure at home", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"}]'
-/*
-    else if Common."BP Highly Variable" then '[{"label":"24-hour Ambulatory Blood Pressure Monitoring", "url":"https://my.clevelandclinic.org/health/diagnostics/16330-24-hour-ambulatory-blood-pressure-monitoring"}]'
-*/
-  else ''
+  else '[]'
 
 define "Exclusion Reason":
   if "Meets Exclusion Criteria" then
@@ -205,6 +193,3 @@ define "Test Get Average All BP Last 2 Years":
 
 define "Test Get Average Most Recent BP Set":
   Common."Avg BP"(Common."Most Recent BP Set")
-
-define "Test Get All BP SBP Coefficient Variability":
-  Common."Systolic BP Variability"(Common."Blood Pressure Observations for Last 2 Years").value
