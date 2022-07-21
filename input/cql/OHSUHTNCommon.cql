@@ -99,21 +99,6 @@ define function "HTN Crisis BP"(list List<FHIR.Observation>):
     where O.systolic.value >= 180
     or O.diastolic.value >= 120
 
-define function "Systolic BP Variability"(list List<FHIR.Observation>):
-  if list is null then
-    null
-  else if Count(list) <= 1 then
-    null
-  else
-    StdDev(list O
-      return all FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Systolic blood pressure").value)
-  )
-
-define function "Systolic BP Variability String"(list List<FHIR.Observation>):
-  ("Systolic BP Variability"(list)) S
-    return ToString(Round(S.value, 1)) + ' ' + S.unit
-
-
 /* Helpers */
 define function WithUnit(list List<Observation>, Unit String):
   list Observations
@@ -347,14 +332,14 @@ define "Condition Indicating Pregnancy":
     where TransformCodeableConcept(Condition.code) in "Pregnancy" and "Is Valid Prevalence Period"(Condition)
 
 define "Condition Indicating Preexisting Hypertension":
-  "Problem Condition Indicating Preexisting Hypertension" union 
+  "Problem Condition Indicating Preexisting Hypertension" union
   "Encounter Condition Indicating Preexisting Hypertension"
 
 define "Problem Condition Indicating Preexisting Hypertension":
   "Problem Conditions" Condition
     where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in
         "Non essential Hypertension SNOMEDCT") and "Is Valid Prevalence Period"(Condition)
-	
+
 define "Encounter Condition Indicating Preexisting Hypertension":
   "Encounter Conditions" Condition
     where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in
@@ -444,16 +429,6 @@ define "Patient Has Potential HTN Stage 2 BP":
     or "HTN Stage 2 BP"("Blood Pressure Observations for Last 2 Years") is not null
   )
 
-// Is SBP Coeff of Var > 11 for all BPs and no ABPM?
-define "BP Highly Variable":
-  if "Has BP Set" then
-    (
-      "Systolic BP Variability"("Blood Pressure Observations for Last 2 Years").value > 11
-      // This logic was removed
-      //and not exists "Ambulatory Blood Pressure Monitoring Procedures"
-    )
-  else null
-
 // Does patient have a BP goal?
 define "Qualifying Blood Pressure Goals":
   (QualifiedGoal(["Goal"])) BPGoal
@@ -493,9 +468,6 @@ define "Above Goal Average Most Recent":
 
 define "BP Goal Met":
   "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
-/*
-    and not "BP Highly Variable"
-*/
 
 define "Goal Interval":
   Interval[("Most Recently Established Blood Pressure Goal".start as date),
