@@ -8,7 +8,7 @@ import re
 import requests
 
 cqf_ruler_url = "http://localhost:8080/cqf-ruler-r4/cds-services/plandefinition-"
-only_folders = ["AdverseEvents"]
+only_folders = ['Hypertension']
 only_files = []
 
 for folder in os.listdir("."):
@@ -24,4 +24,6 @@ for folder in os.listdir("."):
                         headers = {'Accept' : 'application/json', 'Content-Type' : 'application/json'}
                         response = requests.post(url, data=whole, headers=headers)
                         with open(os.path.join("../responses", path), 'w') as nf:
-                            nf.write(response.text)
+                            # Replace timestamp info in Goals so we get consistent responses when we rerun this
+                            replacement = re.sub('-[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}', '-1', response.text)
+                            nf.write(replacement)
