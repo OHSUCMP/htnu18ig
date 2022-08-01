@@ -81,15 +81,15 @@
               "active": true,
               "name": [
                 {
-                  "text": "Smoking Cessation New",
-                  "family": "New",
+                  "text": "Old Smoking Observation",
+                  "family": "Old",
                   "given": [
-                    "SmokingCessation"
+                    "SmokingObservation"
                   ]
                 }
               ],
               "gender": "female",
-              "birthDate": "1957-01-29"
+              "birthDate": "1959-01-29"
             },
             "request": {
               "method": "PUT",

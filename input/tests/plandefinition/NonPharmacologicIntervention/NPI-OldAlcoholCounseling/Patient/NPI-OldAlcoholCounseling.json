@@ -4,13 +4,13 @@
   "active": true,
   "name": [
     {
-      "text": "Alcohol Moderation Reminder",
-      "family": "Reminder",
+      "text": "Old Alcohol Counseling",
+      "family": "Counseling",
       "given": [
-        "AlcoholModeration"
+        "OldAlcohol"
       ]
     }
   ],
   "gender": "female",
-  "birthDate": "1991-04-02"
+  "birthDate": "1989-04-02"
 }

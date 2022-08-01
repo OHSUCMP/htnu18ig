@@ -4,13 +4,13 @@
   "active": true,
   "name": [
     {
-      "text": "Smoking Cessation Reminder",
-      "family": "Reminder",
+      "text": "Old Smoking Counseling",
+      "family": "Old",
       "given": [
-        "SmokingCessation"
+        "SmokingCounseling"
       ]
     }
   ],
   "gender": "female",
-  "birthDate": "1958-07-14"
+  "birthDate": "1954-07-14"
 }
