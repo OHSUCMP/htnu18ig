@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-OldSmokingObservation",
+  "active": true,
+  "name": [
+    {
+      "text": "Smoking Cessation New",
+      "family": "New",
+      "given": [
+        "SmokingCessation"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1957-01-29"
+}

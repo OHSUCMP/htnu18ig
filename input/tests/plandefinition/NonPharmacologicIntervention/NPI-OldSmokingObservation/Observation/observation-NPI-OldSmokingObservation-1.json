@@ -1,0 +1,53 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-NPI-OldSmokingObservation-1",
+  "status": "final",
+  "note": [
+    {
+      "text": "Indicates patient is a heavy smoker but observation is > 5 years old."
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "72166-2",
+        "display": "Tobacco smoking status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/NPI-OldSmokingObservation"
+  },
+  "effectivePeriod": {
+    "start": "1977-08-18",
+    "end": "2017-03-02"
+  },
+  "issued": "2017-03-02T00:00:00-07:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "428071000124103",
+        "display": "Heavy tobacco smoker (finding)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "Packs/Day"
+      }
+    }
+  ]
+}
