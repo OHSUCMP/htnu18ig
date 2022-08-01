@@ -81,15 +81,15 @@
               "active": true,
               "name": [
                 {
-                  "text": "Weight Loss New",
-                  "family": "New",
+                  "text": "Old BMI",
+                  "family": "Old",
                   "given": [
-                    "WeightLoss"
+                    "BMI"
                   ]
                 }
               ],
               "gender": "male",
-              "birthDate": "1987-08-09"
+              "birthDate": "1984-08-09"
             },
             "request": {
               "method": "PUT",
