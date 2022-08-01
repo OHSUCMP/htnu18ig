@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-OldBMI",
+  "active": true,
+  "name": [
+    {
+      "text": "Weight Loss New",
+      "family": "New",
+      "given": [
+        "WeightLoss"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1987-08-09"
+}

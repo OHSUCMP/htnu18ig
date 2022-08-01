@@ -9,7 +9,7 @@ root_directory = m.group(1)
 patient_directory = os.path.join(root_directory, "input/tests/plandefinition/")
 plan_definition = input("Enter the plan definition\n")
 patient_directory = os.path.join(patient_directory, plan_definition)
-output_directory = os.path.join(root_directory, "input/pagecontent/requests/" + plan_definition)
+output_directory = os.path.join(root_directory, "tests/requests/" + plan_definition)
 
 for patient_folder in os.listdir(patient_directory):
     patient_path = os.path.join(patient_directory, patient_folder)
@@ -20,7 +20,7 @@ for patient_folder in os.listdir(patient_directory):
           "hookInstance": "test",
           "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
           "hook": "patient-view",
-          "applyCql": True,
+          "applyCql": False,
           "context": {
             "userId": "Practitioner/example",
             "patientId": "patient-id"

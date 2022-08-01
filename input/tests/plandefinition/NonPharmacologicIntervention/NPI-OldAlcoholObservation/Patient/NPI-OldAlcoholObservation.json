@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-OldAlcoholObservation",
+  "active": true,
+  "name": [
+    {
+      "text": "Alcohol Moderation New",
+      "family": "New",
+      "given": [
+        "AlcoholModeration"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1968-03-27"
+}

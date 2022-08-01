@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-OldAlcoholCounseling",
+  "active": true,
+  "name": [
+    {
+      "text": "Alcohol Moderation Reminder",
+      "family": "Reminder",
+      "given": [
+        "AlcoholModeration"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1991-04-02"
+}

@@ -472,7 +472,7 @@
               },
               "effectivePeriod": {
                 "start": "2018-08-18",
-                "end": "2019-05-30"
+                "end": "2022-05-30"
               },
               "issued": "2019-05-30T00:00:00-07:00",
               "valueCodeableConcept": {
@@ -541,8 +541,8 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2019-06-15T03:14:57-05:00",
-              "issued": "2019-06-15T03:14:57.429-05:00",
+              "effectiveDateTime": "2022-06-15T03:14:57-05:00",
+              "issued": "2022-06-15T03:14:57.429-05:00",
               "valueQuantity": {
                 "value": 27.690689692990766,
                 "unit": "kg/m2",
@@ -578,8 +578,8 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2019-05-27T10:00:00-07:00",
-              "issued": "2019-05-27T00:00:00-07:00",
+              "effectiveDateTime": "2022-05-27T10:00:00-07:00",
+              "issued": "2022-05-27T00:00:00-07:00",
               "valueQuantity": {
                 "value": 5.1,
                 "unit": "Drinks/Day"

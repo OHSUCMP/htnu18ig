@@ -5,6 +5,51 @@
   "entry": [ {
     "resource": {
       "resourceType": "Condition",
+      "id": "condition-M-ExcludedPregnant-2",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ],
+        "text": "Problem List Item"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ],
+        "text": "Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/M-ExcludedPregnant"
+      },
+      "onsetDateTime": "2015-01-28T15:16:21-05:00",
+      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "note": [ {
+        "text": "Indicates Preexisting Diagnosis of Hypertension"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-M-ExcludedPregnant-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
       "id": "condition-M-ExcludedPregnant-1",
       "clinicalStatus": {
         "coding": [ {
@@ -50,48 +95,20 @@
     }
   }, {
     "resource": {
-      "resourceType": "Condition",
-      "id": "condition-M-ExcludedPregnant-2",
-      "clinicalStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-          "code": "active"
-        } ]
-      },
-      "verificationStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-          "code": "confirmed"
-        } ]
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "problem-list-item",
-          "display": "Problem List Item"
-        } ],
-        "text": "Problem List Item"
+      "resourceType": "Patient",
+      "id": "M-ExcludedPregnant",
+      "active": true,
+      "name": [ {
+        "text": "Excluded Pregnant",
+        "family": "Pregnant",
+        "given": [ "Excluded" ]
       } ],
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "59621000",
-          "display": "Hypertension"
-        } ],
-        "text": "Hypertension"
-      },
-      "subject": {
-        "reference": "Patient/M-ExcludedPregnant"
-      },
-      "onsetDateTime": "2015-01-28T15:16:21-05:00",
-      "recordedDate": "2015-01-28T15:16:21-05:00",
-      "note": [ {
-        "text": "Indicates Preexisting Diagnosis of Hypertension"
-      } ]
+      "gender": "female",
+      "birthDate": "1987-12-09"
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-M-ExcludedPregnant-2"
+      "url": "Patient/M-ExcludedPregnant"
     }
   }, {
     "resource": {
@@ -232,23 +249,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-M-ExcludedPregnant-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Patient",
-      "id": "M-ExcludedPregnant",
-      "active": true,
-      "name": [ {
-        "text": "Excluded Pregnant",
-        "family": "Pregnant",
-        "given": [ "Excluded" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1987-12-09"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/M-ExcludedPregnant"
     }
   } ]
 }

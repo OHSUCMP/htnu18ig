@@ -4,6 +4,31 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
+      "resourceType": "Procedure",
+      "id": "procedure-NPI-SmokingCessationGoalExists-1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "24165007",
+          "display": "Alcoholism counseling (procedure)"
+        } ],
+        "text": "Alcoholism counseling (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationGoalExists"
+      },
+      "performedDateTime": "2021-05-30T11:00:00-06:00",
+      "note": [ {
+        "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/procedure-NPI-SmokingCessationGoalExists-1"
+    }
+  }, {
+    "resource": {
       "resourceType": "Condition",
       "id": "condition-NPI-SmokingCessationGoalExists-1",
       "clinicalStatus": {
@@ -49,280 +74,20 @@
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-NPI-SmokingCessationGoalExists-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
-        } ]
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "https://coach.ohsu.edu",
-          "code": "smoking-cessation",
-          "display": "Smoking Cessation"
-        } ],
-        "text": "Smoking Cessation"
+      "resourceType": "Patient",
+      "id": "NPI-SmokingCessationGoalExists",
+      "active": true,
+      "name": [ {
+        "text": "Behavior Goal Exists",
+        "family": "Exists",
+        "given": [ "BehaviorGoal" ]
       } ],
-      "description": {
-        "text": "Reduce smoking by half"
-      },
-      "subject": {
-        "reference": "Patient/NPI-SmokingCessationGoalExists"
-      },
-      "startDate": "2021-07-12",
-      "target": [ {
-        "dueDate": "2021-09-29"
-      } ],
-      "statusDate": "2021-07-29"
+      "gender": "male",
+      "birthDate": "1987-09-17"
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-NPI-SmokingCessationGoalExists-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-SmokingCessationGoalExists-1",
-      "status": "final",
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "version": "2.69",
-          "code": "11287-0",
-          "display": "Alcoholic drinks per drinking day - Reported"
-        } ]
-      },
-      "subject": {
-        "reference": "Patient/NPI-SmokingCessationGoalExists"
-      },
-      "effectiveDateTime": "2021-05-27T10:00:00-07:00",
-      "issued": "2021-05-27T00:00:00-07:00",
-      "valueQuantity": {
-        "value": 5.1,
-        "unit": "Drinks/Day"
-      },
-      "note": [ {
-        "text": "Patient is male and has more than 5 drinks a day. Refer to counseling."
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-SmokingCessationGoalExists-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-SmokingCessationGoalExists-2",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-SmokingCessationGoalExists"
-      },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 98.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 150.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-SmokingCessationGoalExists-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-SmokingCessationGoalExists-3",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-SmokingCessationGoalExists"
-      },
-      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 88.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 140.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-SmokingCessationGoalExists-3"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-SmokingCessationGoalExists-4",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-SmokingCessationGoalExists"
-      },
-      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 83.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 130.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-SmokingCessationGoalExists-4"
+      "url": "Patient/NPI-SmokingCessationGoalExists"
     }
   }, {
     "resource": {
@@ -397,7 +162,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-SmokingCessationGoalExists-6",
+      "id": "observation-NPI-SmokingCessationGoalExists-4",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -424,7 +189,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -438,7 +203,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 91.52660352979804,
+          "value": 83.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -453,7 +218,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 137.65064054117963,
+          "value": 130.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -462,7 +227,177 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-SmokingCessationGoalExists-6"
+      "url": "Observation/observation-NPI-SmokingCessationGoalExists-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-SmokingCessationGoalExists-3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationGoalExists"
+      },
+      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 140.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-SmokingCessationGoalExists-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-SmokingCessationGoalExists-2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationGoalExists"
+      },
+      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 98.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 150.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-SmokingCessationGoalExists-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-SmokingCessationGoalExists-1",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "version": "2.69",
+          "code": "11287-0",
+          "display": "Alcoholic drinks per drinking day - Reported"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationGoalExists"
+      },
+      "effectiveDateTime": "2021-05-27T10:00:00-07:00",
+      "issued": "2021-05-27T00:00:00-07:00",
+      "valueQuantity": {
+        "value": 5.1,
+        "unit": "Drinks/Day"
+      },
+      "note": [ {
+        "text": "Patient is male and has more than 5 drinks a day. Refer to counseling."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-SmokingCessationGoalExists-1"
     }
   }, {
     "resource": {
@@ -536,45 +471,110 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "NPI-SmokingCessationGoalExists",
-      "active": true,
-      "name": [ {
-        "text": "Behavior Goal Exists",
-        "family": "Exists",
-        "given": [ "BehaviorGoal" ]
+      "resourceType": "Observation",
+      "id": "observation-NPI-SmokingCessationGoalExists-6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
       } ],
-      "gender": "male",
-      "birthDate": "1987-09-17"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/NPI-SmokingCessationGoalExists"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Procedure",
-      "id": "procedure-NPI-SmokingCessationGoalExists-1",
-      "status": "completed",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
       "code": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "24165007",
-          "display": "Alcoholism counseling (procedure)"
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
         } ],
-        "text": "Alcoholism counseling (procedure)"
+        "text": "Blood Pressure"
       },
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "performedDateTime": "2021-05-30T11:00:00-06:00",
+      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
       "note": [ {
-        "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 137.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Procedure/procedure-NPI-SmokingCessationGoalExists-1"
+      "url": "Observation/observation-NPI-SmokingCessationGoalExists-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-NPI-SmokingCessationGoalExists-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "https://coach.ohsu.edu",
+          "code": "smoking-cessation",
+          "display": "Smoking Cessation"
+        } ],
+        "text": "Smoking Cessation"
+      } ],
+      "description": {
+        "text": "Reduce smoking by half"
+      },
+      "subject": {
+        "reference": "Patient/NPI-SmokingCessationGoalExists"
+      },
+      "startDate": "2021-07-12",
+      "target": [ {
+        "dueDate": "2021-09-29"
+      } ],
+      "statusDate": "2021-07-29"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-NPI-SmokingCessationGoalExists-1"
     }
   } ]
 }

@@ -49,142 +49,20 @@
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-NPI-ActivityGoalExists-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
-        } ]
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "https://coach.ohsu.edu",
-          "code": "physical-activity",
-          "display": "Physical Activity"
-        } ],
-        "text": "Physical Activitys"
+      "resourceType": "Patient",
+      "id": "NPI-ActivityGoalExists",
+      "active": true,
+      "name": [ {
+        "text": "Activity Goal Exists",
+        "family": "Exists",
+        "given": [ "ActivityGoal" ]
       } ],
-      "description": {
-        "text": "Train for a 5K"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityGoalExists"
-      },
-      "startDate": "2021-07-12",
-      "target": [ {
-        "dueDate": "2021-09-29"
-      } ],
-      "statusDate": "2021-07-29"
+      "gender": "male",
+      "birthDate": "1983-06-11"
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-NPI-ActivityGoalExists-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-ActivityGoalExists-1",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityGoalExists"
-      },
-      "effectiveDateTime": "2020-12-15T03:14:57-05:00",
-      "issued": "2020-12-15T03:14:57.429-05:00",
-      "valueQuantity": {
-        "value": 27.690689692990766,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      },
-      "note": [ {
-        "text": "Patient has a BMI > 25."
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityGoalExists-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-ActivityGoalExists-2",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityGoalExists"
-      },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 98.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 150.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityGoalExists-2"
+      "url": "Patient/NPI-ActivityGoalExists"
     }
   }, {
     "resource": {
@@ -252,7 +130,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-ActivityGoalExists-4",
+      "id": "observation-NPI-ActivityGoalExists-2",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -272,7 +150,7 @@
       "subject": {
         "reference": "Patient/NPI-ActivityGoalExists"
       },
-      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -286,7 +164,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 83.52660352979804,
+          "value": 98.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -301,7 +179,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 130.65064054117963,
+          "value": 150.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -310,7 +188,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityGoalExists-4"
+      "url": "Observation/observation-NPI-ActivityGoalExists-2"
     }
   }, {
     "resource": {
@@ -378,14 +256,46 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-ActivityGoalExists-6",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
+      "id": "observation-NPI-ActivityGoalExists-8",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
       } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityGoalExists"
+      },
+      "effectiveDateTime": "2021-07-15T03:14:57-05:00",
+      "issued": "2021-07-15T03:14:57.429-05:00",
+      "valueQuantity": {
+        "value": 24.290689692990766,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "note": [ {
+        "text": "Patient has lost weight but still has an active goal."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityGoalExists-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityGoalExists-4",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -405,7 +315,7 @@
       "subject": {
         "reference": "Patient/NPI-ActivityGoalExists"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -419,7 +329,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 91.52660352979804,
+          "value": 83.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -434,7 +344,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 137.65064054117963,
+          "value": 130.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -443,7 +353,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityGoalExists-6"
+      "url": "Observation/observation-NPI-ActivityGoalExists-4"
     }
   }, {
     "resource": {
@@ -518,7 +428,77 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-ActivityGoalExists-8",
+      "id": "observation-NPI-ActivityGoalExists-6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityGoalExists"
+      },
+      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 137.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityGoalExists-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityGoalExists-1",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -538,38 +518,58 @@
       "subject": {
         "reference": "Patient/NPI-ActivityGoalExists"
       },
-      "effectiveDateTime": "2021-07-15T03:14:57-05:00",
-      "issued": "2021-07-15T03:14:57.429-05:00",
+      "effectiveDateTime": "2020-12-15T03:14:57-05:00",
+      "issued": "2020-12-15T03:14:57.429-05:00",
       "valueQuantity": {
-        "value": 24.290689692990766,
+        "value": 27.690689692990766,
         "unit": "kg/m2",
         "system": "http://unitsofmeasure.org",
         "code": "kg/m2"
       },
       "note": [ {
-        "text": "Patient has lost weight but still has an active goal."
+        "text": "Patient has a BMI > 25."
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityGoalExists-8"
+      "url": "Observation/observation-NPI-ActivityGoalExists-1"
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "NPI-ActivityGoalExists",
-      "active": true,
-      "name": [ {
-        "text": "Activity Goal Exists",
-        "family": "Exists",
-        "given": [ "ActivityGoal" ]
+      "resourceType": "Goal",
+      "id": "goal-NPI-ActivityGoalExists-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "https://coach.ohsu.edu",
+          "code": "physical-activity",
+          "display": "Physical Activity"
+        } ],
+        "text": "Physical Activitys"
       } ],
-      "gender": "male",
-      "birthDate": "1983-06-11"
+      "description": {
+        "text": "Train for a 5K"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityGoalExists"
+      },
+      "startDate": "2021-07-12",
+      "target": [ {
+        "dueDate": "2021-09-29"
+      } ],
+      "statusDate": "2021-07-29"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/NPI-ActivityGoalExists"
+      "url": "Goal/goal-NPI-ActivityGoalExists-1"
     }
   } ]
 }
