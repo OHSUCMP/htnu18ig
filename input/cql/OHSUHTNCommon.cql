@@ -288,6 +288,17 @@ define function "Is Valid Prevalence Period"(condition Condition):
     false
 
 /*
+  @description: returns true if the procedure was known to be performed in the previous 2 years. Note that 'performed' seems to
+  be going away in FHIR 5 and another way to get at a date could be through a encounter reference, so this is not very robust.
+  This is only used to decide whether to show someone counseling again if the record is stale, and we will err on the side of
+  showing if we don't know.
+  */
+define function "Procedure Occurred In Last 2 Years"(procedure Procedure):
+  if procedure is null then false
+  else if procedure.performed is not null then "Normalize Interval"(procedure.performed) ends 24 months or less before Today()
+  else false
+
+/*
 @description: Returns an interval representing the normalized prevalence period of a given Condition resource.
               DEPRECATED - storer 2022-07-06 - use "Is Valid Prevalence Period" function above instead
 */
