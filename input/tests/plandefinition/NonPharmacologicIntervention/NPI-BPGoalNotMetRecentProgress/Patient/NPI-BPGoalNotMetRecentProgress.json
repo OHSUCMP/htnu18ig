@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-BPGoalNotMetRecentProgress",
+  "active": true,
+  "name": [
+    {
+      "text": "BP Goal Not Met Recent Progress",
+      "family": "BP Goal Not Met",
+      "given": [
+        "RecentProgress"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1977-12-18"
+}
