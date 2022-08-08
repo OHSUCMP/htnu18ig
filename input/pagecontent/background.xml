@@ -1,14 +1,17 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+
+  <a name="background" />
   <h3>Background on Hypertension</h3>
   <p>
-    High blood pressure (Hypertension) is a widespread, chronic condition that affects approximately 46&#37; of adults in the United States.
+    High blood pressure (Hypertension) is a widespread, chronic condition that affects approximately 47&#37; of adults in the United States.
       Hypertension predicts major cardiovascular, renal, and cerebrovascular events, including heart attack and stroke. Thus, it is critically
       important to detect, correctly diagnose, and effectively treat hypertension. Clinical evidence and practice have rapidly evolved with
       regards to hypertension care. However, despite knowing more about how to lower blood pressure (BP) to avoid severe outcomes, overall blood
       pressure control remains poor, with less than half of hypertensive adults meeting a goal &lt;140/90 mmHg. Additionally, clinical practice
-      guidelines often disagree on the recommended course of treatment.</p>
+      guidelines often disagree on the recommended course of treatment.
+  </p>
 
-    <p>
+  <p>
     Although there are multiple factors that contribute to the low rate of BP control, the complexity of Hypertension is a partial cause.
         Managing hypertension is a highly-variable process with complex information needs and clinical consideration. Diagnosis requires
         multiple, accurate measurements, which may be taken at the patient's home or during office visits. Treatment can require both
@@ -30,8 +33,4 @@
       recommendations to improve patent health outcomes and guideline adherence.
   </p>
 
-  <h3>Heading 2</h3>
-	<p>
-		<img height="600" src="anImage.png" alt="A sample image"/>
-	</p>
 </div>

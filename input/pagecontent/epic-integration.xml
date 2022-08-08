@@ -1,11 +1,12 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+
   <p>The IG and reference implementation were initially vetted against a Logica Sandbox preloaded with resources to trigger all possible recommendations. As we integrated the system into the OHSU Epic instance, we faced a number of challenges due to
     restrictions in the May 2021 version. This page summarizes those challenges and how the CQL was modified to address them.</p>
 
+  <a name="resource_summary" />
   <h3>Resource Summary</h3>
 
-  This is the summary of Incoming APIs to request when integrating this IG with an Epic instance and what the IG uses them for.
-
+  <p>This is the summary of Incoming APIs to request when integrating this IG with an Epic instance and what the IG uses them for.</p>
   <table class="table table-striped" style="width:75%; margin-top:15px;">
     <tr>
       <th>Epic Incoming API</th>
@@ -81,6 +82,7 @@
     </tr>
   </table>
 
+  <a name="condition_search" />
   <h3>Condition Search</h3>
 
   <p>The decision support system searches for several conditions by code, to identify things like a Hypertension diagnosis or exclusion conditions such as end stage renal disease. Epic does not allow a search for conditions by code. A category must be
@@ -89,8 +91,7 @@
   <pre>{% raw %}/Condition?subject={{context.patientId}}&amp;category='problem-list-item'
 /Condition?subject={{context.patientId}}&amp;category='encounter-diagnosis'{% endraw %}</pre>
 
-  <p>Unfortunately, Epic does not provide an onset date for encounter diagnosis conditions. Without some information about onset and abatement, the decision support system cannot determine whether the condition is current and will likely ignore it. In
-    the future, the CQL may need to be modified to address this.</p>
+  <p>Unfortunately, Epic does not provide an onset date for encounter diagnosis conditions, nor is there any way to link to the encounter to retrieve the date there. In the absence of this information, it is assumed that all encounter-diagnosis conditions are active. Neither date nor clinical status are considered.</p>
 
   <p>There is also a reported bug in Epic (QA note 6575473) with problem list conditions. The code system provided is the oid of the system rather than the url. So the condition code might look something like this where the SNOMED url is replaced by
     its oid:</p>
@@ -109,7 +110,8 @@
 
   <p>The CQL has special processing to handle the oids for ICD-10 and SNOMED.</p>
 
-  <h3>Distinguising Home/Office/Ambulatory Blood Pressure Observations</h3>
+  <a name="home_office_observations" />
+  <h3>Distinguishing Home/Office/Ambulatory Blood Pressure Observations</h3>
 
   <p>The decision support system scores blood pressure observations based on how they were collected to ensure enough readings are present to make decisions. However, these types are not easily distinguishable in Epic. Patient entered Blood Pressure
     observations generally don't flow in Epic - the only exception being a video visit where the patient takes their own blood pressure and it is recorded by the physician. A nonstandard coding is used in the FHIR resource in this rare case. Ambulatory
@@ -122,27 +124,18 @@
       if it gets any results back from the prefetch.</strong>
   </p>
 
+  <a name="alcohol_use_observations" />
   <h3>Alcohol Use Observations</h3>
 
   <p>To make a determination about a patient's drinking habits, the implementation looks specifically for observations with the LOINC code 11287-0 and a value with unit drinks/day. This is not how alcohol consumption is tracked in OHSU's instance of Epic. We did attempt to map other comparable codes from the AUDIT-C questionnaire, but the Epic mappings were not consistent or fine-grained enough to make any judgments about whether the patient might need recommendations regarding alcohol use. The implementation does map a set of <a href="ValueSet-2.16.840.1.113762.1.4.1222.24.html">Alcohol Abuse conditions</a>, so those may still trigger recommendations.</p>
 
-  <h3>Condition Onset/Abatement</h3>
+  <a name="condition_onset" />
+  <h3>Determining if a Condition is Active</h3>
 
-  <p>Epic Condition FHIR resources provide onset and abatement values as a date with no timestamp information. This can cause issues in the CQL engine, because it treats these fields as dateTime values with uncertainty, and the CQL must be written carefully to ensure that any intervals declared are constructed to consider this. In the original CQL borrowed from the <a href="https://github.com/cqframework/cqf/blob/master/input/cql/FHIRCommon.cql">FHIR Common file</a> in the CQ Framework, the prevalence period of an inactive condition is declared to be:</p>
+  <p>Originally, we used CQL borrowed from the <a href="https://github.com/cqframework/cqf/blob/master/input/cql/FHIRCommon.cql">FHIR Common file</a> in the CQ Framework to determine whether a condition was active. In practice, we found many conditions falling through the cracks that a clinician would still deem current.</p>
 
-  <pre>[start of onset, end of abatement)</pre>
+  <p>The original logic expected both a clinical status and verification status, but in practice these are not always present and not required by FHIR. Condition FHIR resources also don't require an onset and abatement date, and in our instance of Epic these are provided as dates with no timestamp information, causing additional issues with the original logic.</p>
 
-  <p>The [ means inclusion, while the ) means exclusion. This works fine with normal datetime values that include timestamps, but fails in the case where no timestamp is included and the start and end are the same, e.g.</p>
-
-  <pre>[2021-11-18, 2021-11-18)</pre>
-
-  <p>This is not a valid interval because with uncertainty considered it is possible for some values of the end of the interval to be smaller than some values of the start. We now use inclusion when we know the end interval is not null. So this is valid:</p>
-
-  <pre>[2021-11-18, 2021-11-18]</pre>
-
-  <p>When a condition has no abatement date, we preserve the exclusion if the condition is not active, and use inclusion when the condition is active.</p>
-
-  <pre>[2021-11-18, null) This means we don't know when it ended, and cannot determine whether the condition is current.
-[2021-11-18, null] This means it hasn't ended which is equivalent to [2021-11-18, 9999-12-31]</pre>
+  <p>Ultimately, we modified the logic to use information from any fields that are present but to err on the side of including the condition if we didn't have enough information.</p>
 
 </div>

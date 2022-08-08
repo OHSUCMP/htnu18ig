@@ -26,6 +26,7 @@
     }
   </style>
 
+  <a name="overview" />
   <h3>Overview</h3>
   <p>
     <a href="https://github.com/DBCG/cqf-ruler">CQF Ruler</a>
@@ -51,6 +52,7 @@
     for more information on how this process occurs.
   </p>
 
+  <a name="installations" />
   <h3>Installation</h3>
   <p>
     To install CQF Ruler, use
@@ -60,6 +62,7 @@
     This will clone the current version of CQF Ruler to the folder in which the above command was executed.
   </p>
 
+  <a name="running_the_service" />
   <h3>Running the Service</h3>
   <p>
     To run CQF Ruler, use
@@ -79,6 +82,7 @@
       documented on CQF Ruler's bug tracker for details.</em>
   </p>
 
+  <a name="configuration" />
   <h3>Configuration</h3>
   <p>
     To configure CQF Ruler with artifacts in this Implementation Guide, use the
@@ -129,6 +133,7 @@ processing cqf-tooling.json
 <span class="path">/git/htnu18ig/input</span> $</pre>
   </p>
 
+  <a name="retrieving_hooks" />
   <h3>Retrieving Available CDS Hooks to Request</h3>
   <p>
     To retrieve a list of executable CDS Hooks available on a running instance of CQF Ruler, perform an HTTP GET to
@@ -161,6 +166,7 @@ processing cqf-tooling.json
     for details.
   </p>
 
+  <a name="executing" />
   <h3>Executing CDS Hook Requests</h3>
   <p>
     To execute a CDS Hook, collect any FHIR resources to include in the prefetch per
@@ -168,6 +174,7 @@ processing cqf-tooling.json
     <a href="https://cds-hooks.hl7.org/1.0/#calling-a-cds-service">these instructions</a>.
   </p>
 
+  <a name="adverse_events" />
   <h3>HACK : Adverse Events</h3>
   <p>
     Adverse Events are processed a little differently in this system. They are conceived to originate as a collection of Conditions that map to a specific, curated set of CodeSystems
@@ -226,6 +233,7 @@ processing cqf-tooling.json
     CodeSystem (as defined above).
   </p>
 
+  <a name="processing_cards" />
   <h3>Processing Cards into POJOs using Google GSON</h3>
   <p>
     The client application developed alongside this Implementation Guide (<a href="https://github.com/OHSUCMP/coach">COACH</a>) uses
