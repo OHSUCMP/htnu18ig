@@ -12,9 +12,7 @@
 
     <p>If the set of blood pressure readings are above the patient’s goal, the tool will recommend that the patient begin non-pharmacologic treatment. If blood pressure remains above goal after three months of non-pharmacologic treatment, the tool will then recommend beginning pharmacologic treatment.</p>
 
-    <p>If the patient’s blood pressure is below their goal but is highly variable, more data may be required to obtain an accurate picture of the patient’s blood pressure, and ambulatory blood pressure monitoring will be recommended. Blood pressure variability is independently predictive of poor outcomes; however, due to the significant measurement inaccuracies from both home and office blood measurement in practice, much blood pressure variability is due to this measurement error. In addition, the effects of blood pressure variability are most significant over the long term, with mixed evidence over the short and medium term. Thus, we set the threshold for the identification of variability at a very high level - > a standard deviation of > 11 mmHg. This level is the most associated with poor outcomes. Removing this criterion or changing the language may be useful for some groups to model their local clinical needs.  See Stevens SL, Wood S, Koshiaris C, Law K, Glasziou P, Stevens RJ, McManus RJ. Blood pressure variability and cardiovascular disease: systematic review and meta-analysis. BMJ. 2016 Aug 9;354:i4098. doi: 10.1136/bmj.i4098. PMID: 27511067; PMCID: PMC4979357 for details.</p>
-
-    <p>If blood pressure is below goal and not especially variable, the tool will recommend ongoing monitoring but no further recommendations will be provided unless changes in blood pressure are detected.</p>
+    <p>If blood pressure is below goal, the tool will recommend ongoing monitoring but no further recommendations will be provided unless changes in blood pressure are detected.</p>
 
     <a name="links" />
     <h3>Links</h3>
