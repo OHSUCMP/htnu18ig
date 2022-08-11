@@ -1,7 +1,7 @@
 #!/bin/bash
 #DO NOT EDIT WITH WINDOWS
 # This is the refresh script that should be run for CQF Ruler 0.5.0 - it uses a newer tooling jar and no context path
-tooling_jar=tooling-1.4.0-jar-with-dependencies.jar
+tooling_jar=tooling-1.4.3-jar-with-dependencies.jar
 input_cache_path=$PWD/input-cache
 resources_path=$PWD/input/resources
 ig_ini_path=$PWD/ig.ini
