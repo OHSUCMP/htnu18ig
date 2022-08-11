@@ -45,8 +45,8 @@ define "Meets Exclusion Criteria":
     or Common."HTN Crisis"
 
 define "In Population":
-  "Meets Inclusion Criteria"
-  and not "Meets Exclusion Criteria"
+  // Preserve this ordering so excluded patients fail fast
+  not "Meets Exclusion Criteria" and "Meets Inclusion Criteria"
 
 define "No Further Action":
   "In Population" and Common."Has BP Set" and not "HTN Stage 2" and not "Consider HTN Stage 2" and not "Consider HTN Stage 1" and not "Prescribe Monitoring to Confirm HTN"

@@ -36,8 +36,8 @@ define "Meets Exclusion Criteria":
     or Common."HTN Crisis"
 
 define "In Population":
-  "Meets Inclusion Criteria"
-  and not "Meets Exclusion Criteria"
+  // Preserve this ordering so excluded patients fail fast
+  not "Meets Exclusion Criteria" and "Meets Inclusion Criteria"
 
 define "Recommendation":
   if not "In Population" then ''

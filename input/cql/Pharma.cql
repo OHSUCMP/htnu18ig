@@ -18,8 +18,8 @@ define "Meets Exclusion Criteria":
     or Common."HTN Crisis"
 
 define "In Population":
-  "Meets Inclusion Criteria"
-  and not "Meets Exclusion Criteria"
+  // Preserve this ordering so excluded patients fail fast
+  not "Meets Exclusion Criteria" and "Meets Inclusion Criteria"
 
 // Tests conditions from other workflows needed for Pharma intervention to proceed
 define "Enter Workflow":
