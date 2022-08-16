@@ -50,3 +50,6 @@ define "Selection Behavior":
 
 define "Links":
   ''
+
+define "Test Antihypertensive Medications":
+  Common."Patient is Using Antihypertensive Medications"

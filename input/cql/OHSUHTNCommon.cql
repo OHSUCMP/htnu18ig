@@ -490,9 +490,16 @@ define "Patient on Track":
 define "Active Medication Requests":
   ["MedicationRequest"] Rx where Rx.status.value ~ "Active Medication Request".code
 
+// Medication may be a Reference or a CodeableConcept. Return it as a Medication - only the code matters for processing
+define function getMedication(Rx MedicationRequest):
+  if Rx.medication is FHIR.Reference then
+    singleton from ([Medication: id in Last(Split(Rx.medication.reference, '/'))])
+  else
+    Medication {code: Rx.medication}
+
 define "Medication Requests With Medication":
   "Active Medication Requests" Rx
-    let medication: singleton from ([Medication: id in Last(Split(Rx.medication.reference, '/'))])
+    let medication: getMedication(Rx)
     return
       MedicationRequest {
         id: Rx.id,

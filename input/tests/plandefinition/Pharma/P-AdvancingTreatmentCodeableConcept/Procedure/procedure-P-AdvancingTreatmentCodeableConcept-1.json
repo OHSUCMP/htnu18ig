@@ -1,0 +1,24 @@
+{
+  "resourceType": "Procedure",
+  "id": "procedure-P-AdvancingTreatmentCodeableConcept-1",
+  "note": [
+    {
+      "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "225323000",
+        "display": "Smoking cessation education (procedure)"
+      }
+    ],
+    "text": "Smoking cessation education (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
+  },
+  "performedDateTime": "2021-01-05T11:00:00-06:00"
+}
