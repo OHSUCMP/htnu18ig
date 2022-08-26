@@ -62,7 +62,7 @@
   ],
   "copyright": "© OHSU 2020+.",
   "library": [
-     "http://fhir.org/guides/ohsuhypertensionig/Library/library-Hypertension"
+     "http://fhir.org/guides/ohsuhypertensionig/Library/Hypertension"
   ],
   "action": [
     {
@@ -76,9 +76,9 @@
         {
           "kind": "applicability",
           "expression": {
-            "description": "Determine if patient is in population.",
+            "description": "Determine if patient has a recommendation.",
             "language": "text/cql.identifier",
-            "expression": "In Population"
+            "expression": "Recommendation Needed"
           }
         }
       ],

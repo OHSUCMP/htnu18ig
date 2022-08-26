@@ -44,7 +44,7 @@
   ],
   "copyright": "© OHSU 2020+.",
   "library": [
-     "http://fhir.org/guides/ohsuhypertensionig/Library/library-AdverseEvents"
+     "http://fhir.org/guides/ohsuhypertensionig/Library/AdverseEvents"
   ],
   "action": [
     {

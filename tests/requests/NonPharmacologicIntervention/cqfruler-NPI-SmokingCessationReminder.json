@@ -2,7 +2,7 @@
   "hookInstance": "test",
   "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
   "hook": "patient-view",
-  "applyCql": true,
+  "applyCql": false,
   "context": {
     "userId": "Practitioner/example",
     "patientId": "NPI-SmokingCessationReminder"
@@ -39,7 +39,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "performedDateTime": "2019-01-05T11:00:00-06:00",
+              "performedDateTime": "2022-07-05T11:00:00-06:00",
               "reasonReference": [
                 {
                   "reference": "Observation/observation-NPI-SmokingCessationReminder-1"

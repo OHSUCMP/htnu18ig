@@ -2,7 +2,7 @@
   "hookInstance": "test",
   "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
   "hook": "patient-view",
-  "applyCql": true,
+  "applyCql": false,
   "context": {
     "userId": "Practitioner/example",
     "patientId": "HE-HypertensiveEmergencyIssued"
@@ -81,7 +81,7 @@
               "subject": {
                 "reference": "Patient/HE-HypertensiveEmergencyIssued"
               },
-              "issued": "2021-09-20T15:16:21.123-05:00",
+              "issued": "2022-08-10T15:16:21.123-05:00",
               "component": [
                 {
                   "code": {

@@ -1,0 +1,756 @@
+{
+  "hookInstance": "test",
+  "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
+  "hook": "patient-view",
+  "applyCql": false,
+  "context": {
+    "userId": "Practitioner/example",
+    "patientId": "NPI-OldSmokingObservation"
+  },
+  "prefetch": {
+    "item1": {
+      "response": {
+        "status": "200 OK"
+      },
+      "resource": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Condition",
+              "id": "condition-NPI-OldSmokingObservation-1",
+              "note": [
+                {
+                  "text": "Indicates Preexisting Diagnosis of Hypertension"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                      "code": "problem-list-item",
+                      "display": "Problem List Item"
+                    }
+                  ],
+                  "text": "Problem List Item"
+                }
+              ],
+              "clinicalStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                    "code": "active"
+                  }
+                ]
+              },
+              "verificationStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                    "code": "confirmed"
+                  }
+                ]
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "59621000",
+                    "display": "Hypertension"
+                  }
+                ],
+                "text": "Hypertension"
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "onsetDateTime": "2015-01-28T15:16:21-05:00",
+              "recordedDate": "2015-01-28T15:16:21-05:00"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Patient",
+              "id": "NPI-OldSmokingObservation",
+              "active": true,
+              "name": [
+                {
+                  "text": "Old Smoking Observation",
+                  "family": "Old",
+                  "given": [
+                    "SmokingObservation"
+                  ]
+                }
+              ],
+              "gender": "female",
+              "birthDate": "1959-01-29"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-OldSmokingObservation-4",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 89.0660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 141.1064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-OldSmokingObservation-5",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 97.1660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 142.1064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-OldSmokingObservation-2",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 81.2660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 134.9064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-OldSmokingObservation-3",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 91.6660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 131.1064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-OldSmokingObservation-1",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Indicates patient is a heavy smoker but observation is > 5 years old."
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "72166-2",
+                    "display": "Tobacco smoking status"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "effectivePeriod": {
+                "start": "1977-08-18",
+                "end": "2017-03-02"
+              },
+              "issued": "2017-03-02T00:00:00-07:00",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "428071000124103",
+                    "display": "Heavy tobacco smoker (finding)"
+                  }
+                ]
+              },
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8663-7",
+                        "display": "Cigarettes smoked current (pack per day) - Reported"
+                      }
+                    ]
+                  },
+                  "valueQuantity": {
+                    "value": 3,
+                    "unit": "Packs/Day"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-OldSmokingObservation-6",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 82.3660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 134.0064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-NPI-OldSmokingObservation-7",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 88.8660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 131.2064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Goal",
+              "id": "goal-NPI-OldSmokingObservation-1",
+              "lifecycleStatus": "active",
+              "achievementStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+                    "version": "4.0.1",
+                    "code": "in-progress",
+                    "display": "In Progress"
+                  }
+                ]
+              },
+              "startDate": "2021-07-12",
+              "description": {
+                "text": "Goal of 135/85"
+              },
+              "subject": {
+                "reference": "Patient/NPI-OldSmokingObservation"
+              },
+              "target": [
+                {
+                  "measure": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "version": "2.68",
+                        "code": "8480-6",
+                        "display": "Systolic blood pressure"
+                      }
+                    ]
+                  },
+                  "detailQuantity": {
+                    "value": 135,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "measure": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "version": "2.68",
+                        "code": "8462-4",
+                        "display": "Diastolic blood pressure"
+                      }
+                    ]
+                  },
+                  "detailQuantity": {
+                    "value": 85,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

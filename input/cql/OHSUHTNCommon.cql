@@ -99,21 +99,6 @@ define function "HTN Crisis BP"(list List<FHIR.Observation>):
     where O.systolic.value >= 180
     or O.diastolic.value >= 120
 
-define function "Systolic BP Variability"(list List<FHIR.Observation>):
-  if list is null then
-    null
-  else if Count(list) <= 1 then
-    null
-  else
-    StdDev(list O
-      return all FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Systolic blood pressure").value)
-  )
-
-define function "Systolic BP Variability String"(list List<FHIR.Observation>):
-  ("Systolic BP Variability"(list)) S
-    return ToString(Round(S.value, 1)) + ' ' + S.unit
-
-
 /* Helpers */
 define function WithUnit(list List<Observation>, Unit String):
   list Observations
@@ -162,28 +147,37 @@ define function QualifiedProcedure(list List<FHIR.Procedure>):
 
 define function ConfirmedCondition(list List<Condition>):
   list Condition
-    where FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
+    where Condition.verificationStatus is null
+      or FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
 
 define function ConfirmedCondition(value Condition):
   value Condition
-    where FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
+    where Condition.verificationStatus is null
+      or FHIRHelpers.ToConcept(Condition.verificationStatus) ~ "confirmed"
 
 define function ActiveCondition(list List<Condition>):
   list Condition
-    where FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+    where (
+      Condition.clinicalStatus is null
+        or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+      )
       and Condition.abatement is null
 
 define function ActiveCondition(value Condition):
   value Condition
-    where FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+    where (
+      Condition.clinicalStatus is null
+        or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+      )
       and Condition.abatement is null
 
 define function ActiveOrRecurring(list List<Condition>):
   list Condition
-    where (
-      FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
-        and Condition.abatement is null
-      )
+    where ActiveCondition(Condition) is not null
+//      (
+//      FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "active"
+//        and Condition.abatement is null
+//      )
       or FHIRHelpers.ToConcept(Condition.clinicalStatus) ~ "relapse"
 
 // Epic sometimes provides the oid instead of the named system, but we need the named system for comparing to ValueSets
@@ -274,7 +268,39 @@ define function "Normalize Abatement"(condition Condition):
   else null
 
 /*
+@description: returns TRUE if the prevalence period is specified and encompasses today.  considers clinical status
+              as a surrogate in the absence of prevalence period components (onset, abatement)
+*/
+define function "Is Valid Prevalence Period"(condition Condition):
+  if condition.onset is not null and condition.abatement is not null then
+    start of "Normalize Interval"(condition.onset) <= Today() and end of "Normalize Abatement"(condition) >= Today()
+  else if condition.clinicalStatus is null
+    or condition.clinicalStatus ~ "active"
+    or condition.clinicalStatus ~ "recurrence"
+    or condition.clinicalStatus ~ "relapse" then
+      if condition.onset is not null then
+        start of "Normalize Interval"(condition.onset) <= Today()
+      else if condition.abatement is not null then
+        end of "Normalize Abatement"(condition) >= Today()
+      else
+        true
+  else
+    false
+
+/*
+  @description: returns true if the procedure was known to be performed in the previous 2 years. Note that 'performed' seems to
+  be going away in FHIR 5 and another way to get at a date could be through a encounter reference, so this is not very robust.
+  This is only used to decide whether to show someone counseling again if the record is stale, and we will err on the side of
+  showing if we don't know.
+  */
+define function "Procedure Occurred In Last 2 Years"(procedure Procedure):
+  if procedure is null then false
+  else if procedure.performed is not null then "Normalize Interval"(procedure.performed) ends 24 months or less before Today()
+  else false
+
+/*
 @description: Returns an interval representing the normalized prevalence period of a given Condition resource.
+              DEPRECATED - storer 2022-07-06 - use "Is Valid Prevalence Period" function above instead
 */
 define function "Prevalence Period"(condition Condition):
   if condition.clinicalStatus ~ "active"
@@ -282,7 +308,7 @@ define function "Prevalence Period"(condition Condition):
     or condition.clinicalStatus ~ "relapse"
     // This prevents errors when a condition has an onset and abatement on the same day and no timestamp is provided (Epic)
     or end of "Normalize Abatement"(condition) is not null then
-    Interval[start of "Normalize Interval"(condition.onset), end of "Normalize Abatement"(condition)]
+      Interval[start of "Normalize Interval"(condition.onset), end of "Normalize Abatement"(condition)]
   else
     // The condition is not active but has no abatement date, so we can't say when it ended
     Interval[start of "Normalize Interval"(condition.onset), null)
@@ -298,16 +324,37 @@ define "Patient Over Age 80":
 
 // Grab all conditions for patients since we can't limit by code in Epic.
 define "Conditions":
-  (QualifiedCondition(["Condition": category ~ "problem-list-item"])) union
+  "Problem Conditions" union "Encounter Conditions"
+//  (QualifiedCondition(["Condition": category ~ "problem-list-item"])) union
+//  (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
+
+define "Problem Conditions":
+  (QualifiedCondition(["Condition": category ~ "problem-list-item"]))
+
+define "Encounter Conditions":
   (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
 
 define "Condition Indicating End Stage Renal Disease":
-  "Conditions" Problem
-    where TransformCodeableConcept(Problem.code) in "End Stage Renal Disease" and end of "Prevalence Period"(Problem) >= Today()
+  "Conditions" Condition
+    where TransformCodeableConcept(Condition.code) in "End Stage Renal Disease" and "Is Valid Prevalence Period"(Condition)
 
 define "Condition Indicating Pregnancy":
-  "Conditions" Problem
-    where TransformCodeableConcept(Problem.code) in "Pregnancy" and end of "Prevalence Period"(Problem) >= Today()
+  "Conditions" Condition
+    where TransformCodeableConcept(Condition.code) in "Pregnancy" and "Is Valid Prevalence Period"(Condition)
+
+define "Condition Indicating Preexisting Hypertension":
+  "Problem Condition Indicating Preexisting Hypertension" union
+  "Encounter Condition Indicating Preexisting Hypertension"
+
+define "Problem Condition Indicating Preexisting Hypertension":
+  "Problem Conditions" Condition
+    where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in
+        "Non essential Hypertension SNOMEDCT") and "Is Valid Prevalence Period"(Condition)
+
+define "Encounter Condition Indicating Preexisting Hypertension":
+  "Encounter Conditions" Condition
+    where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in
+        "Non essential Hypertension SNOMEDCT")
 
 define "Blood Pressure Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
@@ -393,20 +440,6 @@ define "Patient Has Potential HTN Stage 2 BP":
     or "HTN Stage 2 BP"("Blood Pressure Observations for Last 2 Years") is not null
   )
 
-// Is SBP Coeff of Var > 11 for all BPs and no ABPM?
-define "BP Highly Variable":
-  if "Has BP Set" then
-    (
-      "Systolic BP Variability"("Blood Pressure Observations for Last 2 Years").value > 11
-      // This logic was removed
-      //and not exists "Ambulatory Blood Pressure Monitoring Procedures"
-    )
-  else null
-
-define "Condition Indicating Preexisting Hypertension":
-  "Conditions" Problem
-    where (TransformCodeableConcept(Problem.code) in "Hypertension" or TransformCodeableConcept(Problem.code) in "Non essential Hypertension SNOMEDCT") and end of "Prevalence Period"(Problem) >= Today()
-
 // Does patient have a BP goal?
 define "Qualifying Blood Pressure Goals":
   (QualifiedGoal(["Goal"])) BPGoal
@@ -445,8 +478,7 @@ define "Above Goal Average Most Recent":
   "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
 
 define "BP Goal Met":
-  "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
-  and not "BP Highly Variable"
+  "Patient has a BP Goal" and "Has BP Set" and not "Patient Has Potential HTN Stage 2 BP" and not "Above Goal Average Most Recent"
 
 define "Goal Interval":
   Interval[("Most Recently Established Blood Pressure Goal".start as date),
@@ -458,9 +490,16 @@ define "Patient on Track":
 define "Active Medication Requests":
   ["MedicationRequest"] Rx where Rx.status.value ~ "Active Medication Request".code
 
+// Medication may be a Reference or a CodeableConcept. Return it as a Medication - only the code matters for processing
+define function getMedication(Rx MedicationRequest):
+  if Rx.medication is FHIR.Reference then
+    singleton from ([Medication: id in Last(Split(Rx.medication.reference, '/'))])
+  else
+    Medication {code: Rx.medication}
+
 define "Medication Requests With Medication":
   "Active Medication Requests" Rx
-    let medication: singleton from ([Medication: id in Last(Split(Rx.medication.reference, '/'))])
+    let medication: getMedication(Rx)
     return
       MedicationRequest {
         id: Rx.id,

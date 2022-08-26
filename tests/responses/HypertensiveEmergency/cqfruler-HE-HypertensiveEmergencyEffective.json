@@ -1,3 +1,10 @@
 {
-  "cards": []
+  "cards": [
+    {
+      "summary": "Warning: Very high blood pressure. Please recheck the pressure in 5 minutes; if it is still \u003e180/120, consult care team immediately.",
+      "indicator": "critical",
+      "detail": "{{#patient}}Your blood pressure is high (\u003e 180 mmHg systolic and/or \u003e 120 mmHg diastolic). Contact your care team immediately, or \u003cstrong\u003eseek immediate care\u003c/strong\u003e if you do not feel well.{{/patient}}{{#careTeam}}Patient\u0027s blood pressure is \u003e 180 systolic or \u003e 120 diastolic. Consider immediate evaluation for treatment or escalation of care.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your high blood pressure\", \"url\":\"/contact?token\u003durgent-bp\"}] } ]|at-most-one|[{\"label\":\"AHA: When to call 911 for high blood pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/hypertensive-crisis-when-you-should-call-911-for-high-blood-pressure\"}]",
+      "source": {}
+    }
+  ]
 }

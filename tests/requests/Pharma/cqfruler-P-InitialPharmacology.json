@@ -2,7 +2,7 @@
   "hookInstance": "test",
   "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
   "hook": "patient-view",
-  "applyCql": true,
+  "applyCql": false,
   "context": {
     "userId": "Practitioner/example",
     "patientId": "P-InitialPharmacology"
@@ -188,7 +188,7 @@
               "id": "medicationrequest-P-InitialPharmacology-1",
               "note": [
                 {
-                  "text": "Active Request for Antihypertensive"
+                  "text": "Completed Request for Antihypertensive"
                 }
               ],
               "status": "completed",
@@ -196,6 +196,37 @@
               "medicationReference": {
                 "reference": "Medication/medication-P-InitialPharmacology-1",
                 "display": "bumetanide 5 MG Oral Tablet"
+              },
+              "subject": {
+                "reference": "Patient/P-InitialPharmacology"
+              },
+              "authoredOn": "2021-05-01T16:00:00-08:00"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "MedicationRequest",
+              "id": "medicationrequest-P-InitialPharmacology-3",
+              "note": [
+                {
+                  "text": "Active Request for Medication using CodeableConcept - Not an Antihypertensive"
+                }
+              ],
+              "status": "active",
+              "intent": "order",
+              "medicationCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "1014599",
+                    "display": "acetaminophen 300 MG / oxycodone hydrochloride 10 MG Oral Tablet"
+                  }
+                ],
+                "text": "acetaminophen 300 MG / oxycodone hydrochloride 10 MG Oral Tablet"
               },
               "subject": {
                 "reference": "Patient/P-InitialPharmacology"

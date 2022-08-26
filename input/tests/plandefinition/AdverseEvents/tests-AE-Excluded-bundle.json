@@ -4,35 +4,28 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "AdverseEvent",
-      "id": "adverseevent-AE-Excluded-1",
-      "event": {
+      "resourceType": "Procedure",
+      "id": "procedure-AE-Excluded-2",
+      "status": "completed",
+      "code": {
         "coding": [ {
-          "system": "http://hl7.org/fhir/sid/icd-10-cm",
-          "code": "N17.0",
-          "display": "Acute kidney problem"
+          "system": "http://snomed.info/sct",
+          "code": "24165007",
+          "display": "Alcoholism counseling (procedure)"
         } ],
-        "text": "Acute kidney problem"
+        "text": "Alcoholism counseling (procedure)"
       },
       "subject": {
         "reference": "Patient/AE-Excluded"
       },
-      "date": "2021-09-15T07:25:02-07:00",
-      "detected": "2021-09-15T07:25:02-07:00",
-      "recordedDate": "2021-09-15T13:16:21-07:00",
-      "resultingCondition": [ {
-        "reference": "Condition/condition-AE-TreatedAdverseEvent-2"
-      } ],
-      "outcome": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
-          "code": "resolved"
-        } ]
-      }
+      "performedDateTime": "2021-05-30T11:00:00-06:00",
+      "note": [ {
+        "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
+      } ]
     },
     "request": {
       "method": "PUT",
-      "url": "AdverseEvent/adverseevent-AE-Excluded-1"
+      "url": "Procedure/procedure-AE-Excluded-2"
     }
   }, {
     "resource": {
@@ -171,51 +164,114 @@
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-AE-Excluded-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
+      "resourceType": "Patient",
+      "id": "AE-Excluded",
+      "active": true,
+      "name": [ {
+        "text": "Excluded Adverse Event",
+        "family": "Adverse Event",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1974-02-12"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/AE-Excluded"
+    }
+  }, {
+    "resource": {
+      "resourceType": "AdverseEvent",
+      "id": "adverseevent-AE-Excluded-1",
+      "event": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
-        } ]
-      },
-      "description": {
-        "text": "Goal of 135/85"
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "N17.0",
+          "display": "Acute kidney problem"
+        } ],
+        "text": "Acute kidney problem"
       },
       "subject": {
         "reference": "Patient/AE-Excluded"
       },
-      "startDate": "2021-07-12",
-      "target": [ {
-        "measure": {
+      "date": "2021-09-15T07:25:02-07:00",
+      "detected": "2021-09-15T07:25:02-07:00",
+      "recordedDate": "2021-09-15T13:16:21-07:00",
+      "resultingCondition": [ {
+        "reference": "Condition/condition-AE-TreatedAdverseEvent-2"
+      } ],
+      "outcome": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+          "code": "resolved"
+        } ]
+      }
+    },
+    "request": {
+      "method": "PUT",
+      "url": "AdverseEvent/adverseevent-AE-Excluded-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-AE-Excluded-6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/AE-Excluded"
+      },
+      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
           "coding": [ {
             "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8480-6",
-            "display": "Systolic blood pressure"
-          } ]
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
         },
-        "detailQuantity": {
-          "value": 135,
-          "unit": "mmHg",
+        "valueQuantity": {
+          "value": 91.52660352979804,
+          "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
       }, {
-        "measure": {
+        "code": {
           "coding": [ {
             "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure"
-          } ]
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
         },
-        "detailQuantity": {
-          "value": 85,
-          "unit": "mmHg",
+        "valueQuantity": {
+          "value": 137.65064054117963,
+          "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
@@ -223,7 +279,77 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-AE-Excluded-1"
+      "url": "Observation/observation-AE-Excluded-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-AE-Excluded-7",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/AE-Excluded"
+      },
+      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 144.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-AE-Excluded-7"
     }
   }, {
     "resource": {
@@ -537,135 +663,51 @@
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-AE-Excluded-6",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
+      "resourceType": "Goal",
+      "id": "goal-AE-Excluded-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
         } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
+      },
+      "description": {
+        "text": "Goal of 135/85"
       },
       "subject": {
         "reference": "Patient/AE-Excluded"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
+      "startDate": "2021-07-12",
+      "target": [ {
+        "measure": {
           "coding": [ {
             "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
         },
-        "valueQuantity": {
-          "value": 91.52660352979804,
-          "unit": "mm[Hg]",
+        "detailQuantity": {
+          "value": 135,
+          "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
       }, {
-        "code": {
+        "measure": {
           "coding": [ {
             "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 137.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-AE-Excluded-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-AE-Excluded-7",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/AE-Excluded"
-      },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
+            "version": "2.68",
             "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
+            "display": "Diastolic blood pressure"
+          } ]
         },
-        "valueQuantity": {
-          "value": 88.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 144.65064054117963,
-          "unit": "mm[Hg]",
+        "detailQuantity": {
+          "value": 85,
+          "unit": "mmHg",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
@@ -673,49 +715,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-AE-Excluded-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Patient",
-      "id": "AE-Excluded",
-      "active": true,
-      "name": [ {
-        "text": "Excluded Adverse Event",
-        "family": "Adverse Event",
-        "given": [ "Excluded" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1974-02-12"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/AE-Excluded"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Procedure",
-      "id": "procedure-AE-Excluded-2",
-      "status": "completed",
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "24165007",
-          "display": "Alcoholism counseling (procedure)"
-        } ],
-        "text": "Alcoholism counseling (procedure)"
-      },
-      "subject": {
-        "reference": "Patient/AE-Excluded"
-      },
-      "performedDateTime": "2021-05-30T11:00:00-06:00",
-      "note": [ {
-        "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Procedure/procedure-AE-Excluded-2"
+      "url": "Goal/goal-AE-Excluded-1"
     }
   } ]
 }

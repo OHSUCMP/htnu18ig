@@ -4,6 +4,31 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
+      "resourceType": "Procedure",
+      "id": "procedure-P-InitialPharmacology-1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "225323000",
+          "display": "Smoking cessation education (procedure)"
+        } ],
+        "text": "Smoking cessation education (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/P-InitialPharmacology"
+      },
+      "performedDateTime": "2021-01-05T11:00:00-06:00",
+      "note": [ {
+        "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/procedure-P-InitialPharmacology-1"
+    }
+  }, {
+    "resource": {
       "resourceType": "Condition",
       "id": "condition-P-InitialPharmacology-1",
       "clinicalStatus": {
@@ -49,62 +74,20 @@
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-P-InitialPharmacology-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "no-change",
-          "display": "No Change"
-        } ]
-      },
-      "description": {
-        "text": "Goal of 135/85"
-      },
-      "subject": {
-        "reference": "Patient/P-InitialPharmacology"
-      },
-      "startDate": "2021-01-12",
-      "target": [ {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8480-6",
-            "display": "Systolic blood pressure"
-          } ]
-        },
-        "detailQuantity": {
-          "value": 135,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure"
-          } ]
-        },
-        "detailQuantity": {
-          "value": 85,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
+      "resourceType": "Patient",
+      "id": "P-InitialPharmacology",
+      "active": true,
+      "name": [ {
+        "text": "Pharmacology Initial",
+        "family": "Initial",
+        "given": [ "Pharmacology" ]
       } ],
-      "note": [ {
-        "text": "There has been no change toward patient goal."
-      } ]
+      "gender": "male",
+      "birthDate": "1992-06-01"
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-P-InitialPharmacology-1"
+      "url": "Patient/P-InitialPharmacology"
     }
   }, {
     "resource": {
@@ -177,24 +160,28 @@
   }, {
     "resource": {
       "resourceType": "MedicationRequest",
-      "id": "medicationrequest-P-InitialPharmacology-1",
-      "status": "completed",
+      "id": "medicationrequest-P-InitialPharmacology-3",
+      "status": "active",
       "intent": "order",
-      "medicationReference": {
-        "reference": "Medication/medication-P-InitialPharmacology-2",
-        "display": "bumetanide 5 MG Oral Tablet"
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1014599",
+          "display": "acetaminophen 300 MG / oxycodone hydrochloride 10 MG Oral Tablet"
+        } ],
+        "text": "acetaminophen 300 MG / oxycodone hydrochloride 10 MG Oral Tablet"
       },
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "authoredOn": "2020-05-01T16:00:00-08:00",
+      "authoredOn": "2021-05-01T16:00:00-08:00",
       "note": [ {
-        "text": "Completed Request"
+        "text": "Active Request for Medication using CodeableConcept - Not an Antihypertensive"
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "MedicationRequest/medicationrequest-P-InitialPharmacology-1"
+      "url": "MedicationRequest/medicationrequest-P-InitialPharmacology-3"
     }
   }, {
     "resource": {
@@ -220,121 +207,25 @@
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-P-InitialPharmacology-1",
-      "status": "final",
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "72166-2",
-          "display": "Tobacco smoking status"
-        } ]
+      "resourceType": "MedicationRequest",
+      "id": "medicationrequest-P-InitialPharmacology-1",
+      "status": "completed",
+      "intent": "order",
+      "medicationReference": {
+        "reference": "Medication/medication-P-InitialPharmacology-2",
+        "display": "bumetanide 5 MG Oral Tablet"
       },
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectivePeriod": {
-        "start": "2001-09-12",
-        "end": "2021-01-05"
-      },
-      "issued": "2021-01-05T00:00:00-07:00",
-      "valueCodeableConcept": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "428071000124103",
-          "display": "Heavy tobacco smoker (finding)"
-        } ]
-      },
+      "authoredOn": "2020-05-01T16:00:00-08:00",
       "note": [ {
-        "text": "Patient was smoking 1 pack/day as of 1/5/2019. Referred to counseling (related procedure)"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8663-7",
-            "display": "Cigarettes smoked current (pack per day) - Reported"
-          } ]
-        },
-        "valueQuantity": {
-          "value": 1,
-          "unit": "Packs/Day"
-        }
+        "text": "Completed Request"
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-P-InitialPharmacology-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-P-InitialPharmacology-2",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/P-InitialPharmacology"
-      },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 98.3660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 141.2064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-P-InitialPharmacology-2"
+      "url": "MedicationRequest/medicationrequest-P-InitialPharmacology-1"
     }
   }, {
     "resource": {
@@ -409,7 +300,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-P-InitialPharmacology-4",
+      "id": "observation-P-InitialPharmacology-2",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -436,7 +327,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -450,7 +341,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 98.2660352979804,
+          "value": 98.3660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -465,7 +356,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 166.4064054117963,
+          "value": 141.2064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -474,7 +365,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-P-InitialPharmacology-4"
+      "url": "Observation/observation-P-InitialPharmacology-2"
     }
   }, {
     "resource": {
@@ -549,7 +440,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-P-InitialPharmacology-6",
+      "id": "observation-P-InitialPharmacology-4",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -576,7 +467,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -590,7 +481,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 82.1660352979804,
+          "value": 98.2660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -605,7 +496,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 141.2064054117963,
+          "value": 166.4064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -614,7 +505,77 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-P-InitialPharmacology-6"
+      "url": "Observation/observation-P-InitialPharmacology-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-P-InitialPharmacology-8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/P-InitialPharmacology"
+      },
+      "effectiveDateTime": "2021-07-20T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 85.1660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 135.2064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-P-InitialPharmacology-8"
     }
   }, {
     "resource": {
@@ -689,7 +650,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-P-InitialPharmacology-8",
+      "id": "observation-P-InitialPharmacology-6",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -716,7 +677,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2021-07-20T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -730,7 +691,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 85.1660352979804,
+          "value": 82.1660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -745,7 +706,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 135.2064054117963,
+          "value": 141.2064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -754,49 +715,114 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-P-InitialPharmacology-8"
+      "url": "Observation/observation-P-InitialPharmacology-6"
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "P-InitialPharmacology",
-      "active": true,
-      "name": [ {
-        "text": "Pharmacology Initial",
-        "family": "Initial",
-        "given": [ "Pharmacology" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1992-06-01"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/P-InitialPharmacology"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Procedure",
-      "id": "procedure-P-InitialPharmacology-1",
-      "status": "completed",
+      "resourceType": "Observation",
+      "id": "observation-P-InitialPharmacology-1",
+      "status": "final",
       "code": {
         "coding": [ {
-          "system": "http://snomed.info/sct",
-          "code": "225323000",
-          "display": "Smoking cessation education (procedure)"
-        } ],
-        "text": "Smoking cessation education (procedure)"
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status"
+        } ]
       },
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "performedDateTime": "2021-01-05T11:00:00-06:00",
+      "effectivePeriod": {
+        "start": "2001-09-12",
+        "end": "2021-01-05"
+      },
+      "issued": "2021-01-05T00:00:00-07:00",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "428071000124103",
+          "display": "Heavy tobacco smoker (finding)"
+        } ]
+      },
       "note": [ {
-        "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
+        "text": "Patient was smoking 1 pack/day as of 1/5/2019. Referred to counseling (related procedure)"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8663-7",
+            "display": "Cigarettes smoked current (pack per day) - Reported"
+          } ]
+        },
+        "valueQuantity": {
+          "value": 1,
+          "unit": "Packs/Day"
+        }
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Procedure/procedure-P-InitialPharmacology-1"
+      "url": "Observation/observation-P-InitialPharmacology-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Goal",
+      "id": "goal-P-InitialPharmacology-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "no-change",
+          "display": "No Change"
+        } ]
+      },
+      "description": {
+        "text": "Goal of 135/85"
+      },
+      "subject": {
+        "reference": "Patient/P-InitialPharmacology"
+      },
+      "startDate": "2021-01-12",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 135,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ],
+      "note": [ {
+        "text": "There has been no change toward patient goal."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Goal/goal-P-InitialPharmacology-1"
     }
   } ]
 }

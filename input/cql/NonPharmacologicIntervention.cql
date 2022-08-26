@@ -65,8 +65,8 @@ define "Meets Exclusion Criteria":
     or Common."HTN Crisis"
 
 define "In Population":
-  "Meets Inclusion Criteria"
-  and not "Meets Exclusion Criteria"
+  // Preserve this ordering so excluded patients fail fast
+  not "Meets Exclusion Criteria" and "Meets Inclusion Criteria"
 
 /***** Decision Diamonds *****/
 define "Patient Has Behavioral Goals":
@@ -84,7 +84,7 @@ define "Enter Workflow":
 define "Smoking Recommendation":
   if exists "Tobacco Cessation Goals Needing Update" then 'Smoking cessation goal due for update.'
   else if exists "Tobacco Cessation Goals" then 'Smoking cessation goal check-in.'
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then 'Discuss smoking cessation.'
+  else if "Needs Smoking Counseling" then 'Discuss smoking cessation.'
   else if "Patient is Currently a Smoker" then 'Remind about smoking cessation.'
   else ''
 
@@ -94,7 +94,7 @@ define "Smoking Rationale Combined Data":
 define "Smoking Rationale":
   if exists "Tobacco Cessation Goals Needing Update" then '{{#patient}}You set a smoking cessation goal and it is time to update how that goal went.{{/patient}}'
   else if exists "Tobacco Cessation Goals" then '{{#patient}}You set a smoking cessation goal; it isn\'t quite the time you set to update, but you can update that goal at any time.<br>' + "Tobacco Goal Summary" + '{{/patient}}'
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '{{#patient}}Reducing your smoking will help lower blood pressure, the risk of stroke, and other harmful events. Please discuss methods to reduce smoking with your care team.{{/patient}}
+  else if "Needs Smoking Counseling" then '{{#patient}}Reducing your smoking will help lower blood pressure, the risk of stroke, and other harmful events. Please discuss methods to reduce smoking with your care team.{{/patient}}
     {{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}'
   else if "Patient is Currently a Smoker" then '{{#patient}}You previously received counseling about quitting smoking, which would lower your blood pressure and other health risks. Please consider readdressing this goal.{{/patient}}
     {{#careTeam}}Patient still smokes, but has been counseled. Consider reminding about quitting according to your local protocol.{{/careTeam}}'
@@ -103,7 +103,7 @@ define "Smoking Rationale":
 define "Smoking Suggestions":
   if exists "Tobacco Cessation Goals Needing Update" then '[' + Combine("Update Goals String"("Tobacco Cessation Goals Needing Update"), ',') + ']'
   else if exists "Tobacco Cessation Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
-  else if "Patient is Currently a Smoker" and "Last Smoking Counseling Procedure" is null then '[
+  else if "Needs Smoking Counseling" then '[
     {"id": "smoking-counseling", "type":"counseling-link", "references": {"system":"http://snomed.info/sct", "code":"225323000"},"label": "Smoking Cessation Counseling","actions": [{"url":"/counseling/smoking-cessation", "label":"Click here to learn more about tobacco cessation."}]},
     {"id": "' + "Unique Goal Id"('smoking-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"smoking-cessation", "display": "Smoking Cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [{"label":"Reduce my tobacco use to [quantity] [method:cigarettes] per [time period]."}] }]'
   else if "Patient is Currently a Smoker" then '[ { "id": "' + "Unique Goal Id"('smoking-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"smoking-cessation", "display": "Smoking Cessation"}, "label": "Set a Tobacco Cessation Goal", "actions": [{"label":"Reduce my tobacco use to [quantity] [method:cigarettes] per [time period]."}] } ]'
@@ -149,7 +149,7 @@ define "BMI Suggestions":
     {"id": "weight-loss-counseling", "label": "Weight Loss Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"266724001"}, "actions": [ {"label":"Learn more about weight loss.", "url":"/counseling/weight-loss"}]},
     {"id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": [{"label":"Reduce my weight by [quantity] pounds."}] }
   ]'
-  else if "Patient BMI is Greater than 25 kg/m2" then '[ { "id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": ["label":"Reduce my weight by [quantity] pounds."}] } ]'
+  else if "Patient BMI is Greater than 25 kg/m2" then '[ { "id": "' + "Unique Goal Id"('weight-loss-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"weight-loss", "display": "Weight Loss"}, "label": "Set a Weight Loss Goal", "actions": [{"label":"Reduce my weight by [quantity] pounds."}] } ]'
   else ''
 
 define "BMI Links":
@@ -170,7 +170,7 @@ define "Weight Loss Indicator Status":
 define "Alcohol Recommendation":
   if exists "Alcohol Goals Needing Update" then 'Alcohol moderation goal due for update.'
   else if exists "Alcohol Goals" then 'Alcohol moderation check-in.'
-  else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then 'Discuss alcohol moderation.'
+  else if "Needs Alcohol Counseling" then 'Discuss alcohol moderation.'
   else if "Patient is a Heavy Alcoholic Drinker" then 'Reminder about Alcohol counseling.'
   else ''
 
@@ -180,14 +180,14 @@ define "Alcohol Rationale Combined Data":
 define "Alcohol Rationale":
   if exists "Alcohol Goals Needing Update" then '{{#patient}}You set a goal to reduce alcohol and it is time to update how that goal went.{{/patient}}'
   else if exists "Alcohol Goals" then '{{#patient}}You set a goal to reduce alcohol; it isn\'t quite the time you set to update, but you can update at any time.<br>' + "Alcohol Moderation Goal Summary" + '{{/patient}}'
-  else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then '{{#patient}}Reducing your alcohol consumption will help lower your blood pressure, along with other health risks. Please discuss methods to reduce your alcohol consumption with your care team.{{/patient}}'
+  else if "Needs Alcohol Counseling" then '{{#patient}}Reducing your alcohol consumption will help lower your blood pressure, along with other health risks. Please discuss methods to reduce your alcohol consumption with your care team.{{/patient}}'
   else if "Patient is a Heavy Alcoholic Drinker" then 'You previously received counseling about alcohol consumption. Moderating alcohol consumption has proven benefits to heart health and reducing blood pressure. Please consider readdressing this goal.'
   else ''
 
 define "Alcohol Suggestions":
   if exists "Alcohol Goals Needing Update" then '[' + Combine("Update Goals String"("Alcohol Goals Needing Update"), ',') + ']'
   else if exists "Alcohol Goals" then '[ { "id": "goal-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"View/Edit Goals", "url":"/goals"}] } ]'
-  else if "Patient is a Heavy Alcoholic Drinker" and "Last Alcohol Counseling Procedure" is null then '[
+  else if "Needs Alcohol Counseling" then '[
     {"id": "alcohol-counseling", "label": "Alcohol Counseling", "type": "counseling-link", "references": {"system":"http://snomed.info/sct", "code":"24165007"}, "actions": [ {"label":"Learn more about alcohol moderation.", "url":"/counseling/alcohol-moderation"}]},
     {"id": "' + "Unique Goal Id"('alcohol-goal-') + '", "type":"goal", "references":{"system":"https://coach.ohsu.edu", "code":"alcohol-moderation", "display": "Alcohol Moderation"}, "label": "Set an Alcohol Moderation Goal", "actions": [{"label":"Reduce my alcohol consumption to [quantity] drinks per [time period]."}] }
   ]'
@@ -316,9 +316,11 @@ define "Tobacco Cessation Goals Needing Update":
   ("Tobacco Cessation Goals") Goal
     where First(Goal.target).due.value same day or before Today()
 
-// All observations pertaining to smoking
+// Smoking Observations less than 5 years old (Issue #113)
+// For smoking, we check when the observation ends in case the practioner has documented the start date as when the patient started smoking
 define "Smoking Status Observations":
-  (Common.QualifiedObservation(["Observation": "Tobacco Smoking Status [Current] (Social History) (LOINC)"]))
+  (Common.QualifiedObservation(["Observation": "Tobacco Smoking Status [Current] (Social History) (LOINC)"])) SmokingObserved
+  where Common."Normalize Interval"(SmokingObserved.effective) ends 60 months or less before Today()
 
 // All observations indicating patient is a smoker
 define "Observations Indicating Patient is a Smoker":
@@ -349,11 +351,12 @@ define "Weight Loss Goals Needing Update":
   ("Weight Loss Goals") Goal
     where First(Goal.target).due.value same day or before Today()
 
-// Is patient's BMI > 25?
+// All BMI observations for previous 2 years (Issue #113)
 define "Observations Specifying Patient BMI":
   (Common.QualifiedObservation(["Observation": "BMI Ratio"])) BMIObserved
     where BMIObserved.value is Quantity
-      and Common.WithUnit(BMIObserved.value, 'kg/m2')
+      and Common.WithUnit(BMIObserved.value, 'kg/m2') and
+      Common."Normalize Interval"(BMIObserved.effective) starts 24 months or less before Today()
 
 define "Most Recent Patient BMI":
   Last(
@@ -374,10 +377,12 @@ define "Alcohol Goals Needing Update":
   ("Alcohol Goals") Goal
     where First(Goal.target).due.value same day or before Today()
 
-// Does patient drink heavily?
+// Get observations from the last 5 years reporting number of drinks per day (Issue #113)
+// We check when the observation ends in case the practioner has documented the start date as when the patient started drinking that amount
 define "Observations Measuring Amount of Alcoholic Drinks Patient has per Drinking Day":
   (Common.QualifiedObservation(["Observation": "Average Number of Drinks per Drinking Day"])) DrinksPerDay
-    where DrinksPerDay.value is Quantity
+    where Common."Normalize Interval"(DrinksPerDay.effective) ends 60 months or less before Today() and
+      DrinksPerDay.value is Quantity
       and Common.WithUnit(DrinksPerDay.value, 'Drinks/Day')
 
 define "Most Recent Patient Drinking Observation":
@@ -390,9 +395,11 @@ define "Heavy Daily Drinker":
   if Patient.gender = 'male' then 3.0
   else 2.0
 
+// Get Conditions for Alcohol Abuse Disorder
 define "Condition Indicating Alcohol Abuse Disorder":
   Common."Conditions" Problem
-    where Problem.code in "Alcohol Abuse Disorder" and end of Common."Prevalence Period"(Problem) >= Today()
+    where Problem.code in "Alcohol Abuse Disorder" and
+    Common."Is Valid Prevalence Period"(Problem)
 
 define "Patient is a Heavy Alcoholic Drinker":
   if not "In Population" then
@@ -441,6 +448,12 @@ define "Last Nutrition Counseling Procedure":
 define "Last Physical Activity Counseling Procedure":
   "Last Counseling Procedure"("Procedures" Procedure
     where Procedure.code in "Physical Activity Recommendations")
+
+define "Needs Alcohol Counseling":
+  "Patient is a Heavy Alcoholic Drinker" and not Common."Procedure Occurred In Last 2 Years"("Last Alcohol Counseling Procedure")
+
+define "Needs Smoking Counseling":
+  "Patient is Currently a Smoker" and not Common."Procedure Occurred In Last 2 Years"("Last Smoking Counseling Procedure")
 
 /* Action Conditionals defined in Plan Definition */
 define "Patient Smoking Goals Action Path":

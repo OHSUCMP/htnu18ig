@@ -85,7 +85,7 @@
     "label": "Actions:",
     "actions": [
         {"label":"Contact your care provider", "url":"/contact"},
-        {"label":"Enter more Blood Pressure readings", "url":"/bp-readings"}
+        {"label":"Enter more Blood Pressure readings", "url":"/vitals"}
     ]
 }]</pre>
 

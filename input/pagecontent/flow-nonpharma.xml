@@ -48,90 +48,72 @@
 
     <figure>
         <img height="400" src="flow-tobacco-subworkflow.png" alt="Tobacco Cessation Sub-Workflow diagram"/>
-        <figcaption>The tool checks to see if the patient currently smokes. If the patient does, this workflow will activate. If the patient does not smoke or has quit smoking, this workflow will not activate.</figcaption>
     </figure>
 
-    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+    <p>The tool checks to see if the patient has an active smoking goal or is considered a current smoker (most recent smoking observation was within the last 5 years). If the patient does not smoke or has quit smoking and has no active goal, this workflow will not activate.</p>
 
-    <p>Once this sub-workflow has completed, the weight loss sub-workflow will run.</p>
+    <p>Links:
+      <ul>
+          <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/smoking-high-blood-pressure-and-your-health">AHA: Smoking, High Blood Pressure and Your Health</a></li>
+      </ul>
+    </p>
 
-    <a name="links2" />
-    <h3>Links</h3>
-
-    <ul>
-        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/smoking-high-blood-pressure-and-your-health">AHA: Smoking, High Blood Pressure and Your Health</a></li>
-    </ul>
 
     <a name="weight_loss" />
     <h3>Weight loss (according to BMI)</h3>
 
     <figure>
         <img height="400" src="flow-bmi-subworkflow.png" alt="Weight Loss Sub-Workflow diagram"/>
-        <figcaption>The tool checks the patient’s BMI. If the patient’s BMI is above 25, this workflow will activate.</figcaption>
     </figure>
 
-    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+    <p>If the patient has any weight loss goals or their most recent BMI in the previous 2 years is above 25, this workflow will activate.</p>
 
-    <p>Once this sub-workflow has completed, the alcohol use sub-workflow will run.</p>
-
-    <a name="links3" />
-    <h3>Links</h3>
-
-    <ul>
-        <li><a href="https://uhs.umich.edu/hypertension">University of Michigan: Hypertension</a></li>
-        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure">AHA: Changes You Can Make to Manage High Blood Pressure</a></li>
-    </ul>
+    <p>Links:
+      <ul>
+          <li><a href="https://uhs.umich.edu/hypertension">University of Michigan: Hypertension</a></li>
+          <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure">AHA: Changes You Can Make to Manage High Blood Pressure</a></li>
+      </ul>
+    </p>
 
     <a name="alcohol_moderation" />
     <h3>Alcohol moderation</h3>
 
     <figure>
         <img height="400" src="flow-alcohol-subworkflow.png" alt="Alcohol Moderation Sub-Workflow diagram"/>
-        <figcaption>The tool checks whether a patient is classified as a heavy drinker. Heavy drinking is defined as consuming 8+ drinks per week for women or 15+ drinks per week for men.</figcaption>
     </figure>
 
-    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+    <p>This workflow is activated if the patient has a current goal to reduce drinking or the patient is classified as a heavy drinker. Heavy drinking is defined as consuming 2+ drinks/day for women and 3+ drinks/day for men or having an alcohol abuse disorder. Observations of drink frequency older than 5 years are disregarded.</p>
 
-    <p>Once this sub-workflow has completed, the physical activity sub-workflow will run.</p>
-
-    <a name="links4" />
-    <h3>Links</h3>
-
-    <ul>
-        <li><a href="https://www.cdc.gov/alcohol/faqs.htm">CDC FAQ on Alcohol</a></li>
-        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/limiting-alcohol-to-manage-high-blood-pressure">AHA: Limiting Alcohol to Manage High Blood Pressure</a></li>
-    </ul>
+    <p>Links:
+      <ul>
+          <li><a href="https://www.cdc.gov/alcohol/faqs.htm">CDC FAQ on Alcohol</a></li>
+          <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/limiting-alcohol-to-manage-high-blood-pressure">AHA: Limiting Alcohol to Manage High Blood Pressure</a></li>
+      </ul>
+    </p>
 
     <a name="physical_activity" />
     <h3>Physical activity</h3>
 
     <figure>
         <img height="400" src="flow-activity-subworkflow.png" alt="Activity Sub-Workflow Logic"/>
-        <figcaption>The tool does not check to see if the patient needs to engage in physical activity. Instead, it presents physical activity as a potential goal to all users. This allows patients and care teams to implement physical activity goals if and as appropriate to patient lifestyle and priorities for care.</figcaption>
     </figure>
 
-    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
+    <p>The tool does not check to see if the patient needs to engage in physical activity. Instead, it presents physical activity as a potential goal to all users. This allows patients and care teams to implement physical activity goals if and as appropriate to patient lifestyle and priorities for care.</p>
 
-    <p>Once this sub-workflow has completed, the nutrition sub-workflow will run.</p>
-
-    <a name="links5" />
-    <h3>Links</h3>
-
-    <ul>
-        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure">AHA: Getting Active to Control your High Blood Pressure</a></li>
-        <li><a href="https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines">Health.gov: Current Physical Activity Guidelines</a></li>
-        <li><a href="https://www.cdc.gov/physicalactivity/index.html">CDC: Physical Activity Index</a></li>
-    </ul>
+    <p>Links:
+      <ul>
+          <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure">AHA: Getting Active to Control your High Blood Pressure</a></li>
+          <li><a href="https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines">Health.gov: Current Physical Activity Guidelines</a></li>
+          <li><a href="https://www.cdc.gov/physicalactivity/index.html">CDC: Physical Activity Index</a></li>
+      </ul>
+    </p>
 
     <a name="dietary_changes" />
     <h3>Dietary changes</h3>
 
     <figure>
         <img height="400" src="flow-nutrition-subworkflow.png" alt="Nutrition Sub-Workflow Logic"/>
-        <figcaption>The tool does not check to see if the patient needs to adjust their diet. Instead, it presents dietary change recommendations as potential goals to all users. This allows patients and care teams to implement dietary change goals if and as appropriate to patient lifestyle and priorities for care.</figcaption>
     </figure>
 
-    <p>If the patient has an active goal within this sub-workflow, the tool will check to see if the completion date of the goal has arrived or passed. If it has, the tool will request that the patient update the goal by marking it as complete or incomplete. They may also set a new goal in this category. If the completion date has not yet arrived, the tool will display the current goal to the patient. The patient may choose to update a goal prior to the completion date selected.</p>
-
-    <p>Once this sub-workflow has completed, the tool will return to the main non-pharmacologic workflow.</p>
+    <p>The tool does not check to see if the patient needs to adjust their diet. Instead, it presents dietary change recommendations as potential goals to all users. This allows patients and care teams to implement dietary change goals if and as appropriate to patient lifestyle and priorities for care.</p>
 </div>

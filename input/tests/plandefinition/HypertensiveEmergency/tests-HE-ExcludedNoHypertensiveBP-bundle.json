@@ -4,6 +4,23 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
+      "resourceType": "Patient",
+      "id": "HE-ExcludedNoHypertensiveBP",
+      "active": true,
+      "name": [ {
+        "text": "Excluded No Hypertensive BP",
+        "family": "NoHypertensiveBP",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1993-10-14"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/HE-ExcludedNoHypertensiveBP"
+    }
+  }, {
+    "resource": {
       "resourceType": "Observation",
       "id": "observation-HE-ExcludedNoHypertensiveBP-1",
       "extension": [ {
@@ -141,23 +158,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-HE-ExcludedNoHypertensiveBP-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Patient",
-      "id": "HE-ExcludedNoHypertensiveBP",
-      "active": true,
-      "name": [ {
-        "text": "Excluded No Hypertensive BP",
-        "family": "NoHypertensiveBP",
-        "given": [ "Excluded" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1993-10-14"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/HE-ExcludedNoHypertensiveBP"
     }
   } ]
 }

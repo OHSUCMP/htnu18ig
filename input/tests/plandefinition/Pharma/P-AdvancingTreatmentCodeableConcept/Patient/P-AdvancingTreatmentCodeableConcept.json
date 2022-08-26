@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "P-AdvancingTreatmentCodeableConcept",
+  "active": true,
+  "name": [
+    {
+      "text": "Advancing Treatment Codeable Concept",
+      "family": "Advancing Treamtnet",
+      "given": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1983-07-07"
+}

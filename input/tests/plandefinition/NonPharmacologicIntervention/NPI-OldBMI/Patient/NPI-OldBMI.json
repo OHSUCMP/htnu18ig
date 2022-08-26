@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-OldBMI",
+  "active": true,
+  "name": [
+    {
+      "text": "Old BMI",
+      "family": "Old",
+      "given": [
+        "BMI"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1984-08-09"
+}

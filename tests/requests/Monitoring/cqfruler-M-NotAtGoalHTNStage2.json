@@ -2,7 +2,7 @@
   "hookInstance": "test",
   "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
   "hook": "patient-view",
-  "applyCql": true,
+  "applyCql": false,
   "context": {
     "userId": "Practitioner/example",
     "patientId": "M-NotAtGoalHTNStage2"

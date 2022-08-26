@@ -2,7 +2,7 @@
   "hookInstance": "test",
   "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
   "hook": "patient-view",
-  "applyCql": true,
+  "applyCql": false,
   "context": {
     "userId": "Practitioner/example",
     "patientId": "NPI-ActivityReminder"
@@ -22,7 +22,7 @@
               "id": "procedure-NPI-ActivityReminder-1",
               "note": [
                 {
-                  "text": "The patient had physical activity counseling related to an observation on a BMI > 25"
+                  "text": "The patient had physical activity counseling related to an observation on a BMI > 25. This code also qualifies for weight loss counseling, but the observation and counseling is more than 2 years old."
                 }
               ],
               "status": "completed",

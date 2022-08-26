@@ -4,6 +4,23 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
+      "resourceType": "Patient",
+      "id": "HE-HypertensiveEmergencyEffective",
+      "active": true,
+      "name": [ {
+        "text": "Hypertensive Emergency Effective",
+        "family": "Effective",
+        "given": [ "Hypertensive Emergency" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1963-07-01"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/HE-HypertensiveEmergencyEffective"
+    }
+  }, {
+    "resource": {
       "resourceType": "Observation",
       "id": "observation-HE-HypertensiveEmergencyEffective-1",
       "extension": [ {
@@ -102,7 +119,7 @@
       "subject": {
         "reference": "Patient/HE-HypertensiveEmergencyEffective"
       },
-      "effectiveDateTime": "2021-09-20T15:16:21-05:00",
+      "effectiveDateTime": "2022-08-10T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -141,23 +158,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-HE-HypertensiveEmergencyEffective-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Patient",
-      "id": "HE-HypertensiveEmergencyEffective",
-      "active": true,
-      "name": [ {
-        "text": "Hypertensive Emergency Effective",
-        "family": "Effective",
-        "given": [ "Hypertensive Emergency" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1963-07-01"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/HE-HypertensiveEmergencyEffective"
     }
   } ]
 }

@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-OldAlcoholObservation",
+  "active": true,
+  "name": [
+    {
+      "text": "Old Alcohol Observation",
+      "family": "Old",
+      "given": [
+        "AlcoholObservation"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1966-03-27"
+}

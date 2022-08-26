@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "NPI-OldSmokingCounseling",
+  "active": true,
+  "name": [
+    {
+      "text": "Old Smoking Counseling",
+      "family": "Old",
+      "given": [
+        "SmokingCounseling"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1954-07-14"
+}
