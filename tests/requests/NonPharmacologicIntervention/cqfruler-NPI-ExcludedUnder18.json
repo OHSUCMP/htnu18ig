@@ -66,8 +66,8 @@
               "subject": {
                 "reference": "Patient/NPI-ExcludedUnder18"
               },
-              "onsetDateTime": "2015-01-28T15:16:21-05:00",
-              "recordedDate": "2015-01-28T15:16:21-05:00"
+              "onsetDateTime": "2015-02-21T15:16:21-05:00",
+              "recordedDate": "2015-02-21T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -89,7 +89,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "2006-04-07"
+              "birthDate": "2006-05-01"
             },
             "request": {
               "method": "PUT",

@@ -66,8 +66,8 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
-              "onsetDateTime": "2015-01-28T15:16:21-05:00",
-              "recordedDate": "2015-01-28T15:16:21-05:00"
+              "onsetDateTime": "2015-02-21T15:16:21-05:00",
+              "recordedDate": "2015-02-21T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -89,7 +89,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1979-11-02"
+              "birthDate": "1979-11-26"
             },
             "request": {
               "method": "PUT",
@@ -139,7 +139,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
-              "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -227,7 +227,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
-              "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-06-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -295,10 +295,10 @@
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
               "effectivePeriod": {
-                "start": "2001-09-12",
-                "end": "2019-01-05"
+                "start": "2001-10-06",
+                "end": "2019-01-29"
               },
-              "issued": "2019-01-05T00:00:00-07:00",
+              "issued": "2019-01-29T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -365,8 +365,8 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
-              "effectiveDateTime": "2020-03-02T00:17:51-04:00",
-              "issued": "2020-03-02T00:17:51.943-04:00",
+              "effectiveDateTime": "2020-03-26T00:17:51-04:00",
+              "issued": "2020-03-26T00:17:51.943-04:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -426,7 +426,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
-              "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-02-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -514,7 +514,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
-              "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -602,7 +602,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
-              "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -690,7 +690,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationQuit"
               },
-              "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -750,7 +750,7 @@
                   }
                 ]
               },
-              "startDate": "2021-07-12",
+              "startDate": "2021-08-05",
               "description": {
                 "text": "Goal of 135/85"
               },

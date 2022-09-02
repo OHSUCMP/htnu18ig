@@ -67,8 +67,8 @@
               "subject": {
                 "reference": "Patient/H-ExcludedPregnantEncounterDiagnosis"
               },
-              "onsetDateTime": "2018-12-11T19:02:10-04:00",
-              "recordedDate": "2018-12-11T19:02:10-04:00"
+              "onsetDateTime": "2019-01-04T19:02:10-04:00",
+              "recordedDate": "2019-01-04T19:02:10-04:00"
             },
             "request": {
               "method": "PUT",
@@ -90,7 +90,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1987-12-09"
+              "birthDate": "1988-01-02"
             },
             "request": {
               "method": "PUT",
@@ -140,7 +140,7 @@
               "subject": {
                 "reference": "Patient/H-ExcludedPregnantEncounterDiagnosis"
               },
-              "effectiveDateTime": "2016-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2016-02-27T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -228,7 +228,7 @@
               "subject": {
                 "reference": "Patient/H-ExcludedPregnantEncounterDiagnosis"
               },
-              "effectiveDateTime": "2019-02-06T15:16:21-05:00",
+              "effectiveDateTime": "2019-03-02T15:16:21-05:00",
               "component": [
                 {
                   "code": {

@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/NPI-OldSmokingObservation"
       },
-      "onsetDateTime": "2015-01-28T15:16:21-05:00",
-      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "onsetDateTime": "2015-02-21T15:16:21-05:00",
+      "recordedDate": "2015-02-21T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -58,7 +58,7 @@
         "given": [ "SmokingObservation" ]
       } ],
       "gender": "female",
-      "birthDate": "1959-01-29"
+      "birthDate": "1959-02-22"
     },
     "request": {
       "method": "PUT",
@@ -94,7 +94,7 @@
       "subject": {
         "reference": "Patient/NPI-OldSmokingObservation"
       },
-      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-04-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -164,7 +164,7 @@
       "subject": {
         "reference": "Patient/NPI-OldSmokingObservation"
       },
-      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -234,7 +234,7 @@
       "subject": {
         "reference": "Patient/NPI-OldSmokingObservation"
       },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-02-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -304,7 +304,7 @@
       "subject": {
         "reference": "Patient/NPI-OldSmokingObservation"
       },
-      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -360,10 +360,10 @@
         "reference": "Patient/NPI-OldSmokingObservation"
       },
       "effectivePeriod": {
-        "start": "1977-08-18",
-        "end": "2017-03-02"
+        "start": "1977-09-11",
+        "end": "2017-03-26"
       },
-      "issued": "2017-03-02T00:00:00-07:00",
+      "issued": "2017-03-26T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -422,7 +422,7 @@
       "subject": {
         "reference": "Patient/NPI-OldSmokingObservation"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-06-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -492,7 +492,7 @@
       "subject": {
         "reference": "Patient/NPI-OldSmokingObservation"
       },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -551,7 +551,7 @@
       "subject": {
         "reference": "Patient/NPI-OldSmokingObservation"
       },
-      "startDate": "2021-07-12",
+      "startDate": "2021-08-05",
       "target": [ {
         "measure": {
           "coding": [ {

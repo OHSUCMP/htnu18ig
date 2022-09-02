@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "performedDateTime": "2021-05-30T11:00:00-06:00",
+      "performedDateTime": "2021-06-23T11:00:00-06:00",
       "note": [ {
         "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "onsetDateTime": "2015-01-28T15:16:21-05:00",
-      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "onsetDateTime": "2015-02-21T15:16:21-05:00",
+      "recordedDate": "2015-02-21T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -107,8 +107,8 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "onsetDateTime": "2021-09-15T15:16:21-05:00",
-      "recordedDate": "2021-09-15T15:16:21-05:00",
+      "onsetDateTime": "2021-10-09T15:16:21-05:00",
+      "recordedDate": "2021-10-09T15:16:21-05:00",
       "note": [ {
         "text": "Indicates An Adverse Reaction that Could be Related to Medications"
       } ]
@@ -152,8 +152,8 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "onsetDateTime": "2021-09-17T15:16:21-05:00",
-      "recordedDate": "2021-09-17T15:16:21-05:00",
+      "onsetDateTime": "2021-10-11T15:16:21-05:00",
+      "recordedDate": "2021-10-11T15:16:21-05:00",
       "note": [ {
         "text": "Indicates An Adverse Reaction that Could be Related to Medications"
       } ]
@@ -173,7 +173,7 @@
         "given": [ "Treated And Untreated" ]
       } ],
       "gender": "male",
-      "birthDate": "1992-07-17"
+      "birthDate": "1992-08-10"
     },
     "request": {
       "method": "PUT",
@@ -198,9 +198,9 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "date": "2021-09-15T07:25:02-07:00",
-      "detected": "2021-09-15T07:25:02-07:00",
-      "recordedDate": "2021-09-15T13:16:21-07:00",
+      "date": "2021-10-09T07:25:02-07:00",
+      "detected": "2021-10-09T07:25:02-07:00",
+      "recordedDate": "2021-10-09T13:16:21-07:00",
       "resultingCondition": [ {
         "reference": "Condition/condition-AE-TreatedAndUntreated-2"
       } ],
@@ -234,9 +234,9 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "date": "2021-09-17T07:25:02-07:00",
-      "detected": "2021-09-17T07:25:02-07:00",
-      "recordedDate": "2021-09-17T13:16:21-07:00",
+      "date": "2021-10-11T07:25:02-07:00",
+      "detected": "2021-10-11T07:25:02-07:00",
+      "recordedDate": "2021-10-11T13:16:21-07:00",
       "resultingCondition": [ {
         "reference": "Condition/condition-AE-TreatedAndUntreated-3"
       } ],
@@ -281,7 +281,7 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-02-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -351,7 +351,7 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -421,7 +421,7 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-04-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -491,7 +491,7 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -561,7 +561,7 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-06-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -631,7 +631,7 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -687,8 +687,8 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "effectiveDateTime": "2021-05-27T10:00:00-07:00",
-      "issued": "2021-05-27T00:00:00-07:00",
+      "effectiveDateTime": "2021-06-20T10:00:00-07:00",
+      "issued": "2021-06-20T00:00:00-07:00",
       "valueQuantity": {
         "value": 4.1,
         "unit": "Drinks/Day"
@@ -720,7 +720,7 @@
       "subject": {
         "reference": "Patient/AE-TreatedAndUntreated"
       },
-      "startDate": "2021-07-12",
+      "startDate": "2021-08-05",
       "target": [ {
         "measure": {
           "coding": [ {
