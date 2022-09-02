@@ -66,8 +66,8 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryCounseling"
               },
-              "onsetDateTime": "2015-01-28T15:16:21-05:00",
-              "recordedDate": "2015-01-28T15:16:21-05:00"
+              "onsetDateTime": "2015-02-21T15:16:21-05:00",
+              "recordedDate": "2015-02-21T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -89,7 +89,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1994-07-03"
+              "birthDate": "1994-07-27"
             },
             "request": {
               "method": "PUT",
@@ -139,7 +139,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryCounseling"
               },
-              "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-02-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -227,7 +227,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryCounseling"
               },
-              "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -315,7 +315,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryCounseling"
               },
-              "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-06-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -403,7 +403,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryCounseling"
               },
-              "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -491,7 +491,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryCounseling"
               },
-              "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -579,7 +579,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryCounseling"
               },
-              "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -639,7 +639,7 @@
                   }
                 ]
               },
-              "startDate": "2021-07-12",
+              "startDate": "2021-08-05",
               "description": {
                 "text": "Goal of 130/85"
               },

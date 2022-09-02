@@ -48,6 +48,6 @@
   "subject": {
     "reference": "Patient/NPI-ExcludedPregnant"
   },
-  "onsetDateTime": "2021-08-18T19:02:10-04:00",
-  "recordedDate": "2021-08-18T19:02:10-04:00"
+  "onsetDateTime": "2021-09-11T19:02:10-04:00",
+  "recordedDate": "2021-09-11T19:02:10-04:00"
 }
