@@ -20,7 +20,7 @@ last_valid_date = datetime.datetime.strptime(date_time, format).date()
 today = datetime.date.today()
 days_to_add = days_between(last_valid_date, today)
 
-if (days_to_add >= 14):
+if (days_to_add >= 1):
     directory = os.path.join(root_directory, "input/tests/plandefinition")
 
     for root, dirs, files in os.walk(directory, topdown=False):
@@ -40,4 +40,4 @@ if (days_to_add >= 14):
     with open(os.path.join(root_directory, "tests/requests/lastValidDate.txt"), 'w') as f:
         f.write((last_valid_date + datetime.timedelta(days=days_to_add)).strftime(format))
 else:
-    print("This script was run in the last 14 days. Dates do not need updating yet.")
+    print("This script was run today. Dates do not need updating yet.")

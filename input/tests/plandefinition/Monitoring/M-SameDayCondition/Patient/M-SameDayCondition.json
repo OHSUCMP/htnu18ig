@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-SameDayCondition",
+  "active": true,
+  "name": [
+    {
+      "text": "Same Day Condition",
+      "family": "Condition",
+      "given": [
+        "Same Day"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1976-04-14"
+}
