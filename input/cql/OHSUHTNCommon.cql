@@ -269,19 +269,19 @@ define function "Normalize Abatement"(condition Condition):
 
 /*
 @description: returns TRUE if the prevalence period is specified and encompasses today.  considers clinical status
-              as a surrogate in the absence of prevalence period components (onset, abatement)
+              as a surrogate in the absence of prevalence period components (onset, abatement).
 */
 define function "Is Valid Prevalence Period"(condition Condition):
   if condition.onset is not null and condition.abatement is not null then
-    start of "Normalize Interval"(condition.onset) <= Today() and end of "Normalize Abatement"(condition) >= Today()
+    start of "Normalize Interval"(condition.onset) <= Today() + 1 day and end of "Normalize Abatement"(condition) >= Today() + 1 day
   else if condition.clinicalStatus is null
     or condition.clinicalStatus ~ "active"
     or condition.clinicalStatus ~ "recurrence"
     or condition.clinicalStatus ~ "relapse" then
       if condition.onset is not null then
-        start of "Normalize Interval"(condition.onset) <= Today()
+        start of "Normalize Interval"(condition.onset) <= Today() + 1 day
       else if condition.abatement is not null then
-        end of "Normalize Abatement"(condition) >= Today()
+        end of "Normalize Abatement"(condition) >= Today() + 1 day
       else
         true
   else
