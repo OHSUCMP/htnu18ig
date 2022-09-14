@@ -31,8 +31,8 @@
   "subject": {
     "reference": "Patient/NPI-WeightLossGoalExists"
   },
-  "effectiveDateTime": "2020-12-15T03:14:57-05:00",
-  "issued": "2020-12-15T03:14:57.429-05:00",
+  "effectiveDateTime": "2021-01-08T03:14:57-05:00",
+  "issued": "2021-01-08T03:14:57.429-05:00",
   "valueQuantity": {
     "value": 27.690689692990766,
     "unit": "kg/m2",

@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "onsetDateTime": "2015-01-28T15:16:21-05:00",
-      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "onsetDateTime": "2015-02-21T15:16:21-05:00",
+      "recordedDate": "2015-02-21T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -58,7 +58,7 @@
         "given": [ "All" ]
       } ],
       "gender": "male",
-      "birthDate": "1998-09-02"
+      "birthDate": "1998-09-26"
     },
     "request": {
       "method": "PUT",
@@ -94,7 +94,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-02-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -164,7 +164,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-06-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -234,7 +234,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -304,7 +304,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -360,10 +360,10 @@
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
       "effectivePeriod": {
-        "start": "2018-08-18",
-        "end": "2022-05-30"
+        "start": "2018-09-11",
+        "end": "2022-06-23"
       },
-      "issued": "2019-05-30T00:00:00-07:00",
+      "issued": "2019-06-23T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -415,8 +415,8 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2022-06-15T03:14:57-05:00",
-      "issued": "2022-06-15T03:14:57.429-05:00",
+      "effectiveDateTime": "2022-07-09T03:14:57-05:00",
+      "issued": "2022-07-09T03:14:57.429-05:00",
       "valueQuantity": {
         "value": 27.690689692990766,
         "unit": "kg/m2",
@@ -447,8 +447,8 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2022-05-27T10:00:00-07:00",
-      "issued": "2022-05-27T00:00:00-07:00",
+      "effectiveDateTime": "2022-06-20T10:00:00-07:00",
+      "issued": "2022-06-20T00:00:00-07:00",
       "valueQuantity": {
         "value": 5.1,
         "unit": "Drinks/Day"
@@ -491,7 +491,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-04-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -561,7 +561,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -620,7 +620,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "startDate": "2021-07-12",
+      "startDate": "2021-08-05",
       "target": [ {
         "measure": {
           "coding": [ {

@@ -24,8 +24,8 @@
       }
     ]
   },
-  "startDate": "2021-07-12",
-  "statusDate": "2021-07-29",
+  "startDate": "2021-08-05",
+  "statusDate": "2021-08-22",
   "description": {
     "text": "Train for a 5K"
   },
@@ -34,7 +34,7 @@
   },
   "target": [
     {
-      "dueDate": "2021-09-29"
+      "dueDate": "2021-10-23"
     }
   ]
 }

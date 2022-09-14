@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "performedDateTime": "2021-01-05T11:00:00-06:00",
+      "performedDateTime": "2021-02-21T11:00:00-06:00",
       "note": [ {
         "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "onsetDateTime": "2015-01-28T15:16:21-05:00",
-      "recordedDate": "2015-01-28T15:16:21-05:00",
+      "onsetDateTime": "2015-03-16T15:16:21-05:00",
+      "recordedDate": "2015-03-16T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "CodeableConcept" ]
       } ],
       "gender": "male",
-      "birthDate": "1983-07-07"
+      "birthDate": "1983-08-23"
     },
     "request": {
       "method": "PUT",
@@ -148,7 +148,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "authoredOn": "2021-05-01T16:00:00-08:00",
+      "authoredOn": "2021-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Completed Request for Antihypertensive"
       } ]
@@ -170,7 +170,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "authoredOn": "2020-05-01T16:00:00-08:00",
+      "authoredOn": "2020-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Completed Request"
       } ]
@@ -192,7 +192,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "authoredOn": "2021-05-01T16:00:00-08:00",
+      "authoredOn": "2021-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Medication - Not an Antihypertensive"
       } ]
@@ -218,7 +218,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "authoredOn": "2021-05-01T16:00:00-08:00",
+      "authoredOn": "2021-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Antihypertensive Medication using CodeableConcept"
       } ]
@@ -243,10 +243,10 @@
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
       "effectivePeriod": {
-        "start": "2001-09-12",
-        "end": "2021-01-05"
+        "start": "2001-10-29",
+        "end": "2021-02-21"
       },
-      "issued": "2021-01-05T00:00:00-07:00",
+      "issued": "2021-02-21T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -305,7 +305,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-08-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -375,7 +375,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -445,7 +445,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "effectiveDateTime": "2021-04-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-06-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -515,7 +515,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "effectiveDateTime": "2021-03-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -585,7 +585,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "effectiveDateTime": "2021-07-20T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-05T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -655,7 +655,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "effectiveDateTime": "2021-02-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-04-14T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -725,7 +725,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "effectiveDateTime": "2021-01-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-03-14T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -784,7 +784,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
-      "startDate": "2021-01-12",
+      "startDate": "2021-02-28",
       "target": [ {
         "measure": {
           "coding": [ {
