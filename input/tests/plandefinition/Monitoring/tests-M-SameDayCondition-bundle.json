@@ -1,0 +1,231 @@
+{
+  "resourceType": "Bundle",
+  "id": "tests-M-SameDayCondition-bundle",
+  "type": "transaction",
+  "entry": [ {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "ey7gZHe09pwlqAqJAqwU-9uQYv4uIxDcJCNwUwaEXsyY3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "version": "4.0.0",
+          "code": "active",
+          "display": "Active"
+        } ],
+        "text": "Active"
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "version": "4.0.0",
+          "code": "confirmed",
+          "display": "Confirmed"
+        } ],
+        "text": "Confirmed"
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "problem-list-item",
+          "display": "Problem List Item"
+        } ],
+        "text": "Problem List Item"
+      }, {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "75310-3",
+          "display": "Health concerns"
+        }, {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+          "code": "health-concern",
+          "display": "Health Concern"
+        } ],
+        "text": "Health Concern"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "urn:oid:2.16.840.1.113883.6.90",
+          "code": "I10"
+        }, {
+          "system": "urn:oid:2.16.840.1.113883.6.96",
+          "code": "59621000"
+        } ],
+        "text": "Primary hypertension"
+      },
+      "subject": {
+        "reference": "Patient/M-SameDayCondition",
+        "display": "FHIR One, Hazel"
+      },
+      "onsetPeriod": {
+        "start": "2022-09-14",
+        "end": "2022-09-14"
+      },
+      "recordedDate": "2022-09-14",
+      "note": [ {
+        "text": "Indicates Diagnosis of Hypertension TODAY - (Change the date for this test to work)"
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/ey7gZHe09pwlqAqJAqwU-9uQYv4uIxDcJCNwUwaEXsyY3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "M-SameDayCondition",
+      "active": true,
+      "name": [ {
+        "text": "Same Day Condition",
+        "family": "Condition",
+        "given": [ "Same Day" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1976-04-14"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/M-SameDayCondition"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-M-SameDayCondition-2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/M-SameDayCondition"
+      },
+      "effectiveDateTime": "2021-03-02T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.80326035473048,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 137.26792615427489,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-M-SameDayCondition-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-M-SameDayCondition-1",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/M-SameDayCondition"
+      },
+      "effectiveDateTime": "2021-02-27T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 82.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 131.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-M-SameDayCondition-1"
+    }
+  } ]
+}
