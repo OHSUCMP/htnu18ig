@@ -19,9 +19,9 @@
     ],
     "text": "Brief loss of consciousness"
   },
-  "date": "2021-10-11T07:25:02-07:00",
-  "detected": "2021-10-11T07:25:02-07:00",
-  "recordedDate": "2021-10-11T13:16:21-07:00",
+  "date": "2021-12-09T07:25:02-07:00",
+  "detected": "2021-12-09T07:25:02-07:00",
+  "recordedDate": "2021-12-09T13:16:21-07:00",
   "resultingCondition": [
     {
       "reference": "Condition/condition-AE-TreatedAdverseEvent-3"
