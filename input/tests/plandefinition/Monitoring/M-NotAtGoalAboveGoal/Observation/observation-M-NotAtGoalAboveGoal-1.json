@@ -34,7 +34,7 @@
   "encounter": {
     "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-1"
   },
-  "effectiveDateTime": "2021-02-19T15:16:21-05:00",
+  "effectiveDateTime": "2021-04-19T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -48,7 +48,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 89.9349105113392,
+        "value": 89.93,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -66,7 +66,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 134.53332100989888,
+        "value": 134.53,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

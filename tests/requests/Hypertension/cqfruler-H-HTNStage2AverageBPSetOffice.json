@@ -41,8 +41,8 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
               "period": {
-                "start": "2021-02-19T00:00:00-04:00",
-                "end": "2021-02-19T23:59:59-04:00"
+                "start": "2021-04-19T00:00:00-04:00",
+                "end": "2021-04-19T23:59:59-04:00"
               }
             },
             "request": {
@@ -54,6 +54,40 @@
             "resource": {
               "resourceType": "Encounter",
               "id": "encounter-H-HTNStage2AverageBPSetOffice-4",
+              "status": "finished",
+              "class": {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "AMB"
+              },
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "162673000",
+                      "display": "General examination of patient (procedure)"
+                    }
+                  ],
+                  "text": "General examination of patient (procedure)"
+                }
+              ],
+              "subject": {
+                "reference": "Patient/H-HTNStage2AverageBPSetOffice"
+              },
+              "period": {
+                "start": "2021-07-18T00:00:00-04:00",
+                "end": "2021-07-18T23:59:59-04:00"
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Encounter",
+              "id": "encounter-H-HTNStage2AverageBPSetOffice-2",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -87,40 +121,6 @@
           {
             "resource": {
               "resourceType": "Encounter",
-              "id": "encounter-H-HTNStage2AverageBPSetOffice-2",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
-                    }
-                  ],
-                  "text": "General examination of patient (procedure)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/H-HTNStage2AverageBPSetOffice"
-              },
-              "period": {
-                "start": "2021-03-22T00:00:00-04:00",
-                "end": "2021-03-22T23:59:59-04:00"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Encounter",
               "id": "encounter-H-HTNStage2AverageBPSetOffice-3",
               "status": "finished",
               "class": {
@@ -143,8 +143,8 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
               "period": {
-                "start": "2021-04-19T00:00:00-04:00",
-                "end": "2021-04-19T23:59:59-04:00"
+                "start": "2021-06-17T00:00:00-04:00",
+                "end": "2021-06-17T23:59:59-04:00"
               }
             },
             "request": {
@@ -167,7 +167,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1957-02-13"
+              "birthDate": "1957-04-13"
             },
             "request": {
               "method": "PUT",
@@ -217,7 +217,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
-              "effectiveDateTime": "2021-07-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-09-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -299,7 +299,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-1"
               },
-              "effectiveDateTime": "2021-02-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -381,7 +381,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-3"
               },
-              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-06-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -463,7 +463,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-2"
               },
-              "effectiveDateTime": "2021-03-22T15:16:21-05:00",
+              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -551,7 +551,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
-              "effectiveDateTime": "2021-06-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-08-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -633,7 +633,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-4"
               },
-              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {

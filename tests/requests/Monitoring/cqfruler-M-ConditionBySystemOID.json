@@ -41,8 +41,8 @@
                 "reference": "Patient/M-ConditionBySystemOID"
               },
               "period": {
-                "start": "2021-04-19T00:00:00-04:00",
-                "end": "2021-04-19T23:59:59-04:00"
+                "start": "2021-06-17T00:00:00-04:00",
+                "end": "2021-06-17T23:59:59-04:00"
               }
             },
             "request": {
@@ -54,40 +54,6 @@
             "resource": {
               "resourceType": "Encounter",
               "id": "encounter-M-ConditionBySystemOID-2",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
-                    }
-                  ],
-                  "text": "General examination of patient (procedure)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/M-ConditionBySystemOID"
-              },
-              "period": {
-                "start": "2021-03-22T00:00:00-04:00",
-                "end": "2021-03-22T23:59:59-04:00"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Encounter",
-              "id": "encounter-M-ConditionBySystemOID-4",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -121,6 +87,40 @@
           {
             "resource": {
               "resourceType": "Encounter",
+              "id": "encounter-M-ConditionBySystemOID-4",
+              "status": "finished",
+              "class": {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "AMB"
+              },
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "162673000",
+                      "display": "General examination of patient (procedure)"
+                    }
+                  ],
+                  "text": "General examination of patient (procedure)"
+                }
+              ],
+              "subject": {
+                "reference": "Patient/M-ConditionBySystemOID"
+              },
+              "period": {
+                "start": "2021-07-18T00:00:00-04:00",
+                "end": "2021-07-18T23:59:59-04:00"
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Encounter",
               "id": "encounter-M-ConditionBySystemOID-1",
               "status": "finished",
               "class": {
@@ -143,8 +143,8 @@
                 "reference": "Patient/M-ConditionBySystemOID"
               },
               "period": {
-                "start": "2021-02-19T00:00:00-04:00",
-                "end": "2021-02-19T23:59:59-04:00"
+                "start": "2021-04-19T00:00:00-04:00",
+                "end": "2021-04-19T23:59:59-04:00"
               }
             },
             "request": {
@@ -202,8 +202,8 @@
               "subject": {
                 "reference": "Patient/M-ConditionBySystemOID"
               },
-              "onsetDateTime": "2015-02-21T15:16:21-05:00",
-              "recordedDate": "2015-02-21T15:16:21-05:00"
+              "onsetDateTime": "2015-04-21T15:16:21-05:00",
+              "recordedDate": "2015-04-21T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -225,7 +225,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1977-05-05"
+              "birthDate": "1977-07-03"
             },
             "request": {
               "method": "PUT",
@@ -269,7 +269,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-ConditionBySystemOID-1"
               },
-              "effectiveDateTime": "2021-02-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -357,7 +357,7 @@
               "subject": {
                 "reference": "Patient/M-ConditionBySystemOID"
               },
-              "effectiveDateTime": "2021-01-30T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-30T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -439,7 +439,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-ConditionBySystemOID-4"
               },
-              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -527,7 +527,7 @@
               "subject": {
                 "reference": "Patient/M-ConditionBySystemOID"
               },
-              "effectiveDateTime": "2021-06-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-08-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -609,7 +609,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-ConditionBySystemOID-2"
               },
-              "effectiveDateTime": "2021-03-22T15:16:21-05:00",
+              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -691,7 +691,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-ConditionBySystemOID-3"
               },
-              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-06-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -751,7 +751,7 @@
                   }
                 ]
               },
-              "startDate": "2021-08-05",
+              "startDate": "2021-10-03",
               "description": {
                 "text": "Goal of 135/85"
               },

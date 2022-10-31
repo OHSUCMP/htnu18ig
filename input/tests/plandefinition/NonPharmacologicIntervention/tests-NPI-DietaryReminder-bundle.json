@@ -19,7 +19,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "performedDateTime": "2019-06-22T11:00:00-06:00",
+      "performedDateTime": "2019-08-20T11:00:00-06:00",
       "reasonReference": [ {
         "reference": "Observation/observation-NPI-DietaryReminder-1"
       } ],
@@ -66,8 +66,8 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "onsetDateTime": "2015-02-21T15:16:21-05:00",
-      "recordedDate": "2015-02-21T15:16:21-05:00",
+      "onsetDateTime": "2015-04-21T15:16:21-05:00",
+      "recordedDate": "2015-04-21T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -87,7 +87,7 @@
         "given": [ "Dietary" ]
       } ],
       "gender": "male",
-      "birthDate": "1977-10-03"
+      "birthDate": "1977-12-01"
     },
     "request": {
       "method": "PUT",
@@ -123,7 +123,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "effectiveDateTime": "2021-07-20T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-17T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -193,7 +193,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "effectiveDateTime": "2021-02-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-04-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -263,7 +263,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "effectiveDateTime": "2021-04-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-06-17T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -333,7 +333,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "effectiveDateTime": "2021-03-22T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -403,7 +403,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "effectiveDateTime": "2021-06-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-08-17T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -473,7 +473,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "effectiveDateTime": "2021-05-20T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-18T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -532,7 +532,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
-      "startDate": "2021-08-05",
+      "startDate": "2021-10-03",
       "target": [ {
         "measure": {
           "coding": [ {

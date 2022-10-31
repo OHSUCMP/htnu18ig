@@ -48,6 +48,6 @@
   "subject": {
     "reference": "Patient/M-ExcludedPregnant"
   },
-  "onsetDateTime": "2019-01-04T19:02:10-04:00",
-  "recordedDate": "2019-01-04T19:02:10-04:00"
+  "onsetDateTime": "2019-03-04T19:02:10-04:00",
+  "recordedDate": "2019-03-04T19:02:10-04:00"
 }
