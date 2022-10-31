@@ -181,7 +181,7 @@ define "Test Get Most Recent BP Set":
       }
 
 define "Test All BP Last 2 Years":
-  Common."Blood Pressure Observations for Last 2 Years" BPs
+  Common."Blood Pressure Observations for Last 2 Years Descending" BPs
     return Tuple {
       "Observation ID": BPs.id,
       "Date": BPs.effective.end,
@@ -193,3 +193,6 @@ define "Test Get Average All BP Last 2 Years":
 
 define "Test Get Average Most Recent BP Set":
   Common."Avg BP"(Common."Most Recent BP Set")
+
+define "Home Blood Pressures":
+  Common."Home Blood Pressure Observations"

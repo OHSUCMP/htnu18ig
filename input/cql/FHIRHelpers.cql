@@ -93,9 +93,8 @@ define function ToCode(coding FHIR.Coding):
     else
         System.Code {
           code: coding.code.value,
-          system: coding.system.value,
-          version: coding.version.value,
-          display: coding.display.value
+          system: coding.system.value
+          // Deliberately omitting version/display so these aren't considered in comparisons
         }
 
 define function ToConcept(concept FHIR.CodeableConcept):
