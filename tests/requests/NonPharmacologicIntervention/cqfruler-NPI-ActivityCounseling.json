@@ -41,8 +41,8 @@
                 "reference": "Patient/NPI-ActivityCounseling"
               },
               "period": {
-                "start": "2021-03-22T00:00:00-04:00",
-                "end": "2021-03-22T23:59:59-04:00"
+                "start": "2021-05-20T00:00:00-04:00",
+                "end": "2021-05-20T23:59:59-04:00"
               }
             },
             "request": {
@@ -75,8 +75,8 @@
                 "reference": "Patient/NPI-ActivityCounseling"
               },
               "period": {
-                "start": "2021-04-19T00:00:00-04:00",
-                "end": "2021-04-19T23:59:59-04:00"
+                "start": "2021-06-17T00:00:00-04:00",
+                "end": "2021-06-17T23:59:59-04:00"
               }
             },
             "request": {
@@ -109,8 +109,8 @@
                 "reference": "Patient/NPI-ActivityCounseling"
               },
               "period": {
-                "start": "2021-05-20T00:00:00-04:00",
-                "end": "2021-05-20T23:59:59-04:00"
+                "start": "2021-07-18T00:00:00-04:00",
+                "end": "2021-07-18T23:59:59-04:00"
               }
             },
             "request": {
@@ -143,8 +143,8 @@
                 "reference": "Patient/NPI-ActivityCounseling"
               },
               "period": {
-                "start": "2021-02-19T00:00:00-04:00",
-                "end": "2021-02-19T23:59:59-04:00"
+                "start": "2021-04-19T00:00:00-04:00",
+                "end": "2021-04-19T23:59:59-04:00"
               }
             },
             "request": {
@@ -202,8 +202,8 @@
               "subject": {
                 "reference": "Patient/NPI-ActivityCounseling"
               },
-              "onsetDateTime": "2015-02-21T15:16:21-05:00",
-              "recordedDate": "2015-02-21T15:16:21-05:00"
+              "onsetDateTime": "2015-04-21T15:16:21-05:00",
+              "recordedDate": "2015-04-21T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -225,7 +225,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1987-03-24"
+              "birthDate": "1987-05-22"
             },
             "request": {
               "method": "PUT",
@@ -269,7 +269,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-NPI-ActivityCounseling-1"
               },
-              "effectiveDateTime": "2021-02-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -337,8 +337,8 @@
               "subject": {
                 "reference": "Patient/NPI-ActivityCounseling"
               },
-              "effectiveDateTime": "2021-06-20T10:00:00-07:00",
-              "issued": "2021-06-20T00:00:00-07:00",
+              "effectiveDateTime": "2021-08-18T10:00:00-07:00",
+              "issued": "2021-08-18T00:00:00-07:00",
               "valueQuantity": {
                 "value": 1.9,
                 "unit": "Drinks/Day"
@@ -386,7 +386,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-NPI-ActivityCounseling-4"
               },
-              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -468,7 +468,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-NPI-ActivityCounseling-3"
               },
-              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-06-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -550,7 +550,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-NPI-ActivityCounseling-2"
               },
-              "effectiveDateTime": "2021-03-22T15:16:21-05:00",
+              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -610,7 +610,7 @@
                   }
                 ]
               },
-              "startDate": "2021-08-05",
+              "startDate": "2021-10-03",
               "description": {
                 "text": "Goal of 130/80"
               },

@@ -39,7 +39,7 @@
               "subject": {
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
-              "performedDateTime": "2021-06-23T11:00:00-06:00"
+              "performedDateTime": "2021-08-21T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -96,8 +96,8 @@
               "subject": {
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
-              "onsetDateTime": "2015-02-21T15:16:21-05:00",
-              "recordedDate": "2015-02-21T15:16:21-05:00"
+              "onsetDateTime": "2015-04-21T15:16:21-05:00",
+              "recordedDate": "2015-04-21T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -119,7 +119,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1987-10-11"
+              "birthDate": "1987-12-09"
             },
             "request": {
               "method": "PUT",
@@ -169,7 +169,7 @@
               "subject": {
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
-              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-06-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -257,7 +257,7 @@
               "subject": {
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
-              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -345,7 +345,7 @@
               "subject": {
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
-              "effectiveDateTime": "2021-02-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -433,7 +433,7 @@
               "subject": {
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
-              "effectiveDateTime": "2021-03-22T15:16:21-05:00",
+              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -501,10 +501,10 @@
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
               "effectivePeriod": {
-                "start": "1999-10-11",
-                "end": "2020-03-26"
+                "start": "1999-12-09",
+                "end": "2020-05-24"
               },
-              "issued": "2020-03-26T00:00:00-07:00",
+              "issued": "2020-05-24T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -580,7 +580,7 @@
               "subject": {
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
-              "effectiveDateTime": "2021-06-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-08-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -668,7 +668,7 @@
               "subject": {
                 "reference": "Patient/NPI-BehaviorGoalExists"
               },
-              "effectiveDateTime": "2021-07-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-09-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -740,8 +740,8 @@
                   }
                 ]
               },
-              "startDate": "2021-08-05",
-              "statusDate": "2021-08-22",
+              "startDate": "2021-10-03",
+              "statusDate": "2021-10-20",
               "description": {
                 "text": "Reduce smoking by half"
               },
@@ -750,7 +750,7 @@
               },
               "target": [
                 {
-                  "dueDate": "2021-10-23"
+                  "dueDate": "2021-12-21"
                 }
               ]
             },

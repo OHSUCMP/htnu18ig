@@ -23,8 +23,8 @@
         "reference": "Patient/M-ConditionBySystemOID"
       },
       "period": {
-        "start": "2021-04-19T00:00:00-04:00",
-        "end": "2021-04-19T23:59:59-04:00"
+        "start": "2021-06-17T00:00:00-04:00",
+        "end": "2021-06-17T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/M-ConditionBySystemOID"
       },
       "period": {
-        "start": "2021-03-22T00:00:00-04:00",
-        "end": "2021-03-22T23:59:59-04:00"
+        "start": "2021-05-20T00:00:00-04:00",
+        "end": "2021-05-20T23:59:59-04:00"
       }
     },
     "request": {
@@ -81,8 +81,8 @@
         "reference": "Patient/M-ConditionBySystemOID"
       },
       "period": {
-        "start": "2021-05-20T00:00:00-04:00",
-        "end": "2021-05-20T23:59:59-04:00"
+        "start": "2021-07-18T00:00:00-04:00",
+        "end": "2021-07-18T23:59:59-04:00"
       }
     },
     "request": {
@@ -110,8 +110,8 @@
         "reference": "Patient/M-ConditionBySystemOID"
       },
       "period": {
-        "start": "2021-02-19T00:00:00-04:00",
-        "end": "2021-02-19T23:59:59-04:00"
+        "start": "2021-04-19T00:00:00-04:00",
+        "end": "2021-04-19T23:59:59-04:00"
       }
     },
     "request": {
@@ -153,8 +153,8 @@
       "subject": {
         "reference": "Patient/M-ConditionBySystemOID"
       },
-      "onsetDateTime": "2015-02-21T15:16:21-05:00",
-      "recordedDate": "2015-02-21T15:16:21-05:00",
+      "onsetDateTime": "2015-04-21T15:16:21-05:00",
+      "recordedDate": "2015-04-21T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension where System is defined using the OID for SNOMED"
       } ]
@@ -174,7 +174,7 @@
         "given": [ "Condition" ]
       } ],
       "gender": "male",
-      "birthDate": "1977-05-05"
+      "birthDate": "1977-07-03"
     },
     "request": {
       "method": "PUT",
@@ -206,7 +206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-ConditionBySystemOID-1"
       },
-      "effectiveDateTime": "2021-02-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-04-19T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -276,7 +276,7 @@
       "subject": {
         "reference": "Patient/M-ConditionBySystemOID"
       },
-      "effectiveDateTime": "2021-01-30T15:16:21-05:00",
+      "effectiveDateTime": "2021-03-30T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -342,7 +342,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-ConditionBySystemOID-4"
       },
-      "effectiveDateTime": "2021-05-20T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-18T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -412,7 +412,7 @@
       "subject": {
         "reference": "Patient/M-ConditionBySystemOID"
       },
-      "effectiveDateTime": "2021-06-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-08-17T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -478,7 +478,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-ConditionBySystemOID-2"
       },
-      "effectiveDateTime": "2021-03-22T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-20T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -544,7 +544,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-ConditionBySystemOID-3"
       },
-      "effectiveDateTime": "2021-04-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-06-17T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -603,7 +603,7 @@
       "subject": {
         "reference": "Patient/M-ConditionBySystemOID"
       },
-      "startDate": "2021-08-05",
+      "startDate": "2021-10-03",
       "target": [ {
         "measure": {
           "coding": [ {

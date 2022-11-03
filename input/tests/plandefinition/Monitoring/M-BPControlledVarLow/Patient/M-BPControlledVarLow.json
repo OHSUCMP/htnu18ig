@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-BPControlledVarLow",
+  "active": true,
+  "name": [
+    {
+      "text": "BP Controlled Var Low",
+      "family": "VarLow",
+      "given": [
+        "BP Controlled"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1968-03-28"
+}

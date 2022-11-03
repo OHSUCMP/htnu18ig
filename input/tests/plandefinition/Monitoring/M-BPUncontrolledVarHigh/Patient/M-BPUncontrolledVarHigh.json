@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-BPUncontrolledVarHigh",
+  "active": true,
+  "name": [
+    {
+      "text": "BP Uncontrolled Var High",
+      "family": "VarHigh",
+      "given": [
+        "BP Uncontrolled"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1971-06-15"
+}

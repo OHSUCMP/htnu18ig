@@ -371,7 +371,7 @@ define "HTN Crisis":
   "BP Within 14 days" and "HTN Crisis BP"({ "Most Recent BP Reading" }) is not null
 
 define "Blood Pressure Observations for Last 2 Years":
-  "Blood Pressure Observations" BP where "Normalize Interval"(BP.effective) starts 24 months or less before Today()
+  "Blood Pressure Observations" BP where Coalesce(start of "Normalize Interval"(BP.effective), BP.issued) + 24 months >= Today()
     sort by Coalesce(start of "Normalize Interval"(effective), issued)
 
 define "Blood Pressure Observations for Last 2 Years Descending":
