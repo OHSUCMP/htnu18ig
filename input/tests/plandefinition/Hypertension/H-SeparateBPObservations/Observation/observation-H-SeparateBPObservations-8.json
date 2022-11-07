@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-H-SeparateBPObservations-8",
+  "status": "final",
+  "note": [
+    {
+      "text": "Home Blood Pressure Reading - Distolic Only"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "264362003"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+      "coding": [
+          {
+              "system": "http://loinc.org",
+              "code": "8462-4"
+          }
+      ],
+      "text": "MyChart Entered Diastolic"
+  },
+  "subject": {
+    "reference": "Patient/H-SeparateBPObservations"
+  },
+  "effectiveDateTime": "2022-09-14T15:16:21-05:00",
+  "valueQuantity": {
+    "value": 85
+  }
+
+}

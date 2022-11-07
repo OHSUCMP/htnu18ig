@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-H-SeparateBPObservations-6",
+  "status": "final",
+  "note": [
+    {
+      "text": "Orphaned Home Blood Pressure Reading - Systolic Only"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "264362003"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+      "coding": [
+          {
+              "system": "http://loinc.org",
+              "code": "8480-6"
+          }
+      ],
+      "text": "MyChart Entered Systolic"
+  },
+  "subject": {
+    "reference": "Patient/H-SeparateBPObservations"
+  },
+  "effectiveDateTime": "2022-08-12T15:16:21-05:00",
+  "valueQuantity": {
+    "value": 165
+  }
+
+}
