@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-SeparateBPObservations",
+  "active": true,
+  "name": [
+    {
+      "text": "Separate BP Observations",
+      "family": "BP Observations",
+      "given": [
+        "Separate"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1991-06-14"
+}

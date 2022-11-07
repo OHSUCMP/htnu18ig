@@ -7,10 +7,6 @@ include OHSUHTNCommon version '0.1' called Common
 
 codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
-/* Inclusion */
-valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
-valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
-
 code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
 
 context Patient
@@ -152,41 +148,20 @@ define "Prescribe Monitoring to Confirm HTN":
   "In Population" and Common."Patient Has Potential HTN Stage 1 BP" and not "Consider HTN Stage 1"
 
 /* TESTS */
-define "Test Patient Age on BP Reading":
-  AgeInYearsAt(start of Common."Normalize Interval"(Common."Most Recent BP Reading".effective))
-
-define "Test Count All BP":
-  Count(Common."Blood Pressure Observations for Last 2 Years")
-
 define "Test Most Recent BP":
-  Common."Most Recent BP Reading" BP
-    return Tuple {
-      "ID": BP.id,
-      "Date": BP.effective.end,
-      "Systolic": singleton from (BP.component C where C.code in "Systolic blood pressure").value.value,
-      "Diastolic": singleton from (BP.component C where C.code in "Diastolic Blood Pressure").value.value
-    }
+  Common."Most Recent BP Reading"
 
 define "Test Get All BP Observation Resources":
-  (Common."Blood Pressure Observations" BP sort by Coalesce(issued, start of Common."Normalize Interval"(effective))) BP
-    return Tuple {
-      "Observation ID": BP.id
-      }
+  Common."All BP Observations" BP
 
 define "Test Get Most Recent BP Set":
   Common."Most Recent BP Set" BPSet
-    return Tuple {
-      "Observation ID": BPSet.id,
-      "Encounter Reference": BPSet.encounter.reference
-      }
+
+define "Test Average BP of Set":
+  Common."Avg BP"(Common."Most Recent BP Set")
 
 define "Test All BP Last 2 Years":
-  Common."Blood Pressure Observations for Last 2 Years Descending" BPs
-    return Tuple {
-      "Observation ID": BPs.id,
-      "Date": BPs.effective.end,
-      "Encounter Reference": BPs.encounter.reference
-      }
+  Common."Blood Pressure Observations for Last 2 Years Descending"
 
 define "Test Get Average All BP Last 2 Years":
   Common."Avg BP"(Common."Blood Pressure Observations for Last 2 Years")
@@ -196,3 +171,6 @@ define "Test Get Average Most Recent BP Set":
 
 define "Home Blood Pressures":
   Common."Home Blood Pressure Observations"
+
+define "Test Patient Age on BP Reading":
+  AgeInYearsAt(Common."Most Recent BP Reading".effective)

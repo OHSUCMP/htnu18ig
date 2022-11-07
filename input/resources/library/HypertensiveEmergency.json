@@ -26,7 +26,7 @@
     "resource": "http://fhir.org/guides/ohsuhypertensionig/Library/OHSUHTNCommon|0.1"
   }, {
     "type": "depends-on",
-    "display": "Value set Systolic blood pressure",
+    "display": "Value set Systolic Blood Pressure",
     "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2"
   }, {
     "type": "depends-on",
@@ -96,7 +96,7 @@
     "use": "out",
     "min": 0,
     "max": "1",
-    "type": "Observation"
+    "type": "Any"
   }, {
     "name": "TEST BP Within 14 days",
     "use": "out",
@@ -114,6 +114,22 @@
     "codeFilter": [ {
       "path": "code",
       "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012"
+    } ]
+  }, {
+    "type": "Observation",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
+    "mustSupport": [ "code" ],
+    "codeFilter": [ {
+      "path": "code",
+      "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2"
+    } ]
+  }, {
+    "type": "Observation",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
+    "mustSupport": [ "code" ],
+    "codeFilter": [ {
+      "path": "code",
+      "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045"
     } ]
   } ],
   "content": [ {
