@@ -124,36 +124,18 @@ define "Test Count All BP":
 
 define "Test Most Recent BP":
   Common."Most Recent BP Reading" BP
-    return Tuple {
-      "ID": BP.id,
-      "Date": BP.effective.end,
-      "Systolic": singleton from (BP.component C where C.code in Common."Systolic blood pressure").value.value,
-      "Diastolic": singleton from (BP.component C where C.code in Common."Diastolic Blood Pressure").value.value
-    }
 
 define "Test Get All BP Observation Resources":
-  (Common."Blood Pressure Observations" BP sort by Coalesce(issued, start of Common."Normalize Interval"(effective))) BP
-    return Tuple {
-      "Observation ID": BP.id
-      }
+  Common."All BP Observations" BP
 
 define "Test Get Has BP Set":
   Common."Has BP Set"
 
 define "Test Get Most Recent BP Set":
   Common."Most Recent BP Set" BPSet
-    return Tuple {
-      "Observation ID": BPSet.id,
-      "Encounter Reference": BPSet.encounter.reference
-      }
 
 define "Test All BP Last 2 Years":
-  Common."Blood Pressure Observations for Last 2 Years" BPs
-    return Tuple {
-      "Observation ID": BPs.id,
-      "Date": BPs.effective.end,
-      "Encounter Reference": BPs.encounter.reference
-      }
+  Common."Blood Pressure Observations for Last 2 Years"
 
 define "Test Get Average All BP Last 2 Years":
   Common."Avg BP"(Common."Blood Pressure Observations for Last 2 Years")

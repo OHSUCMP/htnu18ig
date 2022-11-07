@@ -12,7 +12,7 @@ codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-A
 codesystem "ConditionCategorySystem": 'http://terminology.hl7.org/CodeSystem/condition-category'
 codesystem "Medication request status": 'http://hl7.org/fhir/CodeSystem/medicationrequest-status'
 
-valueset "Systolic blood pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
+valueset "Systolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2'
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
 valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
@@ -53,59 +53,49 @@ code "Active Medication Request": 'active' from "Medication request status"
 
 context Patient
 
-define function "Avg Systolic BP"(list List<FHIR.Observation>):
-  Avg(list O
-    return all FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Systolic blood pressure").value)
-  )
+define function "Avg Systolic BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+  Avg(list O return all O.systolic)
 
-define function "Avg Diastolic BP"(list List<FHIR.Observation>):
-  Avg(list O
-    return all FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Diastolic Blood Pressure").value)
-  )
+define function "Avg Diastolic BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+  Avg(list O return all O.diastolic)
 
-define function "Avg BP"(list List<FHIR.Observation>):
+define function "Avg BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   Tuple { systolic: "Avg Systolic BP"(list), diastolic: "Avg Diastolic BP"(list) }
 
-define function "Avg BP String"(list List<FHIR.Observation>):
+define function "Normal BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
-    return ToString(Round(O.systolic.value)) + '/' + ToString(Round(O.diastolic.value)) + ' ' + O.systolic.unit
+    where O.systolic <= 130
+    and O.diastolic <= 80
 
-define function "Normal BP"(list List<FHIR.Observation>):
+define function "Elevated or Above BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
-    where O.systolic.value < 130
-    and O.diastolic.value < 80
+    where O.systolic > 130
+    or O.diastolic > 80
 
-define function "Elevated or Above BP"(list List<FHIR.Observation>):
+define function "HTN Stage 1 BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
-    where O.systolic.value >= 130
-    or O.diastolic.value >= 80
+    where (O.systolic > 130 and O.systolic <= 140)
+    or (O.diastolic > 80 and O.diastolic <= 90)
 
-define function "HTN Stage 1 BP"(list List<FHIR.Observation>):
+define function "HTN Stage 2 BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
-    where (O.systolic.value >= 130 and O.systolic.value < 140)
-    or (O.diastolic.value >= 80 and O.diastolic.value < 90)
+    where O.systolic > 140
+    or O.diastolic > 90
 
-define function "HTN Stage 2 BP"(list List<FHIR.Observation>):
+define function "HTN Stage 2 BP Systolic Second Test"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
-    where O.systolic.value >= 140
-    or O.diastolic.value >= 90
+    where O.systolic > 160
 
-define function "HTN Stage 2 BP Systolic Second Test"(list List<FHIR.Observation>):
-  ("Avg BP"(list)) O
-    where O.systolic.value >= 160
-
-define function "HTN Crisis BP"(list List<FHIR.Observation>):
-  ("Avg BP"(list)) O
-    where O.systolic.value >= 180
-    or O.diastolic.value >= 120
+define function "HTN Crisis BP"(O Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
+  O.systolic >= 180 or O.diastolic >= 120
 
 /* Helpers */
 define function WithUnit(list List<Observation>, Unit String):
   list Observations
     where (
-      ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).unit.value ~ Unit
+      ((singleton from (Observations.component C where C.code in "Systolic Blood Pressure").value as FHIR.Quantity).unit.value ~ Unit
         and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).unit.value ~ Unit)
-      or ((singleton from (Observations.component C where C.code in "Systolic blood pressure").value as FHIR.Quantity).code.value ~ Unit
+      or ((singleton from (Observations.component C where C.code in "Systolic Blood Pressure").value as FHIR.Quantity).code.value ~ Unit
         and (singleton from (Observations.component C where C.code in "Diastolic Blood Pressure").value as FHIR.Quantity).code.value ~ Unit)
     )
 
@@ -118,6 +108,9 @@ define function WithUnit(value Quantity, Unit String):
     )
   ) is not null
 
+define function BPReadingType(o FHIR.Observation):
+  if ("MeasurementSettings"(o.extension) contains "home-measurement") then 'home'
+  else 'office'
 
 define function QualifiedEncounter(list List<FHIR.Encounter>):
   list Encounter
@@ -356,26 +349,79 @@ define "Encounter Condition Indicating Preexisting Hypertension":
     where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in
         "Non essential Hypertension SNOMEDCT")
 
-define "Blood Pressure Observations":
+// "Normal" observations with systolic/diastolic components
+define "Component BP Observations":
   (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
-      sort by Coalesce(start of "Normalize Interval"(effective), issued)
+  return Tuple {
+    effective: Coalesce(start of "Normalize Interval"(O.effective), O.issued),
+    systolic: FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Systolic Blood Pressure").value).value,
+    diastolic: FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Diastolic Blood Pressure").value).value,
+    readingType: BPReadingType(O)
+  }
+
+define function ConvertSystolic(systolic List<FHIR.Observation>):
+  systolic O
+  return Tuple {
+    effective: Coalesce(start of "Normalize Interval"(O.effective), O.issued),
+    systolic: FHIRHelpers.ToQuantity(O.value).value,
+    diastolic: null as Decimal,
+    readingType: "BPReadingType"(O)
+  } sort by effective
+
+define function ConvertDiastolic(diastolic List<FHIR.Observation>):
+  diastolic O
+  return Tuple {
+    effective: Coalesce(start of "Normalize Interval"(O.effective), O.issued),
+    systolic: null as Decimal,
+    diastolic: FHIRHelpers.ToQuantity(O.value).value,
+    readingType: "BPReadingType"(O)
+  }
+
+/* For each systolic observation, gather a list of diastolic values that match by date */
+define function GatherMatches(s List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>,
+  d List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+  s S
+    return Tuple {
+      systolicObservation : S,
+      diastolicValues : (d D where S.effective = D.effective and S.readingType = D.readingType).diastolic
+    }
+
+/* For each systolic observation with exactly one disatolic match, return the paired observation */
+define function PairMatchedBPObservations(list List<Tuple { systolicObservation Tuple {effective DateTime, systolic Decimal, diastolic Decimal, readingType String },
+  diastolicValues List<Decimal>} > ):
+  (list B where Count(B.diastolicValues) = 1) matched return {
+    effective: matched.systolicObservation.effective,
+    systolic: matched.systolicObservation.systolic,
+    diastolic: matched.diastolicValues[0],
+    readingType: matched.systolicObservation.readingType
+  }
+
+define function PairBPObservations(s List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>,
+  d List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+  PairMatchedBPObservations(GatherMatches(s, d))
+
+define "Paired BP Observations":
+  PairBPObservations(ConvertSystolic(QualifiedObservation(["Observation": "Systolic Blood Pressure"])), ConvertDiastolic(QualifiedObservation(["Observation": "Diastolic Blood Pressure"])))
+
+define "All BP Observations":
+  "Component BP Observations" union "Paired BP Observations"
 
 define "Most Recent BP Reading":
-  Last("Blood Pressure Observations" O sort by Coalesce(start of "Normalize Interval"(effective), issued))
+  Last("All BP Observations" O sort by effective)
 
 define "BP Within 14 days":
   "Most Recent BP Reading" BP
-  return Coalesce(start of "Normalize Interval"(BP.effective), BP.issued) + 14 days >= Today()
+  return BP.effective + 14 days >= Today()
 
 define "HTN Crisis":
-  "BP Within 14 days" and "HTN Crisis BP"({ "Most Recent BP Reading" }) is not null
+  "BP Within 14 days" and "HTN Crisis BP"("Most Recent BP Reading")
 
 define "Blood Pressure Observations for Last 2 Years":
-  "Blood Pressure Observations" BP where Coalesce(start of "Normalize Interval"(BP.effective), BP.issued) + 24 months >= Today()
-    sort by Coalesce(start of "Normalize Interval"(effective), issued)
+  "All BP Observations" BP where BP.effective + 24 months >= Today()
+    sort by effective
 
 define "Blood Pressure Observations for Last 2 Years Descending":
-  "Blood Pressure Observations for Last 2 Years" O sort by Coalesce(start of "Normalize Interval"(effective), issued) desc
+  "Blood Pressure Observations for Last 2 Years" O sort by effective desc
 
 define function MeasurementSettings(list List<Extension>):
   list Extension
@@ -383,8 +429,8 @@ define function MeasurementSettings(list List<Extension>):
   return FHIRHelpers.ToCode(Extension.value)
 
 define "Home Blood Pressure Observations":
-  "Blood Pressure Observations for Last 2 Years" BPObservation
-    where "MeasurementSettings"(BPObservation.extension) contains "home-measurement"
+  "Blood Pressure Observations for Last 2 Years" O
+    where O.readingType = 'home'
 
 define "Office Blood Pressure Observations":
   "Blood Pressure Observations for Last 2 Years" except "Home Blood Pressure Observations"
@@ -397,12 +443,12 @@ define "Has BP Set":
     if not exists "Blood Pressure Observations for Last 2 Years" then false
     else calculateScore("Blood Pressure Observations for Last 2 Years") >= 4
 
-define function score(observation Observation):
+define function score(observation Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
   if observation in "Ambulatory Blood Pressure Monitoring Observations" then 0.333
   else if observation in "Home Blood Pressure Observations" then 0.667
   else 1
 
-define function calculateScore(list List<FHIR.Observation>):
+define function calculateScore(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   Sum(list O
     return all score(O)
   )
@@ -445,7 +491,7 @@ define "Qualifying Blood Pressure Goals":
   (QualifiedGoal(["Goal"])) BPGoal
     where (
       singleton from (BPGoal.target Systolic
-        where Systolic.measure in "Systolic blood pressure"
+        where Systolic.measure in "Systolic Blood Pressure"
           and Systolic.detail is Quantity
           and WithUnit(Systolic.detail, 'mm[Hg]'))
     ) SystolicTarget is not null
@@ -469,7 +515,7 @@ define "Patient has a BP Goal":
 define "BP from Most Recent Goal":
   "Most Recently Established Blood Pressure Goal" BPGoal
     return Tuple {
-      systolic: singleton from (BPGoal.target Systolic where Systolic.measure in "Systolic blood pressure").detail as Quantity,
+      systolic: singleton from (BPGoal.target Systolic where Systolic.measure in "Systolic Blood Pressure").detail as Quantity,
       diastolic: singleton from (BPGoal.target Diastolic where Diastolic.measure in "Diastolic Blood Pressure").detail as Quantity
     }
 
