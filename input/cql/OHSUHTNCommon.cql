@@ -515,8 +515,8 @@ define "Patient has a BP Goal":
 define "BP from Most Recent Goal":
   "Most Recently Established Blood Pressure Goal" BPGoal
     return Tuple {
-      systolic: singleton from (BPGoal.target Systolic where Systolic.measure in "Systolic Blood Pressure").detail as Quantity,
-      diastolic: singleton from (BPGoal.target Diastolic where Diastolic.measure in "Diastolic Blood Pressure").detail as Quantity
+      systolic: (singleton from (BPGoal.target Systolic where Systolic.measure in "Systolic Blood Pressure").detail as Quantity).value,
+      diastolic: (singleton from (BPGoal.target Diastolic where Diastolic.measure in "Diastolic Blood Pressure").detail as Quantity).value
     }
 
 define "Above Goal Average Most Recent":
