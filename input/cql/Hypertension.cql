@@ -104,7 +104,7 @@ define "Links":
   else if "HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if "Consider HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if "Consider HTN Stage 1" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
-  else if "Prescribe Monitoring to Confirm HTN" then '[{"label":"AHA: Monitoring your blood pressure at home", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"}]'
+  else if "Prescribe Monitoring to Confirm HTN" then '[{"label":"AHA: Monitoring your blood pressure at home", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/monitoring-your-blood-pressure-at-home"}]'
   else '[]'
 
 define "Exclusion Reason":
