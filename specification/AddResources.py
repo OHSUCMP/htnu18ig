@@ -6,13 +6,13 @@ import os
 import re
 import requests
 
-directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention"
+directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Hypertension"
 print("Loading resources into FHIR server from " + directory)
 override = input("Override? y/n\n")
 if override.lower() == "y":
  	directory = input("The path to the resources\n")
 
-fhir_url = "https://api.logicahealth.org/htnu18r42/open/"
+fhir_url = "https://api.logicahealth.org/coachdev/open/"
 print("FHIR Server URL: " + fhir_url)
 override = input("Override? y/n\n")
 if override.lower() == "y":
