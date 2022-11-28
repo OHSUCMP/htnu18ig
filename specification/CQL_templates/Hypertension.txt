@@ -1,0 +1,176 @@
+library Hypertension version '0.1'
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.1' called FHIRHelpers
+include OHSUHTNCommon version '0.1' called Common
+
+codesystem "v3 Code System ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
+
+code "ambulatory": 'AMB' from "v3 Code System ActCode" display 'ambulatory'
+
+context Patient
+
+define "Info":
+  'info'
+
+define "Warning":
+  'warning'
+
+define "Critical":
+  'critical'
+
+define "Errors":
+  null
+
+define "Patient Name":
+  First(Patient.name.given)
+   + ' ' +
+  First(Patient.name.family)
+
+
+/* Recommendation Criteria - Hypertension  */
+define "Meets Inclusion Criteria":
+ not exists Common."Condition Indicating Preexisting Hypertension"
+
+define "Meets Exclusion Criteria":
+  Common."Patient Under Age 18"
+    or Common."Patient Over Age 80"
+    or exists Common."Condition Indicating End Stage Renal Disease"
+    or exists Common."Condition Indicating Pregnancy"
+    or Common."HTN Crisis"
+
+define "In Population":
+  // Preserve this ordering so excluded patients fail fast
+  not "Meets Exclusion Criteria" and "Meets Inclusion Criteria"
+
+define "No Further Action":
+  "In Population" and Common."Has BP Set" and not "HTN Stage 2" and not "Consider HTN Stage 2" and not "Consider HTN Stage 1" and not "Prescribe Monitoring to Confirm HTN"
+
+define "Recommendation Needed":
+  "In Population" and not "No Further Action"
+
+define "Recommendation":
+  if not "In Population" then 'None'
+  else if not Common."Has BP Set" then '{{2.summary}}'
+  else if "HTN Stage 2" then '{{3.summary}}'
+  else if "Consider HTN Stage 2" then '{{4.summary}}'
+  else if "Consider HTN Stage 1" then '{{5.summary}}'
+  else if "Prescribe Monitoring to Confirm HTN" then '{{6.summary}}'
+  else 'No Further Action'
+
+define "Rationale Combined Data":
+  "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
+
+define "Rationale":
+  if not "In Population" then 'None'
+  else if not Common."Has BP Set" then '{{2.detail}}'
+  else if "HTN Stage 2" then '{{3.detail}}'
+  else if "Consider HTN Stage 2" then '{{4.detail}}'
+  else if "Consider HTN Stage 1" then '{{5.detail}}'
+  else if "Prescribe Monitoring to Confirm HTN" then '{{6.detail}}'
+  else 'None'
+
+define "Indicator Status":
+  if not "In Population" then "Info"
+  else if not Common."Has BP Set" then "Info"
+  else if "HTN Stage 2" then "Warning"
+  else if "Consider HTN Stage 2" then "Info"
+  else if "Consider HTN Stage 1" then "Info"
+  else if "Prescribe Monitoring to Confirm HTN" then "Info"
+  else "Info"
+
+define "Suggestions":
+  if not "In Population" then 'None'
+  else if not Common."Has BP Set" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page", "url":"/vitals"}] } ]'
+  else if "HTN Stage 2" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about a high blood pressure diagnosis", "url":"/contact?token=suspect-htn-stage2"}] } ]'
+  else if "Consider HTN Stage 2" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about a high blood pressure diagnosis", "url":"/contact?token=possible-htn-stage2"}] } ]'
+  else if "Consider HTN Stage 1" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about a high blood pressure diagnosis", "url":"/contact?token=possible-htn-stage1"}] } ]'
+  else if "Prescribe Monitoring to Confirm HTN" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about out of office blood pressure measurements", "url":"/contact?token=office-bps"}] } ]'
+  else 'None'
+
+define "Selection Behavior":
+  if not "In Population" then 'None'
+  else if not Common."Has BP Set" then 'at-most-one'
+  else if "HTN Stage 2" then 'at-most-one'
+  else if "Consider HTN Stage 2" then 'at-most-one'
+  else if "Consider HTN Stage 1" then 'at-most-one'
+  else if "Prescribe Monitoring to Confirm HTN" then 'at-most-one'
+  else 'at-most-one'
+
+define "Links":
+  if not "In Population" then ''
+  else if not Common."Has BP Set" then '{{2.link}}'
+  else if "HTN Stage 2" then '{{3.link}}'
+  else if "Consider HTN Stage 2" then '{{4.link}}'
+  else if "Consider HTN Stage 1" then '{{5.link}}'
+  else if "Prescribe Monitoring to Confirm HTN" then '{{6.link}}'
+  else '[]'
+
+define "Exclusion Reason":
+  if "Meets Exclusion Criteria" then
+    (
+      'Patient was excluded from initial diagnosis of hypertension due to '
+      + (
+          if Common."Patient Under Age 18" then 'being under the age of 18.'
+          else if Common."Patient Over Age 80" then 'being over the age of 80.'
+          else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
+          else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
+          else if Common."HTN Crisis" then 'a recent high blood pressure warning.'
+          else ''
+        )
+    )
+  else ''
+
+// Is last BP set or all BPs average > 160 SBP?
+define "Patient Has HTN Stage 2 BP":
+  Common."Patient Has Potential HTN Stage 2 BP"
+    and (
+        Common."HTN Stage 2 BP Systolic Second Test"(Common."Most Recent BP Set") is not null
+        or Common."HTN Stage 2 BP Systolic Second Test"(Common."Blood Pressure Observations for Last 2 Years") is not null
+    )
+
+define "HTN Stage 2":
+  "In Population" and "Patient Has HTN Stage 2 BP"
+
+define "Consider HTN Stage 2":
+  "In Population" and Common."Patient Has Potential HTN Stage 2 BP"
+      and not "Patient Has HTN Stage 2 BP"
+
+// Is last BP set AND all BPs avg > 130/80?
+define "Consider HTN Stage 1":
+  "In Population" and (
+    Common."HTN Stage 1 BP"(Common."Most Recent BP Set") is not null
+    and Common."HTN Stage 1 BP"(Common."Blood Pressure Observations for Last 2 Years") is not null
+  )
+
+define "Prescribe Monitoring to Confirm HTN":
+  "In Population" and Common."Patient Has Potential HTN Stage 1 BP" and not "Consider HTN Stage 1"
+
+/* TESTS */
+define "Test Most Recent BP":
+  Common."Most Recent BP Reading"
+
+define "Test Get All BP Observation Resources":
+  Common."All BP Observations" BP
+
+define "Test Get Most Recent BP Set":
+  Common."Most Recent BP Set" BPSet
+
+define "Test Average BP of Set":
+  Common."Avg BP"(Common."Most Recent BP Set")
+
+define "Test All BP Last 2 Years":
+  Common."Blood Pressure Observations for Last 2 Years Descending"
+
+define "Test Get Average All BP Last 2 Years":
+  Common."Avg BP"(Common."Blood Pressure Observations for Last 2 Years")
+
+define "Test Get Average Most Recent BP Set":
+  Common."Avg BP"(Common."Most Recent BP Set")
+
+define "Home Blood Pressures":
+  Common."Home Blood Pressure Observations"
+
+define "Test Patient Age on BP Reading":
+  AgeInYearsAt(Common."Most Recent BP Reading".effective)
