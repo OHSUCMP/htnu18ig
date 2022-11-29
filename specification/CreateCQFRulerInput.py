@@ -20,7 +20,6 @@ for patient_folder in os.listdir(patient_directory):
           "hookInstance": "test",
           "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
           "hook": "patient-view",
-          "applyCql": False,
           "context": {
             "userId": "Practitioner/example",
             "patientId": "patient-id"
