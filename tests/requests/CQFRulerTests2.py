@@ -8,7 +8,7 @@ import re
 import requests
 
 cqf_ruler_url = "http://localhost:8080/cds-services/plandefinition-"
-only_folders = ['Pharma']
+only_folders = []
 only_files = []
 
 for folder in os.listdir("."):
