@@ -41,8 +41,8 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetHome"
               },
               "period": {
-                "start": "2021-04-19T00:00:00-04:00",
-                "end": "2021-04-19T23:59:59-04:00"
+                "start": "2021-05-17T00:00:00-04:00",
+                "end": "2021-05-17T23:59:59-04:00"
               }
             },
             "request": {
@@ -75,8 +75,8 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetHome"
               },
               "period": {
-                "start": "2021-05-20T00:00:00-04:00",
-                "end": "2021-05-20T23:59:59-04:00"
+                "start": "2021-06-17T00:00:00-04:00",
+                "end": "2021-06-17T23:59:59-04:00"
               }
             },
             "request": {
@@ -99,7 +99,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1963-08-12"
+              "birthDate": "1963-09-09"
             },
             "request": {
               "method": "PUT",
@@ -150,7 +150,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetHome"
               },
-              "effectiveDateTime": "2021-07-18T15:16:21-05:00",
+              "effectiveDateTime": "2021-08-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -239,7 +239,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetHome"
               },
-              "effectiveDateTime": "2021-09-28T15:16:21-05:00",
+              "effectiveDateTime": "2021-10-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -328,7 +328,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetHome"
               },
-              "effectiveDateTime": "2021-08-17T15:16:21-05:00",
+              "effectiveDateTime": "2021-09-14T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -410,7 +410,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetHome-2"
               },
-              "effectiveDateTime": "2021-05-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-06-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -499,7 +499,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetHome"
               },
-              "effectiveDateTime": "2021-06-17T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -581,7 +581,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetHome-1"
               },
-              "effectiveDateTime": "2021-04-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-05-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -670,7 +670,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetHome"
               },
-              "effectiveDateTime": "2021-09-17T15:16:21-05:00",
+              "effectiveDateTime": "2021-10-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -759,7 +759,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetHome"
               },
-              "effectiveDateTime": "2021-09-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-10-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {

@@ -3,7 +3,7 @@
     {
       "summary": "Use shared decision making for treatment.",
       "indicator": "warning",
-      "detail": "{{#patient}}Your \u003cstrong\u003eblood pressure is still high despite current efforts to lower it\u003c/strong\u003e; changing your medication may be an option. This may occur sooner than expected.{{/patient}}\n    {{#careTeam}}Employ shared decision making practices when discussing treatment for high blood pressure with your patient.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure.\", \"url\":\"/contact?token\u003drecommend-advancing-treatment\"}] } ]|at-most-one|",
+      "detail": "{{#patient}}Your \u003cstrong\u003eblood pressure is still high despite current efforts to lower it\u003c/strong\u003e; changing your medication may be an option. This may occur sooner than expected.{{/patient}}{{#careTeam}}Employ shared decision making practices when discussing treatment for high blood pressure with your patient.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure.\", \"url\":\"/contact?token\u003drecommend-advancing-treatment\"}] } ]|at-most-one|",
       "source": {}
     }
   ]

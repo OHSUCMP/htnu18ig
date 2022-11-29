@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "performedDateTime": "2021-03-29T11:00:00-06:00",
+      "performedDateTime": "2021-04-26T11:00:00-06:00",
       "note": [ {
         "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "onsetDateTime": "2015-04-21T15:16:21-05:00",
-      "recordedDate": "2015-04-21T15:16:21-05:00",
+      "onsetDateTime": "2015-05-19T15:16:21-05:00",
+      "recordedDate": "2015-05-19T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "End" ]
       } ],
       "gender": "female",
-      "birthDate": "1946-04-23"
+      "birthDate": "1946-05-21"
     },
     "request": {
       "method": "PUT",
@@ -119,7 +119,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "effectiveDateTime": "2021-09-17T15:16:21-05:00",
+      "effectiveDateTime": "2021-10-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -189,7 +189,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "effectiveDateTime": "2021-08-17T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-14T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -245,10 +245,10 @@
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
       "effectivePeriod": {
-        "start": "2001-12-04",
-        "end": "2021-03-29"
+        "start": "2002-01-01",
+        "end": "2021-04-26"
       },
-      "issued": "2021-03-29T00:00:00-07:00",
+      "issued": "2021-04-26T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -307,7 +307,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "effectiveDateTime": "2021-05-20T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -377,7 +377,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "effectiveDateTime": "2021-04-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-17T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -447,7 +447,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "effectiveDateTime": "2021-07-18T15:16:21-05:00",
+      "effectiveDateTime": "2021-08-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -517,7 +517,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "effectiveDateTime": "2021-06-17T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -576,7 +576,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
-      "startDate": "2021-10-03",
+      "startDate": "2021-10-31",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -608,7 +608,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2021-10-02",
+      "statusDate": "2021-10-30",
       "note": [ {
         "text": "Goal has been achieved."
       } ]

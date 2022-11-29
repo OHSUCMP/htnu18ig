@@ -47,6 +47,6 @@
   "subject": {
     "reference": "Patient/AE-TreatedAndUntreated"
   },
-  "onsetDateTime": "2021-12-07T15:16:21-05:00",
-  "recordedDate": "2021-12-07T15:16:21-05:00"
+  "onsetDateTime": "2022-01-04T15:16:21-05:00",
+  "recordedDate": "2022-01-04T15:16:21-05:00"
 }
