@@ -16,7 +16,8 @@ valueset "Systolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.8
 valueset "Diastolic Blood Pressure": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045'
 valueset "Blood Pressure Measured": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.600.2012'
 valueset "Ambulatory Blood Pressure Monitoring (ABPM)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1047.511'
-valueset "Antihypertensive Medications": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.10'
+valueset "Antihypertensive Medications 1": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.10'
+valueset "Antihypertensive Medications 2": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.72'
 
 /* Possible exclusions from workflows */
 /* valueset "Hypertension": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.3157.4012' */
@@ -561,4 +562,5 @@ define "Medication Requests With Medication":
       }
 
 define "Patient is Using Antihypertensive Medications":
-  "Medication Requests With Medication".medication in "Antihypertensive Medications"
+  "Medication Requests With Medication".medication in "Antihypertensive Medications 1" or
+  "Medication Requests With Medication".medication in "Antihypertensive Medications 2"
