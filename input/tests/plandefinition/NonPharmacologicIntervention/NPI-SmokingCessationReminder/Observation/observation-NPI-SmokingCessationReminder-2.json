@@ -20,10 +20,10 @@
     "reference": "Patient/NPI-SmokingCessationReminder"
   },
   "effectivePeriod": {
-    "start": "2020-07-02",
-    "end": "2020-07-20"
+    "start": "2020-07-11",
+    "end": "2020-07-29"
   },
-  "issued": "2020-07-20T00:00:00-07:00",
+  "issued": "2020-07-29T00:00:00-07:00",
   "valueCodeableConcept": {
     "coding": [
       {

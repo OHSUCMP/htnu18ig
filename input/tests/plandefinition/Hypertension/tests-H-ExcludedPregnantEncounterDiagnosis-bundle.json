@@ -38,8 +38,8 @@
       "subject": {
         "reference": "Patient/H-ExcludedPregnantEncounterDiagnosis"
       },
-      "onsetDateTime": "2019-04-01T19:02:10-04:00",
-      "recordedDate": "2019-04-01T19:02:10-04:00",
+      "onsetDateTime": "2019-04-10T19:02:10-04:00",
+      "recordedDate": "2019-04-10T19:02:10-04:00",
       "note": [ {
         "text": "Indicates patient is pregnant at last BP Reading"
       } ]
@@ -59,7 +59,7 @@
         "given": [ "Excluded" ]
       } ],
       "gender": "female",
-      "birthDate": "1988-03-29"
+      "birthDate": "1988-04-07"
     },
     "request": {
       "method": "PUT",
@@ -95,7 +95,7 @@
       "subject": {
         "reference": "Patient/H-ExcludedPregnantEncounterDiagnosis"
       },
-      "effectiveDateTime": "2016-05-24T15:16:21-05:00",
+      "effectiveDateTime": "2016-06-02T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -165,7 +165,7 @@
       "subject": {
         "reference": "Patient/H-ExcludedPregnantEncounterDiagnosis"
       },
-      "effectiveDateTime": "2019-05-28T15:16:21-05:00",
+      "effectiveDateTime": "2019-06-06T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],

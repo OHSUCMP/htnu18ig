@@ -19,9 +19,9 @@
     ],
     "text": "Brief loss of consciousness"
   },
-  "date": "2022-01-06T07:25:02-07:00",
-  "detected": "2022-01-06T07:25:02-07:00",
-  "recordedDate": "2022-01-06T13:16:21-07:00",
+  "date": "2022-01-15T07:25:02-07:00",
+  "detected": "2022-01-15T07:25:02-07:00",
+  "recordedDate": "2022-01-15T13:16:21-07:00",
   "resultingCondition": [
     {
       "reference": "Condition/condition-AE-TreatedAndUntreated-3"

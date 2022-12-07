@@ -47,6 +47,6 @@
   "subject": {
     "reference": "Patient/AE-TreatedAdverseEvent"
   },
-  "onsetDateTime": "2022-01-06T15:16:21-05:00",
-  "recordedDate": "2022-01-06T15:16:21-05:00"
+  "onsetDateTime": "2022-01-15T15:16:21-05:00",
+  "recordedDate": "2022-01-15T15:16:21-05:00"
 }

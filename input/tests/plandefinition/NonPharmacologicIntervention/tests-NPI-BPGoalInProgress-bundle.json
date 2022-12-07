@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "performedDateTime": "2021-09-18T11:00:00-06:00",
+      "performedDateTime": "2021-09-27T11:00:00-06:00",
       "note": [ {
         "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "onsetDateTime": "2015-05-19T15:16:21-05:00",
-      "recordedDate": "2015-05-19T15:16:21-05:00",
+      "onsetDateTime": "2015-05-28T15:16:21-05:00",
+      "recordedDate": "2015-05-28T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "BPGoal" ]
       } ],
       "gender": "male",
-      "birthDate": "1979-12-15"
+      "birthDate": "1979-12-24"
     },
     "request": {
       "method": "PUT",
@@ -119,7 +119,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "effectiveDateTime": "2021-10-15T15:16:21-05:00",
+      "effectiveDateTime": "2021-10-24T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -189,7 +189,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "effectiveDateTime": "2021-09-14T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-23T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -245,8 +245,8 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "effectiveDateTime": "2021-09-15T10:00:00-07:00",
-      "issued": "2021-09-15T00:00:00-07:00",
+      "effectiveDateTime": "2021-09-24T10:00:00-07:00",
+      "issued": "2021-09-24T00:00:00-07:00",
       "valueQuantity": {
         "value": 4.1,
         "unit": "Drinks/Day"
@@ -289,7 +289,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "effectiveDateTime": "2021-07-15T15:16:21-05:00",
+      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -359,7 +359,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "effectiveDateTime": "2021-05-17T15:16:21-05:00",
+      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -429,7 +429,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "effectiveDateTime": "2021-08-15T15:16:21-05:00",
+      "effectiveDateTime": "2021-08-24T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -499,7 +499,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "effectiveDateTime": "2021-07-15T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-24T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -558,7 +558,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalInProgress"
       },
-      "startDate": "2021-10-31",
+      "startDate": "2021-11-09",
       "target": [ {
         "measure": {
           "coding": [ {

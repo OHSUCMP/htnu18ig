@@ -20,8 +20,8 @@
   "subject": {
     "reference": "Patient/NPI-SmokingCessationGoalExists"
   },
-  "effectiveDateTime": "2021-09-15T10:00:00-07:00",
-  "issued": "2021-09-15T00:00:00-07:00",
+  "effectiveDateTime": "2021-09-24T10:00:00-07:00",
+  "issued": "2021-09-24T00:00:00-07:00",
   "valueQuantity": {
     "value": 5.1,
     "unit": "Drinks/Day"
