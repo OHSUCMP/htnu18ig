@@ -1,6 +1,7 @@
 #!/bin/bash
 #DO NOT EDIT WITH WINDOWS
-tooling_jar=tooling-1.3.1-jar-with-dependencies.jar
+# This is the refresh script that should be run for CQF Ruler 0.5.0 - it uses a newer tooling jar and no context path
+tooling_jar=tooling-1.4.3-jar-with-dependencies.jar
 input_cache_path=$PWD/input-cache
 resources_path=$PWD/input/resources
 ig_ini_path=$PWD/ig.ini
@@ -11,8 +12,7 @@ wget -q --spider tx.fhir.org
 
 if [ $? -eq 0 ]; then
 echo "Online"
-fsoption="http://localhost:8080/cqf-ruler-r4/fhir/"
-#"-fs http://localhost:8080/cqf-ruler-r4/fhir/"
+fsoption="http://localhost:8080/fhir/"
 else
 echo "Offline"
 fsoption=""

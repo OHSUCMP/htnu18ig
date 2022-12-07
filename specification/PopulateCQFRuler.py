@@ -16,7 +16,7 @@ if len(sys.argv) > 1:
 
 paths = ["../input/vocabulary/valueset", "../input/resources/library", "../input/resources/plandefinition", "../input/resources/device"]
 
-cqf_ruler_url = "http://localhost:" + str(port) + "/cqf-ruler-r4/fhir/"
+cqf_ruler_url = "http://localhost:" + str(port) + "/fhir/"
 print("CQF Ruler URL = " + cqf_ruler_url)
 
 for path in paths:
