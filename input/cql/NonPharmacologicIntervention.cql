@@ -313,7 +313,7 @@ define "Tobacco Cessation Goals Needing Update":
 // Smoking Observations less than 5 years old (Issue #113)
 // For smoking, we check when the observation ends in case the practioner has documented the start date as when the patient started smoking
 define "Smoking Status Observations":
-  (Common.QualifiedObservation(["Observation": "Tobacco Smoking Status [Current] (Social History) (LOINC)"])) SmokingObserved
+  (Common.QualifiedObservation(Common."All Observations" A where Common.TransformCodeableConcept(A.code) in "Tobacco Smoking Status [Current] (Social History) (LOINC)")) SmokingObserved
   where Common."Normalize Interval"(SmokingObserved.effective) ends 60 months or less before Today()
 
 // All observations indicating patient is a smoker
@@ -347,7 +347,7 @@ define "Weight Loss Goals Needing Update":
 
 // All BMI observations for previous 2 years (Issue #113)
 define "Observations Specifying Patient BMI":
-  (Common.QualifiedObservation(["Observation": "BMI Ratio"])) BMIObserved
+  (Common.QualifiedObservation(Common."All Observations" A where Common.TransformCodeableConcept(A.code) in "BMI Ratio")) BMIObserved
     where BMIObserved.value is Quantity
       and Common.WithUnit(BMIObserved.value, 'kg/m2') and
       Common."Normalize Interval"(BMIObserved.effective) starts 24 months or less before Today()
@@ -374,7 +374,7 @@ define "Alcohol Goals Needing Update":
 // Get observations from the last 5 years reporting number of drinks per day (Issue #113)
 // We check when the observation ends in case the practioner has documented the start date as when the patient started drinking that amount
 define "Observations Measuring Amount of Alcoholic Drinks Patient has per Drinking Day":
-  (Common.QualifiedObservation(["Observation": "Average Number of Drinks per Drinking Day"])) DrinksPerDay
+  (Common.QualifiedObservation(Common."All Observations" A where Common.TransformCodeableConcept(A.code) in "Average Number of Drinks per Drinking Day")) DrinksPerDay
     where Common."Normalize Interval"(DrinksPerDay.effective) ends 60 months or less before Today() and
       DrinksPerDay.value is Quantity
       and Common.WithUnit(DrinksPerDay.value, 'Drinks/Day')

@@ -319,12 +319,12 @@ define "Patient Over Age 80":
 // Grab all conditions for patients since we can't limit by code in Epic.
 define "Conditions":
   "Problem Conditions" union "Encounter Conditions"
-//  (QualifiedCondition(["Condition": category ~ "problem-list-item"])) union
-//  (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
 
+// Epic requires category to be provided
 define "Problem Conditions":
   (QualifiedCondition(["Condition": category ~ "problem-list-item"]))
 
+// Epic requires category to be provided
 define "Encounter Conditions":
   (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
 
@@ -350,9 +350,13 @@ define "Encounter Condition Indicating Preexisting Hypertension":
     where (TransformCodeableConcept(Condition.code) in "Hypertension" or TransformCodeableConcept(Condition.code) in
         "Non essential Hypertension SNOMEDCT")
 
+// We do not limit Observations by code to prevent CQF Ruler from looking beyond what is provided in the prefetch
+define "All Observations":
+  ["Observation"]
+
 // "Normal" observations with systolic/diastolic components
 define "Component BP Observations":
-  (WithUnit(QualifiedObservation(["Observation": "Blood Pressure Measured"]), 'mm[Hg]')) O
+  (WithUnit(QualifiedObservation("All Observations" A where TransformCodeableConcept(A.code) in "Blood Pressure Measured"), 'mm[Hg]')) O
   return Tuple {
     effective: Coalesce(start of "Normalize Interval"(O.effective), O.issued),
     systolic: FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Systolic Blood Pressure").value).value,
@@ -402,7 +406,7 @@ define function PairBPObservations(s List<Tuple { effective DateTime, systolic D
   PairMatchedBPObservations(GatherMatches(s, d))
 
 define "Paired BP Observations":
-  PairBPObservations(ConvertSystolic(QualifiedObservation(["Observation": "Systolic Blood Pressure"])), ConvertDiastolic(QualifiedObservation(["Observation": "Diastolic Blood Pressure"])))
+  PairBPObservations(ConvertSystolic(QualifiedObservation("All Observations" A where TransformCodeableConcept(A.code) in "Systolic Blood Pressure")), ConvertDiastolic(QualifiedObservation("All Observations" A where TransformCodeableConcept(A.code) in "Diastolic Blood Pressure")))
 
 define "All BP Observations":
   "Component BP Observations" union "Paired BP Observations"
