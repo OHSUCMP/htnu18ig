@@ -65,8 +65,8 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "onsetDateTime": "2015-05-19T15:16:21-05:00",
-              "recordedDate": "2015-05-19T15:16:21-05:00"
+              "onsetDateTime": "2015-05-28T15:16:21-05:00",
+              "recordedDate": "2015-05-28T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -88,7 +88,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1998-12-22"
+              "birthDate": "1998-12-31"
             },
             "request": {
               "method": "PUT",
@@ -138,7 +138,7 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2021-05-17T15:16:21-05:00",
+              "effectiveDateTime": "2021-05-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -226,7 +226,7 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2021-09-14T15:16:21-05:00",
+              "effectiveDateTime": "2021-09-23T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -314,7 +314,7 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2021-10-15T15:16:21-05:00",
+              "effectiveDateTime": "2021-10-24T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -402,7 +402,7 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2021-06-17T15:16:21-05:00",
+              "effectiveDateTime": "2021-06-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -470,10 +470,10 @@
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
               "effectivePeriod": {
-                "start": "2018-12-07",
-                "end": "2022-09-18"
+                "start": "2018-12-16",
+                "end": "2022-09-27"
               },
-              "issued": "2019-09-18T00:00:00-07:00",
+              "issued": "2019-09-27T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -540,8 +540,8 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2022-10-04T03:14:57-05:00",
-              "issued": "2022-10-04T03:14:57.429-05:00",
+              "effectiveDateTime": "2022-10-13T03:14:57-05:00",
+              "issued": "2022-10-13T03:14:57.429-05:00",
               "valueQuantity": {
                 "value": 27.690689692990766,
                 "unit": "kg/m2",
@@ -577,8 +577,8 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2022-09-15T10:00:00-07:00",
-              "issued": "2022-09-15T00:00:00-07:00",
+              "effectiveDateTime": "2022-09-24T10:00:00-07:00",
+              "issued": "2022-09-24T00:00:00-07:00",
               "valueQuantity": {
                 "value": 5.1,
                 "unit": "Drinks/Day"
@@ -632,7 +632,7 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2021-07-15T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-24T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -720,7 +720,7 @@
               "subject": {
                 "reference": "Patient/NPI-AllCounselingRecommended"
               },
-              "effectiveDateTime": "2021-08-15T15:16:21-05:00",
+              "effectiveDateTime": "2021-08-24T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -780,7 +780,7 @@
                   }
                 ]
               },
-              "startDate": "2021-10-31",
+              "statusDate": "2021-11-09",
               "description": {
                 "text": "Goal of 135/85"
               },

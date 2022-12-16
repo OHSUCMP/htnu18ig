@@ -548,7 +548,6 @@
       "subject": {
         "reference": "Patient/NPI-AlcoholModerationConditionDetected"
       },
-      "startDate": "2021-11-09",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -579,7 +578,8 @@
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
-      } ]
+      } ],
+      "statusDate": "2021-11-09"
     },
     "request": {
       "method": "PUT",
