@@ -198,11 +198,8 @@ define function QualifiedGoal(list List<Goal>):
   list Goal
     //proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected
     where (
-      Goal.lifecycleStatus ~ 'proposed'
-      or Goal.lifecycleStatus ~ 'planned'
-      or Goal.lifecycleStatus ~ 'accepted'
+      Goal.lifecycleStatus ~ 'accepted'
       or Goal.lifecycleStatus ~ 'active'
-      or Goal.lifecycleStatus ~ 'completed'
     )
 
 
@@ -509,8 +506,8 @@ define "Qualifying Blood Pressure Goals":
 
 define "Most Recently Established Blood Pressure Goal":
   Last (
-    "Qualifying Blood Pressure Goals" BPGoal
-      sort by (start as date)
+    "Qualifying Blood Pressure Goals" G
+      sort by (FHIRHelpers.ToDate(statusDate))
   )
 
 define "Patient has a BP Goal":
@@ -532,8 +529,8 @@ define "BP Goal Met":
   "Patient has a BP Goal" and "Has BP Set" and not "Patient Has Potential HTN Stage 2 BP" and not "Above Goal Average Most Recent"
 
 define "Goal Interval":
-  Interval[("Most Recently Established Blood Pressure Goal".start as date),
-    ("Most Recently Established Blood Pressure Goal".start as date) + 3 months]
+  Interval[("Most Recently Established Blood Pressure Goal".statusDate),
+    ("Most Recently Established Blood Pressure Goal".statusDate) + 3 months]
 
 define "Patient on Track":
   not "Patient has a BP Goal" or not "Has BP Set" or "BP Goal Met" or end of "Goal Interval" > Today()
