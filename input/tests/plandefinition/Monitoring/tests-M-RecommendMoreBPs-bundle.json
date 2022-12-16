@@ -223,7 +223,6 @@
       "subject": {
         "reference": "Patient/M-RecommendMoreBPs"
       },
-      "startDate": "2020-06-11",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -254,7 +253,8 @@
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
-      } ]
+      } ],
+      "statusDate": "2020-06-11"
     },
     "request": {
       "method": "PUT",

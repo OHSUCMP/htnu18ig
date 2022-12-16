@@ -566,7 +566,6 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "startDate": "2021-11-09",
       "target": [ {
         "dueDate": "2022-01-27"
       } ],

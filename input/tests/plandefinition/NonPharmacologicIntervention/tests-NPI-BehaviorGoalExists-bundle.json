@@ -584,7 +584,6 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "startDate": "2021-11-09",
       "target": [ {
         "dueDate": "2022-01-27"
       } ],
