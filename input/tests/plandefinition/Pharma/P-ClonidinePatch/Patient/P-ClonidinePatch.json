@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "P-ClonidinePatch",
+  "active": true,
+  "name": [
+    {
+      "text": "Pharmacology Advancing Treatment",
+      "family": "Advancing Treatment",
+      "given": [
+        "Pharmacology"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1984-10-22"
+}

@@ -71,7 +71,7 @@
   }, {
     "type": "depends-on",
     "display": "Value set Antihypertensive Medications 2",
-    "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.72"
+    "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1200.242"
   } ],
   "parameter": [ {
     "name": "Patient",

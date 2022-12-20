@@ -4,7 +4,7 @@
   "hook": "patient-view",
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "P-AdvancingTreatment"
+    "patientId": "P-ClonidinePatch"
   },
   "prefetch": {
     "item1": {
@@ -18,7 +18,7 @@
           {
             "resource": {
               "resourceType": "Procedure",
-              "id": "procedure-P-AdvancingTreatment-1",
+              "id": "procedure-P-ClonidinePatch-1",
               "note": [
                 {
                   "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
@@ -36,7 +36,7 @@
                 "text": "Smoking cessation education (procedure)"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
               "performedDateTime": "2021-05-28T11:00:00-06:00"
             },
@@ -48,7 +48,7 @@
           {
             "resource": {
               "resourceType": "Condition",
-              "id": "condition-P-AdvancingTreatment-1",
+              "id": "condition-P-ClonidinePatch-1",
               "note": [
                 {
                   "text": "Indicates Preexisting Diagnosis of Hypertension"
@@ -93,7 +93,7 @@
                 "text": "Hypertension"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
               "onsetDateTime": "2015-06-20T15:16:21-05:00",
               "recordedDate": "2015-06-20T15:16:21-05:00"
@@ -106,7 +106,7 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "P-AdvancingTreatment",
+              "id": "P-ClonidinePatch",
               "active": true,
               "name": [
                 {
@@ -128,7 +128,27 @@
           {
             "resource": {
               "resourceType": "Medication",
-              "id": "medication-P-AdvancingTreatment-2",
+              "id": "medication-P-ClonidinePatch-1",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                    "code": "202941",
+                    "display": "CATAPRES"
+                  }
+                ],
+                "text": "cloNIDine (CATAPRES) transdermal patch 0.3 mg/24 hr"
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Medication",
+              "id": "medication-P-ClonidinePatch-2",
               "code": {
                 "coding": [
                   {
@@ -155,26 +175,23 @@
           },
           {
             "resource": {
-              "resourceType": "Medication",
-              "id": "medication-P-AdvancingTreatment-1",
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-                    "code": "104222",
-                    "display": "bumetanide 5 MG Oral Tablet"
-                  }
-                ]
+              "resourceType": "MedicationRequest",
+              "id": "medicationrequest-P-ClonidinePatch-1",
+              "note": [
+                {
+                  "text": "Active Request for Antihypertensive"
+                }
+              ],
+              "status": "active",
+              "intent": "order",
+              "medicationReference": {
+                "reference": "Medication/medication-P-ClonidinePatch-1",
+                "display": "cloNIDine (CATAPRES) transdermal patch 0.3 mg/24 hr"
               },
-              "form": {
-                "coding": [
-                  {
-                    "system": "http://snomed.info/sct",
-                    "code": "385055001",
-                    "display": "Tablet dose form (qualifier value)"
-                  }
-                ]
-              }
+              "subject": {
+                "reference": "Patient/P-ClonidinePatch"
+              },
+              "authoredOn": "2021-09-21T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -184,7 +201,7 @@
           {
             "resource": {
               "resourceType": "MedicationRequest",
-              "id": "medicationrequest-P-AdvancingTreatment-2",
+              "id": "medicationrequest-P-ClonidinePatch-2",
               "note": [
                 {
                   "text": "Completed Request"
@@ -193,11 +210,11 @@
               "status": "completed",
               "intent": "order",
               "medicationReference": {
-                "reference": "Medication/medication-P-AdvancingTreatment-1",
-                "display": "bumetanide 5 MG Oral Tablet"
+                "reference": "Medication/medication-P-ClonidinePatch-1",
+                "display": "cloNIDine (CATAPRES) transdermal patch 0.3 mg/24 hr"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
               "authoredOn": "2020-09-21T16:00:00-08:00"
             },
@@ -209,7 +226,7 @@
           {
             "resource": {
               "resourceType": "MedicationRequest",
-              "id": "medicationrequest-P-AdvancingTreatment-3",
+              "id": "medicationrequest-P-ClonidinePatch-3",
               "note": [
                 {
                   "text": "Active Request for Medication - Not an Antihypertensive"
@@ -218,36 +235,11 @@
               "status": "active",
               "intent": "order",
               "medicationReference": {
-                "reference": "Medication/medication-P-AdvancingTreatment-2",
+                "reference": "Medication/medication-P-ClonidinePatch-2",
                 "display": "ibuprofen 200 MG Oral Tablet [Advil]"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
-              },
-              "authoredOn": "2021-09-21T16:00:00-08:00"
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "MedicationRequest",
-              "id": "medicationrequest-P-AdvancingTreatment-1",
-              "note": [
-                {
-                  "text": "Active Request for Antihypertensive"
-                }
-              ],
-              "status": "active",
-              "intent": "order",
-              "medicationReference": {
-                "reference": "Medication/medication-P-AdvancingTreatment-1",
-                "display": "bumetanide 5 MG Oral Tablet"
-              },
-              "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
               "authoredOn": "2021-09-21T16:00:00-08:00"
             },
@@ -259,7 +251,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-P-AdvancingTreatment-6",
+              "id": "observation-P-ClonidinePatch-5",
               "status": "final",
               "note": [
                 {
@@ -297,97 +289,9 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2021-10-16T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 82.1660352979804,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 141.2064054117963,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-P-AdvancingTreatment-7",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Home Blood Pressure Reading"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "264362003"
-                  }
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
-              },
-              "effectiveDateTime": "2021-11-16T15:16:21-05:00",
+              "effectiveDateTime": "2021-09-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -419,7 +323,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 139.2064054117963,
+                    "value": 151.2064054117963,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -435,66 +339,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-P-AdvancingTreatment-1",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Patient was smoking 1 pack/day as of 1/5/2019. Referred to counseling (related procedure)"
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "72166-2",
-                    "display": "Tobacco smoking status"
-                  }
-                ]
-              },
-              "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
-              },
-              "effectivePeriod": {
-                "start": "2002-02-02",
-                "end": "2021-05-28"
-              },
-              "issued": "2021-05-28T00:00:00-07:00",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "system": "http://snomed.info/sct",
-                    "code": "428071000124103",
-                    "display": "Heavy tobacco smoker (finding)"
-                  }
-                ]
-              },
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8663-7",
-                        "display": "Cigarettes smoked current (pack per day) - Reported"
-                      }
-                    ]
-                  },
-                  "valueQuantity": {
-                    "value": 1,
-                    "unit": "Packs/Day"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-P-AdvancingTreatment-2",
+              "id": "observation-P-ClonidinePatch-4",
               "status": "final",
               "note": [
                 {
@@ -532,183 +377,7 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
-              },
-              "effectiveDateTime": "2021-06-18T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 98.3660352979804,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 141.2064054117963,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-P-AdvancingTreatment-3",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Home Blood Pressure Reading"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "264362003"
-                  }
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
-              },
-              "effectiveDateTime": "2021-07-19T15:16:21-05:00",
-              "component": [
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8462-4",
-                        "display": "Diastolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Diastolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 87.1660352979804,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                },
-                {
-                  "code": {
-                    "coding": [
-                      {
-                        "system": "http://loinc.org",
-                        "code": "8480-6",
-                        "display": "Systolic Blood Pressure"
-                      }
-                    ],
-                    "text": "Systolic Blood Pressure"
-                  },
-                  "valueQuantity": {
-                    "value": 139.4064054117963,
-                    "unit": "mm[Hg]",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mm[Hg]"
-                  }
-                }
-              ]
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Observation",
-              "id": "observation-P-AdvancingTreatment-4",
-              "status": "final",
-              "note": [
-                {
-                  "text": "Home Blood Pressure Reading"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "264362003"
-                  }
-                }
-              ],
-              "category": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                      "code": "vital-signs",
-                      "display": "vital-signs"
-                    }
-                  ]
-                }
-              ],
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "55284-4",
-                    "display": "Blood Pressure"
-                  }
-                ],
-                "text": "Blood Pressure"
-              },
-              "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
               "effectiveDateTime": "2021-08-16T15:16:21-05:00",
               "component": [
@@ -758,7 +427,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-P-AdvancingTreatment-8",
+              "id": "observation-P-ClonidinePatch-8",
               "status": "final",
               "note": [
                 {
@@ -796,7 +465,7 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
               "effectiveDateTime": "2021-12-10T15:16:21-05:00",
               "component": [
@@ -846,7 +515,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-P-AdvancingTreatment-5",
+              "id": "observation-P-ClonidinePatch-3",
               "status": "final",
               "note": [
                 {
@@ -884,9 +553,244 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2021-09-16T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-19T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 87.1660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 139.4064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-P-ClonidinePatch-2",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/P-ClonidinePatch"
+              },
+              "effectiveDateTime": "2021-06-18T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 98.3660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 141.2064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-P-ClonidinePatch-1",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Patient was smoking 1 pack/day as of 1/5/2019. Referred to counseling (related procedure)"
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "72166-2",
+                    "display": "Tobacco smoking status"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/P-ClonidinePatch"
+              },
+              "effectivePeriod": {
+                "start": "2002-02-02",
+                "end": "2021-05-28"
+              },
+              "issued": "2021-05-28T00:00:00-07:00",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "428071000124103",
+                    "display": "Heavy tobacco smoker (finding)"
+                  }
+                ]
+              },
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8663-7",
+                        "display": "Cigarettes smoked current (pack per day) - Reported"
+                      }
+                    ]
+                  },
+                  "valueQuantity": {
+                    "value": 1,
+                    "unit": "Packs/Day"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-P-ClonidinePatch-7",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/P-ClonidinePatch"
+              },
+              "effectiveDateTime": "2021-11-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -918,7 +822,95 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 151.2064054117963,
+                    "value": 139.2064054117963,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                }
+              ]
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Observation",
+              "id": "observation-P-ClonidinePatch-6",
+              "status": "final",
+              "note": [
+                {
+                  "text": "Home Blood Pressure Reading"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+                  "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "264362003"
+                  }
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "code": "vital-signs",
+                      "display": "vital-signs"
+                    }
+                  ]
+                }
+              ],
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood Pressure"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "subject": {
+                "reference": "Patient/P-ClonidinePatch"
+              },
+              "effectiveDateTime": "2021-10-16T15:16:21-05:00",
+              "component": [
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Diastolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 82.1660352979804,
+                    "unit": "mm[Hg]",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                  }
+                },
+                {
+                  "code": {
+                    "coding": [
+                      {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                      }
+                    ],
+                    "text": "Systolic Blood Pressure"
+                  },
+                  "valueQuantity": {
+                    "value": 141.2064054117963,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -934,7 +926,7 @@
           {
             "resource": {
               "resourceType": "Goal",
-              "id": "goal-P-AdvancingTreatment-1",
+              "id": "goal-P-ClonidinePatch-1",
               "note": [
                 {
                   "text": "There has been no change toward patient goal."
@@ -956,7 +948,7 @@
                 "text": "Goal of 135/85"
               },
               "subject": {
-                "reference": "Patient/P-AdvancingTreatment"
+                "reference": "Patient/P-ClonidinePatch"
               },
               "target": [
                 {

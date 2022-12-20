@@ -1,0 +1,14 @@
+{
+  "resourceType": "Medication",
+  "id": "medication-P-ClonidinePatch-1",
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "202941",
+        "display": "CATAPRES"
+      }
+    ],
+    "text": "cloNIDine (CATAPRES) transdermal patch 0.3 mg/24 hr"
+  }
+}
