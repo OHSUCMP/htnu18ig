@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "medicationrequest-P-AdvancingTreatment-2",
+  "id": "medicationrequest-P-ClonidinePatch-2",
   "note": [
     {
       "text": "Completed Request"
@@ -9,11 +9,11 @@
   "status": "completed",
   "intent": "order",
   "medicationReference": {
-    "reference": "Medication/medication-P-AdvancingTreatment-1",
-    "display": "bumetanide 5 MG Oral Tablet"
+    "reference": "Medication/medication-P-ClonidinePatch-1",
+    "display": "cloNIDine (CATAPRES) transdermal patch 0.3 mg/24 hr"
   },
   "subject": {
-    "reference": "Patient/P-AdvancingTreatment"
+    "reference": "Patient/P-ClonidinePatch"
   },
   "authoredOn": "2020-09-21T16:00:00-08:00"
 }
