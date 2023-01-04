@@ -127,6 +127,14 @@
       ],
       "dynamicValue": [
         {
+          "path": "action.title",
+          "expression": {
+            "description": "Exclusion Summary",
+            "language": "text/cql.identifier",
+            "expression": "Exclusion Summary"
+          }
+        },
+        {
           "path": "action.description",
           "expression": {
             "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
