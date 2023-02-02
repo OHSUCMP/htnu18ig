@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "performedDateTime": "2021-05-05T11:00:00-06:00",
+      "performedDateTime": "2021-07-01T11:00:00-06:00",
       "note": [ {
         "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "onsetDateTime": "2015-05-28T15:16:21-05:00",
-      "recordedDate": "2015-05-28T15:16:21-05:00",
+      "onsetDateTime": "2015-07-24T15:16:21-05:00",
+      "recordedDate": "2015-07-24T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "Pharmacologic" ]
       } ],
       "gender": "male",
-      "birthDate": "1990-08-27"
+      "birthDate": "1990-10-23"
     },
     "request": {
       "method": "PUT",
@@ -148,7 +148,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "authoredOn": "2021-08-29T16:00:00-08:00",
+      "authoredOn": "2021-10-25T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Antihypertensive"
       } ]
@@ -170,7 +170,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "authoredOn": "2021-08-29T16:00:00-08:00",
+      "authoredOn": "2021-10-25T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Medication - Not an Antihypertensive"
       } ]
@@ -192,7 +192,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "authoredOn": "2020-08-29T16:00:00-08:00",
+      "authoredOn": "2020-10-25T16:00:00-08:00",
       "note": [ {
         "text": "Completed Request"
       } ]
@@ -231,7 +231,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "effectiveDateTime": "2021-09-23T15:16:21-05:00",
+      "effectiveDateTime": "2021-11-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -301,7 +301,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "effectiveDateTime": "2021-10-24T15:16:21-05:00",
+      "effectiveDateTime": "2021-12-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -357,10 +357,10 @@
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
       "effectivePeriod": {
-        "start": "2002-01-10",
-        "end": "2021-05-05"
+        "start": "2002-03-08",
+        "end": "2021-07-01"
       },
-      "issued": "2021-05-05T00:00:00-07:00",
+      "issued": "2021-07-01T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -419,7 +419,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -489,7 +489,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-08-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -559,7 +559,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "effectiveDateTime": "2021-07-24T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -629,7 +629,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "effectiveDateTime": "2021-11-17T15:16:21-05:00",
+      "effectiveDateTime": "2022-01-13T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -699,7 +699,7 @@
       "subject": {
         "reference": "Patient/NPI-PharmacologicInterventions"
       },
-      "effectiveDateTime": "2021-08-24T15:16:21-05:00",
+      "effectiveDateTime": "2021-10-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -789,7 +789,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2021-05-12",
+      "statusDate": "2021-07-08",
       "note": [ {
         "text": "There has been no change toward patient goal."
       } ]

@@ -40,8 +40,8 @@
                 "reference": "Patient/M-NotAtGoalAboveGoal"
               },
               "period": {
-                "start": "2021-07-24T00:00:00-04:00",
-                "end": "2021-07-24T23:59:59-04:00"
+                "start": "2021-09-19T00:00:00-04:00",
+                "end": "2021-09-19T23:59:59-04:00"
               }
             },
             "request": {
@@ -74,8 +74,8 @@
                 "reference": "Patient/M-NotAtGoalAboveGoal"
               },
               "period": {
-                "start": "2021-06-26T00:00:00-04:00",
-                "end": "2021-06-26T23:59:59-04:00"
+                "start": "2021-08-22T00:00:00-04:00",
+                "end": "2021-08-22T23:59:59-04:00"
               }
             },
             "request": {
@@ -108,8 +108,8 @@
                 "reference": "Patient/M-NotAtGoalAboveGoal"
               },
               "period": {
-                "start": "2021-08-24T00:00:00-04:00",
-                "end": "2021-08-24T23:59:59-04:00"
+                "start": "2021-10-20T00:00:00-04:00",
+                "end": "2021-10-20T23:59:59-04:00"
               }
             },
             "request": {
@@ -142,8 +142,8 @@
                 "reference": "Patient/M-NotAtGoalAboveGoal"
               },
               "period": {
-                "start": "2021-05-26T00:00:00-04:00",
-                "end": "2021-05-26T23:59:59-04:00"
+                "start": "2021-07-22T00:00:00-04:00",
+                "end": "2021-07-22T23:59:59-04:00"
               }
             },
             "request": {
@@ -201,8 +201,8 @@
               "subject": {
                 "reference": "Patient/M-NotAtGoalAboveGoal"
               },
-              "onsetDateTime": "2022-02-19",
-              "recordedDate": "2015-05-28T15:16:21-05:00"
+              "onsetDateTime": "2022-04-17",
+              "recordedDate": "2015-07-24T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -224,7 +224,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1967-05-29"
+              "birthDate": "1967-07-25"
             },
             "request": {
               "method": "PUT",
@@ -268,7 +268,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-4"
               },
-              "effectiveDateTime": "2021-08-24T15:16:21-05:00",
+              "effectiveDateTime": "2021-10-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -356,7 +356,7 @@
               "subject": {
                 "reference": "Patient/M-NotAtGoalAboveGoal"
               },
-              "effectiveDateTime": "2021-09-23T15:16:21-05:00",
+              "effectiveDateTime": "2021-11-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -438,7 +438,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-2"
               },
-              "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-08-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -520,7 +520,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-3"
               },
-              "effectiveDateTime": "2021-07-24T15:16:21-05:00",
+              "effectiveDateTime": "2021-09-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -602,7 +602,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-1"
               },
-              "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -690,7 +690,7 @@
               "subject": {
                 "reference": "Patient/M-NotAtGoalAboveGoal"
               },
-              "effectiveDateTime": "2021-05-06T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-02T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -750,7 +750,7 @@
                   }
                 ]
               },
-              "statusDate": "2021-11-09",
+              "statusDate": "2022-01-05",
               "description": {
                 "text": "Goal of 135/85"
               },

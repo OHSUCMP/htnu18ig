@@ -20,10 +20,10 @@
     "reference": "Patient/NPI-AllCounselingRecommended"
   },
   "effectivePeriod": {
-    "start": "2018-12-16",
-    "end": "2022-09-27"
+    "start": "2019-02-11",
+    "end": "2022-11-23"
   },
-  "issued": "2019-09-27T00:00:00-07:00",
+  "issued": "2019-11-23T00:00:00-07:00",
   "valueCodeableConcept": {
     "coding": [
       {

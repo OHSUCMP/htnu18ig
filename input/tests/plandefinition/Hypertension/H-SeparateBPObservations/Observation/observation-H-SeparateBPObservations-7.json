@@ -39,7 +39,7 @@
   "subject": {
     "reference": "Patient/H-SeparateBPObservations"
   },
-  "effectiveDateTime": "2022-10-21T15:16:21-05:00",
+  "effectiveDateTime": "2022-12-17T15:16:21-05:00",
   "valueQuantity": {
     "value": 125
   }
