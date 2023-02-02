@@ -20,10 +20,10 @@
     "reference": "Patient/NPI-BehaviorGoalExists"
   },
   "effectivePeriod": {
-    "start": "2000-01-15",
-    "end": "2020-06-30"
+    "start": "2000-03-12",
+    "end": "2020-08-26"
   },
-  "issued": "2020-06-30T00:00:00-07:00",
+  "issued": "2020-08-26T00:00:00-07:00",
   "valueCodeableConcept": {
     "coding": [
       {

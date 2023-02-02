@@ -23,8 +23,8 @@
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
       "period": {
-        "start": "2021-06-26T00:00:00-04:00",
-        "end": "2021-06-26T23:59:59-04:00"
+        "start": "2021-08-22T00:00:00-04:00",
+        "end": "2021-08-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
       "period": {
-        "start": "2021-07-24T00:00:00-04:00",
-        "end": "2021-07-24T23:59:59-04:00"
+        "start": "2021-09-19T00:00:00-04:00",
+        "end": "2021-09-19T23:59:59-04:00"
       }
     },
     "request": {
@@ -81,8 +81,8 @@
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
       "period": {
-        "start": "2021-08-24T00:00:00-04:00",
-        "end": "2021-08-24T23:59:59-04:00"
+        "start": "2021-10-20T00:00:00-04:00",
+        "end": "2021-10-20T23:59:59-04:00"
       }
     },
     "request": {
@@ -110,8 +110,8 @@
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
       "period": {
-        "start": "2021-05-26T00:00:00-04:00",
-        "end": "2021-05-26T23:59:59-04:00"
+        "start": "2021-07-22T00:00:00-04:00",
+        "end": "2021-07-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -153,8 +153,8 @@
       "subject": {
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
-      "onsetDateTime": "2015-05-28T15:16:21-05:00",
-      "recordedDate": "2015-05-28T15:16:21-05:00",
+      "onsetDateTime": "2015-07-24T15:16:21-05:00",
+      "recordedDate": "2015-07-24T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -174,7 +174,7 @@
         "given": [ "Recommend" ]
       } ],
       "gender": "female",
-      "birthDate": "1973-07-15"
+      "birthDate": "1973-09-10"
     },
     "request": {
       "method": "PUT",
@@ -206,7 +206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-2"
       },
-      "effectiveDateTime": "2021-06-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-08-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -272,7 +272,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-3"
       },
-      "effectiveDateTime": "2021-07-24T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-19T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -338,7 +338,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-4"
       },
-      "effectiveDateTime": "2021-08-24T15:16:21-05:00",
+      "effectiveDateTime": "2021-10-20T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -408,7 +408,7 @@
       "subject": {
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
-      "effectiveDateTime": "2021-09-23T15:16:21-05:00",
+      "effectiveDateTime": "2021-11-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -478,7 +478,7 @@
       "subject": {
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
-      "effectiveDateTime": "2021-05-06T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-02T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -544,7 +544,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-1"
       },
-      "effectiveDateTime": "2021-05-26T15:16:21-05:00",
+      "effectiveDateTime": "2021-07-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -634,7 +634,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2021-11-09"
+      "statusDate": "2022-01-05"
     },
     "request": {
       "method": "PUT",
