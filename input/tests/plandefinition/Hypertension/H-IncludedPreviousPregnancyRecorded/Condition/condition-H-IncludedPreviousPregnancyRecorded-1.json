@@ -3,7 +3,7 @@
   "id": "condition-H-IncludedPreviousPregnancyRecorded-1",
   "note": [
     {
-      "text": "Indicates patient is pregnant at last BP Reading"
+      "text": "Indicates patient was pregnant but condition was recorded > 42 weeks ago"
     }
   ],
   "category": [
