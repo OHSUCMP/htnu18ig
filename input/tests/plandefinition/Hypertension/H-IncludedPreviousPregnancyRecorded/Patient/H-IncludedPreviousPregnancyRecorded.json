@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-IncludedPreviousPregnancyRecorded",
+  "active": true,
+  "name": [
+    {
+      "text": "Included Pregnant Recorded",
+      "family": "Pregnant Recorded",
+      "given": [
+        "Included"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2001-01-04"
+}

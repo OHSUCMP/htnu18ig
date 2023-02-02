@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "condition-H-ExcludedPregnantEncounterDiagnosis-1",
+  "id": "condition-H-IncludedPreviousPregnancyRecorded-1",
   "note": [
     {
       "text": "Indicates patient is pregnant at last BP Reading"
@@ -11,21 +11,13 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-          "code": "encounter-diagnosis",
-          "display": "Encounter Diagnosis"
+          "code": "problem-list-item",
+          "display": "Problem List Item"
         }
       ],
-      "text": "Encounter Diagnosis"
+      "text": "Problem List Item"
     }
   ],
-  "clinicalStatus": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code": "active"
-      }
-    ]
-  },
   "verificationStatus": {
     "coding": [
       {
@@ -46,8 +38,7 @@
     "text": "Normal pregnancy (finding)"
   },
   "subject": {
-    "reference": "Patient/H-ExcludedPregnantEncounterDiagnosis"
+    "reference": "Patient/H-IncludedPreviousPregnancyRecorded"
   },
-  "onsetDateTime": "2022-06-10T19:02:10-04:00",
-  "recordedDate": "2022-06-10T19:02:10-04:00"
+  "recordedDate": "2022-04-10T19:02:10-04:00"
 }

@@ -279,6 +279,32 @@ define function "Is Valid Prevalence Period"(condition Condition):
     false
 
 /*
+A pregnancy is considered active if one of the following are true:
+- An onset and abatement exist, and today is after the onset and before the abatement
+- Clinical status is active or null and
+-- Only the onset exists and it's at least 42 weeks in the past
+-- Only the abatement exists and it's in the future
+-- Only the recorded date exists and it's at least 42 weeks in the past
+-- No dates exist to provide additional context
+*/
+define function "Is Active Pregnancy"(condition Condition):
+  if condition.onset is not null and condition.abatement is not null then
+    start of "Normalize Interval"(condition.onset) <= Today() + 1 day and end of "Normalize Abatement"(condition) >= Today() + 1 day
+  else if condition.clinicalStatus is null or condition.clinicalStatus ~ "active" then
+      if condition.onset is not null then
+        start of "Normalize Interval"(condition.onset) > Today() - 42 week
+      else if condition.abatement is not null then
+        end of "Normalize Abatement"(condition) >= Today() + 1 day
+      else if condition.recordedDate is not null then
+        condition.recordedDate > Today() - 42 week
+      else
+        true
+  else
+    false
+
+
+
+/*
   @description: returns true if the procedure was known to be performed in the previous 2 years. Note that 'performed' seems to
   be going away in FHIR 5 and another way to get at a date could be through a encounter reference, so this is not very robust.
   This is only used to decide whether to show someone counseling again if the record is stale, and we will err on the side of
@@ -331,7 +357,7 @@ define "Condition Indicating End Stage Renal Disease":
 
 define "Condition Indicating Pregnancy":
   "Conditions" Condition
-    where TransformCodeableConcept(Condition.code) in "Pregnancy" and "Is Valid Prevalence Period"(Condition)
+    where TransformCodeableConcept(Condition.code) in "Pregnancy" and "Is Active Pregnancy"(Condition)
 
 define "Condition Indicating Preexisting Hypertension":
   "Problem Condition Indicating Preexisting Hypertension" union

@@ -66,8 +66,8 @@
               "subject": {
                 "reference": "Patient/H-ExcludedPregnant"
               },
-              "onsetDateTime": "2019-04-10T19:02:10-04:00",
-              "recordedDate": "2019-04-10T19:02:10-04:00"
+              "onsetDateTime": "2023-01-10T19:02:10-04:00",
+              "recordedDate": "2023-01-10T19:02:10-04:00"
             },
             "request": {
               "method": "PUT",

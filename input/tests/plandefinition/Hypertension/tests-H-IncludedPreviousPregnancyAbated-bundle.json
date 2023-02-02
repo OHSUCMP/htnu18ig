@@ -1,11 +1,11 @@
 {
   "resourceType": "Bundle",
-  "id": "tests-H-ExcludedPregnant-bundle",
+  "id": "tests-H-IncludedPreviousPregnancyAbated-bundle",
   "type": "transaction",
   "entry": [ {
     "resource": {
       "resourceType": "Condition",
-      "id": "condition-H-ExcludedPregnant-1",
+      "id": "condition-H-IncludedPreviousPregnancyAbated-1",
       "clinicalStatus": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -36,39 +36,40 @@
         "text": "Normal pregnancy (finding)"
       },
       "subject": {
-        "reference": "Patient/H-ExcludedPregnant"
+        "reference": "Patient/H-IncludedPreviousPregnancyAbated"
       },
-      "onsetDateTime": "2023-01-10T19:02:10-04:00",
-      "recordedDate": "2023-01-10T19:02:10-04:00",
+      "onsetDateTime": "2022-07-10T19:02:10-04:00",
+      "abatementDateTime": "2022-02-01T19:02:10-04:00",
+      "recordedDate": "2022-07-10T19:02:10-04:00",
       "note": [ {
         "text": "Indicates patient is pregnant at last BP Reading"
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-H-ExcludedPregnant-1"
+      "url": "Condition/condition-H-IncludedPreviousPregnancyAbated-1"
     }
   }, {
     "resource": {
       "resourceType": "Patient",
-      "id": "H-ExcludedPregnant",
+      "id": "H-IncludedPreviousPregnancyAbated",
       "active": true,
       "name": [ {
-        "text": "Excluded Pregnant",
-        "family": "Pregnant",
-        "given": [ "Excluded" ]
+        "text": "Included Pregnant Abated",
+        "family": "Pregnant Abated",
+        "given": [ "Included" ]
       } ],
       "gender": "female",
-      "birthDate": "1988-04-07"
+      "birthDate": "1998-12-24"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/H-ExcludedPregnant"
+      "url": "Patient/H-IncludedPreviousPregnancyAbated"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-H-ExcludedPregnant-2",
+      "id": "observation-H-IncludedPreviousPregnancyAbated-2",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -93,7 +94,7 @@
         "text": "Blood Pressure"
       },
       "subject": {
-        "reference": "Patient/H-ExcludedPregnant"
+        "reference": "Patient/H-IncludedPreviousPregnancyAbated"
       },
       "effectiveDateTime": "2019-06-06T15:16:21-05:00",
       "note": [ {
@@ -133,12 +134,12 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-H-ExcludedPregnant-2"
+      "url": "Observation/observation-H-IncludedPreviousPregnancyAbated-2"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-H-ExcludedPregnant-1",
+      "id": "observation-H-IncludedPreviousPregnancyAbated-1",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -163,7 +164,7 @@
         "text": "Blood Pressure"
       },
       "subject": {
-        "reference": "Patient/H-ExcludedPregnant"
+        "reference": "Patient/H-IncludedPreviousPregnancyAbated"
       },
       "effectiveDateTime": "2016-06-02T15:16:21-05:00",
       "note": [ {
@@ -203,7 +204,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-H-ExcludedPregnant-1"
+      "url": "Observation/observation-H-IncludedPreviousPregnancyAbated-1"
     }
   } ]
 }

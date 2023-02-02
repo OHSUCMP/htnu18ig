@@ -1,11 +1,11 @@
 {
   "resourceType": "Bundle",
-  "id": "tests-H-ExcludedPregnant-bundle",
+  "id": "tests-H-IncludedPreviousPregnancyOnset-bundle",
   "type": "transaction",
   "entry": [ {
     "resource": {
       "resourceType": "Condition",
-      "id": "condition-H-ExcludedPregnant-1",
+      "id": "condition-H-IncludedPreviousPregnancyOnset-1",
       "clinicalStatus": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -36,39 +36,39 @@
         "text": "Normal pregnancy (finding)"
       },
       "subject": {
-        "reference": "Patient/H-ExcludedPregnant"
+        "reference": "Patient/H-IncludedPreviousPregnancyOnset"
       },
-      "onsetDateTime": "2023-01-10T19:02:10-04:00",
-      "recordedDate": "2023-01-10T19:02:10-04:00",
+      "onsetDateTime": "2022-04-10T19:02:10-04:00",
+      "recordedDate": "2022-05-10T19:02:10-04:00",
       "note": [ {
         "text": "Indicates patient is pregnant at last BP Reading"
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Condition/condition-H-ExcludedPregnant-1"
+      "url": "Condition/condition-H-IncludedPreviousPregnancyOnset-1"
     }
   }, {
     "resource": {
       "resourceType": "Patient",
-      "id": "H-ExcludedPregnant",
+      "id": "H-IncludedPreviousPregnancyOnset",
       "active": true,
       "name": [ {
-        "text": "Excluded Pregnant",
-        "family": "Pregnant",
-        "given": [ "Excluded" ]
+        "text": "Included Pregnant Onset",
+        "family": "Pregnant Onset",
+        "given": [ "Included" ]
       } ],
-      "gender": "female",
-      "birthDate": "1988-04-07"
+      "gender": "male",
+      "birthDate": "1997-11-27"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/H-ExcludedPregnant"
+      "url": "Patient/H-IncludedPreviousPregnancyOnset"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-H-ExcludedPregnant-2",
+      "id": "observation-H-IncludedPreviousPregnancyOnset-1",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -93,77 +93,7 @@
         "text": "Blood Pressure"
       },
       "subject": {
-        "reference": "Patient/H-ExcludedPregnant"
-      },
-      "effectiveDateTime": "2019-06-06T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 84.80326035473048,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 118.26792615427489,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-H-ExcludedPregnant-2"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-H-ExcludedPregnant-1",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/H-ExcludedPregnant"
+        "reference": "Patient/H-IncludedPreviousPregnancyOnset"
       },
       "effectiveDateTime": "2016-06-02T15:16:21-05:00",
       "note": [ {
@@ -203,7 +133,77 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-H-ExcludedPregnant-1"
+      "url": "Observation/observation-H-IncludedPreviousPregnancyOnset-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-H-IncludedPreviousPregnancyOnset-2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/H-IncludedPreviousPregnancyOnset"
+      },
+      "effectiveDateTime": "2019-06-06T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.80326035473048,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 118.26792615427489,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-H-IncludedPreviousPregnancyOnset-2"
     }
   } ]
 }
