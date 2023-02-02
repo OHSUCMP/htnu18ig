@@ -4,7 +4,7 @@
   "hook": "patient-view",
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "H-ExcludedPregnant"
+    "patientId": "H-IncludedPreviousPregnancyRecorded"
   },
   "prefetch": {
     "item1": {
@@ -18,7 +18,7 @@
           {
             "resource": {
               "resourceType": "Condition",
-              "id": "condition-H-ExcludedPregnant-1",
+              "id": "condition-H-IncludedPreviousPregnancyRecorded-1",
               "note": [
                 {
                   "text": "Indicates patient is pregnant at last BP Reading"
@@ -36,14 +36,6 @@
                   "text": "Problem List Item"
                 }
               ],
-              "clinicalStatus": {
-                "coding": [
-                  {
-                    "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-                    "code": "active"
-                  }
-                ]
-              },
               "verificationStatus": {
                 "coding": [
                   {
@@ -64,10 +56,9 @@
                 "text": "Normal pregnancy (finding)"
               },
               "subject": {
-                "reference": "Patient/H-ExcludedPregnant"
+                "reference": "Patient/H-IncludedPreviousPregnancyRecorded"
               },
-              "onsetDateTime": "2023-01-10T19:02:10-04:00",
-              "recordedDate": "2023-01-10T19:02:10-04:00"
+              "recordedDate": "2022-04-10T19:02:10-04:00"
             },
             "request": {
               "method": "PUT",
@@ -77,19 +68,19 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "H-ExcludedPregnant",
+              "id": "H-IncludedPreviousPregnancyRecorded",
               "active": true,
               "name": [
                 {
-                  "text": "Excluded Pregnant",
-                  "family": "Pregnant",
+                  "text": "Included Pregnant Recorded",
+                  "family": "Pregnant Recorded",
                   "given": [
-                    "Excluded"
+                    "Included"
                   ]
                 }
               ],
               "gender": "female",
-              "birthDate": "1988-06-03"
+              "birthDate": "2001-01-04"
             },
             "request": {
               "method": "PUT",
@@ -99,7 +90,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-ExcludedPregnant-2",
+              "id": "observation-H-IncludedPreviousPregnancyRecorded-2",
               "status": "final",
               "note": [
                 {
@@ -137,9 +128,9 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-ExcludedPregnant"
+                "reference": "Patient/H-IncludedPreviousPregnancyRecorded"
               },
-              "effectiveDateTime": "2019-08-02T15:16:21-05:00",
+              "effectiveDateTime": "2019-06-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -187,7 +178,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-H-ExcludedPregnant-1",
+              "id": "observation-H-IncludedPreviousPregnancyRecorded-1",
               "status": "final",
               "note": [
                 {
@@ -225,9 +216,9 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/H-ExcludedPregnant"
+                "reference": "Patient/H-IncludedPreviousPregnancyRecorded"
               },
-              "effectiveDateTime": "2016-07-29T15:16:21-05:00",
+              "effectiveDateTime": "2016-06-02T15:16:21-05:00",
               "component": [
                 {
                   "code": {

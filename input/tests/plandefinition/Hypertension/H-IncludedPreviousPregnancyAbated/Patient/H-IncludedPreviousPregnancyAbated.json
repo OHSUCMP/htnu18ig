@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "H-IncludedPreviousPregnancyAbated",
+  "active": true,
+  "name": [
+    {
+      "text": "Included Pregnant Abated",
+      "family": "Pregnant Abated",
+      "given": [
+        "Included"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1998-12-24"
+}
