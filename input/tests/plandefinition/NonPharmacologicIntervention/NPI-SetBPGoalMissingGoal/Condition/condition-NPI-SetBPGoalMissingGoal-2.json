@@ -48,7 +48,7 @@
   "subject": {
     "reference": "Patient/NPI-SetBPGoalMissingGoal"
   },
-  "onsetDateTime": "2019-04-10T19:02:10-04:00",
-  "abatementDateTime": "2019-12-29T17:04:12",
-  "recordedDate": "2019-04-10T19:02:10-04:00"
+  "onsetDateTime": "2019-06-06T19:02:10-04:00",
+  "abatementDateTime": "2020-02-24T17:04:12",
+  "recordedDate": "2019-06-06T19:02:10-04:00"
 }
