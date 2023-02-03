@@ -41,7 +41,7 @@
       "onsetDateTime": "2022-04-10T19:02:10-04:00",
       "recordedDate": "2022-05-10T19:02:10-04:00",
       "note": [ {
-        "text": "Indicates patient is pregnant at last BP Reading"
+        "text": "Indicates patient was pregnant with onset > 42 weeks ago"
       } ]
     },
     "request": {

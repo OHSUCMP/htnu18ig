@@ -21,7 +21,7 @@
               "id": "condition-H-IncludedPreviousPregnancyOnset-1",
               "note": [
                 {
-                  "text": "Indicates patient is pregnant at last BP Reading"
+                  "text": "Indicates patient was pregnant with onset > 42 weeks ago"
                 }
               ],
               "category": [

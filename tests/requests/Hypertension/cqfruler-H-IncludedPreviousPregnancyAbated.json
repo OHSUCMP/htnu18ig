@@ -21,7 +21,7 @@
               "id": "condition-H-IncludedPreviousPregnancyAbated-1",
               "note": [
                 {
-                  "text": "Indicates patient is pregnant at last BP Reading"
+                  "text": "Indicates patient was pregnant but it is abated."
                 }
               ],
               "category": [
