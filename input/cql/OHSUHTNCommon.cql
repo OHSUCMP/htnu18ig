@@ -560,7 +560,7 @@ define "Above Goal Average Most Recent":
   "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
 
 define "BP Goal Met":
-  "Patient has a BP Goal" and "Has BP Set" and not "Patient Has Potential HTN Stage 2 BP" and not "Above Goal Average Most Recent"
+  "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
 
 define "Goal Interval":
   Interval[("Most Recently Established Blood Pressure Goal".statusDate),
