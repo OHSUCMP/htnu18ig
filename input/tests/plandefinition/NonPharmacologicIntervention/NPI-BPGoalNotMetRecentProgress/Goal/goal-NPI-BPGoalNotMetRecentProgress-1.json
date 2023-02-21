@@ -15,7 +15,7 @@
   "statusDate": "2022-01-24",
 "startDate": "2022-01-24",
   "description": {
-    "text": "Goal of 135/85"
+    "text": "Goal of 130/80"
   },
   "subject": {
     "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
@@ -33,7 +33,7 @@
         ]
       },
       "detailQuantity": {
-        "value": 135,
+        "value": 130,
         "unit": "mmHg",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -51,7 +51,7 @@
         ]
       },
       "detailQuantity": {
-        "value": 85,
+        "value": 80,
         "unit": "mmHg",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

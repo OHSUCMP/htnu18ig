@@ -23,7 +23,7 @@ define "In Population":
 
 // Tests conditions from other workflows needed for Pharma intervention to proceed
 define "Enter Workflow":
-    "In Population" and (Common."Patient Has Potential HTN Stage 2 BP" or not Common."Patient on Track")
+    "In Population" and not Common."Patient on Track"
 
 define "Recommendation":
   if Common."Patient is Using Antihypertensive Medications" then 'Use shared decision making for treatment.'

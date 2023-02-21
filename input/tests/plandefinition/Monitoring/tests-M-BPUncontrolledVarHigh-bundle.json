@@ -206,7 +206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-07-23T15:16:21-05:00",
+      "effectiveDateTime": "2022-07-04T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
