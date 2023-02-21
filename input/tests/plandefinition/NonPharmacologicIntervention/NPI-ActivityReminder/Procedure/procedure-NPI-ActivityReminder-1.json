@@ -21,7 +21,7 @@
   "subject": {
     "reference": "Patient/NPI-ActivityReminder"
   },
-  "performedDateTime": "2019-11-22T11:00:00-06:00",
+  "performedDateTime": "2019-12-11T11:00:00-06:00",
   "reasonReference": [
     {
       "reference": "Observation/observation-NPI-ActivityReminder-1"

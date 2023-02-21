@@ -236,6 +236,14 @@ define function "Normalize Interval"(choice Choice<FHIR.dateTime, FHIR.Period, F
 			null as Interval<DateTime>
 	end
 
+define function "Check Goal Start"(choice Choice<FHIR.date,FHIR.CodeableConcept>):
+  case
+	  when choice is FHIR.date then
+    	FHIRHelpers.ToDate(choice)
+		else
+      null as System.Date
+  end
+
 /*
 @description: Returns an interval representing the normalized Abatement of a given Condition resource.
 @comment: NOTE: Due to the complexity of determining an interval from a String, this function will throw
@@ -533,7 +541,7 @@ define "Qualifying Blood Pressure Goals":
 define "Most Recently Established Blood Pressure Goal":
   Last (
     "Qualifying Blood Pressure Goals" G
-      sort by (FHIRHelpers.ToDate(statusDate))
+      sort by (Coalesce("Check Goal Start"(start), FHIRHelpers.ToDate(statusDate)))
   )
 
 define "Patient has a BP Goal":

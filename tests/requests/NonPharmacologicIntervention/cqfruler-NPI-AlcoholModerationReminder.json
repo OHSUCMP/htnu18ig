@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "performedDateTime": "2021-11-23T11:00:00-06:00"
+              "performedDateTime": "2021-12-12T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -95,8 +95,8 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "onsetDateTime": "2015-07-24T15:16:21-05:00",
-              "recordedDate": "2015-07-24T15:16:21-05:00"
+              "onsetDateTime": "2015-08-12T15:16:21-05:00",
+              "recordedDate": "2015-08-12T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -118,7 +118,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1991-09-26"
+              "birthDate": "1991-10-15"
             },
             "request": {
               "method": "PUT",
@@ -168,7 +168,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2021-10-20T15:16:21-05:00",
+              "effectiveDateTime": "2021-11-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -256,7 +256,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2021-09-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-10-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -344,7 +344,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2021-08-22T15:16:21-05:00",
+              "effectiveDateTime": "2021-09-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -432,7 +432,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2021-07-22T15:16:21-05:00",
+              "effectiveDateTime": "2021-08-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -500,8 +500,8 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2021-11-20T10:00:00-07:00",
-              "issued": "2021-11-20T00:00:00-07:00",
+              "effectiveDateTime": "2021-12-09T10:00:00-07:00",
+              "issued": "2021-12-09T00:00:00-07:00",
               "valueQuantity": {
                 "value": 2.1,
                 "unit": "Drinks/Day"
@@ -555,7 +555,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2021-12-20T15:16:21-05:00",
+              "effectiveDateTime": "2022-01-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -643,7 +643,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2021-11-19T15:16:21-05:00",
+              "effectiveDateTime": "2021-12-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -703,7 +703,8 @@
                   }
                 ]
               },
-              "statusDate": "2022-01-05",
+              "statusDate": "2022-01-24",
+              "startDate": "2022-01-24",
               "description": {
                 "text": "Goal of 135/85"
               },

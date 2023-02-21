@@ -20,8 +20,8 @@
   "subject": {
     "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
   },
-  "effectiveDateTime": "2021-11-20T10:00:00-07:00",
-  "issued": "2021-11-20T00:00:00-07:00",
+  "effectiveDateTime": "2021-12-09T10:00:00-07:00",
+  "issued": "2021-12-09T00:00:00-07:00",
   "valueQuantity": {
     "value": 4.1,
     "unit": "Drinks/Day"

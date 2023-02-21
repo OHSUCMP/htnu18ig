@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Adolph80-Turcotte120-1"
         },
-        "effectiveDateTime": "2010-06-25T15:16:21-05:00",
+        "effectiveDateTime": "2010-07-14T15:16:21-05:00",
         "valueQuantity": {
           "value": 21.22956806213796,
           "unit": "kg/m2",
