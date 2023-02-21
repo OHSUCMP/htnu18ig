@@ -4114,6 +4114,7 @@
       "subject": {
         "reference": "Patient/Adolph80-Turcotte120"
       },
+      "startDate": "2022-02-11",
       "target": [ {
         "measure": {
           "coding": [ {

@@ -680,6 +680,7 @@
       "subject": {
         "reference": "Patient/AE-Excluded"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

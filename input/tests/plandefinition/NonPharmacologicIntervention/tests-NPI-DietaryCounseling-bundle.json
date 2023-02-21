@@ -503,6 +503,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryCounseling"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

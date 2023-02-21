@@ -758,6 +758,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
+      "startDate": "2021-07-31",
       "target": [ {
         "measure": {
           "coding": [ {

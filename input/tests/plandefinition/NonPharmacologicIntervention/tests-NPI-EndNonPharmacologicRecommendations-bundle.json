@@ -576,6 +576,7 @@
       "subject": {
         "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
       },
+      "startDate": "2022-01-04",
       "target": [ {
         "measure": {
           "coding": [ {

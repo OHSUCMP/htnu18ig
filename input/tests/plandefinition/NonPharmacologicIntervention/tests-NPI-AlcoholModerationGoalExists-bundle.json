@@ -596,6 +596,7 @@
       "subject": {
         "reference": "Patient/NPI-AlcoholModerationGoalExists"
       },
+      "startDate": "2022-02-12",
       "target": [ {
         "dueDate": "2022-03-25"
       } ],

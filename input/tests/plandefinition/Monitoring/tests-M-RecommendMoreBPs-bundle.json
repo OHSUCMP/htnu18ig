@@ -223,6 +223,7 @@
       "subject": {
         "reference": "Patient/M-RecommendMoreBPs"
       },
+      "startDate": "2020-08-07",
       "target": [ {
         "measure": {
           "coding": [ {

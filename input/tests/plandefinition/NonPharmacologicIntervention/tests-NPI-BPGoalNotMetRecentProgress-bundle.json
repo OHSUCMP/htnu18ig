@@ -768,6 +768,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

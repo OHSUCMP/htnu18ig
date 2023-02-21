@@ -558,6 +558,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalMet"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

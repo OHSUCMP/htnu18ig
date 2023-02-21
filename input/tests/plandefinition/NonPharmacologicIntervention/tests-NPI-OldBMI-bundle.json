@@ -542,6 +542,7 @@
       "subject": {
         "reference": "Patient/NPI-OldBMI"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

@@ -784,6 +784,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
       },
+      "startDate": "2021-07-31",
       "target": [ {
         "measure": {
           "coding": [ {

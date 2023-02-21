@@ -591,6 +591,7 @@
       "subject": {
         "reference": "Patient/NPI-AlcoholModerationAchieved"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

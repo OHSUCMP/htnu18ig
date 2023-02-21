@@ -620,6 +620,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

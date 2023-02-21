@@ -551,6 +551,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

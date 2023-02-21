@@ -603,6 +603,7 @@
       "subject": {
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

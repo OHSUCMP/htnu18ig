@@ -532,6 +532,7 @@
       "subject": {
         "reference": "Patient/NPI-DietaryReminder"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

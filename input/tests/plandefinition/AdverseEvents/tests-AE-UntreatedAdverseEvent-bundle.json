@@ -720,6 +720,7 @@
       "subject": {
         "reference": "Patient/AE-UntreatedAdverseEvent"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {

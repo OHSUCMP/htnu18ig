@@ -558,6 +558,7 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholCounseling"
       },
+      "startDate": "2022-01-05",
       "target": [ {
         "measure": {
           "coding": [ {
