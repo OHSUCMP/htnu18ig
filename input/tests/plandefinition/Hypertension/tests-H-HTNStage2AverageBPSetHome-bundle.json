@@ -23,8 +23,8 @@
         "reference": "Patient/H-HTNStage2AverageBPSetHome"
       },
       "period": {
-        "start": "2021-07-22T00:00:00-04:00",
-        "end": "2021-07-22T23:59:59-04:00"
+        "start": "2021-08-10T00:00:00-04:00",
+        "end": "2021-08-10T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/H-HTNStage2AverageBPSetHome"
       },
       "period": {
-        "start": "2021-08-22T00:00:00-04:00",
-        "end": "2021-08-22T23:59:59-04:00"
+        "start": "2021-09-10T00:00:00-04:00",
+        "end": "2021-09-10T23:59:59-04:00"
       }
     },
     "request": {
@@ -71,7 +71,7 @@
         "given": [ "HTNStage2" ]
       } ],
       "gender": "male",
-      "birthDate": "1963-11-14"
+      "birthDate": "1963-12-03"
     },
     "request": {
       "method": "PUT",
@@ -108,7 +108,7 @@
       "subject": {
         "reference": "Patient/H-HTNStage2AverageBPSetHome"
       },
-      "effectiveDateTime": "2021-10-20T15:16:21-05:00",
+      "effectiveDateTime": "2021-11-08T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -179,7 +179,7 @@
       "subject": {
         "reference": "Patient/H-HTNStage2AverageBPSetHome"
       },
-      "effectiveDateTime": "2021-12-31T15:16:21-05:00",
+      "effectiveDateTime": "2022-01-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -250,7 +250,7 @@
       "subject": {
         "reference": "Patient/H-HTNStage2AverageBPSetHome"
       },
-      "effectiveDateTime": "2021-11-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-12-08T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -316,7 +316,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-HTNStage2AverageBPSetHome-2"
       },
-      "effectiveDateTime": "2021-08-22T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-10T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -387,7 +387,7 @@
       "subject": {
         "reference": "Patient/H-HTNStage2AverageBPSetHome"
       },
-      "effectiveDateTime": "2021-09-19T15:16:21-05:00",
+      "effectiveDateTime": "2021-10-08T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -453,7 +453,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-HTNStage2AverageBPSetHome-1"
       },
-      "effectiveDateTime": "2021-07-22T15:16:21-05:00",
+      "effectiveDateTime": "2021-08-10T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -524,7 +524,7 @@
       "subject": {
         "reference": "Patient/H-HTNStage2AverageBPSetHome"
       },
-      "effectiveDateTime": "2021-12-20T15:16:21-05:00",
+      "effectiveDateTime": "2022-01-08T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -595,7 +595,7 @@
       "subject": {
         "reference": "Patient/H-HTNStage2AverageBPSetHome"
       },
-      "effectiveDateTime": "2021-12-23T15:16:21-05:00",
+      "effectiveDateTime": "2022-01-11T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],

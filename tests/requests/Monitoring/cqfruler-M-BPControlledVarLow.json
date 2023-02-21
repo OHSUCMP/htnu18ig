@@ -40,8 +40,8 @@
                 "reference": "Patient/M-BPControlledVarLow"
               },
               "period": {
-                "start": "2021-10-20T00:00:00-04:00",
-                "end": "2021-10-20T23:59:59-04:00"
+                "start": "2021-11-08T00:00:00-04:00",
+                "end": "2021-11-08T23:59:59-04:00"
               }
             },
             "request": {
@@ -74,8 +74,8 @@
                 "reference": "Patient/M-BPControlledVarLow"
               },
               "period": {
-                "start": "2021-08-22T00:00:00-04:00",
-                "end": "2021-08-22T23:59:59-04:00"
+                "start": "2021-09-10T00:00:00-04:00",
+                "end": "2021-09-10T23:59:59-04:00"
               }
             },
             "request": {
@@ -108,8 +108,8 @@
                 "reference": "Patient/M-BPControlledVarLow"
               },
               "period": {
-                "start": "2021-09-19T00:00:00-04:00",
-                "end": "2021-09-19T23:59:59-04:00"
+                "start": "2021-10-08T00:00:00-04:00",
+                "end": "2021-10-08T23:59:59-04:00"
               }
             },
             "request": {
@@ -142,8 +142,8 @@
                 "reference": "Patient/M-BPControlledVarLow"
               },
               "period": {
-                "start": "2021-07-22T00:00:00-04:00",
-                "end": "2021-07-22T23:59:59-04:00"
+                "start": "2021-08-10T00:00:00-04:00",
+                "end": "2021-08-10T23:59:59-04:00"
               }
             },
             "request": {
@@ -201,8 +201,8 @@
               "subject": {
                 "reference": "Patient/M-BPControlledVarLow"
               },
-              "onsetDateTime": "2022-04-17",
-              "recordedDate": "2015-07-24T15:16:21-05:00"
+              "onsetDateTime": "2022-05-06",
+              "recordedDate": "2015-08-12T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -224,7 +224,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1968-06-30"
+              "birthDate": "1968-07-19"
             },
             "request": {
               "method": "PUT",
@@ -268,7 +268,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-30T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -350,7 +350,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-18T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -432,7 +432,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-09T15:16:21-05:00",
+              "effectiveDateTime": "2022-06-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -514,7 +514,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-06T15:16:21-05:00",
+              "effectiveDateTime": "2022-06-25T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -596,7 +596,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-21T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-09T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -678,7 +678,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-01T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -760,7 +760,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-30T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -842,7 +842,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-15T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-04T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -924,7 +924,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-27T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1006,7 +1006,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-16T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-04T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1088,7 +1088,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-28T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1170,7 +1170,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-19T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1252,7 +1252,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-24T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-13T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1334,7 +1334,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-12T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1416,7 +1416,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-04T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-23T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1498,7 +1498,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-21T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1580,7 +1580,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-22T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1662,7 +1662,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-06T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-25T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1744,7 +1744,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-10T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-29T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1826,7 +1826,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-13T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1908,7 +1908,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-09T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1990,7 +1990,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-25T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-13T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2072,7 +2072,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-18T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2154,7 +2154,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-04T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-23T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2236,7 +2236,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-24T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-12T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2318,7 +2318,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-06-03T15:16:21-05:00",
+              "effectiveDateTime": "2022-06-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2400,7 +2400,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-12T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-31T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2482,7 +2482,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-15T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2564,7 +2564,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-07-27T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2646,7 +2646,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPControlledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-07T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2706,8 +2706,7 @@
                   }
                 ]
               },
-              "statusDate": "2022-01-05",
-              "startDate": "2022-01-05",
+              "startDate": "2022-01-24",
               "description": {
                 "text": "Goal of 135/85"
               },

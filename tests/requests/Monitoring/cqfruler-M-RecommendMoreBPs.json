@@ -65,8 +65,8 @@
               "subject": {
                 "reference": "Patient/M-RecommendMoreBPs"
               },
-              "onsetDateTime": "2015-07-24T15:16:21-05:00",
-              "recordedDate": "2015-07-24T15:16:21-05:00"
+              "onsetDateTime": "2015-08-12T15:16:21-05:00",
+              "recordedDate": "2015-08-12T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -88,7 +88,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1997-05-30"
+              "birthDate": "1997-06-18"
             },
             "request": {
               "method": "PUT",
@@ -138,7 +138,7 @@
               "subject": {
                 "reference": "Patient/M-RecommendMoreBPs"
               },
-              "effectiveDateTime": "2021-06-29T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -226,7 +226,7 @@
               "subject": {
                 "reference": "Patient/M-RecommendMoreBPs"
               },
-              "effectiveDateTime": "2021-07-02T15:16:21-05:00",
+              "effectiveDateTime": "2021-07-21T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -286,8 +286,8 @@
                   }
                 ]
               },
-              "statusDate": "2020-08-07",
-              "startDate": "2020-08-07",
+              "statusDate": "2020-08-26",
+              "startDate": "2020-08-26",
               "description": {
                 "text": "Goal of 135/85"
               },

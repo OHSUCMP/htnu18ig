@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/NPI-ExcludedEndStageRenalDisease"
       },
-      "onsetDateTime": "2015-07-24T15:16:21-05:00",
-      "recordedDate": "2015-07-24T15:16:21-05:00",
+      "onsetDateTime": "2015-08-12T15:16:21-05:00",
+      "recordedDate": "2015-08-12T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,8 +83,8 @@
       "subject": {
         "reference": "Patient/NPI-ExcludedEndStageRenalDisease"
       },
-      "onsetDateTime": "1987-11-11T10:16:50-04:00",
-      "recordedDate": "1987-11-11T10:16:50-04:00",
+      "onsetDateTime": "1987-11-30T10:16:50-04:00",
+      "recordedDate": "1987-11-30T10:16:50-04:00",
       "note": [ {
         "text": "Indicates End Stage Renal Disease"
       } ]
@@ -104,7 +104,7 @@
         "given": [ "Excluded" ]
       } ],
       "gender": "female",
-      "birthDate": "1967-05-08"
+      "birthDate": "1967-05-27"
     },
     "request": {
       "method": "PUT",

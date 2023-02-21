@@ -20,10 +20,10 @@
     "reference": "Patient/NPI-OldSmokingCounseling"
   },
   "effectivePeriod": {
-    "start": "2020-09-06",
-    "end": "2020-09-24"
+    "start": "2020-09-25",
+    "end": "2020-10-13"
   },
-  "issued": "2020-09-24T00:00:00-07:00",
+  "issued": "2020-10-13T00:00:00-07:00",
   "valueCodeableConcept": {
     "coding": [
       {

@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "performedDateTime": "2021-07-24T11:00:00-06:00",
+      "performedDateTime": "2021-08-12T11:00:00-06:00",
       "note": [ {
         "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "onsetDateTime": "2015-08-16T15:16:21-05:00",
-      "recordedDate": "2015-08-16T15:16:21-05:00",
+      "onsetDateTime": "2015-09-04T15:16:21-05:00",
+      "recordedDate": "2015-09-04T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "Pharmacology" ]
       } ],
       "gender": "female",
-      "birthDate": "1984-12-18"
+      "birthDate": "1985-01-06"
     },
     "request": {
       "method": "PUT",
@@ -142,7 +142,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "authoredOn": "2021-11-17T16:00:00-08:00",
+      "authoredOn": "2021-12-06T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Antihypertensive"
       } ]
@@ -164,7 +164,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "authoredOn": "2020-11-17T16:00:00-08:00",
+      "authoredOn": "2020-12-06T16:00:00-08:00",
       "note": [ {
         "text": "Completed Request"
       } ]
@@ -186,7 +186,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "authoredOn": "2021-11-17T16:00:00-08:00",
+      "authoredOn": "2021-12-06T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Medication - Not an Antihypertensive"
       } ]
@@ -225,7 +225,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "effectiveDateTime": "2021-11-12T15:16:21-05:00",
+      "effectiveDateTime": "2021-12-01T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -295,7 +295,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "effectiveDateTime": "2021-10-12T15:16:21-05:00",
+      "effectiveDateTime": "2021-10-31T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -365,7 +365,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "effectiveDateTime": "2022-02-05T15:16:21-05:00",
+      "effectiveDateTime": "2022-02-24T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -435,7 +435,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "effectiveDateTime": "2021-09-14T15:16:21-05:00",
+      "effectiveDateTime": "2021-10-03T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -505,7 +505,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "effectiveDateTime": "2021-08-14T15:16:21-05:00",
+      "effectiveDateTime": "2021-09-02T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -561,10 +561,10 @@
         "reference": "Patient/P-ClonidinePatch"
       },
       "effectivePeriod": {
-        "start": "2002-03-31",
-        "end": "2021-07-24"
+        "start": "2002-04-19",
+        "end": "2021-08-12"
       },
-      "issued": "2021-07-24T00:00:00-07:00",
+      "issued": "2021-08-12T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -623,7 +623,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "effectiveDateTime": "2022-01-12T15:16:21-05:00",
+      "effectiveDateTime": "2022-01-31T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -693,7 +693,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "effectiveDateTime": "2021-12-12T15:16:21-05:00",
+      "effectiveDateTime": "2021-12-31T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -752,7 +752,7 @@
       "subject": {
         "reference": "Patient/P-ClonidinePatch"
       },
-      "startDate": "2021-07-31",
+      "startDate": "2021-08-19",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -784,7 +784,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2021-07-31",
+      "statusDate": "2021-08-19",
       "note": [ {
         "text": "There has been no change toward patient goal."
       } ]
