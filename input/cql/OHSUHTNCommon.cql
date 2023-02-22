@@ -480,8 +480,8 @@ define "Has BP Set":
     else calculateScore("Blood Pressure Observations for Last 2 Years") >= 4
 
 define function score(observation Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
-  if observation in "Ambulatory Blood Pressure Monitoring Observations" then 0.333
-  else if observation in "Home Blood Pressure Observations" then 0.667
+  if observation in "Ambulatory Blood Pressure Monitoring Observations" then 0.334
+  else if observation in "Home Blood Pressure Observations" then 0.334
   else 1
 
 define function calculateScore(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
