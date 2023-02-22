@@ -1,0 +1,244 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "plandefinition-Metadata",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/PlanDefinition/plandefinition-Metadata",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "ohsu-Metadata"
+    }
+  ],
+  "version": "0.1",
+  "name": "Metadata",
+  "title": "Provides visibility into calculations and evaluations that influenced recommendations",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/plan-definition-type",
+        "code": "eca-rule",
+        "display": "ECA Rule"
+      }
+    ]
+  },
+  "status": "draft",
+  "date": "2020-02-04T00:00:00-08:00",
+  "publisher": "Oregon Health and Science University (OHSU)",
+  "description": "This PlanDefinition is for additional metadata about commonly evaluated variables.",
+  "purpose": "The purpose of this is to allow simpler debugging of common questions.",
+  "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "371622005",
+            "display": "Elevated BP without HTN diagnosis"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "Hypertension Management"
+    }
+  ],
+  "copyright": "© OHSU 2020+.",
+  "library": [
+     "http://fhir.org/guides/ohsuhypertensionig/Library/Metadata"
+  ],
+  "action": [
+    {
+      "title": "BP Set",
+      "description": "Provides the set of BPs used in average calculated if it exists",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "If the condition is true",
+            "language": "text/cql.identifier",
+            "expression": "True"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Value",
+            "language": "text/cql.identifier",
+            "expression": "BP Set"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Average BP Set",
+      "description": "Provides the calculated average of the BP Set",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "If the condition is true",
+            "language": "text/cql.identifier",
+            "expression": "True"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Value",
+            "language": "text/cql.identifier",
+            "expression": "Average BP Set"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "All BPs",
+      "description": "Provides all BPs found",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "If the condition is true",
+            "language": "text/cql.identifier",
+            "expression": "True"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Value",
+            "language": "text/cql.identifier",
+            "expression": "All BPs"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Average BP 2 Years",
+      "description": "Provides the calculated average of all BPs in the last 2 years",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "If the condition is true",
+            "language": "text/cql.identifier",
+            "expression": "True"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Value",
+            "language": "text/cql.identifier",
+            "expression": "Average BP 2 Years"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    },
+    {
+      "title": "BP Goal Met",
+      "description": "Indicates whether the goal is considered met.",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "If the condition is true",
+            "language": "text/cql.identifier",
+            "expression": "True"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Value",
+            "language": "text/cql.identifier",
+            "expression": "BP Goal Met"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    }
+  ]
+}
