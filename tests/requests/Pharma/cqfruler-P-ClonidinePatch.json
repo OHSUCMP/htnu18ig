@@ -519,16 +519,7 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "264362003"
-                  }
+                  "text": "Office Blood Pressure Reading"
                 }
               ],
               "category": [
@@ -607,16 +598,7 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "264362003"
-                  }
+                  "text": "Office Blood Pressure Reading"
                 }
               ],
               "category": [
@@ -842,16 +824,7 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "264362003"
-                  }
+                  "text": "Office Blood Pressure Reading"
                 }
               ],
               "category": [

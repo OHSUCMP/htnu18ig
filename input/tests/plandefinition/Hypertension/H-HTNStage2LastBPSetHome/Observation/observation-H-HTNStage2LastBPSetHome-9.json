@@ -1,10 +1,19 @@
 {
   "resourceType": "Observation",
-  "id": "observation-P-InitialPharmacology-8",
+  "id": "observation-H-HTNStage2LastBPSetHome-9",
   "status": "final",
   "note": [
     {
-      "text": "Office Blood Pressure Reading"
+      "text": "Home Blood Pressure Reading"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "264362003"
+      }
     }
   ],
   "category": [
@@ -29,9 +38,9 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/P-InitialPharmacology"
+    "reference": "Patient/H-HTNStage2LastBPSetHome"
   },
-  "effectiveDateTime": "2022-02-24T15:16:21-05:00",
+  "effectiveDateTime": "2022-06-19T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -45,7 +54,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 85.1660352979804,
+        "value": 97.52660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -63,7 +72,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 135.2064054117963,
+        "value": 177.65064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
