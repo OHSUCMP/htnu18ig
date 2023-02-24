@@ -7,9 +7,9 @@
 
     <p>Non-pharmacologic intervention, including lifestyle and behavior modification goals, are an important part of blood pressure management. This is a prime area for patient engagement in care, as patients are encouraged to set and regularly update goals that suit their lifestyle that they can reasonably achieve and which can help in lowering their blood pressure.</p>
 
-    <p>For each time the patient logs into the tool and has progressed to this workflow, the tool will check to see if patient has current non-pharmacologic goals. If they do, a sub-workflow to set, check-in on, and update goals will activate for each type of goal. After those workflows have completed, the tool will check to assess if patient is at their blood pressure goal. If the patient is not on track to reach their blood pressure goal, the tool will direct the patient towards considering pharmacologic intervention. If they are on track, no further action is taken.</p>
+    <p>For each time the patient logs into the tool and has progressed to this workflow, the tool will check to see if patient has current non-pharmacologic goals. If they do, a sub-workflow to set, check-in on, and update goals will activate for each type of goal.</p>
 
-    <p>If the patient does not have any current non-pharmacologic goals, the tool will check if the patient has reached their blood pressure goal, whether the default of 140/90 or a custom goal set by the patient. If that goal has been met, no further action is taken. If the goal has not been met, the workflow proceeds through the goalsetting sub-workflows proceed as described above.</p>
+    <p>If the patient does not have any current non-pharmacologic goals, the tool will check if the patient has reached their blood pressure goal, whether the default of 140/90 or a custom goal set by the patient. If that goal has been met, no further action is taken. If the goal has not been met, the workflow proceeds through the goalsetting sub-workflows.</p>
 
     <p>Sub-workflows include:</p>
 
