@@ -121,7 +121,7 @@
   <p>Home observations can still be provided by the implementing application using the prefetch object during plan definition execution. To create a home observation use a MeasurementSettingExt extension and SNOMED code 264362003 as shown in
     <a href="Observation-example-HomeBloodPressure.html">this example</a>.
     <strong>Please note that if you plan to send home blood pressure observations through the prefetch, you will need to send ALL blood pressure observations through, including any from the FHIR server. CQF Ruler will not query the FHIR server directly
-      if it gets any results back from the prefetch.</strong>
+      if it gets any Observations back from the prefetch.</strong>
   </p>
 
   <a name="alcohol_use_observations" />
@@ -136,6 +136,6 @@
 
   <p>The original logic expected both a clinical status and verification status, but in practice these are not always present and not required by FHIR. Condition FHIR resources also don't require an onset and abatement date, and in our instance of Epic these are provided as dates with no timestamp information, causing additional issues with the original logic.</p>
 
-  <p>Ultimately, we modified the logic to use information from any fields that are present but to err on the side of including the condition if we didn't have enough information.</p>
+  <p>Ultimately, we modified the logic to use information from any fields that are present but to err on the side of including the condition if we didn't have enough information. For a condition of pregnancy, however, we made the choice to only consider a patient actively pregnant only if the condition onset was within the last 44 weeks. Active pregnancy excludes the patient from the intervention, so without this logic, many patients who'd been pregnant in the passed were not receiving recommendations.</p>
 
 </div>

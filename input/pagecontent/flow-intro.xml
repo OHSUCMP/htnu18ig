@@ -43,22 +43,23 @@
   <p>
     In order to generate useful recommendations, the decision support system needs to have a minimum number of blood pressure readings taken over the last 2 years to be used as the most recent "set" of BPs in several calculations. The initial approach
     was to require at least 12 hours of ambulatory readings, 4 office readings, or 6 home readings to establish the set and to prioritize which set was used based on the presumed accuracy of the source (Ambulatory > Office > Home). But different types of
-    readings may be interspersed throughout the 2 year period, potentially leading to more recent readings being discarded from analysis if they weren't part of the prioritized set.
+    readings may be interspersed throughout the 2 year period, potentially leading to more recent readings being discarded from analysis if they weren't part of the prioritized set. It was also determined that more home BP readings should be required to 
+    encourage patients to use the COACH tool for monitoring.
   </p>
 
   <p>
-    To avoid these pitfalls, a point system is employed to define the most recent BP set. Each blood pressure reading is assigned points as follows:
+    To avoid the pitfalls of interspersed data, a point system is employed to define the most recent BP set. Each blood pressure reading is assigned points as follows:
   </p>
   <ul>
     <li>Office observation = 1 point</li>
-    <li>Home observation = .667 points</li>
-    <li>Ambulatory observation = 0.333 points (Removed from consideration)</li>
+    <li>Home observation = .334 points</li>
+    <li>Ambulatory observation = 0.334 points (Removed from consideration)</li>
   </ul>
 
   <p>
     A patient must have at least
     <strong>4 points</strong>
-    total in observations from the last 2 years to have a set. And the most recent BP set would be the minimum number of most recent readings that add up to 4. In the example below, the most recent 4 home and 2 office readings would be used:
+    total in observations from the last 2 years to have a set. And the most recent BP set would be the minimum number of most recent readings that add up to 4. In the example below, the most recent 4 home and 3 office readings would be used:
   </p>
   <img height="300" src="bp-set.png" alt="BP Set Calculation Example" style="margin-bottom:10px;"/>
 
@@ -68,16 +69,6 @@
     recommendations fire. The goal must have a lifecyleStatus in ('proposed', 'planned', 'accepted', 'active', 'completed'). The goal should have a single target, with one measure in the ValueSet for Systolic Blood Pressure (<a href="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1104.2</a>) and one measure in the Value Set for Diastolic Blood Pressure (<a ref="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045">http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.2.1045</a>). Both measures must have detail that is a quantity with unit mm[Hg]. See an example goal
     <a href="Goal-example-BloodPressureGoal.html">here</a>.
   </p>
-  <h4>Patient "On Track" to Reach Blood Pressure Goal</h4>
-  <p>Usually, a patient with high blood pressure will receive recommendations for lifestyle changes first and will only be referred to medicinal therapies if they are not "on track" to reach their blood pressure goal. The patient is considered on track
-    if any of the following are true:
-  </p>
-  <ul>
-    <li>They have no active BP goal, so their progress cannot be determined.</li>
-    <li>They don't have a BP set, so whether the goal has been met cannot be determined.</li>
-    <li>The goal has been met.</li>
-    <li>They have been working toward their goal for less than 3 months.</li>
-  </ul>
   <br/>
 
 </div>
