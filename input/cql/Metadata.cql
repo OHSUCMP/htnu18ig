@@ -7,9 +7,9 @@ include OHSUHTNCommon version '0.1' called Common
 
 context Patient
 
-define function "BP Set Summary"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "BP Set Summary"(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   list BP
-    return '{"effective": "' + ToString(BP.effective) + '", "systolic": ' + ToString(BP.systolic) + '", "diastolic": ' + ToString(BP.diastolic) + '", "readingType": "' + BP.readingType + '"}'
+    return '{"id": "' + BP.id + '", "effective": "' + ToString(BP.effective) + '", "systolic": ' + ToString(BP.systolic) + '", "diastolic": ' + ToString(BP.diastolic) + '", "readingType": "' + BP.readingType + '"}'
 
 define "True":
   true
