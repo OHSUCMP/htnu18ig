@@ -393,13 +393,6 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-P-AdvancingTreatment-2",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -421,7 +414,7 @@
       },
       "effectiveDateTime": "2021-09-02T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading"
+        "text": "Office Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -463,13 +456,6 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-P-AdvancingTreatment-3",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -491,7 +477,7 @@
       },
       "effectiveDateTime": "2021-10-03T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading"
+        "text": "Office Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -533,13 +519,6 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-P-AdvancingTreatment-4",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -561,7 +540,7 @@
       },
       "effectiveDateTime": "2021-10-31T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading"
+        "text": "Office Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {

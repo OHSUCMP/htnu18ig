@@ -1,6 +1,6 @@
 {
   "resourceType": "Goal",
-  "id": "goal-M-BPControlledVarLow-1",
+  "id": "goal-M-BPControlledVarHigh-2",
   "lifecycleStatus": "active",
   "achievementStatus": {
     "coding": [
@@ -12,12 +12,12 @@
       }
     ]
   },
-  "statusDate": "2023-02-19",
+  "startDate": "2023-01-24",
   "description": {
     "text": "Goal of 135/85"
   },
   "subject": {
-    "reference": "Patient/M-BPControlledVarLow"
+    "reference": "Patient/M-BPControlledVarHigh"
   },
   "target": [
     {
