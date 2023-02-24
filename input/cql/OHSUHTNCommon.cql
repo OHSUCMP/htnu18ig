@@ -567,13 +567,6 @@ define "Above Goal Average Most Recent":
 define "BP Goal Met":
   "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
 
-define "Goal Interval":
-  Interval[("Most Recently Established Blood Pressure Goal".statusDate),
-    ("Most Recently Established Blood Pressure Goal".statusDate) + 3 months]
-
-define "Patient on Track":
-  not "Patient has a BP Goal" or not "Has BP Set" or "BP Goal Met" or end of "Goal Interval" > Today()
-
 define "Active Medication Requests":
   ["MedicationRequest"] Rx where Rx.status.value ~ "Active Medication Request".code
 

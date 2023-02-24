@@ -23,7 +23,7 @@ define "In Population":
 
 // Tests conditions from other workflows needed for Pharma intervention to proceed
 define "Enter Workflow":
-    "In Population" and not Common."Patient on Track"
+    "In Population" and not Common."BP Goal Met"
 
 define "Recommendation":
   if Common."Patient is Using Antihypertensive Medications" then '{{32.summary}}'
