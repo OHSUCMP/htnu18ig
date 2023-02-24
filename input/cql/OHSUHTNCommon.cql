@@ -54,40 +54,40 @@ code "Active Medication Request": 'active' from "Medication request status"
 
 context Patient
 
-define function "Avg Systolic BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "Avg Systolic BP"(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   Avg(list O return all O.systolic)
 
-define function "Avg Diastolic BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "Avg Diastolic BP"(list List<Tuple {id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   Avg(list O return all O.diastolic)
 
-define function "Avg BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "Avg BP"(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   Tuple { systolic: "Avg Systolic BP"(list), diastolic: "Avg Diastolic BP"(list) }
 
-define function "Normal BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "Normal BP"(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
     where O.systolic <= 130
     and O.diastolic <= 80
 
-define function "Elevated or Above BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "Elevated or Above BP"(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
     where O.systolic > 130
     or O.diastolic > 80
 
-define function "HTN Stage 1 BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "HTN Stage 1 BP"(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
     where (O.systolic > 130 and O.systolic <= 140)
     or (O.diastolic > 80 and O.diastolic <= 90)
 
-define function "HTN Stage 2 BP"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "HTN Stage 2 BP"(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
     where O.systolic > 140
     or O.diastolic > 90
 
-define function "HTN Stage 2 BP Systolic Second Test"(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function "HTN Stage 2 BP Systolic Second Test"(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   ("Avg BP"(list)) O
     where O.systolic > 160
 
-define function "HTN Crisis BP"(O Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
+define function "HTN Crisis BP"(O Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
   O.systolic >= 180 or O.diastolic >= 120
 
 /* Helpers */
@@ -389,6 +389,7 @@ define "All Observations":
 define "Component BP Observations":
   (WithUnit(QualifiedObservation("All Observations" A where TransformCodeableConcept(A.code) in "Blood Pressure Measured"), 'mm[Hg]')) O
   return Tuple {
+    id: O.id.value,
     effective: Coalesce(start of "Normalize Interval"(O.effective), O.issued),
     systolic: FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Systolic Blood Pressure").value).value,
     diastolic: FHIRHelpers.ToQuantity(singleton from (O.component C where C.code in "Diastolic Blood Pressure").value).value,
@@ -398,6 +399,7 @@ define "Component BP Observations":
 define function ConvertSystolic(systolic List<FHIR.Observation>):
   systolic O
   return Tuple {
+    id: O.id.value,
     effective: Coalesce(start of "Normalize Interval"(O.effective), O.issued),
     systolic: FHIRHelpers.ToQuantity(O.value).value,
     diastolic: null as Decimal,
@@ -407,6 +409,7 @@ define function ConvertSystolic(systolic List<FHIR.Observation>):
 define function ConvertDiastolic(diastolic List<FHIR.Observation>):
   diastolic O
   return Tuple {
+    id: O.id.value,
     effective: Coalesce(start of "Normalize Interval"(O.effective), O.issued),
     systolic: null as Decimal,
     diastolic: FHIRHelpers.ToQuantity(O.value).value,
@@ -414,8 +417,8 @@ define function ConvertDiastolic(diastolic List<FHIR.Observation>):
   }
 
 /* For each systolic observation, gather a list of diastolic values that match by date */
-define function GatherMatches(s List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>,
-  d List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function GatherMatches(s List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>,
+  d List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   s S
     return Tuple {
       systolicObservation : S,
@@ -423,17 +426,19 @@ define function GatherMatches(s List<Tuple { effective DateTime, systolic Decima
     }
 
 /* For each systolic observation with exactly one disatolic match, return the paired observation */
-define function PairMatchedBPObservations(list List<Tuple { systolicObservation Tuple {effective DateTime, systolic Decimal, diastolic Decimal, readingType String },
+define function PairMatchedBPObservations(list List<Tuple { systolicObservation Tuple {id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String },
   diastolicValues List<Decimal>} > ):
   (list B where Count(B.diastolicValues) = 1) matched return {
+    // Only keeping the systolic id on the match - this is just for distinguishing unique readings at the same time which should be an edge case
+    id: matched.systolicObservation.id,
     effective: matched.systolicObservation.effective,
     systolic: matched.systolicObservation.systolic,
     diastolic: matched.diastolicValues[0],
     readingType: matched.systolicObservation.readingType
   }
 
-define function PairBPObservations(s List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>,
-  d List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function PairBPObservations(s List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>,
+  d List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   PairMatchedBPObservations(GatherMatches(s, d))
 
 define "Paired BP Observations":
@@ -479,12 +484,12 @@ define "Has BP Set":
     if not exists "Blood Pressure Observations for Last 2 Years" then false
     else calculateScore("Blood Pressure Observations for Last 2 Years") >= 4
 
-define function score(observation Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
+define function score(observation Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
   if observation in "Ambulatory Blood Pressure Monitoring Observations" then 0.334
   else if observation in "Home Blood Pressure Observations" then 0.334
   else 1
 
-define function calculateScore(list List<Tuple { effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
+define function calculateScore(list List<Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }>):
   Sum(list O
     return all score(O)
   )
