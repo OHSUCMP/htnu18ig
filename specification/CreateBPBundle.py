@@ -6,10 +6,10 @@ import random
 import time
 
 # Modify the count, the patient id, the start and end dates to vary between, and a file to write to.
-n = 20
-patient = 1794
-start_date = "2021-05-26T00:00:00"
-end_date = "2022-11-03T00:00:00"
+n = 11
+patient = 1203
+start_date = "2023-01-24T00:00:00"
+end_date = "2023-02-22T00:00:00"
 filename = "/Users/yateam/temp.json"
 
 bundle_start = """
@@ -211,11 +211,12 @@ def random_date(start, end, prop):
 
 i = 1
 bps = bundle_start
-while i <= 20:
+while i <= n:
   sys = random.gauss(120, 15)
   dia = random.gauss(80, 15)
   date = random_date(start_date, end_date, random.random())
-  readingType = random.randint(0,1)
+  # readingType = random.randint(0,1)
+  readingType = 0
   if readingType == 0:
     reading = home
   else:
