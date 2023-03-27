@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "MU-TestCase1",
+  "active": true,
+  "name": [
+    {
+      "text": "Olivia",
+      "family": "S",
+      "given": [
+        "Olivia"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1968-12-17"
+}

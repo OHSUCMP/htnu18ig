@@ -1,0 +1,19 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "medicationrequest-MU-TestCase4-1",
+    "note": [
+      {
+        "text": "Active Request for Antihypertensive"
+      }
+    ],
+    "status": "active",
+    "intent": "order",
+    "medicationReference": {
+      "reference": "Medication/medication-MU-TestCase4-1",
+      "display": "bumetanide 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/MU-TestCase4"
+    },
+    "authoredOn": "2021-12-06T16:00:00-08:00"
+  }

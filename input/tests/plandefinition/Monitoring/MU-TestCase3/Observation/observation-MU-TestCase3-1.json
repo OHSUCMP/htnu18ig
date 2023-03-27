@@ -1,0 +1,54 @@
+{
+    "resourceType": "Observation",
+    "id": "observation-MU-TestCase3-1",
+    "status": "final",
+    "note": [
+      {
+        "text": "Indicates patient has been a heavy smoker since 1988. This is the most recent observation concerning smoking."
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/MU-TestCase3"
+    },
+    "effectivePeriod": {
+      "start": "1988-03-02",
+      "end": "2023-01-01"
+    },
+    "issued": "2018-09-14T00:00:00-07:00",
+    "valueCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "428071000124103",
+          "display": "Heavy tobacco smoker (finding)"
+        }
+      ]
+    },
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8663-7",
+              "display": "Cigarettes smoked current (pack per day) - Reported"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 3,
+          "unit": "Packs/Day"
+        }
+      }
+    ]
+  }
+  
