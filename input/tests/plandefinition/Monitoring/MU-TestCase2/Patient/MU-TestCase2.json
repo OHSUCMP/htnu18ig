@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "MU-TestCase2",
+  "active": true,
+  "name": [
+    {
+      "text": "Jack",
+      "family": "G",
+      "given": [
+        "Jack"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1944-08-05"
+}
