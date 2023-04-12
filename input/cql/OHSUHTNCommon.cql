@@ -564,8 +564,9 @@ define "Above Goal Average Most Recent":
   "Average Most Recent BP Set".systolic > "BP from Most Recent Goal".systolic or
   "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
 
-define "BP Goal Met":
-  "Patient has a BP Goal" and "Has BP Set" and not "Above Goal Average Most Recent"
+// Therapy should be received if there's a BP set and a goal and the patient hasn't achived their goal
+define "Receive Therapy":
+  "Has BP Set" and "Patient has a BP Goal" and "Above Goal Average Most Recent"
 
 define "Active Medication Requests":
   ["MedicationRequest"] Rx where Rx.status.value ~ "Active Medication Request".code

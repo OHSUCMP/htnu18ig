@@ -77,7 +77,7 @@ define "Patient Has Behavioral Goals":
   exists "Nutrition Goals"
 
 define "Enter Workflow":
-  "In Population" and ("Patient Has Behavioral Goals" or (Common."Patient has a BP Goal" and not Common."BP Goal Met"))
+  "In Population" and ("Patient Has Behavioral Goals" or Common."Receive Therapy")
 
 /***** SMOKING CARD OUTPUT *****/
 
