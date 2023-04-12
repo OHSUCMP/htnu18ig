@@ -2,8 +2,8 @@
 import os
 import re
 
-old_bp = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Hypertension/H-HTNStage2LastBPSetAmbulatory/Observation/observation-H-HTNStage2LastBPSetAmbulatory-5.json"
-new_bp = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-DietaryReminder/Observation/observation-NPI-DietaryReminder-2.json"
+old_bp = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-ActivityReminder/Observation/observation-NPI-ActivityReminder-6.json"
+new_bp = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/NonPharmacologicIntervention/NPI-ActivityReminder/Observation/observation-NPI-ActivityReminder-8.json"
 
 new_bp = input("Path to new BP observation\n")
 effectiveDate = input("The date formatted as yyyy-MM-dd\n")
@@ -23,9 +23,9 @@ with open(old_bp, 'r') as f:
     whole = f.read()
     new_file_content = whole.replace(old_observation_id, new_observation_id)
     new_file_content = new_file_content.replace(old_ident, new_ident)
-    new_file_content = new_file_content.replace('2021-01-06', effectiveDate)
-    new_file_content = new_file_content.replace('165.50', sbp)
-    new_file_content = new_file_content.replace('89.96', dbp)
+    new_file_content = new_file_content.replace('2022-12-09', effectiveDate)
+    new_file_content = new_file_content.replace('128.65', sbp)
+    new_file_content = new_file_content.replace('81.52', dbp)
 
     with open(new_bp, 'w') as nf:
         nf.write(new_file_content)

@@ -93,13 +93,6 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-NPI-BPGoalNotMetRecentProgress-2",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -121,7 +114,7 @@
       },
       "effectiveDateTime": "2022-09-28T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading - Though recent progress has been made, older observations still indicate HTN Stage 2 over previous 2 years"
+        "text": "Office Blood Pressure Reading - Though recent progress has been made, older observations still indicate HTN Stage 2 over previous 2 years"
       } ],
       "component": [ {
         "code": {
@@ -233,13 +226,6 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-NPI-BPGoalNotMetRecentProgress-3",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -261,7 +247,7 @@
       },
       "effectiveDateTime": "2022-10-29T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading"
+        "text": "Office Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
