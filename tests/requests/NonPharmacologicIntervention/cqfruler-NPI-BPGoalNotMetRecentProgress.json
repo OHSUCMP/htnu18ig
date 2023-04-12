@@ -132,16 +132,7 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading - Though recent progress has been made, older observations still indicate HTN Stage 2 over previous 2 years"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "264362003"
-                  }
+                  "text": "Office Blood Pressure Reading - Though recent progress has been made, older observations still indicate HTN Stage 2 over previous 2 years"
                 }
               ],
               "category": [
@@ -308,16 +299,7 @@
               "status": "final",
               "note": [
                 {
-                  "text": "Home Blood Pressure Reading"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-                  "valueCoding": {
-                    "system": "http://snomed.info/sct",
-                    "code": "264362003"
-                  }
+                  "text": "Office Blood Pressure Reading"
                 }
               ],
               "category": [
