@@ -23,8 +23,8 @@
         "reference": "Patient/H-ConsiderHTNStage2"
       },
       "period": {
-        "start": "2021-11-08T00:00:00-04:00",
-        "end": "2021-11-08T23:59:59-04:00"
+        "start": "2022-10-09T00:00:00-04:00",
+        "end": "2022-10-09T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/H-ConsiderHTNStage2"
       },
       "period": {
-        "start": "2021-10-08T00:00:00-04:00",
-        "end": "2021-10-08T23:59:59-04:00"
+        "start": "2022-09-08T00:00:00-04:00",
+        "end": "2022-09-08T23:59:59-04:00"
       }
     },
     "request": {
@@ -81,8 +81,8 @@
         "reference": "Patient/H-ConsiderHTNStage2"
       },
       "period": {
-        "start": "2021-09-10T00:00:00-04:00",
-        "end": "2021-09-10T23:59:59-04:00"
+        "start": "2022-08-11T00:00:00-04:00",
+        "end": "2022-08-11T23:59:59-04:00"
       }
     },
     "request": {
@@ -110,8 +110,8 @@
         "reference": "Patient/H-ConsiderHTNStage2"
       },
       "period": {
-        "start": "2021-08-10T00:00:00-04:00",
-        "end": "2021-08-10T23:59:59-04:00"
+        "start": "2022-07-11T00:00:00-04:00",
+        "end": "2022-07-11T23:59:59-04:00"
       }
     },
     "request": {
@@ -129,7 +129,7 @@
         "given": [ "Consider" ]
       } ],
       "gender": "male",
-      "birthDate": "1986-09-26"
+      "birthDate": "1987-08-27"
     },
     "request": {
       "method": "PUT",
@@ -165,7 +165,7 @@
       "subject": {
         "reference": "Patient/H-ConsiderHTNStage2"
       },
-      "effectiveDateTime": "2022-01-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-12-09T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -231,7 +231,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-ConsiderHTNStage2-1"
       },
-      "effectiveDateTime": "2021-08-10T15:16:21-05:00",
+      "effectiveDateTime": "2022-07-11T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -297,7 +297,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-ConsiderHTNStage2-2"
       },
-      "effectiveDateTime": "2021-09-10T15:16:21-05:00",
+      "effectiveDateTime": "2022-08-11T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -363,7 +363,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-ConsiderHTNStage2-3"
       },
-      "effectiveDateTime": "2021-10-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-08T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -429,7 +429,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-ConsiderHTNStage2-4"
       },
-      "effectiveDateTime": "2021-11-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-09T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -499,7 +499,7 @@
       "subject": {
         "reference": "Patient/H-ConsiderHTNStage2"
       },
-      "effectiveDateTime": "2021-12-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-08T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],

@@ -58,10 +58,10 @@
         "display": "FHIR One, Hazel"
       },
       "onsetPeriod": {
-        "start": "2023-02-21",
-        "end": "2023-02-21"
+        "start": "2023-04-11",
+        "end": "2023-04-11"
       },
-      "recordedDate": "2023-02-21",
+      "recordedDate": "2023-04-11",
       "note": [ {
         "text": "Indicates Diagnosis of Hypertension TODAY - (Change the date for this test to work)"
       } ]
@@ -81,7 +81,7 @@
         "given": [ "Same Day" ]
       } ],
       "gender": "male",
-      "birthDate": "1976-10-03"
+      "birthDate": "1977-09-03"
     },
     "request": {
       "method": "PUT",
@@ -117,7 +117,7 @@
       "subject": {
         "reference": "Patient/M-SameDayCondition"
       },
-      "effectiveDateTime": "2021-08-21T15:16:21-05:00",
+      "effectiveDateTime": "2022-07-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -187,7 +187,7 @@
       "subject": {
         "reference": "Patient/M-SameDayCondition"
       },
-      "effectiveDateTime": "2021-08-18T15:16:21-05:00",
+      "effectiveDateTime": "2022-07-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],

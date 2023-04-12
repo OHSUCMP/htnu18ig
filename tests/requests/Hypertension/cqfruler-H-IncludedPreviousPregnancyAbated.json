@@ -66,9 +66,9 @@
               "subject": {
                 "reference": "Patient/H-IncludedPreviousPregnancyAbated"
               },
-              "onsetDateTime": "2022-07-29T19:02:10-04:00",
-              "abatementDateTime": "2022-02-20T19:02:10-04:00",
-              "recordedDate": "2022-07-29T19:02:10-04:00"
+              "onsetDateTime": "2022-08-16T19:02:10-04:00",
+              "abatementDateTime": "2023-03-21T19:02:10-04:00",
+              "recordedDate": "2023-03-25T19:02:10-04:00"
             },
             "request": {
               "method": "PUT",
@@ -90,7 +90,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1999-01-12"
+              "birthDate": "1999-12-13"
             },
             "request": {
               "method": "PUT",
@@ -140,7 +140,7 @@
               "subject": {
                 "reference": "Patient/H-IncludedPreviousPregnancyAbated"
               },
-              "effectiveDateTime": "2019-06-25T15:16:21-05:00",
+              "effectiveDateTime": "2020-05-25T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -228,7 +228,7 @@
               "subject": {
                 "reference": "Patient/H-IncludedPreviousPregnancyAbated"
               },
-              "effectiveDateTime": "2016-06-21T15:16:21-05:00",
+              "effectiveDateTime": "2017-05-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {

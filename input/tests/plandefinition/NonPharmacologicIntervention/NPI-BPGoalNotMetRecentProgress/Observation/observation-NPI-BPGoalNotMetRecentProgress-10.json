@@ -40,7 +40,7 @@
   "subject": {
     "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
   },
-  "effectiveDateTime": "2023-02-13T16:16:21-05:00",
+  "effectiveDateTime": "2023-04-03T16:16:21-05:00",
   "component": [
     {
       "code": {

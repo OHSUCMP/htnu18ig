@@ -31,8 +31,8 @@
   "subject": {
     "reference": "Patient/NPI-WeightLossAchieved"
   },
-  "effectiveDateTime": "2021-09-27T03:14:57-05:00",
-  "issued": "2021-09-27T03:14:57.429-05:00",
+  "effectiveDateTime": "2022-08-28T03:14:57-05:00",
+  "issued": "2022-08-28T03:14:57.429-05:00",
   "valueQuantity": {
     "value": 24.127659692990766,
     "unit": "kg/m2",

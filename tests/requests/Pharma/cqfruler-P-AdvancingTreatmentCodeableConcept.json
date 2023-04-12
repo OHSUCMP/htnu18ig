@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "performedDateTime": "2021-08-12T11:00:00-06:00"
+              "performedDateTime": "2022-07-13T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -95,8 +95,8 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "onsetDateTime": "2015-09-04T15:16:21-05:00",
-              "recordedDate": "2015-09-04T15:16:21-05:00"
+              "onsetDateTime": "2016-08-04T15:16:21-05:00",
+              "recordedDate": "2016-08-04T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -118,7 +118,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1984-02-11"
+              "birthDate": "1985-01-11"
             },
             "request": {
               "method": "PUT",
@@ -199,7 +199,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "authoredOn": "2021-12-06T16:00:00-08:00"
+              "authoredOn": "2022-11-06T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -224,7 +224,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "authoredOn": "2020-12-06T16:00:00-08:00"
+              "authoredOn": "2021-11-06T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -249,7 +249,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "authoredOn": "2021-12-06T16:00:00-08:00"
+              "authoredOn": "2022-11-06T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -280,7 +280,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "authoredOn": "2021-12-06T16:00:00-08:00"
+              "authoredOn": "2022-11-06T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -310,10 +310,10 @@
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
               "effectivePeriod": {
-                "start": "2002-04-19",
-                "end": "2021-08-12"
+                "start": "2003-03-20",
+                "end": "2022-07-13"
               },
-              "issued": "2021-08-12T00:00:00-07:00",
+              "issued": "2022-07-13T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -389,7 +389,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "effectiveDateTime": "2022-01-31T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -477,7 +477,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "effectiveDateTime": "2021-12-31T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -565,7 +565,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "effectiveDateTime": "2021-12-01T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -644,7 +644,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "effectiveDateTime": "2021-10-31T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -732,7 +732,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "effectiveDateTime": "2022-02-24T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-25T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -811,7 +811,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "effectiveDateTime": "2021-10-03T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -890,7 +890,7 @@
               "subject": {
                 "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
               },
-              "effectiveDateTime": "2021-09-02T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -955,8 +955,8 @@
                   }
                 ]
               },
-              "statusDate": "2021-08-19",
-              "startDate": "2021-08-19",
+              "statusDate": "2022-07-20",
+              "startDate": "2022-07-20",
               "description": {
                 "text": "Goal of 135/85"
               },
