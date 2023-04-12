@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "onsetDateTime": "2015-08-12T15:16:21-05:00",
-      "recordedDate": "2015-08-12T15:16:21-05:00",
+      "onsetDateTime": "2016-07-12T15:16:21-05:00",
+      "recordedDate": "2016-07-12T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -58,7 +58,7 @@
         "given": [ "All" ]
       } ],
       "gender": "male",
-      "birthDate": "1999-03-17"
+      "birthDate": "2000-02-15"
     },
     "request": {
       "method": "PUT",
@@ -94,7 +94,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-08-10T15:16:21-05:00",
+      "effectiveDateTime": "2022-07-11T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -164,7 +164,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-12-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-08T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -234,7 +234,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2022-01-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-12-09T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -304,7 +304,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-09-10T15:16:21-05:00",
+      "effectiveDateTime": "2022-08-11T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -360,10 +360,10 @@
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
       "effectivePeriod": {
-        "start": "2019-03-02",
-        "end": "2022-12-12"
+        "start": "2020-01-31",
+        "end": "2023-01-30"
       },
-      "issued": "2019-12-12T00:00:00-07:00",
+      "issued": "2020-11-11T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -415,8 +415,8 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2022-12-28T03:14:57-05:00",
-      "issued": "2022-12-28T03:14:57.429-05:00",
+      "effectiveDateTime": "2023-02-15T03:14:57-05:00",
+      "issued": "2023-02-15T03:14:57.429-05:00",
       "valueQuantity": {
         "value": 27.690689692990766,
         "unit": "kg/m2",
@@ -447,8 +447,8 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2022-12-09T10:00:00-07:00",
-      "issued": "2022-12-09T00:00:00-07:00",
+      "effectiveDateTime": "2023-01-27T10:00:00-07:00",
+      "issued": "2023-01-27T00:00:00-07:00",
       "valueQuantity": {
         "value": 5.1,
         "unit": "Drinks/Day"
@@ -491,7 +491,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-10-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-08T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -561,7 +561,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "effectiveDateTime": "2021-11-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-09T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -620,7 +620,7 @@
       "subject": {
         "reference": "Patient/NPI-AllCounselingRecommended"
       },
-      "startDate": "2022-01-24",
+      "startDate": "2022-12-25",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -652,7 +652,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2022-01-24"
+      "statusDate": "2022-12-25"
     },
     "request": {
       "method": "PUT",

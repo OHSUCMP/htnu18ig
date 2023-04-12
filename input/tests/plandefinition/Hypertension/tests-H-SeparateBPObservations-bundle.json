@@ -23,8 +23,8 @@
         "reference": "Patient/H-SeparateBPObservations"
       },
       "period": {
-        "start": "2022-10-08T05:16:21-05:00",
-        "end": "2022-10-08T16:16:21-05:00"
+        "start": "2022-11-26T05:16:21-05:00",
+        "end": "2022-11-26T16:16:21-05:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/H-SeparateBPObservations"
       },
       "period": {
-        "start": "2022-11-08T14:16:21-05:00",
-        "end": "2022-11-08T16:16:21-05:00"
+        "start": "2022-12-27T14:16:21-05:00",
+        "end": "2022-12-27T16:16:21-05:00"
       }
     },
     "request": {
@@ -71,7 +71,7 @@
         "given": [ "Separate" ]
       } ],
       "gender": "male",
-      "birthDate": "1991-10-05"
+      "birthDate": "1992-09-04"
     },
     "request": {
       "method": "PUT",
@@ -106,7 +106,7 @@
       "subject": {
         "reference": "Patient/H-SeparateBPObservations"
       },
-      "effectiveDateTime": "2023-01-05T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-23T15:16:21-05:00",
       "valueQuantity": {
         "value": 125
       },
@@ -147,7 +147,7 @@
       "subject": {
         "reference": "Patient/H-SeparateBPObservations"
       },
-      "effectiveDateTime": "2022-12-03T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-21T15:16:21-05:00",
       "valueQuantity": {
         "value": 165
       },
@@ -188,7 +188,7 @@
       "subject": {
         "reference": "Patient/H-SeparateBPObservations"
       },
-      "effectiveDateTime": "2022-08-15T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-03T15:16:21-05:00",
       "valueQuantity": {
         "value": 130
       },
@@ -226,7 +226,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-SeparateBPObservations-1"
       },
-      "effectiveDateTime": "2022-10-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-26T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -295,7 +295,7 @@
       "subject": {
         "reference": "Patient/H-SeparateBPObservations"
       },
-      "effectiveDateTime": "2022-08-15T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-03T15:16:21-05:00",
       "valueQuantity": {
         "value": 90
       },
@@ -333,7 +333,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-SeparateBPObservations-2"
       },
-      "effectiveDateTime": "2022-11-08T15:36:21-05:00",
+      "effectiveDateTime": "2022-12-27T15:36:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -402,7 +402,7 @@
       "subject": {
         "reference": "Patient/H-SeparateBPObservations"
       },
-      "effectiveDateTime": "2022-05-07T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-07T15:16:21-05:00",
       "valueQuantity": {
         "value": 100
       },
@@ -444,7 +444,7 @@
       "subject": {
         "reference": "Patient/H-RecommendMoreBPs"
       },
-      "effectiveDateTime": "2022-07-04T15:16:21-05:00",
+      "effectiveDateTime": "2022-08-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -513,7 +513,7 @@
       "subject": {
         "reference": "Patient/H-SeparateBPObservations"
       },
-      "effectiveDateTime": "2023-01-05T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-23T15:16:21-05:00",
       "valueQuantity": {
         "value": 85
       },
@@ -551,7 +551,7 @@
       "encounter": {
         "reference": "Encounter/encounter-H-SeparateBPObservations-2"
       },
-      "effectiveDateTime": "2022-11-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-12-27T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],

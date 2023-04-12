@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "performedDateTime": "2021-12-12T11:00:00-06:00",
+      "performedDateTime": "2022-11-12T11:00:00-06:00",
       "note": [ {
         "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "onsetDateTime": "2015-08-12T15:16:21-05:00",
-      "recordedDate": "2015-08-12T15:16:21-05:00",
+      "onsetDateTime": "2016-07-12T15:16:21-05:00",
+      "recordedDate": "2016-07-12T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "RecentProgress" ]
       } ],
       "gender": "female",
-      "birthDate": "1978-07-02"
+      "birthDate": "1979-06-02"
     },
     "request": {
       "method": "PUT",
@@ -119,7 +119,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2022-08-10T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-28T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading - Though recent progress has been made, older observations still indicate HTN Stage 2 over previous 2 years"
       } ],
@@ -189,7 +189,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2023-02-13T16:16:21-05:00",
+      "effectiveDateTime": "2023-04-03T16:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -259,7 +259,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2022-09-10T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-29T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -329,7 +329,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2023-02-07T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-28T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -399,7 +399,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2022-10-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -469,7 +469,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2022-11-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-12-27T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -539,7 +539,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2023-02-13T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-03T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -609,7 +609,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2022-12-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -679,7 +679,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2023-01-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -735,8 +735,8 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "effectiveDateTime": "2021-12-09T10:00:00-07:00",
-      "issued": "2021-12-09T00:00:00-07:00",
+      "effectiveDateTime": "2022-11-09T10:00:00-07:00",
+      "issued": "2022-11-09T00:00:00-07:00",
       "valueQuantity": {
         "value": 4.1,
         "unit": "Drinks/Day"
@@ -768,7 +768,7 @@
       "subject": {
         "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
       },
-      "startDate": "2022-01-24",
+      "startDate": "2022-12-25",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -800,7 +800,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2022-01-24"
+      "statusDate": "2022-12-25"
     },
     "request": {
       "method": "PUT",
