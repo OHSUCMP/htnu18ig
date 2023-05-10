@@ -22,7 +22,7 @@
     "reference": "Patient/H-PrescribeAmbulatoryBPMonitoring"
   },
   "period": {
-    "start": "2022-10-09T00:00:00-04:00",
-    "end": "2022-10-09T23:59:59-04:00"
+    "start": "2022-11-06T00:00:00-04:00",
+    "end": "2022-11-06T23:59:59-04:00"
   }
 }

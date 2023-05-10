@@ -40,8 +40,8 @@
                 "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
               },
               "period": {
-                "start": "2022-08-11T00:00:00-04:00",
-                "end": "2022-08-11T23:59:59-04:00"
+                "start": "2022-09-08T00:00:00-04:00",
+                "end": "2022-09-08T23:59:59-04:00"
               }
             },
             "request": {
@@ -74,8 +74,8 @@
                 "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
               },
               "period": {
-                "start": "2022-09-08T00:00:00-04:00",
-                "end": "2022-09-08T23:59:59-04:00"
+                "start": "2022-10-06T00:00:00-04:00",
+                "end": "2022-10-06T23:59:59-04:00"
               }
             },
             "request": {
@@ -108,8 +108,8 @@
                 "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
               },
               "period": {
-                "start": "2022-10-09T00:00:00-04:00",
-                "end": "2022-10-09T23:59:59-04:00"
+                "start": "2022-11-06T00:00:00-04:00",
+                "end": "2022-11-06T23:59:59-04:00"
               }
             },
             "request": {
@@ -142,8 +142,8 @@
                 "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
               },
               "period": {
-                "start": "2022-07-11T00:00:00-04:00",
-                "end": "2022-07-11T23:59:59-04:00"
+                "start": "2022-08-08T00:00:00-04:00",
+                "end": "2022-08-08T23:59:59-04:00"
               }
             },
             "request": {
@@ -201,8 +201,8 @@
               "subject": {
                 "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
               },
-              "onsetDateTime": "2016-07-12T15:16:21-05:00",
-              "recordedDate": "2016-07-12T15:16:21-05:00"
+              "onsetDateTime": "2016-08-09T15:16:21-05:00",
+              "recordedDate": "2016-08-09T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -224,7 +224,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1974-08-30"
+              "birthDate": "1974-09-27"
             },
             "request": {
               "method": "PUT",
@@ -268,7 +268,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-2"
               },
-              "effectiveDateTime": "2022-08-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -350,7 +350,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-3"
               },
-              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -432,7 +432,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-4"
               },
-              "effectiveDateTime": "2022-10-09T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -520,7 +520,7 @@
               "subject": {
                 "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
               },
-              "effectiveDateTime": "2022-11-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -608,7 +608,7 @@
               "subject": {
                 "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
               },
-              "effectiveDateTime": "2022-06-21T15:16:21-05:00",
+              "effectiveDateTime": "2022-07-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -690,7 +690,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-1"
               },
-              "effectiveDateTime": "2022-07-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -750,8 +750,8 @@
                   }
                 ]
               },
-              "statusDate": "2022-12-25",
-              "startDate": "2022-12-25",
+              "statusDate": "2023-01-22",
+              "startDate": "2023-01-22",
               "description": {
                 "text": "Goal of 135/85"
               },

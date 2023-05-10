@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "performedDateTime": "2022-11-12T11:00:00-06:00"
+              "performedDateTime": "2022-12-10T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -95,8 +95,8 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "onsetDateTime": "2016-07-12T15:16:21-05:00",
-              "recordedDate": "2016-07-12T15:16:21-05:00"
+              "onsetDateTime": "2016-08-09T15:16:21-05:00",
+              "recordedDate": "2016-08-09T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -118,7 +118,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1979-06-02"
+              "birthDate": "1979-06-30"
             },
             "request": {
               "method": "PUT",
@@ -159,7 +159,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2022-09-28T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -247,7 +247,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2023-04-03T16:16:21-05:00",
+              "effectiveDateTime": "2023-05-01T16:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -326,7 +326,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2022-10-29T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -414,7 +414,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2023-03-28T15:16:21-05:00",
+              "effectiveDateTime": "2023-04-25T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -502,7 +502,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2022-11-26T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-24T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -590,7 +590,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2022-12-27T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-24T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -678,7 +678,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2023-04-03T15:16:21-05:00",
+              "effectiveDateTime": "2023-05-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -766,7 +766,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2023-01-26T15:16:21-05:00",
+              "effectiveDateTime": "2023-02-23T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -854,7 +854,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2023-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -922,8 +922,8 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalNotMetRecentProgress"
               },
-              "effectiveDateTime": "2022-11-09T10:00:00-07:00",
-              "issued": "2022-11-09T00:00:00-07:00",
+              "effectiveDateTime": "2022-12-07T10:00:00-07:00",
+              "issued": "2022-12-07T00:00:00-07:00",
               "valueQuantity": {
                 "value": 4.1,
                 "unit": "Drinks/Day"
@@ -949,8 +949,8 @@
                   }
                 ]
               },
-              "statusDate": "2022-12-25",
-              "startDate": "2022-12-25",
+              "statusDate": "2023-01-22",
+              "startDate": "2023-01-22",
               "description": {
                 "text": "Goal of 130/80"
               },

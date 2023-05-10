@@ -65,8 +65,8 @@
               "subject": {
                 "reference": "Patient/NPI-ExcludedOver80"
               },
-              "onsetDateTime": "2016-07-12T15:16:21-05:00",
-              "recordedDate": "2016-07-12T15:16:21-05:00"
+              "onsetDateTime": "2016-08-09T15:16:21-05:00",
+              "recordedDate": "2016-08-09T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -88,7 +88,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1939-07-14"
+              "birthDate": "1939-08-11"
             },
             "request": {
               "method": "PUT",

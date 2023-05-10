@@ -11,7 +11,7 @@ define "In Population":
   Common."HTN Crisis"
 
 define "Recommendation":
-  if "In Population" then 'Warning: Very high blood pressure. Please recheck the pressure in 5 minutes; if it is still >180/120, consult care team immediately.'
+  if "In Population" then 'Warning: Very high blood pressure. Please recheck the pressure in 5 minutes; if it is still >180/120, consult your care team immediately.'
   else null
 
 define "Rationale Combined Data":

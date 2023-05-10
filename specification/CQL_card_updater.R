@@ -18,7 +18,7 @@ library(xlsx)
 # - NonPharma links are not currently updated, because they are generally all the same regardless of logic. This can be done later if we find we need separate links.
 
 p <- function(vec) {
-  paste0(vec[!is.na(vec)])
+  str_replace_all(paste0(vec[!is.na(vec)]), "\\s?\\[.*?\\]", "")
 }
 
 # Overwrite the template text with the blocks of text transformed from the Excel spreadsheet. Apostrophes need to be replaced again for some reason. One replacement alone does not work.
@@ -31,7 +31,7 @@ processTemplate <- function(cards, txt) {
   return(txt)
 }
 
-cards_file <- file.path("Cards.xlsx")
+cards_file <- file.path("Cards_OHSU_20221128_Control.xlsx")
 
 # Read the cards spreadsheet, selecting only the columns of interest
 cards <- read_xlsx(cards_file, skip=2, col_names=c("recommendation", "na-1", "na-2", "na-3", "na-4", "summary", 

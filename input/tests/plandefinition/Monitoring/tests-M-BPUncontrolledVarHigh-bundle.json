@@ -23,8 +23,8 @@
         "reference": "Patient/M-BPUncontrolledVarHigh"
       },
       "period": {
-        "start": "2022-07-11T00:00:00-04:00",
-        "end": "2022-07-11T23:59:59-04:00"
+        "start": "2022-08-08T00:00:00-04:00",
+        "end": "2022-08-08T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/M-BPUncontrolledVarHigh"
       },
       "period": {
-        "start": "2022-08-11T00:00:00-04:00",
-        "end": "2022-08-11T23:59:59-04:00"
+        "start": "2022-09-08T00:00:00-04:00",
+        "end": "2022-09-08T23:59:59-04:00"
       }
     },
     "request": {
@@ -81,8 +81,8 @@
         "reference": "Patient/M-BPUncontrolledVarHigh"
       },
       "period": {
-        "start": "2022-09-08T00:00:00-04:00",
-        "end": "2022-09-08T23:59:59-04:00"
+        "start": "2022-10-06T00:00:00-04:00",
+        "end": "2022-10-06T23:59:59-04:00"
       }
     },
     "request": {
@@ -110,8 +110,8 @@
         "reference": "Patient/M-BPUncontrolledVarHigh"
       },
       "period": {
-        "start": "2022-10-09T00:00:00-04:00",
-        "end": "2022-10-09T23:59:59-04:00"
+        "start": "2022-11-06T00:00:00-04:00",
+        "end": "2022-11-06T23:59:59-04:00"
       }
     },
     "request": {
@@ -153,8 +153,8 @@
       "subject": {
         "reference": "Patient/M-BPUncontrolledVarHigh"
       },
-      "onsetDateTime": "2023-04-06",
-      "recordedDate": "2016-07-12T15:16:21-05:00",
+      "onsetDateTime": "2023-05-04",
+      "recordedDate": "2016-08-09T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -174,7 +174,7 @@
         "given": [ "BP Uncontrolled" ]
       } ],
       "gender": "female",
-      "birthDate": "1972-09-05"
+      "birthDate": "1972-10-03"
     },
     "request": {
       "method": "PUT",
@@ -206,7 +206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-08-22T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-19T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -272,7 +272,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-20T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-17T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -338,7 +338,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-03T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-01T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -404,7 +404,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-11-01T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-29T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -470,7 +470,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-15T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-13T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -536,7 +536,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-12T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-10T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -602,7 +602,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-29T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-26T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -668,7 +668,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-08-31T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-28T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -734,7 +734,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-17T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-14T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -800,7 +800,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-08-19T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-16T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -866,7 +866,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-21T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-19T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -932,7 +932,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-08-16T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-13T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -998,7 +998,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-14T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-11T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1064,7 +1064,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-03T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-31T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1130,7 +1130,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-30T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-28T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1196,7 +1196,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-11T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-08T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1262,7 +1262,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-08-13T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-10T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1328,7 +1328,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-18T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-16T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1394,7 +1394,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-27T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-25T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1460,7 +1460,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-05T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1526,7 +1526,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-08-10T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-07T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1592,7 +1592,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-06T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-03T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1658,7 +1658,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-24T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1724,7 +1724,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-26T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-23T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1790,7 +1790,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-08-28T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-25T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1856,7 +1856,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-10T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-08T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1922,7 +1922,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-09-06T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-04T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -1988,7 +1988,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-08-25T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -2054,7 +2054,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-11-04T15:16:21-05:00",
+      "effectiveDateTime": "2022-12-02T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -2120,7 +2120,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-BPUncontrolledVarHigh-1"
       },
-      "effectiveDateTime": "2022-10-23T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-20T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -2179,7 +2179,7 @@
       "subject": {
         "reference": "Patient/M-BPUncontrolledVarHigh"
       },
-      "startDate": "2022-12-25",
+      "startDate": "2023-01-22",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -2211,7 +2211,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2022-12-25"
+      "statusDate": "2023-01-22"
     },
     "request": {
       "method": "PUT",
