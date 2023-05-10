@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
         },
-        "effectiveDateTime": "2013-06-25T15:16:21-05:00",
+        "effectiveDateTime": "2013-07-23T15:16:21-05:00",
         "valueQuantity": {
           "value": 2.4092572133973507,
           "unit": "{score}",

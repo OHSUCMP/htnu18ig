@@ -53,10 +53,10 @@ define "Recommendation Needed":
 define "Recommendation":
   if not "In Population" then 'None'
   else if not Common."Has BP Set" then 'Consider obtaining additional blood pressure measurements.'
-  else if "HTN Stage 2" then 'Consider diagnosis of Stage 2 hypertension.'
-  else if "Consider HTN Stage 2" then 'Consider diagnosis of Stage 2 hypertension.'
-  else if "Consider HTN Stage 1" then 'Consider diagnosis of Stage 1 hypertension.'
-  else if "Prescribe Monitoring to Confirm HTN" then 'Use ambulatory or home blood pressure monitoring to confirm diagnosis.'
+  else if "HTN Stage 2" then 'Possible diagnosis of Stage 2 hypertension.'
+  else if "Consider HTN Stage 2" then 'Possible diagnosis of Stage 2 hypertension.'
+  else if "Consider HTN Stage 1" then 'Possible diagnosis of Stage 1 hypertension.'
+  else if "Prescribe Monitoring to Confirm HTN" then 'Use home blood pressure monitoring to provide more information to your care team.'
   else 'No Further Action'
 
 define "Rationale Combined Data":
@@ -66,8 +66,8 @@ define "Rationale":
   if not "In Population" then 'None'
   else if not Common."Has BP Set" then '{{#patient}}You recently had a high blood pressure reading, but <strong>we do not have enough blood pressure measurements</strong> to obtain a full picture of your current health. We consider a full set of measurements to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis.  We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
   else if "HTN Stage 2" then '{{#patient}}You had multiple high blood pressure readings recently (>= 140 mmHg systolic and/or >= 90 mmHg diastolic). These readings <strong>suggest you have stage 2 hypertension</strong>, a treatable condition of high blood pressure. Please discuss next steps with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP >= 140 mm HG and/or DBP >= 90 mm Hg. This strongly suggests the patient has Stage 2 Hypertension but no diagnosis was found.{{/careTeam}}'
-  else if "Consider HTN Stage 2" then '{{#patient}}You recently had high blood pressure readings (>= 140 mmHg systolic and/or >= 90 mmHg diastolic) which <strong>suggest you have hypertension</strong>, but there is no diagnosis in your chart. You may want to discuss your blood pressure with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 140mm Hg and/or DBP > 90. This suggests the patient may have Stage 2 Hypertension, but no diagnosis was found.{{/careTeam}}'
-  else if "Consider HTN Stage 1" then '{{#patient}}You recently had high blood pressure readings (>= 130 mmHg systolic and/or >= 80 mmHg diastolic) which <strong>suggest you have hypertension</strong>, but do not have a recorded diagnosis of hypertension. You may want to discuss your blood pressure with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 130mm Hg and/or DBP > 80. This suggests the patient may have Stage 1 Hypertension, but no diagnosis was found.{{/careTeam}}'
+  else if "Consider HTN Stage 2" then '{{#patient}}You recently had high blood pressure readings (>= 140 mmHg systolic and/or >= 90 mmHg diastolic) which <strong>suggest you have hypertension</strong>, but there is no diagnosis in your chart. Please discuss next steps with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 140mm Hg and/or DBP > 90. This suggests the patient may have Stage 2 Hypertension, but no diagnosis was found.{{/careTeam}}'
+  else if "Consider HTN Stage 1" then '{{#patient}}You recently had high blood pressure readings (>= 130 mmHg systolic and/or >= 80 mmHg diastolic) which <strong>suggest you have hypertension</strong>, but do not have a recorded diagnosis of hypertension. Please discuss next steps with your care team.{{/patient}}{{#careTeam}}Patient had multiple blood pressure readings of SBP > 130mm Hg and/or DBP > 80. This suggests the patient may have Stage 1 Hypertension, but no diagnosis was found.{{/careTeam}}'
   else if "Prescribe Monitoring to Confirm HTN" then '{{#patient}}You recently had a <strong>high blood pressure reading</strong>, but do not have a recorded diagnosis of hypertension. Discuss out of office blood pressure monitoring with your care team.{{/patient}}{{#careTeam}}In adults with suspected hypertension and without diagnostic uncertainty or BP variability, use Ambulatory Blood Pressure Monitoring or HBPM for diagnostic confirmation.{{/careTeam}}'
   else 'None'
 

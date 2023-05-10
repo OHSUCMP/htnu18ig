@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "performedDateTime": "2022-11-12T11:00:00-06:00"
+              "performedDateTime": "2022-12-10T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -95,8 +95,8 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "onsetDateTime": "2016-07-12T15:16:21-05:00",
-              "recordedDate": "2016-07-12T15:16:21-05:00"
+              "onsetDateTime": "2016-08-09T15:16:21-05:00",
+              "recordedDate": "2016-08-09T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -118,7 +118,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1973-05-15"
+              "birthDate": "1973-06-12"
             },
             "request": {
               "method": "PUT",
@@ -168,7 +168,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2023-04-08T15:16:21-05:00",
+              "effectiveDateTime": "2023-05-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -256,7 +256,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-07-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -344,7 +344,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-08-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -432,7 +432,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2023-03-09T15:16:21-05:00",
+              "effectiveDateTime": "2023-04-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -520,7 +520,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -608,7 +608,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2023-01-09T15:16:21-05:00",
+              "effectiveDateTime": "2023-02-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -696,7 +696,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2023-02-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -784,7 +784,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-10-09T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -872,7 +872,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-11-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -960,7 +960,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-12-09T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1048,7 +1048,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-08-26T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-23T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1116,8 +1116,8 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-11-09T10:00:00-07:00",
-              "issued": "2022-11-09T00:00:00-07:00",
+              "effectiveDateTime": "2022-12-07T10:00:00-07:00",
+              "issued": "2022-12-07T00:00:00-07:00",
               "valueQuantity": {
                 "value": 4.1,
                 "unit": "Drinks/Day"
@@ -1171,7 +1171,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalMet"
               },
-              "effectiveDateTime": "2022-07-27T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-24T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1231,8 +1231,8 @@
                   }
                 ]
               },
-              "statusDate": "2022-12-25",
-              "startDate": "2022-12-25",
+              "statusDate": "2023-01-22",
+              "startDate": "2023-01-22",
               "description": {
                 "text": "Goal of 135/85"
               },

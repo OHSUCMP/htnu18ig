@@ -31,8 +31,8 @@
   "subject": {
     "reference": "Patient/NPI-OldBMI"
   },
-  "effectiveDateTime": "2021-03-30T03:14:57-05:00",
-  "issued": "2021-05-31T03:14:57.429-05:00",
+  "effectiveDateTime": "2021-04-27T03:14:57-05:00",
+  "issued": "2021-06-28T03:14:57.429-05:00",
   "valueQuantity": {
     "value": 27.690689692990766,
     "unit": "kg/m2",

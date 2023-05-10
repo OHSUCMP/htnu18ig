@@ -82,7 +82,7 @@ define "Enter Workflow":
 /***** SMOKING CARD OUTPUT *****/
 
 define "Smoking Recommendation":
-  if exists "Tobacco Cessation Goals Needing Update" then 'Smoking cessation goal due for update.'
+  if exists "Tobacco Cessation Goals Needing Update" then 'Smoking cessation goal check-in.'
   else if exists "Tobacco Cessation Goals" then 'Smoking cessation goal check-in.'
   else if "Needs Smoking Counseling" then 'Discuss smoking cessation.'
   else if "Patient is Currently a Smoker" then 'Reminder about smoking cessation.'
@@ -92,7 +92,7 @@ define "Smoking Rationale Combined Data":
   "Smoking Rationale" + '|' + "Smoking Suggestions" + '|at-most-one|' + "Smoking Links"
 
 define "Smoking Rationale":
-  if exists "Tobacco Cessation Goals Needing Update" then '{{#patient}}You set a smoking cessation goal and it is time to update how that goal went.{{/patient}}'
+  if exists "Tobacco Cessation Goals Needing Update" then '{{#patient}}You set a smoking cessation goal and it is time to update your progress.{{/patient}}'
   else if exists "Tobacco Cessation Goals" then '{{#patient}}You set a smoking cessation goal; it isn\'t quite the time you set to update, but you can update that goal at any time.<br>' + "Tobacco Goal Summary" + '{{/patient}}'
   else if "Needs Smoking Counseling" then '{{#patient}}Reducing your smoking will help lower blood pressure, the risk of stroke, and other harmful events. Please discuss methods to reduce smoking with your care team.{{/patient}}{{#careTeam}}Patient reports they smoke. Counsel about quitting according to your local protocol.{{/careTeam}}'
   else if "Patient is Currently a Smoker" then '{{#patient}}You previously received counseling about quitting smoking, which would lower your blood pressure and other health risks. Please consider readdressing this goal.{{/patient}}{{#careTeam}}Patient still smokes, but has been counseled. Consider reminding about quitting according to your local protocol.{{/careTeam}}'
@@ -122,7 +122,7 @@ define "Smoking Indicator Status":
 /***** WEIGHT LOSS CARD OUTPUT *****/
 
 define "BMI Recommendation":
-  if exists "Weight Loss Goals Needing Update" then 'Weight loss goal due for update.'
+  if exists "Weight Loss Goals Needing Update" then 'Weight loss goal check-in.'
   else if exists "Weight Loss Goals" then 'Weight loss goal check-in.'
   else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then 'Consider weight loss strategies.'
   else if "Patient BMI is Greater than 25 kg/m2" then 'Reminder about weight loss.'
@@ -132,9 +132,9 @@ define "BMI Rationale Combined Data":
   "BMI Rationale" + '|' + "BMI Suggestions" + '|at-most-one|' + "BMI Links"
 
 define "BMI Rationale":
-  if exists "Weight Loss Goals Needing Update" then '{{#patient}}You set a goal for weight loss and it is time to update how that goal went.{{/patient}}'
+  if exists "Weight Loss Goals Needing Update" then '{{#patient}}You set a goal for weight loss and it is time to update your progress.{{/patient}}'
   else if exists "Weight Loss Goals" then '{{#patient}}You set a goal for weight loss; it isn\'t quite the time you set to update, but you can update at any time.<br>' + "Weight Loss Goal Summary" + '{{/patient}}'
-  else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '{{#patient}}Your current weight suggests that weight reduction will help lower your blood pressure, the risk of stroke, and other harmful events. Consider selecting a weight loss goal which can help you reduce weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}'
+  else if "Patient BMI is Greater than 25 kg/m2" and "Last BMI Counseling Procedure" is null then '{{#patient}}Your current weight suggests that weight reduction will help lower your blood pressure, the risk of stroke, and other harmful events. Please discuss stategies with your care team to lose weight.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater. Guidelines recommend weight loss to aid in lowering blood pressure.{{/careTeam}}'
   else if "Patient BMI is Greater than 25 kg/m2" then '{{#patient}}You previously received counseling about weight loss. Weight reduction will help lower your blood pressure. Please consider readdressing this goal.{{/patient}}{{#careTeam}}Patient has a BMI of 25 or greater; they have been counseling, but may need a reminder.{{/careTeam}}'
   else ''
 
@@ -167,16 +167,16 @@ define "Alcohol Recommendation":
   if exists "Alcohol Goals Needing Update" then 'Alcohol moderation goal due for update.'
   else if exists "Alcohol Goals" then 'Alcohol moderation check-in.'
   else if "Needs Alcohol Counseling" then 'Discuss alcohol moderation.'
-  else if "Patient is a Heavy Alcoholic Drinker" then 'Reminder about Alcohol counseling.'
+  else if "Patient is a Heavy Alcoholic Drinker" then 'Reminder about strategies for alcohol moderation.'
   else ''
 
 define "Alcohol Rationale Combined Data":
   "Alcohol Rationale" + '|' + "Alcohol Suggestions" + '|at-most-one|' + "Alcohol Links"
 
 define "Alcohol Rationale":
-  if exists "Alcohol Goals Needing Update" then '{{#patient}}You set a goal to reduce alcohol and it is time to update how that goal went.{{/patient}}'
+  if exists "Alcohol Goals Needing Update" then '{{#patient}}You set a goal to reduce drinking alcohol and it is time to update your progress.{{/patient}}'
   else if exists "Alcohol Goals" then '{{#patient}}You set a goal to reduce alcohol; it isn\'t quite the time you set to update, but you can update at any time.<br>' + "Alcohol Moderation Goal Summary" + '{{/patient}}'
-  else if "Needs Alcohol Counseling" then '{{#patient}}Reducing your alcohol consumption will help lower your blood pressure, along with other health risks. Please discuss methods to reduce your alcohol consumption with your care team.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}'
+  else if "Needs Alcohol Counseling" then '{{#patient}}Reducing your alcohol consumption will help lower your blood pressure, along with other health risks. Please discuss methods to reduce your drinking with your care team.{{/patient}}{{#careTeam}}Patient reports heavy alcohol use. Counsel them to cut down or quit according to your local protocol.{{/careTeam}}'
   else if "Patient is a Heavy Alcoholic Drinker" then '{{#patient}}You previously received counseling about alcohol consumption. Moderating alcohol consumption has proven benefits to heart health and reducing blood pressure. Please consider readdressing this goal.{{/patient}}'
   else ''
 
@@ -214,10 +214,10 @@ define "Nutrition Rationale Combined Data":
   "Nutrition Rationale" + '|' + "Nutrition Suggestions" + '|at-most-one|' + "Nutrition Links"
 
 define "Nutrition Rationale":
-  if exists "Nutrition Goals Needing Update" then '{{#patient}}You set a nutrition goal and it is time to update it.{{/patient}}'
+  if exists "Nutrition Goals Needing Update" then '{{#patient}}You set a nutrition goal and it is time to update your progress.{{/patient}}'
   else if exists "Nutrition Goals" then '{{#patient}}You set a nutrition goal; it isn\'t quite the time you set to update it, but you may update that goal at any time.<br>' + "Nutrition Goal Summary" + '{{/patient}}'
-  else if "Last Nutrition Counseling Procedure" is null then '{{#patient}}Choosing the DASH diet, a low sodium diet, or another heart-healthy diet may lower your elevated blood pressure and reduce your risk of heart attack and stroke. Please discuss choosing a diet with your care team.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}'
-  else '{{#patient}}You have previously received counseling about dietary change. Maintaining a healthy diet that avoids excess salt/sodium will help heart health and assist in controlling blood pressure. Please consider readressing this goal.{{/patient}}'
+  else if "Last Nutrition Counseling Procedure" is null then '{{#patient}}Choosing the DASH diet, a low-sodium diet or another heart-healthy diet, may lower your elevated blood pressure and reduce your risk of heart attack and stroke. Please discuss potential dietary changes with your care team.{{/patient}}{{#careTeam}}Patient needs counseling about reducing sodium or choosing a heart healthy diet.{{/careTeam}}'
+  else '{{#patient}}You have previously received counseling about dietary change. Maintaining a healthy diet that avoids excess salt/sodium could help control blood pressure. Please consider readressing this goal.{{/patient}}'
 
 define "Nutrition Suggestions":
   if exists "Nutrition Goals Needing Update" then '[' + Combine("Update Goals String"("Nutrition Goals Needing Update"), ',') + ']'
@@ -244,18 +244,18 @@ define "Nutrition Indicator Status":
 /***** PHYSICAL ACTIVITY CARD OUTPUT *****/
 
 define "Physical Activity Recommendation":
-  if exists "Physical Activity Goals Needing Update" then 'Physical activity goal update.'
+  if exists "Physical Activity Goals Needing Update" then 'Physical activity goal check-in.'
   else if exists "Physical Activity Goals" then 'Physical activity goal check-in.'
-  else if "Last Physical Activity Counseling Procedure" is null then 'Discuss physical activity.'
+  else if "Last Physical Activity Counseling Procedure" is null then 'Discuss strategies for increasing physical activity.'
   else 'Reminder about physical activity.'
 
 define "Physical Activity Rationale Combined Data":
   "Physical Activity Rationale" + '|' + "Physical Activity Suggestions" + '|at-most-one|' + "Physical Activity Links"
 
 define "Physical Activity Rationale":
-  if exists "Physical Activity Goals Needing Update" then '{{#patient}}You set a physical activity goal and it is time to update how that goal went.{{/patient}}'
+  if exists "Physical Activity Goals Needing Update" then '{{#patient}}You set a physical activity goal and it is time to update your progress.{{/patient}}'
   else if exists "Physical Activity Goals" then '{{#patient}}You set a physical activity goal; it isn\'t quite the time you set to update it, but you may update that goal at any time.<br>' + "Physical Activity Goal Summary" + '{{/patient}}'
-  else if "Last Physical Activity Counseling Procedure" is null then '{{#patient}}Physical activity can help reduce your blood pressure, risk of stroke, and other harmful events. Please discuss methods to increase your physical activity with your care team.{{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}'
+  else if "Last Physical Activity Counseling Procedure" is null then '{{#patient}}Physical activity can help reduce your blood pressure, risk of stroke, and other harmful events. Please discuss strategies to increase your physical activity with your care team.{{/patient}}{{#careTeam}}Patient needs counseling about increasing physical activity.{{/careTeam}}'
   else '{{#patient}}You previously received counseling about physical activity. Maintaining at least a moderate amount of physical activity will help control blood pressure. Please consider readdressing this goal.{{/patient}}'
 
 define "Physical Activity Suggestions":

@@ -40,8 +40,8 @@
                 "reference": "Patient/M-BPUncontrolledVarLow"
               },
               "period": {
-                "start": "2022-10-09T00:00:00-04:00",
-                "end": "2022-10-09T23:59:59-04:00"
+                "start": "2022-11-06T00:00:00-04:00",
+                "end": "2022-11-06T23:59:59-04:00"
               }
             },
             "request": {
@@ -53,6 +53,40 @@
             "resource": {
               "resourceType": "Encounter",
               "id": "encounter-M-BPUncontrolledVarLow-3",
+              "status": "finished",
+              "class": {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "AMB"
+              },
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "162673000",
+                      "display": "General examination of patient (procedure)"
+                    }
+                  ],
+                  "text": "General examination of patient (procedure)"
+                }
+              ],
+              "subject": {
+                "reference": "Patient/M-BPUncontrolledVarLow"
+              },
+              "period": {
+                "start": "2022-10-06T00:00:00-04:00",
+                "end": "2022-10-06T23:59:59-04:00"
+              }
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Encounter",
+              "id": "encounter-M-BPUncontrolledVarLow-2",
               "status": "finished",
               "class": {
                 "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -86,40 +120,6 @@
           {
             "resource": {
               "resourceType": "Encounter",
-              "id": "encounter-M-BPUncontrolledVarLow-2",
-              "status": "finished",
-              "class": {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "AMB"
-              },
-              "type": [
-                {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "162673000",
-                      "display": "General examination of patient (procedure)"
-                    }
-                  ],
-                  "text": "General examination of patient (procedure)"
-                }
-              ],
-              "subject": {
-                "reference": "Patient/M-BPUncontrolledVarLow"
-              },
-              "period": {
-                "start": "2022-08-11T00:00:00-04:00",
-                "end": "2022-08-11T23:59:59-04:00"
-              }
-            },
-            "request": {
-              "method": "PUT",
-              "url": "request-url"
-            }
-          },
-          {
-            "resource": {
-              "resourceType": "Encounter",
               "id": "encounter-M-BPUncontrolledVarLow-1",
               "status": "finished",
               "class": {
@@ -142,8 +142,8 @@
                 "reference": "Patient/M-BPUncontrolledVarLow"
               },
               "period": {
-                "start": "2022-07-11T00:00:00-04:00",
-                "end": "2022-07-11T23:59:59-04:00"
+                "start": "2022-08-08T00:00:00-04:00",
+                "end": "2022-08-08T23:59:59-04:00"
               }
             },
             "request": {
@@ -201,8 +201,8 @@
               "subject": {
                 "reference": "Patient/M-BPUncontrolledVarLow"
               },
-              "onsetDateTime": "2023-04-06",
-              "recordedDate": "2016-07-12T15:16:21-05:00"
+              "onsetDateTime": "2023-05-04",
+              "recordedDate": "2016-08-09T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -224,7 +224,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1961-03-30"
+              "birthDate": "1961-04-27"
             },
             "request": {
               "method": "PUT",
@@ -268,7 +268,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-24T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -350,7 +350,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-25T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -432,7 +432,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-06T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -514,7 +514,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -596,7 +596,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-28T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-25T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -678,7 +678,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-27T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-25T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -760,7 +760,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-23T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -842,7 +842,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-11-04T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-02T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -924,7 +924,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-06T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-04T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1006,7 +1006,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-10T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1088,7 +1088,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-10T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1170,7 +1170,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-26T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-23T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1252,7 +1252,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-17T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-14T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1334,7 +1334,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-29T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1416,7 +1416,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-13T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1498,7 +1498,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-12T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1580,7 +1580,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-15T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-13T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1662,7 +1662,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-16T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-13T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1744,7 +1744,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-11-01T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-29T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1826,7 +1826,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-20T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1908,7 +1908,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-19T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1990,7 +1990,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-18T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2072,7 +2072,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2154,7 +2154,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-31T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2236,7 +2236,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-30T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2318,7 +2318,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-03T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-31T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2400,7 +2400,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-03T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2482,7 +2482,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-10-14T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-11T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2564,7 +2564,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-09-21T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2646,7 +2646,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-M-BPUncontrolledVarLow-1"
               },
-              "effectiveDateTime": "2022-08-22T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2706,8 +2706,8 @@
                   }
                 ]
               },
-              "statusDate": "2022-12-25",
-              "startDate": "2022-12-25",
+              "statusDate": "2023-01-22",
+              "startDate": "2023-01-22",
               "description": {
                 "text": "Goal of 135/85"
               },

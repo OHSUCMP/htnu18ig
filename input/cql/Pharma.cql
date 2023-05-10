@@ -27,14 +27,14 @@ define "Enter Workflow":
 
 define "Recommendation":
   if Common."Patient is Using Antihypertensive Medications" then 'Use shared decision making for treatment.'
-  else 'Consider using medication to treat high blood pressure.'
+  else 'Discuss using medication to treat high blood pressure with your care team.'
 
 define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
   if Common."Patient is Using Antihypertensive Medications" then '{{#patient}}Your <strong>blood pressure is still high despite current efforts to lower it</strong>; changing your medication may be an option. This may occur sooner than expected.{{/patient}}{{#careTeam}}Employ shared decision making practices when discussing treatment for high blood pressure with your patient.{{/careTeam}}'
-  else '{{#patient}}Your blood pressure is substantially elevated, to the point where <strong>medication should be considered</strong> to help manage it. This may occur sooner than expected. Speak with your care team to discuss medication options.{{/patient}}{{#careTeam}}In patients under 55 with high blood pressure and listed comorbidities, use thiazide-type diuretic, ACE-I, ARB, or CCB for first-line therapy{{/careTeam}}'
+  else '{{#patient}}Your blood pressure is substantially elevated, to the point where <strong>medication should be considered</strong>.This may occur sooner than expected. Speak with your care team to discuss medication options.{{/patient}}{{#careTeam}}In patients under 55 with high blood pressure and listed comorbidities, use thiazide-type diuretic, ACE-I, ARB, or CCB for first-line therapy{{/careTeam}}'
 
 define "Suggestions":
   if Common."Patient is Using Antihypertensive Medications" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure.", "url":"/contact?token=recommend-advancing-treatment"}] } ]'

@@ -20,7 +20,7 @@
   "subject": {
     "reference": "Patient/NPI-OldSmokingCounseling"
   },
-  "performedDateTime": "2020-06-19T11:00:00-06:00",
+  "performedDateTime": "2020-07-17T11:00:00-06:00",
   "reasonReference": [
     {
       "reference": "Observation/observation-NPI-OldSmokingCounseling-1"

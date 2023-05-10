@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "performedDateTime": "2023-03-07T11:00:00-06:00",
+              "performedDateTime": "2023-04-04T11:00:00-06:00",
               "reasonReference": [
                 {
                   "reference": "Observation/observation-NPI-SmokingCessationReminder-1"
@@ -100,8 +100,8 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "onsetDateTime": "2016-07-12T15:16:21-05:00",
-              "recordedDate": "2016-07-12T15:16:21-05:00"
+              "onsetDateTime": "2016-08-09T15:16:21-05:00",
+              "recordedDate": "2016-08-09T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -123,7 +123,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1959-12-27"
+              "birthDate": "1960-01-24"
             },
             "request": {
               "method": "PUT",
@@ -173,7 +173,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "effectiveDateTime": "2022-11-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -261,7 +261,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "effectiveDateTime": "2022-10-09T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -329,10 +329,10 @@
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
               "effectivePeriod": {
-                "start": "2003-02-25",
-                "end": "2020-06-19"
+                "start": "2003-03-25",
+                "end": "2020-07-17"
               },
-              "issued": "2020-06-19T00:00:00-07:00",
+              "issued": "2020-07-17T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -399,7 +399,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "effectiveDateTime": "2022-07-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -467,10 +467,10 @@
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
               "effectivePeriod": {
-                "start": "2021-08-26",
-                "end": "2021-09-13"
+                "start": "2021-09-23",
+                "end": "2021-10-11"
               },
-              "issued": "2021-09-13T00:00:00-07:00",
+              "issued": "2021-10-11T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -537,7 +537,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -616,7 +616,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "effectiveDateTime": "2022-08-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -704,7 +704,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationReminder"
               },
-              "effectiveDateTime": "2022-12-09T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -764,8 +764,8 @@
                   }
                 ]
               },
-              "statusDate": "2022-12-25",
-              "startDate": "2022-12-25",
+              "statusDate": "2023-01-22",
+              "startDate": "2023-01-22",
               "description": {
                 "text": "Goal of 135/85"
               },

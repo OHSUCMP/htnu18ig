@@ -40,8 +40,8 @@
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
               "period": {
-                "start": "2022-07-11T00:00:00-04:00",
-                "end": "2022-07-11T23:59:59-04:00"
+                "start": "2022-08-08T00:00:00-04:00",
+                "end": "2022-08-08T23:59:59-04:00"
               }
             },
             "request": {
@@ -74,8 +74,8 @@
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
               "period": {
-                "start": "2022-08-11T00:00:00-04:00",
-                "end": "2022-08-11T23:59:59-04:00"
+                "start": "2022-09-08T00:00:00-04:00",
+                "end": "2022-09-08T23:59:59-04:00"
               }
             },
             "request": {
@@ -98,7 +98,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1983-12-25"
+              "birthDate": "1984-01-22"
             },
             "request": {
               "method": "PUT",
@@ -148,7 +148,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-12-13T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -236,7 +236,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-12-09T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -318,7 +318,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2LastBPSetHome-1"
               },
-              "effectiveDateTime": "2022-07-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-08-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -406,7 +406,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -488,7 +488,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2LastBPSetHome-2"
               },
-              "effectiveDateTime": "2022-08-11T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -576,7 +576,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-08-07T15:16:21-05:00",
+              "effectiveDateTime": "2022-09-04T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -664,7 +664,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-09-06T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-04T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -752,7 +752,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-11-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -840,7 +840,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-10-09T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -928,7 +928,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-10-07T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-04T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1016,7 +1016,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2LastBPSetHome"
               },
-              "effectiveDateTime": "2022-12-20T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
