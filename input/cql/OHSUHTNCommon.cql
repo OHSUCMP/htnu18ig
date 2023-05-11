@@ -320,7 +320,7 @@ define function "Is Active Pregnancy"(condition Condition):
   */
 define function "Procedure Occurred In Last 2 Years"(procedure Procedure):
   if procedure is null then false
-  else if procedure.performed is not null then "Normalize Interval"(procedure.performed) ends 24 months or less before Today()
+  else if procedure.performed is not null then "Normalize Interval"(procedure.performed) ends 24 months or less before Now()
   else false
 
 /*
