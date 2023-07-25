@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "MU-TestCase6",
+  "active": true,
+  "name": [
+    {
+      "text": "Willie T",
+      "family": "T",
+      "given": [
+        "Willie"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1957-11-01"
+}
