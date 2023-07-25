@@ -23,8 +23,8 @@
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
       "period": {
-        "start": "2022-09-08T00:00:00-04:00",
-        "end": "2022-09-08T23:59:59-04:00"
+        "start": "2022-11-18T00:00:00-04:00",
+        "end": "2022-11-18T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
       "period": {
-        "start": "2022-10-06T00:00:00-04:00",
-        "end": "2022-10-06T23:59:59-04:00"
+        "start": "2022-12-16T00:00:00-04:00",
+        "end": "2022-12-16T23:59:59-04:00"
       }
     },
     "request": {
@@ -81,8 +81,8 @@
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
       "period": {
-        "start": "2022-11-06T00:00:00-04:00",
-        "end": "2022-11-06T23:59:59-04:00"
+        "start": "2023-01-16T00:00:00-04:00",
+        "end": "2023-01-16T23:59:59-04:00"
       }
     },
     "request": {
@@ -110,8 +110,8 @@
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
       "period": {
-        "start": "2022-08-08T00:00:00-04:00",
-        "end": "2022-08-08T23:59:59-04:00"
+        "start": "2022-10-18T00:00:00-04:00",
+        "end": "2022-10-18T23:59:59-04:00"
       }
     },
     "request": {
@@ -153,8 +153,8 @@
       "subject": {
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
-      "onsetDateTime": "2016-08-09T15:16:21-05:00",
-      "recordedDate": "2016-08-09T15:16:21-05:00",
+      "onsetDateTime": "2016-10-19T15:16:21-05:00",
+      "recordedDate": "2016-10-19T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -174,7 +174,7 @@
         "given": [ "Recommend" ]
       } ],
       "gender": "female",
-      "birthDate": "1974-09-27"
+      "birthDate": "1974-12-07"
     },
     "request": {
       "method": "PUT",
@@ -206,7 +206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-2"
       },
-      "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-18T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -272,7 +272,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-3"
       },
-      "effectiveDateTime": "2022-10-06T15:16:21-05:00",
+      "effectiveDateTime": "2022-12-16T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -338,7 +338,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-4"
       },
-      "effectiveDateTime": "2022-11-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-16T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -408,7 +408,7 @@
       "subject": {
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
-      "effectiveDateTime": "2022-12-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -478,7 +478,7 @@
       "subject": {
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
-      "effectiveDateTime": "2022-07-19T15:16:21-05:00",
+      "effectiveDateTime": "2022-09-28T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -544,7 +544,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-RecommendAmbulatoryBPMonitoring-1"
       },
-      "effectiveDateTime": "2022-08-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-18T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -603,7 +603,7 @@
       "subject": {
         "reference": "Patient/M-RecommendAmbulatoryBPMonitoring"
       },
-      "startDate": "2023-01-22",
+      "startDate": "2023-04-03",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -635,7 +635,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-01-22"
+      "statusDate": "2023-04-03"
     },
     "request": {
       "method": "PUT",
