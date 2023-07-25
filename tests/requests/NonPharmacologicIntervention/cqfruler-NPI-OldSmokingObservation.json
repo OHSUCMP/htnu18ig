@@ -65,8 +65,8 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingObservation"
               },
-              "onsetDateTime": "2016-08-09T15:16:21-05:00",
-              "recordedDate": "2016-08-09T15:16:21-05:00"
+              "onsetDateTime": "2016-10-19T15:16:21-05:00",
+              "recordedDate": "2016-10-19T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -88,7 +88,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1960-08-10"
+              "birthDate": "1960-10-20"
             },
             "request": {
               "method": "PUT",
@@ -138,7 +138,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingObservation"
               },
-              "effectiveDateTime": "2022-10-06T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -217,7 +217,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingObservation"
               },
-              "effectiveDateTime": "2022-11-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -296,7 +296,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingObservation"
               },
-              "effectiveDateTime": "2022-08-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -375,7 +375,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingObservation"
               },
-              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -443,10 +443,10 @@
                 "reference": "Patient/NPI-OldSmokingObservation"
               },
               "effectivePeriod": {
-                "start": "1979-02-28",
-                "end": "2018-04-12"
+                "start": "1979-05-10",
+                "end": "2018-06-22"
               },
-              "issued": "2018-04-12T00:00:00-07:00",
+              "issued": "2018-06-22T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -522,7 +522,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingObservation"
               },
-              "effectiveDateTime": "2022-12-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-02-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -610,7 +610,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingObservation"
               },
-              "effectiveDateTime": "2023-01-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -670,8 +670,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-01-22",
-              "startDate": "2023-01-22",
+              "statusDate": "2023-04-03",
+              "startDate": "2023-04-03",
               "description": {
                 "text": "Goal of 135/85"
               },

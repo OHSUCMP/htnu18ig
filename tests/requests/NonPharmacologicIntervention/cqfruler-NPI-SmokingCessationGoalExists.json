@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "performedDateTime": "2022-12-10T11:00:00-06:00"
+              "performedDateTime": "2023-02-19T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -95,8 +95,8 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "onsetDateTime": "2016-08-09T15:16:21-05:00",
-              "recordedDate": "2016-08-09T15:16:21-05:00"
+              "onsetDateTime": "2016-10-19T15:16:21-05:00",
+              "recordedDate": "2016-10-19T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -118,7 +118,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1989-03-29"
+              "birthDate": "1989-06-08"
             },
             "request": {
               "method": "PUT",
@@ -168,7 +168,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "effectiveDateTime": "2022-11-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -256,7 +256,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "effectiveDateTime": "2022-10-06T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -344,7 +344,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -432,7 +432,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "effectiveDateTime": "2022-08-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -500,8 +500,8 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "effectiveDateTime": "2022-12-07T10:00:00-07:00",
-              "issued": "2022-12-07T00:00:00-07:00",
+              "effectiveDateTime": "2023-02-16T10:00:00-07:00",
+              "issued": "2023-02-16T00:00:00-07:00",
               "valueQuantity": {
                 "value": 5.1,
                 "unit": "Drinks/Day"
@@ -555,7 +555,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "effectiveDateTime": "2023-01-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -643,7 +643,7 @@
               "subject": {
                 "reference": "Patient/NPI-SmokingCessationGoalExists"
               },
-              "effectiveDateTime": "2022-12-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-02-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -715,8 +715,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-02-08",
-              "startDate": "2023-02-08",
+              "statusDate": "2023-04-20",
+              "startDate": "2023-04-20",
               "description": {
                 "text": "Reduce smoking by half"
               },
@@ -725,7 +725,7 @@
               },
               "target": [
                 {
-                  "dueDate": "2023-04-11"
+                  "dueDate": "2023-06-21"
                 }
               ]
             },

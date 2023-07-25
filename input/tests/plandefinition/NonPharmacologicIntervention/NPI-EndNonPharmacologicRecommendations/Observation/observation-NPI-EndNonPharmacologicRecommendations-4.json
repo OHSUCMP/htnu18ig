@@ -31,7 +31,7 @@
   "subject": {
     "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
   },
-  "effectiveDateTime": "2022-10-06T15:16:21-05:00",
+  "effectiveDateTime": "2022-12-16T15:16:21-05:00",
   "component": [
     {
       "code": {

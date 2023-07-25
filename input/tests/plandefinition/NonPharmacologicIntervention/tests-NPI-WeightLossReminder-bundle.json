@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "performedDateTime": "2022-08-29T11:00:00-06:00",
+      "performedDateTime": "2022-11-08T11:00:00-06:00",
       "reasonReference": [ {
         "reference": "Observation/observation-NPI-WeightLossReminder-1"
       } ],
@@ -65,8 +65,8 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "onsetDateTime": "2016-08-09T15:16:21-05:00",
-      "recordedDate": "2016-08-09T15:16:21-05:00",
+      "onsetDateTime": "2016-10-19T15:16:21-05:00",
+      "recordedDate": "2016-10-19T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -86,7 +86,7 @@
         "given": [ "WeightLoss" ]
       } ],
       "gender": "male",
-      "birthDate": "1973-08-10"
+      "birthDate": "1973-10-20"
     },
     "request": {
       "method": "PUT",
@@ -122,7 +122,7 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "effectiveDateTime": "2022-12-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -192,7 +192,7 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "effectiveDateTime": "2022-11-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-16T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -255,8 +255,8 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "effectiveDateTime": "2022-08-28T03:14:57-05:00",
-      "issued": "2022-08-28T03:14:57.429-05:00",
+      "effectiveDateTime": "2022-11-07T03:14:57-05:00",
+      "issued": "2022-11-07T03:14:57.429-05:00",
       "valueQuantity": {
         "value": 27.690689692990766,
         "unit": "kg/m2",
@@ -294,7 +294,7 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "effectiveDateTime": "2022-08-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-10-18T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -357,8 +357,8 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "effectiveDateTime": "2022-09-25T03:14:57-05:00",
-      "issued": "2022-09-25T03:14:57.429-05:00",
+      "effectiveDateTime": "2022-12-05T03:14:57-05:00",
+      "issued": "2022-12-05T03:14:57.429-05:00",
       "valueQuantity": {
         "value": 26.127659692990766,
         "unit": "kg/m2",
@@ -396,7 +396,7 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "effectiveDateTime": "2022-10-06T15:16:21-05:00",
+      "effectiveDateTime": "2022-12-16T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -466,7 +466,7 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "effectiveDateTime": "2023-01-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-18T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -529,7 +529,7 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-11-18T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -588,7 +588,7 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossReminder"
       },
-      "startDate": "2023-01-22",
+      "startDate": "2023-04-03",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -620,7 +620,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-01-22"
+      "statusDate": "2023-04-03"
     },
     "request": {
       "method": "PUT",

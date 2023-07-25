@@ -65,8 +65,8 @@
               "subject": {
                 "reference": "Patient/NPI-ExcludedEndStageRenalDisease"
               },
-              "onsetDateTime": "2016-08-09T15:16:21-05:00",
-              "recordedDate": "2016-08-09T15:16:21-05:00"
+              "onsetDateTime": "2016-10-19T15:16:21-05:00",
+              "recordedDate": "2016-10-19T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -124,8 +124,8 @@
               "subject": {
                 "reference": "Patient/NPI-ExcludedEndStageRenalDisease"
               },
-              "onsetDateTime": "1988-11-27T10:16:50-04:00",
-              "recordedDate": "1988-11-27T10:16:50-04:00"
+              "onsetDateTime": "1989-02-06T10:16:50-04:00",
+              "recordedDate": "1989-02-06T10:16:50-04:00"
             },
             "request": {
               "method": "PUT",
@@ -147,7 +147,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1968-05-24"
+              "birthDate": "1968-08-03"
             },
             "request": {
               "method": "PUT",

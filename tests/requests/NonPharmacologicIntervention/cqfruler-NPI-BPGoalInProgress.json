@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "performedDateTime": "2022-12-10T11:00:00-06:00"
+              "performedDateTime": "2023-02-19T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -95,8 +95,8 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "onsetDateTime": "2016-08-09T15:16:21-05:00",
-              "recordedDate": "2016-08-09T15:16:21-05:00"
+              "onsetDateTime": "2016-10-19T15:16:21-05:00",
+              "recordedDate": "2016-10-19T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -118,7 +118,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1981-03-07"
+              "birthDate": "1981-05-17"
             },
             "request": {
               "method": "PUT",
@@ -168,7 +168,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "effectiveDateTime": "2023-01-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -256,7 +256,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "effectiveDateTime": "2022-12-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-02-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -324,8 +324,8 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "effectiveDateTime": "2022-12-07T10:00:00-07:00",
-              "issued": "2022-12-07T00:00:00-07:00",
+              "effectiveDateTime": "2023-02-16T10:00:00-07:00",
+              "issued": "2023-02-16T00:00:00-07:00",
               "valueQuantity": {
                 "value": 4.1,
                 "unit": "Drinks/Day"
@@ -379,7 +379,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2023-05-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-07-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -467,7 +467,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2023-05-01T15:16:21-05:00",
+              "effectiveDateTime": "2023-07-11T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -555,7 +555,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "effectiveDateTime": "2022-09-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -643,7 +643,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2023-04-23T15:16:21-05:00",
+              "effectiveDateTime": "2023-07-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -731,7 +731,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2023-04-14T15:16:21-05:00",
+              "effectiveDateTime": "2023-06-24T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -819,7 +819,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "effectiveDateTime": "2022-08-08T15:16:21-05:00",
+              "effectiveDateTime": "2022-10-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -907,7 +907,7 @@
               "subject": {
                 "reference": "Patient/NPI-AlcoholModerationReminder"
               },
-              "effectiveDateTime": "2023-04-01T15:16:21-05:00",
+              "effectiveDateTime": "2023-06-11T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -995,7 +995,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "effectiveDateTime": "2022-11-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1083,7 +1083,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "effectiveDateTime": "2022-10-06T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1171,7 +1171,7 @@
               "subject": {
                 "reference": "Patient/NPI-BPGoalInProgress"
               },
-              "effectiveDateTime": "2023-03-24T15:16:21-05:00",
+              "effectiveDateTime": "2023-06-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1231,8 +1231,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-01-22",
-              "startDate": "2023-01-22",
+              "statusDate": "2023-04-03",
+              "startDate": "2023-04-03",
               "description": {
                 "text": "Goal of 135/85"
               },
