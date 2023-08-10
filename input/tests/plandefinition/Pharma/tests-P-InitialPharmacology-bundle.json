@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "performedDateTime": "2022-12-01T11:00:00-06:00",
+      "performedDateTime": "2022-11-10T11:00:00-06:00",
       "note": [ {
         "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
       } ]
@@ -713,9 +713,9 @@
       },
       "effectivePeriod": {
         "start": "2003-07-18",
-        "end": "2022-12-01"
+        "end": "2022-11-10"
       },
-      "issued": "2022-12-01T00:00:00-07:00",
+      "issued": "2022-11-10T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
