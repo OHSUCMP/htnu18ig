@@ -38,8 +38,8 @@
       "subject": {
         "reference": "Patient/H-IncludedPreviousPregnancyOnset"
       },
-      "onsetDateTime": "2022-09-06T19:02:10-04:00",
-      "recordedDate": "2022-09-06T19:02:10-04:00",
+      "onsetDateTime": "2022-09-27T19:02:10-04:00",
+      "recordedDate": "2022-09-27T19:02:10-04:00",
       "note": [ {
         "text": "Indicates patient was pregnant with onset > 42 weeks ago"
       } ]
@@ -59,7 +59,7 @@
         "given": [ "Included" ]
       } ],
       "gender": "male",
-      "birthDate": "1999-02-23"
+      "birthDate": "1999-03-16"
     },
     "request": {
       "method": "PUT",
@@ -95,7 +95,7 @@
       "subject": {
         "reference": "Patient/H-IncludedPreviousPregnancyOnset"
       },
-      "effectiveDateTime": "2017-08-29T15:16:21-05:00",
+      "effectiveDateTime": "2017-09-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -165,7 +165,7 @@
       "subject": {
         "reference": "Patient/H-IncludedPreviousPregnancyOnset"
       },
-      "effectiveDateTime": "2020-09-01T15:16:21-05:00",
+      "effectiveDateTime": "2020-09-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],

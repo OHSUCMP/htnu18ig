@@ -48,6 +48,6 @@
   "subject": {
     "reference": "Patient/H-ExcludedPregnantEncounterDiagnosis"
   },
-  "onsetDateTime": "2022-11-24T19:02:10-04:00",
-  "recordedDate": "2022-11-24T19:02:10-04:00"
+  "onsetDateTime": "2022-12-15T19:02:10-04:00",
+  "recordedDate": "2022-12-15T19:02:10-04:00"
 }

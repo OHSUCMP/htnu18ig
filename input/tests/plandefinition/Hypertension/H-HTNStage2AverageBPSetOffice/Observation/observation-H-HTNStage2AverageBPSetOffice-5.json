@@ -40,7 +40,7 @@
   "subject": {
     "reference": "Patient/H-HTNStage2AverageBPSetOffice"
   },
-  "effectiveDateTime": "2023-02-15T15:16:21-05:00",
+  "effectiveDateTime": "2023-03-08T15:16:21-05:00",
   "component": [
     {
       "code": {
