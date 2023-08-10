@@ -48,7 +48,7 @@
   "subject": {
     "reference": "Patient/H-IncludedPreviousPregnancyAbated"
   },
-  "onsetDateTime": "2022-11-23T19:02:10-04:00",
-  "abatementDateTime": "2023-06-28T19:02:10-04:00",
-  "recordedDate": "2023-07-02T19:02:10-04:00"
+  "onsetDateTime": "2022-12-14T19:02:10-04:00",
+  "abatementDateTime": "2023-07-19T19:02:10-04:00",
+  "recordedDate": "2023-07-23T19:02:10-04:00"
 }

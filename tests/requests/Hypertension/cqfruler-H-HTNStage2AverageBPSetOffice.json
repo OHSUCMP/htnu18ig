@@ -40,8 +40,8 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
               "period": {
-                "start": "2022-10-18T00:00:00-04:00",
-                "end": "2022-10-18T23:59:59-04:00"
+                "start": "2022-11-08T00:00:00-04:00",
+                "end": "2022-11-08T23:59:59-04:00"
               }
             },
             "request": {
@@ -74,8 +74,8 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
               "period": {
-                "start": "2023-01-16T00:00:00-04:00",
-                "end": "2023-01-16T23:59:59-04:00"
+                "start": "2023-02-06T00:00:00-04:00",
+                "end": "2023-02-06T23:59:59-04:00"
               }
             },
             "request": {
@@ -108,8 +108,8 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
               "period": {
-                "start": "2022-11-18T00:00:00-04:00",
-                "end": "2022-11-18T23:59:59-04:00"
+                "start": "2022-12-09T00:00:00-04:00",
+                "end": "2022-12-09T23:59:59-04:00"
               }
             },
             "request": {
@@ -142,8 +142,8 @@
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
               "period": {
-                "start": "2022-12-16T00:00:00-04:00",
-                "end": "2022-12-16T23:59:59-04:00"
+                "start": "2023-01-06T00:00:00-04:00",
+                "end": "2023-01-06T23:59:59-04:00"
               }
             },
             "request": {
@@ -166,7 +166,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1958-10-12"
+              "birthDate": "1958-11-02"
             },
             "request": {
               "method": "PUT",
@@ -216,7 +216,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
-              "effectiveDateTime": "2023-03-18T15:16:21-05:00",
+              "effectiveDateTime": "2023-04-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -298,7 +298,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-1"
               },
-              "effectiveDateTime": "2022-10-18T15:16:21-05:00",
+              "effectiveDateTime": "2022-11-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -380,7 +380,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-3"
               },
-              "effectiveDateTime": "2022-12-16T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -462,7 +462,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-2"
               },
-              "effectiveDateTime": "2022-11-18T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-09T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -550,7 +550,7 @@
               "subject": {
                 "reference": "Patient/H-HTNStage2AverageBPSetOffice"
               },
-              "effectiveDateTime": "2023-02-15T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -632,7 +632,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-H-HTNStage2AverageBPSetOffice-4"
               },
-              "effectiveDateTime": "2023-01-16T15:16:21-05:00",
+              "effectiveDateTime": "2023-02-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
