@@ -142,49 +142,6 @@
           }
         }
       ]
-    },
-    {
-      "title": "No Entry into Hypertension Monitoring Process",
-      "description": "Recommendation for a patient without hypertension.",
-      "trigger": [{
-        "type": "named-event",
-        "name":"patient-view"
-      }],
-      "condition": [
-        {
-          "kind": "applicability",
-          "expression": {
-            "description": "If the patient does not have hypertension",
-            "language": "text/cql.identifier",
-            "expression": "No Entry into Population"
-          }
-        }
-      ],
-      "dynamicValue": [
-        {
-          "path": "action.title",
-          "expression": {
-            "description": "Recommendation for patient without hypertension",
-            "language": "text/cql.identifier",
-            "expression": "No Entry Title"
-          }
-        },
-        {
-          "path": "action.description",
-          "expression": {
-            "description": "Rationale",
-            "language": "text/cql.identifier",
-            "expression": "No Entry Description"
-          }
-        },
-        {
-          "path": "action.extension",
-          "expression": {
-            "language": "text/cql.identifier",
-            "expression": "Info"
-          }
-        }
-      ]
     }
   ]
 }
