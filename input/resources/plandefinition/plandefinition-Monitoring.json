@@ -78,7 +78,7 @@
           "expression": {
             "description": "If the patient is in the population",
             "language": "text/cql.identifier",
-            "expression": "In Population"
+            "expression": "Provide Recommendation"
           }
         }
       ],
