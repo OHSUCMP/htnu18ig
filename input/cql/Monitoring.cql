@@ -49,7 +49,7 @@ define "Recommendation":
   // 13
   else if not Common."Has BP Set" then 'Consider obtaining additional blood pressure measurements.'
   // Patient at Goal
-  else 'SUCCESS' // COACH must look for this hack to display the green checkmark
+  else 'Monitoring.Success.Summary' // COACH must look for this hack to display the green checkmark
 
 define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
@@ -68,7 +68,7 @@ define "Suggestions":
   if not "Provide Recommendation" then ''
   else if not Common."Patient has a BP Goal" then '[ { "id": "bp-radio-goal", "label": "BP Goal", "type": "bp-goal", "references":{"system":"https://coach.ohsu.edu", "code":"blood-pressure"}, "actions": [{"label":"140/90"}, {"label":"130/80"}, {"label":"120/80"}]}]'
   else if not Common."Has BP Set" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page.", "url":"/vitals"}] } ]'
-  else '[ { "id": "link-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"My blood pressure is controlled: What to do next?", "url":"/nextSteps"}] } ]'
+  else '[ { "id": "link-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"My blood pressure is controlled: What to do next?", "url":"/infographic-controlled-bp.pdf"}] } ]'
 
 define "Selection Behavior":
   'at-most-one'
