@@ -10,23 +10,37 @@ context Patient
 define "In Population":
   Common."HTN Crisis"
 
+define "BP Observation Count":
+  Count(Common."All BP Observations" O)
+
+define "Next Most Recent BP Reading":
+  if "BP Observation Count" > 1 then (Common."All BP Observations" O sort by effective)["BP Observation Count"-2]
+  else null
+
+define "Two High BPs":
+  "In Population" and Common."HTN Crisis BP"("Next Most Recent BP Reading")
+
 define "Recommendation":
-  if "In Population" then 'Warning: Very high blood pressure. Please recheck the pressure in 5 minutes; if it is still >180/120, consult your care team immediately.'
+  if "Two High BPs" then 'Blank.Summary'
+  else if "In Population" then 'Blank.Summary'
   else null
 
 define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
-  if "In Population" then '{{#patient}}Your blood pressure is high (> 180 mmHg systolic and/or > 120 mmHg diastolic). Contact your care team immediately, or <strong>seek immediate care</strong> if you do not feel well.{{/patient}}{{#careTeam}}Patient\'s blood pressure is > 180 systolic or > 120 diastolic. Consider immediate evaluation for treatment or escalation of care.{{/careTeam}}'
+  if "Two High BPs" then 'Your last two BP readings >180 mmHg systolic and/or >120 mmHg diastolic) are very high. <strong>If you <a href="/symptoms-911">do not feel well</a>, call 911; otherwise, it is strongly recommended that you now contact your clinic.</strong>'
+  else if "In Population" then 'Remain calm and check your BP again following these <a href="/vitals#instructions">instructions</a> in 5 to 30 minutes. Read more about managing very high blood pressure in the link below.'
   else null
 
 define "Indicator Status":
-  if "In Population" then 'critical'
+  if "Two High BPs" then 'critical'
+  else if "In Population" then 'critical'
   else null
 
 define "Suggestions":
-  if "In Population" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your high blood pressure", "url":"/contact?token=urgent-bp"}] } ]'
+  if "Two High BPs" then '[{"id": "display-clinic-contact", "label": "", "type": "clinic-contact"}]'
+  else if "In Population" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Check your BP again (strongly recommended)", "url":"/vitals"}] } ]'
   else null
 
 define "Selection Behavior":
@@ -40,3 +54,6 @@ define "TEST Most Recent BP Reading":
 
 define "TEST BP Within 14 days":
   Common."BP Within 14 days"
+
+define "TEST Next Most Recent BP Reading":
+  "Next Most Recent BP Reading"

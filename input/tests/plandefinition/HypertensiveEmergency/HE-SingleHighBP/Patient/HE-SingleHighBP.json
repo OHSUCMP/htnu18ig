@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "HE-SingleHighBP",
+  "active": true,
+  "name": [
+    {
+      "text": "Hypertensive Emergency Effective",
+      "family": "Effective",
+      "given": [
+        "Hypertensive Emergency"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1965-04-12"
+}
