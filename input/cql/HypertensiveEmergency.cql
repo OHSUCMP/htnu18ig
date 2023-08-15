@@ -47,7 +47,7 @@ define "Selection Behavior":
   'at-most-one'
 
 define "Links":
-  '[{"label":"AHA: When to call 911 for high blood pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/hypertensive-crisis-when-you-should-call-911-for-high-blood-pressure"}]'
+  '[{"label":"American Heart Association: When to call 911 for high blood pressure", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/hypertensive-crisis-when-you-should-call-911-for-high-blood-pressure"}]'
 
 define "TEST Most Recent BP Reading":
   Common."Most Recent BP Reading"
