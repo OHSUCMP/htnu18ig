@@ -8,12 +8,12 @@
       "id": "HE-SingleHighBP",
       "active": true,
       "name": [ {
-        "text": "Hypertensive Emergency Effective",
-        "family": "Effective",
-        "given": [ "Hypertensive Emergency" ]
+        "text": "Single High BP",
+        "family": "High BP",
+        "given": [ "Single" ]
       } ],
-      "gender": "male",
-      "birthDate": "1965-04-12"
+      "gender": "female",
+      "birthDate": "1952-02-18"
     },
     "request": {
       "method": "PUT",

@@ -8,12 +8,12 @@
       "id": "HE-TwoHighBPs",
       "active": true,
       "name": [ {
-        "text": "Hypertensive Emergency Effective",
-        "family": "Effective",
-        "given": [ "Hypertensive Emergency" ]
+        "text": "Two High BPs",
+        "family": "High BPs",
+        "given": [ "Two" ]
       } ],
       "gender": "male",
-      "birthDate": "1965-04-12"
+      "birthDate": "1955-08-16"
     },
     "request": {
       "method": "PUT",
