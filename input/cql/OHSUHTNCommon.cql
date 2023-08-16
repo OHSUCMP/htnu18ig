@@ -88,7 +88,7 @@ define function "HTN Stage 2 BP Systolic Second Test"(list List<Tuple { id Strin
     where O.systolic > 160
 
 define function "HTN Crisis BP"(O Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
-  O.systolic > 180 or O.diastolic > 120
+  O.systolic >= 180 or O.diastolic >= 120
 
 /* Helpers */
 define function WithUnit(list List<Observation>, Unit String):
@@ -564,7 +564,7 @@ define "Above Goal Average Most Recent":
   "Average Most Recent BP Set".systolic > "BP from Most Recent Goal".systolic or
   "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
 
-// Therapy should be received if there's a BP set and a goal and the patient hasn't achived their goal
+// Therapy should be received if there's a BP set and a goal and the patient hasn't achieved their goal
 define "Receive Therapy":
   "Has BP Set" and "Patient has a BP Goal" and "Above Goal Average Most Recent"
 
