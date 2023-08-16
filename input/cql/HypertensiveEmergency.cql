@@ -29,7 +29,7 @@ define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
-  if "Two High BPs" then 'Your last two BP readings >180 mmHg systolic and/or >120 mmHg diastolic) are very high. <strong>If you <a href="/symptoms-911">do not feel well</a>, call 911; otherwise, it is strongly recommended that you now contact your clinic.</strong>'
+  if "Two High BPs" then 'Your last two BP readings >=180 mmHg systolic and/or >=120 mmHg diastolic) are very high. <strong>If you <a href="/symptoms-911">do not feel well</a>, call 911; otherwise, it is strongly recommended that you now contact your clinic.</strong>'
   else if "In Population" then 'Remain calm and check your BP again following these <a href="/vitals#instructions">instructions</a> in 5 to 30 minutes. Read more about managing very high blood pressure in the link below.'
   else null
 

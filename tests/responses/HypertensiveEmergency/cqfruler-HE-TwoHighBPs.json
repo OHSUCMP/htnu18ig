@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Blank.Summary",
+      "indicator": "critical",
+      "detail": "Your last two BP readings \u003e\u003d180 mmHg systolic and/or \u003e\u003d120 mmHg diastolic) are very high. \u003cstrong\u003eIf you \u003ca href\u003d\"/symptoms-911\"\u003edo not feel well\u003c/a\u003e, call 911; otherwise, it is strongly recommended that you now contact your clinic.\u003c/strong\u003e|[{\"id\": \"display-clinic-contact\", \"label\": \"\", \"type\": \"clinic-contact\"}]|at-most-one|[{\"label\":\"American Heart Association: When to call 911 for high blood pressure\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings/hypertensive-crisis-when-you-should-call-911-for-high-blood-pressure\"}]",
+      "source": {}
+    }
+  ]
+}

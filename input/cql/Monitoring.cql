@@ -97,12 +97,6 @@ define "No Entry into Population":
   not "Meets Inclusion Criteria"
     and not "Meets Exclusion Criteria"
 
-define "No Entry Title":
-  'Patient did not have a preexisting hypertensive condition.'
-
-define "No Entry Description":
-  'No Further Action Required.'
-
 /* TESTS */
 define "Test Count All BP":
   Count(Common."Blood Pressure Observations for Last 2 Years")
