@@ -6,17 +6,33 @@ import os
 import re
 import requests
 
-directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition/Hypertension"
-print("Loading resources into FHIR server from " + directory)
-override = input("Override? y/n\n")
-if override.lower() == "y":
- 	directory = input("The path to the resources\n")
+directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition"
+print("Choose resources to load or hit enter to load all:")
+resources = input("hypertension, ae, monitoring, pharma, nonpharm, emergency\n").lower()
+if resources == "hypertension":
+ 	directory = directory + "/Hypertension"
+elif resources == "ae":
+    directory = directory + "/AdverseEvents"
+elif resources == "monitoring":
+ 	directory = directory + "/Monitoring"
+elif resources == "pharma":
+    directory = directory + "/Pharma"
+elif resources == "nonpharm":
+    directory = directory + "/NonPharmacologicIntervention"
+elif resources == "emergency":
+    directory = directory + "/HypertensiveEmergency"  
 
-fhir_url = "https://api.logicahealth.org/coachdev/open/"
-print("FHIR Server URL: " + fhir_url)
-override = input("Override? y/n\n")
-if override.lower() == "y":
-    fhir_url = input("The path to the FHIR server\n")
+logica_url = "https://api.logicahealth.org/coachdev/open/"
+smart_url = "https://r4.smarthealthit.org/"
+print("Choose FHIR Server:")
+server = input("logica, smart\n").lower()
+if server == "logica":
+    fhir_url = logica_url
+elif server == "smart":
+    fhir_url = smart_url
+else:
+    print("Server not understood. Enter the url:")
+    fhir_url = input("Ex: https://api.logicahealth.org/coachdev/open/\n")
 
 load_resource_type = "all"
 print("Not limiting by Resource Type")
