@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Patient at goal",
+      "summary": "Monitoring.Success.Summary",
       "indicator": "info",
-      "detail": "No Further Action Required||at-most-one|[]",
+      "detail": "At or below your goal BP: Keep up the good work! Click the link for what to do next.|[ { \"id\": \"link-suggestion\", \"label\": \"\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"My blood pressure is controlled: What to do next?\", \"url\":\"/infographic-controlled-bp.pdf\"}] } ]|at-most-one|[]",
       "source": {}
     }
   ]

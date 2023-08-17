@@ -78,7 +78,7 @@
           "expression": {
             "description": "If the patient is in the population",
             "language": "text/cql.identifier",
-            "expression": "In Population"
+            "expression": "Provide Recommendation"
           }
         }
       ],
@@ -132,49 +132,6 @@
             "description": "Rationale for why patient is excluded from the hypertension mmonitoring process.",
             "language": "text/cql.identifier",
             "expression": "Exclusion Reason"
-          }
-        },
-        {
-          "path": "action.extension",
-          "expression": {
-            "language": "text/cql.identifier",
-            "expression": "Info"
-          }
-        }
-      ]
-    },
-    {
-      "title": "No Entry into Hypertension Monitoring Process",
-      "description": "Recommendation for a patient without hypertension.",
-      "trigger": [{
-        "type": "named-event",
-        "name":"patient-view"
-      }],
-      "condition": [
-        {
-          "kind": "applicability",
-          "expression": {
-            "description": "If the patient does not have hypertension",
-            "language": "text/cql.identifier",
-            "expression": "No Entry into Population"
-          }
-        }
-      ],
-      "dynamicValue": [
-        {
-          "path": "action.title",
-          "expression": {
-            "description": "Recommendation for patient without hypertension",
-            "language": "text/cql.identifier",
-            "expression": "No Entry Title"
-          }
-        },
-        {
-          "path": "action.description",
-          "expression": {
-            "description": "Rationale",
-            "language": "text/cql.identifier",
-            "expression": "No Entry Description"
           }
         },
         {
