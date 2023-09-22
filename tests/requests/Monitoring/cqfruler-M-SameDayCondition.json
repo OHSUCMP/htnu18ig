@@ -91,10 +91,10 @@
                 "display": "FHIR One, Hazel"
               },
               "onsetPeriod": {
-                "start": "2023-08-09",
-                "end": "2023-08-09"
+                "start": "2023-09-21",
+                "end": "2023-09-21"
               },
-              "recordedDate": "2023-08-09"
+              "recordedDate": "2023-09-21"
             },
             "request": {
               "method": "PUT",
@@ -116,7 +116,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1978-01-01"
+              "birthDate": "1978-02-13"
             },
             "request": {
               "method": "PUT",
@@ -166,7 +166,7 @@
               "subject": {
                 "reference": "Patient/M-SameDayCondition"
               },
-              "effectiveDateTime": "2022-11-19T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -254,7 +254,7 @@
               "subject": {
                 "reference": "Patient/M-SameDayCondition"
               },
-              "effectiveDateTime": "2022-11-16T15:16:21-05:00",
+              "effectiveDateTime": "2022-12-29T15:16:21-05:00",
               "component": [
                 {
                   "code": {

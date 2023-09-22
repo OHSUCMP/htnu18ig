@@ -31,8 +31,8 @@
   "subject": {
     "reference": "Patient/NPI-SmokingCessationQuit"
   },
-  "effectiveDateTime": "2021-12-13T00:17:51-04:00",
-  "issued": "2021-12-13T00:17:51.943-04:00",
+  "effectiveDateTime": "2022-01-25T00:17:51-04:00",
+  "issued": "2022-01-25T00:17:51.943-04:00",
   "valueCodeableConcept": {
     "coding": [
       {

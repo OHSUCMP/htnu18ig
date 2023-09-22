@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "observation-HE-ExcludedBPNotRecent-1",
+  "id": "observation-HE-TwoHighBPsOneEarly-1",
   "status": "final",
   "note": [
     {
@@ -38,9 +38,9 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/HE-ExcludedBPNotRecent"
+    "reference": "Patient/HE-TwoHighBPsOneEarly"
   },
-  "effectiveDateTime": "2022-11-16T15:16:21-05:00",
+  "effectiveDateTime": "2023-08-21T15:15:21-05:00",
   "component": [
     {
       "code": {
@@ -54,7 +54,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 82.52660352979804,
+        "value": 121.52660352979804,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -72,7 +72,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 128.65064054117963,
+        "value": 155.65064054117963,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"

@@ -4,7 +4,7 @@
   "hook": "patient-view",
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "HE-HypertensiveEmergencyIssued"
+    "patientId": "HE-TwoHighBPsOneEarly"
   },
   "prefetch": {
     "item1": {
@@ -18,19 +18,19 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "HE-HypertensiveEmergencyIssued",
+              "id": "HE-TwoHighBPsOneEarly",
               "active": true,
               "name": [
                 {
-                  "text": "Hypertensive Emergency Issued",
-                  "family": "Issued",
+                  "text": "Two High BPs One Early",
+                  "family": "High BPs One Early",
                   "given": [
-                    "Hypertensive Emergency"
+                    "Two"
                   ]
                 }
               ],
               "gender": "female",
-              "birthDate": "1974-11-25"
+              "birthDate": "1972-11-14"
             },
             "request": {
               "method": "PUT",
@@ -40,7 +40,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-HE-HypertensiveEmergencyIssued-2",
+              "id": "observation-HE-TwoHighBPsOneEarly-2",
               "status": "final",
               "note": [
                 {
@@ -78,9 +78,9 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/HE-HypertensiveEmergencyIssued"
+                "reference": "Patient/HE-TwoHighBPsOneEarly"
               },
-              "issued": "2023-08-08T15:16:21.123-05:00",
+              "effectiveDateTime": "2023-09-21T15:23:21-05:00",
               "component": [
                 {
                   "code": {
@@ -128,7 +128,7 @@
           {
             "resource": {
               "resourceType": "Observation",
-              "id": "observation-HE-HypertensiveEmergencyIssued-1",
+              "id": "observation-HE-TwoHighBPsOneEarly-1",
               "status": "final",
               "note": [
                 {
@@ -166,9 +166,9 @@
                 "text": "Blood Pressure"
               },
               "subject": {
-                "reference": "Patient/HE-HypertensiveEmergencyIssued"
+                "reference": "Patient/HE-TwoHighBPsOneEarly"
               },
-              "effectiveDateTime": "2022-11-16T15:16:21-05:00",
+              "effectiveDateTime": "2023-08-21T15:15:21-05:00",
               "component": [
                 {
                   "code": {
@@ -182,7 +182,7 @@
                     "text": "Diastolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 82.52660352979804,
+                    "value": 121.52660352979804,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"
@@ -200,7 +200,7 @@
                     "text": "Systolic Blood Pressure"
                   },
                   "valueQuantity": {
-                    "value": 128.65064054117963,
+                    "value": 155.65064054117963,
                     "unit": "mm[Hg]",
                     "system": "http://unitsofmeasure.org",
                     "code": "mm[Hg]"

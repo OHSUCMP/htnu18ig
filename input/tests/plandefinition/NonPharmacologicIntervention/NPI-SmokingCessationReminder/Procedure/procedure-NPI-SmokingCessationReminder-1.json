@@ -20,7 +20,7 @@
   "subject": {
     "reference": "Patient/NPI-SmokingCessationReminder"
   },
-  "performedDateTime": "2023-07-05T11:00:00-06:00",
+  "performedDateTime": "2023-08-17T11:00:00-06:00",
   "reasonReference": [
     {
       "reference": "Observation/observation-NPI-SmokingCessationReminder-1"

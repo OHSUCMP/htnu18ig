@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "onsetDateTime": "2023-08-04",
-      "recordedDate": "2023-01-28T15:16:21-05:00",
+      "onsetDateTime": "2023-09-16",
+      "recordedDate": "2023-03-12T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -58,7 +58,7 @@
         "given": [ "Jack" ]
       } ],
       "gender": "male",
-      "birthDate": "1945-11-03"
+      "birthDate": "1945-12-16"
     },
     "request": {
       "method": "PUT",
@@ -94,7 +94,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-07-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-03T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -164,7 +164,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-09-09T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -234,7 +234,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-08-31T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-13T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -304,7 +304,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-07-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-08-31T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -374,7 +374,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-08-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -430,10 +430,10 @@
         "reference": "Patient/MU-TestCase2"
       },
       "effectivePeriod": {
-        "start": "1989-05-31",
-        "end": "2023-06-19"
+        "start": "1989-07-13",
+        "end": "2023-08-01"
       },
-      "issued": "2019-12-13T00:00:00-07:00",
+      "issued": "2020-01-25T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -492,7 +492,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-08-05T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-17T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -562,7 +562,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-08-20T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-02T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -632,7 +632,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-06-30T15:16:21-05:00",
+      "effectiveDateTime": "2023-08-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -695,8 +695,8 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2022-11-28T03:14:57-05:00",
-      "issued": "2022-11-28T03:14:57.429-05:00",
+      "effectiveDateTime": "2023-01-10T03:14:57-05:00",
+      "issued": "2023-01-10T03:14:57.429-05:00",
       "valueQuantity": {
         "value": 27.690689692990766,
         "unit": "kg/m2",
@@ -741,7 +741,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-08-14T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-26T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -811,7 +811,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-07-15T15:16:21-05:00",
+      "effectiveDateTime": "2023-08-27T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -881,7 +881,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-08-28T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-10T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -951,7 +951,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-07-30T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-11T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1021,7 +1021,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-07-26T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-07T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1091,7 +1091,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-08-23T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-05T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1161,7 +1161,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "effectiveDateTime": "2023-07-05T15:16:21-05:00",
+      "effectiveDateTime": "2023-08-17T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1220,7 +1220,7 @@
       "subject": {
         "reference": "Patient/MU-TestCase2"
       },
-      "startDate": "2023-07-12",
+      "startDate": "2023-08-24",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -1252,7 +1252,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-07-12"
+      "statusDate": "2023-08-24"
     },
     "request": {
       "method": "PUT",
