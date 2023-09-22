@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
         },
-        "effectiveDateTime": "2020-11-18T15:16:21-05:00",
+        "effectiveDateTime": "2020-12-31T15:16:21-05:00",
         "valueQuantity": {
           "value": 91.99964709308557,
           "unit": "fL",

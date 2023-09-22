@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "performedDateTime": "2023-03-12T11:00:00-06:00",
+      "performedDateTime": "2023-04-24T11:00:00-06:00",
       "note": [ {
         "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "onsetDateTime": "2016-11-09T15:16:21-05:00",
-      "recordedDate": "2016-11-09T15:16:21-05:00",
+      "onsetDateTime": "2016-12-22T15:16:21-05:00",
+      "recordedDate": "2016-12-22T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "BehaviorGoal" ]
       } ],
       "gender": "male",
-      "birthDate": "1989-06-29"
+      "birthDate": "1989-08-11"
     },
     "request": {
       "method": "PUT",
@@ -119,7 +119,7 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "effectiveDateTime": "2023-01-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-18T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -189,7 +189,7 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "effectiveDateTime": "2023-02-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-21T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -259,7 +259,7 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "effectiveDateTime": "2022-11-08T15:16:21-05:00",
+      "effectiveDateTime": "2022-12-21T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -329,7 +329,7 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "effectiveDateTime": "2022-12-09T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-21T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -385,10 +385,10 @@
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
       "effectivePeriod": {
-        "start": "2001-06-29",
-        "end": "2021-12-13"
+        "start": "2001-08-11",
+        "end": "2022-01-25"
       },
-      "issued": "2021-12-13T00:00:00-07:00",
+      "issued": "2022-01-25T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -447,7 +447,7 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "effectiveDateTime": "2023-03-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -517,7 +517,7 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "effectiveDateTime": "2023-04-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-21T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -584,11 +584,11 @@
       "subject": {
         "reference": "Patient/NPI-BehaviorGoalExists"
       },
-      "startDate": "2023-05-11",
+      "startDate": "2023-06-23",
       "target": [ {
-        "dueDate": "2023-07-12"
+        "dueDate": "2023-08-24"
       } ],
-      "statusDate": "2023-05-11"
+      "statusDate": "2023-06-23"
     },
     "request": {
       "method": "PUT",

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "observation-HE-HypertensiveEmergencyIssued-2",
+  "id": "observation-HE-TwoHighBPsOneEarly-2",
   "status": "final",
   "note": [
     {
@@ -38,9 +38,9 @@
     "text": "Blood Pressure"
   },
   "subject": {
-    "reference": "Patient/HE-HypertensiveEmergencyIssued"
+    "reference": "Patient/HE-TwoHighBPsOneEarly"
   },
-  "issued": "2023-08-08T15:16:21.123-05:00",
+  "effectiveDateTime": "2023-09-21T15:23:21-05:00",
   "component": [
     {
       "code": {

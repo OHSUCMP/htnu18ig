@@ -7,6 +7,9 @@ include OHSUHTNCommon version '0.1' called Common
 
 context Patient
 
+define function "BP Within 14 Days"(O Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
+  O.effective + 14 days >= Today()
+
 define "In Population":
   Common."HTN Crisis"
 
@@ -18,7 +21,8 @@ define "Next Most Recent BP Reading":
   else null
 
 define "Two High BPs":
-  "In Population" and Common."HTN Crisis BP"("Next Most Recent BP Reading")
+  "In Population" and "BP Within 14 Days"(Common."Most Recent BP Reading") and 
+  "BP Within 14 Days"("Next Most Recent BP Reading") and Common."HTN Crisis BP"("Next Most Recent BP Reading")
 
 define "Recommendation":
   if "Two High BPs" then 'Blank.Summary'
@@ -52,8 +56,9 @@ define "Links":
 define "TEST Most Recent BP Reading":
   Common."Most Recent BP Reading"
 
-define "TEST BP Within 14 days":
-  Common."BP Within 14 days"
-
 define "TEST Next Most Recent BP Reading":
   "Next Most Recent BP Reading"
+
+define "TEST Two High BPs":
+  "Two High BPs"
+
