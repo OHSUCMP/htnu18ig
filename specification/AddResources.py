@@ -24,12 +24,18 @@ elif resources == "emergency":
 
 logica_url = "https://api.logicahealth.org/coachdev/open/"
 smart_url = "https://r4.smarthealthit.org/"
+meld_url = "https://gw.interop.community/COACHsandbox/data/"
+bearer = ""
 print("Choose FHIR Server:")
-server = input("logica, smart\n").lower()
+server = input("logica, smart, meld\n").lower()
 if server == "logica":
     fhir_url = logica_url
 elif server == "smart":
     fhir_url = smart_url
+elif server == "meld":
+    fhir_url = meld_url
+    print("For meld, extract the bearer token from developer tools application storage in the browser")
+    bearer = input("Enter Token\n")
 else:
     print("Server not understood. Enter the url:")
     fhir_url = input("Ex: https://api.logicahealth.org/coachdev/open/\n")
@@ -49,6 +55,6 @@ for root, dirs, files in os.walk(directory, topdown=False):
                if (load_resource_type == "all" or load_resource_type.lower() == resourceType.lower()):
                    resourceId = re.search('.*"id": "(.*?)",.*', whole).group(1)
                    url = fhir_url + resourceType + "/" + resourceId
-                   headers = {'Accept' : 'application/json', 'Content-Type' : 'application/json'}
+                   headers = {'Accept' : 'application/json', 'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + bearer}
                    r = requests.put(url, data=whole, headers=headers)
                    print(r.text)
