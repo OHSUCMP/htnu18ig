@@ -450,12 +450,8 @@ define "All BP Observations":
 define "Most Recent BP Reading":
   Last("All BP Observations" O sort by effective)
 
-define "BP Within 14 days":
-  "Most Recent BP Reading" BP
-  return BP.effective + 14 days >= Today()
-
 define "HTN Crisis":
-  "BP Within 14 days" and "HTN Crisis BP"("Most Recent BP Reading")
+  "HTN Crisis BP"("Most Recent BP Reading")
 
 define "Blood Pressure Observations for Last 2 Years":
   "All BP Observations" BP where BP.effective + 24 months >= Today()
