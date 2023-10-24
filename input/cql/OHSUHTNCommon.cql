@@ -90,6 +90,9 @@ define function "HTN Stage 2 BP Systolic Second Test"(list List<Tuple { id Strin
 define function "HTN Crisis BP"(O Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
   O.systolic >= 180 or O.diastolic >= 120
 
+define function "HTN Low Crisis BP"(O Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
+  O.systolic < 90 or O.diastolic < 60
+
 /* Helpers */
 define function WithUnit(list List<Observation>, Unit String):
   list Observations
@@ -450,8 +453,14 @@ define "All BP Observations":
 define "Most Recent BP Reading":
   Last("All BP Observations" O sort by effective)
 
-define "HTN Crisis":
+define "HTN High Crisis":
   "HTN Crisis BP"("Most Recent BP Reading")
+
+define "HTN Low Crisis":
+  "HTN Low Crisis BP"("Most Recent BP Reading")
+
+define "HTN Crisis":
+  "HTN High Crisis" or "HTN Low Crisis"
 
 define "Blood Pressure Observations for Last 2 Years":
   "All BP Observations" BP where BP.effective + 24 months >= Today()
