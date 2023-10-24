@@ -1,0 +1,10 @@
+{
+  "cards": [
+    {
+      "summary": "Blank.Summary",
+      "indicator": "critical",
+      "detail": "Remain calm and check your BP again following these \u003ca href\u003d\"/vitals#instructions\"\u003einstructions\u003c/a\u003e in 5 to 30 minutes. Read more about symptoms from low blood pressure in the link below.|[ { \"id\": \"enter-bp-suggestion\", \"label\": \"Enter Blood Pressure\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Check your BP again (strongly recommended)\", \"url\":\"/vitals\"}] } ]|at-most-one|[{\"label\":\"American Heart Association: When Blood Pressure is too Low\", \"url\":\"https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/low-blood-pressure-when-blood-pressure-is-too-low\"}]",
+      "source": {}
+    }
+  ]
+}
