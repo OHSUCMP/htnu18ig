@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "performedDateTime": "2023-08-17T11:00:00-06:00",
+      "performedDateTime": "2023-09-18T11:00:00-06:00",
       "reasonReference": [ {
         "reference": "Observation/observation-NPI-SmokingCessationReminder-1"
       } ],
@@ -65,8 +65,8 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "onsetDateTime": "2016-12-22T15:16:21-05:00",
-      "recordedDate": "2016-12-22T15:16:21-05:00",
+      "onsetDateTime": "2017-01-23T15:16:21-05:00",
+      "recordedDate": "2017-01-23T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -86,7 +86,7 @@
         "given": [ "SmokingCessation" ]
       } ],
       "gender": "female",
-      "birthDate": "1960-06-07"
+      "birthDate": "1960-07-09"
     },
     "request": {
       "method": "PUT",
@@ -122,7 +122,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "effectiveDateTime": "2023-04-20T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -192,7 +192,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "effectiveDateTime": "2023-03-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -248,10 +248,10 @@
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
       "effectivePeriod": {
-        "start": "2003-08-07",
-        "end": "2020-11-29"
+        "start": "2003-09-08",
+        "end": "2020-12-31"
       },
-      "issued": "2020-11-29T00:00:00-07:00",
+      "issued": "2020-12-31T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -303,7 +303,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "effectiveDateTime": "2022-12-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -359,10 +359,10 @@
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
       "effectivePeriod": {
-        "start": "2022-02-05",
-        "end": "2022-02-23"
+        "start": "2022-03-09",
+        "end": "2022-03-27"
       },
-      "issued": "2022-02-23T00:00:00-07:00",
+      "issued": "2022-03-27T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -414,7 +414,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "effectiveDateTime": "2023-02-18T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -477,7 +477,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "effectiveDateTime": "2023-01-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -547,7 +547,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "effectiveDateTime": "2023-05-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-06-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -606,7 +606,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationReminder"
       },
-      "startDate": "2023-06-06",
+      "startDate": "2023-07-08",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -638,7 +638,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-06-06"
+      "statusDate": "2023-07-08"
     },
     "request": {
       "method": "PUT",

@@ -23,8 +23,8 @@
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
       "period": {
-        "start": "2022-12-21T00:00:00-04:00",
-        "end": "2022-12-21T23:59:59-04:00"
+        "start": "2023-01-22T00:00:00-04:00",
+        "end": "2023-01-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
       "period": {
-        "start": "2023-03-21T00:00:00-04:00",
-        "end": "2023-03-21T23:59:59-04:00"
+        "start": "2023-04-22T00:00:00-04:00",
+        "end": "2023-04-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -81,8 +81,8 @@
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
       "period": {
-        "start": "2023-01-21T00:00:00-04:00",
-        "end": "2023-01-21T23:59:59-04:00"
+        "start": "2023-02-22T00:00:00-04:00",
+        "end": "2023-02-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -110,8 +110,8 @@
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
       "period": {
-        "start": "2023-02-18T00:00:00-04:00",
-        "end": "2023-02-18T23:59:59-04:00"
+        "start": "2023-03-22T00:00:00-04:00",
+        "end": "2023-03-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -153,8 +153,8 @@
       "subject": {
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
-      "onsetDateTime": "2016-12-22T15:16:21-05:00",
-      "recordedDate": "2016-12-22T15:16:21-05:00",
+      "onsetDateTime": "2017-01-23T15:16:21-05:00",
+      "recordedDate": "2017-01-23T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -174,7 +174,7 @@
         "given": [ "SetBPGoal" ]
       } ],
       "gender": "female",
-      "birthDate": "1957-11-10"
+      "birthDate": "1957-12-12"
     },
     "request": {
       "method": "PUT",
@@ -206,7 +206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-3"
       },
-      "effectiveDateTime": "2023-02-18T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -272,7 +272,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-2"
       },
-      "effectiveDateTime": "2023-01-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -342,7 +342,7 @@
       "subject": {
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
-      "effectiveDateTime": "2023-04-20T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -408,7 +408,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-4"
       },
-      "effectiveDateTime": "2023-03-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -478,7 +478,7 @@
       "subject": {
         "reference": "Patient/M-SetBPGoalMissingGoal"
       },
-      "effectiveDateTime": "2022-12-01T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-02T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -544,7 +544,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-SetBPGoalMissingGoal-1"
       },
-      "effectiveDateTime": "2022-12-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],

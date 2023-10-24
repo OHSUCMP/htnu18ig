@@ -20,10 +20,10 @@
     "reference": "Patient/P-AdvancingTreatmentCodeableConcept"
   },
   "effectivePeriod": {
-    "start": "2003-08-30",
-    "end": "2022-12-23"
+    "start": "2003-10-01",
+    "end": "2023-01-24"
   },
-  "issued": "2022-12-23T00:00:00-07:00",
+  "issued": "2023-01-24T00:00:00-07:00",
   "valueCodeableConcept": {
     "coding": [
       {

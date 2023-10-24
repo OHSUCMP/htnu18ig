@@ -39,7 +39,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryReminder"
               },
-              "performedDateTime": "2021-04-22T11:00:00-06:00",
+              "performedDateTime": "2021-05-24T11:00:00-06:00",
               "reasonReference": [
                 {
                   "reference": "Observation/observation-NPI-DietaryReminder-1"
@@ -101,8 +101,8 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryReminder"
               },
-              "onsetDateTime": "2016-12-22T15:16:21-05:00",
-              "recordedDate": "2016-12-22T15:16:21-05:00"
+              "onsetDateTime": "2017-01-23T15:16:21-05:00",
+              "recordedDate": "2017-01-23T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -124,7 +124,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1979-08-04"
+              "birthDate": "1979-09-05"
             },
             "request": {
               "method": "PUT",
@@ -174,7 +174,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryReminder"
               },
-              "effectiveDateTime": "2023-05-21T15:16:21-05:00",
+              "effectiveDateTime": "2023-06-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -253,7 +253,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryReminder"
               },
-              "effectiveDateTime": "2022-12-21T15:16:21-05:00",
+              "effectiveDateTime": "2023-01-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -341,7 +341,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryReminder"
               },
-              "effectiveDateTime": "2023-02-18T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -420,7 +420,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryReminder"
               },
-              "effectiveDateTime": "2023-01-21T15:16:21-05:00",
+              "effectiveDateTime": "2023-02-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -508,7 +508,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryReminder"
               },
-              "effectiveDateTime": "2023-04-20T15:16:21-05:00",
+              "effectiveDateTime": "2023-05-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -587,7 +587,7 @@
               "subject": {
                 "reference": "Patient/NPI-DietaryReminder"
               },
-              "effectiveDateTime": "2023-03-21T15:16:21-05:00",
+              "effectiveDateTime": "2023-04-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -647,8 +647,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-06-06",
-              "startDate": "2023-06-06",
+              "statusDate": "2023-07-08",
+              "startDate": "2023-07-08",
               "description": {
                 "text": "Goal of 135/85"
               },

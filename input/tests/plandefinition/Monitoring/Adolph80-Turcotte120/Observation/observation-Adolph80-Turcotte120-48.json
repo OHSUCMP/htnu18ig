@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Adolph80-Turcotte120-7"
         },
-        "effectiveDateTime": "2015-12-17T15:16:21-05:00",
+        "effectiveDateTime": "2016-01-18T15:16:21-05:00",
         "valueQuantity": {
           "value": 172.6616348176536,
           "unit": "cm",

@@ -31,7 +31,7 @@
   "subject": {
     "reference": "Patient/NPI-OldSmokingCounseling"
   },
-  "effectiveDateTime": "2023-05-21T15:16:21-05:00",
+  "effectiveDateTime": "2023-06-22T15:16:21-05:00",
   "component": [
     {
       "code": {

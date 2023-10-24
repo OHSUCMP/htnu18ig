@@ -20,10 +20,10 @@
     "reference": "Patient/NPI-SmokingCessationNew"
   },
   "effectivePeriod": {
-    "start": "1979-07-13",
-    "end": "2020-01-25"
+    "start": "1979-08-14",
+    "end": "2020-02-26"
   },
-  "issued": "2020-01-25T00:00:00-07:00",
+  "issued": "2020-02-26T00:00:00-07:00",
   "valueCodeableConcept": {
     "coding": [
       {

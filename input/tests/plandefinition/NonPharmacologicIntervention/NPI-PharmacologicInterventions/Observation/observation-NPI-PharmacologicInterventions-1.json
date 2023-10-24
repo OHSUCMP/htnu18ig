@@ -20,10 +20,10 @@
     "reference": "Patient/NPI-PharmacologicInterventions"
   },
   "effectivePeriod": {
-    "start": "2003-08-07",
-    "end": "2022-11-30"
+    "start": "2003-09-08",
+    "end": "2023-01-01"
   },
-  "issued": "2022-11-30T00:00:00-07:00",
+  "issued": "2023-01-01T00:00:00-07:00",
   "valueCodeableConcept": {
     "coding": [
       {

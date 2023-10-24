@@ -22,10 +22,10 @@
       }
     ]
   },
-  "statusDate": "2023-06-06",
-"startDate": "2023-06-06",
-  "statusDate": "2023-06-23",
-"startDate": "2023-06-23",
+  "statusDate": "2023-07-08",
+"startDate": "2023-07-08",
+  "statusDate": "2023-07-25",
+"startDate": "2023-07-25",
   "description": {
     "text": "Lose 25 pounds"
   },
@@ -34,7 +34,7 @@
   },
   "target": [
     {
-      "dueDate": "2023-08-24"
+      "dueDate": "2023-09-25"
     }
   ]
 }

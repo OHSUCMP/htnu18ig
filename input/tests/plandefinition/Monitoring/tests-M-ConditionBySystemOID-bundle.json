@@ -23,8 +23,8 @@
         "reference": "Patient/M-ConditionBySystemOID"
       },
       "period": {
-        "start": "2023-02-18T00:00:00-04:00",
-        "end": "2023-02-18T23:59:59-04:00"
+        "start": "2023-03-22T00:00:00-04:00",
+        "end": "2023-03-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/M-ConditionBySystemOID"
       },
       "period": {
-        "start": "2023-01-21T00:00:00-04:00",
-        "end": "2023-01-21T23:59:59-04:00"
+        "start": "2023-02-22T00:00:00-04:00",
+        "end": "2023-02-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -81,8 +81,8 @@
         "reference": "Patient/M-ConditionBySystemOID"
       },
       "period": {
-        "start": "2023-03-21T00:00:00-04:00",
-        "end": "2023-03-21T23:59:59-04:00"
+        "start": "2023-04-22T00:00:00-04:00",
+        "end": "2023-04-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -110,8 +110,8 @@
         "reference": "Patient/M-ConditionBySystemOID"
       },
       "period": {
-        "start": "2022-12-21T00:00:00-04:00",
-        "end": "2022-12-21T23:59:59-04:00"
+        "start": "2023-01-22T00:00:00-04:00",
+        "end": "2023-01-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -153,8 +153,8 @@
       "subject": {
         "reference": "Patient/M-ConditionBySystemOID"
       },
-      "onsetDateTime": "2016-12-22T15:16:21-05:00",
-      "recordedDate": "2016-12-22T15:16:21-05:00",
+      "onsetDateTime": "2017-01-23T15:16:21-05:00",
+      "recordedDate": "2017-01-23T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension where System is defined using the OID for SNOMED"
       } ]
@@ -174,7 +174,7 @@
         "given": [ "Condition" ]
       } ],
       "gender": "male",
-      "birthDate": "1979-03-06"
+      "birthDate": "1979-04-07"
     },
     "request": {
       "method": "PUT",
@@ -206,7 +206,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-ConditionBySystemOID-1"
       },
-      "effectiveDateTime": "2022-12-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -276,7 +276,7 @@
       "subject": {
         "reference": "Patient/M-ConditionBySystemOID"
       },
-      "effectiveDateTime": "2022-12-01T15:16:21-05:00",
+      "effectiveDateTime": "2023-01-02T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -342,7 +342,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-ConditionBySystemOID-4"
       },
-      "effectiveDateTime": "2023-03-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -412,7 +412,7 @@
       "subject": {
         "reference": "Patient/M-ConditionBySystemOID"
       },
-      "effectiveDateTime": "2023-04-20T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -478,7 +478,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-ConditionBySystemOID-2"
       },
-      "effectiveDateTime": "2023-01-21T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -544,7 +544,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-ConditionBySystemOID-3"
       },
-      "effectiveDateTime": "2023-02-18T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -603,7 +603,7 @@
       "subject": {
         "reference": "Patient/M-ConditionBySystemOID"
       },
-      "startDate": "2023-06-06",
+      "startDate": "2023-07-08",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -635,7 +635,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-06-06"
+      "statusDate": "2023-07-08"
     },
     "request": {
       "method": "PUT",
