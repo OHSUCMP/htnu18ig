@@ -4,7 +4,16 @@
   "status": "final",
   "note": [
     {
-      "text": "Office Blood Pressure Reading"
+      "text": "Home Blood Pressure Reading"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "264362003"
+      }
     }
   ],
   "category": [
@@ -34,7 +43,7 @@
   "encounter": {
     "reference": "Encounter/encounter-M-PatientAtGoal-4"
   },
-  "effectiveDateTime": "2023-04-22T15:16:21-05:00",
+  "effectiveDateTime": "2023-09-15T15:16:21-05:00",
   "component": [
     {
       "code": {

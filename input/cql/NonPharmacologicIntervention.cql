@@ -75,8 +75,12 @@ define "Patient Has Behavioral Goals":
   exists "Physical Activity Goals" or
   exists "Nutrition Goals"
 
+// Therapy should be received if we're still collecting BPs or if the patient hasn't achieved their goal yet
+define "Receive Therapy":
+  not Common."Has BP Set" or (Common."Patient has a BP Goal" and Common."Above Goal Average Most Recent")
+
 define "Enter Workflow":
-  "In Population" and ("Patient Has Behavioral Goals" or Common."Receive Therapy")
+  "In Population" and ("Patient Has Behavioral Goals" or "Receive Therapy")
 
 /***** SMOKING CARD OUTPUT *****/
 

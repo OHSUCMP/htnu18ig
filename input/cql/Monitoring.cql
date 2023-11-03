@@ -39,14 +39,14 @@ define "In Population":
   not "Meets Exclusion Criteria" and "Meets Inclusion Criteria"
 
 define "Provide Recommendation":
-  "In Population" and (not Common."Patient has a BP Goal" or not Common."Has BP Set" or not Common."Above Goal Average Most Recent")
+  "In Population" and (not Common."Patient has a BP Goal" or not Common."Has 12 Home BPs" or not Common."Above Goal Average Most Recent")
 
 define "Recommendation":
   if not "Provide Recommendation" then ''
   // 12
   else if not Common."Patient has a BP Goal" then 'Discuss target blood pressure and set a blood pressure goal'
   // 13
-  else if not Common."Has BP Set" then 'Consider obtaining additional blood pressure measurements.'
+  else if not Common."Has 12 Home BPs" then 'Consider obtaining additional blood pressure measurements.'
   // Patient at Goal
   else 'Monitoring.Success.Summary' // COACH must look for this hack to display the green checkmark
 
@@ -56,7 +56,7 @@ define "Rationale Combined Data":
 define "Rationale":
   if not "Provide Recommendation" then ''
   else if not Common."Patient has a BP Goal" then '{{#patient}}You recently received a hypertension (high blood pressure) diagnosis.  Setting goals for lowering your blood pressure has been proven to help overall health and reduce your chance of stroke or other conditions.{{/patient}}{{#careTeam}}No BP Goal set: Setting a blood pressure goal can help engage patients and improve outcomes. For most patients, choosing a target between <120-140/80-90 is recommended; lower targets may be for ASCVD, ASCVD risk >10%, multimorbidity (CKD and diabetes), or preference; higher targets may be for age, adverse events, or frailty.{{/careTeam}}'
-  else if not Common."Has BP Set" then '{{#patient}}Since we do not have enough blood pressure measurements to obtain a full picture of your health, we recommend you take a full set of measurements. We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/patient}}{{#careTeam}}Patient does not have enough blood pressures to make a strong determination of control or diagnosis. We consider a full set to be more than 4 in-office measurements, 6 home measurements, or 24 hours of ambulatory monitoring.{{/careTeam}}'
+  else if not Common."Has 12 Home BPs" then 'Since we do not have enough blood pressure measurements to obtain a full picture of your health, we recommend you take a full set of measurements. We consider a full set to be at least 12 home measurements.'
   // Patient at Goal
   else 'At or below your goal BP: Keep up the good work! Click the link for what to do next.'
 
@@ -66,7 +66,7 @@ define "Indicator Status":
 define "Suggestions":
   if not "Provide Recommendation" then ''
   else if not Common."Patient has a BP Goal" then '[ { "id": "bp-radio-goal", "label": "BP Goal", "type": "bp-goal", "references":{"system":"https://coach.ohsu.edu", "code":"blood-pressure"}, "actions": [{"label":"140/90"}, {"label":"130/80"}, {"label":"120/80"}]}]'
-  else if not Common."Has BP Set" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page.", "url":"/vitals"}] } ]'
+  else if not Common."Has 12 Home BPs" then '[ { "id": "enter-bp-suggestion", "label": "Enter Blood Pressure", "type": "suggestion-link", "actions": [{"label":"Click here to go to the Home Blood Pressure entry page.", "url":"/vitals"}] } ]'
   else '[ { "id": "link-suggestion", "label": "", "type": "suggestion-link", "actions": [{"label":"My blood pressure is controlled: What to do next?", "url":"/infographic-controlled-bp.pdf"}] } ]'
 
 define "Selection Behavior":
@@ -75,7 +75,7 @@ define "Selection Behavior":
 define "Links":
   if not "Provide Recommendation" then ''
   else if not Common."Patient has a BP Goal" then '[{"label": "AHA: Understanding High Blood Pressure Readings", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
-  else if not Common."Has BP Set" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
+  else if not Common."Has 12 Home BPs" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
   else '[]'
 
 define "Exclusion Reason":

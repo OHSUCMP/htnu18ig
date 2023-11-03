@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Discuss using medication to treat high blood pressure with your care team.",
+      "summary": "Blood Pressure is not at goal",
       "indicator": "warning",
-      "detail": "{{#patient}}Your blood pressure is substantially elevated, to the point where \u003cstrong\u003emedication should be considered\u003c/strong\u003e.This may occur sooner than expected. Speak with your care team to discuss medication options.{{/patient}}{{#careTeam}}In patients under 55 with high blood pressure and listed comorbidities, use thiazide-type diuretic, ACE-I, ARB, or CCB for first-line therapy{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure.\", \"url\":\"/contact?token\u003drecommend-pharma\"}] } ]|at-most-one|",
+      "detail": "Your blood pressure is not at goal despite continuous monitoring. You may want to consider starting or changing antihypertensive medication. Other factors that can contribute to BP not being at goal include excessive stress, new over the counter remedies. Contact your care team to discuss options.|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure.\", \"url\":\"/contact?token\u003drecommend-pharma\"}] } ]|at-most-one|",
       "source": {}
     }
   ]
