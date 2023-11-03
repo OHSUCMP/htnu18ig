@@ -354,6 +354,10 @@ define "Patient Over Age 80":
 define "Conditions":
   "Problem Conditions" union "Encounter Conditions"
 
+// Now that everything comes in through the prefetch, we should be able to just fetch ["Conditions"]
+// But I'm leaving in place on the outside chance that a person has no conditions whatsoever.
+// With nothing in the prefetch, CQF Ruler would call out to Epic and the recommendation would fail
+// if we try to get conditions without including the category.
 // Epic requires category to be provided
 define "Problem Conditions":
   (QualifiedCondition(["Condition": category ~ "problem-list-item"]))
@@ -489,6 +493,10 @@ define "Has BP Set":
     if not exists "Blood Pressure Observations for Last 2 Years" then false
     else calculateScore("Blood Pressure Observations for Last 2 Years") >= 4
 
+define "Has 12 Home BPs":
+    if not exists "Home Blood Pressure Observations" then false
+    else Count("Home Blood Pressure Observations") >= 12
+
 define function score(observation Tuple { id String, effective DateTime, systolic Decimal, diastolic Decimal, readingType String }):
   if observation in "Ambulatory Blood Pressure Monitoring Observations" then 0.334
   else if observation in "Home Blood Pressure Observations" then 0.334
@@ -568,10 +576,6 @@ define "BP from Most Recent Goal":
 define "Above Goal Average Most Recent":
   "Average Most Recent BP Set".systolic > "BP from Most Recent Goal".systolic or
   "Average Most Recent BP Set".diastolic > "BP from Most Recent Goal".diastolic
-
-// Therapy should be received if there's a BP set and a goal and the patient hasn't achieved their goal
-define "Receive Therapy":
-  "Has BP Set" and "Patient has a BP Goal" and "Above Goal Average Most Recent"
 
 define "Active Medication Requests":
   ["MedicationRequest"] Rx where Rx.status.value ~ "Active Medication Request".code

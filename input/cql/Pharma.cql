@@ -21,20 +21,23 @@ define "In Population":
   // Preserve this ordering so excluded patients fail fast
   not "Meets Exclusion Criteria" and "Meets Inclusion Criteria"
 
+// Pharma Therapy should be received if there are 12 home BPs and goal has not been achieved
+define "Receive Therapy":
+  Common."Has 12 Home BPs" and Common."Patient has a BP Goal" and Common."Above Goal Average Most Recent"
+
 // Tests conditions from other workflows needed for Pharma intervention to proceed
 define "Enter Workflow":
-    "In Population" and Common."Receive Therapy"
+    "In Population" and "Receive Therapy"
 
 define "Recommendation":
-  if Common."Patient is Using Antihypertensive Medications" then 'Use shared decision making for treatment.'
-  else 'Discuss using medication to treat high blood pressure with your care team.'
+  'Blood Pressure is not at goal'
 
 define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Rationale":
-  if Common."Patient is Using Antihypertensive Medications" then '{{#patient}}Your <strong>blood pressure is still high despite current efforts to lower it</strong>; changing your medication may be an option. This may occur sooner than expected.{{/patient}}{{#careTeam}}Employ shared decision making practices when discussing treatment for high blood pressure with your patient.{{/careTeam}}'
-  else '{{#patient}}Your blood pressure is substantially elevated, to the point where <strong>medication should be considered</strong>.This may occur sooner than expected. Speak with your care team to discuss medication options.{{/patient}}{{#careTeam}}In patients under 55 with high blood pressure and listed comorbidities, use thiazide-type diuretic, ACE-I, ARB, or CCB for first-line therapy{{/careTeam}}'
+  if Common."Patient is Using Antihypertensive Medications" then 'Your blood pressure is not at goal despite continuous monitoring. You may want to consider starting or changing antihypertensive medication. Other factors that can contribute to BP not being at goal include excessive stress, new over the counter remedies. Contact your care team to discuss options.'
+  else 'Your blood pressure is not at goal despite continuous monitoring. You may want to consider starting or changing antihypertensive medication. Other factors that can contribute to BP not being at goal include excessive stress, new over the counter remedies. Contact your care team to discuss options.'
 
 define "Suggestions":
   if Common."Patient is Using Antihypertensive Medications" then '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about options to control your high blood pressure.", "url":"/contact?token=recommend-advancing-treatment"}] } ]'

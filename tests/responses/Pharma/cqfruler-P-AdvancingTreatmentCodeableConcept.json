@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "summary": "Use shared decision making for treatment.",
+      "summary": "Blood Pressure is not at goal",
       "indicator": "warning",
-      "detail": "{{#patient}}Your \u003cstrong\u003eblood pressure is still high despite current efforts to lower it\u003c/strong\u003e; changing your medication may be an option. This may occur sooner than expected.{{/patient}}{{#careTeam}}Employ shared decision making practices when discussing treatment for high blood pressure with your patient.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure.\", \"url\":\"/contact?token\u003drecommend-advancing-treatment\"}] } ]|at-most-one|",
+      "detail": "Your blood pressure is not at goal despite continuous monitoring. You may want to consider starting or changing antihypertensive medication. Other factors that can contribute to BP not being at goal include excessive stress, new over the counter remedies. Contact your care team to discuss options.|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about options to control your high blood pressure.\", \"url\":\"/contact?token\u003drecommend-advancing-treatment\"}] } ]|at-most-one|",
       "source": {}
     }
   ]

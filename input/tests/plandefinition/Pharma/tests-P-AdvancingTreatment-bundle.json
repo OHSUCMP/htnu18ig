@@ -344,6 +344,146 @@
   }, {
     "resource": {
       "resourceType": "Observation",
+      "id": "observation-P-AdvancingTreatment-10",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/P-AdvancingTreatment"
+      },
+      "effectiveDateTime": "2023-09-16T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.1660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 137.2064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-P-AdvancingTreatment-10"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-P-AdvancingTreatment-11",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/P-AdvancingTreatment"
+      },
+      "effectiveDateTime": "2023-09-27T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 86.1660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 136.2064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-P-AdvancingTreatment-11"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
       "id": "observation-P-AdvancingTreatment-1",
       "status": "final",
       "code": {
@@ -392,7 +532,84 @@
   }, {
     "resource": {
       "resourceType": "Observation",
+      "id": "observation-P-AdvancingTreatment-12",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/P-AdvancingTreatment"
+      },
+      "effectiveDateTime": "2023-10-06T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.1660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 140.2064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-P-AdvancingTreatment-12"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
       "id": "observation-P-AdvancingTreatment-2",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -414,7 +631,7 @@
       },
       "effectiveDateTime": "2023-02-14T15:16:21-05:00",
       "note": [ {
-        "text": "Office Blood Pressure Reading"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -456,6 +673,13 @@
     "resource": {
       "resourceType": "Observation",
       "id": "observation-P-AdvancingTreatment-3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -477,7 +701,7 @@
       },
       "effectiveDateTime": "2023-03-17T15:16:21-05:00",
       "note": [ {
-        "text": "Office Blood Pressure Reading"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -518,7 +742,84 @@
   }, {
     "resource": {
       "resourceType": "Observation",
+      "id": "observation-P-AdvancingTreatment-13",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/P-AdvancingTreatment"
+      },
+      "effectiveDateTime": "2023-10-16T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 83.1660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 131.2064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-P-AdvancingTreatment-13"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
       "id": "observation-P-AdvancingTreatment-4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -540,7 +841,7 @@
       },
       "effectiveDateTime": "2023-04-14T15:16:21-05:00",
       "note": [ {
-        "text": "Office Blood Pressure Reading"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -647,6 +948,76 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-P-AdvancingTreatment-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-P-AdvancingTreatment-9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/P-AdvancingTreatment"
+      },
+      "effectiveDateTime": "2023-09-08T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 83.1660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 133.2064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-P-AdvancingTreatment-9"
     }
   }, {
     "resource": {

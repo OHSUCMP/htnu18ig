@@ -4,7 +4,16 @@
   "status": "final",
   "note": [
     {
-      "text": "Office Blood Pressure Reading"
+      "text": "Home Blood Pressure Reading"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "264362003"
+      }
     }
   ],
   "category": [
@@ -34,7 +43,7 @@
   "encounter": {
     "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-1"
   },
-  "effectiveDateTime": "2023-01-22T15:16:21-05:00",
+  "effectiveDateTime": "2023-08-22T15:16:21-05:00",
   "component": [
     {
       "code": {
@@ -48,7 +57,7 @@
         "text": "Diastolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 89.93,
+        "value": 91.93,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
@@ -66,7 +75,7 @@
         "text": "Systolic Blood Pressure"
       },
       "valueQuantity": {
-        "value": 134.53,
+        "value": 139.53,
         "unit": "mm[Hg]",
         "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]"
