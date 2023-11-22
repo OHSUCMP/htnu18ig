@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "performedDateTime": "2023-01-24T11:00:00-06:00",
+      "performedDateTime": "2023-02-21T11:00:00-06:00",
       "note": [ {
         "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "onsetDateTime": "2017-02-15T15:16:21-05:00",
-      "recordedDate": "2017-02-15T15:16:21-05:00",
+      "onsetDateTime": "2017-03-15T15:16:21-05:00",
+      "recordedDate": "2017-03-15T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "Pharmacology" ]
       } ],
       "gender": "female",
-      "birthDate": "1986-06-20"
+      "birthDate": "1986-07-18"
     },
     "request": {
       "method": "PUT",
@@ -148,7 +148,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "authoredOn": "2022-05-20T16:00:00-08:00",
+      "authoredOn": "2022-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Completed Request"
       } ]
@@ -170,7 +170,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "authoredOn": "2023-05-20T16:00:00-08:00",
+      "authoredOn": "2023-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Medication - Not an Antihypertensive"
       } ]
@@ -192,7 +192,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "authoredOn": "2023-05-20T16:00:00-08:00",
+      "authoredOn": "2023-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Antihypertensive"
       } ]
@@ -231,7 +231,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-06-14T15:16:21-05:00",
+      "effectiveDateTime": "2023-07-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -301,7 +301,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-07-15T15:16:21-05:00",
+      "effectiveDateTime": "2023-08-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -371,7 +371,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-09-16T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-14T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -441,7 +441,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-09-27T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-25T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -497,10 +497,10 @@
         "reference": "Patient/P-AdvancingTreatment"
       },
       "effectivePeriod": {
-        "start": "2003-10-01",
-        "end": "2023-01-24"
+        "start": "2003-10-29",
+        "end": "2023-02-21"
       },
-      "issued": "2023-01-24T00:00:00-07:00",
+      "issued": "2023-02-21T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -559,7 +559,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-10-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-11-03T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -629,7 +629,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-02-14T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-14T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -699,7 +699,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-03-17T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-14T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -769,7 +769,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-10-16T15:16:21-05:00",
+      "effectiveDateTime": "2023-11-13T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -839,7 +839,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-04-14T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -909,7 +909,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-08-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-05T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -979,7 +979,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-09-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-06T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1049,7 +1049,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "effectiveDateTime": "2023-05-15T15:16:21-05:00",
+      "effectiveDateTime": "2023-06-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1108,7 +1108,7 @@
       "subject": {
         "reference": "Patient/P-AdvancingTreatment"
       },
-      "startDate": "2023-01-31",
+      "startDate": "2023-02-28",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -1140,7 +1140,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-01-31",
+      "statusDate": "2023-02-28",
       "note": [ {
         "text": "There has been no change toward patient goal."
       } ]

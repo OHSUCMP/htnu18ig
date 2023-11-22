@@ -10,7 +10,7 @@
   ],
   "version": "0.1",
   "name": "AdverseEvents",
-  "title": "Potential Adverse Reaction Detection",
+  "title": "Potential Side Effect Detection",
   "type": {
     "coding": [
       {

@@ -21,16 +21,16 @@ define function "Contact Suggestion String"(aes List<FHIR.AdverseEvent>):
   aes AE return "AE Event Display"(AE.event.coding)
 
 define "Untreated Recommendation":
-  'Consider adjusting treatment.'
+  'Report Side Effect'
 
 define "Untreated Rationale Combined Data":
   "Untreated Rationale" + '|' + "Untreated Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Untreated Rationale":
-  '{{#patient}}You recently had a condition recorded that <strong>may be an adverse event from high blood pressure treatment</strong>. Contacting your care team will help them resolve it.{{/patient}}{{#careTeam}}Patient recently experienced an adverse reaction to antihypertensive medication. Work with patient to resolve the event, utilizing team-based care and telehealth strategies as needed.{{/careTeam}}'
+  'A side effect can be any undesirable outcome that results from blood pressure management. You recently had a condition that may be a side effect. If you are currently experiencing ongoing symptoms, we strongly recommend reaching out to your primary care provider.'
 
 define "Untreated Suggestions":
-  '[{ "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your condition(s): ' + Combine("Contact Suggestion String"("Untreated Adverse Events"), ', ') + '" , "url":"/contact?token=untreated-adverse-event"}] },' +
+  '[{ "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team if you are currently experiencing a side effect" , "url":"/contact?token=untreated-adverse-event"}] },' +
   Combine("AE Suggestion String"("Untreated Adverse Events"), ',') +
   ']'
 
@@ -47,16 +47,16 @@ define "Links":
   ''
 
 define "Treated Recommendation":
-  'See care team and discuss treatment for hypertension if event recurs.'
+  'See care team and discuss treatment if event recurs'
 
 define "Treated Rationale Combined Data":
   "Treated Rationale" + '|' + "Treated Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Treated Rationale":
-  '{{#patient}}You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but <strong>if it recurs or doesn\'t get better, please contact your care team</strong>.{{/patient}}{{#careTeam}}Patient has experienced an adverse event, which has been treated. Consider changes to the patient\'s course of treatment if the patient requests modification to care or if the benefits of continues treatment do not outweigh the risks.{{/careTeam}}'
+  'A side effect associated with blood pressure management has been detected and addressed: <strong>' + Combine("Contact Suggestion String"("Treated Adverse Events"), ', ') + '</strong>. If event recurs, adjustment to medication and/or blood pressure goal may be required.'
 
 define "Treated Suggestions":
-  '[ { "id": "contact-suggestion", "label": "Contact care team", "type": "suggestion-link", "actions": [{"label":"Contact your care team about your condition(s): ' + Combine("Contact Suggestion String"("Treated Adverse Events"), ', ') + '" , "url":"/contact?token=treated-adverse-event"}] } ]'
+  '[]'
 
 // Only get the adverse events coded from the application
 define "Adverse Events":

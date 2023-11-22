@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "performedDateTime": "2023-01-24T11:00:00-06:00",
+      "performedDateTime": "2023-02-21T11:00:00-06:00",
       "note": [ {
         "text": "The patient had tobacco cessation counseling related to an observation that they are a heavy smoker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "onsetDateTime": "2017-02-15T15:16:21-05:00",
-      "recordedDate": "2017-02-15T15:16:21-05:00",
+      "onsetDateTime": "2017-03-15T15:16:21-05:00",
+      "recordedDate": "2017-03-15T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "Pharmacology" ]
       } ],
       "gender": "male",
-      "birthDate": "1994-06-20"
+      "birthDate": "1994-07-18"
     },
     "request": {
       "method": "PUT",
@@ -148,7 +148,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "authoredOn": "2023-05-20T16:00:00-08:00",
+      "authoredOn": "2023-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Completed Request for Antihypertensive"
       } ]
@@ -174,7 +174,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "authoredOn": "2023-05-20T16:00:00-08:00",
+      "authoredOn": "2023-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Medication using CodeableConcept - Not an Antihypertensive"
       } ]
@@ -196,7 +196,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "authoredOn": "2023-05-20T16:00:00-08:00",
+      "authoredOn": "2023-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Active Request for Medication - Not an Antihypertensive"
       } ]
@@ -218,7 +218,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "authoredOn": "2022-05-20T16:00:00-08:00",
+      "authoredOn": "2022-06-17T16:00:00-08:00",
       "note": [ {
         "text": "Completed Request"
       } ]
@@ -250,7 +250,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-03-17T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-14T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -320,7 +320,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-10-14T15:16:21-05:00",
+      "effectiveDateTime": "2023-11-11T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -390,7 +390,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-10-03T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-31T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -460,7 +460,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-02-14T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-14T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -530,7 +530,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-09-24T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -600,7 +600,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-09-01T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-29T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -663,7 +663,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-05-15T15:16:21-05:00",
+      "effectiveDateTime": "2023-06-12T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -733,7 +733,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-04-14T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -796,7 +796,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-08-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-05T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -866,7 +866,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-09-17T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -936,7 +936,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-09-13T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-11T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1006,7 +1006,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-07-15T15:16:21-05:00",
+      "effectiveDateTime": "2023-08-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1076,7 +1076,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-06-14T15:16:21-05:00",
+      "effectiveDateTime": "2023-07-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1146,7 +1146,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-09-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-04T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1202,10 +1202,10 @@
         "reference": "Patient/P-InitialPharmacology"
       },
       "effectivePeriod": {
-        "start": "2003-10-01",
-        "end": "2023-01-24"
+        "start": "2003-10-29",
+        "end": "2023-02-21"
       },
-      "issued": "2023-01-24T00:00:00-07:00",
+      "issued": "2023-02-21T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -1264,7 +1264,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "effectiveDateTime": "2023-10-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-11-16T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1323,7 +1323,7 @@
       "subject": {
         "reference": "Patient/P-InitialPharmacology"
       },
-      "startDate": "2023-01-31",
+      "startDate": "2023-02-28",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -1355,7 +1355,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-01-31",
+      "statusDate": "2023-02-28",
       "note": [ {
         "text": "There has been no change toward patient goal."
       } ]

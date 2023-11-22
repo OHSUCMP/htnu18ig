@@ -47,6 +47,6 @@
   "subject": {
     "reference": "Patient/M-ConditionBySystemOID"
   },
-  "onsetDateTime": "2017-01-23T15:16:21-05:00",
-  "recordedDate": "2017-01-23T15:16:21-05:00"
+  "onsetDateTime": "2017-02-20T15:16:21-05:00",
+  "recordedDate": "2017-02-20T15:16:21-05:00"
 }

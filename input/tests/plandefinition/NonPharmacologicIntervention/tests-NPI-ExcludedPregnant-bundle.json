@@ -38,9 +38,9 @@
       "subject": {
         "reference": "Patient/NPI-ExcludedPregnant"
       },
-      "onsetDateTime": "2020-12-06T19:02:10-04:00",
-      "abatementDateTime": "2021-08-26T17:04:12",
-      "recordedDate": "2020-12-06T19:02:10-04:00",
+      "onsetDateTime": "2021-01-03T19:02:10-04:00",
+      "abatementDateTime": "2021-09-23T17:04:12",
+      "recordedDate": "2021-01-03T19:02:10-04:00",
       "note": [ {
         "text": "Patient was pregnant previously (abatement present and in the past)"
       } ]
@@ -85,8 +85,8 @@
       "subject": {
         "reference": "Patient/NPI-ExcludedPregnant"
       },
-      "onsetDateTime": "2023-10-20T19:02:10-04:00",
-      "recordedDate": "2023-10-20T19:02:10-04:00",
+      "onsetDateTime": "2023-11-17T19:02:10-04:00",
+      "recordedDate": "2023-11-17T19:02:10-04:00",
       "note": [ {
         "text": "Patient is currently pregnant - onset is < 42 weeks"
       } ]
@@ -130,8 +130,8 @@
       "subject": {
         "reference": "Patient/NPI-ExcludedPregnant"
       },
-      "onsetDateTime": "2017-01-23T15:16:21-05:00",
-      "recordedDate": "2017-01-23T15:16:21-05:00",
+      "onsetDateTime": "2017-02-20T15:16:21-05:00",
+      "recordedDate": "2017-02-20T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -151,7 +151,7 @@
         "given": [ "Excluded" ]
       } ],
       "gender": "female",
-      "birthDate": "1989-12-04"
+      "birthDate": "1990-01-01"
     },
     "request": {
       "method": "PUT",

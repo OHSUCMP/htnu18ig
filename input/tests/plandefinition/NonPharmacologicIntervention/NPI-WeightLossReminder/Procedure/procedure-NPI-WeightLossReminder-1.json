@@ -20,7 +20,7 @@
   "subject": {
     "reference": "Patient/NPI-WeightLossReminder"
   },
-  "performedDateTime": "2023-02-12T11:00:00-06:00",
+  "performedDateTime": "2023-03-12T11:00:00-06:00",
   "reasonReference": [
     {
       "reference": "Observation/observation-NPI-WeightLossReminder-1"

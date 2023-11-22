@@ -66,8 +66,8 @@
               "subject": {
                 "reference": "Patient/H-IncludedPreviousPregnancyOnset"
               },
-              "onsetDateTime": "2022-12-11T19:02:10-04:00",
-              "recordedDate": "2022-12-11T19:02:10-04:00"
+              "onsetDateTime": "2023-01-08T19:02:10-04:00",
+              "recordedDate": "2023-01-08T19:02:10-04:00"
             },
             "request": {
               "method": "PUT",
@@ -89,7 +89,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1999-05-30"
+              "birthDate": "1999-06-27"
             },
             "request": {
               "method": "PUT",
@@ -139,7 +139,7 @@
               "subject": {
                 "reference": "Patient/H-IncludedPreviousPregnancyOnset"
               },
-              "effectiveDateTime": "2017-12-03T15:16:21-05:00",
+              "effectiveDateTime": "2017-12-31T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -227,7 +227,7 @@
               "subject": {
                 "reference": "Patient/H-IncludedPreviousPregnancyOnset"
               },
-              "effectiveDateTime": "2020-12-06T15:16:21-05:00",
+              "effectiveDateTime": "2021-01-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {

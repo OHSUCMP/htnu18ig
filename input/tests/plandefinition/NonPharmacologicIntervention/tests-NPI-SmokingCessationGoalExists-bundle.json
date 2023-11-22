@@ -18,7 +18,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "performedDateTime": "2023-05-26T11:00:00-06:00",
+      "performedDateTime": "2023-06-23T11:00:00-06:00",
       "note": [ {
         "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
       } ]
@@ -62,8 +62,8 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "onsetDateTime": "2017-01-23T15:16:21-05:00",
-      "recordedDate": "2017-01-23T15:16:21-05:00",
+      "onsetDateTime": "2017-02-20T15:16:21-05:00",
+      "recordedDate": "2017-02-20T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -83,7 +83,7 @@
         "given": [ "BehaviorGoal" ]
       } ],
       "gender": "male",
-      "birthDate": "1989-09-12"
+      "birthDate": "1989-10-10"
     },
     "request": {
       "method": "PUT",
@@ -119,7 +119,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "effectiveDateTime": "2023-04-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -189,7 +189,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -259,7 +259,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "effectiveDateTime": "2023-02-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -329,7 +329,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "effectiveDateTime": "2023-01-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -385,8 +385,8 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "effectiveDateTime": "2023-05-23T10:00:00-07:00",
-      "issued": "2023-05-23T00:00:00-07:00",
+      "effectiveDateTime": "2023-06-20T10:00:00-07:00",
+      "issued": "2023-06-20T00:00:00-07:00",
       "valueQuantity": {
         "value": 5.1,
         "unit": "Drinks/Day"
@@ -429,7 +429,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "effectiveDateTime": "2023-06-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-07-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -499,7 +499,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "effectiveDateTime": "2023-05-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -566,11 +566,11 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationGoalExists"
       },
-      "startDate": "2023-07-25",
+      "startDate": "2023-08-22",
       "target": [ {
-        "dueDate": "2023-09-25"
+        "dueDate": "2023-10-23"
       } ],
-      "statusDate": "2023-07-25"
+      "statusDate": "2023-08-22"
     },
     "request": {
       "method": "PUT",
