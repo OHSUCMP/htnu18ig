@@ -1,15 +1,15 @@
 {
   "cards": [
     {
-      "summary": "Consider adjusting treatment.",
+      "summary": "Report Side Effect",
       "indicator": "critical",
-      "detail": "{{#patient}}You recently had a condition recorded that \u003cstrong\u003emay be an adverse event from high blood pressure treatment\u003c/strong\u003e. Contacting your care team will help them resolve it.{{/patient}}{{#careTeam}}Patient recently experienced an adverse reaction to antihypertensive medication. Work with patient to resolve the event, utilizing team-based care and telehealth strategies as needed.{{/careTeam}}|[{ \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Brief loss of consciousness\" , \"url\":\"/contact?token\u003duntreated-adverse-event\"}] },{\"id\": \"adverseevent-AE-TreatedAndUntreated-2\", \"type\": \"adverse-event\", \"label\": \"Brief loss of consciousness\"}]|at-most-one|",
+      "detail": "A side effect can be any undesirable outcome that results from blood pressure management. You recently had a condition that may be a side effect. If you are currently experiencing ongoing symptoms, we strongly recommend reaching out to your primary care provider.|[{ \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team if you are currently experiencing a side effect\" , \"url\":\"/contact?token\u003duntreated-adverse-event\"}] },{\"id\": \"adverseevent-AE-TreatedAndUntreated-2\", \"type\": \"adverse-event\", \"label\": \"Brief loss of consciousness\"}]|at-most-one|",
       "source": {}
     },
     {
-      "summary": "See care team and discuss treatment for hypertension if event recurs.",
+      "summary": "See care team and discuss treatment if event recurs",
       "indicator": "warning",
-      "detail": "{{#patient}}You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but \u003cstrong\u003eif it recurs or doesn\u0027t get better, please contact your care team\u003c/strong\u003e.{{/patient}}{{#careTeam}}Patient has experienced an adverse event, which has been treated. Consider changes to the patient\u0027s course of treatment if the patient requests modification to care or if the benefits of continues treatment do not outweigh the risks.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Acute kidney problem\" , \"url\":\"/contact?token\u003dtreated-adverse-event\"}] } ]|at-most-one|",
+      "detail": "A side effect associated with blood pressure management has been detected and addressed: \u003cstrong\u003eAcute kidney problem\u003c/strong\u003e. If event recurs, adjustment to medication and/or blood pressure goal may be required.|[]|at-most-one|",
       "source": {}
     }
   ]

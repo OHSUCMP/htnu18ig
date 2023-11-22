@@ -59,7 +59,7 @@ define "Meets Inclusion Criteria":
 
 define "Meets Exclusion Criteria":
   Common."Patient Under Age 18"
-    or Common."Patient Over Age 80"
+    or Common."Patient Over Age 100"
     or exists Common."Condition Indicating End Stage Renal Disease"
     or exists Common."Condition Indicating Pregnancy"
 
@@ -284,21 +284,6 @@ define "Physical Activity Indicator Status":
   if exists "Physical Activity Goals Needing Update" then 'warning'
   else 'info'
 
-define "Exclusion Reason":
-  if "Meets Exclusion Criteria" then
-    (
-      'Patient was excluded from non-pharmacologic interventions for hypertension due to '
-      + (
-          if Common."Patient Under Age 18" then 'being under the age of 18.'
-          else if Common."Patient Over Age 80" then 'being over the age of 80.'
-          else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
-          else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
-          else if Common."HTN Crisis" then 'a recent high blood pressure warning.'
-          else ''
-        )
-    )
-  else ''
-
 /* Non-Pharmacologic Interventions Workflow */
 define "Goals":
   (Common.QualifiedGoal(["Goal"])) Goal where Goal.lifecycleStatus = 'active'
@@ -473,3 +458,6 @@ define "TEST Get Average All BP Last 2 Years":
 
 define "TEST Get Average Most Recent BP Set":
   Common."Avg BP"(Common."Most Recent BP Set")
+
+define "TEST Exclusion":
+  Common."Patient Under Age 18"

@@ -107,41 +107,6 @@
           }
         }
       ]
-    },
-    {
-      "title": "Exclusion from Hypertension Monitoring Process",
-      "description": "Recommendation for patient that is excluded from Monitoring.",
-      "trigger": [{
-        "type": "named-event",
-        "name":"patient-view"
-      }],
-      "condition": [
-        {
-          "kind": "applicability",
-          "expression": {
-            "description": "If the patient is excluded from intervention",
-            "language": "text/cql.identifier",
-            "expression": "Meets Exclusion Criteria"
-          }
-        }
-      ],
-      "dynamicValue": [
-        {
-          "path": "action.description",
-          "expression": {
-            "description": "Rationale for why patient is excluded from the hypertension mmonitoring process.",
-            "language": "text/cql.identifier",
-            "expression": "Exclusion Reason"
-          }
-        },
-        {
-          "path": "action.extension",
-          "expression": {
-            "language": "text/cql.identifier",
-            "expression": "Info"
-          }
-        }
-      ]
     }
   ]
 }

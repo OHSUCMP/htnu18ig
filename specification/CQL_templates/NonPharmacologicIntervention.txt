@@ -59,7 +59,7 @@ define "Meets Inclusion Criteria":
 
 define "Meets Exclusion Criteria":
   Common."Patient Under Age 18"
-    or Common."Patient Over Age 80"
+    or Common."Patient Over Age 100"
     or exists Common."Condition Indicating End Stage Renal Disease"
     or exists Common."Condition Indicating Pregnancy"
     or Common."HTN Crisis"
@@ -287,7 +287,7 @@ define "Exclusion Reason":
       'Patient was excluded from non-pharmacologic interventions for hypertension due to '
       + (
           if Common."Patient Under Age 18" then 'being under the age of 18.'
-          else if Common."Patient Over Age 80" then 'being over the age of 80.'
+          else if Common."Patient Over Age 100" then 'being over the age of 80.'
           else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
           else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
           else if Common."HTN Crisis" then 'a recent high blood pressure warning.'

@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "summary": "See care team and discuss treatment for hypertension if event recurs.",
+      "summary": "See care team and discuss treatment if event recurs",
       "indicator": "warning",
-      "detail": "{{#patient}}You recently had a condition recorded that may be an adverse event from high blood pressure treatment; you noted to us that this was already treated, but \u003cstrong\u003eif it recurs or doesn\u0027t get better, please contact your care team\u003c/strong\u003e.{{/patient}}{{#careTeam}}Patient has experienced an adverse event, which has been treated. Consider changes to the patient\u0027s course of treatment if the patient requests modification to care or if the benefits of continues treatment do not outweigh the risks.{{/careTeam}}|[ { \"id\": \"contact-suggestion\", \"label\": \"Contact care team\", \"type\": \"suggestion-link\", \"actions\": [{\"label\":\"Contact your care team about your condition(s): Acute kidney problem, Brief loss of consciousness\" , \"url\":\"/contact?token\u003dtreated-adverse-event\"}] } ]|at-most-one|",
+      "detail": "A side effect associated with blood pressure management has been detected and addressed: \u003cstrong\u003eAcute kidney problem, Brief loss of consciousness\u003c/strong\u003e. If event recurs, adjustment to medication and/or blood pressure goal may be required.|[]|at-most-one|",
       "source": {}
     }
   ]

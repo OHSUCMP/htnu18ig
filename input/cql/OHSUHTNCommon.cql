@@ -347,8 +347,8 @@ define function "Prevalence Period"(condition Condition):
 define "Patient Under Age 18":
   AgeInYearsAt(Today()) < 18
 
-define "Patient Over Age 80":
-  AgeInYearsAt(Today()) > 80
+define "Patient Over Age 100":
+  AgeInYearsAt(Today()) >= 100
 
 // Grab all conditions for patients since we can't limit by code in Epic.
 define "Conditions":
@@ -458,10 +458,10 @@ define "Most Recent BP Reading":
   Last("All BP Observations" O sort by effective)
 
 define "HTN High Crisis":
-  "HTN Crisis BP"("Most Recent BP Reading")
+  "Most Recent BP Reading" is not null and "HTN Crisis BP"("Most Recent BP Reading")
 
 define "HTN Low Crisis":
-  "HTN Low Crisis BP"("Most Recent BP Reading")
+  "Most Recent BP Reading" is not null and "HTN Low Crisis BP"("Most Recent BP Reading")
 
 define "HTN Crisis":
   "HTN High Crisis" or "HTN Low Crisis"
