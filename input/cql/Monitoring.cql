@@ -30,7 +30,7 @@ define "Meets Inclusion Criteria":
 
 define "Meets Exclusion Criteria":
   Common."Patient Under Age 18"
-    or Common."Patient Over Age 80"
+    or Common."Patient Over Age 100"
     or exists Common."Condition Indicating End Stage Renal Disease"
     or exists Common."Condition Indicating Pregnancy"
 
@@ -77,21 +77,6 @@ define "Links":
   else if not Common."Patient has a BP Goal" then '[{"label": "AHA: Understanding High Blood Pressure Readings", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if not Common."Has 12 Home BPs" then '[{"label":"Bell 2021: The potential for overdiagnosis and underdiagnosis because of blood pressure variability: a comparison of the 2017 ACC/AHA, 2018 ESC/ESH and 2019 NICE hypertension guidelines", "url":"https://pubmed.ncbi.nlm.nih.gov/32773652/"}]'
   else '[]'
-
-define "Exclusion Reason":
-  if "Meets Exclusion Criteria" then
-    (
-      'Patient was excluded from monitoring of hypertension due to '
-      + (
-          if Common."Patient Under Age 18" then 'being under the age of 18.'
-          else if Common."Patient Over Age 80" then 'being over the age of 80.'
-          else if exists Common."Condition Indicating End Stage Renal Disease" then 'having end stage renal disease.'
-          else if exists Common."Condition Indicating Pregnancy" then 'being pregnant.'
-          else if Common."HTN Crisis" then 'a recent high blood pressure warning.'
-          else ''
-        )
-    )
-  else ''
 
 define "No Entry into Population":
   not "Meets Inclusion Criteria"

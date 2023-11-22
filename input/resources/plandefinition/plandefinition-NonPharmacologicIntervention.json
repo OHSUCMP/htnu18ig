@@ -279,41 +279,6 @@
           }
         }
       ]
-    },
-    {
-      "title": "Exclusion from Hypertension Non-Pharmacologic Interventions",
-      "description": "Determines if patient was excluded from Hypertension Non-Pharmacologic Interventions Recommendation.",
-      "trigger": [{
-        "type": "named-event",
-        "name":"patient-view"
-      }],
-      "condition": [
-        {
-          "kind": "applicability",
-          "expression": {
-            "description": "Determine if patient is in hypertension exclusion population.",
-            "language": "text/cql.identifier",
-            "expression": "Meets Exclusion Criteria"
-          }
-        }
-      ],
-      "dynamicValue": [
-        {
-          "path": "action.description",
-          "expression": {
-            "description": "Rationale for why patient was excluded from the hypertension diagnosis.",
-            "language": "text/cql.identifier",
-            "expression": "Exclusion Reason"
-          }
-        },
-        {
-          "path": "action.extension",
-          "expression": {
-            "language": "text/cql.identifier",
-            "expression": "Info"
-          }
-        }
-      ]
     }
   ]
 }
