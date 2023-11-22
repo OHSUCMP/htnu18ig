@@ -20,10 +20,10 @@
       "reference": "Patient/MU-TestCase2"
     },
     "effectivePeriod": {
-      "start": "1989-08-14",
-      "end": "2023-09-02"
+      "start": "1989-09-11",
+      "end": "2023-09-30"
     },
-    "issued": "2020-02-26T00:00:00-07:00",
+    "issued": "2020-03-25T00:00:00-07:00",
     "valueCodeableConcept": {
       "coding": [
         {

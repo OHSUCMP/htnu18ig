@@ -30,7 +30,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1998-11-30"
+              "birthDate": "1998-12-28"
             },
             "request": {
               "method": "PUT",

@@ -23,8 +23,8 @@
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
       "period": {
-        "start": "2023-03-22T00:00:00-04:00",
-        "end": "2023-03-22T23:59:59-04:00"
+        "start": "2023-04-19T00:00:00-04:00",
+        "end": "2023-04-19T23:59:59-04:00"
       }
     },
     "request": {
@@ -52,8 +52,8 @@
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
       "period": {
-        "start": "2023-02-22T00:00:00-04:00",
-        "end": "2023-02-22T23:59:59-04:00"
+        "start": "2023-03-22T00:00:00-04:00",
+        "end": "2023-03-22T23:59:59-04:00"
       }
     },
     "request": {
@@ -81,8 +81,8 @@
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
       "period": {
-        "start": "2023-04-22T00:00:00-04:00",
-        "end": "2023-04-22T23:59:59-04:00"
+        "start": "2023-05-20T00:00:00-04:00",
+        "end": "2023-05-20T23:59:59-04:00"
       }
     },
     "request": {
@@ -110,8 +110,8 @@
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
       "period": {
-        "start": "2023-01-22T00:00:00-04:00",
-        "end": "2023-01-22T23:59:59-04:00"
+        "start": "2023-02-19T00:00:00-04:00",
+        "end": "2023-02-19T23:59:59-04:00"
       }
     },
     "request": {
@@ -153,8 +153,8 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "onsetDateTime": "2023-10-18",
-      "recordedDate": "2017-01-23T15:16:21-05:00",
+      "onsetDateTime": "2023-11-15",
+      "recordedDate": "2017-02-20T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -174,7 +174,7 @@
         "given": [ "NotAtGoal" ]
       } ],
       "gender": "female",
-      "birthDate": "1969-01-24"
+      "birthDate": "1969-02-21"
     },
     "request": {
       "method": "PUT",
@@ -210,7 +210,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "effectiveDateTime": "2023-10-03T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-31T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -280,7 +280,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "effectiveDateTime": "2023-10-15T15:16:21-05:00",
+      "effectiveDateTime": "2023-11-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -353,7 +353,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-4"
       },
-      "effectiveDateTime": "2023-09-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-06T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -423,7 +423,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "effectiveDateTime": "2023-09-17T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -493,7 +493,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "effectiveDateTime": "2023-10-06T15:16:21-05:00",
+      "effectiveDateTime": "2023-11-03T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -566,7 +566,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-2"
       },
-      "effectiveDateTime": "2023-08-27T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-24T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -639,7 +639,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-3"
       },
-      "effectiveDateTime": "2023-08-31T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-28T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -712,7 +712,7 @@
       "encounter": {
         "reference": "Encounter/encounter-M-NotAtGoalAboveGoal-1"
       },
-      "effectiveDateTime": "2023-08-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-09-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -782,7 +782,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "effectiveDateTime": "2023-10-08T15:16:21-05:00",
+      "effectiveDateTime": "2023-11-05T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -852,7 +852,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "effectiveDateTime": "2023-09-25T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-23T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -922,7 +922,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "effectiveDateTime": "2023-10-02T15:16:21-05:00",
+      "effectiveDateTime": "2023-10-30T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -992,7 +992,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "effectiveDateTime": "2023-10-12T15:16:21-05:00",
+      "effectiveDateTime": "2023-11-09T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -1051,7 +1051,7 @@
       "subject": {
         "reference": "Patient/M-NotAtGoalAboveGoal"
       },
-      "startDate": "2023-07-08",
+      "startDate": "2023-08-05",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -1083,7 +1083,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-07-08"
+      "statusDate": "2023-08-05"
     },
     "request": {
       "method": "PUT",

@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
-              "performedDateTime": "2020-12-31T11:00:00-06:00",
+              "performedDateTime": "2021-01-28T11:00:00-06:00",
               "reasonReference": [
                 {
                   "reference": "Observation/observation-NPI-OldSmokingCounseling-1"
@@ -100,8 +100,8 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
-              "onsetDateTime": "2017-01-23T15:16:21-05:00",
-              "recordedDate": "2017-01-23T15:16:21-05:00"
+              "onsetDateTime": "2017-02-20T15:16:21-05:00",
+              "recordedDate": "2017-02-20T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -123,7 +123,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1956-07-09"
+              "birthDate": "1956-08-06"
             },
             "request": {
               "method": "PUT",
@@ -153,10 +153,10 @@
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
               "effectivePeriod": {
-                "start": "2003-09-08",
-                "end": "2020-12-31"
+                "start": "2003-10-06",
+                "end": "2021-01-28"
               },
-              "issued": "2020-12-31T00:00:00-07:00",
+              "issued": "2021-01-28T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -232,7 +232,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
-              "effectiveDateTime": "2023-04-22T15:16:21-05:00",
+              "effectiveDateTime": "2023-05-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -320,7 +320,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
-              "effectiveDateTime": "2023-05-22T15:16:21-05:00",
+              "effectiveDateTime": "2023-06-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -399,7 +399,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
-              "effectiveDateTime": "2023-06-22T15:16:21-05:00",
+              "effectiveDateTime": "2023-07-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -487,7 +487,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
-              "effectiveDateTime": "2023-02-22T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -566,7 +566,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
-              "effectiveDateTime": "2023-03-22T15:16:21-05:00",
+              "effectiveDateTime": "2023-04-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -634,10 +634,10 @@
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
               "effectivePeriod": {
-                "start": "2022-03-09",
-                "end": "2022-03-27"
+                "start": "2022-04-06",
+                "end": "2022-04-24"
               },
-              "issued": "2022-03-27T00:00:00-07:00",
+              "issued": "2022-04-24T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -704,7 +704,7 @@
               "subject": {
                 "reference": "Patient/NPI-OldSmokingCounseling"
               },
-              "effectiveDateTime": "2023-01-22T15:16:21-05:00",
+              "effectiveDateTime": "2023-02-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -764,8 +764,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-07-08",
-              "startDate": "2023-07-08",
+              "statusDate": "2023-08-05",
+              "startDate": "2023-08-05",
               "description": {
                 "text": "Goal of 135/85"
               },

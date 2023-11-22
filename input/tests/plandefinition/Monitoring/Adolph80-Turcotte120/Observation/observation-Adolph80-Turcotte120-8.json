@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Adolph80-Turcotte120-2"
         },
-        "effectiveDateTime": "2012-03-23T16:16:21-04:00",
+        "effectiveDateTime": "2012-04-20T16:16:21-04:00",
         "valueQuantity": {
           "value": 37.90579212429527,
           "unit": "Cel",

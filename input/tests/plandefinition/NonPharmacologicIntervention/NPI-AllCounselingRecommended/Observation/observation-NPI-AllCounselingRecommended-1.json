@@ -20,8 +20,8 @@
   "subject": {
     "reference": "Patient/NPI-AllCounselingRecommended"
   },
-  "effectiveDateTime": "2023-08-10T10:00:00-07:00",
-  "issued": "2023-08-10T00:00:00-07:00",
+  "effectiveDateTime": "2023-09-07T10:00:00-07:00",
+  "issued": "2023-09-07T00:00:00-07:00",
   "valueQuantity": {
     "value": 5.1,
     "unit": "Drinks/Day"

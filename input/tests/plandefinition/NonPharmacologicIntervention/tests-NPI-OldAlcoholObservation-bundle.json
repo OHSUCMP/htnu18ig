@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "onsetDateTime": "2017-01-23T15:16:21-05:00",
-      "recordedDate": "2017-01-23T15:16:21-05:00",
+      "onsetDateTime": "2017-02-20T15:16:21-05:00",
+      "recordedDate": "2017-02-20T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -58,7 +58,7 @@
         "given": [ "AlcoholObservation" ]
       } ],
       "gender": "female",
-      "birthDate": "1968-03-22"
+      "birthDate": "1968-04-19"
     },
     "request": {
       "method": "PUT",
@@ -94,7 +94,7 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "effectiveDateTime": "2023-02-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -157,7 +157,7 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -220,7 +220,7 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "effectiveDateTime": "2023-04-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-20T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -290,7 +290,7 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "effectiveDateTime": "2023-05-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -353,7 +353,7 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "effectiveDateTime": "2023-06-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-07-20T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -409,8 +409,8 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "effectiveDateTime": "2018-05-23T10:00:00-07:00",
-      "issued": "2018-05-23T00:00:00-07:00",
+      "effectiveDateTime": "2018-06-20T10:00:00-07:00",
+      "issued": "2018-06-20T00:00:00-07:00",
       "valueQuantity": {
         "value": 4.5,
         "unit": "Drinks/Day"
@@ -453,7 +453,7 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "effectiveDateTime": "2023-01-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -512,7 +512,7 @@
       "subject": {
         "reference": "Patient/NPI-OldAlcoholObservation"
       },
-      "startDate": "2023-07-08",
+      "startDate": "2023-08-05",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -544,7 +544,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-07-08"
+      "statusDate": "2023-08-05"
     },
     "request": {
       "method": "PUT",
