@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "M-NoObservations",
+  "active": true,
+  "name": [
+    {
+      "text": "No Observations",
+      "family": "Observations",
+      "given": [
+        "No"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1952-11-28"
+}

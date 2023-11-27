@@ -121,3 +121,9 @@ define "TEST Condition Is Valid Prevalence Period":
 
 define "TEST Condition Indicating Preexisting Hypertension":
   Common."Condition Indicating Preexisting Hypertension"
+
+define "TEST Problem Conditions":
+  Common."Problem Conditions"
+
+define "TEST Encounter Conditions":
+  Common."Encounter Conditions"

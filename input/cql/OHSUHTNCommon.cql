@@ -341,6 +341,10 @@ define function "Prevalence Period"(condition Condition):
     // The condition is not active but has no abatement date, so we can't say when it ended
     Interval[start of "Normalize Interval"(condition.onset), null)
 
+/* Extract the Category code from the Condition */
+define function "Condition Category"(condition FHIR.Condition):
+  FHIRHelpers.ToCode(singleton from (condition.category.coding c where c.system = 'http://terminology.hl7.org/CodeSystem/condition-category'))
+
 /***** Common Data *****/
 
 /* Potential Exclusion Criteria */
@@ -350,21 +354,15 @@ define "Patient Under Age 18":
 define "Patient Over Age 100":
   AgeInYearsAt(Today()) >= 100
 
-// Grab all conditions for patients since we can't limit by code in Epic.
+// This query will not work in Epic so we rely on at least one Condition to be present in the prefetch
 define "Conditions":
-  "Problem Conditions" union "Encounter Conditions"
+  QualifiedCondition(["Condition"])
 
-// Now that everything comes in through the prefetch, we should be able to just fetch ["Conditions"]
-// But I'm leaving in place on the outside chance that a person has no conditions whatsoever.
-// With nothing in the prefetch, CQF Ruler would call out to Epic and the recommendation would fail
-// if we try to get conditions without including the category.
-// Epic requires category to be provided
 define "Problem Conditions":
-  (QualifiedCondition(["Condition": category ~ "problem-list-item"]))
+  "Conditions" C where "Condition Category"(C) ~ "problem-list-item"
 
-// Epic requires category to be provided
 define "Encounter Conditions":
-  (QualifiedCondition(["Condition": category ~ "encounter-diagnosis"]))
+  "Conditions" C where "Condition Category"(C) ~ "encounter-diagnosis"
 
 define "Condition Indicating End Stage Renal Disease":
   "Conditions" Condition

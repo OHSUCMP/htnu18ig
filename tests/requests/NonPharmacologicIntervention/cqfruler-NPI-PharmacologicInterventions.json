@@ -1,6 +1,6 @@
 {
   "hookInstance": "test",
-  "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
+  "fhirServer": "https://gw.interop.community/COACHsandbox/open",
   "hook": "patient-view",
   "context": {
     "userId": "Practitioner/example",

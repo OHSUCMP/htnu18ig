@@ -1,0 +1,102 @@
+{
+  "hookInstance": "test",
+  "fhirServer": "https://gw.interop.community/COACHsandbox/open",
+  "hook": "patient-view",
+  "context": {
+    "userId": "Practitioner/example",
+    "patientId": "M-NoObservations"
+  },
+  "prefetch": {
+    "item1": {
+      "response": {
+        "status": "200 OK"
+      },
+      "resource": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Condition",
+              "id": "condition-M-NoObservations-1",
+              "note": [
+                {
+                  "text": "Indicates Preexisting Diagnosis of Hypertension"
+                }
+              ],
+              "category": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                      "code": "problem-list-item",
+                      "display": "Problem List Item"
+                    }
+                  ],
+                  "text": "Problem List Item"
+                }
+              ],
+              "clinicalStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                    "code": "active"
+                  }
+                ]
+              },
+              "verificationStatus": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                    "code": "confirmed"
+                  }
+                ]
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "59621000",
+                    "display": "Hypertension"
+                  }
+                ],
+                "text": "Hypertension"
+              },
+              "subject": {
+                "reference": "Patient/M-NoObservations"
+              },
+              "onsetDateTime": "2017-02-20T15:16:21-05:00",
+              "recordedDate": "2017-02-20T15:16:21-05:00"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Patient",
+              "id": "M-NoObservations",
+              "active": true,
+              "name": [
+                {
+                  "text": "No Observations",
+                  "family": "Observations",
+                  "given": [
+                    "No"
+                  ]
+                }
+              ],
+              "gender": "female",
+              "birthDate": "1952-11-28"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

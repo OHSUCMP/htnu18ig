@@ -1,0 +1,44 @@
+{
+  "hookInstance": "test",
+  "fhirServer": "https://gw.interop.community/COACHsandbox/open",
+  "hook": "patient-view",
+  "context": {
+    "userId": "Practitioner/example",
+    "patientId": "M-NoData"
+  },
+  "prefetch": {
+    "item1": {
+      "response": {
+        "status": "200 OK"
+      },
+      "resource": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Patient",
+              "id": "M-NoData",
+              "active": true,
+              "name": [
+                {
+                  "text": "No Data",
+                  "family": "Data",
+                  "given": [
+                    "No"
+                  ]
+                }
+              ],
+              "gender": "female",
+              "birthDate": "1967-04-17"
+            },
+            "request": {
+              "method": "PUT",
+              "url": "request-url"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
