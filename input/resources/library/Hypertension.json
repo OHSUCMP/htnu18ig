@@ -306,27 +306,7 @@
   }, {
     "type": "Condition",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "category", "code" ],
-    "codeFilter": [ {
-      "path": "category",
-      "code": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "problem-list-item",
-        "display": "Problem List Item"
-      } ]
-    } ]
-  }, {
-    "type": "Condition",
-    "profile": [ "http://hl7.org/fhir/StructureDefinition/Condition" ],
-    "mustSupport": [ "category", "code" ],
-    "codeFilter": [ {
-      "path": "category",
-      "code": [ {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-        "code": "encounter-diagnosis",
-        "display": "Encounter Diagnosis"
-      } ]
-    } ]
+    "mustSupport": [ "code" ]
   }, {
     "type": "Observation",
     "profile": [ "http://hl7.org/fhir/StructureDefinition/Observation" ],
