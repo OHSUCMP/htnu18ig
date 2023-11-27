@@ -4,7 +4,7 @@
   "hook": "patient-view",
   "context": {
     "userId": "Practitioner/example",
-    "patientId": "NPI-ExcludedNotDiagnosed"
+    "patientId": "M-NoData"
   },
   "prefetch": {
     "item1": {
@@ -18,19 +18,19 @@
           {
             "resource": {
               "resourceType": "Patient",
-              "id": "NPI-ExcludedNotDiagnosed",
+              "id": "M-NoData",
               "active": true,
               "name": [
                 {
-                  "text": "Excluded Not Diagnosed",
-                  "family": "NotDiagnosed",
+                  "text": "No Data",
+                  "family": "Data",
                   "given": [
-                    "Excluded"
+                    "No"
                   ]
                 }
               ],
-              "gender": "male",
-              "birthDate": "1998-12-28"
+              "gender": "female",
+              "birthDate": "1967-04-17"
             },
             "request": {
               "method": "PUT",

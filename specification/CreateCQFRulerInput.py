@@ -18,7 +18,7 @@ for patient_folder in os.listdir(patient_directory):
         ident = patient_folder
         template = {
           "hookInstance": "test",
-          "fhirServer": "https://api.logicahealth.org/htnu18r42/open",
+          "fhirServer": "https://gw.interop.community/COACHsandbox/open",
           "hook": "patient-view",
           "context": {
             "userId": "Practitioner/example",
