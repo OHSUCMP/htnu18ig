@@ -357,6 +357,21 @@
       },
       "category": [ {
         "coding": [ {
+          "system": "http://loinc.org",
+          "code": "75310-3",
+          "display": "Health concerns"
+        }, {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+          "code": "health-concern",
+          "display": "Health Concern"
+        } ],
+        "text": "Health Concern"
+      }, {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "xxxxx",
+          "display": "A different coding representing a problem list condition"
+        }, {
           "system": "http://terminology.hl7.org/CodeSystem/condition-category",
           "code": "problem-list-item",
           "display": "Problem List Item"
@@ -429,6 +444,51 @@
     "request": {
       "method": "PUT",
       "url": "Condition/condition-Adolph80-Turcotte120-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Condition",
+      "id": "condition-Adolph80-Turcotte120-3",
+      "clinicalStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        } ]
+      },
+      "verificationStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed"
+        } ]
+      },
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        } ],
+        "text": "Encounter Diagnosis"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "59621000",
+          "display": "Hypertension"
+        } ],
+        "text": "Hypertension"
+      },
+      "subject": {
+        "reference": "Patient/Adolph80-Turcotte120"
+      },
+      "encounter": {
+        "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
+      },
+      "onsetDateTime": "2017-02-20T15:16:21-05:00",
+      "recordedDate": "2017-02-20T15:16:21-05:00"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Condition/condition-Adolph80-Turcotte120-3"
     }
   }, {
     "resource": {
