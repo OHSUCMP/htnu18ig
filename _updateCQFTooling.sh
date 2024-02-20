@@ -12,8 +12,8 @@ echo ${dlurl}
 input_cache_path=./input-cache/
 
 set -e
-if ! type "curl" > /dev/null; then
-	echo "ERROR: Script needs curl to download latest IG Tooling. Please install curl."
+if ! type "wget" > /dev/null; then
+	echo "ERROR: Script needs wget to download latest IG Tooling. Please install wget."
 	exit 1
 fi
 
@@ -24,7 +24,6 @@ message="Ok? [Y/N]"
 read -r -p "$message" response
 if [[ "$response" =~ ^([yY])$ ]]; then
 	wget -O "${jarlocation}" "${dlurl}"
-	#curl $dlurl -L -o "$jarlocation" --create-dirs
 	echo "Download complete."
 else
 	echo cancel...
