@@ -13,7 +13,7 @@
         "given": [ "Two" ]
       } ],
       "gender": "male",
-      "birthDate": "1984-02-15"
+      "birthDate": "1984-03-02"
     },
     "request": {
       "method": "PUT",
@@ -49,7 +49,7 @@
       "subject": {
         "reference": "Patient/HE-TwoHighBPs"
       },
-      "effectiveDateTime": "2023-11-20T15:15:21-05:00",
+      "effectiveDateTime": "2023-12-06T15:15:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -119,7 +119,7 @@
       "subject": {
         "reference": "Patient/HE-TwoHighBPs"
       },
-      "effectiveDateTime": "2023-11-20T15:23:21-05:00",
+      "effectiveDateTime": "2023-12-06T15:23:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],

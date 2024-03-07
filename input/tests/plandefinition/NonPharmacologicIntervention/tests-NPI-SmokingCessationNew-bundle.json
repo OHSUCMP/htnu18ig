@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
-      "onsetDateTime": "2017-02-20T15:16:21-05:00",
-      "recordedDate": "2017-02-20T15:16:21-05:00",
+      "onsetDateTime": "2017-03-08T15:16:21-05:00",
+      "recordedDate": "2017-03-08T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -58,7 +58,7 @@
         "given": [ "SmokingCessation" ]
       } ],
       "gender": "female",
-      "birthDate": "1959-02-22"
+      "birthDate": "1959-03-10"
     },
     "request": {
       "method": "PUT",
@@ -94,7 +94,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
-      "effectiveDateTime": "2023-07-20T15:16:21-05:00",
+      "effectiveDateTime": "2023-08-05T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -164,7 +164,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
-      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-07-05T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -220,10 +220,10 @@
         "reference": "Patient/NPI-SmokingCessationNew"
       },
       "effectivePeriod": {
-        "start": "1979-09-11",
-        "end": "2020-03-25"
+        "start": "1979-09-27",
+        "end": "2020-04-10"
       },
-      "issued": "2020-03-25T00:00:00-07:00",
+      "issued": "2020-04-10T00:00:00-07:00",
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://snomed.info/sct",
@@ -282,7 +282,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
-      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-07T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -345,7 +345,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
-      "effectiveDateTime": "2023-02-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-07T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -408,7 +408,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
-      "effectiveDateTime": "2023-05-20T15:16:21-05:00",
+      "effectiveDateTime": "2023-06-05T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -471,7 +471,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
-      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-05T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -530,7 +530,7 @@
       "subject": {
         "reference": "Patient/NPI-SmokingCessationNew"
       },
-      "startDate": "2023-08-05",
+      "startDate": "2023-08-21",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -562,7 +562,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2023-08-05"
+      "statusDate": "2023-08-21"
     },
     "request": {
       "method": "PUT",

@@ -65,8 +65,8 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "onsetDateTime": "2023-11-15",
-              "recordedDate": "2023-05-11T15:16:21-05:00"
+              "onsetDateTime": "2023-12-01",
+              "recordedDate": "2023-05-27T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -88,7 +88,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1958-03-05"
+              "birthDate": "1958-03-21"
             },
             "request": {
               "method": "PUT",
@@ -141,7 +141,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "authoredOn": "2023-06-17T16:00:00-08:00"
+              "authoredOn": "2023-07-03T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -191,7 +191,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-14T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-30T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -279,7 +279,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-04T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -367,7 +367,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-25T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -455,7 +455,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-23T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -543,7 +543,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-01T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -631,7 +631,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-12T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -719,7 +719,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-21T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -807,7 +807,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-03T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -895,7 +895,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-19T15:16:21-05:00",
+              "effectiveDateTime": "2023-12-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -983,7 +983,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-16T15:16:21-05:00",
+              "effectiveDateTime": "2023-12-02T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1071,7 +1071,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-05T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-21T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1159,7 +1159,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-18T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-03T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1247,7 +1247,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-16T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-01T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1335,7 +1335,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-07T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-23T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1423,7 +1423,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-09-27T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-13T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1511,7 +1511,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-09-30T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-16T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1599,7 +1599,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-21T15:16:21-05:00",
+              "effectiveDateTime": "2023-12-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1687,7 +1687,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-10T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1775,7 +1775,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-13T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-29T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1863,7 +1863,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-10T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-26T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1942,8 +1942,8 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-03-11T03:14:57-05:00",
-              "issued": "2023-03-11T03:14:57.429-05:00",
+              "effectiveDateTime": "2023-03-27T03:14:57-05:00",
+              "issued": "2023-03-27T03:14:57.429-05:00",
               "valueQuantity": {
                 "value": 27.690689692990766,
                 "unit": "kg/m2",
@@ -1999,7 +1999,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-30T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2087,7 +2087,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-10-28T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-13T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2175,7 +2175,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-09-24T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-10T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2263,7 +2263,7 @@
               "subject": {
                 "reference": "Patient/MU-TestCase6"
               },
-              "effectiveDateTime": "2023-11-05T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-21T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2323,8 +2323,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-10-23",
-              "startDate": "2023-10-23",
+              "statusDate": "2023-11-08",
+              "startDate": "2023-11-08",
               "description": {
                 "text": "Goal of 135/85"
               },

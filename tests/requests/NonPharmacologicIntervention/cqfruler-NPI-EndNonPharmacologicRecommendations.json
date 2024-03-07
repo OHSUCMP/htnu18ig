@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
-              "performedDateTime": "2023-01-29T11:00:00-06:00"
+              "performedDateTime": "2023-02-14T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -95,8 +95,8 @@
               "subject": {
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
-              "onsetDateTime": "2017-02-20T15:16:21-05:00",
-              "recordedDate": "2017-02-20T15:16:21-05:00"
+              "onsetDateTime": "2017-03-08T15:16:21-05:00",
+              "recordedDate": "2017-03-08T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -118,7 +118,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1948-02-23"
+              "birthDate": "1948-03-10"
             },
             "request": {
               "method": "PUT",
@@ -168,7 +168,7 @@
               "subject": {
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
-              "effectiveDateTime": "2023-07-20T15:16:21-05:00",
+              "effectiveDateTime": "2023-08-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -247,7 +247,7 @@
               "subject": {
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
-              "effectiveDateTime": "2023-06-19T15:16:21-05:00",
+              "effectiveDateTime": "2023-07-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -315,10 +315,10 @@
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
               "effectivePeriod": {
-                "start": "2003-10-06",
-                "end": "2023-01-29"
+                "start": "2003-10-22",
+                "end": "2023-02-14"
               },
-              "issued": "2023-01-29T00:00:00-07:00",
+              "issued": "2023-02-14T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -394,7 +394,7 @@
               "subject": {
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
-              "effectiveDateTime": "2023-03-22T15:16:21-05:00",
+              "effectiveDateTime": "2023-04-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -473,7 +473,7 @@
               "subject": {
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
-              "effectiveDateTime": "2023-02-19T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -561,7 +561,7 @@
               "subject": {
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
-              "effectiveDateTime": "2023-05-20T15:16:21-05:00",
+              "effectiveDateTime": "2023-06-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -640,7 +640,7 @@
               "subject": {
                 "reference": "Patient/NPI-EndNonPharmacologicRecommendations"
               },
-              "effectiveDateTime": "2023-04-19T15:16:21-05:00",
+              "effectiveDateTime": "2023-05-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -705,8 +705,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-08-04",
-              "startDate": "2023-08-04",
+              "statusDate": "2023-08-20",
+              "startDate": "2023-08-20",
               "description": {
                 "text": "Goal of 135/85"
               },

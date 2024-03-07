@@ -38,7 +38,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "performedDateTime": "2023-02-21T11:00:00-06:00"
+              "performedDateTime": "2023-03-09T11:00:00-06:00"
             },
             "request": {
               "method": "PUT",
@@ -95,8 +95,8 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "onsetDateTime": "2017-03-15T15:16:21-05:00",
-              "recordedDate": "2017-03-15T15:16:21-05:00"
+              "onsetDateTime": "2017-03-31T15:16:21-05:00",
+              "recordedDate": "2017-03-31T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -118,7 +118,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1986-07-18"
+              "birthDate": "1986-08-03"
             },
             "request": {
               "method": "PUT",
@@ -191,7 +191,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "authoredOn": "2023-06-17T16:00:00-08:00"
+              "authoredOn": "2023-07-03T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -216,7 +216,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "authoredOn": "2022-06-17T16:00:00-08:00"
+              "authoredOn": "2022-07-03T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -241,7 +241,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "authoredOn": "2023-06-17T16:00:00-08:00"
+              "authoredOn": "2023-07-03T16:00:00-08:00"
             },
             "request": {
               "method": "PUT",
@@ -291,7 +291,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-10-02T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -379,7 +379,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-11-04T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-20T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -467,7 +467,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-06-12T15:16:21-05:00",
+              "effectiveDateTime": "2023-06-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -555,7 +555,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-05-12T15:16:21-05:00",
+              "effectiveDateTime": "2023-05-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -643,7 +643,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-09-05T15:16:21-05:00",
+              "effectiveDateTime": "2023-09-21T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -722,7 +722,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-04-14T15:16:21-05:00",
+              "effectiveDateTime": "2023-04-30T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -810,7 +810,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-10-06T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-22T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -898,7 +898,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-10-12T15:16:21-05:00",
+              "effectiveDateTime": "2023-10-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -977,7 +977,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-03-14T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-30T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1045,10 +1045,10 @@
                 "reference": "Patient/P-ClonidinePatch"
               },
               "effectivePeriod": {
-                "start": "2003-10-29",
-                "end": "2023-02-21"
+                "start": "2003-11-14",
+                "end": "2023-03-09"
               },
-              "issued": "2023-02-21T00:00:00-07:00",
+              "issued": "2023-03-09T00:00:00-07:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -1124,7 +1124,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-10-17T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-02T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1212,7 +1212,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-10-21T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-06T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1300,7 +1300,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-10-29T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-14T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1388,7 +1388,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-08-12T15:16:21-05:00",
+              "effectiveDateTime": "2023-08-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1467,7 +1467,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-07-12T15:16:21-05:00",
+              "effectiveDateTime": "2023-07-28T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1555,7 +1555,7 @@
               "subject": {
                 "reference": "Patient/P-ClonidinePatch"
               },
-              "effectiveDateTime": "2023-11-02T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-18T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1620,8 +1620,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-02-28",
-              "startDate": "2023-02-28",
+              "statusDate": "2023-03-16",
+              "startDate": "2023-03-16",
               "description": {
                 "text": "Goal of 135/85"
               },

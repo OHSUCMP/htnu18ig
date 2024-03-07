@@ -29,7 +29,7 @@
         "encounter": {
           "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
         },
-        "effectiveDateTime": "2014-02-03T15:16:21-05:00",
+        "effectiveDateTime": "2014-02-19T15:16:21-05:00",
         "valueQuantity": {
           "value": 61.61848203135999,
           "unit": "kg",

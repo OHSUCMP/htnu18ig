@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/M-RecommendMoreBPs"
       },
-      "onsetDateTime": "2017-02-20T15:16:21-05:00",
-      "recordedDate": "2017-02-20T15:16:21-05:00",
+      "onsetDateTime": "2017-03-08T15:16:21-05:00",
+      "recordedDate": "2017-03-08T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -58,7 +58,7 @@
         "given": [ "Recommend" ]
       } ],
       "gender": "male",
-      "birthDate": "1998-12-28"
+      "birthDate": "1999-01-13"
     },
     "request": {
       "method": "PUT",
@@ -94,7 +94,7 @@
       "subject": {
         "reference": "Patient/M-RecommendMoreBPs"
       },
-      "effectiveDateTime": "2023-01-27T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-12T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -164,7 +164,7 @@
       "subject": {
         "reference": "Patient/M-RecommendMoreBPs"
       },
-      "effectiveDateTime": "2023-01-30T15:16:21-05:00",
+      "effectiveDateTime": "2023-02-15T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -223,7 +223,7 @@
       "subject": {
         "reference": "Patient/M-RecommendMoreBPs"
       },
-      "startDate": "2022-03-07",
+      "startDate": "2022-03-23",
       "target": [ {
         "measure": {
           "coding": [ {
@@ -255,7 +255,7 @@
           "code": "mm[Hg]"
         }
       } ],
-      "statusDate": "2022-03-07"
+      "statusDate": "2022-03-23"
     },
     "request": {
       "method": "PUT",

@@ -20,8 +20,8 @@
   "subject": {
     "reference": "Patient/NPI-OldAlcoholCounseling"
   },
-  "effectiveDateTime": "2023-06-20T10:00:00-07:00",
-  "issued": "2023-06-20T00:00:00-07:00",
+  "effectiveDateTime": "2023-07-06T10:00:00-07:00",
+  "issued": "2023-07-06T00:00:00-07:00",
   "valueQuantity": {
     "value": 2.1,
     "unit": "Drinks/Day"

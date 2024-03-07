@@ -20,8 +20,8 @@
   "subject": {
     "reference": "Patient/NPI-AlcoholModerationGoalExists"
   },
-  "effectiveDateTime": "2023-01-20T10:00:00-07:00",
-  "issued": "2023-01-20T00:00:00-07:00",
+  "effectiveDateTime": "2023-02-05T10:00:00-07:00",
+  "issued": "2023-02-05T00:00:00-07:00",
   "valueQuantity": {
     "value": 3,
     "unit": "Drinks/Day"

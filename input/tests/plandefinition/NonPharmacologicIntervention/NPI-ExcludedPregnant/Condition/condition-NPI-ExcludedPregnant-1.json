@@ -48,7 +48,7 @@
   "subject": {
     "reference": "Patient/NPI-ExcludedPregnant"
   },
-  "onsetDateTime": "2021-01-03T19:02:10-04:00",
-  "abatementDateTime": "2021-09-23T17:04:12",
-  "recordedDate": "2021-01-03T19:02:10-04:00"
+  "onsetDateTime": "2021-01-19T19:02:10-04:00",
+  "abatementDateTime": "2021-10-09T17:04:12",
+  "recordedDate": "2021-01-19T19:02:10-04:00"
 }

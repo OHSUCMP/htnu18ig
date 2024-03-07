@@ -8,7 +8,7 @@ import requests
 
 directory = "/Users/yateam/HTN/htnu18ig/input/tests/plandefinition"
 print("Choose resources to load or hit enter to load all:")
-resources = input("hypertension, ae, monitoring, pharma, nonpharm, emergency\n").lower()
+resources = input("hypertension, ae, monitoring, pharma, nonpharm, emergency, other\n").lower()
 if resources == "hypertension":
  	directory = directory + "/Hypertension"
 elif resources == "ae":
@@ -21,6 +21,8 @@ elif resources == "nonpharm":
     directory = directory + "/NonPharmacologicIntervention"
 elif resources == "emergency":
     directory = directory + "/HypertensiveEmergency"  
+elif resources == "other":
+    directory = directory + "/Other"  
 
 logica_url = "https://api.logicahealth.org/coachdev/open/"
 smart_url = "https://r4.smarthealthit.org/"

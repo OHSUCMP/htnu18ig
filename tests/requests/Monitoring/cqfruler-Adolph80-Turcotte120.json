@@ -41,8 +41,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2012-01-23T15:16:21-05:00",
-                "end": "2012-01-23T15:46:21-05:00"
+                "start": "2012-02-08T15:16:21-05:00",
+                "end": "2012-02-08T15:46:21-05:00"
               }
             },
             "request": {
@@ -76,8 +76,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2021-03-01T15:16:21-05:00",
-                "end": "2021-03-01T15:31:21-05:00"
+                "start": "2021-03-17T15:16:21-05:00",
+                "end": "2021-03-17T15:31:21-05:00"
               }
             },
             "request": {
@@ -111,8 +111,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2015-02-09T15:16:21-05:00",
-                "end": "2015-02-09T15:46:21-05:00"
+                "start": "2015-02-25T15:16:21-05:00",
+                "end": "2015-02-25T15:46:21-05:00"
               }
             },
             "request": {
@@ -146,8 +146,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2016-02-15T15:16:21-05:00",
-                "end": "2016-02-15T15:31:21-05:00"
+                "start": "2016-03-02T15:16:21-05:00",
+                "end": "2016-03-02T15:31:21-05:00"
               }
             },
             "request": {
@@ -181,8 +181,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2018-02-26T15:16:21-05:00",
-                "end": "2018-02-26T15:46:21-05:00"
+                "start": "2018-03-14T15:16:21-05:00",
+                "end": "2018-03-14T15:46:21-05:00"
               }
             },
             "request": {
@@ -216,8 +216,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2013-01-28T15:16:21-05:00",
-                "end": "2013-01-28T15:31:21-05:00"
+                "start": "2013-02-13T15:16:21-05:00",
+                "end": "2013-02-13T15:31:21-05:00"
               }
             },
             "request": {
@@ -251,8 +251,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2017-02-20T15:16:21-05:00",
-                "end": "2017-02-20T15:31:21-05:00"
+                "start": "2017-03-08T15:16:21-05:00",
+                "end": "2017-03-08T15:31:21-05:00"
               }
             },
             "request": {
@@ -286,8 +286,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2017-03-22T15:16:21-05:00",
-                "end": "2017-03-22T15:31:21-05:00"
+                "start": "2017-04-07T15:16:21-05:00",
+                "end": "2017-04-07T15:31:21-05:00"
               }
             },
             "request": {
@@ -321,8 +321,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2014-02-03T15:16:21-05:00",
-                "end": "2014-02-03T15:46:21-05:00"
+                "start": "2014-02-19T15:16:21-05:00",
+                "end": "2014-02-19T15:46:21-05:00"
               }
             },
             "request": {
@@ -356,8 +356,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2012-04-20T16:16:21-04:00",
-                "end": "2012-04-20T16:46:21-04:00"
+                "start": "2012-05-06T16:16:21-04:00",
+                "end": "2012-05-06T16:46:21-04:00"
               },
               "reasonCode": [
                 {
@@ -402,8 +402,8 @@
                 "display": "Mr. Adolph80 Turcotte120"
               },
               "period": {
-                "start": "2012-04-30T16:16:21-04:00",
-                "end": "2012-04-30T16:31:21-04:00"
+                "start": "2012-05-16T16:16:21-04:00",
+                "end": "2012-05-16T16:31:21-04:00"
               }
             },
             "request": {
@@ -479,9 +479,9 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-2"
               },
-              "onsetDateTime": "2012-04-20T16:16:21-04:00",
-              "abatementDateTime": "2012-05-02T16:16:21-04:00",
-              "recordedDate": "2012-04-20T16:16:21-04:00"
+              "onsetDateTime": "2012-05-06T16:16:21-04:00",
+              "abatementDateTime": "2012-05-18T16:16:21-04:00",
+              "recordedDate": "2012-05-06T16:16:21-04:00"
             },
             "request": {
               "method": "PUT",
@@ -536,8 +536,8 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "onsetDateTime": "2017-02-20T15:16:21-05:00",
-              "recordedDate": "2017-02-20T15:16:21-05:00"
+              "onsetDateTime": "2017-03-08T15:16:21-05:00",
+              "recordedDate": "2017-03-08T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -592,8 +592,8 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "onsetDateTime": "2017-02-20T15:16:21-05:00",
-              "recordedDate": "2017-02-20T15:16:21-05:00"
+              "onsetDateTime": "2017-03-08T15:16:21-05:00",
+              "recordedDate": "2017-03-08T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -716,7 +716,7 @@
                 }
               ],
               "gender": "male",
-              "birthDate": "1998-12-28",
+              "birthDate": "1999-01-13",
               "address": [
                 {
                   "extension": [
@@ -805,7 +805,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 11.42964050112979,
                 "unit": "fL",
@@ -850,7 +850,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-1"
               },
-              "effectiveDateTime": "2012-01-23T15:16:21-05:00",
+              "effectiveDateTime": "2012-02-08T15:16:21-05:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -899,7 +899,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-7"
               },
-              "effectiveDateTime": "2016-02-15T15:16:21-05:00",
+              "effectiveDateTime": "2016-03-02T15:16:21-05:00",
               "valueQuantity": {
                 "value": 69.89524916387772,
                 "unit": "kg",
@@ -944,7 +944,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 10.15347517739332,
                 "unit": "fL",
@@ -989,7 +989,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-3"
               },
-              "effectiveDateTime": "2012-04-30T16:16:21-04:00",
+              "effectiveDateTime": "2012-05-16T16:16:21-04:00",
               "valueQuantity": {
                 "value": 51.88516084970756,
                 "unit": "kg",
@@ -1034,7 +1034,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-10"
               },
-              "effectiveDateTime": "2018-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2018-03-14T15:16:21-05:00",
               "valueQuantity": {
                 "value": 24.609293550347665,
                 "unit": "kg/m2",
@@ -1079,7 +1079,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 1.4929816341087787,
                 "unit": "{score}",
@@ -1124,7 +1124,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
               },
-              "effectiveDateTime": "2014-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2014-02-19T15:16:21-05:00",
               "valueQuantity": {
                 "value": 74.28062098887891,
                 "unit": "%",
@@ -1169,7 +1169,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 174.12025383976408,
                 "unit": "cm",
@@ -1214,7 +1214,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 1.874426249946198,
                 "unit": "{score}",
@@ -1259,7 +1259,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
               },
-              "effectiveDateTime": "2014-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2014-02-19T15:16:21-05:00",
               "valueQuantity": {
                 "value": 21.955717518451735,
                 "unit": "kg/m2",
@@ -1304,7 +1304,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 170.9424121966577,
                 "unit": "cm",
@@ -1349,7 +1349,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-10"
               },
-              "effectiveDateTime": "2018-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2018-03-14T15:16:21-05:00",
               "valueQuantity": {
                 "value": 72.87760875758599,
                 "unit": "%",
@@ -1394,7 +1394,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-3"
               },
-              "effectiveDateTime": "2012-04-30T16:16:21-04:00",
+              "effectiveDateTime": "2012-05-16T16:16:21-04:00",
               "valueQuantity": {
                 "value": 0.04763007777996675,
                 "unit": "{score}",
@@ -1439,7 +1439,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -1488,7 +1488,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-7"
               },
-              "effectiveDateTime": "2016-02-15T15:16:21-05:00",
+              "effectiveDateTime": "2016-03-02T15:16:21-05:00",
               "valueQuantity": {
                 "value": 23.445308955896923,
                 "unit": "kg/m2",
@@ -1533,7 +1533,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-1"
               },
-              "effectiveDateTime": "2012-01-23T15:16:21-05:00",
+              "effectiveDateTime": "2012-02-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1610,7 +1610,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 439.3980967506339,
                 "unit": "fL",
@@ -1655,7 +1655,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "effectiveDateTime": "2017-02-20T15:16:21-05:00",
+              "effectiveDateTime": "2017-03-08T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1732,7 +1732,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 4.227281919758885,
                 "unit": "10*6/uL",
@@ -1777,7 +1777,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-4"
               },
-              "effectiveDateTime": "2013-01-28T15:16:21-05:00",
+              "effectiveDateTime": "2013-02-13T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -1854,7 +1854,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 5.278790188767266,
                 "unit": "10*6/uL",
@@ -1899,7 +1899,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 286.00865840305005,
                 "unit": "10*3/uL",
@@ -1944,7 +1944,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-1"
               },
-              "effectiveDateTime": "2012-01-23T15:16:21-05:00",
+              "effectiveDateTime": "2012-02-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 153.41810839378186,
                 "unit": "cm",
@@ -1989,7 +1989,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "effectiveDateTime": "2017-02-20T15:16:21-05:00",
+              "effectiveDateTime": "2017-03-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 1.0338241200420342,
                 "unit": "{score}",
@@ -2034,7 +2034,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 82.43879703121422,
                 "unit": "fL",
@@ -2079,7 +2079,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-4"
               },
-              "effectiveDateTime": "2013-01-28T15:16:21-05:00",
+              "effectiveDateTime": "2013-02-13T15:16:21-05:00",
               "valueQuantity": {
                 "value": 0.824974949992261,
                 "unit": "{score}",
@@ -2124,7 +2124,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-4"
               },
-              "effectiveDateTime": "2013-01-28T15:16:21-05:00",
+              "effectiveDateTime": "2013-02-13T15:16:21-05:00",
               "valueQuantity": {
                 "value": 161.65791016721755,
                 "unit": "cm",
@@ -2169,7 +2169,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 29.040943101156195,
                 "unit": "pg",
@@ -2214,7 +2214,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "effectiveDateTime": "2017-02-20T15:16:21-05:00",
+              "effectiveDateTime": "2017-03-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 72.50292570481244,
                 "unit": "kg",
@@ -2259,7 +2259,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 41.950145898075746,
                 "unit": "fL",
@@ -2304,7 +2304,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 12.838125278365496,
                 "unit": "g/dL",
@@ -2349,7 +2349,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-4"
               },
-              "effectiveDateTime": "2013-01-28T15:16:21-05:00",
+              "effectiveDateTime": "2013-02-13T15:16:21-05:00",
               "valueQuantity": {
                 "value": 76.88805457885766,
                 "unit": "%",
@@ -2394,7 +2394,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 8.486532362678169,
                 "unit": "10*3/uL",
@@ -2439,7 +2439,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "effectiveDateTime": "2017-02-20T15:16:21-05:00",
+              "effectiveDateTime": "2017-03-08T15:16:21-05:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -2488,7 +2488,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-4"
               },
-              "effectiveDateTime": "2013-01-28T15:16:21-05:00",
+              "effectiveDateTime": "2013-02-13T15:16:21-05:00",
               "valueQuantity": {
                 "value": 21.5008157940644,
                 "unit": "kg/m2",
@@ -2533,7 +2533,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "effectiveDateTime": "2017-02-20T15:16:21-05:00",
+              "effectiveDateTime": "2017-03-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 24.08552967973113,
                 "unit": "kg/m2",
@@ -2578,7 +2578,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2655,7 +2655,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
               },
-              "effectiveDateTime": "2014-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2014-02-19T15:16:21-05:00",
               "valueQuantity": {
                 "value": 167.52579222508706,
                 "unit": "cm",
@@ -2700,7 +2700,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2777,7 +2777,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-9"
               },
-              "effectiveDateTime": "2017-03-22T15:16:21-05:00",
+              "effectiveDateTime": "2017-04-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -2854,7 +2854,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-3"
               },
-              "effectiveDateTime": "2012-04-30T16:16:21-04:00",
+              "effectiveDateTime": "2012-05-16T16:16:21-04:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -2903,7 +2903,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 34.04022566342309,
                 "unit": "g/dL",
@@ -2948,7 +2948,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-7"
               },
-              "effectiveDateTime": "2016-02-15T15:16:21-05:00",
+              "effectiveDateTime": "2016-03-02T15:16:21-05:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -2997,7 +2997,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-1"
               },
-              "effectiveDateTime": "2012-01-23T15:16:21-05:00",
+              "effectiveDateTime": "2012-02-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 49.968280575021296,
                 "unit": "kg",
@@ -3042,7 +3042,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 43.151519749296064,
                 "unit": "%",
@@ -3087,7 +3087,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 41.31209348817765,
                 "unit": "%",
@@ -3132,7 +3132,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 35.81009269280029,
                 "unit": "g/dL",
@@ -3177,7 +3177,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 29.813072409507768,
                 "unit": "pg",
@@ -3222,7 +3222,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 15.773894720538898,
                 "unit": "g/dL",
@@ -3267,7 +3267,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 91.99964709308557,
                 "unit": "fL",
@@ -3312,7 +3312,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-1"
               },
-              "effectiveDateTime": "2012-01-23T15:16:21-05:00",
+              "effectiveDateTime": "2012-02-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 3.2362932276693046,
                 "unit": "{score}",
@@ -3357,7 +3357,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "effectiveDateTime": "2017-02-20T15:16:21-05:00",
+              "effectiveDateTime": "2017-03-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 173.50007433239776,
                 "unit": "cm",
@@ -3402,7 +3402,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 39.84480283140545,
                 "unit": "fL",
@@ -3447,7 +3447,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-3"
               },
-              "effectiveDateTime": "2012-04-30T16:16:21-04:00",
+              "effectiveDateTime": "2012-05-16T16:16:21-04:00",
               "component": [
                 {
                   "code": {
@@ -3524,7 +3524,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-10"
               },
-              "effectiveDateTime": "2018-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2018-03-14T15:16:21-05:00",
               "valueQuantity": {
                 "value": 173.92301600630228,
                 "unit": "cm",
@@ -3569,7 +3569,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 74.13391186383133,
                 "unit": "%",
@@ -3614,7 +3614,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-4"
               },
-              "effectiveDateTime": "2013-01-28T15:16:21-05:00",
+              "effectiveDateTime": "2013-02-13T15:16:21-05:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -3663,7 +3663,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 7.406141175563327,
                 "unit": "10*3/uL",
@@ -3708,7 +3708,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-8"
               },
-              "effectiveDateTime": "2017-02-20T15:16:21-05:00",
+              "effectiveDateTime": "2017-03-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 74.05056995108859,
                 "unit": "%",
@@ -3753,7 +3753,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-4"
               },
-              "effectiveDateTime": "2013-01-28T15:16:21-05:00",
+              "effectiveDateTime": "2013-02-13T15:16:21-05:00",
               "valueQuantity": {
                 "value": 56.188683764673364,
                 "unit": "kg",
@@ -3798,7 +3798,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-3"
               },
-              "effectiveDateTime": "2012-04-30T16:16:21-04:00",
+              "effectiveDateTime": "2012-05-16T16:16:21-04:00",
               "valueQuantity": {
                 "value": 80.00241679365635,
                 "unit": "%",
@@ -3843,7 +3843,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 274.0047823348666,
                 "unit": "10*3/uL",
@@ -3888,7 +3888,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-7"
               },
-              "effectiveDateTime": "2016-02-15T15:16:21-05:00",
+              "effectiveDateTime": "2016-03-02T15:16:21-05:00",
               "valueQuantity": {
                 "value": 74.5024126280794,
                 "unit": "%",
@@ -3933,7 +3933,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-1"
               },
-              "effectiveDateTime": "2012-01-23T15:16:21-05:00",
+              "effectiveDateTime": "2012-02-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 81.21905112740782,
                 "unit": "%",
@@ -3978,7 +3978,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
               },
-              "effectiveDateTime": "2014-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2014-02-19T15:16:21-05:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -4027,7 +4027,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-10"
               },
-              "effectiveDateTime": "2018-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2018-03-14T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -4104,7 +4104,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-7"
               },
-              "effectiveDateTime": "2016-02-15T15:16:21-05:00",
+              "effectiveDateTime": "2016-03-02T15:16:21-05:00",
               "valueQuantity": {
                 "value": 172.6616348176536,
                 "unit": "cm",
@@ -4149,7 +4149,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-3"
               },
-              "effectiveDateTime": "2012-04-30T16:16:21-04:00",
+              "effectiveDateTime": "2012-05-16T16:16:21-04:00",
               "valueQuantity": {
                 "value": 155.9971587698651,
                 "unit": "cm",
@@ -4194,7 +4194,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 79.21015679313436,
                 "unit": "kg",
@@ -4239,7 +4239,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
               },
-              "effectiveDateTime": "2014-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2014-02-19T15:16:21-05:00",
               "valueQuantity": {
                 "value": 61.61848203135999,
                 "unit": "kg",
@@ -4284,7 +4284,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 22.681962389932192,
                 "unit": "kg/m2",
@@ -4329,7 +4329,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-10"
               },
-              "effectiveDateTime": "2018-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2018-03-14T15:16:21-05:00",
               "valueQuantity": {
                 "value": 2.2703017735051922,
                 "unit": "{score}",
@@ -4374,7 +4374,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-10"
               },
-              "effectiveDateTime": "2018-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2018-03-14T15:16:21-05:00",
               "valueQuantity": {
                 "value": 74.44118238267167,
                 "unit": "kg",
@@ -4419,7 +4419,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 66.27966155642298,
                 "unit": "kg",
@@ -4464,7 +4464,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
               },
-              "effectiveDateTime": "2014-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2014-02-19T15:16:21-05:00",
               "valueQuantity": {
                 "value": 2.4092572133973507,
                 "unit": "{score}",
@@ -4509,7 +4509,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueQuantity": {
                 "value": 26.12656351238169,
                 "unit": "kg/m2",
@@ -4554,7 +4554,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-2"
               },
-              "effectiveDateTime": "2012-04-20T16:16:21-04:00",
+              "effectiveDateTime": "2012-05-06T16:16:21-04:00",
               "valueQuantity": {
                 "value": 37.90579212429527,
                 "unit": "Cel",
@@ -4599,7 +4599,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-7"
               },
-              "effectiveDateTime": "2016-02-15T15:16:21-05:00",
+              "effectiveDateTime": "2016-03-02T15:16:21-05:00",
               "valueQuantity": {
                 "value": 3.1180189441282966,
                 "unit": "{score}",
@@ -4644,7 +4644,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-10"
               },
-              "effectiveDateTime": "2018-02-26T15:16:21-05:00",
+              "effectiveDateTime": "2018-03-14T15:16:21-05:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -4693,7 +4693,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-11"
               },
-              "effectiveDateTime": "2021-03-01T15:16:21-05:00",
+              "effectiveDateTime": "2021-03-17T15:16:21-05:00",
               "valueCodeableConcept": {
                 "coding": [
                   {
@@ -4742,7 +4742,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-5"
               },
-              "effectiveDateTime": "2014-02-03T15:16:21-05:00",
+              "effectiveDateTime": "2014-02-19T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -4819,7 +4819,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-1"
               },
-              "effectiveDateTime": "2012-01-23T15:16:21-05:00",
+              "effectiveDateTime": "2012-02-08T15:16:21-05:00",
               "valueQuantity": {
                 "value": 21.22956806213796,
                 "unit": "kg/m2",
@@ -4864,7 +4864,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-7"
               },
-              "effectiveDateTime": "2016-02-15T15:16:21-05:00",
+              "effectiveDateTime": "2016-03-02T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -4941,7 +4941,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-6"
               },
-              "effectiveDateTime": "2015-02-09T15:16:21-05:00",
+              "effectiveDateTime": "2015-02-25T15:16:21-05:00",
               "valueQuantity": {
                 "value": 374.4808148850507,
                 "unit": "fL",
@@ -4986,7 +4986,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-Adolph80-Turcotte120-3"
               },
-              "effectiveDateTime": "2012-04-30T16:16:21-04:00",
+              "effectiveDateTime": "2012-05-16T16:16:21-04:00",
               "valueQuantity": {
                 "value": 21.3211090037932,
                 "unit": "kg/m2",
@@ -5014,8 +5014,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-09-11",
-              "startDate": "2023-09-11",
+              "statusDate": "2023-09-27",
+              "startDate": "2023-09-27",
               "description": {
                 "text": "Goal of 135/85"
               },

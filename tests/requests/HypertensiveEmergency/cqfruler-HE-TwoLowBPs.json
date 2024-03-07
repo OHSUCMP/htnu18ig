@@ -40,8 +40,8 @@
                 "reference": "Patient/HE-TwoLowBPs"
               },
               "period": {
-                "start": "2023-02-19T00:00:00-04:00",
-                "end": "2023-02-19T23:59:59-04:00"
+                "start": "2023-03-07T00:00:00-04:00",
+                "end": "2023-03-07T23:59:59-04:00"
               }
             },
             "request": {
@@ -74,8 +74,8 @@
                 "reference": "Patient/HE-TwoLowBPs"
               },
               "period": {
-                "start": "2023-05-20T00:00:00-04:00",
-                "end": "2023-05-20T23:59:59-04:00"
+                "start": "2023-06-05T00:00:00-04:00",
+                "end": "2023-06-05T23:59:59-04:00"
               }
             },
             "request": {
@@ -108,8 +108,8 @@
                 "reference": "Patient/HE-TwoLowBPs"
               },
               "period": {
-                "start": "2023-03-22T00:00:00-04:00",
-                "end": "2023-03-22T23:59:59-04:00"
+                "start": "2023-04-07T00:00:00-04:00",
+                "end": "2023-04-07T23:59:59-04:00"
               }
             },
             "request": {
@@ -142,8 +142,8 @@
                 "reference": "Patient/HE-TwoLowBPs"
               },
               "period": {
-                "start": "2023-04-19T00:00:00-04:00",
-                "end": "2023-04-19T23:59:59-04:00"
+                "start": "2023-05-05T00:00:00-04:00",
+                "end": "2023-05-05T23:59:59-04:00"
               }
             },
             "request": {
@@ -201,8 +201,8 @@
               "subject": {
                 "reference": "Patient/HE-TwoLowBPs"
               },
-              "onsetDateTime": "2017-02-20T15:16:21-05:00",
-              "recordedDate": "2017-02-20T15:16:21-05:00"
+              "onsetDateTime": "2017-03-08T15:16:21-05:00",
+              "recordedDate": "2017-03-08T15:16:21-05:00"
             },
             "request": {
               "method": "PUT",
@@ -224,7 +224,7 @@
                 }
               ],
               "gender": "female",
-              "birthDate": "1970-01-11"
+              "birthDate": "1970-01-27"
             },
             "request": {
               "method": "PUT",
@@ -268,7 +268,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-HE-TwoLowBPs-1"
               },
-              "effectiveDateTime": "2023-02-19T15:16:21-05:00",
+              "effectiveDateTime": "2023-03-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -356,7 +356,7 @@
               "subject": {
                 "reference": "Patient/HE-TwoLowBPs"
               },
-              "effectiveDateTime": "2023-10-30T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-15T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -444,7 +444,7 @@
               "subject": {
                 "reference": "Patient/HE-TwoLowBPs"
               },
-              "effectiveDateTime": "2023-11-11T15:16:21-05:00",
+              "effectiveDateTime": "2023-11-27T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -526,7 +526,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-HE-TwoLowBPs-4"
               },
-              "effectiveDateTime": "2023-05-20T15:16:21-05:00",
+              "effectiveDateTime": "2023-06-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -614,7 +614,7 @@
               "subject": {
                 "reference": "Patient/HE-TwoLowBPs"
               },
-              "effectiveDateTime": "2023-06-19T15:16:21-05:00",
+              "effectiveDateTime": "2023-07-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -696,7 +696,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-HE-TwoLowBPs-2"
               },
-              "effectiveDateTime": "2023-03-22T15:16:21-05:00",
+              "effectiveDateTime": "2023-04-07T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -778,7 +778,7 @@
               "encounter": {
                 "reference": "Encounter/encounter-HE-TwoLowBPs-3"
               },
-              "effectiveDateTime": "2023-04-19T15:16:21-05:00",
+              "effectiveDateTime": "2023-05-05T15:16:21-05:00",
               "component": [
                 {
                   "code": {
@@ -838,8 +838,8 @@
                   }
                 ]
               },
-              "statusDate": "2023-08-05",
-              "startDate": "2023-08-05",
+              "statusDate": "2023-08-21",
+              "startDate": "2023-08-21",
               "description": {
                 "text": "Goal of 135/85"
               },

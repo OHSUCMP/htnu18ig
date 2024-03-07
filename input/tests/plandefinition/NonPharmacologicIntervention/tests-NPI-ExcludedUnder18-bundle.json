@@ -37,8 +37,8 @@
       "subject": {
         "reference": "Patient/NPI-ExcludedUnder18"
       },
-      "onsetDateTime": "2017-02-20T15:16:21-05:00",
-      "recordedDate": "2017-02-20T15:16:21-05:00",
+      "onsetDateTime": "2017-03-08T15:16:21-05:00",
+      "recordedDate": "2017-03-08T15:16:21-05:00",
       "note": [ {
         "text": "Indicates Preexisting Diagnosis of Hypertension"
       } ]
@@ -58,7 +58,7 @@
         "given": [ "Excluded" ]
       } ],
       "gender": "male",
-      "birthDate": "2008-04-30"
+      "birthDate": "2008-05-16"
     },
     "request": {
       "method": "PUT",

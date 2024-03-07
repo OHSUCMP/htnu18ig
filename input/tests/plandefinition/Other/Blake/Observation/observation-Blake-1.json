@@ -1,0 +1,54 @@
+{
+    "resourceType": "Observation",
+    "id": "observation-Blake-1",
+    "status": "final",
+    "note": [
+      {
+        "text": "Indicates patient has been a heavy smoker since 1988. This is the most recent observation concerning smoking."
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/Blake"
+    },
+    "effectivePeriod": {
+      "start": "1989-09-27",
+      "end": "2023-10-16"
+    },
+    "issued": "2020-04-10T00:00:00-07:00",
+    "valueCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "428071000124103",
+          "display": "Heavy tobacco smoker (finding)"
+        }
+      ]
+    },
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8663-7",
+              "display": "Cigarettes smoked current (pack per day) - Reported"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 3,
+          "unit": "Packs/Day"
+        }
+      }
+    ]
+  }
+  

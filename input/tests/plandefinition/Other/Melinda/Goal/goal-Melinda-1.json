@@ -1,0 +1,62 @@
+{
+    "resourceType": "Goal",
+    "id": "goal-Melinda-1",
+    "lifecycleStatus": "active",
+    "achievementStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        }
+      ]
+    },
+    "statusDate": "2023-11-08",
+  "startDate": "2023-11-08",
+    "description": {
+      "text": "Goal of 135/85"
+    },
+    "subject": {
+      "reference": "Patient/Melinda"
+    },
+    "target": [
+      {
+        "measure": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "version": "2.68",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "detailQuantity": {
+          "value": 135,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      },
+      {
+        "measure": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "version": "2.68",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "detailQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    ]
+  }
+  

@@ -22,10 +22,10 @@
       }
     ]
   },
-  "statusDate": "2023-09-05",
-"startDate": "2023-09-05",
-  "statusDate": "2023-09-12",
-"startDate": "2023-09-12",
+  "statusDate": "2023-09-21",
+"startDate": "2023-09-21",
+  "statusDate": "2023-09-28",
+"startDate": "2023-09-28",
   "description": {
     "text": "Cut out alcohol on weekdays"
   },
@@ -34,7 +34,7 @@
   },
   "target": [
     {
-      "dueDate": "2023-10-23"
+      "dueDate": "2023-11-08"
     }
   ]
 }

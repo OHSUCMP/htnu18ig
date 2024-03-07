@@ -38,9 +38,9 @@
       "subject": {
         "reference": "Patient/H-IncludedPreviousPregnancyAbated"
       },
-      "onsetDateTime": "2023-03-27T19:02:10-04:00",
-      "abatementDateTime": "2023-10-30T19:02:10-04:00",
-      "recordedDate": "2023-11-03T19:02:10-04:00",
+      "onsetDateTime": "2023-04-12T19:02:10-04:00",
+      "abatementDateTime": "2023-11-15T19:02:10-04:00",
+      "recordedDate": "2023-11-19T19:02:10-04:00",
       "note": [ {
         "text": "Indicates patient was pregnant but it is abated."
       } ]
@@ -60,7 +60,7 @@
         "given": [ "Included" ]
       } ],
       "gender": "female",
-      "birthDate": "2000-07-23"
+      "birthDate": "2000-08-08"
     },
     "request": {
       "method": "PUT",
@@ -96,7 +96,7 @@
       "subject": {
         "reference": "Patient/H-IncludedPreviousPregnancyAbated"
       },
-      "effectiveDateTime": "2021-01-03T15:16:21-05:00",
+      "effectiveDateTime": "2021-01-19T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -166,7 +166,7 @@
       "subject": {
         "reference": "Patient/H-IncludedPreviousPregnancyAbated"
       },
-      "effectiveDateTime": "2017-12-31T15:16:21-05:00",
+      "effectiveDateTime": "2018-01-16T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],

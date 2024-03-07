@@ -1,0 +1,23 @@
+{
+    "resourceType": "Medication",
+    "id": "medication-Blake-1",
+    "code": {
+      "coding": [
+        {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197884",
+            "display": "lisinopril 40 MG Oral Tablet"
+        }
+      ]
+    },
+    "form": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "385055001",
+          "display": "Tablet dose form (qualifier value)"
+        }
+      ]
+    }
+  }
+  

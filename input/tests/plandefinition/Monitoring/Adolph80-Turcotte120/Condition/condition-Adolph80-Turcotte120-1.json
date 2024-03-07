@@ -65,7 +65,7 @@
   "encounter": {
     "reference": "Encounter/encounter-Adolph80-Turcotte120-2"
   },
-  "onsetDateTime": "2012-04-20T16:16:21-04:00",
-  "abatementDateTime": "2012-05-02T16:16:21-04:00",
-  "recordedDate": "2012-04-20T16:16:21-04:00"
+  "onsetDateTime": "2012-05-06T16:16:21-04:00",
+  "abatementDateTime": "2012-05-18T16:16:21-04:00",
+  "recordedDate": "2012-05-06T16:16:21-04:00"
 }
