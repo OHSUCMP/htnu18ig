@@ -31,3 +31,6 @@ Thumbs.db
 # Python environment #
 ################
 /specification/venv
+/specification/debugging/cqfruler-input
+/specification/debugging/tests
+/input/tests/**/PHI*
