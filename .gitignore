@@ -33,4 +33,4 @@ Thumbs.db
 /specification/venv
 /specification/debugging/cqfruler-input
 /specification/debugging/tests
-/input/tests/**/PHI*
+/input/tests/**/*PHI*

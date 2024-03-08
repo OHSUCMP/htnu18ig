@@ -112,8 +112,9 @@ define function WithUnit(value Quantity, Unit String):
     )
   ) is not null
 
+// #208: Treat observations without encounters as home observations even if the extension is missing
 define function BPReadingType(o FHIR.Observation):
-  if ("MeasurementSettings"(o.extension) contains "home-measurement") then 'home'
+  if (("MeasurementSettings"(o.extension) contains "home-measurement") or o.encounter is null) then 'home'
   else 'office'
 
 define function QualifiedEncounter(list List<FHIR.Encounter>):

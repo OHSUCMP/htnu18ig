@@ -127,3 +127,6 @@ define "TEST Problem Conditions":
 
 define "TEST Encounter Conditions":
   Common."Encounter Conditions"
+
+define "Test Home BPs":
+  Count(Common."Home Blood Pressure Observations")
