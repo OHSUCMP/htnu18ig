@@ -46,15 +46,16 @@ override = input("Override? y/n\n")
 if (override.lower() == "y"):
     load_resource_type = input("The resource type to load\n")
 
-for root, dirs, files in os.walk(directory, topdown=False):
-   for name in files:
-       if re.match('.*\.json', name) and not re.match('tests-.*\.json', name):
-           with open(os.path.join(root, name), 'r') as f:
-               whole = f.read()
-               resourceType = re.search('.*"resourceType": "(.*?)",.*', whole).group(1)
-               if (load_resource_type == "all" or load_resource_type.lower() == resourceType.lower()):
-                   resourceId = re.search('.*"id": "(.*?)",.*', whole).group(1)
-                   url = fhir_url + resourceType + "/" + resourceId
-                   headers = {'Accept' : 'application/json', 'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + bearer}
-                   r = requests.put(url, data=whole, headers=headers)
-                   print(r.text)
+for root, dirs, files in os.walk(directory, topdown=True):
+   if ("PHI-" not in root):
+       for name in files:
+           if re.match('.*\.json', name) and not re.match('tests-.*\.json', name):
+               with open(os.path.join(root, name), 'r') as f:
+                whole = f.read()
+                resourceType = re.search('.*"resourceType": "(.*?)",.*', whole).group(1)
+                if (load_resource_type == "all" or load_resource_type.lower() == resourceType.lower()):
+                    resourceId = re.search('.*"id": "(.*?)",.*', whole).group(1)
+                    url = fhir_url + resourceType + "/" + resourceId
+                    headers = {'Accept' : 'application/json', 'Content-Type' : 'application/json', 'Authorization' : 'Bearer ' + bearer}
+                    r = requests.put(url, data=whole, headers=headers)
+                    print(r.text)
