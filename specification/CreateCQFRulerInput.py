@@ -16,49 +16,50 @@ for patient_folder in os.listdir(patient_directory):
     if os.path.isdir(patient_path):
         directory = patient_directory
         ident = patient_folder
-        template = {
-          "hookInstance": "test",
-          "fhirServer": "https://gw.interop.community/COACHsandbox/open",
-          "hook": "patient-view",
-          "context": {
-            "userId": "Practitioner/example",
-            "patientId": "patient-id"
-          },
-          "prefetch": {
-            "item1": {
-              "response": {
-                "status": "200 OK"
-              },
-              "resource": {
-                "resourceType": "Bundle",
-                "type": "transaction",
-                "entry": [
-                ]
+        if ("PHI-" not in ident):
+          template = {
+            "hookInstance": "test",
+            "fhirServer": "https://gw.interop.community/COACHsandbox/open",
+            "hook": "patient-view",
+            "context": {
+              "userId": "Practitioner/example",
+              "patientId": "patient-id"
+            },
+            "prefetch": {
+              "item1": {
+                "response": {
+                  "status": "200 OK"
+                },
+                "resource": {
+                  "resourceType": "Bundle",
+                  "type": "transaction",
+                  "entry": [
+                  ]
+                }
               }
             }
           }
-        }
 
-        template["context"]["patientId"] = ident
-        entry_array = []
+          template["context"]["patientId"] = ident
+          entry_array = []
 
-        for folder in os.listdir(patient_path):
-            folder_path = os.path.join(patient_path, folder)
-            if os.path.isdir(folder_path):
-                for filename in os.listdir(folder_path):
-                    if re.match('.*\.json', filename):
-                        with open(os.path.join(folder_path, filename), 'r') as f:
-                            entry = {
-                                "resource": "resource",
-                                "request": {
-                                    "method": "PUT",
-                                    "url": "request-url"
-                                }
-                            }
-                            entry["resource"] = json.loads(f.read())
-                            entry_array.append(entry)
+          for folder in os.listdir(patient_path):
+              folder_path = os.path.join(patient_path, folder)
+              if os.path.isdir(folder_path):
+                  for filename in os.listdir(folder_path):
+                      if re.match('.*\.json', filename):
+                          with open(os.path.join(folder_path, filename), 'r') as f:
+                              entry = {
+                                  "resource": "resource",
+                                  "request": {
+                                      "method": "PUT",
+                                      "url": "request-url"
+                                  }
+                              }
+                              entry["resource"] = json.loads(f.read())
+                              entry_array.append(entry)
 
-        template["prefetch"]["item1"]["resource"]["entry"] = entry_array
-        with open(os.path.join(output_directory, "cqfruler-" + ident + ".json"), 'w') as f:
-            print(f.name)
-            f.write(json.dumps(template, indent = 2))
+          template["prefetch"]["item1"]["resource"]["entry"] = entry_array
+          with open(os.path.join(output_directory, "cqfruler-" + ident + ".json"), 'w') as f:
+              print(f.name)
+              f.write(json.dumps(template, indent = 2))

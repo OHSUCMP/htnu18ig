@@ -26,7 +26,8 @@ define "Two High BPs":
   "BP Within 14 Days"("Next Most Recent BP Reading") and Common."HTN Crisis BP"("Next Most Recent BP Reading")
 
 define "Two Low BPs":
-  Common."HTN Low Crisis" and Common."HTN Low Crisis BP"("Next Most Recent BP Reading")
+  Common."HTN Low Crisis" and "BP Within 14 Days"(Common."Most Recent BP Reading") and 
+  "BP Within 14 Days"("Next Most Recent BP Reading") and Common."HTN Low Crisis BP"("Next Most Recent BP Reading")
 
 define "Recommendation":
   'Blank.Summary'

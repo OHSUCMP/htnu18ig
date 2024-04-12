@@ -1,0 +1,16 @@
+{
+  "resourceType": "Patient",
+  "id": "AE-LowOfficeBPs",
+  "active": true,
+  "name": [
+    {
+      "text": "Sam Iam",
+      "family": "Iam",
+      "given": [
+        "Sam"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1971-02-07"
+}

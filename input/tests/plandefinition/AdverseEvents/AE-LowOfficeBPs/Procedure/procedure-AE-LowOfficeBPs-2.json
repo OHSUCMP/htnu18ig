@@ -1,0 +1,24 @@
+{
+  "resourceType": "Procedure",
+  "id": "procedure-AE-LowOfficeBPs-2",
+  "note": [
+    {
+      "text": "The patient had alcohol counseling related to an observation they are a heavy drinker"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24165007",
+        "display": "Alcoholism counseling (procedure)"
+      }
+    ],
+    "text": "Alcoholism counseling (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/AE-LowOfficeBPs"
+  },
+  "performedDateTime": "2023-06-23T11:00:00-06:00"
+}

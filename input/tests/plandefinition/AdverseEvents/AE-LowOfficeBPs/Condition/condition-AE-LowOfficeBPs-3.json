@@ -1,0 +1,52 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-AE-LowOfficeBPs-3",
+  "note": [
+    {
+      "text": "Indicates An Adverse Reaction that Could be Related to Medications"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ],
+      "text": "Encounter Diagnosis"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "32834005",
+        "display": "Brief loss of consciousness"
+      }
+    ],
+    "text": "Brief loss of consciousness"
+  },
+  "subject": {
+    "reference": "Patient/AE-LowOfficeBPs"
+  },
+  "onsetDateTime": "2023-11-19T15:16:21-05:00",
+  "recordedDate": "2023-11-19T15:16:21-05:00"
+}
