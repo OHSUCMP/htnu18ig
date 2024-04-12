@@ -53,7 +53,7 @@ define "Treated Rationale Combined Data":
   "Treated Rationale" + '|' + "Treated Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
 
 define "Treated Rationale":
-  'A side effect associated with blood pressure management has been detected and addressed: <strong>' + Combine("Contact Suggestion String"("Treated Adverse Events"), ', ') + '</strong>. If event recurs, adjustment to medication and/or blood pressure goal may be required.'
+  'A side effect associated with blood pressure management has been detected and addressed: <strong>' + Combine("Contact Suggestion String"("Treated Adverse Events"), ', ') + '</strong>. If event recurs, adjustment to medication and/or blood pressure goal may be required. This message may remain for up to 30 days as a reminder to continue monitoring this condition.'
 
 define "Treated Suggestions":
   '[]'
