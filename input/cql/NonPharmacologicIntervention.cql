@@ -234,7 +234,7 @@ define "Nutrition Suggestions":
 define "Nutrition Links":
   '[
     {"label": "NIH: DASH Diet", "url": "https://www.nhlbi.nih.gov/health-topics/dash-eating-plan"},
-    {"label": "CDC: Eating Healthy", "url": "https://www.cdc.gov/healthyweight/healthy_eating/index.html"}
+    {"label": "CDC: Eating Healthy", "url": "https://www.cdc.gov/healthy-weight-growth/healthy-eating/"}
   ]'
 
 define "Nutrition Goal Summary":
@@ -274,7 +274,7 @@ define "Physical Activity Links":
   '[
     {"label": "AHA: Getting Active to Control your High Blood Pressure", "url": "https://www.heart.org/en/health-topics/high-blood-pressure/changes-you-can-make-to-manage-high-blood-pressure/getting-active-to-control-high-blood-pressure"},
     {"label": "Health.gov: Current physical activity guidelines", "url": "https://health.gov/our-work/physical-activity/current-guidelines"},
-    {"label": "CDC: Physical Activity Index", "url":"https://www.cdc.gov/physicalactivity/index.html"}
+    {"label": "CDC: Physical Activity Index", "url":"https://www.cdc.gov/physical-activity/php/about/"}
   ]'
 
 define "Physical Activity Goal Summary":

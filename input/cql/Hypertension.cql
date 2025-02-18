@@ -99,7 +99,7 @@ define "Selection Behavior":
 
 define "Links":
   if not "In Population" then ''
-  else if not Common."Has BP Set" then '[{"label":"CDC: How to measure blood pressure", "url":"https://www.cdc.gov/bloodpressure/measure.htm"}]'
+  else if not Common."Has BP Set" then '[{"label":"CDC: How to measure blood pressure", "url":"https://www.cdc.gov/high-blood-pressure/measure/"}]'
   else if "HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if "Consider HTN Stage 2" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
   else if "Consider HTN Stage 1" then '[{"label":"AHA: Understanding High Blood Pressure Readings", "url":"https://www.heart.org/en/health-topics/high-blood-pressure/understanding-blood-pressure-readings"}]'
