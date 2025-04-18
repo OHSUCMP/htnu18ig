@@ -50,23 +50,6 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "H-ExcludedPregnantEncounterDiagnosis",
-      "active": true,
-      "name": [ {
-        "text": "Excluded Pregnant",
-        "family": "Pregnant",
-        "given": [ "Excluded" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1990-01-01"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/H-ExcludedPregnantEncounterDiagnosis"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-H-ExcludedPregnantEncounterDiagnosis-1",
       "extension": [ {
@@ -204,6 +187,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-H-ExcludedPregnantEncounterDiagnosis-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "H-ExcludedPregnantEncounterDiagnosis",
+      "active": true,
+      "name": [ {
+        "text": "Excluded Pregnant",
+        "family": "Pregnant",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1990-01-01"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/H-ExcludedPregnantEncounterDiagnosis"
     }
   } ]
 }

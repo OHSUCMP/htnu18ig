@@ -4,35 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Procedure",
-      "id": "procedure-NPI-ActivityReminder-1",
-      "status": "completed",
-      "code": {
-        "coding": [ {
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/731000124108/version/2021-03",
-          "code": "386463000",
-          "display": "Prescribed activity/exercise education (procedure)"
-        } ],
-        "text": "Prescribed activity/exercise education (procedure)"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityReminder"
-      },
-      "performedDateTime": "2021-06-21T11:00:00-06:00",
-      "reasonReference": [ {
-        "reference": "Observation/observation-NPI-ActivityReminder-1"
-      } ],
-      "note": [ {
-        "text": "The patient had physical activity counseling related to an observation on a BMI > 25. This code also qualifies for weight loss counseling, but the observation and counseling is more than 2 years old."
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Procedure/procedure-NPI-ActivityReminder-1"
-    }
-  }, {
-    "resource": {
       "resourceType": "Condition",
       "id": "condition-NPI-ActivityReminder-1",
       "clinicalStatus": {
@@ -78,20 +49,60 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "NPI-ActivityReminder",
-      "active": true,
-      "name": [ {
-        "text": "Activity Reminder",
-        "family": "Reminder",
-        "given": [ "Activity" ]
+      "resourceType": "Goal",
+      "id": "goal-NPI-ActivityReminder-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "description": {
+        "text": "Goal of 135/85"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityReminder"
+      },
+      "startDate": "2023-08-05",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 135,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
       } ],
-      "gender": "female",
-      "birthDate": "1989-03-23"
+      "statusDate": "2023-08-05"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/NPI-ActivityReminder"
+      "url": "Goal/goal-NPI-ActivityReminder-1"
     }
   }, {
     "resource": {
@@ -166,45 +177,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-ActivityReminder-7",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityReminder"
-      },
-      "effectiveDateTime": "2021-06-19T03:14:57-05:00",
-      "issued": "2021-06-19T03:14:57.429-05:00",
-      "valueQuantity": {
-        "value": 27.690689692990766,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      },
-      "note": [ {
-        "text": "Patient has a BMI > 25."
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityReminder-7"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-NPI-ActivityReminder-10",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
@@ -271,76 +243,6 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-NPI-ActivityReminder-10"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-ActivityReminder-6",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityReminder"
-      },
-      "effectiveDateTime": "2023-07-20T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 81.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 128.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityReminder-6"
     }
   }, {
     "resource": {
@@ -485,216 +387,6 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-ActivityReminder-5",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityReminder"
-      },
-      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 84.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 136.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityReminder-5"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-ActivityReminder-9",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityReminder"
-      },
-      "effectiveDateTime": "2023-10-18T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 78.660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 141.064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityReminder-9"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-ActivityReminder-8",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-ActivityReminder"
-      },
-      "effectiveDateTime": "2023-10-07T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 84.660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 136.064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityReminder-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
       "id": "observation-NPI-ActivityReminder-13",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
@@ -765,7 +457,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-ActivityReminder-4",
+      "id": "observation-NPI-ActivityReminder-2",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -792,7 +484,7 @@
       "subject": {
         "reference": "Patient/NPI-ActivityReminder"
       },
-      "effectiveDateTime": "2023-05-20T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -806,7 +498,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 87.52660352979804,
+          "value": 98.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -821,7 +513,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 135.65064054117963,
+          "value": 150.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -830,7 +522,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityReminder-4"
+      "url": "Observation/observation-NPI-ActivityReminder-2"
     }
   }, {
     "resource": {
@@ -905,7 +597,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-ActivityReminder-2",
+      "id": "observation-NPI-ActivityReminder-4",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
         "valueCoding": {
@@ -932,7 +624,7 @@
       "subject": {
         "reference": "Patient/NPI-ActivityReminder"
       },
-      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-05-20T15:16:21-05:00",
       "note": [ {
         "text": "Home Blood Pressure Reading"
       } ],
@@ -946,7 +638,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 98.52660352979804,
+          "value": 87.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -961,7 +653,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 150.65064054117963,
+          "value": 135.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -970,64 +662,372 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-ActivityReminder-2"
+      "url": "Observation/observation-NPI-ActivityReminder-4"
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-NPI-ActivityReminder-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityReminder-5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
         } ]
-      },
-      "description": {
-        "text": "Goal of 135/85"
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
       },
       "subject": {
         "reference": "Patient/NPI-ActivityReminder"
       },
-      "startDate": "2023-08-05",
-      "target": [ {
-        "measure": {
+      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
           "coding": [ {
             "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8480-6",
-            "display": "Systolic blood pressure"
-          } ]
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
         },
-        "detailQuantity": {
-          "value": 135,
-          "unit": "mmHg",
+        "valueQuantity": {
+          "value": 84.52660352979804,
+          "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
       }, {
-        "measure": {
+        "code": {
           "coding": [ {
             "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure"
-          } ]
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
         },
-        "detailQuantity": {
-          "value": 85,
-          "unit": "mmHg",
+        "valueQuantity": {
+          "value": 136.65064054117963,
+          "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
         }
-      } ],
-      "statusDate": "2023-08-05"
+      } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-NPI-ActivityReminder-1"
+      "url": "Observation/observation-NPI-ActivityReminder-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityReminder-6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityReminder"
+      },
+      "effectiveDateTime": "2023-07-20T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 81.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 128.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityReminder-6"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityReminder-7",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityReminder"
+      },
+      "effectiveDateTime": "2021-06-19T03:14:57-05:00",
+      "issued": "2021-06-19T03:14:57.429-05:00",
+      "valueQuantity": {
+        "value": 27.690689692990766,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "note": [ {
+        "text": "Patient has a BMI > 25."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityReminder-7"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityReminder-8",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityReminder"
+      },
+      "effectiveDateTime": "2023-10-07T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 84.660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 136.064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityReminder-8"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-ActivityReminder-9",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityReminder"
+      },
+      "effectiveDateTime": "2023-10-18T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 78.660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 141.064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-ActivityReminder-9"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "NPI-ActivityReminder",
+      "active": true,
+      "name": [ {
+        "text": "Activity Reminder",
+        "family": "Reminder",
+        "given": [ "Activity" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1989-03-23"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/NPI-ActivityReminder"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Procedure",
+      "id": "procedure-NPI-ActivityReminder-1",
+      "status": "completed",
+      "code": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "version": "http://snomed.info/sct/731000124108/version/2021-03",
+          "code": "386463000",
+          "display": "Prescribed activity/exercise education (procedure)"
+        } ],
+        "text": "Prescribed activity/exercise education (procedure)"
+      },
+      "subject": {
+        "reference": "Patient/NPI-ActivityReminder"
+      },
+      "performedDateTime": "2021-06-21T11:00:00-06:00",
+      "reasonReference": [ {
+        "reference": "Observation/observation-NPI-ActivityReminder-1"
+      } ],
+      "note": [ {
+        "text": "The patient had physical activity counseling related to an observation on a BMI > 25. This code also qualifies for weight loss counseling, but the observation and counseling is more than 2 years old."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Procedure/procedure-NPI-ActivityReminder-1"
     }
   } ]
 }

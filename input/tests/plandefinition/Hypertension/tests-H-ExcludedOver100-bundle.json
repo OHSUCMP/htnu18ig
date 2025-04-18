@@ -4,23 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Patient",
-      "id": "H-ExcludedOver100",
-      "active": true,
-      "name": [ {
-        "text": "Excluded Over 100",
-        "family": "Over100",
-        "given": [ "Excluded" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1923-11-11"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/H-ExcludedOver100"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-H-ExcludedOver100-1",
       "extension": [ {
@@ -158,6 +141,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-H-ExcludedOver100-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "H-ExcludedOver100",
+      "active": true,
+      "name": [ {
+        "text": "Excluded Over 100",
+        "family": "Over100",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1923-11-11"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/H-ExcludedOver100"
     }
   } ]
 }

@@ -4,23 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Patient",
-      "id": "HE-SingleHighBP",
-      "active": true,
-      "name": [ {
-        "text": "Single High BP",
-        "family": "High BP",
-        "given": [ "Single" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1975-05-31"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/HE-SingleHighBP"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-HE-SingleHighBP-2",
       "extension": [ {
@@ -88,6 +71,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-HE-SingleHighBP-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "HE-SingleHighBP",
+      "active": true,
+      "name": [ {
+        "text": "Single High BP",
+        "family": "High BP",
+        "given": [ "Single" ]
+      } ],
+      "gender": "female",
+      "birthDate": "1975-05-31"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/HE-SingleHighBP"
     }
   } ]
 }

@@ -50,23 +50,6 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "H-IncludedPreviousPregnancyOnset",
-      "active": true,
-      "name": [ {
-        "text": "Included Pregnant Onset",
-        "family": "Pregnant Onset",
-        "given": [ "Included" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1999-06-27"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/H-IncludedPreviousPregnancyOnset"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-H-IncludedPreviousPregnancyOnset-1",
       "extension": [ {
@@ -204,6 +187,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-H-IncludedPreviousPregnancyOnset-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "H-IncludedPreviousPregnancyOnset",
+      "active": true,
+      "name": [ {
+        "text": "Included Pregnant Onset",
+        "family": "Pregnant Onset",
+        "given": [ "Included" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1999-06-27"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/H-IncludedPreviousPregnancyOnset"
     }
   } ]
 }

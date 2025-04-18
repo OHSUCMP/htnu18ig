@@ -4,23 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Patient",
-      "id": "HE-HypertensiveEmergencyEffective",
-      "active": true,
-      "name": [ {
-        "text": "Hypertensive Emergency Effective",
-        "family": "Effective",
-        "given": [ "Hypertensive Emergency" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1965-07-24"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/HE-HypertensiveEmergencyEffective"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-HE-HypertensiveEmergencyEffective-1",
       "extension": [ {
@@ -158,6 +141,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-HE-HypertensiveEmergencyEffective-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "HE-HypertensiveEmergencyEffective",
+      "active": true,
+      "name": [ {
+        "text": "Hypertensive Emergency Effective",
+        "family": "Effective",
+        "given": [ "Hypertensive Emergency" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1965-07-24"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/HE-HypertensiveEmergencyEffective"
     }
   } ]
 }

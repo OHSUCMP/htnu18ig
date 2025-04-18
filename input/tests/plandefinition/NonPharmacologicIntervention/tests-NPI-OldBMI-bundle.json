@@ -49,20 +49,162 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "NPI-OldBMI",
-      "active": true,
-      "name": [ {
-        "text": "Old BMI",
-        "family": "Old",
-        "given": [ "BMI" ]
+      "resourceType": "Goal",
+      "id": "goal-NPI-OldBMI-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "description": {
+        "text": "Goal of 139/84"
+      },
+      "subject": {
+        "reference": "Patient/NPI-OldBMI"
+      },
+      "startDate": "2023-08-05",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 139,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 84,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
       } ],
-      "gender": "male",
-      "birthDate": "1986-09-02"
+      "statusDate": "2023-08-05"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/NPI-OldBMI"
+      "url": "Goal/goal-NPI-OldBMI-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-OldBMI-1",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "39156-5",
+          "display": "Body Mass Index"
+        } ],
+        "text": "Body Mass Index"
+      },
+      "subject": {
+        "reference": "Patient/NPI-OldBMI"
+      },
+      "effectiveDateTime": "2021-11-08T03:14:57-05:00",
+      "issued": "2022-01-09T03:14:57.429-05:00",
+      "valueQuantity": {
+        "value": 27.690689692990766,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
+      "note": [ {
+        "text": "Patient has a BMI > 25, but it is older than 2 years with no more recent observations."
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-OldBMI-1"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-OldBMI-2",
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-OldBMI"
+      },
+      "effectiveDateTime": "2023-02-19T15:16:21-05:00",
+      "note": [ {
+        "text": "Office Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 80.1660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 131.2064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-OldBMI-2"
     }
   }, {
     "resource": {
@@ -130,7 +272,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-OldBMI-2",
+      "id": "observation-NPI-OldBMI-4",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -150,7 +292,7 @@
       "subject": {
         "reference": "Patient/NPI-OldBMI"
       },
-      "effectiveDateTime": "2023-02-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
       "note": [ {
         "text": "Office Blood Pressure Reading"
       } ],
@@ -164,7 +306,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 80.1660352979804,
+          "value": 84.1660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -179,7 +321,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 131.2064054117963,
+          "value": 135.5064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -188,7 +330,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-OldBMI-2"
+      "url": "Observation/observation-NPI-OldBMI-4"
     }
   }, {
     "resource": {
@@ -263,7 +405,14 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-OldBMI-4",
+      "id": "observation-NPI-OldBMI-6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -283,9 +432,9 @@
       "subject": {
         "reference": "Patient/NPI-OldBMI"
       },
-      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
       "note": [ {
-        "text": "Office Blood Pressure Reading"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -297,7 +446,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 84.1660352979804,
+          "value": 77.7660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -312,7 +461,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 135.5064054117963,
+          "value": 127.7064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -321,7 +470,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-OldBMI-4"
+      "url": "Observation/observation-NPI-OldBMI-6"
     }
   }, {
     "resource": {
@@ -395,169 +544,20 @@
     }
   }, {
     "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-OldBMI-6",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
+      "resourceType": "Patient",
+      "id": "NPI-OldBMI",
+      "active": true,
+      "name": [ {
+        "text": "Old BMI",
+        "family": "Old",
+        "given": [ "BMI" ]
       } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-OldBMI"
-      },
-      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 77.7660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 127.7064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
+      "gender": "male",
+      "birthDate": "1986-09-02"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-OldBMI-6"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-OldBMI-1",
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
-        } ],
-        "text": "Body Mass Index"
-      },
-      "subject": {
-        "reference": "Patient/NPI-OldBMI"
-      },
-      "effectiveDateTime": "2021-11-08T03:14:57-05:00",
-      "issued": "2022-01-09T03:14:57.429-05:00",
-      "valueQuantity": {
-        "value": 27.690689692990766,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      },
-      "note": [ {
-        "text": "Patient has a BMI > 25, but it is older than 2 years with no more recent observations."
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-OldBMI-1"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Goal",
-      "id": "goal-NPI-OldBMI-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
-        } ]
-      },
-      "description": {
-        "text": "Goal of 139/84"
-      },
-      "subject": {
-        "reference": "Patient/NPI-OldBMI"
-      },
-      "startDate": "2023-08-05",
-      "target": [ {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8480-6",
-            "display": "Systolic blood pressure"
-          } ]
-        },
-        "detailQuantity": {
-          "value": 139,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure"
-          } ]
-        },
-        "detailQuantity": {
-          "value": 84,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ],
-      "statusDate": "2023-08-05"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Goal/goal-NPI-OldBMI-1"
+      "url": "Patient/NPI-OldBMI"
     }
   } ]
 }

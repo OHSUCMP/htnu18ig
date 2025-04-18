@@ -49,165 +49,45 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "NPI-WeightLossGoalExists",
-      "active": true,
-      "name": [ {
-        "text": "Weight Loss Goal Exists",
-        "family": "Exists",
-        "given": [ "WeightLossGoal" ]
-      } ],
-      "gender": "female",
-      "birthDate": "1969-03-07"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/NPI-WeightLossGoalExists"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-WeightLossGoalExists-5",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
+      "resourceType": "Goal",
+      "id": "goal-NPI-WeightLossGoalExists-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
       "category": [ {
         "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
+          "system": "https://coach.ohsu.edu",
+          "code": "weight-loss",
+          "display": "Weight Loss"
         } ],
-        "text": "Blood Pressure"
+        "text": "Weight Loss"
+      } ],
+      "description": {
+        "text": "Lose 25 pounds"
       },
       "subject": {
         "reference": "Patient/NPI-WeightLossGoalExists"
       },
-      "effectiveDateTime": "2023-05-20T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
+      "startDate": "2023-08-22",
+      "target": [ {
+        "dueDate": "2023-10-23"
       } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 78.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 136.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
+      "statusDate": "2023-08-22"
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-WeightLossGoalExists-5"
+      "url": "Goal/goal-NPI-WeightLossGoalExists-1"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-WeightLossGoalExists-4",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-WeightLossGoalExists"
-      },
-      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 83.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 130.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-WeightLossGoalExists-4"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-WeightLossGoalExists-8",
+      "id": "observation-NPI-WeightLossGoalExists-1",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -227,91 +107,21 @@
       "subject": {
         "reference": "Patient/NPI-WeightLossGoalExists"
       },
-      "effectiveDateTime": "2023-08-08T03:14:57-05:00",
-      "issued": "2023-08-08T03:14:57.429-05:00",
+      "effectiveDateTime": "2023-01-08T03:14:57-05:00",
+      "issued": "2023-01-08T03:14:57.429-05:00",
       "valueQuantity": {
-        "value": 24.290689692990766,
+        "value": 27.690689692990766,
         "unit": "kg/m2",
         "system": "http://unitsofmeasure.org",
         "code": "kg/m2"
       },
       "note": [ {
-        "text": "Patient has lost weight but still has an active goal."
+        "text": "Patient has a BMI > 25."
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-WeightLossGoalExists-8"
-    }
-  }, {
-    "resource": {
-      "resourceType": "Observation",
-      "id": "observation-NPI-WeightLossGoalExists-3",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
-      "status": "final",
-      "category": [ {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "vital-signs",
-          "display": "vital-signs"
-        } ]
-      } ],
-      "code": {
-        "coding": [ {
-          "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
-        } ],
-        "text": "Blood Pressure"
-      },
-      "subject": {
-        "reference": "Patient/NPI-WeightLossGoalExists"
-      },
-      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
-      "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 88.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 140.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      } ]
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Observation/observation-NPI-WeightLossGoalExists-3"
+      "url": "Observation/observation-NPI-WeightLossGoalExists-1"
     }
   }, {
     "resource": {
@@ -386,7 +196,14 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-WeightLossGoalExists-1",
+      "id": "observation-NPI-WeightLossGoalExists-3",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -398,29 +215,263 @@
       "code": {
         "coding": [ {
           "system": "http://loinc.org",
-          "code": "39156-5",
-          "display": "Body Mass Index"
+          "code": "55284-4",
+          "display": "Blood Pressure"
         } ],
-        "text": "Body Mass Index"
+        "text": "Blood Pressure"
       },
       "subject": {
         "reference": "Patient/NPI-WeightLossGoalExists"
       },
-      "effectiveDateTime": "2023-01-08T03:14:57-05:00",
-      "issued": "2023-01-08T03:14:57.429-05:00",
-      "valueQuantity": {
-        "value": 27.690689692990766,
-        "unit": "kg/m2",
-        "system": "http://unitsofmeasure.org",
-        "code": "kg/m2"
-      },
+      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
       "note": [ {
-        "text": "Patient has a BMI > 25."
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 88.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 140.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-WeightLossGoalExists-1"
+      "url": "Observation/observation-NPI-WeightLossGoalExists-3"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-WeightLossGoalExists-4",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-WeightLossGoalExists"
+      },
+      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 83.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 130.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-WeightLossGoalExists-4"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-WeightLossGoalExists-5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-WeightLossGoalExists"
+      },
+      "effectiveDateTime": "2023-05-20T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 78.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 136.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-WeightLossGoalExists-5"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Observation",
+      "id": "observation-NPI-WeightLossGoalExists-6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
+      "status": "final",
+      "category": [ {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        } ]
+      } ],
+      "code": {
+        "coding": [ {
+          "system": "http://loinc.org",
+          "code": "55284-4",
+          "display": "Blood Pressure"
+        } ],
+        "text": "Blood Pressure"
+      },
+      "subject": {
+        "reference": "Patient/NPI-WeightLossGoalExists"
+      },
+      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
+      "note": [ {
+        "text": "Home Blood Pressure Reading"
+      } ],
+      "component": [ {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic Blood Pressure"
+          } ],
+          "text": "Diastolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 91.52660352979804,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "code": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic Blood Pressure"
+          } ],
+          "text": "Systolic Blood Pressure"
+        },
+        "valueQuantity": {
+          "value": 137.65064054117963,
+          "unit": "mm[Hg]",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      } ]
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Observation/observation-NPI-WeightLossGoalExists-6"
     }
   }, {
     "resource": {
@@ -495,14 +546,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-WeightLossGoalExists-6",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
+      "id": "observation-NPI-WeightLossGoalExists-8",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -514,90 +558,46 @@
       "code": {
         "coding": [ {
           "system": "http://loinc.org",
-          "code": "55284-4",
-          "display": "Blood Pressure"
+          "code": "39156-5",
+          "display": "Body Mass Index"
         } ],
-        "text": "Blood Pressure"
+        "text": "Body Mass Index"
       },
       "subject": {
         "reference": "Patient/NPI-WeightLossGoalExists"
       },
-      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-08-08T03:14:57-05:00",
+      "issued": "2023-08-08T03:14:57.429-05:00",
+      "valueQuantity": {
+        "value": 24.290689692990766,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+      },
       "note": [ {
-        "text": "Home Blood Pressure Reading"
-      } ],
-      "component": [ {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8462-4",
-            "display": "Diastolic Blood Pressure"
-          } ],
-          "text": "Diastolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 91.52660352979804,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "code": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "code": "8480-6",
-            "display": "Systolic Blood Pressure"
-          } ],
-          "text": "Systolic Blood Pressure"
-        },
-        "valueQuantity": {
-          "value": 137.65064054117963,
-          "unit": "mm[Hg]",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
+        "text": "Patient has lost weight but still has an active goal."
       } ]
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-WeightLossGoalExists-6"
+      "url": "Observation/observation-NPI-WeightLossGoalExists-8"
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-NPI-WeightLossGoalExists-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
-        } ]
-      },
-      "category": [ {
-        "coding": [ {
-          "system": "https://coach.ohsu.edu",
-          "code": "weight-loss",
-          "display": "Weight Loss"
-        } ],
-        "text": "Weight Loss"
+      "resourceType": "Patient",
+      "id": "NPI-WeightLossGoalExists",
+      "active": true,
+      "name": [ {
+        "text": "Weight Loss Goal Exists",
+        "family": "Exists",
+        "given": [ "WeightLossGoal" ]
       } ],
-      "description": {
-        "text": "Lose 25 pounds"
-      },
-      "subject": {
-        "reference": "Patient/NPI-WeightLossGoalExists"
-      },
-      "startDate": "2023-08-22",
-      "target": [ {
-        "dueDate": "2023-10-23"
-      } ],
-      "statusDate": "2023-08-22"
+      "gender": "female",
+      "birthDate": "1969-03-07"
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-NPI-WeightLossGoalExists-1"
+      "url": "Patient/NPI-WeightLossGoalExists"
     }
   } ]
 }

@@ -4,23 +4,6 @@
   "type": "transaction",
   "entry": [ {
     "resource": {
-      "resourceType": "Patient",
-      "id": "HE-TwoHighBPs",
-      "active": true,
-      "name": [ {
-        "text": "Two High BPs",
-        "family": "High BPs",
-        "given": [ "Two" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1984-02-15"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/HE-TwoHighBPs"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-HE-TwoHighBPs-1",
       "extension": [ {
@@ -158,6 +141,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-HE-TwoHighBPs-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "HE-TwoHighBPs",
+      "active": true,
+      "name": [ {
+        "text": "Two High BPs",
+        "family": "High BPs",
+        "given": [ "Two" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1984-02-15"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/HE-TwoHighBPs"
     }
   } ]
 }

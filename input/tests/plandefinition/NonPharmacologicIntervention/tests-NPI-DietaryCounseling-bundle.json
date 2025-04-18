@@ -49,20 +49,60 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "NPI-DietaryCounseling",
-      "active": true,
-      "name": [ {
-        "text": "Dietary Counseling",
-        "family": "Counseling",
-        "given": [ "Dietary" ]
+      "resourceType": "Goal",
+      "id": "goal-NPI-DietaryCounseling-1",
+      "lifecycleStatus": "active",
+      "achievementStatus": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+          "version": "4.0.1",
+          "code": "in-progress",
+          "display": "In Progress"
+        } ]
+      },
+      "description": {
+        "text": "Goal of 130/85"
+      },
+      "subject": {
+        "reference": "Patient/NPI-DietaryCounseling"
+      },
+      "startDate": "2023-08-05",
+      "target": [ {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 130,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }, {
+        "measure": {
+          "coding": [ {
+            "system": "http://loinc.org",
+            "version": "2.68",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          } ]
+        },
+        "detailQuantity": {
+          "value": 85,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
       } ],
-      "gender": "male",
-      "birthDate": "1996-07-26"
+      "statusDate": "2023-08-05"
     },
     "request": {
       "method": "PUT",
-      "url": "Patient/NPI-DietaryCounseling"
+      "url": "Goal/goal-NPI-DietaryCounseling-1"
     }
   }, {
     "resource": {
@@ -130,14 +170,7 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-DietaryCounseling-6",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
+      "id": "observation-NPI-DietaryCounseling-2",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -157,9 +190,9 @@
       "subject": {
         "reference": "Patient/NPI-DietaryCounseling"
       },
-      "effectiveDateTime": "2023-07-20T15:16:21-05:00",
+      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading"
+        "text": "Office Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -171,7 +204,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 86.52660352979804,
+          "value": 87.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -186,7 +219,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 128.65064054117963,
+          "value": 137.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -195,19 +228,12 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryCounseling-6"
+      "url": "Observation/observation-NPI-DietaryCounseling-2"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-DietaryCounseling-5",
-      "extension": [ {
-        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
-        "valueCoding": {
-          "system": "http://snomed.info/sct",
-          "code": "264362003"
-        }
-      } ],
+      "id": "observation-NPI-DietaryCounseling-3",
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -227,9 +253,9 @@
       "subject": {
         "reference": "Patient/NPI-DietaryCounseling"
       },
-      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
       "note": [ {
-        "text": "Home Blood Pressure Reading"
+        "text": "Office Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -241,7 +267,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 84.52660352979804,
+          "value": 93.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -256,7 +282,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 128.65064054117963,
+          "value": 142.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -265,7 +291,7 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryCounseling-5"
+      "url": "Observation/observation-NPI-DietaryCounseling-3"
     }
   }, {
     "resource": {
@@ -340,7 +366,14 @@
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-DietaryCounseling-3",
+      "id": "observation-NPI-DietaryCounseling-5",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -360,9 +393,9 @@
       "subject": {
         "reference": "Patient/NPI-DietaryCounseling"
       },
-      "effectiveDateTime": "2023-04-19T15:16:21-05:00",
+      "effectiveDateTime": "2023-06-19T15:16:21-05:00",
       "note": [ {
-        "text": "Office Blood Pressure Reading"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -374,7 +407,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 93.52660352979804,
+          "value": 84.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -389,7 +422,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 142.65064054117963,
+          "value": 128.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -398,12 +431,19 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryCounseling-3"
+      "url": "Observation/observation-NPI-DietaryCounseling-5"
     }
   }, {
     "resource": {
       "resourceType": "Observation",
-      "id": "observation-NPI-DietaryCounseling-2",
+      "id": "observation-NPI-DietaryCounseling-6",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/us/vitals/StructureDefinition/MeasurementSettingExt",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "264362003"
+        }
+      } ],
       "status": "final",
       "category": [ {
         "coding": [ {
@@ -423,9 +463,9 @@
       "subject": {
         "reference": "Patient/NPI-DietaryCounseling"
       },
-      "effectiveDateTime": "2023-03-22T15:16:21-05:00",
+      "effectiveDateTime": "2023-07-20T15:16:21-05:00",
       "note": [ {
-        "text": "Office Blood Pressure Reading"
+        "text": "Home Blood Pressure Reading"
       } ],
       "component": [ {
         "code": {
@@ -437,7 +477,7 @@
           "text": "Diastolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 87.52660352979804,
+          "value": 86.52660352979804,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -452,7 +492,7 @@
           "text": "Systolic Blood Pressure"
         },
         "valueQuantity": {
-          "value": 137.65064054117963,
+          "value": 128.65064054117963,
           "unit": "mm[Hg]",
           "system": "http://unitsofmeasure.org",
           "code": "mm[Hg]"
@@ -461,64 +501,24 @@
     },
     "request": {
       "method": "PUT",
-      "url": "Observation/observation-NPI-DietaryCounseling-2"
+      "url": "Observation/observation-NPI-DietaryCounseling-6"
     }
   }, {
     "resource": {
-      "resourceType": "Goal",
-      "id": "goal-NPI-DietaryCounseling-1",
-      "lifecycleStatus": "active",
-      "achievementStatus": {
-        "coding": [ {
-          "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-          "version": "4.0.1",
-          "code": "in-progress",
-          "display": "In Progress"
-        } ]
-      },
-      "description": {
-        "text": "Goal of 130/85"
-      },
-      "subject": {
-        "reference": "Patient/NPI-DietaryCounseling"
-      },
-      "startDate": "2023-08-05",
-      "target": [ {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8480-6",
-            "display": "Systolic blood pressure"
-          } ]
-        },
-        "detailQuantity": {
-          "value": 130,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
-      }, {
-        "measure": {
-          "coding": [ {
-            "system": "http://loinc.org",
-            "version": "2.68",
-            "code": "8462-4",
-            "display": "Diastolic blood pressure"
-          } ]
-        },
-        "detailQuantity": {
-          "value": 85,
-          "unit": "mmHg",
-          "system": "http://unitsofmeasure.org",
-          "code": "mm[Hg]"
-        }
+      "resourceType": "Patient",
+      "id": "NPI-DietaryCounseling",
+      "active": true,
+      "name": [ {
+        "text": "Dietary Counseling",
+        "family": "Counseling",
+        "given": [ "Dietary" ]
       } ],
-      "statusDate": "2023-08-05"
+      "gender": "male",
+      "birthDate": "1996-07-26"
     },
     "request": {
       "method": "PUT",
-      "url": "Goal/goal-NPI-DietaryCounseling-1"
+      "url": "Patient/NPI-DietaryCounseling"
     }
   } ]
 }

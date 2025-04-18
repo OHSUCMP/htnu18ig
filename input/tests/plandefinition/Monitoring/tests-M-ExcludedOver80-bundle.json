@@ -49,23 +49,6 @@
     }
   }, {
     "resource": {
-      "resourceType": "Patient",
-      "id": "M-ExcludedOver80",
-      "active": true,
-      "name": [ {
-        "text": "Excluded Over 80",
-        "family": "Over80",
-        "given": [ "Excluded" ]
-      } ],
-      "gender": "male",
-      "birthDate": "1938-12-28"
-    },
-    "request": {
-      "method": "PUT",
-      "url": "Patient/M-ExcludedOver80"
-    }
-  }, {
-    "resource": {
       "resourceType": "Observation",
       "id": "observation-M-ExcludedOver80-1",
       "extension": [ {
@@ -203,6 +186,23 @@
     "request": {
       "method": "PUT",
       "url": "Observation/observation-M-ExcludedOver80-2"
+    }
+  }, {
+    "resource": {
+      "resourceType": "Patient",
+      "id": "M-ExcludedOver80",
+      "active": true,
+      "name": [ {
+        "text": "Excluded Over 80",
+        "family": "Over80",
+        "given": [ "Excluded" ]
+      } ],
+      "gender": "male",
+      "birthDate": "1938-12-28"
+    },
+    "request": {
+      "method": "PUT",
+      "url": "Patient/M-ExcludedOver80"
     }
   } ]
 }
