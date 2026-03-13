@@ -1,8 +1,9 @@
-library BloodPressureTimeInRange version '1.0.0'
+library BPTimeInRange version '1.0.0'
 
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
+include OHSUHTNCommon version '0.1' called Common
 
 codesystem "LOINC": 'http://loinc.org'
 
@@ -33,6 +34,64 @@ context Patient
 
 // -- Logic --
 
+define "Info":
+  'info'
+
+define "Warning":
+  'warning'
+
+define "Critical":
+  'critical'
+
+define "Errors":
+  null
+
+define "Meets Inclusion Criteria":
+ not exists Common."Condition Indicating Preexisting Hypertension" and not Common."HTN Crisis"
+
+define "Meets Exclusion Criteria":
+  Common."Patient Under Age 18"
+    or Common."Patient Over Age 100"
+    or exists Common."Condition Indicating End Stage Renal Disease"
+    or exists Common."Condition Indicating Pregnancy"
+
+define "In Population":
+  // Preserve this ordering so excluded patients fail fast
+  not "Meets Exclusion Criteria" and "Meets Inclusion Criteria"
+
+define "Provide Recommendation":
+  "In Population"
+
+define "Recommendation":
+  if not "Provide Recommendation" then 'None'
+  else 'BPTimeInRange.Success.Summary'
+
+define "Rationale Combined Data":
+  "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
+
+define "Rationale":
+  if not "Provide Recommendation" then ''
+  else if "Total Readings Count" > 0 then
+    '{{#patient}}Your blood pressure was in range for '
+      + ToString(Round("Percentage Time In Range", 1))
+      + '% of recorded readings during the measurement period.{{/patient}}'
+      + '{{#careTeam}}Patient blood pressure was in range for '
+      + ToString(Round("Percentage Time In Range", 1))
+      + '% of recorded readings during the measurement period.{{/careTeam}}'
+  else 'Consider obtaining additional blood pressure measurements.'
+
+define "Indicator Status":
+  "Info"
+
+define "Suggestions":
+  ''
+
+define "Selection Behavior":
+  'at-most-one'
+
+define "Links":
+  ''
+
 // 1. Retrieve valid BP observations within the last 3 months
 define "Valid BP Observations":
   [Observation: "All BP Panels"] BP
@@ -43,8 +102,8 @@ define "Valid BP Observations":
 define "BP Readings":
   "Valid BP Observations" BP
     let
-      SysComp: singleton from (BP.component C where C.code in "Systolic BP Components"),
-      DiaComp: singleton from (BP.component C where C.code in "Diastolic BP Components"),
+      SysComp: singleton from (BP.component C where FHIRHelpers.ToConcept(C.code) ~ "Systolic BP Components"),
+      DiaComp: singleton from (BP.component C where FHIRHelpers.ToConcept(C.code) ~ "Diastolic BP Components"),
       SysValue: SysComp.value as Quantity,
       DiaValue: DiaComp.value as Quantity
     where SysValue is not null and DiaValue is not null
