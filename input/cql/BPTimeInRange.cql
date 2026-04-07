@@ -64,7 +64,7 @@ define "Provide Recommendation":
 
 define "Recommendation":
   if not "Provide Recommendation" then 'None'
-  else 'BPTimeInRange.Success.Summary'
+  else 'Blood Pressure Time-in-Range'
 
 define "Rationale Combined Data":
   "Rationale" + '|' + "Suggestions" + '|' + "Selection Behavior" + '|' + "Links"
@@ -74,10 +74,10 @@ define "Rationale":
   else if "Total Readings Count" > 0 then
     '{{#patient}}Your blood pressure was in range for '
       + ToString(Round("Percentage Time In Range", 1))
-      + '% of recorded readings during the measurement period.{{/patient}}'
+      + '% of recorded readings during the measurement period (most recent 3 months).{{/patient}}'
       + '{{#careTeam}}Patient blood pressure was in range for '
       + ToString(Round("Percentage Time In Range", 1))
-      + '% of recorded readings during the measurement period.{{/careTeam}}'
+      + '% of recorded readings during the measurement period (most recent 3 months).{{/careTeam}}'
   else 'Consider obtaining additional blood pressure measurements.'
 
 define "Indicator Status":
