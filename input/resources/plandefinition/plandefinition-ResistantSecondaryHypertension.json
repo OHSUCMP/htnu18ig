@@ -1,0 +1,112 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "plandefinition-ResistantSecondaryHypertension",
+  "url": "http://fhir.org/guides/ohsuhypertensionig/PlanDefinition/plandefinition-ResistantSecondaryHypertension",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "ohsu-ResistantSecondaryHypertension"
+    }
+  ],
+  "version": "0.1",
+  "name": "Resistant and Secondary Hypertension",
+  "title": "Resistant and Secondary Hypertension",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/plan-definition-type",
+        "code": "eca-rule",
+        "display": "ECA Rule"
+      }
+    ]
+  },
+  "status": "draft",
+  "date": "2020-02-04T00:00:00-08:00",
+  "publisher": "Oregon Health and Science University (OHSU)",
+  "description": "This PlanDefinition provides patient recommendations relating to resistant and secondary hypertension.",
+  "purpose": "REVISE THIS",
+  "usage": "This is to be used in conjunction with a patient-facing FHIR application.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "371622005",
+            "display": "Elevated BP without HTN diagnosis"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "Hypertension Management"
+    }
+  ],
+  "copyright": "© OHSU 2026+.",
+  "library": [
+    "http://fhir.org/guides/ohsuhypertensionig/Library/ResistantSecondaryHypertension"
+  ],
+  "action": [
+    {
+      "title": "Recommendation",
+      "description": "REVISE THIS",
+      "trigger": [{
+        "type": "named-event",
+        "name":"patient-view"
+      }],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "description": "If the patient is in the population",
+            "language": "text/cql.identifier",
+            "expression": "Provide Recommendation"
+          }
+        }
+      ],
+      "dynamicValue": [
+        {
+          "path": "action.title",
+          "expression": {
+            "description": "Patient Recommendation",
+            "language": "text/cql.identifier",
+            "expression": "Recommendation"
+          }
+        },
+        {
+          "path": "action.description",
+          "expression": {
+            "description": "Rationale for recommendation type.",
+            "language": "text/cql.identifier",
+            "expression": "Rationale Combined Data"
+          }
+        },
+        {
+          "path": "action.extension",
+          "expression": {
+            "language": "text/cql.identifier",
+            "expression": "Indicator Status"
+          }
+        }
+      ]
+    }
+  ]
+}
