@@ -9,8 +9,8 @@
     }
   ],
   "version": "0.1",
-  "name": "BPTimeInRange",
-  "title": "BPTimeInRange",
+  "name": "Blood Pressure Time-in-Range",
+  "title": "Blood Pressure Time-in-Range",
   "type": {
     "coding": [
       {
