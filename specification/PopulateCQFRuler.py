@@ -22,7 +22,7 @@ print("CQF Ruler URL = " + cqf_ruler_url)
 for path in paths:
   for root, dirs, files in os.walk(path, topdown=False):
     for name in files:
-      if re.match('.*\.json', name):
+      if re.match('.*\\.json', name):
         with open(os.path.join(root, name), 'r') as f:
           print("processing " + name)
 
