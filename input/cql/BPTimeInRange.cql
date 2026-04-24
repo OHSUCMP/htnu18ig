@@ -47,13 +47,14 @@ define "Errors":
   null
 
 define "Meets Inclusion Criteria":
- not exists Common."Condition Indicating Preexisting Hypertension" and not Common."HTN Crisis"
+ true
 
 define "Meets Exclusion Criteria":
   Common."Patient Under Age 18"
     or Common."Patient Over Age 100"
     or exists Common."Condition Indicating End Stage Renal Disease"
     or exists Common."Condition Indicating Pregnancy"
+    or Common."HTN Crisis"
 
 define "In Population":
   // Preserve this ordering so excluded patients fail fast
